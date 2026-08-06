@@ -7,7 +7,7 @@ import Timeline from '../components/ui/Timeline';
 import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
-import elecHeroDesk from '../assets/electricity hero desk.png';
+import elecHeroDesk from '../assets/electricity hero desk.webp';
 
 export default function Electricity() {
   const { t, i18n } = useTranslation();

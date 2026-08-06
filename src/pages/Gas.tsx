@@ -7,8 +7,8 @@ import Timeline from '../components/ui/Timeline';
 import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
-import gasHeroDesk from '../assets/gas hero desk.png';
-import gasHeroMob from '../assets/gas hero mob.png';
+import gasHeroDesk from '../assets/gas hero desk.webp';
+import gasHeroMob from '../assets/gas hero mob.webp';
 
 export default function Gas() {
   const { t, i18n } = useTranslation();

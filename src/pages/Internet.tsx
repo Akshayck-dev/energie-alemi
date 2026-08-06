@@ -7,8 +7,8 @@ import Timeline from '../components/ui/Timeline';
 import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
-import netHeroDesk from '../assets/internet hero desktop.png';
-import netHeroMob from '../assets/internet hero mob.png';
+import netHeroDesk from '../assets/internet hero desktop.webp';
+import netHeroMob from '../assets/internet hero mob.webp';
 
 export default function Internet() {
   const { t, i18n } = useTranslation();

@@ -69,7 +69,12 @@ export default function Navbar() {
               <Link
                 key={link.key}
                 to={link.path}
-                className="relative text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:text-white transition-colors group"
+                className={cn(
+                  "relative text-sm font-semibold transition-colors group",
+                  isScrolled
+                    ? "text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+                    : "text-white/80 hover:text-white"
+                )}
               >
                 {t(`nav.${link.key}`)}
                 <span 
@@ -88,10 +93,15 @@ export default function Navbar() {
 
         {/* CTA and Theme Toggle */}
         <div className="hidden md:flex items-center gap-4">
-          <LanguageSwitcher />
+          <LanguageSwitcher isScrolled={isScrolled} />
           <button 
             onClick={toggleTheme} 
-            className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+            className={cn(
+              "w-10 h-10 rounded-full border flex items-center justify-center transition-colors",
+              isScrolled
+                ? "border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5"
+                : "border-white/20 text-white/80 hover:bg-white/10 hover:text-white"
+            )}
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
@@ -102,16 +112,24 @@ export default function Navbar() {
         </div>
 
         <div className="flex md:hidden items-center gap-3">
-          <LanguageSwitcher />
+          <LanguageSwitcher isScrolled={isScrolled} />
           <button 
             onClick={toggleTheme} 
-            className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5 transition-colors z-50 pointer-events-auto"
+            className={cn(
+              "w-10 h-10 rounded-full border flex items-center justify-center transition-colors z-50 pointer-events-auto",
+              isScrolled
+                ? "border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5"
+                : "border-white/20 text-white/80 hover:bg-white/10 hover:text-white"
+            )}
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
           <button 
-            className="text-slate-900 dark:text-white z-50 shrink-0 pointer-events-auto"
+            className={cn(
+              "z-50 shrink-0 pointer-events-auto",
+              isScrolled ? "text-slate-900 dark:text-white" : "text-white"
+            )}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}

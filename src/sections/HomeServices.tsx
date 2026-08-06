@@ -110,7 +110,7 @@ export default function HomeServices() {
           <div className="absolute inset-0 bg-black/10 z-10 transition-colors duration-700 group-hover:bg-black/5" />
           <img 
             ref={imageRef}
-            src="/smart-home.png" 
+            src="/smart-home.webp" 
             alt="Modern European Smart Home" 
             className="w-full h-full object-cover object-center origin-center"
           />

@@ -1,7 +1,7 @@
 import { Zap, ShieldCheck, Users, LineChart,  ArrowRight, Handshake } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/ui/Button';
-import ownerImg from '../assets/owner.png';
+import ownerImg from '../assets/owner.webp';
 import { cn } from '../lib/utils';
 
 export default function About() {
@@ -79,7 +79,7 @@ export default function About() {
           {/* Hero Image Right Side */}
           <div className="w-full lg:w-[45%] flex justify-center lg:justify-end items-center relative mt-12 lg:mt-0">
              <div className="relative w-full max-w-lg lg:max-w-none aspect-[4/5] lg:aspect-[3/4] rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)] border border-white/10 z-10">
-               <img src="/about-hero-image.png" alt="Energy Consulting" className="w-full h-full object-cover" />
+               <img src="/about-hero-image.webp" alt="Energy Consulting" className="w-full h-full object-cover" />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-50 dark:from-[#051024] via-transparent to-transparent opacity-60 pointer-events-none" />
              </div>
              {/* Decorative glow behind image */}

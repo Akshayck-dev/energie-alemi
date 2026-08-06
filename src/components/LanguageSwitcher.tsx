@@ -10,7 +10,7 @@ const languages = [
   { code: 'tr', name: 'Türkçe' },
 ];
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ isScrolled = true }: { isScrolled?: boolean }) {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -35,7 +35,12 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+        className={cn(
+          "w-10 h-10 rounded-full border flex items-center justify-center transition-colors",
+          isScrolled
+            ? "border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5"
+            : "border-white/20 text-white/80 hover:bg-white/10 hover:text-white"
+        )}
         aria-label="Change language"
       >
         <Globe size={18} />

@@ -1,14 +1,39 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { cn } from '../lib/utils';
-import splashVideo from '../assets/splash.mp4';
+import splashVideo from '../assets/spalsh final.mp4';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
   const [isFadingOut, setIsFadingOut] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const endTimeRef = useRef<number>(0);
 
   const handleVideoEnd = () => {
     setIsFadingOut(true);
     setTimeout(() => setIsVisible(false), 800);
+  };
+
+  const handleLoadedMetadata = () => {
+    if (videoRef.current) {
+      const duration = videoRef.current.duration;
+      // Trim the last 3 seconds
+      const targetDuration = Math.max(0.1, duration - 3);
+      endTimeRef.current = targetDuration;
+      
+      // Calculate speed so the trimmed video plays in exactly 5 seconds
+      const speed = targetDuration / 5;
+      videoRef.current.playbackRate = speed;
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    if (videoRef.current && endTimeRef.current > 0) {
+      if (videoRef.current.currentTime >= endTimeRef.current && !isFadingOut) {
+        videoRef.current.pause(); // pause so we don't see the trimmed part while fading
+        handleVideoEnd();
+        endTimeRef.current = 0;
+      }
+    }
   };
 
   // Failsafe in case video doesn't play automatically (browser policies)
@@ -17,7 +42,7 @@ export default function SplashScreen() {
       if (isVisible && !isFadingOut) {
         handleVideoEnd();
       }
-    }, 8000); // Max 8 seconds before auto-dismiss
+    }, 5500); // Failsafe after 5.5 seconds
     return () => clearTimeout(timer);
   }, [isVisible, isFadingOut]);
 
@@ -34,11 +59,13 @@ export default function SplashScreen() {
       )}
     >
       <video 
+        ref={videoRef}
         src={splashVideo}
         autoPlay
         muted
         playsInline
-        onEnded={handleVideoEnd}
+        onLoadedMetadata={handleLoadedMetadata}
+        onTimeUpdate={handleTimeUpdate}
         className="absolute inset-0 w-full h-full object-cover" 
       />
     </div>
