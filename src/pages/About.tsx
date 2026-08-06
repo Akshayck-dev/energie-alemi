@@ -1,8 +1,12 @@
-import { Zap, ShieldCheck, Users, LineChart, MessageSquare, ArrowRight, Handshake } from 'lucide-react';
+import { Zap, ShieldCheck, Users, LineChart,  ArrowRight, Handshake } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Button from '../components/ui/Button';
 import ownerImg from '../assets/owner.png';
+import { cn } from '../lib/utils';
 
 export default function About() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="bg-white dark:bg-[#0a1628] min-h-screen">
       {/* Hero Section */}
@@ -14,19 +18,19 @@ export default function About() {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-6 h-[2px] bg-[#E5A937]"></div>
               <h3 className="text-[#E5A937] font-heading font-medium tracking-wider uppercase text-sm">
-                ABOUT US
+                {t('about.hero_subtitle')}
               </h3>
             </div>
             
             <h1 className="font-heading text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-4">
-              Energie Alemi
+              {t('about.hero_title')}
             </h1>
             <p className="text-xl md:text-2xl font-medium text-slate-600 dark:text-white/80 mb-6">
-              Professional advice on electricity, gas and internet
+              {t('about.hero_desc')}
             </p>
             <div className="mt-8 flex justify-start">
-              <Button variant="primary" icon={<ArrowRight size={18} />} className="w-full md:w-auto justify-center">
-                Non-binding consultation
+              <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} className="w-full md:w-auto justify-center">
+                {t('about.hero_button')}
               </Button>
             </div>
 
@@ -41,32 +45,32 @@ export default function About() {
                   <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shadow-sm bg-white dark:bg-[#0a1628]">
                     <Zap size={24} strokeWidth={1.5} />
                   </div>
-                  <h4 className="font-heading text-base font-bold text-slate-900 dark:text-white">Expert Advice</h4>
-                  <p className="text-slate-600 dark:text-white/80 text-xs leading-relaxed">Clear and reliable energy guidance</p>
+                  <h4 className="font-heading text-base font-bold text-slate-900 dark:text-white">{t('about.hero_f1_title')}</h4>
+                  <p className="text-slate-600 dark:text-white/80 text-xs leading-relaxed">{t('about.hero_f1_desc')}</p>
                 </div>
 
                 {/* Divider 1 */}
-                <div className="hidden md:block absolute left-1/3 top-2 bottom-2 w-px bg-slate-100 dark:bg-[#0c1d3d]"></div>
+                <div className="hidden md:block absolute ltr:left-1/3 rtl:right-1/3 top-2 bottom-2 w-px bg-slate-100 dark:bg-[#0c1d3d]"></div>
 
                 {/* Feature 2 */}
                 <div className="flex flex-col items-center text-center px-4 gap-2">
                   <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shadow-sm bg-white dark:bg-[#0a1628]">
                     <ShieldCheck size={24} strokeWidth={1.5} />
                   </div>
-                  <h4 className="font-heading text-base font-bold text-slate-900 dark:text-white">Transparent</h4>
-                  <p className="text-slate-600 dark:text-white/80 text-xs leading-relaxed">Honest comparisons and clear solutions</p>
+                  <h4 className="font-heading text-base font-bold text-slate-900 dark:text-white">{t('about.hero_f2_title')}</h4>
+                  <p className="text-slate-600 dark:text-white/80 text-xs leading-relaxed">{t('about.hero_f2_desc')}</p>
                 </div>
 
                 {/* Divider 2 */}
-                <div className="hidden md:block absolute left-2/3 top-2 bottom-2 w-px bg-slate-100 dark:bg-[#0c1d3d]"></div>
+                <div className="hidden md:block absolute ltr:left-2/3 rtl:right-2/3 top-2 bottom-2 w-px bg-slate-100 dark:bg-[#0c1d3d]"></div>
 
                 {/* Feature 3 */}
                 <div className="flex flex-col items-center text-center px-4 gap-2">
                   <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shadow-sm bg-white dark:bg-[#0a1628]">
                     <Handshake size={24} strokeWidth={1.5} />
                   </div>
-                  <h4 className="font-heading text-base font-bold text-slate-900 dark:text-white">Customer First</h4>
-                  <p className="text-slate-600 dark:text-white/80 text-xs leading-relaxed">Your needs are our priority</p>
+                  <h4 className="font-heading text-base font-bold text-slate-900 dark:text-white">{t('about.hero_f3_title')}</h4>
+                  <p className="text-slate-600 dark:text-white/80 text-xs leading-relaxed">{t('about.hero_f3_desc')}</p>
                 </div>
               </div>
             </div>
@@ -92,40 +96,37 @@ export default function About() {
             {/* Left side: Typography & Content */}
             <div className="w-full lg:w-[55%]">
               <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-4">
-                OUR PHILOSOPHY
+                {t('about.phil_subtitle')}
               </h3>
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8 leading-tight">
-                Not tied to providers.<br/>
-                <span className="text-slate-400 dark:text-white/50">Committed to your success.</span>
+                {t('about.phil_title1')}<br/>
+                <span className="text-slate-400 dark:text-white/50">{t('about.phil_title2')}</span>
               </h2>
               <div className="space-y-6 text-slate-600 dark:text-white/80 text-lg leading-relaxed">
                 <p>
-                  As an independent consultancy firm, we are not tied to specific providers. 
-                  This independence is the core of our business model and allows us to act entirely in your interest.
+                  {t('about.phil_p1')}
                 </p>
                 <p>
-                  Our goal is to make the complex energy and telecommunications market transparent for you. 
-                  We analyze your current contracts, uncover savings potential, and develop customized solutions 
-                  that perfectly match your consumption patterns.
+                  {t('about.phil_p2')}
                 </p>
                 <p>
-                  Through our extensive network and continuous market monitoring, we secure conditions that are often not publicly available.
+                  {t('about.phil_p3')}
                 </p>
               </div>
 
               {/* Stats/Badges */}
               <div className="flex flex-wrap gap-8 mt-12 pt-10 border-t border-slate-100">
                 <div>
-                  <h4 className="font-heading text-4xl font-bold text-[#0047AB] mb-1">100+</h4>
-                  <p className="text-sm text-slate-500 dark:text-white/60 font-medium uppercase tracking-wider">Providers Compared</p>
+                  <h4 className="font-heading text-4xl font-bold text-[#0047AB] mb-1">{t('about.phil_stat1_num')}</h4>
+                  <p className="text-sm text-slate-500 dark:text-white/60 font-medium uppercase tracking-wider">{t('about.phil_stat1_text')}</p>
                 </div>
                 <div>
-                  <h4 className="font-heading text-4xl font-bold text-[#0047AB] mb-1">Independent</h4>
-                  <p className="text-sm text-slate-500 dark:text-white/60 font-medium uppercase tracking-wider">Consulting</p>
+                  <h4 className="font-heading text-4xl font-bold text-[#0047AB] mb-1">{t('about.phil_stat2_num')}</h4>
+                  <p className="text-sm text-slate-500 dark:text-white/60 font-medium uppercase tracking-wider">{t('about.phil_stat2_text')}</p>
                 </div>
                 <div>
-                  <h4 className="font-heading text-4xl font-bold text-[#0047AB] mb-1">100%</h4>
-                  <p className="text-sm text-slate-500 dark:text-white/60 font-medium uppercase tracking-wider">Client Focus</p>
+                  <h4 className="font-heading text-4xl font-bold text-[#0047AB] mb-1">{t('about.phil_stat3_num')}</h4>
+                  <p className="text-sm text-slate-500 dark:text-white/60 font-medium uppercase tracking-wider">{t('about.phil_stat3_text')}</p>
                 </div>
               </div>
             </div>
@@ -144,7 +145,7 @@ export default function About() {
                  />
                
                {/* Signature Graphic */}
-               <div className="absolute bottom-12 -right-4 z-20 transform -rotate-6">
+               <div className="absolute bottom-12 rtl:-left-4 ltr:-right-4 z-20 transform -rotate-6">
                   <span className="font-serif italic text-4xl text-slate-900 dark:text-white">Shoaib Alemi</span>
                 </div>
               </div>
@@ -161,22 +162,22 @@ export default function About() {
             {/* Left Content */}
             <div className="w-full lg:w-[55%]">
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8 leading-tight">
-                More than <span className="text-[#E5A937]">7+ years</span> of experience in energy & telecommunications
+                {t('about.exp_title1')} <span className="text-[#E5A937]">{t('about.exp_title_high')}</span> {t('about.exp_title2')}
               </h2>
               <div className="w-full h-px bg-slate-200 dark:bg-white dark:bg-[#0a1628]/10 mb-8" />
               
               <div className="space-y-6 text-[15px] text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
                 <p>
-                  For over seven years, we have been helping companies and individuals find the best solutions for electricity, gas, and internet.
+                  {t('about.exp_p1')}
                 </p>
                 <p>
-                  Under the leadership of Shoaib Alemi, our team provides personal, transparent, and reliable advice on a wide range of tariff options. We help businesses and private customers make informed decisions that truly fit their needs.
+                  {t('about.exp_p2')}
                 </p>
                 <p>
-                  With deep experience in energy and telecommunications contracts, we explain complex options in a simple and clear way – so you can save costs, reduce risks, and plan with confidence.
+                  {t('about.exp_p3')}
                 </p>
                 <p>
-                  Many companies prefer personal consultation over online comparisons. That's why we welcome you at our store in the heart of Aachen or online – whatever is most convenient for you.
+                  {t('about.exp_p4')}
                 </p>
               </div>
 
@@ -186,7 +187,7 @@ export default function About() {
                   <span className="text-[#0047AB] text-3xl font-serif leading-none mt-1">"</span>
                 </div>
                 <p className="font-medium text-slate-900 dark:text-white leading-relaxed">
-                  Our goal is simple: reliable service, maximum planning security, and the best solution for you.
+                  {t('about.exp_quote')}
                 </p>
               </div>
             </div>
@@ -197,49 +198,49 @@ export default function About() {
                 
                 {/* Feature 1 */}
                 <div className="flex gap-6 pb-8 border-b border-slate-100 relative">
-                  <div className="absolute left-0 top-2 bottom-8 w-[3px] bg-[#E5A937] rounded-full" />
-                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ml-6 bg-slate-50 dark:bg-[#051024]">
+                  <div className="absolute ltr:left-0 rtl:right-0 top-2 bottom-8 w-[3px] bg-[#E5A937] rounded-full" />
+                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ltr:ml-6 rtl:mr-6 bg-slate-50 dark:bg-[#051024]">
                     <Zap size={24} />
                   </div>
                   <div>
-                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">Independency</h4>
-                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">We work independently and recommend what's best for you.</p>
+                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">{t('about.exp_f1_title')}</h4>
+                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">{t('about.exp_f1_desc')}</p>
                   </div>
                 </div>
 
                 {/* Feature 2 */}
                 <div className="flex gap-6 pb-8 border-b border-slate-100 relative">
-                  <div className="absolute left-0 top-2 bottom-8 w-[3px] bg-[#E5A937] rounded-full" />
-                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ml-6 bg-slate-50 dark:bg-[#051024]">
+                  <div className="absolute ltr:left-0 rtl:right-0 top-2 bottom-8 w-[3px] bg-[#E5A937] rounded-full" />
+                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ltr:ml-6 rtl:mr-6 bg-slate-50 dark:bg-[#051024]">
                     <ShieldCheck size={24} />
                   </div>
                   <div>
-                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">Transparency</h4>
-                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">We compare tariffs clearly so you can make informed decisions.</p>
+                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">{t('about.exp_f2_title')}</h4>
+                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">{t('about.exp_f2_desc')}</p>
                   </div>
                 </div>
 
                 {/* Feature 3 */}
                 <div className="flex gap-6 pb-8 border-b border-slate-100 relative">
-                  <div className="absolute left-0 top-2 bottom-8 w-[3px] bg-[#E5A937] rounded-full" />
-                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ml-6 bg-slate-50 dark:bg-[#051024]">
+                  <div className="absolute ltr:left-0 rtl:right-0 top-2 bottom-8 w-[3px] bg-[#E5A937] rounded-full" />
+                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ltr:ml-6 rtl:mr-6 bg-slate-50 dark:bg-[#051024]">
                     <Users size={24} />
                   </div>
                   <div>
-                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">Personal Consultation</h4>
-                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">We take the time to understand your requirements and goals.</p>
+                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">{t('about.exp_f3_title')}</h4>
+                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">{t('about.exp_f3_desc')}</p>
                   </div>
                 </div>
 
                 {/* Feature 4 */}
                 <div className="flex gap-6 relative">
-                  <div className="absolute left-0 top-2 bottom-2 w-[3px] bg-[#E5A937] rounded-full" />
-                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ml-6 bg-slate-50 dark:bg-[#051024]">
+                  <div className="absolute ltr:left-0 rtl:right-0 top-2 bottom-2 w-[3px] bg-[#E5A937] rounded-full" />
+                  <div className="w-14 h-14 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-[#0047AB] shrink-0 ltr:ml-6 rtl:mr-6 bg-slate-50 dark:bg-[#051024]">
                     <LineChart size={24} />
                   </div>
                   <div>
-                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">Reliable Support</h4>
-                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">We're here for you – before, during, and after your decision.</p>
+                    <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white mb-1">{t('about.exp_f4_title')}</h4>
+                    <p className="text-slate-600 dark:text-white/80 text-sm leading-relaxed">{t('about.exp_f4_desc')}</p>
                   </div>
                 </div>
 
@@ -266,15 +267,15 @@ export default function About() {
               </div>
               <div className="text-center md:text-left flex-grow">
                 <h3 className="font-heading text-3xl font-bold text-slate-900 dark:text-white mb-3">
-                  Questions or need support?
+                  {t('about.cta_title')}
                 </h3>
                 <p className="text-slate-600 dark:text-white/80 text-base max-w-lg">
-                  We're happy to help you with customized solutions for your electricity, gas, and internet contracts.
+                  {t('about.cta_desc')}
                 </p>
               </div>
               <div className="flex-shrink-0 mt-4 md:mt-2 w-full md:w-auto">
-                <Button variant="primary" className="w-full md:w-auto justify-center" icon={<ArrowRight size={18} />}>
-                  Non-binding consultation
+                <Button variant="primary" className="w-full md:w-auto justify-center" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />}>
+                  {t('about.cta_button')}
                 </Button>
               </div>
             </div>

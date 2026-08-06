@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { User, Mail, Send, CheckCircle2 } from 'lucide-react';
+import { User, Mail, CheckCircle2 } from 'lucide-react';
 import { Input } from './ui/Input';
 import { Textarea } from './ui/Textarea';
 
@@ -20,6 +21,7 @@ const contactSchema = z.object({
 type ContactFormValues = z.infer<typeof contactSchema>;
 
 export default function ContactForm() {
+  const { t, i18n } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -35,7 +37,7 @@ export default function ContactForm() {
     }
   });
 
-  const onSubmit = async (data: ContactFormValues) => {
+  const onSubmit = async (_data: ContactFormValues) => {
     setIsSubmitting(true);
     await new Promise(resolve => setTimeout(resolve, 1500));
     setIsSubmitting(false);
@@ -52,9 +54,9 @@ export default function ContactForm() {
         <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">
           <CheckCircle2 size={40} />
         </div>
-        <h3 className="font-heading text-2xl font-semibold text-[#051024] dark:text-white mb-2">Message Sent!</h3>
+        <h3 className="font-heading text-2xl font-semibold text-[#051024] dark:text-white mb-2">{t('contact.form_sent_title')}</h3>
         <p className="text-slate-600 dark:text-white/80">
-          Thank you for reaching out. We will get back to you as soon as possible.
+          {t('contact.form_sent_desc')}
         </p>
       </div>
     );
@@ -65,21 +67,21 @@ export default function ContactForm() {
       {/* Mobile & Desktop Header */}
       <div className="flex items-center gap-2 text-[12px] md:text-[12.5px] font-bold tracking-[0.14em] uppercase text-[#f0a83f] mb-2.5 md:mb-[12px]">
         <div className="w-[18px] md:w-[22px] h-[2px] bg-[#f0a83f] rounded-sm"></div>
-        Send us a message
+        {t('contact.form_header_sub')}
       </div>
-      <h2 className="font-heading text-[22px] md:text-[28px] font-extrabold text-[#101828] mb-4 md:mb-[26px] tracking-[-0.01em]">How can we help you?</h2>
+      <h2 className="font-heading text-[22px] md:text-[28px] font-extrabold text-[#101828] mb-4 md:mb-[26px] tracking-[-0.01em]">{t('contact.form_header')}</h2>
       
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:space-y-[16px]">
         <div className="grid grid-cols-2 gap-2.5 md:gap-[16px]">
           <Input 
             icon={User} 
-            placeholder="First name" 
+            placeholder={t('contact.form_fname')} 
             {...register('firstName')}
             error={errors.firstName?.message}
           />
           <Input 
             icon={User} 
-            placeholder="Last name" 
+            placeholder={t('contact.form_lname')} 
             {...register('lastName')}
             error={errors.lastName?.message}
           />
@@ -88,7 +90,7 @@ export default function ContactForm() {
         <Input 
           icon={Mail} 
           type="email" 
-          placeholder="E-mail address" 
+          placeholder={t('contact.form_email')} 
           {...register('email')}
           error={errors.email?.message}
         />
@@ -98,11 +100,11 @@ export default function ContactForm() {
             {...register('topic')}
             className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-[#101828] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.topic ? 'border-red-500' : ''}`}
           >
-            <option value="" disabled>I need help with</option>
-            <option value="electricity">Electricity</option>
-            <option value="gas">Gas</option>
-            <option value="internet">Internet</option>
-            <option value="other">General question</option>
+            <option value="" disabled>{t('contact.form_topic')}</option>
+            <option value="electricity">{t('contact.form_topic_elec')}</option>
+            <option value="gas">{t('contact.form_topic_gas')}</option>
+            <option value="internet">{t('contact.form_topic_net')}</option>
+            <option value="other">{t('contact.form_topic_other')}</option>
           </select>
           <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 dark:text-white/50">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -113,7 +115,7 @@ export default function ContactForm() {
         </div>
 
         <Textarea 
-          placeholder="Your message" 
+          placeholder={t('contact.form_msg')} 
           {...register('message')}
           error={errors.message?.message}
         />
@@ -126,7 +128,7 @@ export default function ContactForm() {
             {...register('agreeToPrivacy')}
           />
           <label htmlFor="privacy" className="text-[13px] md:text-[13.5px] text-[#475467] leading-[1.5]">
-            By clicking "Accept", you agree to our <a href="#" className="text-[#0a1628] font-semibold hover:underline">privacy policy.</a>
+            {t('contact.form_privacy_text')} <a href="#" className="text-[#0a1628] font-semibold hover:underline">{t('contact.form_privacy_link')}</a>
           </label>
         </div>
         {errors.agreeToPrivacy && <p className="text-sm text-red-500">{errors.agreeToPrivacy.message}</p>}
@@ -136,8 +138,8 @@ export default function ContactForm() {
           className="w-full md:w-auto mt-5 md:mt-[24px] rounded-full h-[52px] md:h-[54px] md:px-[30px] font-bold text-[15px] bg-[#0047AB] hover:bg-[#003380] text-white flex items-center justify-center gap-2.5 transition-colors disabled:opacity-50"
           disabled={isSubmitting}
         >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
-          {!isSubmitting && <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}
+          {isSubmitting ? t('contact.form_btn_sending') : t('contact.form_btn_send')}
+          {!isSubmitting && <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className={i18n.dir() === 'rtl' ? "rotate-180" : ""}><path d="M4 12h16M14 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}
         </button>
       </form>
     </div>

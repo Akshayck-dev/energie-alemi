@@ -1,32 +1,37 @@
-import { Search, Handshake, ArrowLeftRight, Wifi, Calendar, BarChart3, CheckSquare, Settings, ArrowRight } from 'lucide-react';
+import { Search, Handshake, ArrowLeftRight, Wifi, Calendar, BarChart3, CheckSquare, Settings, ArrowRight, Gauge, BadgeEuro } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
 import SectionHeader from '../components/ui/SectionHeader';
 import Timeline from '../components/ui/Timeline';
 import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
+import { cn } from '../lib/utils';
+import netHeroDesk from '../assets/internet hero desktop.png';
+import netHeroMob from '../assets/internet hero mob.png';
 
 export default function Internet() {
+  const { t, i18n } = useTranslation();
   const features = [
     {
       icon: <Search size={28} strokeWidth={1.5} />,
-      title: "Tariff comparisons",
-      description: "We compare numerous tariffs from different providers and show you suitable options for your company."
+      title: t('internet.f1_t'),
+      description: t('internet.f1_d')
     },
     {
       icon: <Handshake size={28} strokeWidth={1.5} />,
-      title: "Advice on internet contracts",
-      description: "We will explain the differences between DSL, cable internet and fiber optics in an easy-to-understand way."
+      title: t('internet.f2_t'),
+      description: t('internet.f2_d')
     },
     {
       icon: <ArrowLeftRight size={28} strokeWidth={1.5} />,
-      title: "Switching providers",
-      description: "If you decide to sign up for a new internet contract, we will assist you with the switchover and answer any questions."
+      title: t('internet.f3_t'),
+      description: t('internet.f3_d')
     },
     {
       icon: <Wifi size={28} strokeWidth={1.5} />,
-      title: "Connection options",
-      description: "Depending on your location, different technologies may be available. We will work together to determine which solution is suitable."
+      title: t('internet.f4_t'),
+      description: t('internet.f4_d')
     }
   ];
 
@@ -34,65 +39,61 @@ export default function Internet() {
     {
       number: 1,
       icon: <Calendar size={24} />,
-      title: "Schedule a consultation appointment",
-      description: "The first step to finding the right internet contract is a personal consultation. You can visit us directly at our store in the center of Aachen or contact us online. In a non-obligation consultation, we'll discuss your current internet situation and your requirements."
+      title: t('internet.s1_t'),
+      description: t('internet.s1_d')
     },
     {
       number: 2,
       icon: <BarChart3 size={24} />,
-      title: "Compare internet plans",
-      description: "Based on your information, we compare various internet and DSL plans from different providers. We consider important factors such as speed, contract duration, price, and available connection types at your location."
+      title: t('internet.s2_t'),
+      description: t('internet.s2_d')
     },
     {
       number: 3,
       icon: <CheckSquare size={24} />,
-      title: "Make decision",
-      description: "After we've presented you with suitable tariff options, you can take your time to decide which plan best fits your needs. We'll explain all contract details and answer your questions so you can make a well-informed decision."
+      title: t('internet.s3_t'),
+      description: t('internet.s3_d')
     },
     {
       number: 4,
       icon: <Settings size={24} />,
-      title: "Switch providers",
-      description: "Once you've chosen a new internet plan, we'll support you throughout the entire switching process. In many cases, the new provider will handle the cancellation of your existing contract and organize the transfer of your connection."
+      title: t('internet.s4_t'),
+      description: t('internet.s4_d')
     }
   ];
 
   const faqs = [
     {
-      question: "Is switching providers complicated?",
-      answer: "No. The new provider usually handles the organizational steps."
+      question: t('internet.q1'),
+      answer: t('internet.a1')
     },
     {
-      question: "Will there be an internet outage?",
-      answer: "The changeover is organized in such a way that the interruption remains as short as possible."
+      question: t('internet.q2'),
+      answer: t('internet.a2')
     },
     {
-      question: "What internet speed do I need?",
-      answer: "That depends on how it will be used in your household. We'd be happy to advise you on suitable options."
+      question: t('internet.q3'),
+      answer: t('internet.a3')
     }
   ];
 
   return (
     <div>
       <ServiceHero 
-        titleLine1="Compare internet plans"
-        titleLine2="and find the right connection"
-        description="Many companies are still using internet contracts that no longer meet their needs. We can help you find the right internet or DSL plan – in person in Aachen or conveniently online."
-        glowColor="bg-cyan-500/10"
-        graphic={
-          <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full border-[3px] border-cyan-400/50 shadow-[0_0_50px_rgba(34,211,238,0.3)] flex items-center justify-center relative backdrop-blur-sm">
-            <div className="absolute inset-2 border border-cyan-300/30 rounded-full" />
-            <div className="text-cyan-400">
-              <svg width="140" height="140" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12.55a11 11 0 0 1 14.08 0" />
-                <path d="M1.42 9a16 16 0 0 1 21.16 0" />
-                <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
-                <line x1="12" y1="20" x2="12.01" y2="20" />
-              </svg>
-            </div>
-          </div>
-        }
-        rating={false}
+        theme="dark"
+        badgeIcon={<Wifi size={24} />}
+        badgeText={t('net_hero.badge')}
+        title={t('net_hero.title')}
+        description={t('net_hero.desc')}
+        bgImage={netHeroDesk}
+        bgImageMobile={netHeroMob}
+        buttonText={t('net_hero.btn')}
+        bulletPoints={[
+          { icon: <Gauge size={24} />, title: t('net_hero.bullet1_title'), description: t('net_hero.bullet1_desc') },
+          { icon: <BadgeEuro size={24} />, title: t('net_hero.bullet2_title'), description: t('net_hero.bullet2_desc') },
+          { icon: <Wifi size={24} />, title: t('net_hero.bullet3_title'), description: t('net_hero.bullet3_desc') },
+        ]}
+        accentColor="bg-blue-600 hover:bg-blue-700"
       />
       
       <ServiceFeatures features={features} />
@@ -105,15 +106,15 @@ export default function Internet() {
                 <SectionHeader 
                   title={
                     <>
-                      In 4 simple steps to the right <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">internet plan</span>
+                      {t('internet.tl_t1')} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{t('internet.tl_t_high')}</span>
                     </>
                   }
-                  subtitle="HOW IT WORKS"
-                  align="left"
+                  subtitle={t('internet.tl_sub')}
+                  align={i18n.dir() === 'rtl' ? 'right' : 'left'}
                   className="mb-8"
                 />
                 <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed">
-                  Our process is transparent, efficient and designed to get you the best internet solution with minimal effort.
+                  {t('internet.tl_desc')}
                 </p>
                 {/* Router graphic placeholder */}
                 <div className="mt-12 opacity-80 flex flex-col items-center">
@@ -124,7 +125,7 @@ export default function Internet() {
                     </div>
                     <Wifi size={48} className="text-cyan-400" />
                   </div>
-                  <p className="text-slate-600 dark:text-white/80 text-sm font-medium">Fast and reliable connections</p>
+                  <p className="text-slate-600 dark:text-white/80 text-sm font-medium">{t('internet.tl_graphic')}</p>
                 </div>
               </div>
             </div>
@@ -138,15 +139,15 @@ export default function Internet() {
       <section className="py-24 bg-white dark:bg-[#0a1628]">
         <div className="container mx-auto px-6 max-w-4xl">
           <SectionHeader 
-            title="Frequently asked questions"
-            subtitle="FAQ"
+            title={t('internet.faq_t')}
+            subtitle={t('internet.faq_sub')}
             align="center"
             className="mb-12"
           />
           <FAQ items={faqs} className="mb-12" />
           <div className="text-center">
-            <Button variant="primary" icon={<ArrowRight size={18} />}>
-              Non-binding consultation
+            <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />}>
+              {t('internet.btn')}
             </Button>
           </div>
         </div>

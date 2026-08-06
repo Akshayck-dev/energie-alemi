@@ -1,18 +1,20 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Menu, X, ArrowRight, Sun, Moon } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { cn } from '../lib/utils';
 import Button from './ui/Button';
-import logo from '../assets/logo_transparent.png';
+import logoVideo from '../assets/Animate_the_attached_logo_in_a (1).mp4';
 import { useTheme } from '../contexts/ThemeContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const navLinks = [
-  { name: 'HOME', path: '/' },
-  { name: 'ELECTRICITY', path: '/electricity' },
-  { name: 'GAS', path: '/gas' },
-  { name: 'INTERNET', path: '/internet' },
-  { name: 'ABOUT US', path: '/about' },
-  { name: 'CONTACT', path: '/contact' },
+  { key: 'home', path: '/' },
+  { key: 'electricity', path: '/electricity' },
+  { key: 'gas', path: '/gas' },
+  { key: 'internet', path: '/internet' },
+  { key: 'about_us', path: '/about' },
+  { key: 'contact', path: '/contact' },
 ];
 
 export default function Navbar() {
@@ -20,6 +22,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const { theme, toggleTheme } = useTheme();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,15 +43,22 @@ export default function Navbar() {
         )}
       >
         {/* Logo */}
-        <Link to="/" className="flex items-center z-50 shrink-0">
-          <img 
-            src={logo} 
-            alt="Energie Alemi Logo" 
+        <Link to="/" className="flex items-center z-50 shrink-0 pointer-events-auto">
+          <div 
             className={cn(
-              "w-auto object-contain transition-all duration-500 dark:brightness-0 dark:invert",
-              isScrolled ? "h-8 md:h-10" : "h-10 md:h-14"
-            )} 
-          />
+              "relative overflow-hidden flex items-center justify-center rounded-xl shrink-0 transition-all duration-500",
+              isScrolled ? "h-8 w-8 md:h-10 md:w-10" : "h-10 w-10 md:h-14 md:w-14"
+            )}
+          >
+            <video
+              src={logoVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125 pointer-events-none"
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav */}
@@ -57,16 +67,19 @@ export default function Navbar() {
             const isActive = location.pathname === link.path || (link.path !== '/' && location.pathname.startsWith(link.path));
             return (
               <Link
-                key={link.name}
+                key={link.key}
                 to={link.path}
                 className="relative text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:text-white transition-colors group"
               >
-                {link.name}
+                {t(`nav.${link.key}`)}
                 <span 
                   className={cn(
-                    "absolute -bottom-2 left-0 h-[2px] bg-[#0047AB] transition-all duration-300",
-                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                    "absolute -bottom-2 rtl:right-0 ltr:left-0 h-[2px] bg-[#0047AB] transition-all duration-300",
+                    i18n.dir() === 'rtl' ? (isActive ? "w-full" : "w-0 group-hover:w-full right-0") : (isActive ? "w-full" : "w-0 group-hover:w-full left-0")
                   )}
+                  style={{
+                    [i18n.dir() === 'rtl' ? 'right' : 'left']: 0,
+                  }}
                 />
               </Link>
             )
@@ -75,6 +88,7 @@ export default function Navbar() {
 
         {/* CTA and Theme Toggle */}
         <div className="hidden md:flex items-center gap-4">
+          <LanguageSwitcher />
           <button 
             onClick={toggleTheme} 
             className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
@@ -82,12 +96,13 @@ export default function Navbar() {
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          <Button variant="primary" icon={<ArrowRight size={16} />}>
-            Get in touch
+          <Button variant="primary" icon={<ArrowRight size={16} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />}>
+            {t('nav.get_in_touch')}
           </Button>
         </div>
 
         <div className="flex md:hidden items-center gap-3">
+          <LanguageSwitcher />
           <button 
             onClick={toggleTheme} 
             className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5 transition-colors z-50 pointer-events-auto"
@@ -108,21 +123,21 @@ export default function Navbar() {
       <div 
         className={cn(
           "fixed inset-0 bg-slate-50 dark:bg-[#051024] z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 ease-in-out pointer-events-auto",
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          mobileMenuOpen ? "translate-x-0" : (i18n.dir() === 'rtl' ? "-translate-x-full" : "translate-x-full")
         )}
       >
         {navLinks.map((link) => (
           <Link
-            key={link.name}
+            key={link.key}
             to={link.path}
             onClick={() => setMobileMenuOpen(false)}
             className="text-2xl font-heading font-bold text-slate-900 dark:text-white hover:text-[#0047AB] transition-colors"
           >
-            {link.name}
+            {t(`nav.${link.key}`)}
           </Link>
         ))}
-        <Button variant="primary" icon={<ArrowRight size={16} />} onClick={() => setMobileMenuOpen(false)}>
-          Get in touch
+        <Button variant="primary" icon={<ArrowRight size={16} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} onClick={() => setMobileMenuOpen(false)}>
+          {t('nav.get_in_touch')}
         </Button>
       </div>
     </div>

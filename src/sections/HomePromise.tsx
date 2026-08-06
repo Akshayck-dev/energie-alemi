@@ -1,8 +1,10 @@
 import { ShieldCheck, Eye, TrendingUp } from 'lucide-react';
-import SectionHeader from '../components/ui/SectionHeader';
+import { useTranslation } from 'react-i18next';
 import ownerImg from '../assets/owner.png';
 
 export default function HomePromise() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-14 md:py-24 bg-slate-50 dark:bg-[#051024] relative overflow-x-hidden md:overflow-hidden text-slate-900 dark:text-white">
       {/* Background Graphic */}
@@ -13,14 +15,14 @@ export default function HomePromise() {
           
           <div className="w-full lg:w-5/12 relative z-20">
             <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
-              OUR PROMISE
+              {t('home_promise.subtitle')}
             </h3>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
-              Reliable advice.<br />
-              <span className="text-[#0047AB]">Maximum planning security.</span>
+              {t('home_promise.title_line1')}<br />
+              <span className="text-[#0047AB]">{t('home_promise.title_line2')}</span>
             </h2>
             <p className="text-slate-600 dark:text-white/80 text-base mb-12 leading-relaxed max-w-md">
-              Our aim is to offer you reliable service, clear and transparent advice, and maximum planning security so that you can make well-founded and economical decisions.
+              {t('home_promise.description')}
             </p>
 
             <div className="flex flex-wrap sm:flex-nowrap gap-6 sm:gap-8">
@@ -28,19 +30,19 @@ export default function HomePromise() {
                 <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
                   <ShieldCheck className="text-[#0047AB]" size={20} />
                 </div>
-                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">Reliable<br/>service</span>
+                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature1_line1')}<br/>{t('home_promise.feature1_line2')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
                   <Eye className="text-[#0047AB]" size={20} />
                 </div>
-                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">Transparent<br/>advice</span>
+                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature2_line1')}<br/>{t('home_promise.feature2_line2')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
                   <TrendingUp className="text-[#0047AB]" size={20} />
                 </div>
-                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">Economic<br/>decisions</span>
+                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature3_line1')}<br/>{t('home_promise.feature3_line2')}</span>
               </div>
             </div>
           </div>
@@ -57,10 +59,10 @@ export default function HomePromise() {
             </div>
 
             {/* Blockquote card */}
-            <div className="absolute bottom-12 -left-4 lg:-left-12 z-20 bg-white dark:bg-[#0a1628] rounded-2xl p-8 max-w-sm border border-slate-100 shadow-xl hidden md:block">
-              <div className="text-[#E5A937] text-6xl font-serif absolute -top-2 left-6 opacity-80 leading-none">"</div>
+            <div className="absolute bottom-12 rtl:-right-4 ltr:-left-4 lg:rtl:-right-12 lg:ltr:-left-12 z-20 bg-white dark:bg-[#0a1628] rounded-2xl p-8 max-w-sm border border-slate-100 shadow-xl hidden md:block">
+              <div className="text-[#E5A937] text-6xl font-serif absolute -top-2 ltr:left-6 rtl:right-6 opacity-80 leading-none">"</div>
               <p className="text-slate-700 dark:text-slate-300 text-lg font-medium relative z-10 leading-relaxed mt-4">
-                Our goal is to make energy simple, transparent and cost-effective for your business.
+                {t('home_promise.quote')}
               </p>
             </div>
           </div>

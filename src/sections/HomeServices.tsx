@@ -1,15 +1,14 @@
 import { useEffect, useRef } from 'react';
 import { Zap, Flame, Wifi } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const services = [
+const servicesConfig = [
   {
     id: 'electricity',
-    title: 'Electricity',
-    description: '100% green energy for a sustainable tomorrow.',
     icon: Zap,
     color: 'text-amber-400',
     glow: 'group-hover:shadow-[0_0_24px_rgba(251,191,36,0.35)]',
@@ -17,8 +16,6 @@ const services = [
   },
   {
     id: 'gas',
-    title: 'Gas',
-    description: 'Reliable and affordable climate-neutral gas tariffs.',
     icon: Flame,
     color: 'text-rose-500',
     glow: 'group-hover:shadow-[0_0_24px_rgba(244,63,94,0.35)]',
@@ -26,8 +23,6 @@ const services = [
   },
   {
     id: 'internet',
-    title: 'Internet',
-    description: 'High-speed fiber optics for business and home.',
     icon: Wifi,
     color: 'text-blue-500',
     glow: 'group-hover:shadow-[0_0_24px_rgba(59,130,246,0.35)]',
@@ -36,6 +31,7 @@ const services = [
 ];
 
 export default function HomeServices() {
+  const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
@@ -102,10 +98,10 @@ export default function HomeServices() {
         {/* Section Header */}
         <div className="mb-10 md:mb-16">
           <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
-            OUR SERVICES
+            {t('home_services.subtitle')}
           </h3>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white">
-            Everything you need. <span className="text-slate-400 dark:text-white/50">In one place.</span>
+            {t('home_services.title_part1')} <span className="text-slate-400 dark:text-white/50">{t('home_services.title_part2')}</span>
           </h2>
         </div>
 
@@ -129,12 +125,12 @@ export default function HomeServices() {
 
           {/* Service Items: Horizontal Swipeable on Mobile, Grid on Desktop */}
           <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-0 snap-x snap-mandatory pb-8 md:pb-0 hide-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
-            {services.map((service, index) => {
+            {servicesConfig.map((service, index) => {
               const Icon = service.icon;
               return (
                 <div 
                   key={service.id}
-                  ref={el => itemsRef.current[index] = el}
+                  ref={(el) => { itemsRef.current[index] = el; }}
                   className="w-[85vw] sm:w-[320px] md:w-auto shrink-0 snap-center flex flex-col items-center text-center group cursor-pointer relative z-10"
                 >
                   {/* Premium Icon Container */}
@@ -145,10 +141,10 @@ export default function HomeServices() {
                   
                   {/* Text Content */}
                   <h4 className="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300">
-                    {service.title}
+                    {t(`home_services.items.${service.id}.title`)}
                   </h4>
                   <p className="text-slate-500 dark:text-white/60 text-base md:text-lg max-w-[280px]">
-                    {service.description}
+                    {t(`home_services.items.${service.id}.description`)}
                   </p>
                 </div>
               );

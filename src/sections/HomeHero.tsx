@@ -1,7 +1,10 @@
 import { ArrowRight, ShieldCheck, Award, User } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Button from '../components/ui/Button';
 
 export default function HomeHero() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-[70vh] md:min-h-[80vh] lg:min-h-[max(100vh,900px)] flex items-center py-20 md:py-32 overflow-hidden bg-white dark:bg-[#0a1628]">
       {/* Background Image / Glow Effects Placeholder */}
@@ -16,23 +19,23 @@ export default function HomeHero() {
       <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center">
         <div className="w-full md:w-[60%] lg:w-[50%] pt-12 md:pt-0">
           <p className="text-[#E5A937] font-heading font-medium tracking-widest uppercase mb-3 md:mb-4 text-xs">
-            SMART CONTRACTS.
+            {t('home_hero.subtitle')}
           </p>
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] font-bold text-slate-900 dark:text-white leading-[1.1] mb-4 md:mb-6 tracking-tight">
-            Lower costs.<br />
-            <span className="text-[#0047AB]">Better energy</span><br />
-            decisions.
+            {t('home_hero.title_line1')}<br />
+            <span className="text-[#0047AB]">{t('home_hero.title_line2')}</span><br />
+            {t('home_hero.title_line3')}
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-white/80 mb-8 md:mb-10 max-w-md leading-relaxed font-light">
-            We review your contracts, compare tariffs and help you sustainably <span className="text-[#0047AB] font-medium">reduce energy costs</span>.
+            {t('home_hero.description_part1')}<span className="text-[#0047AB] font-medium">{t('home_hero.description_part2')}</span>{t('home_hero.description_part3')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="primary" icon={<ArrowRight size={18} />} className="w-full sm:w-auto justify-center">
-              Get your free comparison
+            <Button variant="primary" icon={<ArrowRight size={18} className="rtl:rotate-180" />} className="w-full sm:w-auto justify-center">
+              {t('home_hero.get_comparison')}
             </Button>
-            <Button variant="outline" className="w-full sm:w-auto justify-center border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-[#051024] hover:text-slate-900 dark:hover:text-white" icon={<ArrowRight size={18} />}>
-              Our services
+            <Button variant="outline" className="w-full sm:w-auto justify-center border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-[#051024] hover:text-slate-900 dark:hover:text-white" icon={<ArrowRight size={18} className="rtl:rotate-180" />}>
+              {t('home_hero.our_services')}
             </Button>
           </div>
 
@@ -41,19 +44,19 @@ export default function HomeHero() {
               <div className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 bg-slate-50 dark:bg-[#051024] shadow-sm">
                 <ShieldCheck className="text-[#0047AB]" size={20} />
               </div>
-              <span className="text-sm font-medium leading-tight">Independent<br/>advice</span>
+              <span className="text-sm font-medium leading-tight">{t('home_hero.feature1_line1')}<br/>{t('home_hero.feature1_line2')}</span>
             </div>
             <div className="flex items-center gap-4 text-slate-900 dark:text-white pt-4 sm:pt-0">
               <div className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 bg-slate-50 dark:bg-[#051024] shadow-sm">
                 <Award className="text-[#0047AB]" size={20} />
               </div>
-              <span className="text-sm font-medium leading-tight">100%<br/>transparent</span>
+              <span className="text-sm font-medium leading-tight">{t('home_hero.feature2_line1')}<br/>{t('home_hero.feature2_line2')}</span>
             </div>
             <div className="flex items-center gap-4 text-slate-900 dark:text-white pt-4 sm:pt-0">
               <div className="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center shrink-0 bg-slate-50 dark:bg-[#051024] shadow-sm">
                 <User className="text-[#0047AB]" size={20} />
               </div>
-              <span className="text-sm font-medium leading-tight">Tailored to<br/>your needs</span>
+              <span className="text-sm font-medium leading-tight">{t('home_hero.feature3_line1')}<br/>{t('home_hero.feature3_line2')}</span>
             </div>
           </div>
         </div>

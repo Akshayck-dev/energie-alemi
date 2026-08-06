@@ -1,7 +1,11 @@
 import { Mail, Phone, MapPin, Clock, ShieldCheck, LineChart, Handshake, PhoneCall, Zap, ArrowRight, Headset, Flame } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import ContactForm from '../components/ContactForm';
+import { cn } from '../lib/utils';
 
 export default function Contact() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="bg-slate-50 dark:bg-[#051024] min-h-screen font-sans text-slate-900 dark:text-white">
       {/* Hero Section */}
@@ -13,16 +17,16 @@ export default function Contact() {
             <div className="pt-8 md:pt-0">
               <div className="flex items-center gap-2 text-[11px] md:text-[12px] font-bold tracking-[0.15em] uppercase text-[#f0a83f] mb-4">
                 <div className="w-6 h-[2px] bg-[#f0a83f] rounded-sm"></div>
-                We are here for you
+                {t('contact.header_sub')}
               </div>
               
               <h1 className="font-heading text-[44px] md:text-[64px] lg:text-[72px] leading-[1.05] font-extrabold text-[#00173A] dark:text-white mb-6 tracking-[-0.02em]">
-                Let's connect.<br />
-                <span className="text-[#f0a83f]">We'll take care.</span>
+                {t('contact.header_t1')}<br />
+                <span className="text-[#f0a83f]">{t('contact.header_t2')}</span>
               </h1>
               
               <p className="text-[16px] md:text-[18px] leading-[1.6] text-slate-600 dark:text-white/80 max-w-[500px] mb-10 font-medium">
-                Have questions or need advice? Our friendly team is ready to help you with anything you need. Reach out and we'll get back to you as soon as possible.
+                {t('contact.header_desc')}
               </p>
               
               {/* Features Row */}
@@ -32,8 +36,8 @@ export default function Contact() {
                     <PhoneCall size={20} strokeWidth={2} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#00173A] dark:text-white text-[15px] mb-1">Call Anytime</h4>
-                    <p className="text-slate-500 dark:text-white/60 text-[13px]">We're just a call away</p>
+                    <h4 className="font-bold text-[#00173A] dark:text-white text-[15px] mb-1">{t('contact.f1_t')}</h4>
+                    <p className="text-slate-500 dark:text-white/60 text-[13px]">{t('contact.f1_d')}</p>
                   </div>
                 </div>
                 
@@ -42,8 +46,8 @@ export default function Contact() {
                     <Zap size={20} strokeWidth={2} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#00173A] dark:text-white text-[15px] mb-1">Quick Response</h4>
-                    <p className="text-slate-500 dark:text-white/60 text-[13px]">Usually within 24h</p>
+                    <h4 className="font-bold text-[#00173A] dark:text-white text-[15px] mb-1">{t('contact.f2_t')}</h4>
+                    <p className="text-slate-500 dark:text-white/60 text-[13px]">{t('contact.f2_d')}</p>
                   </div>
                 </div>
                 
@@ -52,8 +56,8 @@ export default function Contact() {
                     <ShieldCheck size={20} strokeWidth={2} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#00173A] dark:text-white text-[15px] mb-1">Trusted Support</h4>
-                    <p className="text-slate-500 dark:text-white/60 text-[13px]">Reliable. Friendly. Local.</p>
+                    <h4 className="font-bold text-[#00173A] dark:text-white text-[15px] mb-1">{t('contact.f3_t')}</h4>
+                    <p className="text-slate-500 dark:text-white/60 text-[13px]">{t('contact.f3_d')}</p>
                   </div>
                 </div>
               </div>
@@ -62,11 +66,11 @@ export default function Contact() {
               <div className="flex flex-col sm:flex-row items-center gap-6">
                 <a href="tel:+4917665949390" className="bg-[#0047AB] hover:bg-[#003380] text-white px-8 py-3.5 rounded-full font-bold text-[15px] flex items-center gap-2 transition-colors w-full sm:w-auto justify-center group shadow-md shadow-blue-900/20">
                   <PhoneCall size={18} strokeWidth={2} />
-                  Call us now
-                  <ArrowRight size={18} strokeWidth={2} className="ml-1 group-hover:translate-x-1 transition-transform" />
+                  {t('contact.btn_call')}
+                  <ArrowRight size={18} strokeWidth={2} className={cn("ltr:ml-1 rtl:mr-1 transition-transform", i18n.dir() === 'rtl' ? "group-hover:-translate-x-1 rotate-180" : "group-hover:translate-x-1")} />
                 </a>
                 <a href="mailto:info@energie-alemi.de" className="text-[#0047AB] dark:text-[#60a5fa] font-bold text-[15px] hover:text-[#003380] dark:hover:text-white transition-colors border-b-2 border-[#0047AB]/30 dark:border-[#60a5fa]/30 hover:border-[#0047AB] dark:hover:border-[#60a5fa] pb-1">
-                  Send us a message
+                  {t('contact.btn_msg')}
                 </a>
               </div>
             </div>
@@ -120,7 +124,7 @@ export default function Contact() {
             {/* Contact Info Block */}
             <div className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 p-6 md:p-[34px_30px] rounded-[20px] md:rounded-[22px] text-slate-900 dark:text-white shadow-sm relative overflow-hidden">
               <h3 className="font-heading text-[19px] md:text-[21px] font-extrabold mb-4 md:mb-[22px] relative z-10 tracking-[-0.01em]">
-                Contact Information
+                {t('contact.info_title')}
               </h3>
               
               <div className="flex flex-col relative z-10">
@@ -130,7 +134,7 @@ export default function Contact() {
                     <Phone size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                   </div>
                   <div>
-                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">Phone</p>
+                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">{t('contact.lbl_phone')}</p>
                     <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">0176 659 493 90</p>
                   </div>
                 </div>
@@ -141,7 +145,7 @@ export default function Contact() {
                     <Mail size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                   </div>
                   <div>
-                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">E-Mail</p>
+                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">{t('contact.lbl_email')}</p>
                     <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">info@energie-alemi.de</p>
                   </div>
                 </div>
@@ -152,7 +156,7 @@ export default function Contact() {
                     <MapPin size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                   </div>
                   <div>
-                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">Address</p>
+                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">{t('contact.lbl_addr')}</p>
                     <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">Alexianergraben 9<br/>52064 Aachen</p>
                   </div>
                 </div>
@@ -163,8 +167,8 @@ export default function Contact() {
                     <Clock size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                   </div>
                   <div>
-                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">Office Hours</p>
-                    <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">Mon – Sat: 10:00 – 19:00</p>
+                    <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">{t('contact.lbl_hours')}</p>
+                    <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">{t('contact.val_hours')}</p>
                   </div>
                 </div>
               </div>
@@ -173,7 +177,7 @@ export default function Contact() {
             {/* Why choose us Block */}
             <div className="bg-white dark:bg-[#0a1628] p-6 md:p-[32px_30px] rounded-[20px] md:rounded-[22px] shadow-[0_4px_16px_rgba(10,22,40,0.06)] md:shadow-[0_8px_24px_rgba(10,22,40,0.06)] border border-[#e5e9f0]">
               <h3 className="font-heading text-[19px] md:text-[21px] font-extrabold text-[#101828] mb-4 md:mb-[22px] tracking-[-0.01em]">
-                Why choose Energie Alemi?
+                {t('contact.why_title')}
               </h3>
               
               <div className="flex flex-col">
@@ -183,8 +187,8 @@ export default function Contact() {
                     <ShieldCheck size={19} strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">Independent & Transparent</h4>
-                    <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">We provide neutral advice with 100% transparency.</p>
+                    <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">{t('contact.why_f1_t')}</h4>
+                    <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f1_d')}</p>
                   </div>
                 </div>
                 
@@ -194,8 +198,8 @@ export default function Contact() {
                     <LineChart size={19} strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">Tailored Solutions</h4>
-                    <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">We find the best tariffs and contracts that perfectly fit your needs.</p>
+                    <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">{t('contact.why_f2_t')}</h4>
+                    <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f2_d')}</p>
                   </div>
                 </div>
                 
@@ -205,8 +209,8 @@ export default function Contact() {
                     <Handshake size={19} strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">Personal Support</h4>
-                    <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">We're with you every step of the way – reliable and committed.</p>
+                    <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">{t('contact.why_f3_t')}</h4>
+                    <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f3_d')}</p>
                   </div>
                 </div>
               </div>
@@ -229,15 +233,15 @@ export default function Contact() {
               {/* Mobile Tag & Pin */}
               <div className="md:hidden inline-flex items-center gap-[6px] text-[11px] font-bold tracking-[0.1em] text-[#f0a83f] uppercase mb-3.5">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#f0a83f]"></div>
-                Aachen, Germany
+                {t('contact.map_tag')}
               </div>
               <div className="md:hidden w-11 h-11 border-[1.5px] border-[#f0a83f] rounded-full flex items-center justify-center text-[#f0a83f] mb-3.5">
                 <MapPin size={20} strokeWidth={1.6} />
               </div>
               
-              <h3 className="font-heading text-[19px] md:text-[24px] font-extrabold tracking-[-0.01em] mb-2 md:mb-[8px]">Located in Aachen. Here for you.</h3>
+              <h3 className="font-heading text-[19px] md:text-[24px] font-extrabold tracking-[-0.01em] mb-2 md:mb-[8px]">{t('contact.map_title')}</h3>
               <p className="text-[13.5px] md:text-[15px] text-slate-600 dark:text-white/80 md:text-slate-600 dark:text-white/80 leading-[1.55] md:leading-[1.6]">
-                Visit us in person or get in touch online — we'll help you find the best solution.
+                {t('contact.map_desc')}
               </p>
             </div>
           </div>
@@ -248,11 +252,11 @@ export default function Contact() {
               <div className="w-5 h-5 rounded-full bg-[#f0a83f] flex items-center justify-center mb-2 relative">
                 <div className="w-2 h-2 rounded-full bg-white dark:bg-[#0a1628]"></div>
               </div>
-              <span className="text-[12px] font-bold tracking-[0.1em] text-[#f0a83f]">AACHEN</span>
+              <span className="text-[12px] font-bold tracking-[0.1em] text-[#f0a83f]">{t('contact.map_city')}</span>
             </div>
             
             <button className="w-full md:w-auto mt-4 md:mt-0 bg-transparent border-[1.5px] border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 rounded-full py-4 md:py-[17px] px-0 md:px-[30px] text-[15px] font-bold flex items-center justify-center gap-2 md:gap-[10px] hover:bg-slate-100 dark:hover:bg-[#0c1d3d] hover:text-slate-900 dark:hover:text-white transition-colors">
-              View on map
+              {t('contact.map_btn')}
               <MapPin size={15} strokeWidth={1.6} />
             </button>
           </div>
