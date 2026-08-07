@@ -1,4 +1,4 @@
-import { ArrowRight, ShieldCheck, Award, User } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Button from '../components/ui/Button';

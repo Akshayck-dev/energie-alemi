@@ -1,16 +1,16 @@
 import { Zap, ShieldCheck, Users, LineChart,  ArrowRight, Handshake } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Button from '../components/ui/Button';
 import ownerImg from '../assets/owner.webp';
 import { cn } from '../lib/utils';
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
