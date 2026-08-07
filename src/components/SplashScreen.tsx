@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { cn } from '../lib/utils';
-import splashVideo from '../assets/spalsh final.mp4';
+import splashVideo from '../assets/spalsh cleaned.mp4';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
