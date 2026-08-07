@@ -220,7 +220,7 @@ export default function Contact() {
       </section>
 
       {/* Map Section */}
-      <section className="pb-8 md:pb-[20px] px-5 md:px-10 max-w-[1240px] mx-auto">
+      <section className="pb-8 md:pb-[40px] px-5 md:px-10 max-w-[1240px] mx-auto flex flex-col gap-6">
         <div className="relative rounded-[20px] md:rounded-[22px] overflow-hidden p-6 md:p-[46px_48px] text-slate-900 dark:text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-[30px] border border-slate-200 dark:border-white/10 shadow-sm bg-[linear-gradient(120deg,rgba(255,255,255,0.94),rgba(255,255,255,0.72)),repeating-linear-gradient(45deg,#f1f5f9_0_2px,#f8fafc_2px_40px)] dark:bg-[linear-gradient(120deg,rgba(5,16,36,0.94),rgba(5,16,36,0.72)),repeating-linear-gradient(45deg,#0a1628_0_2px,#051024_2px_40px)]">
           
           <div className="flex items-start gap-4 md:gap-[22px] max-w-[640px]">
@@ -255,11 +255,25 @@ export default function Contact() {
               <span className="text-[12px] font-bold tracking-[0.1em] text-[#f0a83f]">{t('contact.map_city')}</span>
             </div>
             
-            <button className="w-full md:w-auto mt-4 md:mt-0 bg-transparent border-[1.5px] border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 rounded-full py-4 md:py-[17px] px-0 md:px-[30px] text-[15px] font-bold flex items-center justify-center gap-2 md:gap-[10px] hover:bg-slate-100 dark:hover:bg-[#0c1d3d] hover:text-slate-900 dark:hover:text-white transition-colors">
+            <a href="https://maps.app.goo.gl/nLKRUxtVSPwW4qzH8" target="_blank" rel="noreferrer" className="w-full md:w-auto mt-4 md:mt-0 bg-transparent border-[1.5px] border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 rounded-full py-4 md:py-[17px] px-0 md:px-[30px] text-[15px] font-bold flex items-center justify-center gap-2 md:gap-[10px] hover:bg-slate-100 dark:hover:bg-[#0c1d3d] hover:text-slate-900 dark:hover:text-white transition-colors">
               {t('contact.map_btn')}
               <MapPin size={15} strokeWidth={1.6} />
-            </button>
+            </a>
           </div>
+        </div>
+
+        <div className="w-full h-[450px] md:h-[600px] rounded-[20px] md:rounded-[22px] overflow-hidden border border-slate-200 dark:border-white/10 shadow-sm relative z-0 bg-slate-100 dark:bg-[#051024]">
+          <iframe 
+            src="https://maps.google.com/maps?q=Alexianergraben+7,+52064+Aachen&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }} 
+            allowFullScreen 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full dark:invert dark:hue-rotate-180 dark:contrast-90 dark:opacity-80 transition-all"
+            title="Google Maps Location"
+          ></iframe>
         </div>
       </section>
     </div>

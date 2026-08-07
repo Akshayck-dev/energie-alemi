@@ -24,6 +24,11 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const { t, i18n } = useTranslation();
 
+  // Pages with a dark hero section background (where white text is needed at the top)
+  const hasDarkHero = ['/', '/electricity', '/gas', '/internet'].includes(location.pathname);
+  // If we are at the top of a page WITHOUT a dark hero, force the adaptive (dark/light mode aware) text styling
+  const useAdaptiveText = isScrolled || !hasDarkHero;
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -71,7 +76,7 @@ export default function Navbar() {
                 to={link.path}
                 className={cn(
                   "relative text-sm font-semibold transition-colors group",
-                  isScrolled
+                  useAdaptiveText
                     ? "text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
                     : "text-white/80 hover:text-white"
                 )}
@@ -93,12 +98,12 @@ export default function Navbar() {
 
         {/* CTA and Theme Toggle */}
         <div className="hidden md:flex items-center gap-4">
-          <LanguageSwitcher isScrolled={isScrolled} />
+          <LanguageSwitcher isScrolled={useAdaptiveText} />
           <button 
             onClick={toggleTheme} 
             className={cn(
               "w-10 h-10 rounded-full border flex items-center justify-center transition-colors",
-              isScrolled
+              useAdaptiveText
                 ? "border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5"
                 : "border-white/20 text-white/80 hover:bg-white/10 hover:text-white"
             )}
@@ -112,12 +117,12 @@ export default function Navbar() {
         </div>
 
         <div className="flex md:hidden items-center gap-3">
-          <LanguageSwitcher isScrolled={isScrolled} />
+          <LanguageSwitcher isScrolled={useAdaptiveText} />
           <button 
             onClick={toggleTheme} 
             className={cn(
               "w-10 h-10 rounded-full border flex items-center justify-center transition-colors z-50 pointer-events-auto",
-              isScrolled
+              useAdaptiveText
                 ? "border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5"
                 : "border-white/20 text-white/80 hover:bg-white/10 hover:text-white"
             )}
@@ -128,7 +133,7 @@ export default function Navbar() {
           <button 
             className={cn(
               "z-50 shrink-0 pointer-events-auto",
-              isScrolled ? "text-slate-900 dark:text-white" : "text-white"
+              useAdaptiveText ? "text-slate-900 dark:text-white" : "text-white"
             )}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >

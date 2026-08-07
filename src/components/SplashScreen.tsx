@@ -20,8 +20,8 @@ export default function SplashScreen() {
       const targetDuration = Math.max(0.1, duration - 3);
       endTimeRef.current = targetDuration;
       
-      // Calculate speed so the trimmed video plays in exactly 5 seconds
-      const speed = targetDuration / 5;
+      // Calculate speed so the trimmed video plays in exactly 2.5 seconds
+      const speed = targetDuration / 2.5;
       videoRef.current.playbackRate = speed;
     }
   };
@@ -42,7 +42,7 @@ export default function SplashScreen() {
       if (isVisible && !isFadingOut) {
         handleVideoEnd();
       }
-    }, 5500); // Failsafe after 5.5 seconds
+    }, 3000); // Failsafe after 3.0 seconds
     return () => clearTimeout(timer);
   }, [isVisible, isFadingOut]);
 
