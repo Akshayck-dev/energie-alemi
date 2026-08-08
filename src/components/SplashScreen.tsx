@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { cn } from '../lib/utils';
 import { motion } from 'framer-motion';
-import splashVideo from '../assets/hero_splash_animated.mp4';
+import splashVideo from '../assets/hero_splash_final.mp4';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
