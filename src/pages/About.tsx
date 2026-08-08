@@ -26,7 +26,7 @@ export default function About() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628] min-h-screen">
-      <SEO title="Über uns" description="Erfahren Sie mehr über Energie Alemi. Ihr zuverlässiger und unabhängiger Berater für Energie und Telekommunikation." />
+      <SEO title="Über uns" description="Erfahren Sie mehr über Energie Alemi. Ihr zuverlässiger und unabhängiger Berater für Energie und Telekommunikation." url="/about" />
       {/* Hero Section */}
       <div className="sticky top-0 z-0 md:relative">
         <section className="relative flex items-center pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 overflow-hidden bg-white dark:bg-[#051024]">
@@ -208,7 +208,7 @@ export default function About() {
                      src={ownerImg} 
                      alt={t('about.founder_image_alt', 'Shoaib Alemi, Founder of Energie Alemi')}
                      className="w-[85%] max-w-[500px] object-cover transform scale-x-[-1] rounded-3xl transition-transform duration-700 group-hover:scale-[1.02]"
-                   />
+                    width="500" height="600" />
                  
                    {/* Signature Graphic */}
                    <div className="z-20 w-[85%] max-w-[500px] flex justify-end pr-4">

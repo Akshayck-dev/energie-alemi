@@ -27,9 +27,9 @@ export default function HomeFeatures() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="w-full lg:w-1/3"
           >
-            <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+            <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
               {t('home_features.subtitle')}
-            </h3>
+            </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 md:mb-6">
               {t('home_features.title')}
             </h2>

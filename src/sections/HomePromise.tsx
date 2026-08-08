@@ -14,9 +14,9 @@ export default function HomePromise() {
         <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           
           <div className="w-full lg:w-5/12 relative z-20">
-            <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+            <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
               {t('home_promise.subtitle')}
-            </h3>
+            </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
               {t('home_promise.title_line1')}<br />
               <span className="text-[#0047AB]">{t('home_promise.title_line2')}</span>
@@ -54,7 +54,7 @@ export default function HomePromise() {
                  src={ownerImg} 
                  alt="Advisor" 
                  className="w-full aspect-square md:aspect-auto md:h-auto md:max-h-[600px] object-cover object-top rounded-3xl shadow-xl border border-slate-200 dark:border-white/10"
-               />
+                width="500" height="600" />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-50 dark:from-[#051024] via-transparent to-transparent z-10 rounded-3xl" />
             </div>
 

@@ -97,9 +97,9 @@ export default function HomeServices() {
         
         {/* Section Header */}
         <div className="mb-10 md:mb-16">
-          <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+          <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
             {t('home_services.subtitle')}
-          </h3>
+          </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
             {t('home_services.title_part1')} <span className="text-slate-400 dark:text-white/50">{t('home_services.title_part2')}</span>
           </h2>
@@ -111,8 +111,10 @@ export default function HomeServices() {
           <img 
             ref={imageRef}
             src="/smart-home.webp" 
-            alt="Modern European Smart Home" 
-            className="w-full h-full object-cover object-center origin-center"
+            alt="Smart Home Energy Management"
+            width={800}
+            height={600}
+            className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
           />
         </div>
 

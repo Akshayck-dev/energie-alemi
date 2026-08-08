@@ -79,7 +79,7 @@ export default function Electricity() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Stromvergleich" description="Jetzt Stromanbieter vergleichen und sparen. Günstige Stromtarife für Ihren Haushalt oder Ihr Unternehmen." />
+      <SEO title="Stromvergleich" description="Jetzt Stromanbieter vergleichen und sparen. Günstige Stromtarife für Ihren Haushalt oder Ihr Unternehmen." url="/electricity" />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"
