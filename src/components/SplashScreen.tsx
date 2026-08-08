@@ -46,6 +46,17 @@ export default function SplashScreen() {
     return () => clearTimeout(timer);
   }, [isVisible, isFadingOut]);
 
+  // Force play for mobile browsers that might ignore autoPlay attribute
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.defaultMuted = true;
+      videoRef.current.muted = true;
+      videoRef.current.play().catch(() => {
+        // If play fails, the failsafe timeout will handle removing the splash screen
+      });
+    }
+  }, []);
+
   if (!isVisible) return null;
 
   return (
@@ -63,6 +74,7 @@ export default function SplashScreen() {
         src={splashVideo}
         autoPlay
         muted
+        defaultMuted
         playsInline
         onLoadedMetadata={handleLoadedMetadata}
         onTimeUpdate={handleTimeUpdate}

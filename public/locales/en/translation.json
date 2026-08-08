@@ -58,6 +58,18 @@
       }
     }
   },
+  "home_process": {
+    "subtitle": "HOW IT WORKS",
+    "title": "In 4 simple steps",
+    "step1_title": "Contact & Consultation",
+    "step1_desc": "We discuss your current situation and analyze your needs free of charge.",
+    "step2_title": "Analysis & Comparison",
+    "step2_desc": "We compare hundreds of tariffs and find the best offer for you.",
+    "step3_title": "Contract Optimization",
+    "step3_desc": "We take care of the entire switching process smoothly for you.",
+    "step4_title": "Long-term Support",
+    "step4_desc": "Even after the switch, we remain your reliable point of contact."
+  },
   "home_promise": {
     "subtitle": "OUR PROMISE",
     "title_line1": "Reliable advice.",

@@ -6,6 +6,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import FloatingActionButtons from '../components/FloatingActionButtons';
+import ScrollProgress from '../components/ScrollProgress';
+import MobileBottomNav from '../components/MobileBottomNav';
 import { useScrollAnimations } from '../hooks/useScrollAnimations';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -49,12 +51,14 @@ export default function MainLayout() {
 
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-[#0a1628]">
+      <ScrollProgress />
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pb-16 md:pb-0">
         <Outlet />
       </main>
       <Footer />
       <FloatingActionButtons />
+      <MobileBottomNav />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import { useTranslation } from 'react-i18next';
+import Lenis from 'lenis';
 import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
 import Gas from './pages/Gas';
@@ -14,9 +15,34 @@ import { ThemeProvider } from './contexts/ThemeContext';
 export default function App() {
   const { i18n } = useTranslation();
 
+  // Handle RTL direction
   useEffect(() => {
     document.dir = i18n.dir();
   }, [i18n, i18n.language]);
+
+  // Initialize Lenis smooth scroll
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      touchMultiplier: 2,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
 
   return (
     <ThemeProvider>

@@ -1,6 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Button from '../components/ui/Button';
 
 import heroElectricity from '../assets/hero_elecrticty_video.mp4';
@@ -17,6 +18,10 @@ export default function HomeHero() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  const { scrollY } = useScroll();
+  const yParallax = useTransform(scrollY, [0, 500], [0, 150]);
+  const opacityParallax = useTransform(scrollY, [0, 400], [1, 0]);
+
   const advanceVideo = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % HERO_VIDEOS.length);
   }, []);
@@ -25,6 +30,8 @@ export default function HomeHero() {
     // Play the active video from the start
     const video = videoRefs.current[activeIndex];
     if (video) {
+      video.defaultMuted = true;
+      video.muted = true;
       video.currentTime = 0;
       video.play().catch(() => {});
     }
@@ -47,6 +54,7 @@ export default function HomeHero() {
             ref={(el) => { videoRefs.current[i] = el; }}
             src={src}
             muted
+            defaultMuted
             playsInline
             preload="auto"
             className="absolute inset-0 w-full h-full object-cover object-[center_60%] md:object-[80%_60%]"
@@ -64,7 +72,10 @@ export default function HomeHero() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center">
-        <div className="w-full md:w-[60%] lg:w-[55%] pt-12 md:pt-0">
+        <motion.div 
+          className="w-full md:w-[60%] lg:w-[55%] pt-12 md:pt-0"
+          style={{ y: yParallax, opacity: opacityParallax }}
+        >
           <p className="text-[#E5A937] font-heading font-medium tracking-widest uppercase mb-3 md:mb-4 text-xs">
             {t('home_hero.subtitle')}
           </p>
@@ -86,7 +97,7 @@ export default function HomeHero() {
             </Button>
           </div>
 
-        </div>
+        </motion.div>
       </div>
     </section>
   );

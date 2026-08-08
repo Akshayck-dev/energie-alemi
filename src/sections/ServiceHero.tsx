@@ -83,7 +83,7 @@ export default function ServiceHero({
           </p>
 
           {/* Bullet Points */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+          <div className="hidden md:grid md:grid-cols-3 gap-6 md:gap-8 mb-12">
             {bulletPoints.map((point, idx) => (
               <div key={idx} className="flex gap-4 items-start">
                 <div className={cn("mt-1 flex-shrink-0", isDark ? "text-amber-500" : "text-amber-500")}>

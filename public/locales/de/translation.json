@@ -58,6 +58,18 @@
       }
     }
   },
+  "home_process": {
+    "subtitle": "WIE ES FUNKTIONIERT",
+    "title": "In 4 einfachen Schritten",
+    "step1_title": "Kontakt & Beratung",
+    "step1_desc": "Wir besprechen Ihre aktuelle Situation und analysieren Ihren Bedarf kostenlos.",
+    "step2_title": "Analyse & Vergleich",
+    "step2_desc": "Wir vergleichen hunderte Tarife und finden das beste Angebot für Sie.",
+    "step3_title": "Vertragsoptimierung",
+    "step3_desc": "Wir übernehmen den kompletten Wechselprozess reibungslos für Sie.",
+    "step4_title": "Langfristiger Support",
+    "step4_desc": "Auch nach dem Wechsel bleiben wir Ihr verlässlicher Ansprechpartner."
+  },
   "home_promise": {
     "subtitle": "UNSER VERSPRECHEN",
     "title_line1": "Zuverlässige Beratung.",
