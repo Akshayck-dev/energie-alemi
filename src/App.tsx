@@ -12,29 +12,6 @@ import Contact from './pages/Contact';
 import SplashScreen from './components/SplashScreen';
 import { ThemeProvider } from './contexts/ThemeContext';
 
-import { useLocation } from 'react-router';
-import { AnimatePresence } from 'framer-motion';
-import PageTransition from './components/PageTransition';
-
-function AnimatedRoutes() {
-  const location = useLocation();
-  
-  return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-          <Route path="/gas" element={<PageTransition><Gas /></PageTransition>} />
-          <Route path="/internet" element={<PageTransition><Internet /></PageTransition>} />
-          <Route path="/electricity" element={<PageTransition><Electricity /></PageTransition>} />
-          <Route path="/about" element={<PageTransition><About /></PageTransition>} />
-          <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-        </Route>
-      </Routes>
-    </AnimatePresence>
-  );
-}
-
 export default function App() {
   const { i18n } = useTranslation();
 
@@ -71,7 +48,16 @@ export default function App() {
     <ThemeProvider>
       <BrowserRouter>
         <SplashScreen />
-        <AnimatedRoutes />
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/gas" element={<Gas />} />
+          <Route path="/internet" element={<Internet />} />
+          <Route path="/electricity" element={<Electricity />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
       </BrowserRouter>
     </ThemeProvider>
   );
