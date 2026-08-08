@@ -1,48 +1,25 @@
 import { useState, useEffect, useRef } from 'react';
 import { cn } from '../lib/utils';
-import splashVideo from '../assets/spalsh cleaned.mp4';
+import { motion } from 'framer-motion';
+import splashVideo from '../assets/hero_splash_animated.mp4';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
   const [isFadingOut, setIsFadingOut] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const endTimeRef = useRef<number>(0);
 
   const handleVideoEnd = () => {
     setIsFadingOut(true);
     setTimeout(() => setIsVisible(false), 800);
   };
 
-  const handleLoadedMetadata = () => {
-    if (videoRef.current) {
-      const duration = videoRef.current.duration;
-      // Trim the last 3 seconds
-      const targetDuration = Math.max(0.1, duration - 3);
-      endTimeRef.current = targetDuration;
-      
-      // Calculate speed so the trimmed video plays in exactly 2.5 seconds
-      const speed = targetDuration / 2.5;
-      videoRef.current.playbackRate = speed;
-    }
-  };
-
-  const handleTimeUpdate = () => {
-    if (videoRef.current && endTimeRef.current > 0) {
-      if (videoRef.current.currentTime >= endTimeRef.current && !isFadingOut) {
-        videoRef.current.pause(); // pause so we don't see the trimmed part while fading
-        handleVideoEnd();
-        endTimeRef.current = 0;
-      }
-    }
-  };
-
-  // Failsafe in case video doesn't play automatically (browser policies)
+  // Failsafe in case video doesn't play automatically or gets stuck
   useEffect(() => {
     const timer = setTimeout(() => {
       if (isVisible && !isFadingOut) {
         handleVideoEnd();
       }
-    }, 3000); // Failsafe after 3.0 seconds
+    }, 4500); // 4.5 seconds gives the new video time to play
     return () => clearTimeout(timer);
   }, [isVisible, isFadingOut]);
 
@@ -64,8 +41,6 @@ export default function SplashScreen() {
       className={cn(
         "fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-700 ease-in-out",
         isFadingOut ? "opacity-0 pointer-events-none" : "opacity-100",
-        // Defaulting to a transparent container but with dark overlay just in case
-        // Using bg-[#051024] to match the brand color
         "bg-[#051024]"
       )}
     >
@@ -75,10 +50,20 @@ export default function SplashScreen() {
         autoPlay
         muted
         playsInline
-        onLoadedMetadata={handleLoadedMetadata}
-        onTimeUpdate={handleTimeUpdate}
-        className="absolute inset-0 w-full h-full object-cover" 
+        className="absolute inset-0 w-full h-full object-cover opacity-80" 
       />
+      
+      {/* Animated Text Overlay */}
+      <motion.div 
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8, duration: 1.2, ease: "easeOut" }}
+        className="absolute inset-0 z-10 flex flex-col items-center justify-center pointer-events-none mt-32 md:mt-48"
+      >
+        <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-white tracking-[0.3em] uppercase drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+          Energie Alemi
+        </h1>
+      </motion.div>
     </div>
   );
 }
