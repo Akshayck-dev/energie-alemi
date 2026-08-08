@@ -58,7 +58,7 @@ export default function SplashScreen() {
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 1.2, ease: "easeOut" }}
-        className="absolute top-[60%] left-0 right-0 z-10 flex flex-col items-center justify-center pointer-events-none"
+        className="absolute bottom-[10%] left-0 right-0 z-10 flex flex-col items-center justify-center pointer-events-none"
       >
         <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-white tracking-[0.3em] uppercase drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">
           Energie Alemi
