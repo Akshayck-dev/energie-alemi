@@ -5,9 +5,10 @@ interface SEOProps {
   description?: string;
   keywords?: string;
   url?: string;
+  faqs?: Array<{ question: string; answer: string }>;
 }
 
-export default function SEO({ title, description, keywords, url }: SEOProps) {
+export default function SEO({ title, description, keywords, url, faqs }: SEOProps) {
   
   // Natural keyword optimization for German energy market
   const defaultTitle = 'Energie Alemi - Stromtarife und Gasvergleich';
@@ -17,32 +18,80 @@ export default function SEO({ title, description, keywords, url }: SEOProps) {
   const seoDescription = description || defaultDescription;
   const seoKeywords = keywords || "Stromvergleich, Gasvergleich, Gastarife vergleichen, Stromanbieter wechseln, günstiger Stromtarif, Energieanbieter vergleichen, Energie Alemi";
   
-  const canonicalUrl = url ? `https://energie-alemi.de${url}` : 'https://energie-alemi.de';
+  // Dynamic Base URL
+  const baseUrl = import.meta.env.VITE_SITE_URL || 'PRODUCTION_DOMAIN';
+  const canonicalUrl = url ? `${baseUrl}${url}` : baseUrl;
 
-  // Structured Data for Organization and WebSite
+  // Base Structured Data
+  const graph: any[] = [
+    {
+      "@type": "WebSite",
+      "@id": `${baseUrl}/#website`,
+      "url": `${baseUrl}/`,
+      "name": "Energie Alemi",
+      "description": "Kostenloser Vergleich für Strom, Gas und Internet.",
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "Organization",
+      "@id": `${baseUrl}/#organization`,
+      "name": "Energie Alemi",
+      "url": `${baseUrl}/`,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${baseUrl}/favicon.webp`
+      },
+      "description": "Unabhängiger Berater für Energie- und Telekommunikationstarife in Deutschland."
+    }
+  ];
+
+  // Breadcrumb Schema
+  if (url && url !== '/') {
+    const parts = url.split('/').filter(Boolean);
+    const breadcrumbItems = parts.map((part, index) => {
+      const isLast = index === parts.length - 1;
+      return {
+        "@type": "ListItem",
+        "position": index + 2,
+        "name": part.charAt(0).toUpperCase() + part.slice(1),
+        "item": isLast ? undefined : `${baseUrl}/${parts.slice(0, index + 1).join('/')}`
+      };
+    });
+
+    graph.push({
+      "@type": "BreadcrumbList",
+      "@id": `${canonicalUrl}/#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": `${baseUrl}/`
+        },
+        ...breadcrumbItems
+      ]
+    });
+  }
+
+  // FAQ Schema
+  if (faqs && faqs.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${canonicalUrl}/#faq`,
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    });
+  }
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://energie-alemi.de/#website",
-        "url": "https://energie-alemi.de/",
-        "name": "Energie Alemi",
-        "description": "Kostenloser Vergleich für Strom, Gas und Internet.",
-        "inLanguage": "de-DE"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://energie-alemi.de/#organization",
-        "name": "Energie Alemi",
-        "url": "https://energie-alemi.de/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://energie-alemi.de/favicon.webp"
-        },
-        "description": "Unabhängiger Berater für Energie- und Telekommunikationstarife in Deutschland."
-      }
-    ]
+    "@graph": graph
   };
 
   return (
@@ -59,14 +108,14 @@ export default function SEO({ title, description, keywords, url }: SEOProps) {
       <meta property="og:title" content={seoTitle} />
       <meta property="og:description" content={seoDescription} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://energie-alemi.de/favicon.webp" />
+      <meta property="og:image" content={`${baseUrl}/favicon.webp`} />
       <meta property="og:url" content={canonicalUrl} />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seoTitle} />
       <meta name="twitter:description" content={seoDescription} />
-      <meta name="twitter:image" content="https://energie-alemi.de/favicon.webp" />
+      <meta name="twitter:image" content={`${baseUrl}/favicon.webp`} />
       
       {/* Structured Data */}
       <script type="application/ld+json">

@@ -80,7 +80,7 @@ export default function Gas() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Gasvergleich" description="Jetzt Gasanbieter vergleichen und wechseln. Wir finden den günstigsten und besten Gastarif für Sie." url="/gas" />
+      <SEO title="Gasvergleich" description="Jetzt Gasanbieter vergleichen und wechseln. Wir finden den günstigsten und besten Gastarif für Sie." url="/gas" faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

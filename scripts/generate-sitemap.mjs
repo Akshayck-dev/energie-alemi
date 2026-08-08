@@ -5,7 +5,17 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const BASE_URL = 'https://energie-alemi.de';
+function getEnvValue(key) {
+  try {
+    const envFile = fs.readFileSync(path.join(__dirname, '../.env'), 'utf-8');
+    const match = envFile.match(new RegExp(`^${key}=(.*)$`, 'm'));
+    return match ? match[1].trim() : undefined;
+  } catch (e) {
+    return undefined;
+  }
+}
+
+const BASE_URL = process.env.VITE_SITE_URL || getEnvValue('VITE_SITE_URL') || 'PRODUCTION_DOMAIN';
 
 const routes = [
   { url: '/', priority: 1.0, changefreq: 'weekly' },

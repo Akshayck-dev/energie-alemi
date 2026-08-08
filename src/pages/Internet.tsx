@@ -80,7 +80,7 @@ export default function Internet() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Internet & Festnetz" description="Vergleichen Sie Internet- und DSL-Anbieter. Sichern Sie sich den schnellsten und günstigsten Tarif." url="/internet" />
+      <SEO title="Internet & Festnetz" description="Vergleichen Sie Internet- und DSL-Anbieter. Sichern Sie sich den schnellsten und günstigsten Tarif." url="/internet" faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

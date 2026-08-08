@@ -10,6 +10,7 @@ import Internet from './pages/Internet';
 import Electricity from './pages/Electricity';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 import SplashScreen from './components/SplashScreen';
 import { ThemeProvider } from './contexts/ThemeContext';
 import SEO from './components/SEO';
@@ -36,6 +37,7 @@ export default function App() {
               <Route path="/electricity" element={<Electricity />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
         </BrowserRouter>
