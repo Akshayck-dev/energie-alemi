@@ -92,7 +92,7 @@ export default function HomeServices() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 md:py-32 bg-white dark:bg-[#0a1628] relative z-20 overflow-hidden">
+    <section id="services" ref={sectionRef} className="py-20 md:py-32 bg-white dark:bg-[#0a1628] relative z-20 overflow-hidden">
       <div className="container mx-auto px-6 max-w-[1400px]">
         
         {/* Section Header */}
@@ -100,7 +100,7 @@ export default function HomeServices() {
           <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
             {t('home_services.subtitle')}
           </h3>
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
             {t('home_services.title_part1')} <span className="text-slate-400 dark:text-white/50">{t('home_services.title_part2')}</span>
           </h2>
         </div>
@@ -140,10 +140,10 @@ export default function HomeServices() {
                   </div>
                   
                   {/* Text Content */}
-                  <h4 className="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300">
+                  <h4 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300">
                     {t(`home_services.items.${service.id}.title`)}
                   </h4>
-                  <p className="text-slate-500 dark:text-white/60 text-base md:text-lg max-w-[280px]">
+                  <p className="text-slate-500 dark:text-white/60 text-base max-w-[280px]">
                     {t(`home_services.items.${service.id}.description`)}
                   </p>
                 </div>

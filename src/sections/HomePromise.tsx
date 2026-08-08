@@ -17,7 +17,7 @@ export default function HomePromise() {
             <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
               {t('home_promise.subtitle')}
             </h3>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
               {t('home_promise.title_line1')}<br />
               <span className="text-[#0047AB]">{t('home_promise.title_line2')}</span>
             </h2>

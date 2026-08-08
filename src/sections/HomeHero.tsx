@@ -3,13 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Button from '../components/ui/Button';
+import { cn } from '../lib/utils';
 
 import heroElectricity from '../assets/hero_elecrticty_video.mp4';
 import heroGas from '../assets/hero_gas_video.mp4';
 import heroInternet from '../assets/hero_internet_video.mp4';
 
 const HERO_VIDEOS = [heroElectricity, heroGas, heroInternet];
-const VIDEO_DURATION = 4; // seconds per video before switching
+const VIDEO_DURATION = 8; // Increased to 8 seconds per video before switching
 const FADE_DURATION = 1500; // 1.5s smooth crossfade
 
 export default function HomeHero() {
@@ -30,7 +31,6 @@ export default function HomeHero() {
     // Play the active video from the start
     const video = videoRefs.current[activeIndex];
     if (video) {
-      video.defaultMuted = true;
       video.muted = true;
       video.currentTime = 0;
       video.play().catch(() => {});
@@ -78,25 +78,56 @@ export default function HomeHero() {
           <p className="text-[#E5A937] font-heading font-medium tracking-widest uppercase mb-3 md:mb-4 text-xs">
             {t('home_hero.subtitle')}
           </p>
-          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] font-bold text-white leading-[1.1] mb-4 md:mb-6 tracking-tight">
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-4 md:mb-6 tracking-tight">
             {t('home_hero.title_line1')}<br />
             <span className="text-[#4F8CFF]">{t('home_hero.title_line2')}</span><br />
             {t('home_hero.title_line3')}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/75 mb-8 md:mb-10 max-w-md leading-relaxed font-light">
+          <p className="text-base text-white/75 mb-8 md:mb-10 max-w-md leading-relaxed font-light">
             {t('home_hero.description_part1')}<span className="text-[#4F8CFF] font-medium">{t('home_hero.description_part2')}</span>{t('home_hero.description_part3')}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="primary" icon={<ArrowRight size={18} className="rtl:rotate-180" />} className="w-full sm:w-auto justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12 md:mb-0">
+            <Button 
+              variant="primary" 
+              icon={<ArrowRight size={18} className="rtl:rotate-180" />} 
+              className="w-full sm:w-auto justify-center"
+              onClick={() => {
+                const el = document.getElementById('meeting');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               {t('home_hero.get_comparison')}
             </Button>
-            <Button variant="outline" className="w-full sm:w-auto justify-center border-white/20 text-white hover:bg-white/10 hover:text-white" icon={<ArrowRight size={18} className="rtl:rotate-180" />}>
+            <Button 
+              variant="outline" 
+              className="w-full sm:w-auto justify-center border-white/20 text-white hover:bg-white/10 hover:text-white" 
+              icon={<ArrowRight size={18} className="rtl:rotate-180" />}
+              onClick={() => {
+                const el = document.getElementById('services');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               {t('home_hero.our_services')}
             </Button>
           </div>
 
         </motion.div>
+      </div>
+
+      {/* Slideshow Progress Indicators */}
+      <div className="absolute bottom-8 md:bottom-12 left-0 right-0 z-20 flex justify-center gap-3">
+        {HERO_VIDEOS.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setActiveIndex(i)}
+            className={cn(
+              "h-1.5 rounded-full transition-all duration-500",
+              activeIndex === i ? "w-10 bg-[#E5A937]" : "w-3 bg-white/40 hover:bg-white/70"
+            )}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
       </div>
     </section>
   );

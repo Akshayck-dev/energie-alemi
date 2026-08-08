@@ -41,7 +41,7 @@ export default function HomeProcess() {
           <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
             {t('home_process.subtitle')}
           </h3>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
             {t('home_process.title')}
           </h2>
           <div className="w-16 h-[3px] bg-[#0047AB] mx-auto"></div>

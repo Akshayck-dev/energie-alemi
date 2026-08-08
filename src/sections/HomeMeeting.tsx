@@ -7,7 +7,7 @@ export default function HomeMeeting() {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className="py-14 md:py-24 bg-slate-50 dark:bg-[#051024] border-t border-slate-200 dark:border-white/10">
+    <section id="meeting" className="py-14 md:py-24 bg-slate-50 dark:bg-[#051024] border-t border-slate-200 dark:border-white/10">
       <div className="container mx-auto px-6">
         
         {/* Header */}
@@ -15,7 +15,7 @@ export default function HomeMeeting() {
           <h3 className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
             {t('home_meeting.subtitle')}
           </h3>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
             {t('home_meeting.title')}
           </h2>
           <div className="w-16 h-[3px] bg-[#0047AB]"></div>
