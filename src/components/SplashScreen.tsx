@@ -41,7 +41,7 @@ export default function SplashScreen() {
       className={cn(
         "fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-700 ease-in-out",
         isFadingOut ? "opacity-0 pointer-events-none" : "opacity-100",
-        "bg-[#051024]"
+        "bg-[#E2E2E2]" // Matched to the typical light gray background of the video
       )}
     >
       <video 
@@ -50,7 +50,7 @@ export default function SplashScreen() {
         autoPlay
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-80" 
+        className="absolute inset-0 w-full h-full object-contain scale-75 md:scale-[0.6]" 
       />
       
       {/* Animated Text Overlay */}
@@ -60,7 +60,7 @@ export default function SplashScreen() {
         transition={{ delay: 0.8, duration: 1.2, ease: "easeOut" }}
         className="absolute bottom-[10%] left-0 right-0 z-10 flex flex-col items-center justify-center pointer-events-none"
       >
-        <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-white tracking-[0.3em] uppercase drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">
+        <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-[#0a1628] tracking-[0.3em] uppercase">
           Energie Alemi
         </h1>
       </motion.div>
