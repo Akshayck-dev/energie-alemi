@@ -54,7 +54,6 @@ export default function HomeHero() {
             ref={(el) => { videoRefs.current[i] = el; }}
             src={src}
             muted
-            defaultMuted
             playsInline
             preload="auto"
             className="absolute inset-0 w-full h-full object-cover object-[center_60%] md:object-[80%_60%]"

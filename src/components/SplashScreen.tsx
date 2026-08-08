@@ -74,7 +74,6 @@ export default function SplashScreen() {
         src={splashVideo}
         autoPlay
         muted
-        defaultMuted
         playsInline
         onLoadedMetadata={handleLoadedMetadata}
         onTimeUpdate={handleTimeUpdate}

@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import { Home, Zap, Flame, Wifi } from 'lucide-react';

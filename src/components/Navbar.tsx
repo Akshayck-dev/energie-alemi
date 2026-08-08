@@ -60,7 +60,6 @@ export default function Navbar() {
               src={logoVideo}
               autoPlay
               muted
-              defaultMuted
               loop
               playsInline
               className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125 pointer-events-none"
@@ -174,7 +173,6 @@ export default function Navbar() {
                       src={logoVideo}
                       autoPlay
                       muted
-                      defaultMuted
                       loop
                       playsInline
                       className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125 pointer-events-none"
