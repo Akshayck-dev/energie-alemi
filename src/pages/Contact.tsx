@@ -2,12 +2,14 @@ import { Mail, Phone, MapPin, Clock, ShieldCheck, LineChart, Handshake, PhoneCal
 import { useTranslation } from 'react-i18next';
 import ContactForm from '../components/ContactForm';
 import { cn } from '../lib/utils';
+import SEO from "../components/SEO";
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
 
   return (
     <div className="relative bg-slate-50 dark:bg-[#051024] min-h-screen font-sans text-slate-900 dark:text-white">
+      <SEO title="Kontakt" description="Haben Sie Fragen? Kontaktieren Sie Energie Alemi. Wir beraten Sie gerne zu Strom, Gas und Internet." />
       {/* Hero Section */}
       <div className="sticky top-0 z-0 md:relative">
         <section className="relative min-h-[60vh] md:min-h-[65vh] lg:min-h-[80vh] flex items-center pt-28 pb-32 overflow-hidden bg-white dark:bg-[#051024]">

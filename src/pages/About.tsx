@@ -4,6 +4,7 @@ import { motion, type Variants } from 'framer-motion';
 import Button from '../components/ui/Button';
 import ownerImg from '../assets/owner.webp';
 import { cn } from '../lib/utils';
+import SEO from "../components/SEO";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -25,6 +26,7 @@ export default function About() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628] min-h-screen">
+      <SEO title="Über uns" description="Erfahren Sie mehr über Energie Alemi. Ihr zuverlässiger und unabhängiger Berater für Energie und Telekommunikation." />
       {/* Hero Section */}
       <div className="sticky top-0 z-0 md:relative">
         <section className="relative flex items-center pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 overflow-hidden bg-white dark:bg-[#051024]">

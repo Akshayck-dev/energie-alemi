@@ -8,6 +8,7 @@ import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
 import elecHeroDesk from '../assets/electricity hero desk.webp';
+import SEO from "../components/SEO";
 
 export default function Electricity() {
   const { t, i18n } = useTranslation();
@@ -78,6 +79,7 @@ export default function Electricity() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
+      <SEO title="Stromvergleich" description="Jetzt Stromanbieter vergleichen und sparen. Günstige Stromtarife für Ihren Haushalt oder Ihr Unternehmen." />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

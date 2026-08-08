@@ -4,10 +4,12 @@ import HomeServices from '../sections/HomeServices';
 import HomeProcess from '../sections/HomeProcess';
 import HomePromise from '../sections/HomePromise';
 import HomeMeeting from '../sections/HomeMeeting';
+import SEO from "../components/SEO";
 
 export default function Home() {
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
+      <SEO title="Startseite" description="Willkommen bei Energie Alemi. Vergleichen Sie jetzt Strom, Gas und Internet Tarife kostenlos und sparen Sie!" />
       {/* Hero is sticky on mobile so the rest of the page slides over it */}
       <div className="sticky top-0 z-0 md:relative">
         <HomeHero />

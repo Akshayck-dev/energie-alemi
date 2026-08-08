@@ -9,6 +9,7 @@ import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
 import netHeroDesk from '../assets/internet hero desktop.webp';
 import netHeroMob from '../assets/internet hero mob.webp';
+import SEO from "../components/SEO";
 
 export default function Internet() {
   const { t, i18n } = useTranslation();
@@ -79,6 +80,7 @@ export default function Internet() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
+      <SEO title="Internet & Festnetz" description="Vergleichen Sie Internet- und DSL-Anbieter. Sichern Sie sich den schnellsten und günstigsten Tarif." />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

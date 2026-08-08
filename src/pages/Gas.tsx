@@ -9,6 +9,7 @@ import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
 import gasHeroDesk from '../assets/gas hero desk.webp';
 import gasHeroMob from '../assets/gas hero mob.webp';
+import SEO from "../components/SEO";
 
 export default function Gas() {
   const { t, i18n } = useTranslation();
@@ -79,6 +80,7 @@ export default function Gas() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
+      <SEO title="Gasvergleich" description="Jetzt Gasanbieter vergleichen und wechseln. Wir finden den günstigsten und besten Gastarif für Sie." />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"
