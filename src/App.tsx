@@ -13,6 +13,12 @@ import Contact from './pages/Contact';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import NotFound from './pages/NotFound';
+import RatgeberIndex from './pages/Ratgeber/RatgeberIndex';
+import StromanbieterWechseln from './pages/Ratgeber/articles/StromanbieterWechseln';
+import StromvergleichWoraufAchten from './pages/Ratgeber/articles/StromvergleichWoraufAchten';
+import GasvergleichPassenderTarif from './pages/Ratgeber/articles/GasvergleichPassenderTarif';
+import GasanbieterWechselnSchritt from './pages/Ratgeber/articles/GasanbieterWechselnSchritt';
+import InternetanbieterVergleichen from './pages/Ratgeber/articles/InternetanbieterVergleichen';
 import SplashScreen from './components/SplashScreen';
 import { ThemeProvider } from './contexts/ThemeContext';
 import SEO from './components/SEO';
@@ -41,6 +47,15 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/datenschutz" element={<Datenschutz />} />
+              
+              {/* Ratgeber Routes */}
+              <Route path="/ratgeber" element={<RatgeberIndex />} />
+              <Route path="/ratgeber/stromanbieter-wechseln" element={<StromanbieterWechseln />} />
+              <Route path="/ratgeber/stromvergleich" element={<StromvergleichWoraufAchten />} />
+              <Route path="/ratgeber/gasvergleich" element={<GasvergleichPassenderTarif />} />
+              <Route path="/ratgeber/gasanbieter-wechseln" element={<GasanbieterWechselnSchritt />} />
+              <Route path="/ratgeber/internetanbieter-vergleichen" element={<InternetanbieterVergleichen />} />
+              
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>

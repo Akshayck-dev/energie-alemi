@@ -36,4 +36,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>PRODUCTION_DOMAIN/ratgeber</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>PRODUCTION_DOMAIN/ratgeber/stromanbieter-wechseln</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>PRODUCTION_DOMAIN/ratgeber/stromvergleich</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>PRODUCTION_DOMAIN/ratgeber/gasvergleich</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>PRODUCTION_DOMAIN/ratgeber/gasanbieter-wechseln</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>PRODUCTION_DOMAIN/ratgeber/internetanbieter-vergleichen</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -14,6 +14,7 @@ const navLinks = [
   { key: 'electricity', path: '/electricity' },
   { key: 'gas', path: '/gas' },
   { key: 'internet', path: '/internet' },
+  { key: 'ratgeber', path: '/ratgeber' },
   { key: 'about_us', path: '/about' },
   { key: 'contact', path: '/contact' },
 ];

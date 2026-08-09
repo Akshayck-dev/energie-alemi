@@ -1,0 +1,59 @@
+
+export interface RatgeberArticle {
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  category: 'Strom' | 'Gas' | 'Internet';
+  publishedDate: string;
+  updatedDate?: string;
+  componentName: string;
+}
+
+export const articles: RatgeberArticle[] = [
+  {
+    id: '1',
+    slug: 'stromanbieter-wechseln',
+    title: 'Stromanbieter wechseln: So funktioniert der Wechsel',
+    description: 'Erfahren Sie, wann sich ein Wechsel lohnt, wie der Prozess abläuft und worauf Sie bei Fristen und dem alten Vertrag achten müssen.',
+    category: 'Strom',
+    publishedDate: '2026-08-09',
+    componentName: 'StromanbieterWechseln'
+  },
+  {
+    id: '2',
+    slug: 'stromvergleich',
+    title: 'Stromvergleich: Worauf sollte man bei einem Stromtarif achten?',
+    description: 'Die wichtigsten Kriterien beim Stromvergleich: Arbeitspreis, Grundpreis, Preisgarantie und Vertragslaufzeit einfach erklärt.',
+    category: 'Strom',
+    publishedDate: '2026-08-09',
+    componentName: 'StromvergleichWoraufAchten'
+  },
+  {
+    id: '3',
+    slug: 'gasvergleich',
+    title: 'Gasvergleich: So finden Sie einen passenden Gastarif',
+    description: 'Worauf es beim Gasvergleich ankommt. Alle wichtigen Faktoren wie kWh-Preis, Grundgebühr und Kündigungsfristen verständlich erklärt.',
+    category: 'Gas',
+    publishedDate: '2026-08-09',
+    componentName: 'GasvergleichPassenderTarif'
+  },
+  {
+    id: '4',
+    slug: 'gasanbieter-wechseln',
+    title: 'Gasanbieter wechseln: Schritt für Schritt erklärt',
+    description: 'Den Gasanbieter zu wechseln ist einfach und sicher. Erfahren Sie Schritt für Schritt, welche Informationen Sie benötigen.',
+    category: 'Gas',
+    publishedDate: '2026-08-09',
+    componentName: 'GasanbieterWechselnSchritt'
+  },
+  {
+    id: '5',
+    slug: 'internetanbieter-vergleichen',
+    title: 'Internetanbieter vergleichen: Darauf sollten Sie achten',
+    description: 'DSL, Kabel oder Glasfaser? Was beim Internetvergleich wirklich zählt, um den besten und günstigsten Tarif zu finden.',
+    category: 'Internet',
+    publishedDate: '2026-08-09',
+    componentName: 'InternetanbieterVergleichen'
+  }
+];

@@ -6,9 +6,12 @@ interface SEOProps {
   keywords?: string;
   url?: string;
   faqs?: Array<{ question: string; answer: string }>;
+  isArticle?: boolean;
+  datePublished?: string;
+  dateModified?: string;
 }
 
-export default function SEO({ title, description, keywords, url, faqs }: SEOProps) {
+export default function SEO({ title, description, keywords, url, faqs, isArticle, datePublished, dateModified }: SEOProps) {
   
   // Natural keyword optimization for German energy market
   const defaultTitle = 'Energie Alemi - Stromtarife und Gasvergleich';
@@ -86,6 +89,31 @@ export default function SEO({ title, description, keywords, url, faqs }: SEOProp
           "text": faq.answer
         }
       }))
+    });
+  }
+
+  // Article Schema
+  if (isArticle) {
+    graph.push({
+      "@type": "Article",
+      "@id": `${canonicalUrl}/#article`,
+      "isPartOf": {
+        "@id": `${baseUrl}/#website`
+      },
+      "headline": seoTitle,
+      "description": seoDescription,
+      "datePublished": datePublished || new Date().toISOString().split('T')[0],
+      ...(dateModified ? { "dateModified": dateModified } : {}),
+      "author": {
+        "@id": `${baseUrl}/#organization`
+      },
+      "publisher": {
+        "@id": `${baseUrl}/#organization`
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalUrl
+      }
     });
   }
 

@@ -23,7 +23,13 @@ const routes = [
   { url: '/electricity', priority: 0.9, changefreq: 'weekly' },
   { url: '/internet', priority: 0.9, changefreq: 'weekly' },
   { url: '/about', priority: 0.6, changefreq: 'monthly' },
-  { url: '/contact', priority: 0.8, changefreq: 'monthly' }
+  { url: '/contact', priority: 0.8, changefreq: 'monthly' },
+  { url: '/ratgeber', priority: 0.8, changefreq: 'weekly' },
+  { url: '/ratgeber/stromanbieter-wechseln', priority: 0.7, changefreq: 'monthly' },
+  { url: '/ratgeber/stromvergleich', priority: 0.7, changefreq: 'monthly' },
+  { url: '/ratgeber/gasvergleich', priority: 0.7, changefreq: 'monthly' },
+  { url: '/ratgeber/gasanbieter-wechseln', priority: 0.7, changefreq: 'monthly' },
+  { url: '/ratgeber/internetanbieter-vergleichen', priority: 0.7, changefreq: 'monthly' }
 ];
 
 function generateSitemap() {
