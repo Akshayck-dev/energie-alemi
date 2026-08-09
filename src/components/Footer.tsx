@@ -8,12 +8,13 @@ export default function Footer() {
   const { t, i18n } = useTranslation();
 
   const quickLinks = [
-    { key: 'electricity', path: '/electricity' },
-    { key: 'gas', path: '/gas' },
-    { key: 'internet', path: '/internet' },
-    { key: 'about_us', path: '/about' },
-    { key: 'contact', path: '/contact' },
-    { key: 'data_protection', path: '/data-protection' }
+    { key: 'electricity', path: '/electricity', name: t('nav.electricity') },
+    { key: 'gas', path: '/gas', name: t('nav.gas') },
+    { key: 'internet', path: '/internet', name: t('nav.internet') },
+    { key: 'about_us', path: '/about', name: t('nav.about_us') },
+    { key: 'contact', path: '/contact', name: t('nav.contact') },
+    { key: 'impressum', path: '/impressum', name: 'Impressum' },
+    { key: 'datenschutz', path: '/datenschutz', name: 'Datenschutz' }
   ];
 
   return (
@@ -70,7 +71,7 @@ export default function Footer() {
                     to={link.path} 
                     className="text-slate-600 dark:text-white/80 hover:text-[#0047AB] transition-colors flex items-center gap-2 group capitalize font-medium"
                   >
-                    {link.key === 'data_protection' ? t(`footer.data_protection`) : t(`nav.${link.key}`).toLowerCase()}
+                    {link.name}
                     <span className={cn("hidden md:inline-block opacity-0 group-hover:opacity-100 transition-all text-xs", i18n.dir() === 'rtl' ? "translate-x-2 group-hover:translate-x-0" : "-translate-x-2 group-hover:translate-x-0")}>
                       {i18n.dir() === 'rtl' ? '❮' : '❯'}
                     </span>

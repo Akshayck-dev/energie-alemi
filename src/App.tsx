@@ -10,6 +10,8 @@ import Internet from './pages/Internet';
 import Electricity from './pages/Electricity';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
 import NotFound from './pages/NotFound';
 import SplashScreen from './components/SplashScreen';
 import { ThemeProvider } from './contexts/ThemeContext';
@@ -37,6 +39,8 @@ export default function App() {
               <Route path="/electricity" element={<Electricity />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/impressum" element={<Impressum />} />
+              <Route path="/datenschutz" element={<Datenschutz />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
