@@ -11,13 +11,13 @@ export default function SplashScreen() {
     setTimeout(() => setIsVisible(false), 800);
   };
 
-  // Failsafe timer: WebP is 10s, but let's keep the splash short (4.5s) to not block the user too long
+  // Failsafe timer: WebP is 10s, but let's keep the splash short (2.5s) to not block the user too long
   useEffect(() => {
     const timer = setTimeout(() => {
       if (isVisible && !isFadingOut) {
         handleEnd();
       }
-    }, 4500); 
+    }, 2500); 
     return () => clearTimeout(timer);
   }, [isVisible, isFadingOut]);
 

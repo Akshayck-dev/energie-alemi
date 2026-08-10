@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../lib/utils';
 import Button from './ui/Button';
-import logoVideo from '../assets/Animate_the_attached_logo_in_a (1).mp4';
+import LogoVideo from './LogoVideo';
 import { useTheme } from '../contexts/ThemeContext';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -57,14 +57,7 @@ export default function Navbar() {
               isScrolled ? "h-8 w-8 md:h-10 md:w-10" : "h-10 w-10 md:h-14 md:w-14"
             )}
           >
-            <video
-              src={logoVideo}
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125 pointer-events-none"
-            />
+            <LogoVideo className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125" />
           </div>
         </Link>
 
@@ -170,14 +163,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-white/10">
                 <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
                   <div className="relative overflow-hidden flex items-center justify-center rounded-xl shrink-0 h-10 w-10">
-                    <video
-                      src={logoVideo}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125 pointer-events-none"
-                    />
+                    <LogoVideo className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125" />
                   </div>
                   <span className="font-heading font-bold text-lg text-slate-900 dark:text-white">Energie Alemi</span>
                 </Link>

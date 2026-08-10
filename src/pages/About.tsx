@@ -2,7 +2,7 @@ import { Zap, ShieldCheck, Users, LineChart,  ArrowRight, Handshake } from 'luci
 import { useTranslation } from 'react-i18next';
 import { motion, type Variants } from 'framer-motion';
 import Button from '../components/ui/Button';
-import ownerImg from '../assets/image-admin.JPG.jpeg';
+import ownerImg from '../assets/image-admin.JPG.webp';
 import { cn } from '../lib/utils';
 import SEO from "../components/SEO";
 

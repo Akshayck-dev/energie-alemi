@@ -5,39 +5,31 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
-import OptimizedVideo from '../components/OptimizedVideo';
 import CompareModal from '../components/CompareModal';
 
-import heroElectricity from '../assets/hero_elecrticty_video.mp4';
-import heroGas from '../assets/hero_gas_video.mp4';
-import heroInternet from '../assets/hero_internet_video.mp4';
+import hero1Desk from '../assets/hero_desk.webp';
+import hero1Mob from '../assets/hero_mob.webp';
+import hero2Desk from '../assets/hero2_desk.webp';
+import hero2Mob from '../assets/hero2_mob.webp';
+import hero3Desk from '../assets/hero1_net_desk.webp';
+import hero3Mob from '../assets/hero1_net_mob.webp';
 
-import electricityPosterDesk from '../assets/electricity hero desk.webp';
-import electricityPosterMob from '../assets/electricity mob.webp';
-import gasPosterDesk from '../assets/gas hero desk.webp';
-import gasPosterMob from '../assets/gas hero mob.webp';
-import internetPosterDesk from '../assets/internet hero desktop.webp';
-import internetPosterMob from '../assets/internet hero mob.webp';
-
-const HERO_VIDEOS_CONFIG = [
+const HERO_IMAGES_CONFIG = [
   {
-    desktopMp4: heroElectricity,
-    poster: electricityPosterDesk,
-    mobilePoster: electricityPosterMob,
+    desktop: hero1Desk,
+    mobile: hero1Mob,
   },
   {
-    desktopMp4: heroGas,
-    poster: gasPosterDesk,
-    mobilePoster: gasPosterMob,
+    desktop: hero2Desk,
+    mobile: hero2Mob,
   },
   {
-    desktopMp4: heroInternet,
-    poster: internetPosterDesk,
-    mobilePoster: internetPosterMob,
+    desktop: hero3Desk,
+    mobile: hero3Mob,
   }
 ];
 
-const VIDEO_DURATION = 8; // 8 seconds per video before switching
+const SLIDE_DURATION = 8; // 8 seconds per slide before switching
 const FADE_DURATION = 1500; // 1.5s smooth crossfade
 
 export default function HomeHero() {
@@ -47,7 +39,7 @@ export default function HomeHero() {
   const [selectedService, setSelectedService] = useState('');
 
   const handleOpenModal = () => {
-    // Determine service based on active video index
+    // Determine service based on active slide index
     let service = '';
     if (activeIndex === 0) service = 'Strom';
     else if (activeIndex === 1) service = 'Gas';
@@ -57,45 +49,48 @@ export default function HomeHero() {
   };
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const advanceVideo = useCallback(() => {
-    setActiveIndex((prev) => (prev + 1) % HERO_VIDEOS_CONFIG.length);
+  const advanceSlide = useCallback(() => {
+    setActiveIndex((prev) => (prev + 1) % HERO_IMAGES_CONFIG.length);
   }, []);
 
   useEffect(() => {
     // Schedule next slide switch
-    timerRef.current = setTimeout(advanceVideo, VIDEO_DURATION * 1000);
+    timerRef.current = setTimeout(advanceSlide, SLIDE_DURATION * 1000);
 
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [activeIndex, advanceVideo]);
+  }, [activeIndex, advanceSlide]);
 
   return (
     <section className="relative min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
-      {/* LCP Optimization: Preload first slide poster image */}
+      {/* LCP Optimization: Preload first slide images */}
       <Helmet>
-        <link rel="preload" as="image" href={electricityPosterDesk} media="(min-width: 769px)" fetchPriority="high" />
-        <link rel="preload" as="image" href={electricityPosterMob} media="(max-width: 768px)" fetchPriority="high" />
+        <link rel="preload" as="image" href={hero1Desk} media="(min-width: 769px)" fetchPriority="high" />
+        <link rel="preload" as="image" href={hero1Mob} media="(max-width: 768px)" fetchPriority="high" />
       </Helmet>
 
-      {/* Video Background */}
+      {/* Image Background */}
       <div className="absolute inset-0 z-0">
-        {HERO_VIDEOS_CONFIG.map((cfg, i) => (
-          <OptimizedVideo
-            key={cfg.desktopMp4}
-            desktopMp4={cfg.desktopMp4}
-            poster={cfg.poster}
-            mobilePoster={cfg.mobilePoster}
-            priority={i === 0}
-            active={activeIndex === i}
+        {HERO_IMAGES_CONFIG.map((cfg, i) => (
+          <picture
+            key={i}
             className={cn(
               "absolute inset-0 w-full h-full transition-opacity",
               activeIndex === i ? "opacity-100 z-10" : "opacity-0 z-0"
             )}
             style={{
               transition: `opacity ${FADE_DURATION}ms ease-in-out`
-            } as React.CSSProperties}
-          />
+            }}
+          >
+            <source media="(max-width: 768px)" srcSet={cfg.mobile} />
+            <source media="(min-width: 769px)" srcSet={cfg.desktop} />
+            <img 
+              src={cfg.desktop} 
+              alt={`Hero background ${i + 1}`}
+              className="w-full h-full object-cover object-center"
+            />
+          </picture>
         ))}
         {/* Dark gradient for text legibility on the left, leaving the right side clear */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/60 to-transparent md:w-[80%] z-10" />
@@ -147,7 +142,7 @@ export default function HomeHero() {
 
       {/* Slideshow Progress Indicators */}
       <div className="absolute bottom-8 md:bottom-12 left-0 right-0 z-30 flex justify-center gap-3">
-        {HERO_VIDEOS_CONFIG.map((_, i) => (
+        {HERO_IMAGES_CONFIG.map((_, i) => (
           <button
             key={i}
             onClick={() => setActiveIndex(i)}

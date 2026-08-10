@@ -1,11 +1,11 @@
 {
   "nav": {
-    "home": "HOME",
-    "electricity": "ELECTRICITY",
-    "gas": "GAS",
-    "internet": "INTERNET",
-    "about_us": "ABOUT US",
-    "contact": "CONTACT",
+    "home": "Home",
+    "electricity": "Electricity",
+    "gas": "Gas",
+    "internet": "Internet",
+    "about_us": "About Us",
+    "contact": "Contact",
     "get_in_touch": "Get in touch",
     "ratgeber": "Guides"
   },

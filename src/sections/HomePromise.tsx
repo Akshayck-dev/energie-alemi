@@ -1,6 +1,6 @@
 import { ShieldCheck, Eye, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import ownerImg from '../assets/image-admin.JPG.jpeg';
+import ownerImg from '../assets/image-admin.JPG.webp';
 
 export default function HomePromise() {
   const { t } = useTranslation();

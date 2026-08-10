@@ -1,11 +1,11 @@
 {
   "nav": {
-    "home": "ANASAYFA",
-    "electricity": "ELEKTRİK",
-    "gas": "GAZ",
-    "internet": "İNTERNET",
-    "about_us": "HAKKIMIZDA",
-    "contact": "İLETİŞİM",
+    "home": "Anasayfa",
+    "electricity": "Elektrik",
+    "gas": "Gaz",
+    "internet": "İnternet",
+    "about_us": "Hakkımızda",
+    "contact": "İletişim",
     "get_in_touch": "Bize Ulaşın",
     "ratgeber": "Rehber"
   },

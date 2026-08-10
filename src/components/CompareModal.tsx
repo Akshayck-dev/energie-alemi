@@ -12,7 +12,7 @@ interface CompareModalProps {
 
 export default function CompareModal({ isOpen, onClose, defaultService }: CompareModalProps) {
   const { t } = useTranslation();
-  const headingText = t('home_hero.compare_tariff', 'Compare tariff');
+  const headingText = t('modal.reach_out_tariff', 'Tariff Comparison - Reach out to us');
   const [name, setName] = useState('');
   const [service, setService] = useState(defaultService || 'Strom');
   const [phone, setPhone] = useState('');
