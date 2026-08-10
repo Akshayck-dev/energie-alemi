@@ -2,7 +2,7 @@ import { Zap, ShieldCheck, Users, LineChart,  ArrowRight, Handshake } from 'luci
 import { useTranslation } from 'react-i18next';
 import { motion, type Variants } from 'framer-motion';
 import Button from '../components/ui/Button';
-import ownerImg from '../assets/owner.webp';
+import ownerImg from '../assets/image-admin.JPG.jpeg';
 import { cn } from '../lib/utils';
 import SEO from "../components/SEO";
 
@@ -26,7 +26,7 @@ export default function About() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628] min-h-screen">
-      <SEO title="Über uns" description="Erfahren Sie mehr über Energie Alemi. Ihr zuverlässiger und unabhängiger Berater für Energie und Telekommunikation." url="/about" />
+      <SEO title="Über uns" description="Erfahren Sie mehr über Energie Alemi. Ihr zuverlässiger Berater für Energie und Telekommunikation." url="/about" />
       {/* Hero Section */}
       <div className="sticky top-0 z-0 md:relative">
         <section className="relative flex items-center pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 overflow-hidden bg-white dark:bg-[#051024]">
@@ -211,8 +211,8 @@ export default function About() {
                     width="500" height="600" />
                  
                    {/* Signature Graphic */}
-                   <div className="z-20 w-[85%] max-w-[500px] flex justify-end pr-4">
-                      <span className="font-serif italic text-3xl text-slate-900 dark:text-white opacity-90 transform -rotate-2 inline-block">
+                   <div className="z-20 w-[85%] max-w-[500px] flex justify-center">
+                      <span className="font-serif italic text-3xl text-slate-900 dark:text-white opacity-90 inline-block">
                         Shoaib Alemi
                       </span>
                    </div>

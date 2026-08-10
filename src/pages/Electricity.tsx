@@ -1,5 +1,6 @@
 import { Search, Handshake, ArrowLeftRight, Leaf, Calendar, BarChart3, CheckSquare, Zap, ArrowRight, Clock, ShieldCheck } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
 import SectionHeader from '../components/ui/SectionHeader';
@@ -9,9 +10,11 @@ import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
 import elecHeroDesk from '../assets/electricity hero desk.webp';
 import SEO from "../components/SEO";
+import CompareModal from '../components/CompareModal';
 
 export default function Electricity() {
   const { t, i18n } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const features = [
     {
       icon: <Search size={28} strokeWidth={1.5} />,
@@ -88,11 +91,12 @@ export default function Electricity() {
           title={t('elec_hero.title')}
           description={t('elec_hero.desc')}
           bgImage={elecHeroDesk}
-          buttonText={t('elec_hero.btn')}
+          buttonText={t('home_hero.contact_us', 'Contact us')}
+          onButtonClick={() => setIsModalOpen(true)}
           bulletPoints={[
-            { icon: <Zap size={24} />, title: t('elec_hero.bullet1_title'), description: t('elec_hero.bullet1_desc') },
-            { icon: <Clock size={24} />, title: t('elec_hero.bullet2_title'), description: t('elec_hero.bullet2_desc') },
-            { icon: <ShieldCheck size={24} />, title: t('elec_hero.bullet3_title'), description: t('elec_hero.bullet3_desc') },
+            { icon: <ShieldCheck size={24} />, title: 'Certified providers' },
+            { icon: <Zap size={24} />, title: 'Quick switching' },
+            { icon: <Clock size={24} />, title: 'Independent advice' },
           ]}
           accentColor="bg-amber-500 hover:bg-amber-600"
         />
@@ -144,13 +148,14 @@ export default function Electricity() {
             />
             <FAQ items={faqs} className="mb-12" />
             <div className="text-center">
-              <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} className="w-full sm:w-auto justify-center">
-                {t('elec.btn')}
+              <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} className="w-full sm:w-auto justify-center" onClick={() => setIsModalOpen(true)}>
+                {t('home_hero.contact_us', 'Contact us')}
               </Button>
             </div>
           </div>
         </section>
       </div>
+      <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Strom" />
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function RatgeberIndex() {
     <div className="min-h-screen bg-slate-50 dark:bg-[#0a1628] py-24 md:py-32">
       <SEO 
         title="Ratgeber: Strom, Gas & Internet im Vergleich" 
-        description="Hilfreiche Tipps und Ratgeber rund um den Wechsel von Strom-, Gas- und Internetanbietern. So finden Sie den besten Tarif." 
+        description="Hilfreiche Tipps und Ratgeber rund um den Wechsel von Strom-, Gas- und Internetanbietern. So finden Sie einen passenden Tarif." 
         url="/ratgeber" 
       />
       

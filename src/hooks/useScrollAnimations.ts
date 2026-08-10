@@ -6,36 +6,41 @@ gsap.registerPlugin(ScrollTrigger);
 
 export function useScrollAnimations() {
   useEffect(() => {
-    // Select all sections that should fade up
-    const fadeUpElements = document.querySelectorAll('section > div > div');
-    
-    fadeUpElements.forEach((el) => {
-      gsap.fromTo(el, 
-        { 
-          y: 50, 
-          opacity: 0 
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 85%',
-            toggleActions: 'play none none reverse'
+    // Only animate explicitly marked elements — avoids creating hundreds
+    // of ScrollTrigger instances on every section > div > div
+    const fadeUpElements = document.querySelectorAll('[data-animate="fade-up"]');
+
+    if (fadeUpElements.length === 0) {
+      ScrollTrigger.refresh();
+      return;
+    }
+
+    // Batch for better performance — one IntersectionObserver instead of N ScrollTriggers
+    ScrollTrigger.batch(fadeUpElements, {
+      onEnter: (elements) => {
+        gsap.fromTo(
+          elements,
+          { y: 40, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            ease: 'power3.out',
+            stagger: 0.08,
+            overwrite: true,
           }
-        }
-      );
+        );
+      },
+      start: 'top 88%',
+      once: true, // only play once — no reverse causing reflows
     });
 
-    // Refresh ScrollTrigger after a short delay to account for any image loading
-    setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 500);
+    // Refresh after images may have loaded
+    const timer = setTimeout(() => ScrollTrigger.refresh(), 300);
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => t.kill());
+      clearTimeout(timer);
+      ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, []);
 }

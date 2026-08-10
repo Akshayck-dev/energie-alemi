@@ -1,0 +1,156 @@
+[
+  {
+    "path": "/",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Energie Alemi - Stromtarife und Gasvergleich",
+    "description": "Vergleichen Sie jetzt kostenlos Strom- und Gastarife mit Energie Alemi. Finden Sie günstige Energieanbieter, wechseln Sie unkompliziert und sparen Sie bares Geld.",
+    "canonical": "/",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "Organization"
+  },
+  {
+    "path": "/gas",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasvergleich & Gastarife vergleichen",
+    "description": "Vergleichen Sie günstige Gastarife bei Energie Alemi. Wechseln Sie Ihren Gasanbieter einfach online und sparen Sie bei den Heizkosten.",
+    "canonical": "/gas",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/electricity",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromvergleich & Stromtarife vergleichen",
+    "description": "Finden Sie günstige Stromtarife mit unserem Stromvergleich. Unkompliziert Stromanbieter wechseln und Energiekosten senken.",
+    "canonical": "/electricity",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/internet",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Internetanbieter vergleichen & DSL Vergleich",
+    "description": "Vergleichen Sie Tarife für DSL, Kabel und Glasfaser bei Energie Alemi. Finden Sie passende Internetanbieter für Ihr Zuhause.",
+    "canonical": "/internet",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/about",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Über uns - Energie Alemi",
+    "description": "Erfahren Sie mehr über Energie Alemi. Wir sind Ihr zuverlässiger Partner für den Strom-, Gas- und Internetvergleich in Deutschland.",
+    "canonical": "/about",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/contact",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Kontakt - Energie Alemi",
+    "description": "Haben Sie Fragen zu Strom-, Gas- oder Internettarifen? Kontaktieren Sie Energie Alemi per E-Mail, Telefon oder Kontaktformular.",
+    "canonical": "/contact",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/impressum",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Impressum - Energie Alemi",
+    "description": "Rechtliche Informationen und gesetzlich vorgeschriebene Angaben zum Betreiber der Website Energie Alemi.",
+    "canonical": "/impressum",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/datenschutz",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Datenschutzerklärung - Energie Alemi",
+    "description": "Informationen zum Datenschutz und zur Verarbeitung personenbezogener Daten auf der Website von Energie Alemi.",
+    "canonical": "/datenschutz",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/ratgeber",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Ratgeber: Strom, Gas & Internet Tarife vergleichen",
+    "description": "Wertvolle Tipps, Anleitungen und Ratgeber-Artikel rund um die Themen Stromvergleich, Gasanbieterwechsel und Internetvergleich.",
+    "canonical": "/ratgeber",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "WebPage"
+  },
+  {
+    "path": "/ratgeber/stromanbieter-wechseln",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromanbieter wechseln: So funktioniert der Wechsel",
+    "description": "Erfahren Sie, wie einfach Sie Ihren Stromanbieter wechseln können. Schritt-für-Schritt-Anleitung, Fristen und Tipps zum Sparen.",
+    "canonical": "/ratgeber/stromanbieter-wechseln",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "Article"
+  },
+  {
+    "path": "/ratgeber/stromvergleich",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromvergleich: Worauf sollte man bei einem Stromtarif achten?",
+    "description": "Unser Stromvergleich-Ratgeber zeigt Ihnen, worauf Sie bei Vertragslaufzeit, Preisgarantie und Kündigungsfrist achten müssen.",
+    "canonical": "/ratgeber/stromvergleich",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "Article"
+  },
+  {
+    "path": "/ratgeber/gasvergleich",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasvergleich: So finden Sie einen passenden Gastarif",
+    "description": "Günstige Gasanbieter finden und Energiekosten senken. Worauf Sie beim Gasvergleich achten sollten, verständlich erklärt.",
+    "canonical": "/ratgeber/gasvergleich",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "Article"
+  },
+  {
+    "path": "/ratgeber/gasanbieter-wechseln",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasanbieter wechseln: Schritt für Schritt erklärt",
+    "description": "Den Gasanbieter zu wechseln ist einfach und spart viel Geld. Erfahren Sie hier alles zu Kündigungsfristen und dem Ablauf.",
+    "canonical": "/ratgeber/gasanbieter-wechseln",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "Article"
+  },
+  {
+    "path": "/ratgeber/internetanbieter-vergleichen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Internetanbieter vergleichen: Darauf sollten Sie achten",
+    "description": "DSL, Kabel oder Glasfaser? Unser Ratgeber hilft Ihnen, den richtigen Internetanbieter zu finden und Kosten zu sparen.",
+    "canonical": "/ratgeber/internetanbieter-vergleichen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-09",
+    "structuredDataType": "Article"
+  }
+]

@@ -51,7 +51,7 @@ export const articles: RatgeberArticle[] = [
     id: '5',
     slug: 'internetanbieter-vergleichen',
     title: 'Internetanbieter vergleichen: Darauf sollten Sie achten',
-    description: 'DSL, Kabel oder Glasfaser? Was beim Internetvergleich wirklich zählt, um den besten und günstigsten Tarif zu finden.',
+    description: 'DSL, Kabel oder Glasfaser? Was beim Internetvergleich wirklich zählt, um passende und günstige Tarife zu finden.',
     category: 'Internet',
     publishedDate: '2026-08-09',
     componentName: 'InternetanbieterVergleichen'

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -32,9 +33,12 @@
 
 @layer base {
   :root {
-    --background: #f8fafc; /* light background used in some sections */
+    --background: #f8fafc;
     --foreground: #0f172a;
   }
+
+  /* Do NOT set scroll-behavior: smooth here — Lenis controls scrolling via JS.
+     Native scroll-behavior conflicts with Lenis and causes double-scroll jank. */
 
   body {
     @apply font-sans antialiased bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white;
@@ -42,6 +46,14 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-tight;
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    html.lenis,
+    html.lenis body {
+      scroll-behavior: auto !important;
+    }
   }
 }
 
@@ -54,25 +66,4 @@
   .glass {
     @apply bg-white/10 backdrop-blur-lg border border-white/20;
   }
-}
-
-/* Lenis Smooth Scroll Recommended CSS */
-html.lenis, html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
 }

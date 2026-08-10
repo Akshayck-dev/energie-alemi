@@ -1,5 +1,6 @@
-import { Search, Handshake, ArrowLeftRight, Wifi, Calendar, BarChart3, CheckSquare, Settings, ArrowRight, Gauge, BadgeEuro } from 'lucide-react';
+import { Search, Handshake, ArrowLeftRight, Wifi, Calendar, BarChart3, CheckSquare, Settings, ArrowRight, Gauge, ShieldCheck } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
 import SectionHeader from '../components/ui/SectionHeader';
@@ -10,9 +11,11 @@ import { cn } from '../lib/utils';
 import netHeroDesk from '../assets/internet hero desktop.webp';
 import netHeroMob from '../assets/internet hero mob.webp';
 import SEO from "../components/SEO";
+import CompareModal from '../components/CompareModal';
 
 export default function Internet() {
   const { t, i18n } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const features = [
     {
       icon: <Search size={28} strokeWidth={1.5} />,
@@ -80,7 +83,7 @@ export default function Internet() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Internet & Festnetz" description="Vergleichen Sie Internet- und DSL-Anbieter. Sichern Sie sich den schnellsten und günstigsten Tarif." url="/internet" faqs={faqs} />
+      <SEO title="Internet & Festnetz" description="Vergleichen Sie Internet- und DSL-Anbieter. Sichern Sie sich passende und schnelle Tarife für Ihr Zuhause." url="/internet" faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"
@@ -90,11 +93,12 @@ export default function Internet() {
           description={t('net_hero.desc')}
           bgImage={netHeroDesk}
           bgImageMobile={netHeroMob}
-          buttonText={t('net_hero.btn')}
+          buttonText={t('home_hero.contact_us', 'Contact us')}
+          onButtonClick={() => setIsModalOpen(true)}
           bulletPoints={[
-            { icon: <Gauge size={24} />, title: t('net_hero.bullet1_title'), description: t('net_hero.bullet1_desc') },
-            { icon: <BadgeEuro size={24} />, title: t('net_hero.bullet2_title'), description: t('net_hero.bullet2_desc') },
-            { icon: <Wifi size={24} />, title: t('net_hero.bullet3_title'), description: t('net_hero.bullet3_desc') },
+            { icon: <ShieldCheck size={24} />, title: 'Top providers' },
+            { icon: <Gauge size={24} />, title: 'Quick activation' },
+            { icon: <Handshake size={24} />, title: 'Independent advice' },
           ]}
           accentColor="bg-blue-600 hover:bg-blue-700"
         />
@@ -155,13 +159,14 @@ export default function Internet() {
             />
             <FAQ items={faqs} className="mb-12" />
             <div className="text-center">
-              <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />}>
-                {t('internet.btn')}
+              <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} onClick={() => setIsModalOpen(true)}>
+                {t('home_hero.contact_us', 'Contact us')}
               </Button>
             </div>
           </div>
         </section>
       </div>
+      <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Internet" />
     </div>
   );
 }

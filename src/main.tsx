@@ -6,7 +6,7 @@ import './lib/i18n';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className="fixed inset-0 bg-white" />}>
       <App />
     </Suspense>
   </StrictMode>,

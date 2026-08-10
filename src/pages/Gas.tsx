@@ -1,5 +1,6 @@
-import { Search, Handshake, ArrowLeftRight, Leaf, Calendar, BarChart3, CheckSquare, Truck, ArrowRight, Flame, CheckCircle2 } from 'lucide-react';
+import { Search, Handshake, ArrowLeftRight, Leaf, Calendar, BarChart3, CheckSquare, Truck, ArrowRight, Flame, ShieldCheck, Zap } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
 import SectionHeader from '../components/ui/SectionHeader';
@@ -10,9 +11,11 @@ import { cn } from '../lib/utils';
 import gasHeroDesk from '../assets/gas hero desk.webp';
 import gasHeroMob from '../assets/gas hero mob.webp';
 import SEO from "../components/SEO";
+import CompareModal from '../components/CompareModal';
 
 export default function Gas() {
   const { t, i18n } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const features = [
     {
       icon: <Search size={28} strokeWidth={1.5} />,
@@ -80,7 +83,7 @@ export default function Gas() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Gasvergleich" description="Jetzt Gasanbieter vergleichen und wechseln. Wir finden den günstigsten und besten Gastarif für Sie." url="/gas" faqs={faqs} />
+      <SEO title="Gasvergleich" description="Jetzt Gasanbieter vergleichen und wechseln. Wir helfen Ihnen, günstige und passende Gastarife zu finden." url="/gas" faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"
@@ -90,11 +93,12 @@ export default function Gas() {
           description={t('gas_hero.desc')}
           bgImage={gasHeroDesk}
           bgImageMobile={gasHeroMob}
-          buttonText={t('gas_hero.btn')}
+          buttonText={t('home_hero.contact_us', 'Contact us')}
+          onButtonClick={() => setIsModalOpen(true)}
           bulletPoints={[
-            { icon: <CheckCircle2 size={24} />, title: t('gas_hero.bullet1_title'), description: t('gas_hero.bullet1_desc') },
-            { icon: <CheckCircle2 size={24} />, title: t('gas_hero.bullet2_title'), description: t('gas_hero.bullet2_desc') },
-            { icon: <CheckCircle2 size={24} />, title: t('gas_hero.bullet3_title'), description: t('gas_hero.bullet3_desc') },
+            { icon: <ShieldCheck size={24} />, title: 'Certified suppliers' },
+            { icon: <Zap size={24} />, title: 'Quick switching' },
+            { icon: <Handshake size={24} />, title: 'Independent advice' },
           ]}
           accentColor="bg-orange-500 hover:bg-orange-600"
         />
@@ -161,13 +165,14 @@ export default function Gas() {
             />
             <FAQ items={faqs} className="mb-12" />
             <div className="text-center">
-              <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />}>
-                {t('gas.btn')}
+              <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} onClick={() => setIsModalOpen(true)}>
+                {t('home_hero.contact_us', 'Contact us')}
               </Button>
             </div>
           </div>
         </section>
       </div>
+      <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Gas" />
     </div>
   );
 }

@@ -47,37 +47,44 @@ export default function HomeProcess() {
           <div className="w-16 h-[3px] bg-[#0047AB] mx-auto"></div>
         </div>
 
-        {/* Sticky Stack (All Screens) */}
-        <div className="relative pb-[20vh] md:pb-[30vh] mt-8 max-w-4xl mx-auto">
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.id}
-              className="sticky w-full bg-slate-50 dark:bg-[#0a1628] p-8 md:p-12 rounded-[2rem] border border-slate-200 dark:border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_-10px_40px_rgba(0,0,0,0.4)] flex flex-col md:flex-row items-center md:items-start text-center md:text-left mb-16 md:mb-24 gap-6 md:gap-10"
-              style={{ top: `calc(15vh + ${index * 1.5}rem)`, zIndex: index + 10 }}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-            >
-              <div className="w-16 h-16 md:w-20 md:h-20 shrink-0 rounded-full bg-white dark:bg-[#051024] border-2 border-[#0047AB] shadow-[0_5px_15px_rgba(0,71,171,0.15)] flex items-center justify-center text-[#0047AB] dark:text-[#f0a83f] relative mb-2 md:mb-0">
-                <span className="absolute -top-2 -right-2 md:-top-3 md:-right-3 text-[11px] md:text-sm font-bold bg-[#f0a83f] text-white w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center shadow-md">
-                  {step.id}
-                </span>
-                <div className="scale-100 md:scale-125">
-                  {step.icon}
+        {/* Mobile Sticky Stack / Desktop Horizontal Timeline */}
+        <div className="relative mt-8 pb-[20vh] md:pb-0">
+          {/* Connecting Line (Desktop Only) */}
+          <div className="hidden md:block absolute top-[56px] left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-transparent via-slate-200 dark:via-white/10 to-transparent z-0">
+            <div className="w-full h-full bg-gradient-to-r from-[#0047AB] via-[#f0a83f] to-[#0047AB] opacity-60" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-6 lg:gap-8 relative z-10">
+            {steps.map((step, index) => (
+              <motion.div
+                key={step.id}
+                className="sticky md:relative top-[var(--card-top)] md:top-auto w-full bg-slate-50 dark:bg-[#0a1628] p-6 md:p-8 rounded-[2rem] border border-slate-200 dark:border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.06)] dark:shadow-[0_-10px_40px_rgba(0,0,0,0.3)] md:shadow-sm dark:md:shadow-[0_10px_25px_rgba(0,0,0,0.2)] flex flex-col items-center text-center mb-16 md:mb-0 gap-5 hover:scale-[1.03] hover:shadow-md hover:border-[#0047AB]/20 transition-all duration-300 group"
+                style={{ '--card-top': `calc(12vh + ${index * 1.5}rem)`, zIndex: index + 10 } as React.CSSProperties}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
+              >
+                <div className="w-16 h-16 shrink-0 rounded-full bg-white dark:bg-[#051024] border-2 border-[#0047AB] shadow-[0_5px_15px_rgba(0,71,171,0.15)] flex items-center justify-center text-[#0047AB] dark:text-[#f0a83f] relative mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <span className="absolute -top-1.5 -right-1.5 text-[10px] md:text-xs font-bold bg-[#f0a83f] text-white w-5.5 h-5.5 rounded-full flex items-center justify-center shadow-md">
+                    {step.id}
+                  </span>
+                  <div className="scale-100 md:scale-110">
+                    {step.icon}
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex-grow">
-                <h4 className="font-heading text-xl md:text-3xl font-bold text-slate-900 dark:text-white mb-3 md:mb-4">
-                  {step.title}
-                </h4>
-                <p className="text-slate-600 dark:text-white/70 text-[15px] md:text-lg leading-relaxed max-w-2xl">
-                  {step.desc}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+                
+                <div className="flex flex-col">
+                  <h4 className="font-heading text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-[#0047AB] dark:group-hover:text-[#f0a83f] transition-colors duration-300">
+                    {step.title}
+                  </h4>
+                  <p className="text-slate-600 dark:text-white/70 text-[13.5px] md:text-sm leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
       </div>

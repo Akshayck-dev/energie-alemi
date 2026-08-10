@@ -1,38 +1,25 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { cn } from '../lib/utils';
-import { motion } from 'framer-motion';
-import splashVideo from '../assets/hero_splash_final.mp4';
+import splashImg from '../assets/hero_splash_transparent.webp';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
   const [isFadingOut, setIsFadingOut] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
-  const handleVideoEnd = () => {
+  const handleEnd = () => {
     setIsFadingOut(true);
     setTimeout(() => setIsVisible(false), 800);
   };
 
-  // Failsafe in case video doesn't play automatically or gets stuck
+  // Failsafe timer: WebP is 10s, but let's keep the splash short (4.5s) to not block the user too long
   useEffect(() => {
     const timer = setTimeout(() => {
       if (isVisible && !isFadingOut) {
-        handleVideoEnd();
+        handleEnd();
       }
-    }, 4500); // 4.5 seconds gives the new video time to play
+    }, 4500); 
     return () => clearTimeout(timer);
   }, [isVisible, isFadingOut]);
-
-  // Force play for mobile browsers that might ignore autoPlay attribute
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.defaultMuted = true;
-      videoRef.current.muted = true;
-      videoRef.current.play().catch(() => {
-        // If play fails, the failsafe timeout will handle removing the splash screen
-      });
-    }
-  }, []);
 
   if (!isVisible) return null;
 
@@ -41,29 +28,14 @@ export default function SplashScreen() {
       className={cn(
         "fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-700 ease-in-out",
         isFadingOut ? "opacity-0 pointer-events-none" : "opacity-100",
-        "bg-[#E2E2E2]" // Matched to the typical light gray background of the video
+        "bg-white" 
       )}
     >
-      <video 
-        ref={videoRef}
-        src={splashVideo}
-        autoPlay
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-contain scale-75 md:scale-[0.6]" 
+      <img 
+        src={splashImg}
+        alt="Splash Animation"
+        className="absolute inset-0 w-full h-full object-contain scale-50 sm:scale-75 md:scale-[0.6]" 
       />
-      
-      {/* Animated Text Overlay */}
-      <motion.div 
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 1.2, ease: "easeOut" }}
-        className="absolute bottom-[10%] left-0 right-0 z-10 flex flex-col items-center justify-center pointer-events-none"
-      >
-        <h1 className="font-heading text-2xl md:text-4xl lg:text-5xl font-bold text-[#0a1628] tracking-[0.3em] uppercase">
-          Energie Alemi
-        </h1>
-      </motion.div>
     </div>
   );
 }

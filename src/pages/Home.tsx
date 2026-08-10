@@ -3,7 +3,6 @@ import HomeFeatures from '../sections/HomeFeatures';
 import HomeServices from '../sections/HomeServices';
 import HomeProcess from '../sections/HomeProcess';
 import HomePromise from '../sections/HomePromise';
-import HomeMeeting from '../sections/HomeMeeting';
 import SEO from "../components/SEO";
 
 export default function Home() {
@@ -33,11 +32,6 @@ export default function Home() {
       {/* Promise slides over Process */}
       <div className="relative z-40 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none">
         <HomePromise />
-      </div>
-      
-      {/* Meeting slides over Promise */}
-      <div className="relative z-50 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none">
-        <HomeMeeting />
       </div>
     </div>
   );
