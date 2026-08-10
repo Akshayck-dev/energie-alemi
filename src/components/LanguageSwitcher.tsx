@@ -7,7 +7,7 @@ const languages = [
   { code: 'en', name: 'English' },
   { code: 'de', name: 'Deutsch' },
   { code: 'ar', name: 'العربية' },
-  { code: 'tr', name: 'Türkçe' },
+  { code: 'fa', name: 'فارسی' }
 ];
 
 export default function LanguageSwitcher({ isScrolled = true }: { isScrolled?: boolean }) {

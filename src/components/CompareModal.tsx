@@ -29,17 +29,13 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
     e.preventDefault();
     if (!name || !phone || !plz) return;
 
-    const messageText = `Hallo Energie Alemi,
-
-Ich interessiere mich für einen Tarifvergleich. Hier sind meine Angaben:
-
-👤 Name: ${name}
-🔌 Bereich: ${service}
-📍 PLZ: ${plz}
-📞 Telefon: ${phone}
-📝 Details/Verbrauch: ${details || 'Keine Angabe'}
-
-Bitte kontaktieren Sie mich bezüglich passender Angebote.`;
+    const messageText = t('compare_modal.whatsapp_template', `Hallo Energie Alemi,\n\nIch interessiere mich für einen Tarifvergleich. Hier sind meine Angaben:\n\n👤 Name: {{name}}\n🔌 Bereich: {{service}}\n📍 PLZ: {{plz}}\n📞 Telefon: {{phone}}\n📝 Details/Verbrauch: {{details}}\n\nBitte kontaktieren Sie mich bezüglich passender Angebote.`, {
+      name,
+      service,
+      plz,
+      phone,
+      details: details || t('compare_modal.no_details', 'Keine Angabe')
+    });
 
     const encodedMessage = encodeURIComponent(messageText);
     const whatsappUrl = `https://wa.me/4917665949390?text=${encodedMessage}`;
@@ -88,11 +84,11 @@ Bitte kontaktieren Sie mich bezüglich passender Angebote.`;
             {/* Header */}
             <div className="mb-6 pr-8">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0047AB]/10 text-[#0047AB] dark:bg-[#4F8CFF]/15 dark:text-[#4F8CFF] text-xs font-semibold uppercase tracking-wider mb-2">
-                <Send size={12} /> Tarifanfrage
+                <Send size={12} /> {t('compare_modal.inquiry_badge', 'Tarifanfrage')}
               </span>
               <h3 className="font-heading text-2xl font-bold text-slate-900 dark:text-white">{headingText}</h3>
               <p className="text-sm text-slate-500 dark:text-white/60 mt-1 leading-relaxed">
-                Geben Sie Ihre Details ein. Die Daten werden formatiert und direkt per WhatsApp an uns übertragen.
+                {t('compare_modal.subhead', 'Geben Sie Ihre Details ein. Die Daten werden formatiert und direkt per WhatsApp an uns übertragen.')}
               </p>
             </div>
 
@@ -100,14 +96,14 @@ Bitte kontaktieren Sie mich bezüglich passender Angebote.`;
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
-                  Name *
+                  {t('compare_modal.name_label', 'Name *')}
                 </label>
                 <input
                   type="text"
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Ihr Vor- und Nachname"
+                  placeholder={t('compare_modal.name_placeholder', 'Ihr Vor- und Nachname')}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
                 />
               </div>
@@ -115,22 +111,22 @@ Bitte kontaktieren Sie mich bezüglich passender Angebote.`;
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
-                    Bereich (Sparte) *
+                    {t('compare_modal.service_label', 'Bereich (Sparte) *')}
                   </label>
                   <select
                     value={service}
                     onChange={(e) => setService(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
                   >
-                    <option value="Strom">Strom (Electricity)</option>
-                    <option value="Gas">Gas (Gas)</option>
-                    <option value="Internet">Internet (Internet)</option>
+                    <option value="Strom">{t('compare_modal.service_elec', 'Strom (Electricity)')}</option>
+                    <option value="Gas">{t('compare_modal.service_gas', 'Gas (Gas)')}</option>
+                    <option value="Internet">{t('compare_modal.service_internet', 'Internet (Internet)')}</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
-                    Postleitzahl (PLZ) *
+                    {t('compare_modal.plz_label', 'Postleitzahl (PLZ) *')}
                   </label>
                   <input
                     type="text"
@@ -139,7 +135,7 @@ Bitte kontaktieren Sie mich bezüglich passender Angebote.`;
                     maxLength={5}
                     value={plz}
                     onChange={(e) => setPlz(e.target.value.replace(/[^0-9]/g, ''))}
-                    placeholder="z.B. 52062"
+                    placeholder={t('compare_modal.plz_placeholder', 'z.B. 52062')}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
                   />
                 </div>
@@ -147,26 +143,26 @@ Bitte kontaktieren Sie mich bezüglich passender Angebote.`;
 
               <div>
                 <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
-                  Telefonnummer / WhatsApp-Nummer *
+                  {t('compare_modal.phone_label', 'Telefonnummer / WhatsApp-Nummer *')}
                 </label>
                 <input
                   type="tel"
                   required
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="Für eventuelle Rückfragen"
+                  placeholder={t('compare_modal.phone_placeholder', 'Für eventuelle Rückfragen')}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
                 />
               </div>
 
               <div>
                 <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
-                  Verbrauch / Details (optional)
+                  {t('compare_modal.details_label', 'Verbrauch / Details (optional)')}
                 </label>
                 <textarea
                   value={details}
                   onChange={(e) => setDetails(e.target.value)}
-                  placeholder="z.B. 3500 kWh/Jahr oder 250 Mbit/s"
+                  placeholder={t('compare_modal.details_placeholder', 'z.B. 3500 kWh/Jahr oder 250 Mbit/s')}
                   rows={2}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors resize-none"
                 />
@@ -177,7 +173,7 @@ Bitte kontaktieren Sie mich bezüglich passender Angebote.`;
                 className="w-full py-4 px-6 rounded-xl font-bold bg-[#25D366] hover:bg-[#1EBE5A] text-white flex items-center justify-center gap-2.5 transition-transform hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-green-600/10 cursor-pointer mt-2"
               >
                 <MessageCircle size={20} />
-                Anfrage über WhatsApp senden
+                {t('compare_modal.submit_btn', 'Anfrage über WhatsApp senden')}
               </button>
             </form>
           </motion.div>

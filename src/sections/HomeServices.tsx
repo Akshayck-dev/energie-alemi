@@ -30,6 +30,9 @@ const servicesConfig = [
   }
 ];
 
+import bannerDesk from '../assets/banner_desk.webp';
+import bannerMob from '../assets/banner_mob.webp';
+
 export default function HomeServices() {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
@@ -108,14 +111,15 @@ export default function HomeServices() {
         {/* Premium Image Container */}
         <div className="w-full h-[40vh] md:h-[60vh] lg:h-[70vh] rounded-[24px] md:rounded-[32px] overflow-hidden mb-16 md:mb-24 shadow-[0_20px_60px_rgba(5,16,36,0.12)] border border-slate-100 relative group">
           <div className="absolute inset-0 bg-black/10 z-10 transition-colors duration-700 group-hover:bg-black/5" />
-          <img 
-            ref={imageRef}
-            src="/smart-home.webp" 
-            alt="Smart Home Energy Management"
-            width={800}
-            height={600}
-            className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
-          />
+          <picture>
+            <source media="(min-width: 768px)" srcSet={bannerDesk} />
+            <img 
+              ref={imageRef}
+              src={bannerMob} 
+              alt="Our Services Overview"
+              className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+            />
+          </picture>
         </div>
 
         {/* Services Showcase */}
