@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Settings, X, Check, ShieldCheck } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { initializeConsentDefaults, grantAnalyticsConsent, revokeAnalyticsConsent } from '../lib/analytics';
 
 const CONSENT_VERSION = 'v1';
@@ -20,9 +21,32 @@ export function openCookieSettings() {
 }
 
 export default function CookieConsent() {
+  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [analyticsConsent, setAnalyticsConsent] = useState(false);
+
+  const isEnglish = i18n.language?.startsWith('en');
+
+  const content = {
+    title: isEnglish ? 'We respect your privacy' : 'Wir respektieren Ihre Privatsphäre',
+    description: isEnglish
+      ? 'We use technically necessary cookies to ensure that this website works reliably. With your consent, we also use analytics cookies to understand how the website is used. You can change your selection at any time through Cookie Settings.'
+      : 'Wir verwenden technisch notwendige Cookies, damit diese Website zuverlässig funktioniert. Mit Ihrer Einwilligung verwenden wir außerdem Analyse-Cookies, um die Nutzung unserer Website besser zu verstehen. Sie können Ihre Auswahl jederzeit über die Cookie-Einstellungen ändern.',
+    acceptAll: isEnglish ? 'Accept all' : 'Alle akzeptieren',
+    necessaryOnly: isEnglish ? 'Necessary only' : 'Nur notwendige',
+    settings: isEnglish ? 'Settings' : 'Einstellungen',
+    settingsTitle: isEnglish ? 'Cookie Settings' : 'Cookie-Einstellungen',
+    necessaryTitle: isEnglish ? 'Necessary Cookies' : 'Notwendige Cookies',
+    necessaryDesc: isEnglish
+      ? 'These cookies are strictly necessary for the basic functions of the website. Without them, the website cannot function properly.'
+      : 'Diese Cookies sind für die Grundfunktionen der Webseite zwingend erforderlich. Ohne diese kann die Webseite nicht richtig funktionieren.',
+    analyticsTitle: isEnglish ? 'Analytics Cookies' : 'Analyse-Cookies',
+    analyticsDesc: isEnglish
+      ? 'We collect anonymized usage data to improve our website and services for you. (Google Analytics 4)'
+      : 'Wir erfassen anonymisierte Nutzungsdaten, um unsere Webseite und unseren Service für Sie zu verbessern. (Google Analytics 4)',
+    saveSelection: isEnglish ? 'Save selection' : 'Auswahl speichern',
+  };
 
   useEffect(() => {
     // Initialize default consent BEFORE checking saved state
@@ -101,10 +125,10 @@ export default function CookieConsent() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <ShieldCheck className="text-[#0047AB] dark:text-[#60a5fa] w-6 h-6" />
-                    <h2 className="text-xl font-bold text-slate-900 dark:text-white">Wir respektieren Ihre Privatsphäre</h2>
+                    <h2 className="text-xl font-bold text-slate-900 dark:text-white">{content.title}</h2>
                   </div>
                   <p className="text-slate-600 dark:text-slate-300 text-[15px] leading-relaxed">
-                    Wir verwenden Cookies, um Ihnen ein optimales Webseiten-Erlebnis zu bieten. Dazu zählen Cookies, die für den Betrieb der Seite notwendig sind, sowie solche, die lediglich zu anonymen Statistikzwecken genutzt werden. Sie können selbst entscheiden, welche Kategorien Sie zulassen möchten.
+                    {content.description}
                   </p>
                 </div>
                 
@@ -113,27 +137,27 @@ export default function CookieConsent() {
                     onClick={handleAcceptAll}
                     className="w-full py-3 px-6 bg-[#0047AB] hover:bg-[#003380] text-white rounded-full font-bold transition-colors focus:ring-4 focus:ring-[#0047AB]/30 outline-none"
                   >
-                    Alle akzeptieren
+                    {content.acceptAll}
                   </button>
                   <button 
                     onClick={handleRejectOptional}
                     className="w-full py-3 px-6 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-700 dark:text-white rounded-full font-bold transition-colors focus:ring-4 focus:ring-slate-200 dark:focus:ring-white/20 outline-none"
                   >
-                    Nur notwendige
+                    {content.necessaryOnly}
                   </button>
                   <button 
                     onClick={() => setShowSettings(true)}
                     className="w-full py-2 px-6 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-white font-semibold text-sm transition-colors flex items-center justify-center gap-2 outline-none focus:underline"
                   >
                     <Settings size={14} />
-                    Einstellungen
+                    {content.settings}
                   </button>
                 </div>
               </div>
             ) : (
               <div className="p-6 md:p-8">
                 <div className="flex items-center justify-between mb-6 pb-6 border-b border-slate-100 dark:border-white/10">
-                  <h2 className="text-xl font-bold text-slate-900 dark:text-white">Cookie-Einstellungen</h2>
+                  <h2 className="text-xl font-bold text-slate-900 dark:text-white">{content.settingsTitle}</h2>
                   <button 
                     onClick={() => setShowSettings(false)}
                     className="p-2 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors rounded-full hover:bg-slate-100 dark:hover:bg-white/10"
@@ -151,9 +175,9 @@ export default function CookieConsent() {
                       </div>
                     </div>
                     <div>
-                      <h3 className="font-bold text-slate-900 dark:text-white mb-1">Notwendige Cookies</h3>
+                      <h3 className="font-bold text-slate-900 dark:text-white mb-1">{content.necessaryTitle}</h3>
                       <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Diese Cookies sind für die Grundfunktionen der Webseite zwingend erforderlich. Ohne diese kann die Webseite nicht richtig funktionieren.
+                        {content.necessaryDesc}
                       </p>
                     </div>
                   </div>
@@ -171,9 +195,9 @@ export default function CookieConsent() {
                       </label>
                     </div>
                     <div>
-                      <h3 className="font-bold text-slate-900 dark:text-white mb-1">Analyse-Cookies</h3>
+                      <h3 className="font-bold text-slate-900 dark:text-white mb-1">{content.analyticsTitle}</h3>
                       <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Wir erfassen anonymisierte Nutzungsdaten, um unsere Webseite und unseren Service für Sie zu verbessern. (Google Analytics 4)
+                        {content.analyticsDesc}
                       </p>
                     </div>
                   </div>
@@ -184,13 +208,13 @@ export default function CookieConsent() {
                     onClick={handleSaveSettings}
                     className="flex-1 py-3 px-6 bg-[#0047AB] hover:bg-[#003380] text-white rounded-full font-bold transition-colors focus:ring-4 focus:ring-[#0047AB]/30 outline-none"
                   >
-                    Auswahl speichern
+                    {content.saveSelection}
                   </button>
                   <button 
                     onClick={handleAcceptAll}
                     className="flex-1 py-3 px-6 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 text-slate-700 dark:text-white rounded-full font-bold transition-colors focus:ring-4 focus:ring-slate-200 dark:focus:ring-white/20 outline-none"
                   >
-                    Alle akzeptieren
+                    {content.acceptAll}
                   </button>
                 </div>
               </div>
