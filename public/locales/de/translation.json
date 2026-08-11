@@ -1,4 +1,18 @@
 {
+  "cookie_consent": {
+    "title": "Wir respektieren Ihre Privatsphäre",
+    "description": "Wir verwenden technisch notwendige Cookies, damit diese Website zuverlässig funktioniert. Mit Ihrer Einwilligung verwenden wir außerdem Analyse-Cookies, um die Nutzung unserer Website besser zu verstehen. Sie können Ihre Auswahl jederzeit über die Cookie-Einstellungen ändern.",
+    "acceptAll": "Alle akzeptieren",
+    "necessaryOnly": "Nur notwendige",
+    "settings": "Einstellungen",
+    "settingsTitle": "Cookie-Einstellungen",
+    "necessaryTitle": "Notwendige Cookies",
+    "necessaryDesc": "Diese Cookies sind für die Grundfunktionen der Webseite zwingend erforderlich. Ohne diese kann die Webseite nicht richtig funktionieren.",
+    "analyticsTitle": "Analyse-Cookies",
+    "analyticsDesc": "Wir erfassen anonymisierte Nutzungsdaten, um unsere Webseite und unseren Service für Sie zu verbessern. (Google Analytics 4)",
+    "saveSelection": "Auswahl speichern",
+    "cancel": "Abbrechen"
+  },
   "nav": {
     "home": "Startseite",
     "electricity": "Strom",

@@ -1,4 +1,18 @@
 {
+  "cookie_consent": {
+    "title": "We respect your privacy",
+    "description": "We use technically necessary cookies to ensure that this website works reliably. With your consent, we also use analytics cookies to understand how the website is used. You can change your selection at any time through Cookie Settings.",
+    "acceptAll": "Accept all",
+    "necessaryOnly": "Necessary only",
+    "settings": "Settings",
+    "settingsTitle": "Cookie Settings",
+    "necessaryTitle": "Necessary cookies",
+    "necessaryDesc": "These cookies are strictly necessary for the basic functions of the website. Without them, the website cannot function properly.",
+    "analyticsTitle": "Analytics cookies",
+    "analyticsDesc": "We collect anonymized usage data to improve our website and services for you. (Google Analytics 4)",
+    "saveSelection": "Save selection",
+    "cancel": "Cancel"
+  },
   "nav": {
     "home": "Home",
     "electricity": "Electricity",

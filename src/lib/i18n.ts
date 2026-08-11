@@ -14,9 +14,19 @@ i18n
     interpolation: {
       escapeValue: false, // React already safes from xss
     },
+    detection: {
+      order: ['localStorage', 'cookie'],
+      caches: ['localStorage', 'cookie'],
+    },
     backend: {
       loadPath: '/locales/{{lng}}/translation.json',
     },
   });
+
+i18n.on('languageChanged', (lng) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = lng;
+  }
+});
 
 export default i18n;
