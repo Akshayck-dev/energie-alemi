@@ -1,5 +1,6 @@
 import { Mail, PhoneCall } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { trackEvent } from '../lib/analytics';
 
 export default function FloatingActionButtons() {
   const { t } = useTranslation();
@@ -17,6 +18,7 @@ export default function FloatingActionButtons() {
           href={mailUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackEvent('email_click', { cta_location: 'fab' })}
           className="relative w-11 h-11 md:w-12 md:h-12 bg-[#0047AB] dark:bg-[#60a5fa] hover:bg-[#003380] dark:hover:bg-[#3b82f6] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 z-10"
           aria-label="Send us an email"
         >
@@ -40,6 +42,7 @@ export default function FloatingActionButtons() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackEvent('whatsapp_click', { cta_location: 'fab' })}
           className="relative w-11 h-11 md:w-12 md:h-12 bg-[#25D366] hover:bg-[#1EBE5A] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 z-10"
           aria-label="Chat on WhatsApp"
         >
@@ -63,6 +66,7 @@ export default function FloatingActionButtons() {
         <div className="absolute inset-0 bg-[#E31E24] rounded-full animate-ping opacity-20 [animation-duration:3s]" />
         <a
           href={phoneUrl}
+          onClick={() => trackEvent('phone_click', { cta_location: 'fab' })}
           className="relative w-11 h-11 md:w-12 md:h-12 bg-[#E31E24] hover:bg-[#C2181E] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 z-10"
           aria-label="Call us now"
         >

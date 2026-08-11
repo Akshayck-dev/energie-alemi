@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
 import CompareModal from '../components/CompareModal';
+import { trackEvent } from '../lib/analytics';
 
 import hero1Desk from '../assets/hero_desk.webp';
 import hero1Mob from '../assets/hero_mob.webp';
@@ -46,6 +47,10 @@ export default function HomeHero() {
     else if (activeIndex === 2) service = 'Internet';
     setSelectedService(service);
     setIsCompareModalOpen(true);
+    trackEvent('service_cta_click', {
+      service_type: service.toLowerCase(),
+      cta_location: 'home_hero'
+    });
   };
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 

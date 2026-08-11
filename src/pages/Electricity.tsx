@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
+import { trackEvent } from '../lib/analytics';
 import SectionHeader from '../components/ui/SectionHeader';
 import Timeline from '../components/ui/Timeline';
 import FAQ from '../components/ui/FAQ';
@@ -92,7 +93,10 @@ export default function Electricity() {
           description={t('elec_hero.desc')}
           bgImage={elecHeroDesk}
           buttonText={t('home_hero.contact_us', 'Contact us')}
-          onButtonClick={() => setIsModalOpen(true)}
+          onButtonClick={() => {
+            setIsModalOpen(true);
+            trackEvent('service_cta_click', { service_type: 'electricity', cta_location: 'service_hero' });
+          }}
           bulletPoints={[
             { icon: <ShieldCheck size={24} />, title: 'Certified providers' },
             { icon: <Zap size={24} />, title: 'Quick switching' },

@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
-import { Routes, Route } from 'react-router';
+import { Routes, Route, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import MainLayout from './layouts/MainLayout';
 import SplashScreen from './components/SplashScreen';
 import { ThemeProvider } from './contexts/ThemeContext';
+import { trackPageView } from './lib/analytics';
 
 import Home from './pages/Home';
 import Gas from './pages/Gas';
@@ -31,6 +32,12 @@ export default function AppRoutes() {
       document.dir = i18n.dir();
     }
   }, [i18n, i18n.language]);
+
+  // Track SPA page views
+  const location = useLocation();
+  useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location.pathname]);
 
   return (
     <ThemeProvider>

@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import LogoVideo from './LogoVideo';
 import { cn } from '../lib/utils';
+import { openCookieSettings } from './CookieConsent';
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -94,6 +95,12 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-slate-200 dark:border-white/10 text-center flex flex-col justify-center items-center gap-4 text-sm text-slate-500 dark:text-white/60">
           <p>&copy; {new Date().getFullYear()} {t('footer.rights_reserved')}</p>
+          <button 
+            onClick={openCookieSettings}
+            className="hover:text-slate-800 dark:hover:text-white transition-colors underline decoration-slate-300 dark:decoration-white/20 underline-offset-4"
+          >
+            Cookie-Einstellungen
+          </button>
         </div>
       </div>
     </footer>

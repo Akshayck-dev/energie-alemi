@@ -8,6 +8,7 @@ import Timeline from '../components/ui/Timeline';
 import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
+import { trackEvent } from '../lib/analytics';
 import gasHeroDesk from '../assets/gas hero desk.webp';
 import gasHeroMob from '../assets/gas hero mob.webp';
 import SEO from "../components/SEO";
@@ -94,7 +95,10 @@ export default function Gas() {
           bgImage={gasHeroDesk}
           bgImageMobile={gasHeroMob}
           buttonText={t('home_hero.contact_us', 'Contact us')}
-          onButtonClick={() => setIsModalOpen(true)}
+          onButtonClick={() => {
+            setIsModalOpen(true);
+            trackEvent('service_cta_click', { service_type: 'gas', cta_location: 'service_hero' });
+          }}
           bulletPoints={[
             { icon: <ShieldCheck size={24} />, title: 'Certified suppliers' },
             { icon: <Zap size={24} />, title: 'Quick switching' },

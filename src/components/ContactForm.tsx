@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { User, Mail, CheckCircle2 } from 'lucide-react';
+import { trackEvent } from '../lib/analytics';
 import { Input } from './ui/Input';
 import { Textarea } from './ui/Textarea';
 
@@ -42,6 +43,13 @@ export default function ContactForm() {
     await new Promise(resolve => setTimeout(resolve, 1500));
     setIsSubmitting(false);
     setIsSuccess(true);
+    
+    // Track successful lead generation
+    trackEvent('generate_lead', {
+      service_type: _data.topic || 'general',
+      page_path: window.location.pathname
+    });
+
     reset();
     setTimeout(() => {
       setIsSuccess(false);

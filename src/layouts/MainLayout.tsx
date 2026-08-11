@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import FloatingActionButtons from '../components/FloatingActionButtons';
 import ScrollProgress from '../components/ScrollProgress';
 import MobileBottomNav from '../components/MobileBottomNav';
+import CookieConsent from '../components/CookieConsent';
 import { useScrollAnimations } from '../hooks/useScrollAnimations';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -73,6 +74,7 @@ export default function MainLayout() {
       <Footer />
       <FloatingActionButtons />
       <MobileBottomNav />
+      <CookieConsent />
     </div>
   );
 }
