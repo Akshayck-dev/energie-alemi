@@ -8,8 +8,8 @@ export default function RatgeberIndex() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#0a1628] py-24 md:py-32">
       <SEO 
-        title="Ratgeber: Strom, Gas & Internet im Vergleich" 
-        description="Hilfreiche Tipps und Ratgeber rund um den Wechsel von Strom-, Gas- und Internetanbietern. So finden Sie einen passenden Tarif." 
+        title="Ratgeber: Strom, Gas & Internet Tarife in Aachen" 
+        description="Wertvolle Tipps rund um den Stromvergleich, Gasanbieterwechsel und Internetvergleich. Finden Sie den passenden Tarif für Ihr Zuhause." 
         url="/ratgeber" 
       />
       
@@ -20,7 +20,7 @@ export default function RatgeberIndex() {
             <span className="uppercase tracking-wider text-sm font-heading">Energie Alemi Ratgeber</span>
           </div>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-            Ratgeber für Strom, Gas & Internet
+            Ratgeber für Strom, Gas & Internet in Aachen
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300">
             Wertvolles Wissen, praktische Tipps und klare Anleitungen für Ihren Anbieterwechsel. Wir helfen Ihnen, den Tarif-Dschungel zu verstehen.

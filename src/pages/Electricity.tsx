@@ -83,7 +83,7 @@ export default function Electricity() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Stromvergleich" description="Jetzt Stromanbieter vergleichen und sparen. Günstige Stromtarife für Ihren Haushalt oder Ihr Unternehmen." url="/electricity" faqs={faqs} />
+      <SEO title="Stromvergleich Aachen: Stromanbieter wechseln & sparen" description="Ihr Stromvergleich für Aachen: Jetzt Stromanbieter vergleichen und wechseln. Finden Sie günstige Stromtarife für Ihren Haushalt." url="/electricity" faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

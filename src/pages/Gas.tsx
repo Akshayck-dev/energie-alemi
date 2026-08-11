@@ -84,7 +84,7 @@ export default function Gas() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Gasvergleich" description="Jetzt Gasanbieter vergleichen und wechseln. Wir helfen Ihnen, günstige und passende Gastarife zu finden." url="/gas" faqs={faqs} />
+      <SEO title="Gasvergleich Aachen: Gasanbieter wechseln & Tarife finden" description="Ihr Gasvergleich für Aachen: Günstige Gasanbieter vergleichen und wechseln. Sichern Sie sich jetzt passende Gastarife." url="/gas" faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"
