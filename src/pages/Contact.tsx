@@ -262,7 +262,7 @@ export default function Contact() {
                 <span className="text-[12px] font-bold tracking-[0.1em] text-[#f0a83f]">{t('contact.map_city')}</span>
               </div>
               
-              <a href="https://maps.app.goo.gl/nLKRUxtVSPwW4qzH8" target="_blank" rel="noreferrer" className="w-full md:w-auto mt-4 md:mt-0 bg-transparent border-[1.5px] border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 rounded-full py-4 md:py-[17px] px-0 md:px-[30px] text-[15px] font-bold flex items-center justify-center gap-2 md:gap-[10px] hover:bg-slate-100 dark:hover:bg-[#0c1d3d] hover:text-slate-900 dark:hover:text-white transition-colors">
+              <a href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noreferrer" className="w-full md:w-auto mt-4 md:mt-0 bg-transparent border-[1.5px] border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 rounded-full py-4 md:py-[17px] px-0 md:px-[30px] text-[15px] font-bold flex items-center justify-center gap-2 md:gap-[10px] hover:bg-slate-100 dark:hover:bg-[#0c1d3d] hover:text-slate-900 dark:hover:text-white transition-colors">
                 {t('contact.map_btn')}
                 <MapPin size={15} strokeWidth={1.6} />
               </a>
@@ -271,7 +271,7 @@ export default function Contact() {
 
           <div className="w-full h-[450px] md:h-[600px] rounded-[20px] md:rounded-[22px] overflow-hidden border border-slate-200 dark:border-white/10 shadow-sm relative z-0 bg-slate-100 dark:bg-[#051024]">
             <iframe 
-              src="https://maps.google.com/maps?q=Alexianergraben+7,+52064+Aachen&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+              src="https://maps.google.com/maps?q=Alexianergraben+9,+52064+Aachen&t=&z=17&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
