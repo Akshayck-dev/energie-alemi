@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Gas from './pages/Gas';
 import Internet from './pages/Internet';
 import Electricity from './pages/Electricity';
+import Tarifberatung from './pages/Tarifberatung';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Impressum from './pages/Impressum';
@@ -45,6 +46,7 @@ export default function AppRoutes() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/tarifberatung-aachen" element={<Tarifberatung />} />
           <Route path="/gas" element={<Gas />} />
           <Route path="/internet" element={<Internet />} />
           <Route path="/electricity" element={<Electricity />} />

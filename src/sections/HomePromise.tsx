@@ -53,6 +53,8 @@ export default function HomePromise() {
                <img 
                  src={ownerImg} 
                  alt="Advisor" 
+                 loading="lazy"
+                 decoding="async"
                  className="w-full aspect-square md:aspect-auto md:h-auto md:max-h-[600px] object-cover object-top rounded-3xl shadow-xl border border-slate-200 dark:border-white/10"
                 width="500" height="600" />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-50 dark:from-[#051024] via-transparent to-transparent z-10 rounded-3xl" />

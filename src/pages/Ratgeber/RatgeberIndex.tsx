@@ -23,7 +23,7 @@ export default function RatgeberIndex() {
             Ratgeber für Strom, Gas & Internet in Aachen
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300">
-            Wertvolles Wissen, praktische Tipps und klare Anleitungen für Ihren Anbieterwechsel. Wir helfen Ihnen, den Tarif-Dschungel zu verstehen.
+            Wertvolles Wissen, praktische Tipps und klare Anleitungen für Ihren Anbieterwechsel in Aachen. Nutzen Sie auch unsere direkten Vergleiche für <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Strom</Link>, <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Gas</Link> und <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internet</Link> oder nehmen Sie <Link to="/contact" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">persönlichen Kontakt</Link> auf.
           </p>
         </div>
 

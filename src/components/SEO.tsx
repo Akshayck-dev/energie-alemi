@@ -55,7 +55,7 @@ export default function SEO({ title, description, keywords, url, isArticle, date
   });
 
   graph.push({
-    "@type": "Organization",
+    "@type": "LocalBusiness",
     "@id": orgId,
     "name": "Energie Alemi",
     "url": `${baseUrl}/`,
@@ -63,7 +63,25 @@ export default function SEO({ title, description, keywords, url, isArticle, date
       "@type": "ImageObject",
       "url": `${baseUrl}/favicon.webp`
     },
-    "description": "Berater für Energie- und Telekommunikationstarife in Aachen und ganz Deutschland."
+    "image": `${baseUrl}/about-hero-image.webp`,
+    "description": "Berater für Energie- und Telekommunikationstarife in Aachen und ganz Deutschland.",
+    "telephone": "+4917665949390",
+    "email": "info@energie-alemi.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Alexianergraben 9",
+      "addressLocality": "Aachen",
+      "postalCode": "52064",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      }
+    ]
   });
 
   // 2. BreadcrumbList schema (for sub-pages only)

@@ -1,12 +1,13 @@
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
-import CompareModal from '../components/CompareModal';
 import { trackEvent } from '../lib/analytics';
+
+const CompareModal = lazy(() => import('../components/CompareModal'));
 
 import hero1Desk from '../assets/hero_desk.webp';
 import hero1Mob from '../assets/hero_mob.webp';
@@ -93,12 +94,18 @@ export default function HomeHero() {
             <img 
               src={cfg.desktop} 
               alt={`Hero background ${i + 1}`}
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "auto"}
+              decoding="async"
               className="w-full h-full object-cover object-center"
             />
           </picture>
         ))}
-        {/* Dark gradient for text legibility on the left, leaving the right side clear */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/60 to-transparent md:w-[80%] z-10" />
+        {/* Dark gradient for text legibility — anchored to text side */}
+        {/* LTR: dark on left, transparent on right */}
+        <div className="ltr:block rtl:hidden absolute top-0 left-0 bottom-0 w-full md:w-[80%] bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
+        {/* RTL: dark on right, transparent on left */}
+        <div className="rtl:block ltr:hidden absolute top-0 right-0 bottom-0 w-full md:w-[80%] bg-gradient-to-l from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
         
         {/* Subtle bottom gradient to blend with the next section */}
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white dark:from-[#0a1628] to-transparent z-10" />
@@ -161,7 +168,11 @@ export default function HomeHero() {
       </div>
 
       {/* Compare Modal Form */}
-      <CompareModal isOpen={isCompareModalOpen} onClose={() => setIsCompareModalOpen(false)} defaultService={selectedService} />
+      {isCompareModalOpen && (
+        <Suspense fallback={null}>
+          <CompareModal isOpen={isCompareModalOpen} onClose={() => setIsCompareModalOpen(false)} defaultService={selectedService} />
+        </Suspense>
+      )}
     </section>
   );
 }

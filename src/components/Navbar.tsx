@@ -57,7 +57,7 @@ export default function Navbar() {
               isScrolled ? "h-8 w-8 md:h-10 md:w-10" : "h-10 w-10 md:h-14 md:w-14"
             )}
           >
-            <LogoVideo className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125" />
+            <LogoVideo className="w-full h-full" />
           </div>
         </Link>
 
@@ -131,6 +131,7 @@ export default function Navbar() {
               useAdaptiveText ? "text-slate-900 dark:text-white" : "text-white"
             )}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -163,7 +164,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between p-6 border-b border-slate-100 dark:border-white/10">
                 <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
                   <div className="relative overflow-hidden flex items-center justify-center rounded-xl shrink-0 h-10 w-10">
-                    <LogoVideo className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125" />
+                    <LogoVideo className="w-full h-full" />
                   </div>
                   <span className="font-heading font-bold text-lg text-slate-900 dark:text-white">Energie Alemi</span>
                 </Link>

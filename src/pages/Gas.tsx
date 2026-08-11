@@ -1,6 +1,7 @@
 import { Search, Handshake, ArrowLeftRight, Leaf, Calendar, BarChart3, CheckSquare, Truck, ArrowRight, Flame, ShieldCheck, Zap } from 'lucide-react';
+import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
 import SectionHeader from '../components/ui/SectionHeader';
@@ -12,7 +13,8 @@ import { trackEvent } from '../lib/analytics';
 import gasHeroDesk from '../assets/gas hero desk.webp';
 import gasHeroMob from '../assets/gas hero mob.webp';
 import SEO from "../components/SEO";
-import CompareModal from '../components/CompareModal';
+
+const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function Gas() {
   const { t, i18n } = useTranslation();
@@ -132,6 +134,9 @@ export default function Gas() {
                   <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed">
                     {t('gas.tl_desc')}
                   </p>
+                  <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mt-4">
+                    Kombinieren Sie Ihren Wechsel in Aachen optimal mit unserem <Link to="/electricity" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">Stromtarif-Vergleich</Link> oder informieren Sie sich über <Link to="/internet" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">lokale Internetanbieter</Link>. Bei Fragen <Link to="/contact" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">kontaktieren Sie uns</Link> direkt.
+                  </p>
                   {/* Windmill graphic placeholder */}
                   <div className="mt-12 opacity-50 flex flex-col items-center">
                     <svg width="100%" height="200" viewBox="0 0 200 100" fill="none" stroke="#94a3b8" strokeWidth="1" className="mb-4">
@@ -176,7 +181,11 @@ export default function Gas() {
           </div>
         </section>
       </div>
-      <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Gas" />
+      {isModalOpen && (
+        <Suspense fallback={null}>
+          <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Gas" />
+        </Suspense>
+      )}
     </div>
   );
 }

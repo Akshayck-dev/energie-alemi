@@ -1,6 +1,7 @@
 import { Search, Handshake, ArrowLeftRight, Leaf, Calendar, BarChart3, CheckSquare, Zap, ArrowRight, Clock, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
 import { trackEvent } from '../lib/analytics';
@@ -11,7 +12,8 @@ import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
 import elecHeroDesk from '../assets/electricity hero desk.webp';
 import SEO from "../components/SEO";
-import CompareModal from '../components/CompareModal';
+
+const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function Electricity() {
   const { t, i18n } = useTranslation();
@@ -130,6 +132,9 @@ export default function Electricity() {
                   <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
                     {t('elec.tl_desc')}
                   </p>
+                  <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-4">
+                    Als Ihr Partner vor Ort in Aachen helfen wir nicht nur beim Strom, sondern auch mit unserem <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">passenden Gasvergleich</Link> und schnellen <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internet-Lösungen</Link>. Weitere Tipps finden Sie im <Link to="/ratgeber" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Ratgeber</Link>.
+                  </p>
                 </div>
               </div>
               <div className="lg:w-2/3">
@@ -159,7 +164,11 @@ export default function Electricity() {
           </div>
         </section>
       </div>
-      <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Strom" />
+      {isModalOpen && (
+        <Suspense fallback={null}>
+          <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Strom" />
+        </Suspense>
+      )}
     </div>
   );
 }

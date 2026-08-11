@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router';
 import { Zap, Flame, Wifi } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
@@ -38,7 +39,7 @@ export default function HomeServices() {
   const sectionRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
-  const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const itemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -117,6 +118,8 @@ export default function HomeServices() {
               ref={imageRef}
               src={bannerMob} 
               alt="Our Services Overview"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
             />
           </picture>
@@ -134,7 +137,8 @@ export default function HomeServices() {
             {servicesConfig.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div 
+                <Link 
+                  to={'/' + service.id}
                   key={service.id}
                   ref={(el) => { itemsRef.current[index] = el; }}
                   className="w-[85vw] sm:w-[320px] md:w-auto shrink-0 snap-center flex flex-col items-center text-center group cursor-pointer relative z-10"
@@ -152,7 +156,7 @@ export default function HomeServices() {
                   <p className="text-slate-500 dark:text-white/60 text-base max-w-[280px]">
                     {t(`home_services.items.${service.id}.description`)}
                   </p>
-                </div>
+                </Link>
               );
             })}
           </div>

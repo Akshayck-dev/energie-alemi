@@ -27,9 +27,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start gap-4">
             <Link to="/" className="flex items-center">
               <div className="relative w-20 h-20 overflow-hidden flex items-center justify-center rounded-xl shrink-0">
-                <LogoVideo
-                  className="h-[140%] w-auto max-w-none object-cover mix-blend-multiply dark:mix-blend-screen dark:invert dark:brightness-125 pointer-events-none"
-                />
+                <LogoVideo className="w-full h-full" />
               </div>
             </Link>
             <div>

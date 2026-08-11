@@ -1,6 +1,7 @@
 import { Search, Handshake, ArrowLeftRight, Wifi, Calendar, BarChart3, CheckSquare, Settings, ArrowRight, Gauge, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 
 import ServiceFeatures from '../sections/ServiceFeatures';
 import { trackEvent } from '../lib/analytics';
@@ -13,7 +14,8 @@ import { cn } from '../lib/utils';
 import netHeroDesk from '../assets/internet hero desktop.webp';
 import netHeroMob from '../assets/internet hero mob.webp';
 import SEO from "../components/SEO";
-import CompareModal from '../components/CompareModal';
+
+const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function Internet() {
   const { t, i18n } = useTranslation();
@@ -132,6 +134,9 @@ export default function Internet() {
                   <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed">
                     {t('internet.tl_desc')}
                   </p>
+                  <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mt-4">
+                    Profitieren Sie von unserer Aachener Tarifberatung auch in anderen Bereichen: Nutzen Sie unseren <Link to="/electricity" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">persönlichen Stromvergleich</Link> und finden Sie <Link to="/gas" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">passende Gastarife</Link>. Hilfreiche Informationen bietet auch unser <Link to="/ratgeber" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">Tarif-Ratgeber</Link>.
+                  </p>
                   {/* Router graphic placeholder */}
                   <div className="mt-12 opacity-80 flex flex-col items-center">
                     <div className="w-48 h-32 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-xl flex items-center justify-center relative shadow-xl mb-4">
@@ -171,7 +176,11 @@ export default function Internet() {
           </div>
         </section>
       </div>
-      <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Internet" />
+      {isModalOpen && (
+        <Suspense fallback={null}>
+          <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Internet" />
+        </Suspense>
+      )}
     </div>
   );
 }

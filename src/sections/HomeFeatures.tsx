@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 import { Search, FileCheck, Handshake, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
@@ -36,6 +37,9 @@ export default function HomeFeatures() {
             <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mb-6">
               {t('home_features.description')}
             </p>
+            <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mb-6">
+              Besuchen Sie uns direkt vor Ort für Ihre persönliche <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Tarifberatung in Aachen</Link>.
+            </p>
             <div className="w-12 h-[3px] bg-[#0047AB]"></div>
           </motion.div>
 
@@ -66,7 +70,7 @@ export default function HomeFeatures() {
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature1_desc')}
                   </p>
-                  <button className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                  <button aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
                   </button>
                 </div>
@@ -90,7 +94,7 @@ export default function HomeFeatures() {
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature2_desc')}
                   </p>
-                  <button className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                  <button aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
                   </button>
                 </div>
@@ -111,7 +115,7 @@ export default function HomeFeatures() {
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature3_desc')}
                   </p>
-                  <button className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                  <button aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
                   </button>
                 </div>

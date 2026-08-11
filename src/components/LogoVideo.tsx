@@ -1,33 +1,28 @@
-import { useEffect, useRef } from 'react';
 import { cn } from '../lib/utils';
-import logoVideoSrc from '../assets/Animate_the_attached_logo_in_a (1).mp4';
+import brandLogo from '../assets/logo_transparent.webp';
+import { useTheme } from '../contexts/ThemeContext';
 
 interface LogoVideoProps {
   className?: string;
 }
 
 export default function LogoVideo({ className }: LogoVideoProps) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.defaultMuted = true;
-      videoRef.current.muted = true;
-      videoRef.current.play().catch(e => {
-        console.warn('Video autoplay blocked:', e);
-      });
-    }
-  }, []);
+  const { theme } = useTheme();
 
   return (
-    <video
-      ref={videoRef}
-      src={logoVideoSrc}
-      autoPlay
-      muted
-      loop
-      playsInline
-      className={cn("pointer-events-none", className)}
+    <img
+      src={brandLogo}
+      alt="Energie Alemi Logo"
+      className={cn(
+        "pointer-events-none object-contain transition-[filter] duration-300",
+        // In dark mode, invert the dark logo so text+icon turn white/light
+        theme === 'dark'
+          ? "brightness-0 invert"
+          : "",
+        className
+      )}
+      width="1254"
+      height="1254"
     />
   );
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { cn } from '../lib/utils';
-import splashImg from '../assets/hero_splash_transparent.webp';
+import brandLogo from '../assets/logo_transparent.webp';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -11,13 +11,13 @@ export default function SplashScreen() {
     setTimeout(() => setIsVisible(false), 800);
   };
 
-  // Failsafe timer: WebP is 10s, but let's keep the splash short (2.5s) to not block the user too long
+  // Reduced failsafe timer since CSS animation is faster
   useEffect(() => {
     const timer = setTimeout(() => {
       if (isVisible && !isFadingOut) {
         handleEnd();
       }
-    }, 2500); 
+    }, 1500); 
     return () => clearTimeout(timer);
   }, [isVisible, isFadingOut]);
 
@@ -28,14 +28,28 @@ export default function SplashScreen() {
       className={cn(
         "fixed inset-0 z-[9999] flex items-center justify-center transition-opacity duration-700 ease-in-out",
         isFadingOut ? "opacity-0 pointer-events-none" : "opacity-100",
-        "bg-white" 
+        "bg-white dark:bg-[#0a1628]" 
       )}
     >
-      <img 
-        src={splashImg}
-        alt="Splash Animation"
-        className="absolute inset-0 w-full h-full object-contain scale-50 sm:scale-75 md:scale-[0.6]" 
-      />
+      <div className="relative w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center">
+        <style>{`
+          @keyframes logoReveal {
+            0% { opacity: 0; transform: scale(0.8); filter: blur(4px); }
+            100% { opacity: 1; transform: scale(1); filter: blur(0px); }
+          }
+          .splash-logo {
+            animation: logoReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .splash-logo { animation: none; opacity: 1; transform: scale(1); filter: blur(0); }
+          }
+        `}</style>
+        <img 
+          src={brandLogo}
+          alt="Energie Alemi Logo"
+          className="w-full h-full object-contain splash-logo" 
+        />
+      </div>
     </div>
   );
 }

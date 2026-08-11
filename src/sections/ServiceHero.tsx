@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { useEffect, useState } from 'react';
 
 export interface ServiceHeroProps {
   theme: 'dark' | 'light';
@@ -33,6 +34,19 @@ export default function ServiceHero({
   accentColor = 'bg-amber-500',
 }: ServiceHeroProps) {
   const isDark = theme === 'dark';
+  const [isRTL, setIsRTL] = useState(false);
+
+  useEffect(() => {
+    // React to language switches that change document.dir
+    const observer = new MutationObserver(() => {
+      setIsRTL(document.documentElement.dir === 'rtl');
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['dir'] });
+    setIsRTL(document.documentElement.dir === 'rtl');
+    return () => observer.disconnect();
+  }, []);
+
+  const gradientDir = isRTL ? 'to left' : 'to right';
 
   return (
     <section
@@ -48,6 +62,7 @@ export default function ServiceHero({
               alt=""
               className="hidden md:block w-full h-full object-cover object-center"
               loading="eager"
+              fetchPriority="high"
               decoding="async"
             />
             <img
@@ -55,6 +70,7 @@ export default function ServiceHero({
               alt=""
               className="block md:hidden w-full h-full object-cover object-center"
               loading="eager"
+              fetchPriority="high"
               decoding="async"
             />
           </>
@@ -64,6 +80,7 @@ export default function ServiceHero({
             alt=""
             className="w-full h-full object-cover object-center"
             loading="eager"
+            fetchPriority="high"
             decoding="async"
           />
         )}
@@ -73,8 +90,8 @@ export default function ServiceHero({
           className="absolute inset-0"
           style={{
             background: isDark
-              ? 'linear-gradient(to right, rgba(6,11,22,0.93) 0%, rgba(6,11,22,0.80) 38%, rgba(6,11,22,0.38) 68%, rgba(6,11,22,0.04) 100%)'
-              : 'linear-gradient(to right, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.84) 38%, rgba(255,255,255,0.38) 68%, rgba(255,255,255,0.04) 100%)',
+              ? `linear-gradient(${gradientDir}, rgba(6,11,22,0.93) 0%, rgba(6,11,22,0.80) 38%, rgba(6,11,22,0.38) 68%, rgba(6,11,22,0.04) 100%)`
+              : `linear-gradient(${gradientDir}, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.84) 38%, rgba(255,255,255,0.38) 68%, rgba(255,255,255,0.04) 100%)`,
           }}
         />
 
