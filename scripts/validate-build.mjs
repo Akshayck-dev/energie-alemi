@@ -24,12 +24,20 @@ console.log(`🔍 Running build validation: ENV=${DEPLOYMENT_ENV}, ALLOW_INDEXIN
 // 1. Strict production indexing check
 const isProdEnv = DEPLOYMENT_ENV === 'production';
 const isAllowIndexing = ALLOW_INDEXING === 'true';
-const isProdUrl = SITE_URL === 'https://www.energie-alemi.de';
+const isProdUrl = SITE_URL === 'https://www.energie-alemi.com';
+
+if (isProdEnv) {
+  if (!isAllowIndexing || !isProdUrl) {
+    console.error(`❌ Error: Production environment requires ALLOW_INDEXING=true and correct SITE_URL.`);
+    console.error(`Details: ALLOW_INDEXING="${ALLOW_INDEXING}" (expected "true"), SITE_URL="${SITE_URL}" (expected "https://www.energie-alemi.com")`);
+    process.exit(1);
+  }
+}
 
 if (isAllowIndexing) {
   if (!isProdEnv || !isProdUrl) {
     console.error(`❌ Error: Indexing is allowed (VITE_ALLOW_INDEXING=true) but environment is not production.`);
-    console.error(`Details: DEPLOYMENT_ENV="${DEPLOYMENT_ENV}" (expected "production"), SITE_URL="${SITE_URL}" (expected "https://www.energie-alemi.de")`);
+    console.error(`Details: DEPLOYMENT_ENV="${DEPLOYMENT_ENV}" (expected "production"), SITE_URL="${SITE_URL}" (expected "https://www.energie-alemi.com")`);
     process.exit(1);
   }
 }

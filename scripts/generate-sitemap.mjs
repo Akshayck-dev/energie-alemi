@@ -16,7 +16,7 @@ function getEnvValue(key) {
   }
 }
 
-const BASE_URL = process.env.VITE_SITE_URL || getEnvValue('VITE_SITE_URL') || 'https://www.energie-alemi.de';
+const BASE_URL = process.env.VITE_SITE_URL || getEnvValue('VITE_SITE_URL') || 'https://www.energie-alemi.com';
 const DEPLOYMENT_ENV = process.env.VITE_DEPLOYMENT_ENV || getEnvValue('VITE_DEPLOYMENT_ENV') || 'production';
 
 // Read manifest

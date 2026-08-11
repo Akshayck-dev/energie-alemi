@@ -28,7 +28,7 @@ export default function SEO({ title, description, keywords, url, isArticle, date
   const seoKeywords = keywords || "Stromvergleich, Gasvergleich, Gastarife vergleichen, Stromanbieter wechseln, günstiger Stromtarif, Energieanbieter vergleichen, Energie Alemi";
 
   // Dynamic Base URL
-  const baseUrl = import.meta.env.VITE_SITE_URL || 'https://www.energie-alemi.de';
+  const baseUrl = import.meta.env.VITE_SITE_URL || 'https://www.energie-alemi.com';
   const canonicalUrl = url ? `${baseUrl}${url.replace(/\/$/, '')}` : baseUrl;
 
   // Strict check on environment variable to prevent staging indexation
