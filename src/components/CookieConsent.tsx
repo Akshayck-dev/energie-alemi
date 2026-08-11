@@ -22,11 +22,14 @@ export function openCookieSettings() {
 
 export default function CookieConsent() {
   const { t } = useTranslation();
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [analyticsConsent, setAnalyticsConsent] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+    
     // Initialize default consent BEFORE checking saved state
     initializeConsentDefaults();
 
@@ -87,6 +90,8 @@ export default function CookieConsent() {
 
   // If user prefers reduced motion, disable animations
   const reduceMotion = typeof window !== 'undefined' ? window.matchMedia('(prefers-reduced-motion: reduce)').matches : false;
+
+  if (!mounted) return null;
 
   return (
     <AnimatePresence>

@@ -1,13 +1,18 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpBackend from 'i18next-http-backend';
+
+import deTranslation from '../../public/locales/de/translation.json';
+import enTranslation from '../../public/locales/en/translation.json';
 
 i18n
-  .use(HttpBackend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    resources: {
+      de: { translation: deTranslation },
+      en: { translation: enTranslation }
+    },
     fallbackLng: 'de',
     supportedLngs: ['de', 'en', 'ar', 'fa'],
     debug: false,
@@ -17,9 +22,6 @@ i18n
     detection: {
       order: ['localStorage', 'cookie'],
       caches: ['localStorage', 'cookie'],
-    },
-    backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
     },
   });
 
