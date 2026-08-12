@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { cn } from '../lib/utils';
-import brandLogo from '../assets/logo_transparent.webp';
+import brandLogo from '../assets/logo_transparent.png';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -55,7 +55,7 @@ export default function SplashScreen() {
           <img 
             src={brandLogo}
             alt="Energie Alemi Logo"
-            className="w-full h-full object-contain splash-logo" 
+            className="w-full h-full object-contain splash-logo dark:brightness-0 dark:invert" 
           />
         </div>
 

@@ -1,5 +1,5 @@
 import { cn } from '../lib/utils';
-import brandLogo from '../assets/logo_transparent.webp';
+import brandLogo from '../assets/logo_transparent.png';
 import { useTheme } from '../contexts/ThemeContext';
 
 interface LogoVideoProps {
