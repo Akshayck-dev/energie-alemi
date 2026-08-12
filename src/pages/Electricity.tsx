@@ -133,7 +133,7 @@ export default function Electricity() {
                     {t('elec.tl_desc')}
                   </p>
                   <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-4">
-                    Als Ihr Partner vor Ort in Aachen helfen wir nicht nur beim Strom, sondern auch mit unserem <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">passenden Gasvergleich</Link> und schnellen <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internet-Lösungen</Link>. Weitere Tipps finden Sie im <Link to="/ratgeber" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Ratgeber</Link>.
+                    Als Ihr Partner vor Ort in Aachen helfen wir nicht nur beim Strom, sondern auch mit unserem <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">passenden Gasvergleich</Link> und schnellen <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internet-Lösungen</Link>. Weitere Tipps finden Sie im <Link to="/ratgeber" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Ratgeber</Link>, beispielsweise zur <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Grundversorgung in Aachen</Link>.
                   </p>
                 </div>
               </div>

@@ -15,7 +15,7 @@ export default function StromanbieterWechseln() {
 
       <h2>Wann lohnt sich ein Wechsel?</h2>
       <p>
-        Besonders Verbraucher, die noch in der teuren Grundversorgung ihres lokalen Anbieters sind, haben enormes Sparpotenzial. Aber auch nach Ablauf einer Preisgarantie bei einem alternativen Anbieter lohnt sich ein erneuter <Link to="/electricity" className="text-[#0047AB] hover:underline">Stromvergleich</Link>. Falls Sie einen <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] hover:underline">Umzug nach Aachen</Link> planen, gelten beim Anbieterwechsel und der Mitnahme des Vertrags gesonderte Fristen und Regelungen.
+        Besonders Verbraucher, die noch in der teuren <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] hover:underline">Grundversorgung</Link> ihres lokalen Anbieters sind, haben enormes Sparpotenzial. Aber auch nach Ablauf einer Preisgarantie bei einem alternativen Anbieter lohnt sich ein erneuter <Link to="/electricity" className="text-[#0047AB] hover:underline">Stromvergleich</Link>. Falls Sie einen <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] hover:underline">Umzug nach Aachen</Link> planen, gelten beim Anbieterwechsel und der Mitnahme des Vertrags gesonderte Fristen und Regelungen.
       </p>
 
       <h2>Wie funktioniert der Prozess?</h2>

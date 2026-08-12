@@ -174,5 +174,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-08-11",
     "structuredDataType": "Article"
+  },
+  {
+    "path": "/ratgeber/grundversorgung-aachen-strom-gas",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Grundversorgung Aachen: Strom & Gas wechseln | Energie Alemi",
+    "description": "Grundversorgung in Aachen verständlich erklärt: Anbieter, Kündigungsfrist, Umzug und Wechselmöglichkeiten für Strom und Gas.",
+    "canonical": "/ratgeber/grundversorgung-aachen-strom-gas",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-12",
+    "structuredDataType": "Article"
   }
 ]

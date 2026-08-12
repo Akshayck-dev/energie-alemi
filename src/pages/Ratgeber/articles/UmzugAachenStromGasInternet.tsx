@@ -34,7 +34,7 @@ export default function UmzugAachenStromGasInternet() {
 
       <h2>2. Strom anmelden in Aachen: Was ist zu beachten?</h2>
       <p>
-        Sobald Sie die erste Glühbirne einschalten oder Strom nutzen, beziehen Sie Energie. Wenn Sie sich nicht vorab für einen Tarif entscheiden, fallen Sie automatisch in die sogenannte <strong>Grundversorgung</strong>. In Aachen ist die <i>STAWAG (Stadtwerke Aachen AG)</i> der lokale Grundversorger.
+        Sobald Sie die erste Glühbirne einschalten oder Strom nutzen, beziehen Sie Energie. Wenn Sie sich nicht vorab für einen Tarif entscheiden, fallen Sie automatisch in die sogenannte <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Grundversorgung</Link>. In Aachen ist die <i>STAWAG (Stadtwerke Aachen AG)</i> der lokale Grundversorger.
       </p>
       <p>
         Die Grundversorgung bietet maximale Flexibilität (sie ist gesetzlich jederzeit mit einer Frist von zwei Wochen kündbar), ist jedoch im Vergleich zu Sondertarifen meist spürbar teurer. Daher lohnt sich ein rechtzeitiger <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Stromvergleich</Link>, um einen passenden und günstigeren Tarif zu finden.

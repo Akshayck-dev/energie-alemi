@@ -13,7 +13,7 @@ interface SEOProps {
   faqs?: any;
 }
 
-export default function SEO({ title, description, keywords, url, isArticle, datePublished, dateModified }: SEOProps) {
+export default function SEO({ title, description, keywords, url, isArticle, datePublished, dateModified, faqs }: SEOProps) {
   const { i18n } = useTranslation();
   const lang = i18n.language || 'de';
 
@@ -149,6 +149,22 @@ export default function SEO({ title, description, keywords, url, isArticle, date
         "@type": "WebPage",
         "@id": canonicalUrl
       }
+    });
+  }
+
+  // 4. FAQPage Schema
+  if (faqs && Array.isArray(faqs) && faqs.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${canonicalUrl}/#faq`,
+      "mainEntity": faqs.map((faq: any) => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
     });
   }
 

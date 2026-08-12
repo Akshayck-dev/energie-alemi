@@ -135,7 +135,7 @@ export default function Gas() {
                     {t('gas.tl_desc')}
                   </p>
                   <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mt-4">
-                    Kombinieren Sie Ihren Wechsel in Aachen optimal mit unserem <Link to="/electricity" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">Stromtarif-Vergleich</Link> oder informieren Sie sich über <Link to="/internet" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">lokale Internetanbieter</Link>. Bei Fragen <Link to="/contact" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">kontaktieren Sie uns</Link> direkt.
+                    Kombinieren Sie Ihren Wechsel in Aachen optimal mit unserem <Link to="/electricity" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">Stromtarif-Vergleich</Link> oder informieren Sie sich über <Link to="/internet" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">lokale Internetanbieter</Link>. Bei Fragen <Link to="/contact" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">kontaktieren Sie uns</Link> direkt oder lesen Sie unseren Ratgeber zur <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">Grundversorgung in Aachen</Link>.
                   </p>
                   {/* Windmill graphic placeholder */}
                   <div className="mt-12 opacity-50 flex flex-col items-center">

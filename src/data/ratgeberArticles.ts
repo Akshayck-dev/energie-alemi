@@ -64,5 +64,14 @@ export const articles: RatgeberArticle[] = [
     category: 'Strom',
     publishedDate: '2026-08-11',
     componentName: 'UmzugAachenStromGasInternet'
+  },
+  {
+    id: '7',
+    slug: 'grundversorgung-aachen-strom-gas',
+    title: 'Grundversorgung Aachen: Strom und Gas – Kündigung und Tarifwechsel',
+    description: 'Grundversorgung in Aachen verständlich erklärt: Anbieter, Kündigungsfrist, Umzug und Wechselmöglichkeiten für Strom und Gas.',
+    category: 'Strom',
+    publishedDate: '2026-08-12',
+    componentName: 'GrundversorgungAachenStromGas'
   }
 ];
