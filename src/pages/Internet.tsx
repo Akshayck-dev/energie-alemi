@@ -103,9 +103,9 @@ export default function Internet() {
             trackEvent('service_cta_click', { service_type: 'internet', cta_location: 'service_hero' });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: 'Top providers' },
-            { icon: <Gauge size={24} />, title: 'Quick activation' },
-            { icon: <Handshake size={24} />, title: 'Independent advice' },
+            { icon: <ShieldCheck size={24} />, title: t('net_hero.bullet1_title') },
+            { icon: <Gauge size={24} />, title: t('net_hero.bullet2_title') },
+            { icon: <Handshake size={24} />, title: t('net_hero.bullet3_title') },
           ]}
           accentColor="bg-blue-600 hover:bg-blue-700"
         />

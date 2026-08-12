@@ -400,5 +400,10 @@
     "details_label": "Consumption / Details (optional)",
     "details_placeholder": "e.g. 3500 kWh/year or 250 Mbit/s",
     "submit_btn": "Send inquiry via WhatsApp"
+  },
+  "fab": {
+    "email_tooltip": "EMAIL US",
+    "whatsapp_tooltip": "WHATSAPP US",
+    "call_tooltip": "CALL US NOW"
   }
 }

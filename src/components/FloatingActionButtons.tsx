@@ -5,7 +5,7 @@ import { trackEvent } from '../lib/analytics';
 export default function FloatingActionButtons() {
   const { t } = useTranslation();
   const whatsappUrl = "https://wa.me/4917665949390";
-  const mailUrl = "mailto:info@energie-alemi.de?subject=Inquiry&body=Hello%20Energie%20Alemi,%0A%0AI%20am%20interested%20in%20your%20services.";
+  const mailUrl = "mailto:info@energie-alemi.de?subject=Anfrage&body=Hallo%20Energie%20Alemi,%0A%0AIch%20interessiere%20mich%20f%C3%BCr%20Ihre%20Dienstleistungen.";
   const phoneUrl = "tel:+4917665949390";
 
   return (
@@ -25,7 +25,7 @@ export default function FloatingActionButtons() {
           <Mail size={20} strokeWidth={2} />
           <div className="absolute right-full mr-3.5 bg-white dark:bg-[#0a1628] border border-slate-150 dark:border-white/10 p-2.5 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-20 flex flex-col items-start min-w-[150px]">
             <span className="text-[#0047AB] dark:text-[#60a5fa] text-[9px] font-bold tracking-wider uppercase mb-0.5">
-              {t('fab.email_tooltip', 'EMAIL US')}
+              {t('fab.email_tooltip', 'E-MAIL SENDEN')}
             </span>
             <span className="text-slate-800 dark:text-white text-xs font-bold tracking-tight">
               info@energie-alemi.de
@@ -51,7 +51,7 @@ export default function FloatingActionButtons() {
           </svg>
           <div className="absolute right-full mr-3.5 bg-white dark:bg-[#0a1628] border border-slate-150 dark:border-white/10 p-2.5 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-20 flex flex-col items-start min-w-[150px]">
             <span className="text-[#25D366] text-[9px] font-bold tracking-wider uppercase mb-0.5">
-              {t('fab.whatsapp_tooltip', 'WHATSAPP US')}
+              {t('fab.whatsapp_tooltip', 'WHATSAPP SCHREIBEN')}
             </span>
             <span className="text-slate-800 dark:text-white text-xs font-bold tracking-tight">
               +49 176 65949390
@@ -73,7 +73,7 @@ export default function FloatingActionButtons() {
           <PhoneCall size={20} strokeWidth={2} />
           <div className="absolute right-full mr-3.5 bg-white dark:bg-[#0a1628] border border-slate-150 dark:border-white/10 p-2.5 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-20 flex flex-col items-start min-w-[150px]">
             <span className="text-[#E31E24] text-[9px] font-bold tracking-wider uppercase mb-0.5">
-              {t('fab.call_tooltip', 'CALL US NOW')}
+              {t('fab.call_tooltip', 'JETZT ANRUFEN')}
             </span>
             <span className="text-slate-800 dark:text-white text-xs font-bold tracking-tight">
               +49 176 65949390

@@ -400,5 +400,10 @@
     "details_label": "Verbrauch / Details (optional)",
     "details_placeholder": "z.B. 3500 kWh/Jahr oder 250 Mbit/s",
     "submit_btn": "Anfrage über WhatsApp senden"
+  },
+  "fab": {
+    "email_tooltip": "E-MAIL SENDEN",
+    "whatsapp_tooltip": "WHATSAPP SCHREIBEN",
+    "call_tooltip": "JETZT ANRUFEN"
   }
 }

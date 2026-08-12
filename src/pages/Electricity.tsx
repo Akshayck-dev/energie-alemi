@@ -100,9 +100,9 @@ export default function Electricity() {
             trackEvent('service_cta_click', { service_type: 'electricity', cta_location: 'service_hero' });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: 'Certified providers' },
-            { icon: <Zap size={24} />, title: 'Quick switching' },
-            { icon: <Clock size={24} />, title: 'Independent advice' },
+            { icon: <ShieldCheck size={24} />, title: t('elec_hero.bullet1_title') },
+            { icon: <Zap size={24} />, title: t('elec_hero.bullet2_title') },
+            { icon: <Clock size={24} />, title: t('elec_hero.bullet3_title') },
           ]}
           accentColor="bg-amber-500 hover:bg-amber-600"
         />

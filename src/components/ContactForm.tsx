@@ -9,17 +9,17 @@ import { Input } from './ui/Input';
 import { Textarea } from './ui/Textarea';
 
 const contactSchema = z.object({
-  firstName: z.string().min(2, 'First name is required'),
-  lastName: z.string().min(2, 'Last name is required'),
-  email: z.string().email('Invalid email address'),
+  firstName: z.string().min(2, 'Vorname ist erforderlich'),
+  lastName: z.string().min(2, 'Nachname ist erforderlich'),
+  email: z.string().email('Ungültige E-Mail-Adresse'),
   street: z.string().optional(),
   zipCode: z.string().optional(),
   city: z.string().optional(),
-  topic: z.string().min(1, 'Please select a topic'),
-  serviceType: z.string().min(1, 'Please select a service type'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
+  topic: z.string().min(1, 'Bitte wählen Sie ein Thema'),
+  serviceType: z.string().min(1, 'Bitte wählen Sie eine Serviceart'),
+  message: z.string().min(10, 'Nachricht muss mindestens 10 Zeichen lang sein'),
   agreeToPrivacy: z.boolean().refine(val => val === true, {
-    message: 'You must agree to the privacy policy'
+    message: 'Sie müssen der Datenschutzerklärung zustimmen'
   })
 });
 

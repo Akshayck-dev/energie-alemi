@@ -102,9 +102,9 @@ export default function Gas() {
             trackEvent('service_cta_click', { service_type: 'gas', cta_location: 'service_hero' });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: 'Certified suppliers' },
-            { icon: <Zap size={24} />, title: 'Quick switching' },
-            { icon: <Handshake size={24} />, title: 'Independent advice' },
+            { icon: <ShieldCheck size={24} />, title: t('gas_hero.bullet1_title') },
+            { icon: <Zap size={24} />, title: t('gas_hero.bullet2_title') },
+            { icon: <Handshake size={24} />, title: t('gas_hero.bullet3_title') },
           ]}
           accentColor="bg-orange-500 hover:bg-orange-600"
         />
