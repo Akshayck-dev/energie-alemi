@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import routesManifest from '../routes-manifest.json';
 
 interface SEOProps {
@@ -13,6 +14,17 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description, keywords, url, isArticle, datePublished, dateModified }: SEOProps) {
+  const { i18n } = useTranslation();
+  const lang = i18n.language || 'de';
+
+  const ogLocaleMap: Record<string, string> = {
+    de: 'de_DE',
+    en: 'en_US',
+    ar: 'ar_AE',
+    fa: 'fa_IR'
+  };
+  const ogLocale = ogLocaleMap[lang] || 'de_DE';
+
   // Determine current manifest entry if url is provided
   const manifestEntry = url ? routesManifest.find(route => route.path === url) : undefined;
 
@@ -48,7 +60,7 @@ export default function SEO({ title, description, keywords, url, isArticle, date
     "url": `${baseUrl}/`,
     "name": "Energie Alemi",
     "description": "Kostenloser Vergleich für Strom, Gas und Internet.",
-    "inLanguage": "de-DE",
+    "inLanguage": lang === 'de' ? 'de-DE' : lang,
     "publisher": {
       "@id": orgId
     }
@@ -146,7 +158,7 @@ export default function SEO({ title, description, keywords, url, isArticle, date
   };
 
   return (
-    <Helmet htmlAttributes={{ lang: 'de' }}>
+    <Helmet htmlAttributes={{ lang }}>
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
       <meta name="keywords" content={seoKeywords} />
@@ -161,7 +173,7 @@ export default function SEO({ title, description, keywords, url, isArticle, date
       <meta property="og:type" content={isArticle ? "article" : "website"} />
       <meta property="og:image" content={`${baseUrl}/about-hero-image.webp`} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:locale" content="de_DE" />
+      <meta property="og:locale" content={ogLocale} />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

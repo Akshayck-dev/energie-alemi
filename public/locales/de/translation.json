@@ -33,6 +33,7 @@
     "description_part3": ".",
     "get_comparison": "Zum kostenlosen Vergleich",
     "our_services": "Unsere Leistungen",
+    "contact_us": "Kontakt aufnehmen",
     "feature1_line1": "Unabhängige",
     "feature1_line2": "Beratung",
     "feature2_line1": "100%",
@@ -199,6 +200,9 @@
     "form_fname": "Vorname",
     "form_lname": "Nachname",
     "form_email": "E-Mail-Adresse",
+    "form_street": "Straße & Hausnummer",
+    "form_zip": "PLZ",
+    "form_city": "Ort",
     "form_topic": "Ich brauche Hilfe bei",
     "form_topic_elec": "Strom",
     "form_topic_gas": "Gas",
@@ -369,5 +373,23 @@
     "feat2_desc": "Vergleichen und jedes Jahr hunderte Euro sparen.",
     "feat3_title": "Persönlicher Service",
     "feat3_desc": "Wir sind für Sie da – kompetent & freundlich."
+  },
+  "compare_modal": {
+    "title": "Kontaktieren Sie uns",
+    "inquiry_badge": "Tarifanfrage",
+    "subhead": "Geben Sie Ihre Details ein. Die Daten werden formatiert und direkt per WhatsApp an uns übertragen.",
+    "name_label": "Name *",
+    "name_placeholder": "Ihr Vor- und Nachname",
+    "service_label": "Bereich (Sparte) *",
+    "service_elec": "Strom",
+    "service_gas": "Gas",
+    "service_internet": "Internet",
+    "plz_label": "Postleitzahl (PLZ) *",
+    "plz_placeholder": "z.B. 52062",
+    "phone_label": "Telefonnummer / WhatsApp-Nummer *",
+    "phone_placeholder": "Für eventuelle Rückfragen",
+    "details_label": "Verbrauch / Details (optional)",
+    "details_placeholder": "z.B. 3500 kWh/Jahr oder 250 Mbit/s",
+    "submit_btn": "Anfrage über WhatsApp senden"
   }
 }

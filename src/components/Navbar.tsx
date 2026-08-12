@@ -57,7 +57,7 @@ export default function Navbar() {
               isScrolled ? "h-8 w-8 md:h-10 md:w-10" : "h-10 w-10 md:h-14 md:w-14"
             )}
           >
-            <LogoVideo className="w-full h-full" />
+            <LogoVideo className={cn("w-full h-full", !useAdaptiveText && "brightness-0 invert")} />
           </div>
         </Link>
 

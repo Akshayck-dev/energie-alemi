@@ -55,5 +55,14 @@ export const articles: RatgeberArticle[] = [
     category: 'Internet',
     publishedDate: '2026-08-09',
     componentName: 'InternetanbieterVergleichen'
+  },
+  {
+    id: '6',
+    slug: 'umzug-aachen-strom-gas-internet',
+    title: 'Umzug nach Aachen: Strom, Gas und Internet richtig anmelden',
+    description: 'Praktischer Ratgeber für Ihren Umzug nach Aachen. Erfahren Sie alles zu Anmeldefristen, Sonderkündigungsrechten (EnWG & TKG) und wie Sie typische Fehler vermeiden.',
+    category: 'Strom',
+    publishedDate: '2026-08-11',
+    componentName: 'UmzugAachenStromGasInternet'
   }
 ];

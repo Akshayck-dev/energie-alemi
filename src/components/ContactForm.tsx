@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { User, Mail, CheckCircle2 } from 'lucide-react';
+import { User, Mail, CheckCircle2, Phone, MapPin } from 'lucide-react';
 import { trackEvent } from '../lib/analytics';
 import { Input } from './ui/Input';
 import { Textarea } from './ui/Textarea';
@@ -12,6 +12,9 @@ const contactSchema = z.object({
   firstName: z.string().min(2, 'First name is required'),
   lastName: z.string().min(2, 'Last name is required'),
   email: z.string().email('Invalid email address'),
+  street: z.string().optional(),
+  zipCode: z.string().optional(),
+  city: z.string().optional(),
   topic: z.string().min(1, 'Please select a topic'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
   agreeToPrivacy: z.boolean().refine(val => val === true, {
@@ -77,7 +80,23 @@ export default function ContactForm() {
         <div className="w-[18px] md:w-[22px] h-[2px] bg-[#f0a83f] rounded-sm"></div>
         {t('contact.form_header_sub')}
       </div>
-      <h2 className="font-heading text-[22px] md:text-[28px] font-extrabold text-[#101828] mb-4 md:mb-[26px] tracking-[-0.01em]">{t('contact.form_header')}</h2>
+      <h2 className="font-heading text-[22px] md:text-[28px] font-extrabold text-[#101828] dark:text-white mb-4 tracking-[-0.01em]">{t('contact.form_header')}</h2>
+      
+      {/* Quick Contact & Address Info Bar */}
+      <div className="flex flex-col sm:flex-row sm:items-center flex-wrap gap-x-6 gap-y-3 mb-6 pb-6 border-b border-slate-100 dark:border-white/10 text-sm text-slate-600 dark:text-slate-350">
+        <a href="tel:+4917665949390" className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium">
+          <Phone size={16} className="text-[#f0a83f]" />
+          <span>0176 659 493 90</span>
+        </a>
+        <a href="mailto:info@energie-alemi.de" className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium">
+          <Mail size={16} className="text-[#f0a83f]" />
+          <span>info@energie-alemi.de</span>
+        </a>
+        <div className="flex items-center gap-2 font-medium">
+          <MapPin size={16} className="text-[#f0a83f]" />
+          <span>Alexianergraben 9, 52064 Aachen</span>
+        </div>
+      </div>
       
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:space-y-[16px]">
         <div className="grid grid-cols-2 gap-2.5 md:gap-[16px]">
@@ -95,13 +114,33 @@ export default function ContactForm() {
           />
         </div>
         
-        <Input 
-          icon={Mail} 
-          type="email" 
-          placeholder={t('contact.form_email')} 
-          {...register('email')}
-          error={errors.email?.message}
-        />
+        <div className="grid grid-cols-2 gap-2.5 md:gap-[16px]">
+          <Input 
+            icon={Mail} 
+            type="email" 
+            placeholder={t('contact.form_email')} 
+            {...register('email')}
+            error={errors.email?.message}
+          />
+          <Input 
+            icon={MapPin}
+            placeholder={t('contact.form_street')} 
+            {...register('street')}
+            error={errors.street?.message}
+          />
+        </div>
+        <div className="grid grid-cols-[1fr_2fr] gap-2.5 md:gap-[16px]">
+          <Input 
+            placeholder={t('contact.form_zip')} 
+            {...register('zipCode')}
+            error={errors.zipCode?.message}
+          />
+          <Input 
+            placeholder={t('contact.form_city')} 
+            {...register('city')}
+            error={errors.city?.message}
+          />
+        </div>
         
         <div className="relative">
           <select 

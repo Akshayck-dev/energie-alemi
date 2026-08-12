@@ -19,6 +19,7 @@
     "description_part3": ".",
     "get_comparison": "Zum kostenlosen Vergleich",
     "our_services": "Unsere Leistungen",
+    "contact_us": "تماس با ما",
     "feature1_line1": "Unabhängige",
     "feature1_line2": "Beratung",
     "feature2_line1": "100%",
@@ -185,6 +186,9 @@
     "form_fname": "Vorname",
     "form_lname": "Nachname",
     "form_email": "E-Mail-Adresse",
+    "form_street": "خیابان و شماره خانه",
+    "form_zip": "کد پستی",
+    "form_city": "شهر",
     "form_topic": "Ich brauche Hilfe bei",
     "form_topic_elec": "Strom",
     "form_topic_gas": "Gas",
@@ -355,5 +359,23 @@
     "feat2_desc": "Vergleichen und jedes Jahr hunderte Euro sparen.",
     "feat3_title": "Persönlicher Service",
     "feat3_desc": "Wir sind für Sie da – kompetent & freundlich."
+  },
+  "compare_modal": {
+    "title": "تماس با ما",
+    "inquiry_badge": "استعلام تعرفه",
+    "subhead": "اطلاعات خود را وارد کنید. داده‌ها قالب‌بندی شده و مستقیماً از طریق واتس‌اپ برای ما ارسال می‌شوند.",
+    "name_label": "نام *",
+    "name_placeholder": "نام و نام خانوادگی شما",
+    "service_label": "خدمات (بخش) *",
+    "service_elec": "برق",
+    "service_gas": "گاز",
+    "service_internet": "اینترنت",
+    "plz_label": "کد پستی *",
+    "plz_placeholder": "مانند 52062",
+    "phone_label": "شماره تلفن / واتس‌اپ *",
+    "phone_placeholder": "برای هرگونه سوال بعدی",
+    "details_label": "مصرف / جزئیات (اختیاری)",
+    "details_placeholder": "مانند 3500 کیلووات ساعت در سال یا 250 مگابیت بر ثانیه",
+    "submit_btn": "ارسال استعلام از طریق واتس‌اپ"
   }
 }

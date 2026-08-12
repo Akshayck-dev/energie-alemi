@@ -33,6 +33,7 @@
     "description_part3": ".",
     "get_comparison": "Get your free comparison",
     "our_services": "Our services",
+    "contact_us": "Contact us",
     "feature1_line1": "Independent",
     "feature1_line2": "advice",
     "feature2_line1": "100%",
@@ -199,6 +200,9 @@
     "form_fname": "First name",
     "form_lname": "Last name",
     "form_email": "E-mail address",
+    "form_street": "Street & House Number",
+    "form_zip": "ZIP Code",
+    "form_city": "City",
     "form_topic": "I need help with",
     "form_topic_elec": "Electricity",
     "form_topic_gas": "Gas",
@@ -369,5 +373,23 @@
     "feat2_desc": "Compare and save hundreds of euros every year.",
     "feat3_title": "Personal Service",
     "feat3_desc": "We are here for you – competent & friendly."
+  },
+  "compare_modal": {
+    "title": "Reach out to us",
+    "inquiry_badge": "Tariff Inquiry",
+    "subhead": "Enter your details. The data will be formatted and sent directly to us via WhatsApp.",
+    "name_label": "Name *",
+    "name_placeholder": "Your first and last name",
+    "service_label": "Service (Sector) *",
+    "service_elec": "Electricity",
+    "service_gas": "Gas",
+    "service_internet": "Internet",
+    "plz_label": "ZIP Code *",
+    "plz_placeholder": "e.g. 52062",
+    "phone_label": "Phone Number / WhatsApp *",
+    "phone_placeholder": "For any follow-up questions",
+    "details_label": "Consumption / Details (optional)",
+    "details_placeholder": "e.g. 3500 kWh/year or 250 Mbit/s",
+    "submit_btn": "Send inquiry via WhatsApp"
   }
 }

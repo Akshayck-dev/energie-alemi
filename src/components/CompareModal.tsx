@@ -12,7 +12,7 @@ interface CompareModalProps {
 
 export default function CompareModal({ isOpen, onClose, defaultService }: CompareModalProps) {
   const { t } = useTranslation();
-  const headingText = t('modal.reach_out_tariff', 'Tariff Comparison - Reach out to us');
+  const headingText = t('compare_modal.title', 'Reach out to us');
   const [name, setName] = useState('');
   const [service, setService] = useState(defaultService || 'Strom');
   const [phone, setPhone] = useState('');
@@ -54,14 +54,14 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
   const modalContent = (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[9999] overflow-y-auto p-4 flex justify-center items-start sm:items-center">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm"
           />
 
           {/* Modal Container */}
@@ -70,32 +70,32 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ type: 'spring', duration: 0.5 }}
-            className="relative w-full max-w-lg bg-white dark:bg-[#0a1628] rounded-[2rem] border border-slate-100 dark:border-white/10 shadow-2xl z-10 p-6 md:p-8 max-h-[90vh] overflow-y-auto scrollbar-thin"
+            className="relative w-full max-w-md bg-white dark:bg-[#0a1628] rounded-[1.5rem] border border-slate-100 dark:border-white/10 shadow-2xl z-10 p-5 sm:p-6 my-4 sm:my-0"
           >
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-6 right-6 w-9 h-9 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-500 hover:text-slate-800 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors"
+              className="absolute top-5 right-5 w-8 h-8 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center text-slate-500 hover:text-slate-800 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10 transition-colors"
               aria-label="Schließen"
             >
-              <X size={18} />
+              <X size={16} />
             </button>
 
             {/* Header */}
-            <div className="mb-6 pr-8">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0047AB]/10 text-[#0047AB] dark:bg-[#4F8CFF]/15 dark:text-[#4F8CFF] text-xs font-semibold uppercase tracking-wider mb-2">
-                <Send size={12} /> {t('compare_modal.inquiry_badge', 'Tarifanfrage')}
+            <div className="mb-4 pr-8">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#0047AB]/10 text-[#0047AB] dark:bg-[#4F8CFF]/15 dark:text-[#4F8CFF] text-[10px] font-semibold uppercase tracking-wider mb-2">
+                <Send size={10} /> {t('compare_modal.inquiry_badge', 'Tarifanfrage')}
               </span>
-              <h3 className="font-heading text-2xl font-bold text-slate-900 dark:text-white">{headingText}</h3>
-              <p className="text-sm text-slate-500 dark:text-white/60 mt-1 leading-relaxed">
+              <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white leading-tight">{headingText}</h3>
+              <p className="text-xs text-slate-500 dark:text-white/60 mt-1 leading-relaxed">
                 {t('compare_modal.subhead', 'Geben Sie Ihre Details ein. Die Daten werden formatiert und direkt per WhatsApp an uns übertragen.')}
               </p>
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-2.5 sm:space-y-3.5">
               <div>
-                <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
+                <label className="block text-[11px] sm:text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1">
                   {t('compare_modal.name_label', 'Name *')}
                 </label>
                 <input
@@ -104,19 +104,19 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={t('compare_modal.name_placeholder', 'Ihr Vor- und Nachname')}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
+                  className="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors text-sm"
                 />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
+                  <label className="block text-[11px] sm:text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1 truncate">
                     {t('compare_modal.service_label', 'Bereich (Sparte) *')}
                   </label>
                   <select
                     value={service}
                     onChange={(e) => setService(e.target.value)}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
+                    className="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors text-sm"
                   >
                     <option value="Strom">{t('compare_modal.service_elec', 'Strom (Electricity)')}</option>
                     <option value="Gas">{t('compare_modal.service_gas', 'Gas (Gas)')}</option>
@@ -125,7 +125,7 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
+                  <label className="block text-[11px] sm:text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1 truncate">
                     {t('compare_modal.plz_label', 'Postleitzahl (PLZ) *')}
                   </label>
                   <input
@@ -136,13 +136,13 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
                     value={plz}
                     onChange={(e) => setPlz(e.target.value.replace(/[^0-9]/g, ''))}
                     placeholder={t('compare_modal.plz_placeholder', 'z.B. 52062')}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
+                    className="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors text-sm"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
+                <label className="block text-[11px] sm:text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1">
                   {t('compare_modal.phone_label', 'Telefonnummer / WhatsApp-Nummer *')}
                 </label>
                 <input
@@ -151,28 +151,28 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder={t('compare_modal.phone_placeholder', 'Für eventuelle Rückfragen')}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors"
+                  className="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors text-sm"
                 />
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5">
+                <label className="block text-[11px] sm:text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1">
                   {t('compare_modal.details_label', 'Verbrauch / Details (optional)')}
                 </label>
-                <textarea
+                <input
+                  type="text"
                   value={details}
                   onChange={(e) => setDetails(e.target.value)}
                   placeholder={t('compare_modal.details_placeholder', 'z.B. 3500 kWh/Jahr oder 250 Mbit/s')}
-                  rows={2}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors resize-none"
+                  className="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors text-sm"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-4 px-6 rounded-xl font-bold bg-[#25D366] hover:bg-[#1EBE5A] text-white flex items-center justify-center gap-2.5 transition-transform hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-green-600/10 cursor-pointer mt-2"
+                className="w-full py-3 px-6 rounded-xl font-bold bg-[#25D366] hover:bg-[#1EBE5A] text-white flex items-center justify-center gap-2 transition-transform hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-green-600/10 cursor-pointer mt-1 text-sm sm:text-base"
               >
-                <MessageCircle size={20} />
+                <MessageCircle size={18} />
                 {t('compare_modal.submit_btn', 'Anfrage über WhatsApp senden')}
               </button>
             </form>

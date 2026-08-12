@@ -163,5 +163,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-08-09",
     "structuredDataType": "Article"
+  },
+  {
+    "path": "/ratgeber/umzug-aachen-strom-gas-internet",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Umzug nach Aachen: Strom, Gas und Internet richtig anmelden",
+    "description": "Praktischer Ratgeber für Ihren Umzug nach Aachen. Erfahren Sie alles zu Anmeldefristen, Sonderkündigungsrechten (EnWG & TKG) und wie Sie typische Fehler vermeiden.",
+    "canonical": "/ratgeber/umzug-aachen-strom-gas-internet",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-11",
+    "structuredDataType": "Article"
   }
 ]

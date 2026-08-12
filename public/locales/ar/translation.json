@@ -19,6 +19,7 @@
     "description_part3": ".",
     "get_comparison": "احصل على مقارنة مجانية",
     "our_services": "خدماتنا",
+    "contact_us": "اتصل بنا",
     "feature1_line1": "استشارة",
     "feature1_line2": "مستقلة",
     "feature2_line1": "شفافية",
@@ -173,6 +174,9 @@
     "form_fname": "الاسم الأول",
     "form_lname": "اسم العائلة",
     "form_email": "البريد الإلكتروني",
+    "form_street": "الشارع ورقم المنزل",
+    "form_zip": "الرمز البريدي",
+    "form_city": "المدينة",
     "form_topic": "أحتاج مساعدة في",
     "form_topic_elec": "الكهرباء",
     "form_topic_gas": "الغاز",
@@ -343,5 +347,23 @@
     "feat2_desc": "قارن ووفر مئات اليوروهات كل عام.",
     "feat3_title": "خدمة شخصية",
     "feat3_desc": "نحن هنا من أجلك - كفاءة وودية."
+  },
+  "compare_modal": {
+    "title": "اتصل بنا",
+    "inquiry_badge": "استعلام عن التعرفة",
+    "subhead": "أدخل التفاصيل الخاصة بك. سيتم تنسيق البيانات وإرسالها إلينا مباشرة عبر واتساب.",
+    "name_label": "الاسم *",
+    "name_placeholder": "الاسم الأول واسم العائلة",
+    "service_label": "الخدمة *",
+    "service_elec": "الكهرباء",
+    "service_gas": "الغاز",
+    "service_internet": "الإنترنت",
+    "plz_label": "الرمز البريدي *",
+    "plz_placeholder": "مثال: 52062",
+    "phone_label": "رقم الهاتف / واتساب *",
+    "phone_placeholder": "لأية أسئلة للمتابعة",
+    "details_label": "الاستهلاك / التفاصيل (اختياري)",
+    "details_placeholder": "مثال: 3500 كيلوواط ساعة/سنة أو 250 ميغابت/ثانية",
+    "submit_btn": "إرسال الاستفسار عبر واتساب"
   }
 }
