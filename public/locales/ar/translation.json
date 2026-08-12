@@ -6,7 +6,6 @@
     "internet": "الإنترنت",
     "about_us": "من نحن",
     "contact": "اتصل بنا",
-    "get_in_touch": "تواصل معنا",
     "ratgeber": "دليل"
   },
   "home_hero": {
@@ -186,7 +185,11 @@
     "form_privacy_text": "بالنقر على \"قبول\"، فإنك توافق على ",
     "form_privacy_link": "سياسة الخصوصية.",
     "form_btn_sending": "جاري الإرسال...",
-    "form_btn_send": "إرسال رسالة"
+    "form_btn_send": "إرسال رسالة",
+    "form_service_type": "نوع الخدمة / العقار",
+    "form_service_business": "تجاري (شركات)",
+    "form_service_family_house": "منزل عائلي",
+    "form_service_apartment_buildings": "عمارة سكنية"
   },
   "elec": {
     "hero_t1": "قرارات طاقة ذكية.",
@@ -358,8 +361,14 @@
     "service_elec": "الكهرباء",
     "service_gas": "الغاز",
     "service_internet": "الإنترنت",
+    "service_type_label": "نوع الخدمة / العقار *",
+    "service_type_business": "تجاري (شركات)",
+    "service_type_family_house": "منزل عائلي",
+    "service_type_apartment_buildings": "عمارة سكنية",
     "plz_label": "الرمز البريدي *",
     "plz_placeholder": "مثال: 52062",
+    "address_label": "العنوان (اختياري)",
+    "address_placeholder": "الشارع، رقم المنزل، المدينة",
     "phone_label": "رقم الهاتف / واتساب *",
     "phone_placeholder": "لأية أسئلة للمتابعة",
     "details_label": "الاستهلاك / التفاصيل (اختياري)",

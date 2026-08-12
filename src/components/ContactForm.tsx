@@ -16,6 +16,7 @@ const contactSchema = z.object({
   zipCode: z.string().optional(),
   city: z.string().optional(),
   topic: z.string().min(1, 'Please select a topic'),
+  serviceType: z.string().min(1, 'Please select a service type'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
   agreeToPrivacy: z.boolean().refine(val => val === true, {
     message: 'You must agree to the privacy policy'
@@ -37,7 +38,8 @@ export default function ContactForm() {
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
-      topic: ''
+      topic: '',
+      serviceType: ''
     }
   });
 
@@ -50,6 +52,7 @@ export default function ContactForm() {
     // Track successful lead generation
     trackEvent('generate_lead', {
       service_type: _data.topic || 'general',
+      service_category: _data.serviceType,
       page_path: window.location.pathname
     });
 
@@ -142,23 +145,43 @@ export default function ContactForm() {
           />
         </div>
         
-        <div className="relative">
-          <select 
-            {...register('topic')}
-            className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-[#101828] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.topic ? 'border-red-500' : ''}`}
-          >
-            <option value="" disabled>{t('contact.form_topic')}</option>
-            <option value="electricity">{t('contact.form_topic_elec')}</option>
-            <option value="gas">{t('contact.form_topic_gas')}</option>
-            <option value="internet">{t('contact.form_topic_net')}</option>
-            <option value="other">{t('contact.form_topic_other')}</option>
-          </select>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 dark:text-white/50">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-              <path d="m6 9 6 6 6-6" />
-            </svg>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-[16px]">
+          <div className="relative">
+            <select 
+              {...register('topic')}
+              className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-[#101828] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.topic ? 'border-red-500' : ''}`}
+            >
+              <option value="" disabled>{t('contact.form_topic')}</option>
+              <option value="electricity">{t('contact.form_topic_elec')}</option>
+              <option value="gas">{t('contact.form_topic_gas')}</option>
+              <option value="internet">{t('contact.form_topic_net')}</option>
+              <option value="other">{t('contact.form_topic_other')}</option>
+            </select>
+            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 dark:text-white/50">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            {errors.topic && <p className="text-sm text-red-500 mt-1">{errors.topic.message}</p>}
           </div>
-          {errors.topic && <p className="text-sm text-red-500 mt-1">{errors.topic.message}</p>}
+
+          <div className="relative">
+            <select 
+              {...register('serviceType')}
+              className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-[#101828] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.serviceType ? 'border-red-500' : ''}`}
+            >
+              <option value="" disabled>{t('contact.form_service_type')}</option>
+              <option value="business">{t('contact.form_service_business')}</option>
+              <option value="family_house">{t('contact.form_service_family_house')}</option>
+              <option value="apartment_buildings">{t('contact.form_service_apartment_buildings')}</option>
+            </select>
+            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 dark:text-white/50">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </div>
+            {errors.serviceType && <p className="text-sm text-red-500 mt-1">{errors.serviceType.message}</p>}
+          </div>
         </div>
 
         <Textarea 

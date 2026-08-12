@@ -2,7 +2,7 @@ import json
 import os
 
 locales_dir = "public/locales"
-langs = ["en", "de", "ar", "tr"]
+langs = ["en", "de", "ar", "tr", "fa"]
 
 data = {
     "en": {
@@ -19,6 +19,10 @@ data = {
             "form_topic_gas": "Gas",
             "form_topic_net": "Internet",
             "form_topic_other": "General question",
+            "form_service_type": "Service / Property Type",
+            "form_service_business": "Business",
+            "form_service_family_house": "Family House",
+            "form_service_apartment_buildings": "Apartment Buildings",
             "form_msg": "Your message",
             "form_privacy_text": "By clicking \"Accept\", you agree to our ",
             "form_privacy_link": "privacy policy.",
@@ -40,6 +44,10 @@ data = {
             "form_topic_gas": "Gas",
             "form_topic_net": "Internet",
             "form_topic_other": "Allgemeine Frage",
+            "form_service_type": "Service- / Gebäudeart",
+            "form_service_business": "Gewerbe",
+            "form_service_family_house": "Einfamilienhaus",
+            "form_service_apartment_buildings": "Mehrfamilienhaus",
             "form_msg": "Ihre Nachricht",
             "form_privacy_text": "Indem Sie auf \"Akzeptieren\" klicken, stimmen Sie unserer ",
             "form_privacy_link": "Datenschutzerklärung zu.",
@@ -61,6 +69,10 @@ data = {
             "form_topic_gas": "الغاز",
             "form_topic_net": "الإنترنت",
             "form_topic_other": "سؤال عام",
+            "form_service_type": "نوع الخدمة / العقار",
+            "form_service_business": "تجاري (شركات)",
+            "form_service_family_house": "منزل عائلي",
+            "form_service_apartment_buildings": "عمارة سكنية",
             "form_msg": "رسالتك",
             "form_privacy_text": "بالنقر على \"قبول\"، فإنك توافق على ",
             "form_privacy_link": "سياسة الخصوصية.",
@@ -82,11 +94,40 @@ data = {
             "form_topic_gas": "Gaz",
             "form_topic_net": "İnternet",
             "form_topic_other": "Genel soru",
+            "form_service_type": "Hizmet / Konut Tipi",
+            "form_service_business": "İşyeri / Ticari",
+            "form_service_family_house": "Müstakil Ev",
+            "form_service_apartment_buildings": "Apartman / Çok Aileli Konut",
             "form_msg": "Mesajınız",
             "form_privacy_text": "\"Kabul Et\"e tıklayarak, şunları kabul etmiş olursunuz: ",
             "form_privacy_link": "gizlilik politikası.",
             "form_btn_sending": "Gönderiliyor...",
             "form_btn_send": "Mesaj Gönder"
+        }
+    },
+    "fa": {
+        "contact": {
+            "form_sent_title": "پیام ارسال شد!",
+            "form_sent_desc": "از تماس شما متشکریم. در اسرع وقت با شما تماس خواهیم گرفت.",
+            "form_header_sub": "برای ما پیام بفرستید",
+            "form_header": "چگونه می‌توانیم به شما کمک کنیم؟",
+            "form_fname": "نام",
+            "form_lname": "نام خانوادگی",
+            "form_email": "آدرس ایمیل",
+            "form_topic": "من به کمک نیاز دارم در",
+            "form_topic_elec": "برق",
+            "form_topic_gas": "گاز",
+            "form_topic_net": "اینترنت",
+            "form_topic_other": "سوال عمومی",
+            "form_service_type": "نوع خدمات / ساختمان",
+            "form_service_business": "تجاری (شرکت‌ها)",
+            "form_service_family_house": "خانه ویلایی",
+            "form_service_apartment_buildings": "آپارتمان مسکونی",
+            "form_msg": "پیام شما",
+            "form_privacy_text": "با کلیک بر روی \"پذیرش\"، شما موافقت می‌کنید با ",
+            "form_privacy_link": "سیاست حفظ حریم خصوصی.",
+            "form_btn_sending": "در حال ارسال...",
+            "form_btn_send": "ارسال پیام"
         }
     }
 }
@@ -94,10 +135,13 @@ data = {
 for lang in langs:
     filepath = os.path.join(locales_dir, lang, "translation.json")
     if os.path.exists(filepath):
-        with open(filepath, "r") as f:
+        with open(filepath, "r", encoding="utf-8") as f:
             current_data = json.load(f)
         
+        if "contact" not in current_data:
+            current_data["contact"] = {}
         current_data["contact"].update(data[lang]["contact"])
         
-        with open(filepath, "w") as f:
+        with open(filepath, "w", encoding="utf-8") as f:
             json.dump(current_data, f, indent=2, ensure_ascii=False)
+

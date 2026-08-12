@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router';
-import { Menu, X, ArrowRight, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../lib/utils';
-import Button from './ui/Button';
 import LogoVideo from './LogoVideo';
 import { useTheme } from '../contexts/ThemeContext';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -106,9 +105,6 @@ export default function Navbar() {
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          <Button variant="primary" icon={<ArrowRight size={16} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />}>
-            {t('nav.get_in_touch')}
-          </Button>
         </div>
 
         <div className="flex md:hidden items-center gap-3">
@@ -206,23 +202,6 @@ export default function Navbar() {
                   );
                 })}
               </div>
-
-              {/* Footer CTA */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.3 }}
-                className="p-6 border-t border-slate-100 dark:border-white/10 bg-slate-50 dark:bg-[#051024]"
-              >
-                <Button 
-                  variant="primary" 
-                  className="w-full justify-center shadow-lg"
-                  icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} 
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {t('nav.get_in_touch')}
-                </Button>
-              </motion.div>
             </motion.div>
           </>
         )}

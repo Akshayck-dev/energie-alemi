@@ -20,7 +20,6 @@
     "internet": "Internet",
     "about_us": "Über uns",
     "contact": "Kontakt",
-    "get_in_touch": "Kontakt aufnehmen",
     "ratgeber": "Ratgeber"
   },
   "home_hero": {
@@ -212,7 +211,11 @@
     "form_privacy_text": "Indem Sie auf \"Akzeptieren\" klicken, stimmen Sie unserer ",
     "form_privacy_link": "Datenschutzerklärung zu.",
     "form_btn_sending": "Wird gesendet...",
-    "form_btn_send": "Nachricht senden"
+    "form_btn_send": "Nachricht senden",
+    "form_service_type": "Service- / Gebäudeart",
+    "form_service_business": "Gewerbe",
+    "form_service_family_house": "Einfamilienhaus",
+    "form_service_apartment_buildings": "Mehrfamilienhaus"
   },
   "elec": {
     "hero_t1": "Smarte Energieentscheidungen.",
@@ -384,8 +387,14 @@
     "service_elec": "Strom",
     "service_gas": "Gas",
     "service_internet": "Internet",
+    "service_type_label": "Service- / Gebäudeart *",
+    "service_type_business": "Gewerbe",
+    "service_type_family_house": "Einfamilienhaus",
+    "service_type_apartment_buildings": "Mehrfamilienhaus",
     "plz_label": "Postleitzahl (PLZ) *",
     "plz_placeholder": "z.B. 52062",
+    "address_label": "Adresse (optional)",
+    "address_placeholder": "Straße, Hausnummer, Ort",
     "phone_label": "Telefonnummer / WhatsApp-Nummer *",
     "phone_placeholder": "Für eventuelle Rückfragen",
     "details_label": "Verbrauch / Details (optional)",
