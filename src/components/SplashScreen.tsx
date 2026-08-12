@@ -30,43 +30,81 @@ export default function SplashScreen() {
   if (!isVisible) return null;
 
   return (
-    <div 
-      className={cn(
-        "fixed inset-0 z-[9999] flex flex-col items-center justify-center transition-opacity duration-500 ease-in-out",
-        isFadingOut ? "opacity-0 pointer-events-none" : "opacity-100",
-        "bg-white dark:bg-[#0a1628]" 
-      )}
-    >
-      <div className="flex flex-col items-center gap-6">
-        {/* Logo Container */}
-        <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
-          <style>{`
-            @keyframes logoReveal {
-              0% { opacity: 0; transform: scale(0.9) translateY(10px); filter: blur(4px); }
-              100% { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); }
-            }
-            .splash-logo {
-              animation: logoReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            }
-            @media (prefers-reduced-motion: reduce) {
-              .splash-logo { animation: none; opacity: 1; transform: scale(1); filter: blur(0); }
-            }
-          `}</style>
-          <img 
-            src={brandLogo}
-            alt="Energie Alemi Logo"
-            className="w-full h-full object-contain splash-logo dark:brightness-0 dark:invert" 
-          />
-        </div>
+    <>
+      <style>{`
+        @keyframes splashLogoReveal {
+          0%   { opacity: 0; transform: scale(0.85) translateY(12px); filter: blur(6px); }
+          100% { opacity: 1; transform: scale(1)    translateY(0);    filter: blur(0px); }
+        }
+        @keyframes splashBarGlow {
+          0%, 100% { box-shadow: 0 0 6px 2px rgba(0, 71, 171, 0.4); }
+          50%       { box-shadow: 0 0 14px 4px rgba(240, 168, 63, 0.6); }
+        }
+        .splash-logo-img {
+          animation: splashLogoReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .splash-bar-fill {
+          animation: splashBarGlow 1.4s ease-in-out infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .splash-logo-img { animation: none; opacity: 1; transform: none; filter: none; }
+          .splash-bar-fill { animation: none; }
+        }
+      `}</style>
 
-        {/* Premium Progress Bar */}
-        <div className="w-40 h-[3px] bg-slate-100 dark:bg-white/10 rounded-full overflow-hidden relative">
-          <div 
-            className="h-full bg-gradient-to-r from-[#0047AB] via-[#f0a83f] to-[#0047AB] rounded-full shadow-[0_0_8px_rgba(79,140,255,0.5)] transition-all ease-out duration-[30ms]"
-            style={{ width: `${progress}%` }}
-          />
+      <div
+        className={cn(
+          // Full-screen overlay, flex column centred both axes
+          'fixed inset-0 z-[9999]',
+          'flex flex-col items-center justify-center',
+          'transition-opacity duration-500 ease-in-out',
+          isFadingOut ? 'opacity-0 pointer-events-none' : 'opacity-100',
+          'bg-white dark:bg-[#0a1628]',
+        )}
+      >
+        {/* ── Inner wrapper: keeps logo + bar together and centred ── */}
+        <div className="flex flex-col items-center justify-center gap-8 w-full px-4">
+
+          {/* ── Logo ── responsive: 120 px → 160 px → 200 px ── */}
+          <div
+            className={cn(
+              'flex items-center justify-center',
+              // Responsive sizing: mobile / tablet / desktop
+              'w-[120px] h-[120px]',
+              'sm:w-[160px] sm:h-[160px]',
+              'md:w-[200px] md:h-[200px]',
+            )}
+          >
+            <img
+              src={brandLogo}
+              alt="Energie Alemi Logo"
+              className="splash-logo-img dark:brightness-0 dark:invert"
+              // Hint the browser about the image dimensions so it never clips
+              style={{ maxWidth: '100%', maxHeight: '100%' }}
+            />
+          </div>
+
+          {/* ── Progress bar ── */}
+          <div
+            className={cn(
+              'relative rounded-full overflow-hidden',
+              'bg-slate-100 dark:bg-white/10',
+              // Responsive width: narrow on mobile, wider on larger screens
+              'w-[140px] sm:w-[180px] md:w-[220px]',
+              'h-[3px] sm:h-[3px] md:h-[4px]',
+            )}
+          >
+            <div
+              className="splash-bar-fill h-full rounded-full bg-gradient-to-r from-[#0047AB] via-[#f0a83f] to-[#0047AB] transition-all ease-out duration-[30ms]"
+              style={{ width: `${progress}%` }}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
