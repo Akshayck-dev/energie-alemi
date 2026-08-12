@@ -1,9 +1,7 @@
-import { Zap, ShieldCheck, Users, LineChart,  ArrowRight, Handshake } from 'lucide-react';
+import { Zap, ShieldCheck, Users, LineChart, Handshake } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { motion, type Variants } from 'framer-motion';
-import Button from '../components/ui/Button';
 import ownerImg from '../assets/image-admin.JPG.webp';
-import { cn } from '../lib/utils';
 import SEO from "../components/SEO";
 
 const fadeInUp: Variants = {
@@ -22,7 +20,7 @@ const staggerContainer: Variants = {
 };
 
 export default function About() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628] min-h-screen">
@@ -84,12 +82,6 @@ export default function About() {
                       <p className="text-slate-500 dark:text-white/60 text-[13px]">{t('about.hero_f3_desc')}</p>
                     </div>
                   </motion.div>
-                </motion.div>
-
-                <motion.div variants={fadeInUp} className="flex justify-start">
-                  <Button variant="primary" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} className="w-full md:w-auto justify-center shadow-lg hover:shadow-blue-900/20" aria-label={t('about.hero_button')}>
-                    {t('about.hero_button')}
-                  </Button>
                 </motion.div>
               </motion.div>
               
@@ -356,11 +348,6 @@ export default function About() {
                   <p className="text-slate-600 dark:text-white/80 text-base max-w-lg">
                     {t('about.cta_desc')}
                   </p>
-                </div>
-                <div className="flex-shrink-0 mt-4 md:mt-2 w-full md:w-auto">
-                  <Button variant="primary" className="w-full md:w-auto justify-center shadow-lg hover:shadow-blue-900/20" icon={<ArrowRight size={18} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />} aria-label={t('about.cta_button')}>
-                    {t('about.cta_button')}
-                  </Button>
                 </div>
               </div>
             </motion.div>
