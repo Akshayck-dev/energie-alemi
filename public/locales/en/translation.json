@@ -213,6 +213,7 @@
     "form_btn_sending": "Sending...",
     "form_btn_send": "Send Message",
     "form_service_type": "Service / Property Type",
+    "form_service_private": "Private",
     "form_service_business": "Business",
     "form_service_family_house": "Family House",
     "form_service_apartment_buildings": "Apartment Buildings"
@@ -387,7 +388,8 @@
     "service_elec": "Electricity",
     "service_gas": "Gas",
     "service_internet": "Internet",
-    "service_type_label": "Service / Property Type *",
+    "service_type_label": "Service Type *",
+    "service_type_private": "Private",
     "service_type_business": "Business",
     "service_type_family_house": "Family House",
     "service_type_apartment_buildings": "Apartment Buildings",

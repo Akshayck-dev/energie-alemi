@@ -171,9 +171,8 @@ export default function ContactForm() {
               className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-[#101828] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.serviceType ? 'border-red-500' : ''}`}
             >
               <option value="" disabled>{t('contact.form_service_type')}</option>
+              <option value="private">{t('contact.form_service_private')}</option>
               <option value="business">{t('contact.form_service_business')}</option>
-              <option value="family_house">{t('contact.form_service_family_house')}</option>
-              <option value="apartment_buildings">{t('contact.form_service_apartment_buildings')}</option>
             </select>
             <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 dark:text-white/50">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">

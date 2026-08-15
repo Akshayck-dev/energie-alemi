@@ -15,7 +15,7 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
   const headingText = t('compare_modal.title', 'Reach out to us');
   const [name, setName] = useState('');
   const [service, setService] = useState(defaultService || 'Strom');
-  const [serviceType, setServiceType] = useState('business');
+  const [serviceType, setServiceType] = useState('private');
   const [phone, setPhone] = useState('');
   const [plz, setPlz] = useState('');
   const [address, setAddress] = useState('');
@@ -49,7 +49,7 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
     // Reset form and close
     setName('');
     setService('Strom');
-    setServiceType('business');
+    setServiceType('private');
     setPhone('');
     setPlz('');
     setAddress('');
@@ -139,9 +139,8 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
                     onChange={(e) => setServiceType(e.target.value)}
                     className="w-full px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] transition-colors text-sm"
                   >
+                    <option value="private">{t('compare_modal.service_type_private', 'Private')}</option>
                     <option value="business">{t('compare_modal.service_type_business', 'Business')}</option>
-                    <option value="family_house">{t('compare_modal.service_type_family_house', 'Family House')}</option>
-                    <option value="apartment_buildings">{t('compare_modal.service_type_apartment_buildings', 'Apartment Buildings')}</option>
                   </select>
                 </div>
               </div>
