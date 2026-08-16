@@ -34,10 +34,10 @@ export default function UmzugAachenStromGasInternet() {
 
       <h2>2. Strom anmelden in Aachen: Was ist zu beachten?</h2>
       <p>
-        Sobald Sie die erste Glühbirne einschalten oder Strom nutzen, beziehen Sie Energie. Wenn Sie sich nicht vorab für einen Tarif entscheiden, fallen Sie automatisch in die sogenannte <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Grundversorgung</Link>. In Aachen ist die <i>STAWAG (Stadtwerke Aachen AG)</i> der lokale Grundversorger.
+        Sobald Sie die erste Glühbirne einschalten oder Strom nutzen, beziehen Sie Energie. Wenn Sie sich nicht vorab für einen Tarif entscheiden, fallen Sie automatisch in die sogenannte <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Grundversorgung</Link>. In Aachen ist die <i>STAWAG (Stadtwerke Aachen AG)</i> der lokale Grundversorger.
       </p>
       <p>
-        Die Grundversorgung bietet maximale Flexibilität (sie ist gesetzlich jederzeit mit einer Frist von zwei Wochen kündbar), ist jedoch im Vergleich zu Sondertarifen meist spürbar teurer. Daher lohnt sich ein rechtzeitiger <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Stromvergleich</Link>, um einen passenden und günstigeren Tarif zu finden.
+        Die Grundversorgung bietet maximale Flexibilität (sie ist gesetzlich jederzeit mit einer Frist von zwei Wochen kündbar), ist jedoch im Vergleich zu Sondertarifen meist spürbar teurer. Daher lohnt sich ein rechtzeitiger <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromvergleich</Link>, um einen passenden und günstigeren Tarif zu finden.
       </p>
       <h3>Sonderkündigungsrecht bei Umzug</h3>
       <p>
@@ -49,7 +49,7 @@ export default function UmzugAachenStromGasInternet() {
         Falls Ihre neue Wohnung in Aachen über eine Gasetagenheizung oder einen Gasanschluss verfügt, gilt hier das gleiche Prinzip wie beim Strom. Ohne eigene Anmeldung übernimmt die STAWAG die Grundversorgung.
       </p>
       <p>
-        Aufgrund des oft höheren Verbrauchs beim Heizen ist das Sparpotenzial beim Gas besonders groß. Führen Sie idealerweise vor dem Einzug einen neutralen <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Gasvergleich</Link>, um hohe Vorauszahlungen in der Grundversorgung zu vermeiden.
+        Aufgrund des oft höheren Verbrauchs beim Heizen ist das Sparpotenzial beim Gas besonders groß. Führen Sie idealerweise vor dem Einzug einen neutralen <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich</Link>, um hohe Vorauszahlungen in der Grundversorgung zu vermeiden.
       </p>
 
       <h2>4. Internet anmelden: Verfügbarkeit und Fristen</h2>
@@ -64,7 +64,7 @@ export default function UmzugAachenStromGasInternet() {
         Kann der Anbieter die Leistung am neuen Wohnort nicht oder nur mit einer geringeren Bandbreite zur Verfügung stellen, haben Sie nach § 60 Abs. 2 TKG ein <strong>Sonderkündigungsrecht mit einer Frist von einem Monat</strong>. Die Frist beginnt frühestens mit dem Tag des tatsächlichen Umzugs.
       </p>
       <p>
-        Wir empfehlen Ihnen, rechtzeitig die Verfügbarkeit an Ihrer neuen Adresse in Aachen zu prüfen und die Vertragsumstellung mindestens vier Wochen im Voraus anzustoßen. Nutzen Sie hierzu unseren <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internetvergleich</Link>, um DSL-, Kabel- oder Glasfaseroptionen für Aachen zu ermitteln.
+        Wir empfehlen Ihnen, rechtzeitig die Verfügbarkeit an Ihrer neuen Adresse in Aachen zu prüfen und die Vertragsumstellung mindestens vier Wochen im Voraus anzustoßen. Nutzen Sie hierzu unseren <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Internetvergleich</Link>, um DSL-, Kabel- oder Glasfaseroptionen für Aachen zu ermitteln.
       </p>
 
       <h2>5. Welche Daten sollten Sie vorbereiten?</h2>

@@ -3,11 +3,20 @@ import { cn } from '../lib/utils';
 import brandLogo from '../assets/logo_transparent.webp';
 
 export default function SplashScreen() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 767) {
+      return false;
+    }
+    return true;
+  });
   const [isFadingOut, setIsFadingOut] = useState(false);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 767) {
+      setIsVisible(false);
+      return;
+    }
     let timer: ReturnType<typeof setInterval>;
     let fadeTimeout: ReturnType<typeof setTimeout>;
     let isListenerAdded = false;
@@ -86,6 +95,7 @@ export default function SplashScreen() {
         className={cn(
           // Full-screen overlay, flex column centred both axes
           'fixed inset-0 z-[9999]',
+          'splash-overlay-container',
           'flex flex-col items-center justify-center',
           'transition-opacity duration-500 ease-in-out',
           isFadingOut ? 'opacity-0 pointer-events-none' : 'opacity-100',

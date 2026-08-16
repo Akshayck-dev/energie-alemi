@@ -33,13 +33,13 @@ export default function Footer() {
             </Link>
             <div>
               <p className="text-slate-600 dark:text-white/80 font-medium text-lg">{t('footer.smart_advice')}</p>
-              <p className="text-[#0047AB] font-bold text-lg">{t('footer.lower_costs')}</p>
+              <p className="text-[#0047AB] dark:text-[#4F8CFF] font-bold text-lg">{t('footer.lower_costs')}</p>
             </div>
           </div>
 
           {/* Contact */}
           <div className="flex flex-col items-center md:items-start gap-5">
-            <h4 className="font-heading font-bold text-slate-900 dark:text-white text-xl">{t('footer.contact')}</h4>
+            <h2 className="font-heading font-bold text-slate-900 dark:text-white text-xl">{t('footer.contact')}</h2>
             <ul className="flex flex-col items-center md:items-start gap-4">
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 text-slate-600 dark:text-white/80">
                 <Phone size={20} className="md:mt-0.5 text-[#0047AB] dark:text-[#f0a83f]" />
@@ -69,7 +69,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="flex flex-col items-center md:items-start gap-5">
-            <h4 className="font-heading font-bold text-slate-900 dark:text-white text-xl">{t('footer.quick_links')}</h4>
+            <h2 className="font-heading font-bold text-slate-900 dark:text-white text-xl">{t('footer.quick_links')}</h2>
             <ul className="flex flex-col items-center md:items-start gap-3 w-full md:w-auto">
               {quickLinks.map((link) => (
                 <li key={link.key} className="w-full md:w-auto flex justify-center md:justify-start">
@@ -89,13 +89,13 @@ export default function Footer() {
 
           {/* Follow Us */}
           <div className="flex flex-col items-center md:items-start gap-5">
-            <h4 className="font-heading font-bold text-slate-900 dark:text-white text-xl">{t('footer.follow_us')}</h4>
+            <h2 className="font-heading font-bold text-slate-900 dark:text-white text-xl">{t('footer.follow_us')}</h2>
             <div className="flex gap-4 text-slate-600 dark:text-white/80">
-              <a href="#" className="w-10 h-10 rounded-full bg-[#f0f4ff] dark:bg-[#0a1628] flex items-center justify-center text-[#0047AB] dark:text-[#f0a83f] hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#051024] transition-all shadow-sm">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <a href="#" aria-label={t('footer.instagram', 'Instagram')} className="w-10 h-10 rounded-full bg-[#f0f4ff] dark:bg-[#0a1628] flex items-center justify-center text-[#0047AB] dark:text-[#f0a83f] hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#051024] transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB] dark:focus-visible:ring-[#f0a83f] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#051024]">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-[#f0f4ff] dark:bg-[#0a1628] flex items-center justify-center text-[#0047AB] dark:text-[#f0a83f] hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#051024] transition-all shadow-sm">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <a href="#" aria-label={t('footer.facebook', 'Facebook')} className="w-10 h-10 rounded-full bg-[#f0f4ff] dark:bg-[#0a1628] flex items-center justify-center text-[#0047AB] dark:text-[#f0a83f] hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#051024] transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB] dark:focus-visible:ring-[#f0a83f] focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#051024]">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
               </a>
             </div>
           </div>

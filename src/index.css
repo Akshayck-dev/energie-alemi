@@ -40,6 +40,11 @@
   /* Do NOT set scroll-behavior: smooth here — Lenis controls scrolling via JS.
      Native scroll-behavior conflicts with Lenis and causes double-scroll jank. */
 
+  html, body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
   body {
     @apply font-sans antialiased bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white;
   }
@@ -67,3 +72,11 @@
     @apply bg-white/10 backdrop-blur-lg border border-white/20;
   }
 }
+
+/* Bypass splash screen overlay on mobile viewports to prevent LCP render delay */
+@media (max-width: 767px) {
+  .splash-overlay-container {
+    display: none !important;
+  }
+}
+

@@ -11,11 +11,18 @@ const CompareModal = lazy(() => import('../components/CompareModal'));
 
 import hero1Desk from '../assets/hero_desk.webp';
 import hero1Mob from '../assets/hero_mob.webp';
-import hero1MobAvif from '../assets/hero_mob.avif';
 import hero2Desk from '../assets/hero2_desk.webp';
 import hero2Mob from '../assets/hero2_mob.webp';
 import hero3Desk from '../assets/hero1_net_desk.webp';
 import hero3Mob from '../assets/hero1_net_mob.webp';
+
+// Optimized responsive hero images
+import hero1Desk1672Webp from '../assets/hero_desk_1672.webp';
+import hero1Desk1672Avif from '../assets/hero_desk_1672.avif';
+import hero1Tab1024Webp from '../assets/hero_tablet_1024.webp';
+import hero1Tab1024Avif from '../assets/hero_tablet_1024.avif';
+import hero1Mob640Webp from '../assets/hero_mob_640.webp';
+import hero1Mob640Avif from '../assets/hero_mob_640.avif';
 
 const HERO_IMAGES_CONFIG = [
   {
@@ -62,11 +69,48 @@ export default function HomeHero() {
   }, []);
 
   useEffect(() => {
-    // Add activeIndex to loadedIndices if not already present
-    if (!loadedIndices.includes(activeIndex)) {
-      setLoadedIndices((prev) => [...prev, activeIndex]);
+    if (typeof window === 'undefined') return;
+
+    let idleId: number | null = null;
+    let fallbackTimeout: ReturnType<typeof setTimeout> | null = null;
+
+    const startIdleLoad = () => {
+      const loadRemaining = () => {
+        setLoadedIndices([0, 1, 2]);
+      };
+
+      if ('requestIdleCallback' in window) {
+        idleId = window.requestIdleCallback(() => {
+          loadRemaining();
+        }, { timeout: 2000 });
+      } else {
+        loadRemaining();
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      fallbackTimeout = setTimeout(startIdleLoad, 1000);
+    } else {
+      const handleLoad = () => {
+        fallbackTimeout = setTimeout(startIdleLoad, 1000);
+      };
+      window.addEventListener('load', handleLoad);
+      return () => {
+        window.removeEventListener('load', handleLoad);
+        if (idleId && 'cancelIdleCallback' in window) {
+          window.cancelIdleCallback(idleId);
+        }
+        if (fallbackTimeout) clearTimeout(fallbackTimeout);
+      };
     }
-  }, [activeIndex, loadedIndices]);
+
+    return () => {
+      if (idleId && 'cancelIdleCallback' in window) {
+        window.cancelIdleCallback(idleId);
+      }
+      if (fallbackTimeout) clearTimeout(fallbackTimeout);
+    };
+  }, []);
 
   useEffect(() => {
     // Schedule next slide switch
@@ -79,10 +123,35 @@ export default function HomeHero() {
 
   return (
     <section className="relative min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
-      {/* LCP Optimization: Preload first slide images */}
+      {/* LCP Optimization: Preload first slide images responsive using media queries */}
       <Helmet>
-        <link rel="preload" as="image" href={hero1Desk} type="image/webp" media="(min-width: 769px)" fetchPriority="high" />
-        <link rel="preload" as="image" href={hero1MobAvif} type="image/avif" media="(max-width: 768px)" fetchPriority="high" />
+        {/* Mobile Preload */}
+        <link 
+          rel="preload" 
+          as="image" 
+          href={hero1Mob640Avif} 
+          type="image/avif" 
+          media="(max-width: 768px)" 
+          fetchPriority="high" 
+        />
+        {/* Tablet Preload */}
+        <link 
+          rel="preload" 
+          as="image" 
+          href={hero1Tab1024Avif} 
+          type="image/avif" 
+          media="(min-width: 769px) and (max-width: 1024px)" 
+          fetchPriority="high" 
+        />
+        {/* Desktop Preload */}
+        <link 
+          rel="preload" 
+          as="image" 
+          href={hero1Desk1672Avif} 
+          type="image/avif" 
+          media="(min-width: 1025px)" 
+          fetchPriority="high" 
+        />
       </Helmet>
 
       {/* Image Background */}
@@ -102,29 +171,52 @@ export default function HomeHero() {
                 transition: `opacity ${FADE_DURATION}ms ease-in-out`
               }}
             >
-              {i === 0 && <source media="(max-width: 768px)" type="image/avif" srcSet={hero1MobAvif} />}
-              <source media="(max-width: 768px)" type="image/webp" srcSet={cfg.mobile} />
-              <source media="(min-width: 769px)" type="image/webp" srcSet={cfg.desktop} />
-              <img 
-                src={cfg.desktop} 
-                alt={`Hero background ${i + 1}`}
-                loading={i === 0 ? "eager" : "lazy"}
-                fetchPriority={i === 0 ? "high" : "auto"}
-                decoding="async"
-                className="w-full h-full object-cover object-center"
-                onLoad={() => {
-                  if (i === 0) {
-                    window.__heroImageLoaded = true;
-                    window.dispatchEvent(new Event('hero-image-loaded'));
-                  }
-                }}
-                ref={(el) => {
-                  if (i === 0 && el && el.complete) {
-                    window.__heroImageLoaded = true;
-                    window.dispatchEvent(new Event('hero-image-loaded'));
-                  }
-                }}
-              />
+              {i === 0 ? (
+                <>
+                  {/* AVIF options with intrinsic width and height */}
+                  <source media="(max-width: 768px)" type="image/avif" srcSet={hero1Mob640Avif} width="640" height="1000" />
+                  <source media="(min-width: 769px) and (max-width: 1024px)" type="image/avif" srcSet={hero1Tab1024Avif} width="1024" height="576" />
+                  <source media="(min-width: 1025px)" type="image/avif" srcSet={hero1Desk1672Avif} width="1672" height="941" />
+
+                  {/* WebP options (fallbacks) with intrinsic width and height */}
+                  <source media="(max-width: 768px)" type="image/webp" srcSet={hero1Mob640Webp} width="640" height="1000" />
+                  <source media="(min-width: 769px) and (max-width: 1024px)" type="image/webp" srcSet={hero1Tab1024Webp} width="1024" height="576" />
+                  <source media="(min-width: 1025px)" type="image/webp" srcSet={hero1Desk1672Webp} width="1672" height="941" />
+                  
+                  <img 
+                    src={hero1Desk1672Webp} 
+                    alt={`Hero background ${i + 1}`}
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="async"
+                    width="1672"
+                    height="941"
+                    className="w-full h-full object-cover object-center"
+                    onLoad={() => {
+                      window.__heroImageLoaded = true;
+                      window.dispatchEvent(new Event('hero-image-loaded'));
+                    }}
+                    ref={(el) => {
+                      if (el && el.complete) {
+                        window.__heroImageLoaded = true;
+                        window.dispatchEvent(new Event('hero-image-loaded'));
+                      }
+                    }}
+                  />
+                </>
+              ) : (
+                <>
+                  <source media="(max-width: 768px)" type="image/webp" srcSet={cfg.mobile} />
+                  <source media="(min-width: 769px)" type="image/webp" srcSet={cfg.desktop} />
+                  <img 
+                    src={cfg.desktop} 
+                    alt={`Hero background ${i + 1}`}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </>
+              )}
             </picture>
           );
         })}

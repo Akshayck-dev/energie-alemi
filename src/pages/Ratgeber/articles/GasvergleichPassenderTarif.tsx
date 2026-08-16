@@ -28,7 +28,7 @@ export default function GasvergleichPassenderTarif() {
       faqs={faqs}
     >
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
-        Die Heizkosten machen oft den größten Teil der Energiekosten eines Haushalts aus. Wer regelmäßig <Link to="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Gas-Tarife vergleichen</Link> lässt, kann mehrere Hundert Euro im Jahr sparen. Finden Sie heraus, wie Sie den optimalen Gastarif auswählen und Ihre Kosten dauerhaft senken.
+        Die Heizkosten machen oft den größten Teil der Energiekosten eines Haushalts aus. Wer regelmäßig <Link to="/gas" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Gas-Tarife vergleichen</Link> lässt, kann mehrere Hundert Euro im Jahr sparen. Finden Sie heraus, wie Sie den optimalen Gastarif auswählen und Ihre Kosten dauerhaft senken.
       </p>
 
       <h2>Warum lohnt sich ein Gastarifvergleich?</h2>
@@ -97,10 +97,10 @@ export default function GasvergleichPassenderTarif() {
 
       <h2>Gasanbieter wechseln – so funktioniert es</h2>
       <p>
-        Sobald Sie sich für einen neuen Tarif entschieden haben, ist der Wechselprozess völlig unkompliziert. In der Regel übernimmt Ihr neuer Anbieter die Kündigung bei Ihrem alten Versorger. Sie müssen sich um fast nichts kümmern und Ihre Gasversorgung ist gesetzlich lückenlos garantiert. Für eine detaillierte Anleitung lesen Sie unseren Beitrag: <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Gasanbieter wechseln</Link>.
+        Sobald Sie sich für einen neuen Tarif entschieden haben, ist der Wechselprozess völlig unkompliziert. In der Regel übernimmt Ihr neuer Anbieter die Kündigung bei Ihrem alten Versorger. Sie müssen sich um fast nichts kümmern und Ihre Gasversorgung ist gesetzlich lückenlos garantiert. Für eine detaillierte Anleitung lesen Sie unseren Beitrag: <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Gasanbieter wechseln</Link>.
       </p>
       <p>
-        Wenn Sie sich bei der Tarifauswahl unsicher sind oder den Wechsel nicht selbst online durchführen möchten, bieten wir Ihnen gerne unsere <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">persönliche Tarifberatung</Link> an. Wir vergleichen unabhängig alle Konditionen und finden den besten Gastarif für Ihre individuelle Situation.
+        Wenn Sie sich bei der Tarifauswahl unsicher sind oder den Wechsel nicht selbst online durchführen möchten, bieten wir Ihnen gerne unsere <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">persönliche Tarifberatung</Link> an. Wir vergleichen unabhängig alle Konditionen und finden den besten Gastarif für Ihre individuelle Situation.
       </p>
 
       <h2>Häufige Fragen zu Gastarifen</h2>

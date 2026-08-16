@@ -32,7 +32,7 @@ export default function Contact() {
                 <p className="text-[16px] md:text-[18px] leading-[1.6] text-slate-600 dark:text-white/80 max-w-[500px] mb-10 font-medium">
                   {t('contact.header_desc')}
                   <br /><br />
-                  Suchen Sie eine persönliche Beratung vor Ort? Erfahren Sie mehr über unsere <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Tarifberatung in Aachen</Link>.
+                  Suchen Sie eine persönliche Beratung vor Ort? Erfahren Sie mehr über unsere <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung in Aachen</Link>.
                 </p>
                 
                 {/* Features Row */}

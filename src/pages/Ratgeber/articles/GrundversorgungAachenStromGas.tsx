@@ -141,7 +141,7 @@ export default function GrundversorgungAachenStromGas() {
         Ein Umzug ist der ideale Zeitpunkt, um die Energiekosten auf den Prüfstand zu stellen. Wenn Sie in Aachen Strom oder Gas nutzen, ohne sich vorher anzumelden, rutschen Sie automatisch in den Grundversorgungstarif der STAWAG. 
       </p>
       <p>
-        Um unnötige Ausgaben von Anfang an zu vermeiden, sollten Sie bereits vier bis sechs Wochen vor dem Umzugstermin Tarife vergleichen und die Anmeldung anstoßen. In unserem ausführlichen <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Umzugs-Ratgeber für Aachen</Link> haben wir eine praktische Checkliste und wichtige gesetzliche Regelungen (wie Ihr Sonderkündigungsrecht bei Umzug nach § 41b EnWG) für Sie zusammengefasst.
+        Um unnötige Ausgaben von Anfang an zu vermeiden, sollten Sie bereits vier bis sechs Wochen vor dem Umzugstermin Tarife vergleichen und die Anmeldung anstoßen. In unserem ausführlichen <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Umzugs-Ratgeber für Aachen</Link> haben wir eine praktische Checkliste und wichtige gesetzliche Regelungen (wie Ihr Sonderkündigungsrecht bei Umzug nach § 41b EnWG) für Sie zusammengefasst.
       </p>
 
       <h2>Strom- und Gastarife in Aachen vergleichen</h2>
@@ -152,12 +152,12 @@ export default function GrundversorgungAachenStromGas() {
         Nutzen Sie unsere kostenfreien und neutralen Vergleichswerkzeuge:
       </p>
       <ul>
-        <li>Führen Sie einen schnellen <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Stromvergleich für Aachen</Link> durch.</li>
-        <li>Nutzen Sie den <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Gasvergleich für Aachen</Link>, um Heizkosten zu reduzieren.</li>
-        <li>Informieren Sie sich über unsere lokale <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Tarifberatung vor Ort in Aachen</Link>.</li>
+        <li>Führen Sie einen schnellen <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromvergleich für Aachen</Link> durch.</li>
+        <li>Nutzen Sie den <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich für Aachen</Link>, um Heizkosten zu reduzieren.</li>
+        <li>Informieren Sie sich über unsere lokale <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung vor Ort in Aachen</Link>.</li>
       </ul>
       <p>
-        Haben Sie Fragen zum Wechselprozess oder benötigen Hilfe bei der Kündigung Ihres alten Vertrages? Nehmen Sie einfach direkt <Link to="/contact" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Kontakt mit uns auf</Link>. Wir unterstützen Sie gerne unverbindlich.
+        Haben Sie Fragen zum Wechselprozess oder benötigen Hilfe bei der Kündigung Ihres alten Vertrages? Nehmen Sie einfach direkt <Link to="/contact" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Kontakt mit uns auf</Link>. Wir unterstützen Sie gerne unverbindlich.
       </p>
 
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">

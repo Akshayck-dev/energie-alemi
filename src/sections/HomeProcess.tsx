@@ -38,7 +38,7 @@ export default function HomeProcess() {
         
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+          <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
             {t('home_process.subtitle')}
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
@@ -75,9 +75,9 @@ export default function HomeProcess() {
                 </div>
                 
                 <div className="flex flex-col">
-                  <h4 className="font-heading text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-[#0047AB] dark:group-hover:text-[#f0a83f] transition-colors duration-300">
+                  <h3 className="font-heading text-lg md:text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-[#0047AB] dark:group-hover:text-[#f0a83f] transition-colors duration-300">
                     {step.title}
-                  </h4>
+                  </h3>
                   <p className="text-slate-600 dark:text-white/70 text-[13.5px] md:text-sm leading-relaxed">
                     {step.desc}
                   </p>

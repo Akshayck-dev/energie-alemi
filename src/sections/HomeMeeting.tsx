@@ -12,7 +12,7 @@ export default function HomeMeeting() {
         
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16 flex flex-col items-center">
-          <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+          <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
             {t('home_meeting.subtitle')}
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
@@ -37,11 +37,11 @@ export default function HomeMeeting() {
               </div>
             </div>
             <div className="p-8 pt-10 flex flex-col flex-grow">
-              <h4 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">{t('home_meeting.card1_title')}</h4>
+              <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">{t('home_meeting.card1_title')}</h3>
               <p className="text-slate-600 dark:text-white/80 mb-6 leading-relaxed flex-grow">
                 {t('home_meeting.card1_desc')}
               </p>
-              <a href="#" className="text-[#0047AB] font-medium flex items-center gap-2 hover:text-slate-900 dark:hover:text-white transition-colors w-fit">
+              <a href="#" className="text-[#0047AB] dark:text-[#4F8CFF] font-medium flex items-center gap-2 hover:text-slate-900 dark:hover:text-white transition-colors w-fit">
                 {t('home_meeting.card1_link')} <ArrowRight size={16} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />
               </a>
             </div>
@@ -60,11 +60,11 @@ export default function HomeMeeting() {
               </div>
             </div>
             <div className="p-8 pt-10 flex flex-col flex-grow">
-              <h4 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">{t('home_meeting.card2_title')}</h4>
+              <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3">{t('home_meeting.card2_title')}</h3>
               <p className="text-slate-600 dark:text-white/80 mb-6 leading-relaxed flex-grow">
                 {t('home_meeting.card2_desc')}
               </p>
-              <a href="#" className="text-[#0047AB] font-medium flex items-center gap-2 hover:text-slate-900 dark:hover:text-white transition-colors w-fit">
+              <a href="#" className="text-[#0047AB] dark:text-[#4F8CFF] font-medium flex items-center gap-2 hover:text-slate-900 dark:hover:text-white transition-colors w-fit">
                 {t('home_meeting.card2_link')} <ArrowRight size={16} className={cn("transition-transform", i18n.dir() === 'rtl' && "rotate-180")} />
               </a>
             </div>

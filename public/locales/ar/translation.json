@@ -369,7 +369,7 @@
     "plz_placeholder": "مثال: 52062",
     "address_label": "العنوان (اختياري)",
     "address_placeholder": "الشارع، رقم المنزل، المدينة",
-    "phone_label": "رقم الهاتف / واتساب *",
+    "phone_label": "الهاتف / واتساب *",
     "phone_placeholder": "لأية أسئلة للمتابعة",
     "details_label": "الاستهلاك / التفاصيل (اختياري)",
     "details_placeholder": "مثال: 3500 كيلوواط ساعة/سنة أو 250 ميغابت/ثانية",

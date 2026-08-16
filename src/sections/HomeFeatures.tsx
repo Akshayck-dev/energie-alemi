@@ -28,7 +28,7 @@ export default function HomeFeatures() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="w-full lg:w-1/3"
           >
-            <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+            <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
               {t('home_features.subtitle')}
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 md:mb-6">
@@ -38,7 +38,7 @@ export default function HomeFeatures() {
               {t('home_features.description')}
             </p>
             <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mb-6">
-              Besuchen Sie uns direkt vor Ort für Ihre persönliche <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Tarifberatung in Aachen</Link>.
+              Besuchen Sie uns direkt vor Ort für Ihre persönliche <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung in Aachen</Link>.
             </p>
             <div className="w-12 h-[3px] bg-[#0047AB]"></div>
           </motion.div>
@@ -66,7 +66,7 @@ export default function HomeFeatures() {
                   >
                     <Search size={28} strokeWidth={1.5} />
                   </motion.div>
-                  <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature1_title1')}<br/>{t('home_features.feature1_title2')}</h4>
+                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature1_title1')}<br/>{t('home_features.feature1_title2')}</h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature1_desc')}
                   </p>
@@ -90,7 +90,7 @@ export default function HomeFeatures() {
                       <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E5A937" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     </div>
                   </motion.div>
-                  <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature2_title1')}<br/>{t('home_features.feature2_title2')}</h4>
+                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature2_title1')}<br/>{t('home_features.feature2_title2')}</h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature2_desc')}
                   </p>
@@ -111,7 +111,7 @@ export default function HomeFeatures() {
                   >
                     <Handshake size={28} strokeWidth={1.5} />
                   </motion.div>
-                  <h4 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature3_title1')}<br/>{t('home_features.feature3_title2')}</h4>
+                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature3_title1')}<br/>{t('home_features.feature3_title2')}</h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature3_desc')}
                   </p>

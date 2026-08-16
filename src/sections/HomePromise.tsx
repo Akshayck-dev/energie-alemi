@@ -14,33 +14,33 @@ export default function HomePromise() {
         <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
           
           <div className="w-full lg:w-5/12 relative z-20">
-            <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+            <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
               {t('home_promise.subtitle')}
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
               {t('home_promise.title_line1')}<br />
-              <span className="text-[#0047AB]">{t('home_promise.title_line2')}</span>
+              <span className="text-[#0047AB] dark:text-[#4F8CFF]">{t('home_promise.title_line2')}</span>
             </h2>
             <p className="text-slate-600 dark:text-white/80 text-base mb-12 leading-relaxed max-w-md">
               {t('home_promise.description')}
             </p>
-
+ 
             <div className="flex flex-wrap sm:flex-nowrap gap-6 sm:gap-8">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
-                  <ShieldCheck className="text-[#0047AB]" size={20} />
+                  <ShieldCheck className="text-[#0047AB] dark:text-[#f0a83f]" size={20} />
                 </div>
                 <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature1_line1')}<br/>{t('home_promise.feature1_line2')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
-                  <Eye className="text-[#0047AB]" size={20} />
+                  <Eye className="text-[#0047AB] dark:text-[#f0a83f]" size={20} />
                 </div>
                 <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature2_line1')}<br/>{t('home_promise.feature2_line2')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
-                  <TrendingUp className="text-[#0047AB]" size={20} />
+                  <TrendingUp className="text-[#0047AB] dark:text-[#f0a83f]" size={20} />
                 </div>
                 <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature3_line1')}<br/>{t('home_promise.feature3_line2')}</span>
               </div>

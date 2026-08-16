@@ -101,7 +101,7 @@ export default function HomeServices() {
         
         {/* Section Header */}
         <div className="mb-10 md:mb-16">
-          <p className="text-[#0047AB] font-heading font-medium tracking-wider uppercase text-sm mb-2">
+          <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
             {t('home_services.subtitle')}
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
@@ -150,9 +150,9 @@ export default function HomeServices() {
                   </div>
                   
                   {/* Text Content */}
-                  <h4 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300">
+                  <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300">
                     {t(`home_services.items.${service.id}.title`)}
-                  </h4>
+                  </h3>
                   <p className="text-slate-500 dark:text-white/60 text-base max-w-[280px]">
                     {t(`home_services.items.${service.id}.description`)}
                   </p>

@@ -9,7 +9,7 @@ export default function FloatingActionButtons() {
   const phoneUrl = "tel:+4917665949390";
 
   return (
-    <div className="fixed bottom-[84px] md:bottom-5 right-4 rtl:right-auto rtl:left-4 z-[100] flex flex-col gap-3">
+    <div className="fixed bottom-[84px] md:bottom-5 right-6 rtl:right-auto rtl:left-6 z-[100] flex flex-col gap-3">
 
       {/* Mail Button */}
       <div className="relative flex items-center justify-center group">

@@ -397,7 +397,7 @@
     "plz_placeholder": "z.B. 52062",
     "address_label": "Adresse (optional)",
     "address_placeholder": "Straße, Hausnummer, Ort",
-    "phone_label": "Telefonnummer / WhatsApp-Nummer *",
+    "phone_label": "Telefon / WhatsApp *",
     "phone_placeholder": "Für eventuelle Rückfragen",
     "details_label": "Verbrauch / Details (optional)",
     "details_placeholder": "z.B. 3500 kWh/Jahr oder 250 Mbit/s",

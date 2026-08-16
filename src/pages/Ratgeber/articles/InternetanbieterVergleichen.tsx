@@ -32,7 +32,7 @@ export default function InternetanbieterVergleichen() {
 
       <h2>Verfügbarkeit prüfen</h2>
       <p>
-        Bevor Sie sich in einen Tarif verlieben, müssen Sie die Verfügbarkeit an Ihrer Adresse prüfen. Unser Vergleichsrechner macht dies automatisch für Sie. Wenn Sie demnächst den Wohnort wechseln, lesen Sie auch unseren Ratgeber zum Thema <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] hover:underline">Umzug nach Aachen und Internetanmeldung</Link>, um Fristen und Sonderkündigungsrechte richtig zu nutzen.
+        Bevor Sie sich in einen Tarif verlieben, müssen Sie die Verfügbarkeit an Ihrer Adresse prüfen. Unser Vergleichsrechner macht dies automatisch für Sie. Wenn Sie demnächst den Wohnort wechseln, lesen Sie auch unseren Ratgeber zum Thema <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Umzug nach Aachen und Internetanmeldung</Link>, um Fristen und Sonderkündigungsrechte richtig zu nutzen.
       </p>
 
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">

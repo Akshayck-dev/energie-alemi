@@ -381,7 +381,7 @@
     "plz_placeholder": "مانند 52062",
     "address_label": "آدرس (اختیاری)",
     "address_placeholder": "خیابان، شماره پلاک، شهر",
-    "phone_label": "شماره تلفن / واتس‌اپ *",
+    "phone_label": "تلفن / واتس‌اپ *",
     "phone_placeholder": "برای هرگونه سوال بعدی",
     "details_label": "مصرف / جزئیات (اختیاری)",
     "details_placeholder": "مانند 3500 کیلووات ساعت در سال یا 250 مگابیت بر ثانیه",
