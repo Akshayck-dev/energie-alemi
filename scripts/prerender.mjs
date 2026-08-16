@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 async function run() {
   console.log('🚀 Starting static prerendering...');
 
-  // 1. Build the SSR bundle of the app
+  // 1. Build the SSR bundle for static prerendering
   await build({
     build: {
       ssr: true,
@@ -20,7 +20,7 @@ async function run() {
     }
   });
 
-  console.log('✅ Server-side bundle compiled in dist-ssr/');
+  console.log('✅ Server-side bundle for static prerendering compiled in dist-ssr/');
 
   // 2. Import the render function from compiled bundle
   const serverBundlePath = path.join(__dirname, '../dist-ssr/entry-server.js');
@@ -121,7 +121,7 @@ async function run() {
     }
   }
 
-  // 5. Clean up temporary SSR build directory
+  // 5. Clean up temporary SSR build directory used for prerendering
   fs.rmSync(path.join(__dirname, '../dist-ssr'), { recursive: true, force: true });
   
   // 6. Clean up macOS metadata .DS_Store if present in dist

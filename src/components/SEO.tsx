@@ -5,7 +5,6 @@ import routesManifest from '../routes-manifest.json';
 interface SEOProps {
   title?: string;
   description?: string;
-  keywords?: string;
   url?: string;
   isArticle?: boolean;
   datePublished?: string;
@@ -13,7 +12,7 @@ interface SEOProps {
   faqs?: any;
 }
 
-export default function SEO({ title, description, keywords, url, isArticle, datePublished, dateModified, faqs }: SEOProps) {
+export default function SEO({ title, description, url, isArticle, datePublished, dateModified, faqs }: SEOProps) {
   const { i18n } = useTranslation();
   const lang = i18n.language || 'de';
 
@@ -37,7 +36,6 @@ export default function SEO({ title, description, keywords, url, isArticle, date
   
   const seoTitle = (resolvedTitle.includes('Energie Alemi') || resolvedTitle.includes('ALEMI')) ? resolvedTitle : `${resolvedTitle} | Energie Alemi`;
   const seoDescription = resolvedDescription;
-  const seoKeywords = keywords || "Stromvergleich, Gasvergleich, Gastarife vergleichen, Stromanbieter wechseln, günstiger Stromtarif, Energieanbieter vergleichen, Energie Alemi";
 
   // Dynamic Base URL
   const baseUrl = import.meta.env.VITE_SITE_URL || 'https://www.energie-alemi.com';
@@ -177,7 +175,6 @@ export default function SEO({ title, description, keywords, url, isArticle, date
     <Helmet htmlAttributes={{ lang }}>
       <title>{seoTitle}</title>
       <meta name="description" content={seoDescription} />
-      <meta name="keywords" content={seoKeywords} />
       <meta name="author" content="Energie Alemi" />
       <meta name="robots" content={robotsContent} />
       
