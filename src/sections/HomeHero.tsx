@@ -37,6 +37,7 @@ const FADE_DURATION = 1500; // 1.5s smooth crossfade
 export default function HomeHero() {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
+  const [loadedIndices, setLoadedIndices] = useState<number[]>([0]);
   const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState('');
 
@@ -60,6 +61,13 @@ export default function HomeHero() {
   }, []);
 
   useEffect(() => {
+    // Add activeIndex to loadedIndices if not already present
+    if (!loadedIndices.includes(activeIndex)) {
+      setLoadedIndices((prev) => [...prev, activeIndex]);
+    }
+  }, [activeIndex, loadedIndices]);
+
+  useEffect(() => {
     // Schedule next slide switch
     timerRef.current = setTimeout(advanceSlide, SLIDE_DURATION * 1000);
 
@@ -78,29 +86,34 @@ export default function HomeHero() {
 
       {/* Image Background */}
       <div className="absolute inset-0 z-0">
-        {HERO_IMAGES_CONFIG.map((cfg, i) => (
-          <picture
-            key={i}
-            className={cn(
-              "absolute inset-0 w-full h-full transition-opacity",
-              activeIndex === i ? "opacity-100 z-10" : "opacity-0 z-0"
-            )}
-            style={{
-              transition: `opacity ${FADE_DURATION}ms ease-in-out`
-            }}
-          >
-            <source media="(max-width: 768px)" srcSet={cfg.mobile} />
-            <source media="(min-width: 769px)" srcSet={cfg.desktop} />
-            <img 
-              src={cfg.desktop} 
-              alt={`Hero background ${i + 1}`}
-              loading={i === 0 ? "eager" : "lazy"}
-              fetchPriority={i === 0 ? "high" : "auto"}
-              decoding="async"
-              className="w-full h-full object-cover object-center"
-            />
-          </picture>
-        ))}
+        {HERO_IMAGES_CONFIG.map((cfg, i) => {
+          const isLoaded = loadedIndices.includes(i);
+          if (!isLoaded) return null;
+
+          return (
+            <picture
+              key={i}
+              className={cn(
+                "absolute inset-0 w-full h-full transition-opacity",
+                activeIndex === i ? "opacity-100 z-10" : "opacity-0 z-0"
+              )}
+              style={{
+                transition: `opacity ${FADE_DURATION}ms ease-in-out`
+              }}
+            >
+              <source media="(max-width: 768px)" srcSet={cfg.mobile} />
+              <source media="(min-width: 769px)" srcSet={cfg.desktop} />
+              <img 
+                src={cfg.desktop} 
+                alt={`Hero background ${i + 1}`}
+                loading={i === 0 ? "eager" : "lazy"}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                decoding="async"
+                className="w-full h-full object-cover object-center"
+              />
+            </picture>
+          );
+        })}
         {/* Dark gradient for text legibility — anchored to text side */}
         {/* LTR: dark on left, transparent on right */}
         <div className="ltr:block rtl:hidden absolute top-0 left-0 bottom-0 w-full md:w-[80%] bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />

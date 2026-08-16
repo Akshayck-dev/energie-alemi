@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { cn } from '../lib/utils';
-import brandLogo from '../assets/logo_transparent.png';
+import brandLogo from '../assets/logo_transparent.webp';
 
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -8,7 +8,7 @@ export default function SplashScreen() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const duration = 1200; // 1.2 seconds loading progress
+    const duration = 500; // 500ms loading progress
     const intervalTime = 25;
     const step = 100 / (duration / intervalTime);
 
@@ -17,7 +17,7 @@ export default function SplashScreen() {
         if (prev >= 100) {
           clearInterval(timer);
           setIsFadingOut(true);
-          setTimeout(() => setIsVisible(false), 500); // 500ms fadeout transition
+          setTimeout(() => setIsVisible(false), 300); // 300ms fadeout transition
           return 100;
         }
         return prev + step;
