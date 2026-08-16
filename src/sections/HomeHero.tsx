@@ -11,6 +11,7 @@ const CompareModal = lazy(() => import('../components/CompareModal'));
 
 import hero1Desk from '../assets/hero_desk.webp';
 import hero1Mob from '../assets/hero_mob.webp';
+import hero1MobAvif from '../assets/hero_mob.avif';
 import hero2Desk from '../assets/hero2_desk.webp';
 import hero2Mob from '../assets/hero2_mob.webp';
 import hero3Desk from '../assets/hero1_net_desk.webp';
@@ -80,8 +81,8 @@ export default function HomeHero() {
     <section className="relative min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
       {/* LCP Optimization: Preload first slide images */}
       <Helmet>
-        <link rel="preload" as="image" href={hero1Desk} media="(min-width: 769px)" fetchPriority="high" />
-        <link rel="preload" as="image" href={hero1Mob} media="(max-width: 768px)" fetchPriority="high" />
+        <link rel="preload" as="image" href={hero1Desk} type="image/webp" media="(min-width: 769px)" fetchPriority="high" />
+        <link rel="preload" as="image" href={hero1MobAvif} type="image/avif" media="(max-width: 768px)" fetchPriority="high" />
       </Helmet>
 
       {/* Image Background */}
@@ -101,8 +102,9 @@ export default function HomeHero() {
                 transition: `opacity ${FADE_DURATION}ms ease-in-out`
               }}
             >
-              <source media="(max-width: 768px)" srcSet={cfg.mobile} />
-              <source media="(min-width: 769px)" srcSet={cfg.desktop} />
+              {i === 0 && <source media="(max-width: 768px)" type="image/avif" srcSet={hero1MobAvif} />}
+              <source media="(max-width: 768px)" type="image/webp" srcSet={cfg.mobile} />
+              <source media="(min-width: 769px)" type="image/webp" srcSet={cfg.desktop} />
               <img 
                 src={cfg.desktop} 
                 alt={`Hero background ${i + 1}`}
@@ -110,6 +112,18 @@ export default function HomeHero() {
                 fetchPriority={i === 0 ? "high" : "auto"}
                 decoding="async"
                 className="w-full h-full object-cover object-center"
+                onLoad={() => {
+                  if (i === 0) {
+                    window.__heroImageLoaded = true;
+                    window.dispatchEvent(new Event('hero-image-loaded'));
+                  }
+                }}
+                ref={(el) => {
+                  if (i === 0 && el && el.complete) {
+                    window.__heroImageLoaded = true;
+                    window.dispatchEvent(new Event('hero-image-loaded'));
+                  }
+                }}
               />
             </picture>
           );

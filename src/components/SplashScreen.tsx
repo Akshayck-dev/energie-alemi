@@ -8,23 +8,49 @@ export default function SplashScreen() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const duration = 500; // 500ms loading progress
-    const intervalTime = 25;
-    const step = 100 / (duration / intervalTime);
+    let timer: ReturnType<typeof setInterval>;
+    let fadeTimeout: ReturnType<typeof setTimeout>;
+    let isListenerAdded = false;
 
-    const timer = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(timer);
-          setIsFadingOut(true);
-          setTimeout(() => setIsVisible(false), 300); // 300ms fadeout transition
-          return 100;
-        }
-        return prev + step;
-      });
-    }, intervalTime);
+    const triggerFadeOut = () => {
+      clearInterval(timer);
+      setProgress(100);
+      setIsFadingOut(true);
+      fadeTimeout = setTimeout(() => setIsVisible(false), 300);
+    };
 
-    return () => clearInterval(timer);
+    const handleHeroLoaded = () => {
+      triggerFadeOut();
+    };
+
+    if (window.__heroImageLoaded) {
+      triggerFadeOut();
+    } else {
+      const duration = 1500; // 1.5 seconds fallback progress duration
+      const intervalTime = 25;
+      const step = 100 / (duration / intervalTime);
+
+      timer = setInterval(() => {
+        setProgress((prev) => {
+          if (prev >= 100) {
+            triggerFadeOut();
+            return 100;
+          }
+          return prev + step;
+        });
+      }, intervalTime);
+
+      window.addEventListener('hero-image-loaded', handleHeroLoaded);
+      isListenerAdded = true;
+    }
+
+    return () => {
+      clearInterval(timer);
+      clearTimeout(fadeTimeout);
+      if (isListenerAdded) {
+        window.removeEventListener('hero-image-loaded', handleHeroLoaded);
+      }
+    };
   }, []);
 
   if (!isVisible) return null;
