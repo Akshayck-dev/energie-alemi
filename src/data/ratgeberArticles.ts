@@ -32,10 +32,11 @@ export const articles: RatgeberArticle[] = [
   {
     id: '3',
     slug: 'gasvergleich',
-    title: 'Gasvergleich: So finden Sie einen passenden Gastarif',
-    description: 'Worauf es beim Gasvergleich ankommt. Alle wichtigen Faktoren wie kWh-Preis, Grundgebühr und Kündigungsfristen verständlich erklärt.',
+    title: 'Gastarife vergleichen 2026: Günstigen Gastarif finden | ALEMI',
+    description: 'Gastarife vergleichen und den passenden Gastarif finden. Erfahren Sie, worauf Sie bei Gaspreisen, Verbrauch, Vertragslaufzeit und Anbieterwechsel achten sollten.',
     category: 'Gas',
     publishedDate: '2026-08-09',
+    updatedDate: '2026-08-16',
     componentName: 'GasvergleichPassenderTarif'
   },
   {

@@ -35,7 +35,7 @@ export default function SEO({ title, description, keywords, url, isArticle, date
   const resolvedTitle = title || (manifestEntry ? manifestEntry.title : defaultTitle);
   const resolvedDescription = description || (manifestEntry ? manifestEntry.description : defaultDescription);
   
-  const seoTitle = resolvedTitle.includes('Energie Alemi') ? resolvedTitle : `${resolvedTitle} | Energie Alemi`;
+  const seoTitle = (resolvedTitle.includes('Energie Alemi') || resolvedTitle.includes('ALEMI')) ? resolvedTitle : `${resolvedTitle} | Energie Alemi`;
   const seoDescription = resolvedDescription;
   const seoKeywords = keywords || "Stromvergleich, Gasvergleich, Gastarife vergleichen, Stromanbieter wechseln, günstiger Stromtarif, Energieanbieter vergleichen, Energie Alemi";
 

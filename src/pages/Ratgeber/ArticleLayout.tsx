@@ -9,9 +9,10 @@ interface ArticleLayoutProps {
   article: RatgeberArticle;
   children: ReactNode;
   faqs?: Array<{ question: string; answer: string }>;
+  customH1?: string;
 }
 
-export default function ArticleLayout({ article, children, faqs }: ArticleLayoutProps) {
+export default function ArticleLayout({ article, children, faqs, customH1 }: ArticleLayoutProps) {
   const url = `/ratgeber/${article.slug}`;
 
   // Format dates for display
@@ -51,7 +52,7 @@ export default function ArticleLayout({ article, children, faqs }: ArticleLayout
             {article.category}
           </div>
           <h1 className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
-            {article.title}
+            {customH1 || article.title}
           </h1>
           
           {/* Dates */}
