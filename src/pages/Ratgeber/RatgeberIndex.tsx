@@ -8,8 +8,6 @@ export default function RatgeberIndex() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#0a1628] py-24 md:py-32">
       <SEO 
-        title="Ratgeber: Strom, Gas & Internet Tarife in Aachen" 
-        description="Wertvolle Tipps rund um den Stromvergleich, Gasanbieterwechsel und Internetvergleich. Finden Sie den passenden Tarif für Ihr Zuhause." 
         url="/ratgeber" 
       />
       

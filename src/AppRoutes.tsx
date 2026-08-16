@@ -25,6 +25,7 @@ import GasanbieterWechselnSchritt from './pages/Ratgeber/articles/GasanbieterWec
 import InternetanbieterVergleichen from './pages/Ratgeber/articles/InternetanbieterVergleichen';
 import UmzugAachenStromGasInternet from './pages/Ratgeber/articles/UmzugAachenStromGasInternet';
 import GrundversorgungAachenStromGas from './pages/Ratgeber/articles/GrundversorgungAachenStromGas';
+import DslVsGlasfaserAachen from './pages/Ratgeber/articles/DslVsGlasfaserAachen';
 
 export default function AppRoutes() {
   const { i18n } = useTranslation();
@@ -66,6 +67,7 @@ export default function AppRoutes() {
           <Route path="/ratgeber/internetanbieter-vergleichen" element={<InternetanbieterVergleichen />} />
           <Route path="/ratgeber/umzug-aachen-strom-gas-internet" element={<UmzugAachenStromGasInternet />} />
           <Route path="/ratgeber/grundversorgung-aachen-strom-gas" element={<GrundversorgungAachenStromGas />} />
+          <Route path="/ratgeber/dsl-vs-glasfaser-aachen" element={<DslVsGlasfaserAachen />} />
           
           <Route path="*" element={<NotFound />} />
         </Route>

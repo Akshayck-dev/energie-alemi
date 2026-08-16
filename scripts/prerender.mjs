@@ -105,20 +105,20 @@ async function run() {
     // Inject cleaned rendered application HTML inside root div
     html = html.replace('<div id="root"></div>', `<div id="root">${cleanedAppHtml}</div>`);
 
-    // Determine the target output directory
-    let outputDir;
     if (url === '/') {
-      outputDir = path.join(__dirname, '../dist');
+      const outputDir = path.join(__dirname, '../dist');
+      if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
+      }
+      fs.writeFileSync(path.join(outputDir, 'index.html'), html);
     } else {
-      outputDir = path.join(__dirname, '../dist', url);
+      const outPath = path.join(__dirname, '../dist', `${url}.html`);
+      const outputDir = path.dirname(outPath);
+      if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
+      }
+      fs.writeFileSync(outPath, html);
     }
-    
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
-
-    // Write index.html to the route subdirectory (or main dist directory for /)
-    fs.writeFileSync(path.join(outputDir, 'index.html'), html);
   }
 
   // 5. Clean up temporary SSR build directory

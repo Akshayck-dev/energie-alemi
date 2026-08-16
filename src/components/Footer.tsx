@@ -12,6 +12,7 @@ export default function Footer() {
     { key: 'electricity', path: '/electricity', name: t('nav.electricity') },
     { key: 'gas', path: '/gas', name: t('nav.gas') },
     { key: 'internet', path: '/internet', name: t('nav.internet') },
+    { key: 'ratgeber', path: '/ratgeber', name: t('nav.ratgeber') },
     { key: 'about_us', path: '/about', name: t('nav.about_us') },
     { key: 'contact', path: '/contact', name: t('nav.contact') },
     { key: 'impressum', path: '/impressum', name: 'Impressum' },

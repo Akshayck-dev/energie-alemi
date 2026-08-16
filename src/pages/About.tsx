@@ -24,7 +24,7 @@ export default function About() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628] min-h-screen">
-      <SEO title="Über uns" description="Erfahren Sie mehr über Energie Alemi. Ihr zuverlässiger Berater für Energie und Telekommunikation." url="/about" />
+      <SEO url="/about" />
       {/* Hero Section */}
       <div className="sticky top-0 z-0 md:relative">
         <section className="relative flex items-center pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 overflow-hidden bg-white dark:bg-[#051024]">

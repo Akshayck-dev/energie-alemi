@@ -8,7 +8,7 @@ import SEO from "../components/SEO";
 export default function Home() {
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Tarifberatung Strom Gas Internet Aachen - Energie Alemi" description="Ihre lokale Tarifberatung in Aachen. Vergleichen Sie Strom, Gas und Internet Tarife kostenlos und sparen Sie bares Geld." url="/" />
+      <SEO url="/" />
       {/* Hero is sticky on mobile so the rest of the page slides over it */}
       <div className="sticky top-0 z-0 md:relative">
         <HomeHero />

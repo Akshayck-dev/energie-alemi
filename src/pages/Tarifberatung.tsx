@@ -15,8 +15,6 @@ export default function Tarifberatung() {
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
-        title="Tarifberatung Aachen: Lokaler Partner für Strom, Gas & Internet" 
-        description="Individuelle Tarifberatung in Aachen. Finden Sie persönliche und passende Tarife für Strom, Gas und Internet bei Energie Alemi vor Ort." 
         url="/tarifberatung-aachen" 
       />
       

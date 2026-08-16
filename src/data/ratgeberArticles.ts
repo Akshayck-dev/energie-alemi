@@ -74,4 +74,14 @@ export const articles: RatgeberArticle[] = [
     publishedDate: '2026-08-12',
     componentName: 'GrundversorgungAachenStromGas'
   }
+,
+  {
+    id: '6',
+    slug: 'dsl-vs-glasfaser-aachen',
+    title: 'DSL vs. Glasfaser in Aachen: Lohnt sich der Wechsel?',
+    description: 'Aachen baut sein Glasfasernetz aus. Wir klären die Unterschiede zu DSL und zeigen, für wen sich der schnelle Anschluss wirklich lohnt.',
+    category: 'Internet',
+    publishedDate: '2026-08-16',
+    componentName: 'DslVsGlasfaserAachen'
+  }
 ];

@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://staging-energie-alemi.vercel.app</loc>
+    <loc>https://www.energie-alemi.com</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/tarifberatung-aachen</loc>
+    <loc>https://www.energie-alemi.com/tarifberatung-aachen</loc>
     <lastmod>2026-08-11</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/gas</loc>
+    <loc>https://www.energie-alemi.com/gas</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/electricity</loc>
+    <loc>https://www.energie-alemi.com/electricity</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/internet</loc>
+    <loc>https://www.energie-alemi.com/internet</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/about</loc>
+    <loc>https://www.energie-alemi.com/about</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/contact</loc>
+    <loc>https://www.energie-alemi.com/contact</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/impressum</loc>
+    <loc>https://www.energie-alemi.com/impressum</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/datenschutz</loc>
+    <loc>https://www.energie-alemi.com/datenschutz</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber</loc>
+    <loc>https://www.energie-alemi.com/ratgeber</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber/stromanbieter-wechseln</loc>
+    <loc>https://www.energie-alemi.com/ratgeber/stromanbieter-wechseln</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber/stromvergleich</loc>
+    <loc>https://www.energie-alemi.com/ratgeber/stromvergleich</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber/gasvergleich</loc>
+    <loc>https://www.energie-alemi.com/ratgeber/gasvergleich</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber/gasanbieter-wechseln</loc>
+    <loc>https://www.energie-alemi.com/ratgeber/gasanbieter-wechseln</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber/internetanbieter-vergleichen</loc>
+    <loc>https://www.energie-alemi.com/ratgeber/internetanbieter-vergleichen</loc>
     <lastmod>2026-08-09</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber/umzug-aachen-strom-gas-internet</loc>
+    <loc>https://www.energie-alemi.com/ratgeber/umzug-aachen-strom-gas-internet</loc>
     <lastmod>2026-08-11</lastmod>
   </url>
   <url>
-    <loc>https://staging-energie-alemi.vercel.app/ratgeber/grundversorgung-aachen-strom-gas</loc>
+    <loc>https://www.energie-alemi.com/ratgeber/grundversorgung-aachen-strom-gas</loc>
     <lastmod>2026-08-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.energie-alemi.com/ratgeber/dsl-vs-glasfaser-aachen</loc>
+    <lastmod>2026-08-16</lastmod>
   </url>
 </urlset>

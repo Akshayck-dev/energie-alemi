@@ -3,7 +3,7 @@ import SEO from '../components/SEO';
 export default function Impressum() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a1628] py-24 md:py-32">
-      <SEO title="Impressum" description="Impressum der Energie Alemi. Angaben gemäß § 5 TMG." url="/impressum" />
+      <SEO url="/impressum" />
       <div className="container mx-auto px-6 max-w-3xl">
         <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-10">Impressum</h1>
         

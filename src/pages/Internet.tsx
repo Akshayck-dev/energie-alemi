@@ -87,7 +87,7 @@ export default function Internet() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO title="Internetanbieter vergleichen Aachen: DSL & Glasfaser" description="Internetanbieter vergleichen in Aachen. Sichern Sie sich passende und schnelle Tarife für DSL, Kabel und Glasfaser." url="/internet" faqs={faqs} />
+      <SEO url="/internet" faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

@@ -3,7 +3,7 @@ import SEO from '../components/SEO';
 export default function Datenschutz() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a1628] py-24 md:py-32">
-      <SEO title="Datenschutzerklärung" description="Datenschutzerklärung der Energie Alemi. Informationen zur Verarbeitung Ihrer Daten." url="/datenschutz" />
+      <SEO url="/datenschutz" />
       <div className="container mx-auto px-6 max-w-3xl">
         <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-10">Datenschutzerklärung</h1>
         
