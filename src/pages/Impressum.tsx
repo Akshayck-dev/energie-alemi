@@ -11,25 +11,18 @@ export default function Impressum() {
           <section>
             <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Angaben gemäß § 5 TMG</h2>
             <p className="leading-relaxed">
-              [Name des Unternehmens / Inhabers]<br />
-              [Straße Hausnummer]<br />
-              [PLZ Ort]<br />
+              Energie Alemi<br />
+              Inhaber: Shoaib Alemi<br />
+              Alexianergraben 9<br />
+              52064 Aachen<br />
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Kontakt</h2>
             <p className="leading-relaxed">
-              Telefon: [Telefonnummer]<br />
-              E-Mail: [E-Mail-Adresse]<br />
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Umsatzsteuer-ID</h2>
-            <p className="leading-relaxed">
-              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-              [USt-IdNr.]
+              Telefon: +49 176 65949390<br />
+              E-Mail: info@energie-alemi.de<br />
             </p>
           </section>
 

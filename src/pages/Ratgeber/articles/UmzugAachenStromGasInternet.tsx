@@ -54,7 +54,7 @@ export default function UmzugAachenStromGasInternet() {
 
       <h2>4. Internet anmelden: Verfügbarkeit und Fristen</h2>
       <p>
-        Im Gegensatz zur Energieversorgung gibt es beim Internet keine automatiche „Grundversorgung“ – wer sich nicht kümmert, bleibt offline. 
+        Im Gegensatz zur Energieversorgung gibt es beim Internet keine automatische „Grundversorgung“ – wer sich nicht kümmert, bleibt offline. 
       </p>
       <h3>Mitnahme des bestehenden Vertrags (§ 60 TKG)</h3>
       <p>
