@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router';
 import ArticleLayout from '../ArticleLayout';
 import { articles } from '../../../data/ratgeberArticles';
@@ -6,39 +5,142 @@ import Button from '../../../components/ui/Button';
 
 export default function StromanbieterWechseln() {
   const article = articles.find(a => a.slug === 'stromanbieter-wechseln')!;
-  
+
+  const faqs = [
+    {
+      question: "Wie kann ich meinen Stromanbieter wechseln?",
+      answer: "Der Wechsel ist unkompliziert: Sie vergleichen Stromtarife online, wählen einen neuen Anbieter und füllen das Formular aus. Die Kündigung beim bisherigen Versorger übernimmt meist der neue Anbieter."
+    },
+    {
+      question: "Wie lange dauert ein Stromanbieterwechsel?",
+      answer: "Der reine Wechselprozess dauert meist zwei bis sechs Wochen, abhängig von der Kündigungsfrist Ihres alten Vertrags."
+    },
+    {
+      question: "Muss ich meinen alten Stromvertrag selbst kündigen?",
+      answer: "Nein, in der Regel nicht. Wenn Sie regulär den Anbieter wechseln, kündigt Ihr neuer Anbieter für Sie. Kündigen Sie nur selbst, wenn Sie ein Sonderkündigungsrecht wegen einer Preiserhöhung nutzen oder sehr kurzfristig umziehen."
+    },
+    {
+      question: "Kann ich den Stromanbieter trotz laufendem Vertrag wechseln?",
+      answer: "Ja, Sie können den neuen Tarif jederzeit abschließen. Der eigentliche Anbieterwechsel findet jedoch erst nach Ablauf Ihrer aktuellen Vertragslaufzeit und Kündigungsfrist statt."
+    },
+    {
+      question: "Was kostet der Stromanbieterwechsel?",
+      answer: "Ein Stromanbieterwechsel ist immer kostenlos. Weder der bisherige noch der zukünftige Stromanbieter dürfen Wechselgebühren erheben."
+    },
+    {
+      question: "Gibt es eine Unterbrechung der Stromversorgung?",
+      answer: "Nein, die Stromversorgung ist gesetzlich gesichert. Selbst bei Verzögerungen während des Wechsels werden Sie lückenlos über den örtlichen Grundversorger mit Strom beliefert."
+    }
+  ];
+
   return (
-    <ArticleLayout article={article}>
+    <ArticleLayout 
+      article={article} 
+      customH1="Stromanbieter wechseln: So funktioniert der Wechsel"
+      faqs={faqs}
+    >
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
-        Ein Wechsel des Stromanbieters ist heutzutage unkompliziert und kann mehrere hundert Euro im Jahr sparen. Dennoch zögern viele Verbraucher aus Angst vor einer Unterbrechung der Stromversorgung oder rechtlichen Fallstricken.
+        Die Energiepreise schwanken, und viele Haushalte zahlen zu viel für ihren Strom. Wer seinen <strong>Stromanbieter wechseln</strong> möchte, kann jährlich mehrere hundert Euro sparen. In diesem Ratgeber erklären wir Ihnen den genauen Ablauf, welche Kündigungsfristen wichtig sind und wie Sie sicher einen günstigen Stromtarif finden.
       </p>
 
       <h2>Wann lohnt sich ein Wechsel?</h2>
       <p>
-        Besonders Verbraucher, die noch in der teuren <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] hover:underline">Grundversorgung</Link> ihres lokalen Anbieters sind, haben enormes Sparpotenzial. Aber auch nach Ablauf einer Preisgarantie bei einem alternativen Anbieter lohnt sich ein erneuter <Link to="/electricity" className="text-[#0047AB] hover:underline">Stromvergleich</Link>. Falls Sie einen <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] hover:underline">Umzug nach Aachen</Link> planen, gelten beim Anbieterwechsel und der Mitnahme des Vertrags gesonderte Fristen und Regelungen.
+        Ein <strong>Stromanbieterwechsel</strong> lohnt sich für fast jeden, insbesondere aber für Haushalte, die sich noch in der teuren Grundversorgung befinden. Grundversorgungstarife sind zwar flexibel, aber oft die teuerste Option am Markt. Auch wenn Ihre Preisgarantie bei einem alternativen Anbieter ausläuft oder Sie eine Preiserhöhung erhalten haben, ist es der perfekte Zeitpunkt, um den Stromanbieter zu wechseln. Neukunden profitieren zudem häufig von attraktiven Wechselprämien.
       </p>
 
-      <h2>Wie funktioniert der Prozess?</h2>
-      <ol>
-        <li><strong>Vergleich durchführen:</strong> Nutzen Sie unseren Vergleichsrechner.</li>
-        <li><strong>Tarif auswählen:</strong> Achten Sie nicht nur auf den Preis, sondern auch auf die Konditionen.</li>
-        <li><strong>Auftrag erteilen:</strong> Füllen Sie das Wechselformular online aus.</li>
-        <li><strong>Zurücklehnen:</strong> Ihr neuer Anbieter übernimmt in der Regel die Kündigung beim alten Versorger.</li>
-      </ol>
-
-      <h2>Was passiert mit dem alten Vertrag?</h2>
+      <h2>Wie funktioniert der Stromanbieterwechsel?</h2>
       <p>
-        Wenn Sie nicht von einem Sonderkündigungsrecht (z.B. wegen einer Preiserhöhung) Gebrauch machen müssen, kündigt Ihr neuer Anbieter den alten Vertrag fristgerecht für Sie. Sie müssen selbst nicht aktiv werden.
+        Der Prozess, um den <strong>Stromtarif wechseln</strong> zu können, ist in Deutschland gesetzlich standardisiert und für Sie als Verbraucher extrem einfach:
       </p>
 
-      <h2>Häufige Fehler vermeiden</h2>
+      <h3>Stromtarif vergleichen</h3>
       <p>
-        Kündigen Sie niemals selbst, es sei denn, Sie haben ein Sonderkündigungsrecht. Wenn Sie selbst kündigen, weiß der neue Anbieter nichts davon, und es kann zu Komplikationen bei der nahtlosen Übergabe kommen.
+        Nutzen Sie unseren kostenlosen Rechner, um <strong>Stromtarife vergleichen</strong> zu können. Sie benötigen lediglich Ihre Postleitzahl und Ihren ungefähren Jahresverbrauch in kWh, den Sie auf Ihrer letzten Jahresabrechnung finden.
       </p>
+
+      <h3>Neuen Stromanbieter auswählen</h3>
+      <p>
+        Entscheiden Sie sich für einen Tarif, der gute Preise mit fairen Vertragsbedingungen (wie einer Preisgarantie und kurzer Laufzeit) kombiniert.
+      </p>
+
+      <h3>Vertrag abschließen und Wechsel starten</h3>
+      <p>
+        Geben Sie online Ihre Daten, Ihre Zählernummer und den Namen Ihres bisherigen Anbieters ein. Mit dem Abschluss beauftragen Sie den neuen Anbieter, den Wechselprozess für Sie durchzuführen.
+      </p>
+
+      <h2>Welche Fristen gelten beim Stromanbieterwechsel?</h2>
+      <p>
+        Bevor Sie den Anbieter wechseln, sollten Sie die Fristen Ihres aktuellen Vertrags kennen.
+      </p>
+
+      <h3>Kündigungsfrist und Vertragslaufzeit</h3>
+      <p>
+        Jeder Vertrag hat eine spezifische <strong>Kündigungsfrist</strong>. In der Grundversorgung beträgt diese meist nur zwei Wochen. Haben Sie jedoch einen Sondervertrag abgeschlossen, kann die Frist zwischen vier Wochen und drei Monaten zum Ende der Erstlaufzeit betragen.
+      </p>
+
+      <h3>Stromanbieter wechseln trotz laufendem Vertrag</h3>
+      <p>
+        Viele Verbraucher fragen sich: Kann ich den <strong>Stromanbieter wechseln trotz Vertrag</strong>? Ja, Sie können sich heute schon einen günstigen Tarif für die Zukunft sichern. Der tatsächliche Lieferbeginn erfolgt dann nahtlos nach Ablauf Ihres aktuellen Vertrags. Eine Ausnahme besteht bei Preiserhöhungen: Hier greift ein Sonderkündigungsrecht, durch das Sie den Vertrag sofort ohne Einhaltung der regulären Frist beenden können.
+      </p>
+
+      <h2>Was passiert mit dem alten Stromvertrag?</h2>
+      <p>
+        Das Wichtigste beim regulären Anbieterwechsel: Kündigen Sie Ihren alten Vertrag niemals selbst. Ihr neuer Versorger übernimmt die Kündigung für Sie, um eine reibungslose Übergabe der Stromversorgung sicherzustellen. Nur wenn die Frist für ein Sonderkündigungsrecht sehr knapp ist, sollten Sie selbst schriftlich kündigen und dies dem neuen Anbieter bei Vertragsschluss mitteilen.
+      </p>
+
+      <h2>Was kostet ein Stromanbieterwechsel?</h2>
+      <p>
+        Ein <strong>Stromanbieterwechsel</strong> ist grundsätzlich und gesetzlich vorgeschrieben kostenlos. Es fallen keinerlei Wechsel- oder Bearbeitungsgebühren durch die Energieversorger an. 
+      </p>
+
+      <h2>Worauf sollte man beim neuen Stromtarif achten?</h2>
+      <p>
+        Um wirklich zu sparen, reicht ein Blick auf die monatlichen Abschläge nicht aus. Achten Sie auf folgende Details, bevor Sie den <strong>Stromvertrag wechseln</strong>:
+      </p>
+
+      <h3>Arbeitspreis und Grundpreis</h3>
+      <p>
+        Der Arbeitspreis (Cent pro kWh) ist entscheidend, wenn Sie viel Strom verbrauchen. Der Grundpreis (Euro pro Monat) ist eine Fixgebühr, die besonders bei einem sehr geringen Stromverbrauch ins Gewicht fällt.
+      </p>
+
+      <h3>Vertragslaufzeit</h3>
+      <p>
+        Wählen Sie Laufzeiten von maximal 12 Monaten. So bleiben Sie flexibel und können im nächsten Jahr erneut von Marktschwankungen und Boni profitieren.
+      </p>
+
+      <h3>Preisgarantie</h3>
+      <p>
+        Eine Preisgarantie, die sich über die gesamte erste Vertragslaufzeit erstreckt, schützt Sie zuverlässig vor überraschenden Kostensteigerungen am Energiemarkt.
+      </p>
+
+      <h3>Bonus und Neukundenangebote</h3>
+      <p>
+        Viele Anbieter locken mit hohen Boni. Diese werden meist nach dem ersten Jahr ausgezahlt und machen den Tarif im ersten Jahr sehr günstig. Achten Sie darauf, wie sich der Preis im zweiten Jahr entwickelt, falls Sie vergessen, erneut zu wechseln.
+      </p>
+
+      <h2>Was passiert während des Anbieterwechsels?</h2>
+      <p>
+        Während des Wechsels merken Sie in Ihrem Haushalt absolut nichts. Der Stromzähler und die Leitungen bleiben unangetastet. Es gibt keine Technikerbesuche und vor allem keinen Stromausfall. Im Hintergrund meldet Ihr neuer Anbieter Ihren Zähler beim Netzbetreiber um.
+      </p>
+
+      <h2>Häufige Fehler beim Stromanbieterwechsel vermeiden</h2>
+      <p>
+        Der häufigste Fehler ist die eigenständige Kündigung bei einem regulären Wechsel, was zu Verzögerungen führen kann. Ein weiterer Fehler ist das Ignorieren von Preiserhöhungen. Wenn Sie ein Schreiben Ihres Anbieters erhalten, prüfen Sie sofort Ihr Sonderkündigungsrecht. Sollten Sie Unterstützung beim Vergleich oder dem Wechselprozess benötigen, helfen wir Ihnen gerne in unserer <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">persönlichen Tarifberatung</Link>.
+      </p>
+
+      <h2>Häufige Fragen zum Stromanbieterwechsel</h2>
+      <div className="space-y-6 mt-8">
+        {faqs.map((faq, index) => (
+          <div key={index} className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+            <h3 className="text-lg font-bold mt-0 mb-2">{faq.question}</h3>
+            <p className="mb-0 text-slate-600 dark:text-slate-300">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
 
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
         <h3 className="text-2xl font-bold mb-4 mt-0">Bereit für günstigere Strompreise?</h3>
-        <p className="mb-6">Vergleichen Sie jetzt die aktuellen Tarife und wechseln Sie in wenigen Minuten.</p>
+        <p className="mb-6">Vergleichen Sie jetzt die aktuellen Tarife und senken Sie Ihre Stromkosten dauerhaft.</p>
         <Link to="/electricity">
           <Button variant="primary">Jetzt Stromtarife vergleichen</Button>
         </Link>

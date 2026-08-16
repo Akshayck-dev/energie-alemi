@@ -14,10 +14,11 @@ export const articles: RatgeberArticle[] = [
   {
     id: '1',
     slug: 'stromanbieter-wechseln',
-    title: 'Stromanbieter wechseln: So funktioniert der Wechsel',
-    description: 'Erfahren Sie, wann sich ein Wechsel lohnt, wie der Prozess abläuft und worauf Sie bei Fristen und dem alten Vertrag achten müssen.',
+    title: 'Stromanbieter wechseln 2026: So einfach geht der Wechsel | ALEMI',
+    description: 'Stromanbieter wechseln leicht gemacht: Erfahren Sie, wie der Wechsel abläuft, welche Fristen gelten, was Sie beachten sollten und wie Sie einen passenden Stromtarif finden.',
     category: 'Strom',
     publishedDate: '2026-08-09',
+    updatedDate: '2026-08-16',
     componentName: 'StromanbieterWechseln'
   },
   {
