@@ -155,7 +155,7 @@ export default function SEO({ title, description, url, isArticle, datePublished,
   if (faqs && Array.isArray(faqs) && faqs.length > 0) {
     graph.push({
       "@type": "FAQPage",
-      "@id": `${canonicalUrl}/#faq`,
+      "@id": canonicalUrl,
       "mainEntity": faqs.map((faq: any) => ({
         "@type": "Question",
         "name": faq.question,
