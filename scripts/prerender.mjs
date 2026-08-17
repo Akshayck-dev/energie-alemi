@@ -54,47 +54,42 @@ async function run() {
     // 1. Title tags
     const titleRegex = /<title[^>]*>([\s\S]*?)<\/title>/gi;
     const titles = cleanedAppHtml.match(titleRegex);
-    console.log(`Route "${url}": found titles:`, titles);
     if (titles) {
-      headTags.push(...titles);
+      headTags.push(...titles.map(t => t.replace('<title', '<title data-rh="true"')));
       cleanedAppHtml = cleanedAppHtml.replace(titleRegex, '');
     }
 
     // 2. Meta tags
     const metaRegex = /<meta[^>]*\/?>/gi;
     const metas = cleanedAppHtml.match(metaRegex);
-    console.log(`Route "${url}": found metas:`, metas ? metas.length : 0);
     if (metas) {
-      headTags.push(...metas);
+      headTags.push(...metas.map(m => m.includes('data-rh') ? m : m.replace('<meta', '<meta data-rh="true"')));
       cleanedAppHtml = cleanedAppHtml.replace(metaRegex, '');
     }
 
     // 3. Link tags (e.g. canonical)
     const linkRegex = /<link[^>]*\/?>/gi;
     const links = cleanedAppHtml.match(linkRegex);
-    console.log(`Route "${url}": found links:`, links ? links.length : 0);
     if (links) {
-      headTags.push(...links);
+      headTags.push(...links.map(l => l.includes('data-rh') ? l : l.replace('<link', '<link data-rh="true"')));
       cleanedAppHtml = cleanedAppHtml.replace(linkRegex, '');
     }
 
     // 4. Structured data script tags
     const scriptRegex = /<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi;
     const scripts = cleanedAppHtml.match(scriptRegex);
-    console.log(`Route "${url}": found scripts:`, scripts ? scripts.length : 0);
     if (scripts) {
-      headTags.push(...scripts);
+      headTags.push(...scripts.map(s => s.includes('data-rh') ? s : s.replace('<script', '<script data-rh="true"')));
       cleanedAppHtml = cleanedAppHtml.replace(scriptRegex, '');
     }
 
     const headContent = headTags.join('\n');
-    console.log(`Route "${url}": cleanedAppHtml length:`, cleanedAppHtml.length, 'vs original appHtml length:', appHtml.length);
 
     // Replace placeholders in index.html template
     let html = template;
     
-    // Inject HTML lang attribute
-    html = html.replace('<html lang="de-DE">', '<html lang="de">');
+    // Inject HTML lang attribute from Helmet if available, else fallback
+    html = html.replace(/<html[^>]*>/, `<html lang="de">`);
     
     // Remove the default dev title in index.html to prevent duplication
     html = html.replace(/<title>[\s\S]*?<\/title>/i, '');

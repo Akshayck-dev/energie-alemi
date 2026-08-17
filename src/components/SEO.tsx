@@ -77,6 +77,7 @@ export default function SEO({ title, description, url, isArticle, datePublished,
     "description": "Berater für Energie- und Telekommunikationstarife in Aachen und ganz Deutschland.",
     "telephone": "+4917665949390",
     "email": "info@energie-alemi.de",
+    "priceRange": "Kostenlose Beratung",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Alexianergraben 9",

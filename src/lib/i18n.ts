@@ -17,13 +17,8 @@ import faTranslation from '../../public/locales/fa/translation.json';
  *   fa, fa-IR, fa-AF  → fa
  *   en-IN, hi-IN, en-US, fr, ... → en
  */
-function mapLocaleToSupported(locale: string): string {
-  const prefix = locale.split('-')[0].toLowerCase();
-  if (prefix === 'de') return 'de';
-  if (prefix === 'ar') return 'ar';
-  if (prefix === 'fa') return 'fa';
-  return 'en'; // Default for every other language / country
-}
+// We no longer automatically map browser locales to supported languages
+// as the site defaults to German unless explicitly changed by the user.
 
 /**
  * Resolve the initial language:
@@ -39,12 +34,8 @@ function resolveInitialLanguage(): string {
     return stored;
   }
 
-  const browserLocale =
-    typeof navigator !== 'undefined'
-      ? navigator.language || (navigator as unknown as { userLanguage?: string }).userLanguage || 'en'
-      : 'en';
-
-  return mapLocaleToSupported(browserLocale);
+  // Always default to German if no explicit user selection exists
+  return 'de';
 }
 
 const initialLanguage = resolveInitialLanguage();
@@ -60,7 +51,7 @@ i18n
       fa: { translation: faTranslation },
     },
     lng: initialLanguage,           // Resolved language (not left to detector guessing)
-    fallbackLng: 'en',              // Always fall back to English, never German
+    fallbackLng: 'de',              // Always fall back to German, never English by default
     supportedLngs: ['de', 'en', 'ar', 'fa'],
     debug: false,
     interpolation: {

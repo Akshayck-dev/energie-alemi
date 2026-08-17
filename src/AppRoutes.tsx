@@ -17,6 +17,7 @@ import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import NotFound from './pages/NotFound';
 
+import FAQ from './pages/FAQ';
 import RatgeberIndex from './pages/Ratgeber/RatgeberIndex';
 import StromanbieterWechseln from './pages/Ratgeber/articles/StromanbieterWechseln';
 import StromvergleichWoraufAchten from './pages/Ratgeber/articles/StromvergleichWoraufAchten';
@@ -57,6 +58,9 @@ export default function AppRoutes() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
+          
+          {/* FAQ Route */}
+          <Route path="/faq" element={<FAQ />} />
           
           {/* Ratgeber Routes */}
           <Route path="/ratgeber" element={<RatgeberIndex />} />

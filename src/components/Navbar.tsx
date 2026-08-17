@@ -14,6 +14,7 @@ const navLinks = [
   { key: 'gas', path: '/gas' },
   { key: 'internet', path: '/internet' },
   { key: 'ratgeber', path: '/ratgeber' },
+  { key: 'faq', path: '/faq' },
   { key: 'about_us', path: '/about' },
   { key: 'contact', path: '/contact' },
 ];
@@ -75,7 +76,7 @@ export default function Navbar() {
                     : "text-white/80 hover:text-white"
                 )}
               >
-                {t(`nav.${link.key}`)}
+                {t(`nav.${link.key}`, { defaultValue: link.key === 'faq' ? 'FAQ' : undefined })}
                 <span 
                   className={cn(
                     "absolute -bottom-2 rtl:right-0 ltr:left-0 h-[2px] bg-[#0047AB] transition-all duration-300",
@@ -196,7 +197,7 @@ export default function Navbar() {
                             : "text-lg text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white"
                         )}
                       >
-                        {t(`nav.${link.key}`)}
+                        {t(`nav.${link.key}`, { defaultValue: link.key === 'faq' ? 'FAQ' : undefined })}
                       </Link>
                     </motion.div>
                   );

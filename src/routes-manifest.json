@@ -110,6 +110,17 @@
     "structuredDataType": "WebPage"
   },
   {
+    "path": "/faq",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Häufige Fragen | Energie Alemi",
+    "description": "Antworten auf häufige Fragen zur kostenlosen Tarifberatung für Strom, Gas und Internet in Aachen von Energie Alemi.",
+    "canonical": "/faq",
+    "sitemapInclusion": true,
+    "lastmod": "2026-08-17",
+    "structuredDataType": "FAQPage"
+  },
+  {
     "path": "/ratgeber/stromanbieter-wechseln",
     "isPublic": true,
     "isIndexable": true,
