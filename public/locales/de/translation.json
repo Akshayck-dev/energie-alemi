@@ -444,5 +444,26 @@
     "trust_hours_val": "Mo-Sa: 10:00 - 19:00 Uhr",
     "trust_box_1": "Persönliche Beratung",
     "trust_box_2": "für Aachen und Umgebung"
+  },
+  "not_found": {
+    "seo_title": "Seite nicht gefunden (404)",
+    "seo_desc": "Die angeforderte Seite konnte nicht gefunden werden.",
+    "heading": "Hoppla! Seite nicht gefunden.",
+    "description": "Die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben.",
+    "back_home": "Zurück zur Startseite"
+  },
+  "ratgeber": {
+    "badge": "Energie Alemi Ratgeber",
+    "title": "Ratgeber für Strom, Gas & Internet in Aachen",
+    "desc_1": "Wertvolles Wissen, praktische Tipps und klare Anleitungen für Ihren Anbieterwechsel in Aachen. Nutzen Sie auch unsere direkten Vergleiche für ",
+    "desc_strom": "Strom",
+    "desc_gas": "Gas",
+    "desc_internet": "Internet",
+    "desc_or": " oder nehmen Sie ",
+    "desc_contact": "persönlichen Kontakt",
+    "desc_end": " auf.",
+    "read_article": "Artikel lesen",
+    "published": "Veröffentlicht:",
+    "updated": "Zuletzt aktualisiert:"
   }
 }

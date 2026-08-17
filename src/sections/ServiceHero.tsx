@@ -169,7 +169,7 @@ export default function ServiceHero({
           <button
             onClick={onButtonClick}
             className={cn(
-              'inline-flex items-center gap-3 px-7 py-3.5 md:py-4 rounded-xl font-bold text-white',
+              'group inline-flex items-center gap-3 px-7 py-3.5 md:py-4 rounded-xl font-bold text-white',
               'transition-all duration-200 hover:scale-[1.04] active:scale-[0.97]',
               'shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2',
               'mb-11 md:mb-14',
@@ -178,7 +178,7 @@ export default function ServiceHero({
             style={{ fontSize: 'clamp(0.95rem, 1.2vw, 1.05rem)' }}
           >
             {buttonText}
-            <ArrowRight size={18} className="motion-safe:transition-transform group-hover:translate-x-1" />
+            <ArrowRight size={18} className={cn("motion-safe:transition-transform", isRTL ? "rotate-180 group-hover:-translate-x-1" : "group-hover:translate-x-1")} />
           </button>
 
           {/* 5. Trust points — icon + title only, inline */}

@@ -2,8 +2,10 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router';
 import { ChevronRight, Calendar } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
 import type { RatgeberArticle } from '../../data/ratgeberArticles';
+import { cn } from '../../lib/utils';
 
 interface ArticleLayoutProps {
   article: RatgeberArticle;
@@ -13,11 +15,12 @@ interface ArticleLayoutProps {
 }
 
 export default function ArticleLayout({ article, children, faqs, customH1 }: ArticleLayoutProps) {
+  const { t, i18n } = useTranslation();
   const url = `/ratgeber/${article.slug}`;
 
   // Format dates for display
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('de-DE', {
+    return new Date(dateString).toLocaleDateString(i18n.language === 'en' ? 'en-US' : 'de-DE', {
       day: '2-digit',
       month: 'long',
       year: 'numeric'
@@ -39,10 +42,10 @@ export default function ArticleLayout({ article, children, faqs, customH1 }: Art
       <article className="container mx-auto px-6 max-w-3xl">
         {/* Breadcrumbs */}
         <nav className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8 overflow-x-auto whitespace-nowrap">
-          <Link to="/" className="hover:text-[#0047AB] dark:hover:text-[#60a5fa] transition-colors">Startseite</Link>
-          <ChevronRight size={14} className="shrink-0" />
-          <Link to="/ratgeber" className="hover:text-[#0047AB] dark:hover:text-[#60a5fa] transition-colors">Ratgeber</Link>
-          <ChevronRight size={14} className="shrink-0" />
+          <Link to="/" className="hover:text-[#0047AB] dark:hover:text-[#60a5fa] transition-colors">{t('nav.home')}</Link>
+          <ChevronRight size={14} className={cn("shrink-0", i18n.dir() === 'rtl' && "rotate-180")} />
+          <Link to="/ratgeber" className="hover:text-[#0047AB] dark:hover:text-[#60a5fa] transition-colors">{t('nav.ratgeber')}</Link>
+          <ChevronRight size={14} className={cn("shrink-0", i18n.dir() === 'rtl' && "rotate-180")} />
           <span className="text-slate-800 dark:text-slate-200 truncate">{article.title}</span>
         </nav>
 
@@ -59,12 +62,12 @@ export default function ArticleLayout({ article, children, faqs, customH1 }: Art
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-slate-500 dark:text-slate-400 text-sm">
             <div className="flex items-center gap-2">
               <Calendar size={16} />
-              <span>Veröffentlicht: {formatDate(article.publishedDate)}</span>
+              <span>{t('ratgeber.published')} {formatDate(article.publishedDate)}</span>
             </div>
             {article.updatedDate && (
               <div className="flex items-center gap-2">
                 <Calendar size={16} />
-                <span>Zuletzt aktualisiert: {formatDate(article.updatedDate)}</span>
+                <span>{t('ratgeber.updated')} {formatDate(article.updatedDate)}</span>
               </div>
             )}
           </div>

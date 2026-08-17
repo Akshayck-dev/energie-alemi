@@ -423,5 +423,26 @@
     "trust_hours_val": "Mon-Sat: 10:00 AM - 7:00 PM",
     "trust_box_1": "Personal consultation",
     "trust_box_2": "for Aachen and surroundings"
+  },
+  "not_found": {
+    "seo_title": "Page not found (404)",
+    "seo_desc": "The requested page could not be found.",
+    "heading": "Oops! Page not found.",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "back_home": "Back to Home"
+  },
+  "ratgeber": {
+    "badge": "Energie Alemi Guide",
+    "title": "Guide for Electricity, Gas & Internet in Aachen",
+    "desc_1": "Valuable knowledge, practical tips and clear instructions for switching providers in Aachen. You can also use our direct comparisons for ",
+    "desc_strom": "Electricity",
+    "desc_gas": "Gas",
+    "desc_internet": "Internet",
+    "desc_or": " or make ",
+    "desc_contact": "personal contact",
+    "desc_end": ".",
+    "read_article": "Read article",
+    "published": "Published:",
+    "updated": "Last updated:"
   }
 }
