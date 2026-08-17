@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.energie-alemi.com/sitemap.xml
+Sitemap: https://energie-alemi.de/sitemap.xml
