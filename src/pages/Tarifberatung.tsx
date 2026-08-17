@@ -6,6 +6,10 @@ import SectionHeader from '../components/ui/SectionHeader';
 import Button from '../components/ui/Button';
 import { trackEvent } from '../lib/analytics';
 import { cn } from '../lib/utils';
+import heroDesk from '../assets/hero_desk.webp';
+import heroMob from '../assets/hero_mob.webp';
+import bannerDesk from '../assets/banner_desk.webp';
+import bannerMob from '../assets/banner_mob.webp';
 
 export default function Tarifberatung() {
   const navigate = useNavigate();
@@ -23,8 +27,15 @@ export default function Tarifberatung() {
       />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-slate-50 dark:bg-[#0f2847]">
-        <div className="container mx-auto px-6 max-w-[1200px]">
+      <section className="relative pt-32 pb-20 bg-slate-50 dark:bg-[#0f2847] overflow-hidden min-h-[60vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <picture>
+            <source media="(min-width: 768px)" srcSet={heroDesk} />
+            <img src={heroMob} alt="Energie Alemi Aachen" className="w-full h-full object-cover" />
+          </picture>
+          <div className="absolute inset-0 bg-white/90 dark:bg-[#0a1628]/90" />
+        </div>
+        <div className="container relative z-10 mx-auto px-6 max-w-[1200px]">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
               {t('tarifberatung.hero_title')}
@@ -52,6 +63,22 @@ export default function Tarifberatung() {
             subtitle={t('tarifberatung.services_title')}
             align="center"
           />
+          
+          {/* Services Overview Banner Image */}
+          <div className="w-full h-[30vh] md:h-[50vh] rounded-[24px] overflow-hidden mb-12 shadow-2xl relative group mt-8">
+            <div className="absolute inset-0 bg-black/10 z-10 transition-colors duration-700 group-hover:bg-black/5" />
+            <picture>
+              <source media="(min-width: 768px)" srcSet={bannerDesk} />
+              <img 
+                src={bannerMob} 
+                alt="Services Overview"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+              />
+            </picture>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             {/* Strom */}
             <div className="bg-slate-50 dark:bg-[#0f2847] p-8 rounded-2xl border border-slate-100 dark:border-white/5 transition-all hover:shadow-xl group">
