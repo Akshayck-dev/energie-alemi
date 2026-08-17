@@ -405,9 +405,9 @@
     "submit_btn": "Send inquiry via WhatsApp"
   },
   "fab": {
-    "email_tooltip": "EMAIL US",
-    "whatsapp_tooltip": "WHATSAPP US",
-    "call_tooltip": "CALL US NOW"
+    "email_tooltip": "SEND EMAIL",
+    "whatsapp_tooltip": "WHATSAPP MESSAGE",
+    "call_tooltip": "CALL NOW"
   },
   "tarifberatung": {
     "hero_title": "Tariff Advice in Aachen",

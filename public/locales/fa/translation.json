@@ -444,5 +444,10 @@
     "read_article": "Read article",
     "published": "Published:",
     "updated": "Last updated:"
+  },
+  "fab": {
+    "email_tooltip": "ارسال ایمیل",
+    "whatsapp_tooltip": "پیام واتساپ",
+    "call_tooltip": "تماس بگیرید"
   }
 }

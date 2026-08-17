@@ -432,5 +432,10 @@
     "read_article": "Read article",
     "published": "Published:",
     "updated": "Last updated:"
+  },
+  "fab": {
+    "email_tooltip": "إرسال بريد إلكتروني",
+    "whatsapp_tooltip": "رسالة واتساب",
+    "call_tooltip": "اتصل الآن"
   }
 }
