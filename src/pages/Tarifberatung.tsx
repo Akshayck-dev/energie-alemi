@@ -27,27 +27,52 @@ export default function Tarifberatung() {
       />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 bg-slate-50 dark:bg-[#0f2847] overflow-hidden min-h-[60vh] flex items-center">
+      <section className="relative min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
         <div className="absolute inset-0 z-0">
-          <picture>
+          <picture className="absolute inset-0 w-full h-full">
             <source media="(min-width: 768px)" srcSet={heroDesk} />
-            <img src={heroMob} alt="Energie Alemi Aachen" className="w-full h-full object-cover" />
+            <img 
+              src={heroMob} 
+              alt="Tarifberatung Aachen" 
+              className="w-full h-full object-cover object-center" 
+            />
           </picture>
-          <div className="absolute inset-0 bg-white/90 dark:bg-[#0a1628]/90" />
+          {/* LTR: dark on left, transparent on right */}
+          <div className="ltr:block rtl:hidden absolute top-0 left-0 bottom-0 w-full md:w-[80%] bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
+          {/* RTL: dark on right, transparent on left */}
+          <div className="rtl:block ltr:hidden absolute top-0 right-0 bottom-0 w-full md:w-[80%] bg-gradient-to-l from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
+          
+          {/* Subtle bottom gradient to blend with the next section */}
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white dark:from-[#0a1628] to-transparent z-10" />
         </div>
-        <div className="container relative z-10 mx-auto px-6 max-w-[1200px]">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+
+        <div className="container mx-auto px-6 relative z-20 flex flex-col md:flex-row items-center">
+          <div className="w-full md:w-[60%] lg:w-[55%] pt-12 md:pt-0">
+            <p className="text-[#E5A937] font-heading font-medium tracking-widest uppercase mb-3 md:mb-4 text-xs">
+              {t('tarifberatung.hero_badge', 'TARIFBERATUNG')}
+            </p>
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-4 md:mb-6 tracking-tight">
               {t('tarifberatung.hero_title')}
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+            <p className="text-base text-white/75 mb-8 md:mb-10 max-w-md leading-relaxed font-light">
               {t('tarifberatung.hero_desc')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" onClick={handleCtaClick} className="w-full sm:w-auto">
+            
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 md:mb-0">
+              <Button 
+                variant="primary" 
+                className="w-full sm:w-auto justify-center bg-[#0047AB] hover:bg-[#003380] text-white font-semibold" 
+                icon={<ArrowRight size={18} className="rtl:rotate-180" />} 
+                onClick={handleCtaClick}
+              >
                 {t('tarifberatung.hero_btn_primary')}
               </Button>
-              <Button variant="outline" onClick={() => navigate('/ratgeber')} className="w-full sm:w-auto">
+              <Button 
+                variant="outline" 
+                className="w-full sm:w-auto justify-center border-white/20 text-white hover:bg-white/10 hover:text-white" 
+                icon={<ArrowRight size={18} className="rtl:rotate-180" />}
+                onClick={() => navigate('/ratgeber')}
+              >
                 {t('tarifberatung.hero_btn_secondary')}
               </Button>
             </div>
