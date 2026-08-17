@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 /**
  * FAQ Component — Energie Alemi
@@ -100,30 +100,9 @@ function FAQItem({ item, isOpen, onToggle }: FAQItemProps) {
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  };
-
   return (
     <>
-      <Helmet>
-        <title>Häufige Fragen | Energie Alemi</title>
-        <meta
-          name="description"
-          content="Antworten auf häufige Fragen zur kostenlosen Tarifberatung für Strom, Gas und Internet in Aachen von Energie Alemi."
-        />
-        <link rel="canonical" href="https://www.energie-alemi.com/faq" />
-        <script type="application/ld+json">{JSON.stringify(schema)}</script>
-      </Helmet>
+      <SEO url="/faq" faqs={faqs} />
 
       <section className="py-20 md:py-32 bg-slate-50 dark:bg-[#0a1628]">
         <div className="container mx-auto px-6 max-w-3xl">
