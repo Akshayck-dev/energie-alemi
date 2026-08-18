@@ -110,7 +110,7 @@ export default function Footer() {
             onClick={openCookieSettings}
             className="hover:text-slate-800 dark:hover:text-white transition-colors underline decoration-slate-300 dark:decoration-white/20 underline-offset-4"
           >
-            Cookie-Einstellungen
+            {t('footer.cookie_settings', 'Cookie-Einstellungen')}
           </button>
         </div>
       </div>

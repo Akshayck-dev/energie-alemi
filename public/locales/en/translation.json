@@ -120,7 +120,8 @@
     "quick_links": "Quick Links",
     "follow_us": "Follow us",
     "data_protection": "Data protection",
-    "rights_reserved": "Energie Alemi. All rights reserved."
+    "rights_reserved": "Energie Alemi. All rights reserved.",
+    "cookie_settings": "Cookie Settings"
   },
   "about": {
     "hero_subtitle": "ABOUT US",
@@ -492,5 +493,22 @@
     "read_article": "Read article",
     "published": "Published:",
     "updated": "Last updated:"
+  },
+  "faq_page": {
+    "subtitle": "FAQ",
+    "title": "Frequently Asked ",
+    "title_span": "Questions.",
+    "q1": "Is the consultation really free?",
+    "a1": "Yes, our tariff consultation is 100% free and non-binding. We compare electricity, gas, and internet tariffs for you – with no hidden costs.",
+    "q2": "How long does switching providers take?",
+    "a2": "We handle the entire process for you. Switching usually takes 2–4 weeks, and you don't have to worry about anything.",
+    "q3": "Do you also advise companies?",
+    "a3": "Yes, we advise both private customers and businesses in Aachen and the surrounding area – in person, independently, and free of charge.",
+    "q4": "Do I have to cancel my current contract?",
+    "a4": "No. As soon as you decide on a new tariff, we take care of canceling your old contract and managing the entire switching process for you.",
+    "q5": "Which regions do you operate in?",
+    "a5": "Our main location is Aachen, Alexianergraben 9. However, we also advise customers throughout Germany – in person on site or by phone.",
+    "more_questions": "Was your question not answered?",
+    "contact_now": "Contact us now"
   }
 }

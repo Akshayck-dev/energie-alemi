@@ -120,7 +120,8 @@
     "quick_links": "Schnelle Links",
     "follow_us": "Folgen Sie uns",
     "data_protection": "Datenschutz",
-    "rights_reserved": "Energie Alemi. Alle Rechte vorbehalten."
+    "rights_reserved": "Energie Alemi. Alle Rechte vorbehalten.",
+    "cookie_settings": "Cookie-Einstellungen"
   },
   "about": {
     "hero_subtitle": "ÜBER UNS",
@@ -492,5 +493,22 @@
     "read_article": "Artikel lesen",
     "published": "Veröffentlicht:",
     "updated": "Zuletzt aktualisiert:"
+  },
+  "faq_page": {
+    "subtitle": "FAQ",
+    "title": "Häufig gestellte ",
+    "title_span": "Fragen.",
+    "q1": "Ist die Beratung wirklich kostenlos?",
+    "a1": "Ja, unsere Tarifberatung ist zu 100% kostenlos und unverbindlich. Wir vergleichen Strom-, Gas- und Internet-Tarife für Sie – ohne versteckte Kosten.",
+    "q2": "Wie lange dauert der Anbieterwechsel?",
+    "a2": "Wir übernehmen den kompletten Prozess für Sie. In der Regel dauert der Wechsel 2–4 Wochen, und Sie müssen sich um nichts kümmern.",
+    "q3": "Beraten Sie auch Unternehmen?",
+    "a3": "Ja, wir beraten sowohl Privatkunden als auch Unternehmen in Aachen und Umgebung – persönlich, unabhängig und kostenlos.",
+    "q4": "Muss ich meinen aktuellen Vertrag kündigen?",
+    "a4": "Nein. Sobald Sie sich für einen neuen Tarif entscheiden, übernehmen wir die Kündigung Ihres alten Vertrags sowie den gesamten Wechselprozess für Sie.",
+    "q5": "In welchen Regionen sind Sie tätig?",
+    "a5": "Unser Hauptstandort ist Aachen, Alexianergraben 9. Wir beraten aber auch Kunden in ganz Deutschland – persönlich vor Ort oder telefonisch.",
+    "more_questions": "Ihre Frage war nicht dabei?",
+    "contact_now": "Jetzt kontaktieren"
   }
 }

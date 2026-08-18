@@ -1,47 +1,6 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
-
-/**
- * FAQ Component — Energie Alemi
- *
- * Drop this into your pages directory (e.g. src/pages/FAQ.jsx or as a
- * section inside Home.jsx / a dedicated /faq route).
- *
- * - Matches the existing design tokens: #0047AB (blue), #E5A937 (amber),
- *   #0a1628 (dark bg), font-heading, rounded-full accents.
- * - Includes FAQPage JSON-LD schema so Google can show rich results and
- *   AI answer engines (ChatGPT, Perplexity, AI Overviews) can cite it.
- * - Content is in German — swap in your i18n strings if the page is
- *   driven by a translation dictionary instead of hardcoded text.
- */
-
-const faqs = [
-  {
-    question: 'Ist die Beratung wirklich kostenlos?',
-    answer:
-      'Ja, unsere Tarifberatung ist zu 100% kostenlos und unverbindlich. Wir vergleichen Strom-, Gas- und Internet-Tarife für Sie – ohne versteckte Kosten.',
-  },
-  {
-    question: 'Wie lange dauert der Anbieterwechsel?',
-    answer:
-      'Wir übernehmen den kompletten Prozess für Sie. In der Regel dauert der Wechsel 2–4 Wochen, und Sie müssen sich um nichts kümmern.',
-  },
-  {
-    question: 'Beraten Sie auch Unternehmen?',
-    answer:
-      'Ja, wir beraten sowohl Privatkunden als auch Unternehmen in Aachen und Umgebung – persönlich, unabhängig und kostenlos.',
-  },
-  {
-    question: 'Muss ich meinen aktuellen Vertrag kündigen?',
-    answer:
-      'Nein. Sobald Sie sich für einen neuen Tarif entscheiden, übernehmen wir die Kündigung Ihres alten Vertrags sowie den gesamten Wechselprozess für Sie.',
-  },
-  {
-    question: 'In welchen Regionen sind Sie tätig?',
-    answer:
-      'Unser Hauptstandort ist Aachen, Alexianergraben 9. Wir beraten aber auch Kunden in ganz Deutschland – persönlich vor Ort oder telefonisch.',
-  },
-];
 
 interface FAQItemProps {
   item: { question: string; answer: string };
@@ -98,7 +57,31 @@ function FAQItem({ item, isOpen, onToggle }: FAQItemProps) {
 }
 
 export default function FAQ() {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(0);
+
+  const faqs = [
+    {
+      question: t('faq_page.q1', 'Ist die Beratung wirklich kostenlos?'),
+      answer: t('faq_page.a1', 'Ja, unsere Tarifberatung ist zu 100% kostenlos und unverbindlich. Wir vergleichen Strom-, Gas- und Internet-Tarife für Sie – ohne versteckte Kosten.'),
+    },
+    {
+      question: t('faq_page.q2', 'Wie lange dauert der Anbieterwechsel?'),
+      answer: t('faq_page.a2', 'Wir übernehmen den kompletten Prozess für Sie. In der Regel dauert der Wechsel 2–4 Wochen, und Sie müssen sich um nichts kümmern.'),
+    },
+    {
+      question: t('faq_page.q3', 'Beraten Sie auch Unternehmen?'),
+      answer: t('faq_page.a3', 'Ja, wir beraten sowohl Privatkunden als auch Unternehmen in Aachen und Umgebung – persönlich, unabhängig und kostenlos.'),
+    },
+    {
+      question: t('faq_page.q4', 'Muss ich meinen aktuellen Vertrag kündigen?'),
+      answer: t('faq_page.a4', 'Nein. Sobald Sie sich für einen neuen Tarif entscheiden, übernehmen wir die Kündigung Ihres alten Vertrags sowie den gesamten Wechselprozess für Sie.'),
+    },
+    {
+      question: t('faq_page.q5', 'In welchen Regionen sind Sie tätig?'),
+      answer: t('faq_page.a5', 'Unser Hauptstandort ist Aachen, Alexianergraben 9. Wir beraten aber auch Kunden in ganz Deutschland – persönlich vor Ort oder telefonisch.'),
+    },
+  ];
 
   return (
     <>
@@ -108,11 +91,11 @@ export default function FAQ() {
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="mb-10 md:mb-16 text-center">
             <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
-              FAQ
+              {t('faq_page.subtitle', 'FAQ')}
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
-              Häufig gestellte{' '}
-              <span className="text-slate-400 dark:text-white/50">Fragen.</span>
+              {t('faq_page.title', 'Häufig gestellte ')}{' '}
+              <span className="text-slate-400 dark:text-white/50">{t('faq_page.title_span', 'Fragen.')}</span>
             </h2>
           </div>
 
@@ -129,13 +112,13 @@ export default function FAQ() {
 
           <div className="text-center mt-10">
             <p className="text-slate-600 dark:text-white/70 mb-4">
-              Ihre Frage war nicht dabei?
+              {t('faq_page.more_questions', 'Ihre Frage war nicht dabei?')}
             </p>
             <a
               href="/contact"
               className="inline-flex items-center gap-2 bg-[#0047AB] hover:bg-[#003380] text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 hover:scale-[1.02]"
             >
-              Jetzt kontaktieren
+              {t('faq_page.contact_now', 'Jetzt kontaktieren')}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

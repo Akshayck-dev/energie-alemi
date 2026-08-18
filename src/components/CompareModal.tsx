@@ -173,9 +173,9 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
                       onChange={(e) => setService(e.target.value)}
                       className="w-full px-3.5 sm:px-4 h-11 sm:h-12 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-[#051024] text-slate-900 dark:text-white focus:outline-none focus:border-[#0047AB] dark:focus:border-[#4F8CFF] focus:ring-1 focus:ring-[#0047AB] dark:focus:ring-[#4F8CFF] transition-all text-sm"
                     >
-                      <option value="Strom">{t('compare_modal.service_elec', 'Strom (Electricity)')}</option>
-                      <option value="Gas">{t('compare_modal.service_gas', 'Gas (Gas)')}</option>
-                      <option value="Internet">{t('compare_modal.service_internet', 'Internet (Internet)')}</option>
+                      <option value="Strom">{t('compare_modal.service_elec', 'Strom')}</option>
+                      <option value="Gas">{t('compare_modal.service_gas', 'Gas')}</option>
+                      <option value="Internet">{t('compare_modal.service_internet', 'Internet')}</option>
                     </select>
                   </div>
 
