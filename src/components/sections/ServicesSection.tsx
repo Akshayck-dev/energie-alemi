@@ -1,41 +1,30 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
-import { Zap, Flame, Wifi } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const servicesConfig = [
-  {
-    id: 'strom',
-    icon: Zap,
-    color: 'text-amber-400',
-    glow: 'group-hover:shadow-[0_0_24px_rgba(251,191,36,0.35)]',
-    bg: 'bg-amber-400/10'
-  },
-  {
-    id: 'gas',
-    icon: Flame,
-    color: 'text-rose-500',
-    glow: 'group-hover:shadow-[0_0_24px_rgba(244,63,94,0.35)]',
-    bg: 'bg-rose-500/10'
-  },
-  {
-    id: 'internet',
-    icon: Wifi,
-    color: 'text-blue-500',
-    glow: 'group-hover:shadow-[0_0_24px_rgba(59,130,246,0.35)]',
-    bg: 'bg-blue-500/10'
-  }
-];
+export interface ServiceItem {
+  id: string;
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  link: string;
+  color: string;
+  glow: string;
+  bg: string;
+}
 
-import bannerDesk from '../assets/banner_desk.webp';
-import bannerMob from '../assets/banner_mob.webp';
+export interface ServicesSectionProps {
+  subtitle: string;
+  title: React.ReactNode;
+  imageDesk: string;
+  imageMob: string;
+  items: ServiceItem[];
+}
 
-export default function TarifberatungServices() {
-  const { t } = useTranslation();
+export default function ServicesSection({ subtitle, title, imageDesk, imageMob, items }: ServicesSectionProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
@@ -102,10 +91,10 @@ export default function TarifberatungServices() {
         {/* Section Header */}
         <div className="mb-10 md:mb-16">
           <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
-            {t('tarifberatung.services_sub')}
+            {subtitle}
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
-            {t('tarifberatung.services_title')} 
+            {title}
           </h2>
         </div>
 
@@ -113,10 +102,10 @@ export default function TarifberatungServices() {
         <div className="w-full h-[40vh] md:h-[60vh] lg:h-[70vh] rounded-[24px] md:rounded-[32px] overflow-hidden mb-16 md:mb-24 shadow-[0_20px_60px_rgba(5,16,36,0.12)] border border-slate-100 relative group">
           <div className="absolute inset-0 bg-black/10 z-10 transition-colors duration-700 group-hover:bg-black/5" />
           <picture>
-            <source media="(min-width: 768px)" srcSet={bannerDesk} />
+            <source media="(min-width: 768px)" srcSet={imageDesk} />
             <img 
               ref={imageRef}
-              src={bannerMob} 
+              src={imageMob} 
               alt="Our Services Overview"
               loading="lazy"
               decoding="async"
@@ -134,11 +123,11 @@ export default function TarifberatungServices() {
 
           {/* Service Items: Horizontal Swipeable on Mobile, Grid on Desktop */}
           <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-0 snap-x snap-mandatory pb-8 md:pb-0 hide-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
-            {servicesConfig.map((service, index) => {
+            {items.map((service, index) => {
               const Icon = service.icon;
               return (
                 <Link 
-                  to={'/tarifberatung-aachen'}
+                  to={service.link}
                   key={service.id}
                   ref={(el) => { itemsRef.current[index] = el; }}
                   className="w-[85vw] sm:w-[320px] md:w-auto shrink-0 snap-center flex flex-col items-center text-center group cursor-pointer relative z-10"
@@ -151,10 +140,10 @@ export default function TarifberatungServices() {
                   
                   {/* Text Content */}
                   <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300">
-                    {t(`tarifberatung.${service.id}_title`)}
+                    {service.title}
                   </h3>
                   <p className="text-slate-500 dark:text-white/60 text-base max-w-[280px]">
-                    {t(`tarifberatung.${service.id}_desc`)}
+                    {service.description}
                   </p>
                 </Link>
               );

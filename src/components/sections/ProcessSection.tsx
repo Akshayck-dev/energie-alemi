@@ -1,37 +1,19 @@
-import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { PhoneCall, Search, FileCheck, Handshake } from 'lucide-react';
 
-export default function HomeProcess() {
-  const { t } = useTranslation();
+export interface ProcessStep {
+  id: number;
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}
 
-  const steps = [
-    {
-      id: 1,
-      icon: <PhoneCall size={24} />,
-      title: t('home_process.step1_title'),
-      desc: t('home_process.step1_desc'),
-    },
-    {
-      id: 2,
-      icon: <Search size={24} />,
-      title: t('home_process.step2_title'),
-      desc: t('home_process.step2_desc'),
-    },
-    {
-      id: 3,
-      icon: <FileCheck size={24} />,
-      title: t('home_process.step3_title'),
-      desc: t('home_process.step3_desc'),
-    },
-    {
-      id: 4,
-      icon: <Handshake size={24} />,
-      title: t('home_process.step4_title'),
-      desc: t('home_process.step4_desc'),
-    },
-  ];
+export interface ProcessSectionProps {
+  subtitle: string;
+  title: React.ReactNode;
+  steps: ProcessStep[];
+}
 
+export default function ProcessSection({ subtitle, title, steps }: ProcessSectionProps) {
   return (
     <section className="py-16 md:py-24 bg-white dark:bg-[#051024] relative z-20">
       <div className="container mx-auto px-6">
@@ -39,10 +21,10 @@ export default function HomeProcess() {
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
-            {t('home_process.subtitle')}
+            {subtitle}
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
-            {t('home_process.title')}
+            {title}
           </h2>
           <div className="w-16 h-[3px] bg-[#0047AB] mx-auto"></div>
         </div>

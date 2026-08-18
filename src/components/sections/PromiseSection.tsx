@@ -1,10 +1,28 @@
-import { ShieldCheck, Eye, TrendingUp } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-import ownerImg from '../assets/image-admin.JPG.webp';
+export interface PromiseFeature {
+  icon: React.ReactNode;
+  text1: string;
+  text2: string;
+}
 
-export default function HomePromise() {
-  const { t } = useTranslation();
+export interface PromiseSectionProps {
+  subtitle: string;
+  titleLine1: React.ReactNode;
+  titleLine2: React.ReactNode;
+  description: string;
+  features: PromiseFeature[];
+  image: string;
+  quote: string;
+}
 
+export default function PromiseSection({
+  subtitle,
+  titleLine1,
+  titleLine2,
+  description,
+  features,
+  image,
+  quote
+}: PromiseSectionProps) {
   return (
     <section className="py-14 md:py-24 bg-slate-50 dark:bg-[#051024] relative overflow-x-hidden md:overflow-hidden text-slate-900 dark:text-white">
       {/* Background Graphic */}
@@ -15,35 +33,27 @@ export default function HomePromise() {
           
           <div className="w-full lg:w-5/12 relative z-20">
             <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
-              {t('home_promise.subtitle')}
+              {subtitle}
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
-              {t('home_promise.title_line1')}<br />
-              <span className="text-[#0047AB] dark:text-[#4F8CFF]">{t('home_promise.title_line2')}</span>
+              {titleLine1}<br />
+              <span className="text-[#0047AB] dark:text-[#4F8CFF]">{titleLine2}</span>
             </h2>
             <p className="text-slate-600 dark:text-white/80 text-base mb-12 leading-relaxed max-w-md">
-              {t('home_promise.description')}
+              {description}
             </p>
  
             <div className="flex flex-wrap sm:flex-nowrap gap-6 sm:gap-8">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
-                  <ShieldCheck className="text-[#0047AB] dark:text-[#f0a83f]" size={20} />
+              {features.map((feature, idx) => (
+                <div key={idx} className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
+                    {feature.icon}
+                  </div>
+                  <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">
+                    {feature.text1}<br/>{feature.text2}
+                  </span>
                 </div>
-                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature1_line1')}<br/>{t('home_promise.feature1_line2')}</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
-                  <Eye className="text-[#0047AB] dark:text-[#f0a83f]" size={20} />
-                </div>
-                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature2_line1')}<br/>{t('home_promise.feature2_line2')}</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-lg flex items-center justify-center shrink-0">
-                  <TrendingUp className="text-[#0047AB] dark:text-[#f0a83f]" size={20} />
-                </div>
-                <span className="text-slate-700 dark:text-slate-300 font-medium text-xs leading-tight">{t('home_promise.feature3_line1')}<br/>{t('home_promise.feature3_line2')}</span>
-              </div>
+              ))}
             </div>
           </div>
 
@@ -51,7 +61,7 @@ export default function HomePromise() {
             {/* Cut out person image */}
             <div className="relative z-10 bottom-0 w-full max-w-[600px] flex items-end justify-center lg:justify-end">
                <img 
-                 src={ownerImg} 
+                 src={image} 
                  alt="Advisor" 
                  loading="lazy"
                  decoding="async"
@@ -64,7 +74,7 @@ export default function HomePromise() {
             <div className="absolute bottom-4 md:bottom-12 left-2 right-2 md:left-auto md:right-auto rtl:md:-right-4 ltr:md:-left-4 lg:rtl:-right-12 lg:ltr:-left-12 z-20 bg-white/95 dark:bg-[#0a1628]/95 md:bg-white md:dark:bg-[#0a1628] backdrop-blur-md md:backdrop-blur-none rounded-2xl p-6 md:p-8 w-auto md:max-w-sm border border-slate-100 dark:border-white/10 shadow-xl">
               <div className="text-[#E5A937] text-6xl font-serif absolute -top-2 ltr:left-6 rtl:right-6 opacity-80 leading-none">"</div>
               <p className="text-slate-700 dark:text-slate-300 text-lg font-medium relative z-10 leading-relaxed mt-4">
-                {t('home_promise.quote')}
+                {quote}
               </p>
             </div>
           </div>

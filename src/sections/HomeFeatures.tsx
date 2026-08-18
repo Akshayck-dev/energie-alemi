@@ -66,13 +66,17 @@ export default function HomeFeatures() {
                   >
                     <Search size={28} strokeWidth={1.5} />
                   </motion.div>
-                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature1_title1')}<br/>{t('home_features.feature1_title2')}</h3>
+                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">
+                    {t('home_features.feature1_title1')}
+                    {t('home_features.feature1_title2') && <br/>}
+                    {t('home_features.feature1_title2')}
+                  </h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature1_desc')}
                   </p>
-                  <button aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                  <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
-                  </button>
+                  </Link>
                 </div>
 
                 {/* Divider 1 */}
@@ -90,13 +94,17 @@ export default function HomeFeatures() {
                       <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#E5A937" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     </div>
                   </motion.div>
-                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature2_title1')}<br/>{t('home_features.feature2_title2')}</h3>
+                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">
+                    {t('home_features.feature2_title1')}
+                    {t('home_features.feature2_title2') && <br/>}
+                    {t('home_features.feature2_title2')}
+                  </h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature2_desc')}
                   </p>
-                  <button aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                  <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
-                  </button>
+                  </Link>
                 </div>
 
                 {/* Divider 2 */}
@@ -111,13 +119,17 @@ export default function HomeFeatures() {
                   >
                     <Handshake size={28} strokeWidth={1.5} />
                   </motion.div>
-                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">{t('home_features.feature3_title1')}<br/>{t('home_features.feature3_title2')}</h3>
+                  <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">
+                    {t('home_features.feature3_title1')}
+                    {t('home_features.feature3_title2') && <br/>}
+                    {t('home_features.feature3_title2')}
+                  </h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     {t('home_features.feature3_desc')}
                   </p>
-                  <button aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                  <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
-                  </button>
+                  </Link>
                 </div>
 
               </div>
