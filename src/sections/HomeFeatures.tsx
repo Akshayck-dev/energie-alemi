@@ -38,7 +38,7 @@ export default function HomeFeatures() {
               {t('home_features.description')}
             </p>
             <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mb-6">
-              Besuchen Sie uns direkt vor Ort für Ihre persönliche <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung in Aachen</Link>.
+              Besuchen Sie uns direkt vor Ort und profitieren Sie von einer persönlichen <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung in Aachen</Link>.
             </p>
             <div className="w-12 h-[3px] bg-[#0047AB]"></div>
           </motion.div>
