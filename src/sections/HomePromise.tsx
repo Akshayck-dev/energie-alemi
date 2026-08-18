@@ -61,7 +61,7 @@ export default function HomePromise() {
             </div>
 
             {/* Blockquote card */}
-            <div className="absolute bottom-12 rtl:-right-4 ltr:-left-4 lg:rtl:-right-12 lg:ltr:-left-12 z-20 bg-white dark:bg-[#0a1628] rounded-2xl p-8 max-w-sm border border-slate-100 shadow-xl hidden md:block">
+            <div className="absolute bottom-4 md:bottom-12 left-2 right-2 md:left-auto md:right-auto rtl:md:-right-4 ltr:md:-left-4 lg:rtl:-right-12 lg:ltr:-left-12 z-20 bg-white/95 dark:bg-[#0a1628]/95 md:bg-white md:dark:bg-[#0a1628] backdrop-blur-md md:backdrop-blur-none rounded-2xl p-6 md:p-8 w-auto md:max-w-sm border border-slate-100 dark:border-white/10 shadow-xl">
               <div className="text-[#E5A937] text-6xl font-serif absolute -top-2 ltr:left-6 rtl:right-6 opacity-80 leading-none">"</div>
               <p className="text-slate-700 dark:text-slate-300 text-lg font-medium relative z-10 leading-relaxed mt-4">
                 {t('home_promise.quote')}
