@@ -5,6 +5,7 @@ import { ArrowRight, Zap, Flame, Wifi, PhoneCall, Search, FileCheck, Handshake, 
 import ServicesSection from '../components/sections/ServicesSection';
 import ProcessSection from '../components/sections/ProcessSection';
 import PromiseSection from '../components/sections/PromiseSection';
+import HomeFeatures from '../sections/HomeFeatures';
 import SEO from "../components/SEO";
 
 import heroDesk from '../assets/hero_desk.webp';
@@ -68,9 +69,12 @@ export default function Tarifberatung() {
           </div>
         </div>
       </section>
+
+      {/* Features Section ("WILLKOMMEN BEI ENERGIE ALEMI") */}
+      <HomeFeatures />
       
       {/* Services Section */}
-      <div className="relative z-20 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
+      <div className="relative z-30 bg-white dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <ServicesSection 
           subtitle={t('tarifberatung.services_sub')}
           title={t('tarifberatung.services_title')}
