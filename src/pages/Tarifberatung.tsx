@@ -4,10 +4,7 @@ import { MapPin, Phone, Clock, Zap, Flame, Wifi, ArrowRight, ShieldCheck, CheckS
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
-import Button from '../components/ui/Button';
-import { trackEvent } from '../lib/analytics';
-import heroDesk from '../assets/hero_desk.webp';
-import heroMob from '../assets/hero_mob.webp';
+import HomeHero from '../sections/HomeHero';
 import ownerImg from '../assets/image-admin.JPG.webp';
 
 export default function Tarifberatung() {
@@ -21,11 +18,6 @@ export default function Tarifberatung() {
     }, 4000);
     return () => clearInterval(interval);
   }, []);
-
-  const handleCtaClick = () => {
-    trackEvent('service_cta_click', { service_type: 'tarifberatung', cta_location: 'tarifberatung_aachen_page' });
-    navigate('/contact');
-  };
 
   const steps = [
     {
@@ -57,47 +49,16 @@ export default function Tarifberatung() {
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO url="/tarifberatung-aachen" />
+
+      {/* Hero is sticky on mobile so the rest of the page slides over it */}
+      <div className="sticky top-0 z-0 md:relative">
+        <HomeHero />
+      </div>
+
       
-      {/* Hero Section */}
-      <section className="relative min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
-        <div className="absolute inset-0 z-0">
-          <picture className="absolute inset-0 w-full h-full">
-            <source media="(min-width: 768px)" srcSet={heroDesk} />
-            <img 
-              src={heroMob} 
-              alt="Tarifberatung Aachen" 
-              className="w-full h-full object-cover object-center" 
-            />
-          </picture>
-          <div className="ltr:block rtl:hidden absolute top-0 left-0 bottom-0 w-full md:w-[80%] bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
-          <div className="rtl:block ltr:hidden absolute top-0 right-0 bottom-0 w-full md:w-[80%] bg-gradient-to-l from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
-          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white dark:from-[#0a1628] to-transparent z-10" />
-        </div>
-
-        <div className="container mx-auto px-6 relative z-20 flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-[60%] lg:w-[55%] pt-12 md:pt-0">
-            <p className="text-[#E5A937] font-heading font-medium tracking-widest uppercase mb-3 md:mb-4 text-xs">
-              {t('tarifberatung.hero_badge', 'TARIFBERATUNG')}
-            </p>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-4 md:mb-6 tracking-tight">
-              {t('tarifberatung.hero_title')}
-            </h1>
-            <p className="text-base text-white/75 mb-8 md:mb-10 max-w-md leading-relaxed font-light">
-              {t('tarifberatung.hero_desc')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-12 md:mb-0">
-              <Button variant="primary" className="w-full sm:w-auto justify-center bg-[#0047AB] hover:bg-[#003380] text-white font-semibold" icon={<ArrowRight size={18} className="rtl:rotate-180" />} onClick={handleCtaClick}>
-                {t('tarifberatung.hero_btn_primary')}
-              </Button>
-              <Button variant="outline" className="w-full sm:w-auto justify-center border-white/20 text-white hover:bg-white/10 hover:text-white" icon={<ArrowRight size={18} className="rtl:rotate-180" />} onClick={() => navigate('/ratgeber')}>
-                {t('tarifberatung.hero_btn_secondary')}
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section -> Copied from HomeFeatures.tsx */}
+      {/* Services Section */}
+      <div className="relative z-10 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.15)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.5)] md:shadow-none">
+        {/* Services Section -> Copied from HomeFeatures.tsx */}
       <section className="py-10 md:py-24 bg-slate-50 dark:bg-[#051024] relative z-20 -mt-10">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
@@ -106,7 +67,7 @@ export default function Tarifberatung() {
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "0px" }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="w-full lg:w-1/3"
             >
@@ -126,7 +87,7 @@ export default function Tarifberatung() {
             <motion.div 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "0px" }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               className="w-full lg:w-2/3"
             >
@@ -216,8 +177,11 @@ export default function Tarifberatung() {
           </div>
         </div>
       </section>
+      </div>
 
-      {/* Process Section -> Copied from HomeProcess.tsx */}
+      {/* Process Section */}
+      <div className="relative z-20 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none">
+        {/* Process Section -> Copied from HomeProcess.tsx */}
       <section className="py-16 md:py-24 bg-white dark:bg-[#051024] relative z-20">
         <div className="container mx-auto px-6">
           
@@ -247,7 +211,7 @@ export default function Tarifberatung() {
                   style={{ '--card-top': `calc(12vh + ${index * 1.5}rem)`, zIndex: index + 10 } as React.CSSProperties}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
+                  viewport={{ once: true, margin: "0px" }}
                   transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
                 >
                   <div className="w-16 h-16 shrink-0 rounded-full bg-white dark:bg-[#051024] border-2 border-[#0047AB] shadow-[0_5px_15px_rgba(0,71,171,0.15)] flex items-center justify-center text-[#0047AB] dark:text-[#f0a83f] relative mb-2 group-hover:scale-110 transition-transform duration-300">
@@ -274,8 +238,11 @@ export default function Tarifberatung() {
 
         </div>
       </section>
+      </div>
 
-      {/* Trust & Location Section -> Copied from HomePromise.tsx */}
+      {/* Trust Section */}
+      <div className="relative z-30 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none">
+        {/* Trust & Location Section -> Copied from HomePromise.tsx */}
       <section className="py-14 md:py-24 bg-slate-50 dark:bg-[#051024] relative overflow-x-hidden md:overflow-hidden text-slate-900 dark:text-white">
         {/* Background Graphic */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#0047AB]/5 rounded-full blur-[100px] pointer-events-none transform-gpu" />
@@ -341,6 +308,7 @@ export default function Tarifberatung() {
           </div>
         </div>
       </section>
+      </div>
 
     </div>
   );
