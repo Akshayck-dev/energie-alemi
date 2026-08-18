@@ -9,9 +9,13 @@ export default function HomeFeatures() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % 3);
-    }, 4000);
+    // Only run auto-carousel timer on mobile viewports (< 768px)
+    const handleInterval = () => {
+      if (typeof window !== 'undefined' && window.innerWidth < 768) {
+        setActiveIndex((prev) => (prev + 1) % 3);
+      }
+    };
+    const interval = setInterval(handleInterval, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -29,13 +33,13 @@ export default function HomeFeatures() {
             className="w-full lg:w-1/3"
           >
             <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
-              {t('home_features.subtitle')}
+              <span>{t('home_features.subtitle')}</span>
             </p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 md:mb-6">
-              {t('home_features.title')}
+              <span>{t('home_features.title')}</span>
             </h2>
             <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mb-6">
-              {t('home_features.description')}
+              <span>{t('home_features.description')}</span>
             </p>
             <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mb-6">
               Besuchen Sie uns direkt vor Ort und profitieren Sie von einer persönlichen <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung in Aachen</Link>.
@@ -67,12 +71,12 @@ export default function HomeFeatures() {
                     <Search size={28} strokeWidth={1.5} />
                   </motion.div>
                   <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">
-                    {t('home_features.feature1_title1')}
+                    <span>{t('home_features.feature1_title1')}</span>
                     {t('home_features.feature1_title2') && <br/>}
-                    {t('home_features.feature1_title2')}
+                    {t('home_features.feature1_title2') && <span>{t('home_features.feature1_title2')}</span>}
                   </h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
-                    {t('home_features.feature1_desc')}
+                    <span>{t('home_features.feature1_desc')}</span>
                   </p>
                   <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
@@ -95,12 +99,12 @@ export default function HomeFeatures() {
                     </div>
                   </motion.div>
                   <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">
-                    {t('home_features.feature2_title1')}
+                    <span>{t('home_features.feature2_title1')}</span>
                     {t('home_features.feature2_title2') && <br/>}
-                    {t('home_features.feature2_title2')}
+                    {t('home_features.feature2_title2') && <span>{t('home_features.feature2_title2')}</span>}
                   </h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
-                    {t('home_features.feature2_desc')}
+                    <span>{t('home_features.feature2_desc')}</span>
                   </p>
                   <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
@@ -120,12 +124,12 @@ export default function HomeFeatures() {
                     <Handshake size={28} strokeWidth={1.5} />
                   </motion.div>
                   <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white leading-tight mb-2">
-                    {t('home_features.feature3_title1')}
+                    <span>{t('home_features.feature3_title1')}</span>
                     {t('home_features.feature3_title2') && <br/>}
-                    {t('home_features.feature3_title2')}
+                    {t('home_features.feature3_title2') && <span>{t('home_features.feature3_title2')}</span>}
                   </h3>
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
-                    {t('home_features.feature3_desc')}
+                    <span>{t('home_features.feature3_desc')}</span>
                   </p>
                   <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
                     <ArrowRight size={18} className="rtl:rotate-180" />
