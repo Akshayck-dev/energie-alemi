@@ -17,6 +17,9 @@ export default function LanguageSwitcher({ isScrolled = true }: { isScrolled?: b
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('i18nextLng', lng);
+    }
     setIsOpen(false);
   };
 
@@ -55,7 +58,7 @@ export default function LanguageSwitcher({ isScrolled = true }: { isScrolled?: b
                 onClick={() => changeLanguage(lng.code)}
                 className={cn(
                   'w-full text-left px-4 py-2 text-sm transition-colors',
-                  i18n.language === lng.code
+                  i18n.language?.startsWith(lng.code)
                     ? 'bg-slate-100 dark:bg-white/10 font-semibold text-slate-900 dark:text-white'
                     : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5'
                 )}

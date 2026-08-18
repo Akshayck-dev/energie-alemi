@@ -30,8 +30,11 @@ function resolveInitialLanguage(): string {
     ? localStorage.getItem('i18nextLng')
     : null;
 
-  if (stored && ['de', 'en', 'ar', 'fa'].includes(stored)) {
-    return stored;
+  if (stored) {
+    const primary = stored.split('-')[0].toLowerCase();
+    if (['de', 'en', 'ar', 'fa'].includes(primary)) {
+      return primary;
+    }
   }
 
   // Always default to German if no explicit user selection exists
@@ -50,8 +53,9 @@ i18n
       ar: { translation: arTranslation },
       fa: { translation: faTranslation },
     },
-    lng: initialLanguage,           // Resolved language (not left to detector guessing)
-    fallbackLng: 'de',              // Always fall back to German, never English by default
+    lng: initialLanguage,           // Resolved language
+    fallbackLng: 'de',              // Always fall back to German
+    load: 'languageOnly',           // Strip region codes (e.g. de-DE -> de, en-US -> en)
     supportedLngs: ['de', 'en', 'ar', 'fa'],
     debug: false,
     interpolation: {
