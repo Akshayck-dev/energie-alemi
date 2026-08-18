@@ -57,7 +57,7 @@ export default function Tarifberatung() {
 
       
       {/* Services Section */}
-      <div className="relative z-10 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.15)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.5)] md:shadow-none">
+      <div className="relative z-10 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         {/* Services Section -> Copied from HomeFeatures.tsx */}
       <section className="py-10 md:py-24 bg-slate-50 dark:bg-[#051024] relative z-20 -mt-10">
         <div className="container mx-auto px-6">
@@ -180,7 +180,7 @@ export default function Tarifberatung() {
       </div>
 
       {/* Process Section */}
-      <div className="relative z-20 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none">
+      <div className="relative z-20 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         {/* Process Section -> Copied from HomeProcess.tsx */}
       <section className="py-16 md:py-24 bg-white dark:bg-[#051024] relative z-20">
         <div className="container mx-auto px-6">
@@ -207,7 +207,7 @@ export default function Tarifberatung() {
               {steps.map((step, index) => (
                 <motion.div
                   key={step.id}
-                  className="sticky md:relative top-[var(--card-top)] md:top-auto w-full bg-slate-50 dark:bg-[#0a1628] p-6 md:p-8 rounded-[2rem] border border-slate-200 dark:border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.06)] dark:shadow-[0_-10px_40px_rgba(0,0,0,0.3)] md:shadow-sm dark:md:shadow-[0_10px_25px_rgba(0,0,0,0.2)] flex flex-col items-center text-center mb-16 md:mb-0 gap-5 hover:scale-[1.03] hover:shadow-md hover:border-[#0047AB]/20 transition-all duration-300 group"
+                  className="sticky md:relative will-change-transform top-[var(--card-top)] md:top-auto w-full bg-slate-50 dark:bg-[#0a1628] p-6 md:p-8 rounded-[2rem] border border-slate-200 dark:border-white/10 shadow-md dark:shadow-[0_5px_15px_rgba(0,0,0,0.3)] md:shadow-sm dark:md:shadow-[0_10px_25px_rgba(0,0,0,0.2)] flex flex-col items-center text-center mb-16 md:mb-0 gap-5 hover:scale-[1.03] hover:shadow-md hover:border-[#0047AB]/20 transition-all duration-300 group"
                   style={{ '--card-top': `calc(12vh + ${index * 1.5}rem)`, zIndex: index + 10 } as React.CSSProperties}
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -241,11 +241,11 @@ export default function Tarifberatung() {
       </div>
 
       {/* Trust Section */}
-      <div className="relative z-30 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none">
+      <div className="relative z-30 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         {/* Trust & Location Section -> Copied from HomePromise.tsx */}
       <section className="py-14 md:py-24 bg-slate-50 dark:bg-[#051024] relative overflow-x-hidden md:overflow-hidden text-slate-900 dark:text-white">
         {/* Background Graphic */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#0047AB]/5 rounded-full blur-[100px] pointer-events-none transform-gpu" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-[#0047AB]/10 to-transparent pointer-events-none transform-gpu" />
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">

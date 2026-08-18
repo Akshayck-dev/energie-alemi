@@ -45,7 +45,7 @@ export default function Navbar() {
         className={cn(
           'pointer-events-auto transition-all duration-500 w-full flex items-center justify-between transform-gpu',
           isScrolled 
-            ? 'bg-white/85 dark:bg-[#0a1628]/70 backdrop-blur-xl py-2 md:py-3 px-5 md:px-8 rounded-full border border-slate-200 dark:border-white/10 shadow-lg shadow-slate-200/20 dark:shadow-none max-w-5xl' 
+            ? 'bg-white/85 dark:bg-[#0a1628]/70 backdrop-blur-md py-2 md:py-3 px-5 md:px-8 rounded-full border border-slate-200 dark:border-white/10 shadow-lg shadow-slate-200/20 dark:shadow-none max-w-5xl' 
             : 'bg-transparent py-2 md:py-0 px-2 md:px-0 max-w-[1400px]'
         )}
       >

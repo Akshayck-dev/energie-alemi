@@ -95,7 +95,7 @@ export default function About() {
                 {/* Decorative dashed/dotted circles */}
                 <div className="absolute w-[300px] h-[300px] rounded-full border-[1.5px] border-dashed border-[#cbd5e1] dark:border-white/10 animate-[spin_120s_linear_infinite]" />
                 <div className="absolute w-[220px] h-[220px] rounded-full border-[1.5px] border-dotted border-[#94a3b8] dark:border-white/20 shadow-[inset_0_0_40px_rgba(0,0,0,0.02)] animate-[spin_80s_linear_infinite_reverse]" />
-                <div className="absolute w-[150px] h-[150px] rounded-full border border-slate-100 dark:border-white/5 bg-slate-50/50 dark:bg-white/5 backdrop-blur-sm" />
+                <div className="absolute w-[150px] h-[150px] rounded-full border border-slate-100 dark:border-white/5 bg-slate-50/90 dark:bg-[#0a1628]/90" />
                 
                 {/* Floating elements */}
                 <motion.div 
@@ -137,7 +137,7 @@ export default function About() {
       </div>
 
       {/* Philosophy / Intro Section */}
-      <div className="relative z-10 bg-white dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.15)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.5)] md:shadow-none overflow-hidden">
+      <div className="relative z-10 bg-white dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none overflow-hidden">
         <section className="pt-8 pb-20 md:pt-10 md:pb-32 relative">
           <div className="container mx-auto px-6">
             <motion.div 
@@ -216,7 +216,7 @@ export default function About() {
       </div>
 
       {/* Experience Section */}
-      <div className="relative z-20 bg-slate-50 dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none overflow-hidden">
+      <div className="relative z-20 bg-slate-50 dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none overflow-hidden">
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6">
             <motion.div 
@@ -320,7 +320,7 @@ export default function About() {
       </div>
 
       {/* CTA Banner */}
-      <div className="relative z-30 bg-white dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none overflow-hidden">
+      <div className="relative z-30 bg-white dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none overflow-hidden">
         <section className="py-14 md:py-16 relative">
           <div className="container mx-auto px-6 max-w-6xl">
             <motion.div 

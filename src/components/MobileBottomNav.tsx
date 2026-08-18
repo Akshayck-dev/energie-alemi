@@ -13,7 +13,7 @@ export default function MobileBottomNav() {
   ];
 
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/80 dark:bg-[#051024]/80 backdrop-blur-lg border-t border-slate-200 dark:border-white/10 pb-safe shadow-[0_-5px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_20px_rgba(0,0,0,0.3)] transition-colors duration-300">
+    <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/80 dark:bg-[#051024]/80 backdrop-blur-md border-t border-slate-200 dark:border-white/10 pb-safe shadow-[0_-5px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_20px_rgba(0,0,0,0.3)] transition-colors duration-300">
       <div className="flex items-center justify-around px-2 py-3">
         {navItems.map((item, index) => (
           <NavLink

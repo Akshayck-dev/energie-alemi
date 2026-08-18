@@ -58,7 +58,7 @@ export default function HomeProcess() {
             {steps.map((step, index) => (
               <motion.div
                 key={step.id}
-                className="sticky md:relative top-[var(--card-top)] md:top-auto w-full bg-slate-50 dark:bg-[#0a1628] p-6 md:p-8 rounded-[2rem] border border-slate-200 dark:border-white/10 shadow-[0_-10px_40px_rgba(0,0,0,0.06)] dark:shadow-[0_-10px_40px_rgba(0,0,0,0.3)] md:shadow-sm dark:md:shadow-[0_10px_25px_rgba(0,0,0,0.2)] flex flex-col items-center text-center mb-16 md:mb-0 gap-5 hover:scale-[1.03] hover:shadow-md hover:border-[#0047AB]/20 transition-all duration-300 group"
+                className="sticky md:relative will-change-transform top-[var(--card-top)] md:top-auto w-full bg-slate-50 dark:bg-[#0a1628] p-6 md:p-8 rounded-[2rem] border border-slate-200 dark:border-white/10 shadow-md dark:shadow-[0_5px_15px_rgba(0,0,0,0.3)] md:shadow-sm dark:md:shadow-[0_10px_25px_rgba(0,0,0,0.2)] flex flex-col items-center text-center mb-16 md:mb-0 gap-5 hover:scale-[1.03] hover:shadow-md hover:border-[#0047AB]/20 transition-all duration-300 group"
                 style={{ '--card-top': `calc(12vh + ${index * 1.5}rem)`, zIndex: index + 10 } as React.CSSProperties}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}

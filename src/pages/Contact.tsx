@@ -86,7 +86,7 @@ export default function Contact() {
                 {/* Decorative dashed/dotted circles */}
                 <div className="absolute w-[450px] h-[450px] rounded-full border-[1.5px] border-dashed border-[#cbd5e1] dark:border-white/10 animate-[spin_120s_linear_infinite]" />
                 <div className="absolute w-[320px] h-[320px] rounded-full border-[1.5px] border-dotted border-[#94a3b8] dark:border-white/20 shadow-[inset_0_0_40px_rgba(0,0,0,0.02)]" />
-                <div className="absolute w-[220px] h-[220px] rounded-full border border-slate-100 dark:border-white/5 bg-slate-50/50 dark:bg-white/5 backdrop-blur-sm" />
+                <div className="absolute w-[220px] h-[220px] rounded-full border border-slate-100 dark:border-white/5 bg-slate-50/90 dark:bg-[#0a1628]/90" />
                 
                 {/* Floating elements */}
                 <div className="absolute top-[15%] right-[22%] w-11 h-11 bg-[#f0a83f] rounded-full flex items-center justify-center text-white shadow-lg z-20">
@@ -121,7 +121,7 @@ export default function Contact() {
       </div>
 
       {/* Main Content Area */}
-      <div className="relative z-10 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.15)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.5)] md:shadow-none">
+      <div className="relative z-10 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <section className="px-5 md:px-10 pt-16 md:pt-24 pb-14 md:pb-[100px] max-w-[1240px] mx-auto">
           <div className="md:grid md:grid-cols-[1.5fr_1fr] md:gap-[32px] items-start">
             <div className="w-full mb-10 md:mb-0">
@@ -229,7 +229,7 @@ export default function Contact() {
       </div>
 
       {/* Map Section */}
-      <div className="relative z-20 bg-slate-50 dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] md:shadow-none">
+      <div className="relative z-20 bg-slate-50 dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <section className="pb-8 md:pb-[40px] px-5 md:px-10 max-w-[1240px] mx-auto flex flex-col gap-6">
           <div className="relative rounded-[20px] md:rounded-[22px] overflow-hidden p-6 md:p-[46px_48px] text-slate-900 dark:text-white flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-[30px] border border-slate-200 dark:border-white/10 shadow-sm bg-[linear-gradient(120deg,rgba(255,255,255,0.94),rgba(255,255,255,0.72)),repeating-linear-gradient(45deg,#f1f5f9_0_2px,#f8fafc_2px_40px)] dark:bg-[linear-gradient(120deg,rgba(5,16,36,0.94),rgba(5,16,36,0.72)),repeating-linear-gradient(45deg,#0a1628_0_2px,#051024_2px_40px)]">
             
