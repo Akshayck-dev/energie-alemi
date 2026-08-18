@@ -83,7 +83,7 @@
     "feature2_line2": "Beratung",
     "feature3_line1": "Wirtschaftliche",
     "feature3_line2": "Entscheidungen",
-    "quote": "Unser Ziel ist es, Energie für Ihr Unternehmen einfach, transparent und kostengünstig zu machen."
+    "quote": "Our goal is to make energy simple, transparent, and cost-effective for private, commercial, and industrial customers."
   },
   "home_meeting": {
     "subtitle": "WIE WIR SIE TREFFEN",
@@ -421,8 +421,8 @@
     "trust_email": "Email",
     "trust_hours": "Opening hours",
     "trust_hours_val": "Mon-Sat: 10:00 AM - 7:00 PM",
-    "trust_box_1": "Personal consultation",
-    "trust_box_2": "for Aachen and surroundings"
+    "trust_box_1": "Our goal is to make energy simple, transparent, and cost-effective for private, commercial, and industrial customers.",
+    "trust_box_2": ""
   },
   "not_found": {
     "seo_title": "Page not found (404)",

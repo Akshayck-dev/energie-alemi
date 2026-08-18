@@ -97,7 +97,7 @@
     "feature2_line2": "Beratung",
     "feature3_line1": "Wirtschaftliche",
     "feature3_line2": "Entscheidungen",
-    "quote": "Unser Ziel ist es, Energie für Ihr Unternehmen einfach, transparent und kostengünstig zu machen."
+    "quote": "Unser Ziel ist es, Energie für Privat-, Gewerbe- und Industriekunden einfach, transparent und kostengünstig zu machen."
   },
   "home_meeting": {
     "subtitle": "WIE WIR SIE TREFFEN",
@@ -442,8 +442,8 @@
     "trust_email": "E-Mail",
     "trust_hours": "Öffnungszeiten",
     "trust_hours_val": "Mo-Sa: 10:00 - 19:00 Uhr",
-    "trust_box_1": "Persönliche Beratung",
-    "trust_box_2": "für Aachen und Umgebung"
+    "trust_box_1": "Unser Ziel ist es, Energie für Privat-, Gewerbe- und Industriekunden einfach, transparent und kostengünstig zu machen.",
+    "trust_box_2": ""
   },
   "not_found": {
     "seo_title": "Seite nicht gefunden (404)",
