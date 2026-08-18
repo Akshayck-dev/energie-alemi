@@ -133,7 +133,15 @@ export default function Electricity() {
                     {t('elec.tl_desc')}
                   </p>
                   <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-4">
-                    Als Ihr Partner vor Ort in Aachen helfen wir nicht nur beim Strom, sondern auch mit unserem <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">passenden Gasvergleich</Link> und schnellen <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Internet-Lösungen</Link>. Weitere Tipps finden Sie im <Link to="/ratgeber" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Ratgeber</Link>, beispielsweise zur <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Grundversorgung in Aachen</Link>.
+                    <span>{t('elec.cross_p1')}</span>
+                    <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l1')}</Link>
+                    <span>{t('elec.cross_p2')}</span>
+                    <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l2')}</Link>
+                    <span>{t('elec.cross_p3')}</span>
+                    <Link to="/ratgeber" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l3')}</Link>
+                    <span>{t('elec.cross_p4')}</span>
+                    <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l4')}</Link>
+                    <span>.</span>
                   </p>
                 </div>
               </div>

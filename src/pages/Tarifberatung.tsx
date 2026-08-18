@@ -87,8 +87,8 @@ export default function Tarifberatung() {
               color: 'text-amber-400',
               glow: 'group-hover:shadow-[0_0_24px_rgba(251,191,36,0.35)]',
               bg: 'bg-amber-400/10',
-              title: t('tarifberatung.services_item_electricity_title', 'Stromtarife'),
-              description: t('tarifberatung.services_item_electricity_desc', 'Ein passender Stromvergleich, der sich nach Ihrem tatsächlichen Verbrauch in Aachen richtet. Vermeiden Sie versteckte Kosten.'),
+              title: t('tarifberatung.strom_title'),
+              description: t('tarifberatung.strom_desc'),
               link: '/tarifberatung-aachen'
             },
             {
@@ -97,8 +97,8 @@ export default function Tarifberatung() {
               color: 'text-rose-500',
               glow: 'group-hover:shadow-[0_0_24px_rgba(244,63,94,0.35)]',
               bg: 'bg-rose-500/10',
-              title: t('tarifberatung.services_item_gas_title', 'Gastarife'),
-              description: t('tarifberatung.services_item_gas_desc', 'Passende Gastarife für Haushalte und Unternehmen. Wir behalten die Preisentwicklung im Blick und finden ein geeignetes Angebot.'),
+              title: t('tarifberatung.gas_title'),
+              description: t('tarifberatung.gas_desc'),
               link: '/tarifberatung-aachen'
             },
             {
@@ -107,8 +107,8 @@ export default function Tarifberatung() {
               color: 'text-blue-500',
               glow: 'group-hover:shadow-[0_0_24px_rgba(59,130,246,0.35)]',
               bg: 'bg-blue-500/10',
-              title: t('tarifberatung.services_item_internet_title', 'Internettarife'),
-              description: t('tarifberatung.services_item_internet_desc', 'Schnelles Internet ist unverzichtbar. Wir prüfen die lokale Verfügbarkeit von DSL und Glasfaser in Aachen und vermitteln passende Tarife.'),
+              title: t('tarifberatung.internet_title'),
+              description: t('tarifberatung.internet_desc'),
               link: '/tarifberatung-aachen'
             }
           ]}

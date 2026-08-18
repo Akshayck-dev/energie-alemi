@@ -53,7 +53,10 @@
     "feature2_desc": "We analyze your contracts and find savings potential you might miss.",
     "feature3_title1": "Personal",
     "feature3_title2": "consultation",
-    "feature3_desc": "Our experts are here for you – personal, independent and committed."
+    "feature3_desc": "Our experts are here for you – personal, independent and committed.",
+    "visit_us_part1": "Visit us directly on site and benefit from a personal ",
+    "visit_us_link": "tariff consultation in Aachen",
+    "visit_us_part2": "."
   },
   "home_services": {
     "subtitle": "OUR SERVICES",
@@ -167,6 +170,8 @@
     "header_t1": "Let's connect.",
     "header_t2": "We'll take care.",
     "header_desc": "Have questions or need advice? Our friendly team is ready to help you with anything you need. Reach out and we'll get back to you as soon as possible.",
+    "visit_p1": "Looking for personal advice on site? Learn more about our ",
+    "visit_l1": "tariff consultation in Aachen",
     "f1_t": "Call Anytime",
     "f1_d": "We're just a call away",
     "f2_t": "Quick Response",
@@ -251,7 +256,15 @@
     "a2": "No. Your power supply remains secure at all times. There is no risk of blackout.",
     "q3": "How long does it take to switch providers?",
     "a3": "The switch usually takes place within a few weeks and is implemented automatically by the new provider.",
-    "btn": "Non-binding consultation"
+    "btn": "Non-binding consultation",
+    "cross_p1": "As your local partner in Aachen, we help not only with electricity, but also with our ",
+    "cross_l1": "matching gas comparison",
+    "cross_p2": " and fast ",
+    "cross_l2": "internet solutions",
+    "cross_p3": ". Find more tips in our ",
+    "cross_l3": "guide",
+    "cross_p4": ", for example on ",
+    "cross_l4": "basic supply in Aachen"
   },
   "gas": {
     "hero_t1": "Smart energy decisions.",
@@ -286,7 +299,15 @@
     "a2": "No. Your gas supply remains secure at all times.",
     "q3": "How long does it take to switch providers?",
     "a3": "The switch usually takes place within a few weeks and is implemented automatically by the new provider.",
-    "btn": "Non-binding consultation"
+    "btn": "Non-binding consultation",
+    "cross_p1": "Combine your provider switch in Aachen optimally with our ",
+    "cross_l1": "electricity tariff comparison",
+    "cross_p2": " or find out about ",
+    "cross_l2": "local internet providers",
+    "cross_p3": ". For any questions, ",
+    "cross_l3": "contact us",
+    "cross_p4": " directly or read our guide on ",
+    "cross_l4": "basic supply in Aachen"
   },
   "internet": {
     "hero_t1": "Compare internet plans",
@@ -321,7 +342,13 @@
     "a2": "The changeover is organized in such a way that the interruption remains as short as possible.",
     "q3": "What internet speed do I need?",
     "a3": "That depends on how it will be used in your household. We'd be happy to advise you on suitable options.",
-    "btn": "Non-binding consultation"
+    "btn": "Non-binding consultation",
+    "cross_p1": "Benefit from our Aachen tariff advice in other areas as well: Use our ",
+    "cross_l1": "personal electricity comparison",
+    "cross_p2": " and find ",
+    "cross_l2": "matching gas tariffs",
+    "cross_p3": ". Helpful information is also provided in our ",
+    "cross_l3": "tariff guide"
   },
   "elec_hero": {
     "badge": "ELECTRICITY",

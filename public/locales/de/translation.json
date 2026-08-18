@@ -53,7 +53,10 @@
     "feature2_desc": "Wir analysieren Ihre Verträge und decken Einsparpotenziale auf, die Sie vielleicht übersehen.",
     "feature3_title1": "Persönliche",
     "feature3_title2": "Beratung",
-    "feature3_desc": "Unsere Experten sind für Sie da – persönlich, unabhängig und engagiert."
+    "feature3_desc": "Unsere Experten sind für Sie da – persönlich, unabhängig und engagiert.",
+    "visit_us_part1": "Besuchen Sie uns direkt vor Ort und profitieren Sie von einer persönlichen ",
+    "visit_us_link": "Tarifberatung in Aachen",
+    "visit_us_part2": "."
   },
   "home_services": {
     "subtitle": "UNSERE LEISTUNGEN",
@@ -167,6 +170,8 @@
     "header_t1": "Lassen Sie uns verbinden.",
     "header_t2": "Wir kümmern uns darum.",
     "header_desc": "Haben Sie Fragen oder benötigen Sie Beratung? Unser freundliches Team hilft Ihnen gerne weiter. Melden Sie sich und wir melden uns so schnell wie möglich.",
+    "visit_p1": "Suchen Sie eine persönliche Beratung vor Ort? Erfahren Sie mehr über unsere ",
+    "visit_l1": "Tarifberatung in Aachen",
     "f1_t": "Jederzeit anrufen",
     "f1_d": "Wir sind nur einen Anruf entfernt",
     "f2_t": "Schnelle Antwort",
@@ -251,7 +256,15 @@
     "a2": "Nein. Ihre Stromversorgung bleibt jederzeit gesichert. Es besteht keine Gefahr eines Stromausfalls.",
     "q3": "Wie lange dauert ein Anbieterwechsel?",
     "a3": "Der Wechsel erfolgt in der Regel innerhalb weniger Wochen und wird vom neuen Anbieter automatisch umgesetzt.",
-    "btn": "Unverbindliche Beratung"
+    "btn": "Unverbindliche Beratung",
+    "cross_p1": "Als Ihr Partner vor Ort in Aachen helfen wir nicht nur beim Strom, sondern auch mit unserem ",
+    "cross_l1": "passenden Gasvergleich",
+    "cross_p2": " und schnellen ",
+    "cross_l2": "Internet-Lösungen",
+    "cross_p3": ". Weitere Tipps finden Sie im ",
+    "cross_l3": "Ratgeber",
+    "cross_p4": ", beispielsweise zur ",
+    "cross_l4": "Grundversorgung in Aachen"
   },
   "gas": {
     "hero_t1": "Smarte Energieentscheidungen.",
@@ -286,7 +299,15 @@
     "a2": "Nein. Ihre Gasversorgung bleibt jederzeit gesichert.",
     "q3": "Wie lange dauert ein Anbieterwechsel?",
     "a3": "Der Wechsel erfolgt in der Regel innerhalb weniger Wochen und wird vom neuen Anbieter automatisch umgesetzt.",
-    "btn": "Unverbindliche Beratung"
+    "btn": "Unverbindliche Beratung",
+    "cross_p1": "Kombinieren Sie Ihren Wechsel in Aachen optimal mit unserem ",
+    "cross_l1": "Stromtarif-Vergleich",
+    "cross_p2": " oder informieren Sie sich über ",
+    "cross_l2": "lokale Internetanbieter",
+    "cross_p3": ". Bei Fragen ",
+    "cross_l3": "kontaktieren Sie uns",
+    "cross_p4": " direkt oder lesen Sie unseren Ratgeber zur ",
+    "cross_l4": "Grundversorgung in Aachen"
   },
   "internet": {
     "hero_t1": "Internettarife vergleichen",
@@ -321,7 +342,13 @@
     "a2": "Die Umstellung wird so organisiert, dass die Unterbrechung so kurz wie möglich ausfällt.",
     "q3": "Welche Internetgeschwindigkeit benötige ich?",
     "a3": "Das hängt von der Nutzung in Ihrem Haushalt ab. Wir beraten Sie gerne zu passenden Optionen.",
-    "btn": "Unverbindliche Beratung"
+    "btn": "Unverbindliche Beratung",
+    "cross_p1": "Profitieren Sie von unserer Aachener Tarifberatung auch in anderen Bereichen: Nutzen Sie unseren ",
+    "cross_l1": "persönlichen Stromvergleich",
+    "cross_p2": " und finden Sie ",
+    "cross_l2": "passende Gastarife",
+    "cross_p3": ". Hilfreiche Informationen bietet auch unser ",
+    "cross_l3": "Tarif-Ratgeber"
   },
   "elec_hero": {
     "badge": "STROM",

@@ -37,9 +37,12 @@
     "feature2_title1": "Vertrags-",
     "feature2_title2": "optimierung",
     "feature2_desc": "Wir analysieren Ihre Verträge und decken Einsparpotenziale auf, die Sie vielleicht übersehen.",
-    "feature3_title1": "Persönliche",
-    "feature3_title2": "Beratung",
-    "feature3_desc": "Unsere Experten sind für Sie da – persönlich, unabhängig und engagiert."
+    "feature3_title1": "مشاوره",
+    "feature3_title2": "شخصی",
+    "feature3_desc": "کارشناسان ما برای شما اینجا هستند - شخصی، مستقل و متعهد.",
+    "visit_us_part1": "مستقیماً در محل از ما دیدن کنید و از ",
+    "visit_us_link": "مشاوره تعرفه در آخن",
+    "visit_us_part2": " بهره‌مند شوید."
   },
   "home_services": {
     "subtitle": "UNSERE LEISTUNGEN",

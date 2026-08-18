@@ -135,7 +135,13 @@ export default function Internet() {
                     {t('internet.tl_desc')}
                   </p>
                   <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mt-4">
-                    Profitieren Sie von unserer Aachener Tarifberatung auch in anderen Bereichen: Nutzen Sie unseren <Link to="/electricity" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">persönlichen Stromvergleich</Link> und finden Sie <Link to="/gas" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">passende Gastarife</Link>. Hilfreiche Informationen bietet auch unser <Link to="/ratgeber" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">Tarif-Ratgeber</Link>.
+                    <span>{t('internet.cross_p1')}</span>
+                    <Link to="/electricity" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">{t('internet.cross_l1')}</Link>
+                    <span>{t('internet.cross_p2')}</span>
+                    <Link to="/gas" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">{t('internet.cross_l2')}</Link>
+                    <span>{t('internet.cross_p3')}</span>
+                    <Link to="/ratgeber" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">{t('internet.cross_l3')}</Link>
+                    <span>.</span>
                   </p>
                   {/* Router graphic placeholder */}
                   <div className="mt-12 opacity-80 flex flex-col items-center">
