@@ -99,17 +99,12 @@ export default function GrundversorgungAachenStromGas() {
         </table>
       </div>
 
-      <h2>Wer ist Grundversorger?</h2>
-      <p>
-        Gemäß § 36 Abs. 2 EnWG ist der Grundversorger dasjenige Energieversorgungsunternehmen, das die meisten Haushaltskunden in einem Netzgebiet der allgemeinen Versorgung beliefert. Die Feststellung erfolgt alle drei Jahre durch den zuständigen Netzbetreiber.
-      </p>
-      <p>
-        Die <strong>STAWAG (Stadt- und Städteregionswerke Aachen AG)</strong> ist der festgestellte Grundversorger für Strom und Gas. Der zuständige Netzbetreiber, der die Netzinfrastruktur verwaltet und Störungen behebt, ist die <strong>Regionetz GmbH</strong>.
-      </p>
-
       <h2>Wie kann man die Grundversorgung kündigen?</h2>
       <p>
         Die Kündigung der Grundversorgung ist verbraucherfreundlich und einfach gestaltet. Nach <strong>§ 20 Abs. 1 der Stromgrundversorgungsverordnung (StromGVV)</strong> und der <strong>Gasgrundversorgungsverordnung (GasGVV)</strong> beträgt die Kündigungsfrist einheitlich <strong>zwei Wochen</strong>. 
+      </p>
+      <p>
+        Hierbei sind folgende Punkte wichtig:
       </p>
       <ul>
         <li><strong>Textform erforderlich:</strong> Die Kündigung muss nicht zwingend per handschriftlichem Brief erfolgen. Eine Kündigung in Textform (z. B. per E-Mail oder über ein Online-Kündigungsformular des Versorgers) ist ausreichend und rechtlich bindend.</li>
@@ -123,32 +118,32 @@ export default function GrundversorgungAachenStromGas() {
       </p>
       <ol>
         <li><strong>Persönliche Daten:</strong> Vollständiger Name und Geburtsdatum des Vertragspartners.</li>
-        <li><strong>Lieferanschrift:</strong> Ihre genaue Adresse (ggf. mit Angabe des Stockwerks).</li>
+        <li><strong>Lieferanschrift:</strong> Ihre genaue Adresse in Aachen (ggf. mit Angabe des Stockwerks).</li>
         <li><strong>Zählernummer:</strong> Die Nummer Ihres Strom- oder Gaszählers. Diese finden Sie direkt auf dem Gehäuse des Zählers (oft im Keller oder Flur) sowie im Übergabeprotokoll Ihrer Wohnung.</li>
         <li><strong>Aktueller Zählerstand:</strong> Der Zählerstand am Tag des Wechsels oder der Schlüsselübergabe.</li>
         <li><strong>Geschätzter Jahresverbrauch:</strong> In Kilowattstunden (kWh). Einen Richtwert finden Sie auf alten Rechnungen. Falls Sie diese nicht zur Hand haben (z. B. bei Erstbezug), können Sie sich an Durchschnittswerten orientieren (z. B. ca. 1.500 kWh für einen Single-Haushalt oder 3.500 kWh für eine Familie).</li>
         <li><strong>Wunschtermin:</strong> Das Datum, an dem die Belieferung durch den neuen Anbieter starten soll.</li>
       </ol>
 
-      <h2>Grundversorgung beim Umzug</h2>
+      <h2>Grundversorgung beim Umzug nach Aachen</h2>
       <p>
-        Ein Umzug ist der ideale Zeitpunkt, um die Energiekosten auf den Prüfstand zu stellen. Wenn Sie Strom oder Gas nutzen, ohne sich vorher anzumelden, rutschen Sie automatisch in den Grundversorgungstarif. 
+        Ein Umzug ist der ideale Zeitpunkt, um die Energiekosten auf den Prüfstand zu stellen. Wenn Sie in Aachen Strom oder Gas nutzen, ohne sich vorher anzumelden, rutschen Sie automatisch in den Grundversorgungstarif der STAWAG. 
       </p>
       <p>
-        Um unnötige Ausgaben von Anfang an zu vermeiden, sollten Sie bereits vier bis sechs Wochen vor dem Umzugstermin Tarife vergleichen und die Anmeldung anstoßen. In unserem ausführlichen <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Umzugs-Ratgeber</Link> haben wir eine praktische Checkliste und wichtige gesetzliche Regelungen (wie Ihr Sonderkündigungsrecht bei Umzug nach § 41b EnWG) für Sie zusammengefasst.
+        Um unnötige Ausgaben von Anfang an zu vermeiden, sollten Sie bereits vier bis sechs Wochen vor dem Umzugstermin Tarife vergleichen und die Anmeldung anstoßen. In unserem ausführlichen <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Umzugs-Ratgeber für Aachen</Link> haben wir eine praktische Checkliste und wichtige gesetzliche Regelungen (wie Ihr Sonderkündigungsrecht bei Umzug nach § 41b EnWG) für Sie zusammengefasst.
       </p>
 
-      <h2>Strom- und Gastarife vergleichen</h2>
+      <h2>Strom- und Gastarife in Aachen vergleichen</h2>
       <p>
-        Durch den Wechsel aus der Grundversorgung in einen optimierten Sondervertrag können Haushalte jährlich mehrere hundert Euro sparen. Da die Preise der Grundversorgung im Vergleich zu alternativen Anbietern meist höher angesetzt sind, lohnt sich ein regelmäßiger Vergleich.
+        Durch den Wechsel aus der Grundversorgung in einen optimierten Sondervertrag können Haushalte in Aachen jährlich mehrere hundert Euro sparen. Da die Preise der Grundversorgung im Vergleich zu alternativen Anbietern meist höher angesetzt sind, lohnt sich ein regelmäßiger Vergleich.
       </p>
       <p>
         Nutzen Sie unsere kostenfreien und neutralen Vergleichswerkzeuge:
       </p>
       <ul>
-        <li>Führen Sie einen schnellen <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromvergleich</Link> durch.</li>
-        <li>Nutzen Sie den <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich</Link>, um Heizkosten zu reduzieren.</li>
-        <li>Informieren Sie sich über unsere <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung vor Ort</Link>.</li>
+        <li>Führen Sie einen schnellen <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromvergleich für Aachen</Link> durch.</li>
+        <li>Nutzen Sie den <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich für Aachen</Link>, um Heizkosten zu reduzieren.</li>
+        <li>Informieren Sie sich über unsere lokale <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung vor Ort in Aachen</Link>.</li>
       </ul>
       <p>
         Haben Sie Fragen zum Wechselprozess oder benötigen Hilfe bei der Kündigung Ihres alten Vertrages? Nehmen Sie einfach direkt <Link to="/contact" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Kontakt mit uns auf</Link>. Wir unterstützen Sie gerne unverbindlich.
@@ -157,7 +152,7 @@ export default function GrundversorgungAachenStromGas() {
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
         <h3 className="text-2xl font-bold mb-4 mt-0">Jetzt aus der teuren Grundversorgung wechseln</h3>
         <p className="mb-6">
-          Lassen Sie kein Geld liegen. Wir prüfen Ihre aktuellen Strom- und Gasverträge, ermitteln Ihr Sparpotenzial und übernehmen den gesamten Wechselprozess für Sie – vollkommen kostenfrei und stressfrei.
+          Lassen Sie kein Geld liegen. Wir prüfen Ihre aktuellen Strom- und Gasverträge in Aachen, ermitteln Ihr Sparpotenzial und übernehmen den gesamten Wechselprozess für Sie – vollkommen kostenfrei und stressfrei.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link to="/contact" onClick={() => handleCtaClick('/contact')}>

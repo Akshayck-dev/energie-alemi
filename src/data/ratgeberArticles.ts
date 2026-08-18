@@ -61,8 +61,8 @@ export const articles: RatgeberArticle[] = [
   {
     id: '6',
     slug: 'umzug-aachen-strom-gas-internet',
-    title: 'Umzug: Strom, Gas und Internet richtig anmelden',
-    description: 'Praktischer Ratgeber für Ihren Umzug. Erfahren Sie alles zu Anmeldefristen, Sonderkündigungsrechten (EnWG & TKG) und wie Sie typische Fehler vermeiden.',
+    title: 'Umzug nach Aachen: Strom, Gas und Internet richtig anmelden',
+    description: 'Praktischer Ratgeber für Ihren Umzug nach Aachen. Erfahren Sie alles zu Anmeldefristen, Sonderkündigungsrechten (EnWG & TKG) und wie Sie typische Fehler vermeiden.',
     category: 'Strom',
     publishedDate: '2026-08-11',
     componentName: 'UmzugAachenStromGasInternet'
@@ -70,8 +70,8 @@ export const articles: RatgeberArticle[] = [
   {
     id: '7',
     slug: 'grundversorgung-aachen-strom-gas',
-    title: 'Grundversorgung: Strom und Gas – Kündigung und Tarifwechsel',
-    description: 'Grundversorgung verständlich erklärt: Anbieter, Kündigungsfrist, Umzug und Wechselmöglichkeiten für Strom und Gas.',
+    title: 'Grundversorgung Aachen: Strom und Gas – Kündigung und Tarifwechsel',
+    description: 'Grundversorgung in Aachen verständlich erklärt: Anbieter, Kündigungsfrist, Umzug und Wechselmöglichkeiten für Strom und Gas.',
     category: 'Strom',
     publishedDate: '2026-08-12',
     componentName: 'GrundversorgungAachenStromGas'
@@ -80,8 +80,8 @@ export const articles: RatgeberArticle[] = [
   {
     id: '6',
     slug: 'dsl-vs-glasfaser-aachen',
-    title: 'DSL vs. Glasfaser: Lohnt sich der Wechsel?',
-    description: 'Das Glasfasernetz wird ausgebaut. Wir klären die Unterschiede zu DSL und zeigen, für wen sich der schnelle Anschluss wirklich lohnt.',
+    title: 'DSL vs. Glasfaser in Aachen: Lohnt sich der Wechsel?',
+    description: 'Aachen baut sein Glasfasernetz aus. Wir klären die Unterschiede zu DSL und zeigen, für wen sich der schnelle Anschluss wirklich lohnt.',
     category: 'Internet',
     publishedDate: '2026-08-16',
     componentName: 'DslVsGlasfaserAachen'
