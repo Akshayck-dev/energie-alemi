@@ -18,7 +18,7 @@ export default function UmzugAachenStromGasInternet() {
   return (
     <ArticleLayout article={article}>
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
-        Ein Umzug in eine neue Stadt wie Aachen bringt viele Veränderungen mit sich. Neben dem Kistenpacken und der Adressänderung sollten Sie die Anmeldung von Strom, Gas und Internet nicht vernachlässigen. Eine rechtzeitige Planung schützt Sie vor unnötigen Kosten und sorgt dafür, dass am Einzugstag Licht brennt, die Heizung läuft und das WLAN funktioniert.
+        Ein Umzug in eine neue Wohnung bringt viele Veränderungen mit sich. Neben dem Kistenpacken und der Adressänderung sollten Sie die Anmeldung von Strom, Gas und Internet nicht vernachlässigen. Eine rechtzeitige Planung schützt Sie vor unnötigen Kosten und sorgt dafür, dass am Einzugstag Licht brennt, die Heizung läuft und das WLAN funktioniert.
       </p>
 
       <h2>1. Praktische Checkliste für den Umzug</h2>
@@ -32,9 +32,9 @@ export default function UmzugAachenStromGasInternet() {
         <li><strong>Innerhalb der ersten Tage nach dem Einzug:</strong> Melden Sie Strom und ggf. Gas beim gewählten Anbieter an, um nicht in der teuren Grundversorgung zu verbleiben.</li>
       </ul>
 
-      <h2>2. Strom anmelden in Aachen: Was ist zu beachten?</h2>
+      <h2>2. Strom anmelden: Was ist zu beachten?</h2>
       <p>
-        Sobald Sie die erste Glühbirne einschalten oder Strom nutzen, beziehen Sie Energie. Wenn Sie sich nicht vorab für einen Tarif entscheiden, fallen Sie automatisch in die sogenannte <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Grundversorgung</Link>. In Aachen ist die <i>STAWAG (Stadtwerke Aachen AG)</i> der lokale Grundversorger.
+        Sobald Sie die erste Glühbirne einschalten oder Strom nutzen, beziehen Sie Energie. Wenn Sie sich nicht vorab für einen Tarif entscheiden, fallen Sie automatisch in die sogenannte <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Grundversorgung</Link>. Die <i>STAWAG (Stadt- und Städteregionswerke Aachen AG)</i> ist der lokale Grundversorger.
       </p>
       <p>
         Die Grundversorgung bietet maximale Flexibilität (sie ist gesetzlich jederzeit mit einer Frist von zwei Wochen kündbar), ist jedoch im Vergleich zu Sondertarifen meist spürbar teurer. Daher lohnt sich ein rechtzeitiger <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromvergleich</Link>, um einen passenden und günstigeren Tarif zu finden.
@@ -46,7 +46,7 @@ export default function UmzugAachenStromGasInternet() {
 
       <h2>3. Gas anmelden bei Nutzung im neuen Heim</h2>
       <p>
-        Falls Ihre neue Wohnung in Aachen über eine Gasetagenheizung oder einen Gasanschluss verfügt, gilt hier das gleiche Prinzip wie beim Strom. Ohne eigene Anmeldung übernimmt die STAWAG die Grundversorgung.
+        Falls Ihre neue Wohnung über eine Gasetagenheizung oder einen Gasanschluss verfügt, gilt hier das gleiche Prinzip wie beim Strom. Ohne eigene Anmeldung übernimmt der Grundversorger die Belieferung.
       </p>
       <p>
         Aufgrund des oft höheren Verbrauchs beim Heizen ist das Sparpotenzial beim Gas besonders groß. Führen Sie idealerweise vor dem Einzug einen neutralen <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich</Link>, um hohe Vorauszahlungen in der Grundversorgung zu vermeiden.
@@ -64,7 +64,7 @@ export default function UmzugAachenStromGasInternet() {
         Kann der Anbieter die Leistung am neuen Wohnort nicht oder nur mit einer geringeren Bandbreite zur Verfügung stellen, haben Sie nach § 60 Abs. 2 TKG ein <strong>Sonderkündigungsrecht mit einer Frist von einem Monat</strong>. Die Frist beginnt frühestens mit dem Tag des tatsächlichen Umzugs.
       </p>
       <p>
-        Wir empfehlen Ihnen, rechtzeitig die Verfügbarkeit an Ihrer neuen Adresse in Aachen zu prüfen und die Vertragsumstellung mindestens vier Wochen im Voraus anzustoßen. Nutzen Sie hierzu unseren <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Internetvergleich</Link>, um DSL-, Kabel- oder Glasfaseroptionen für Aachen zu ermitteln.
+        Wir empfehlen Ihnen, rechtzeitig die Verfügbarkeit an Ihrer neuen Adresse zu prüfen und die Vertragsumstellung mindestens vier Wochen im Voraus anzustoßen. Nutzen Sie hierzu unseren <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Internetvergleich</Link>, um DSL-, Kabel- oder Glasfaseroptionen zu ermitteln.
       </p>
 
       <h2>5. Welche Daten sollten Sie vorbereiten?</h2>
@@ -92,14 +92,14 @@ export default function UmzugAachenStromGasInternet() {
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
         <h3 className="text-2xl font-bold mb-4 mt-0">Wir helfen Ihnen beim stressfreien Anbieterwechsel</h3>
         <p className="mb-6">
-          Unser Service nimmt Ihnen den Papierkram ab. Wir vergleichen Tarife für Strom, Gas und Internet in Aachen und unterstützen Sie kostenfrei bei der Anmeldung und dem Wechsel.
+          Unser Service nimmt Ihnen den Papierkram ab. Wir vergleichen Tarife für Strom, Gas und Internet und unterstützen Sie kostenfrei bei der Anmeldung und dem Wechsel.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link to="/contact" onClick={() => handleCtaClick('/contact')}>
             <Button variant="primary">Kostenfreie Beratung anfordern</Button>
           </Link>
           <Link to="/tarifberatung-aachen" onClick={() => handleCtaClick('/tarifberatung-aachen')}>
-            <Button variant="outline">Tarifberatung Aachen Details</Button>
+            <Button variant="outline">Tarifberatung Details</Button>
           </Link>
         </div>
       </div>

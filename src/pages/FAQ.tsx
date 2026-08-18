@@ -71,7 +71,7 @@ export default function FAQ() {
     },
     {
       question: t('faq_page.q3', 'Beraten Sie auch Unternehmen?'),
-      answer: t('faq_page.a3', 'Ja, wir beraten sowohl Privatkunden als auch Unternehmen in Aachen und Umgebung – persönlich, unabhängig und kostenlos.'),
+      answer: t('faq_page.a3', 'Ja, wir beraten sowohl Privatkunden als auch Unternehmen – persönlich, unabhängig und kostenlos.'),
     },
     {
       question: t('faq_page.q4', 'Muss ich meinen aktuellen Vertrag kündigen?'),

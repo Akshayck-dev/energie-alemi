@@ -33,7 +33,7 @@ export default function Tarifberatung() {
             <source media="(min-width: 768px)" srcSet={heroDesk} />
             <img 
               src={heroMob} 
-              alt="Tarifberatung Aachen" 
+              alt="Tarifberatung" 
               className="w-full h-full object-cover object-center" 
             />
           </picture>
