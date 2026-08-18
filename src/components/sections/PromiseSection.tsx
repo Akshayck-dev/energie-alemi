@@ -57,23 +57,23 @@ export default function PromiseSection({
             </div>
           </div>
 
-          <div className="w-full lg:w-7/12 h-full flex justify-center lg:justify-end items-end relative mt-16 lg:mt-0">
-            {/* Cut out person image */}
-            <div className="relative z-10 bottom-0 w-full max-w-[600px] flex items-end justify-center lg:justify-end">
+          <div className="w-full lg:w-7/12 flex flex-col items-center lg:items-end relative mt-12 lg:mt-0">
+            {/* Advisor image container */}
+            <div className="relative z-10 w-full max-w-[500px]">
                <img 
                  src={image} 
                  alt="Advisor" 
                  loading="lazy"
                  decoding="async"
-                 className="w-full aspect-square md:aspect-auto md:h-auto md:max-h-[600px] object-cover object-top rounded-3xl shadow-xl border border-slate-200 dark:border-white/10"
-                width="500" height="600" />
-               <div className="absolute inset-0 bg-gradient-to-t from-slate-50 dark:from-[#051024] via-transparent to-transparent z-10 rounded-3xl" />
+                 className="w-full h-[380px] sm:h-[480px] md:h-[540px] object-cover object-top rounded-3xl shadow-xl border border-slate-200 dark:border-white/10"
+                 width="500" height="600" />
+               <div className="absolute inset-0 bg-gradient-to-t from-slate-50/80 dark:from-[#051024]/80 via-transparent to-transparent z-10 rounded-3xl" />
             </div>
 
-            {/* Blockquote card */}
-            <div className="absolute bottom-4 md:bottom-12 left-2 right-2 md:left-auto md:right-auto rtl:md:-right-4 ltr:md:-left-4 lg:rtl:-right-12 lg:ltr:-left-12 z-20 bg-white/95 dark:bg-[#0a1628]/95 md:bg-white md:dark:bg-[#0a1628] backdrop-blur-md md:backdrop-blur-none rounded-2xl p-6 md:p-8 w-auto md:max-w-sm border border-slate-100 dark:border-white/10 shadow-xl">
+            {/* Blockquote card placed below image on mobile, and offset bottom-left on desktop */}
+            <div className="relative z-20 mt-[-40px] sm:mt-[-60px] lg:mt-0 lg:absolute lg:bottom-6 lg:left-0 xl:-left-8 bg-white/95 dark:bg-[#0a1628]/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 w-[92%] sm:w-[85%] lg:w-auto lg:max-w-md border border-slate-100 dark:border-white/10 shadow-2xl">
               <div className="text-[#E5A937] text-6xl font-serif absolute -top-2 ltr:left-6 rtl:right-6 opacity-80 leading-none">"</div>
-              <p className="text-slate-700 dark:text-slate-300 text-lg font-medium relative z-10 leading-relaxed mt-4">
+              <p className="text-slate-700 dark:text-slate-300 text-base sm:text-lg font-medium relative z-10 leading-relaxed mt-3">
                 {quote}
               </p>
             </div>
