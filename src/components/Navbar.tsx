@@ -27,7 +27,7 @@ export default function Navbar() {
   const { t, i18n } = useTranslation();
 
   // Pages with a dark hero section background (where white text is needed at the top)
-  const hasDarkHero = ['/', '/electricity', '/gas', '/internet'].includes(location.pathname);
+  const hasDarkHero = ['/', '/electricity', '/gas', '/internet', '/tarifberatung-aachen'].includes(location.pathname);
   // If we are at the top of a page WITHOUT a dark hero, force the adaptive (dark/light mode aware) text styling
   const useAdaptiveText = isScrolled || !hasDarkHero;
 

@@ -7,6 +7,8 @@ import ProcessSection from '../components/sections/ProcessSection';
 import PromiseSection from '../components/sections/PromiseSection';
 import SEO from "../components/SEO";
 
+import heroDesk from '../assets/hero_desk.webp';
+import heroMob from '../assets/hero_mob.webp';
 import bannerDesk from '../assets/banner_desk.webp';
 import bannerMob from '../assets/banner_mob.webp';
 import ownerImg from '../assets/image-admin.JPG.webp';
@@ -24,19 +26,45 @@ export default function Tarifberatung() {
       <SEO url="/tarifberatung-aachen" />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-white dark:bg-[#0a1628] relative overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#0047AB]/5 dark:bg-[#f0a83f]/5 rounded-full blur-3xl"></div>
-        <div className="container mx-auto px-6 max-w-[1200px] relative z-10 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
-            {t('tarifberatung.hero_title')}
-          </h1>
-          <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-            {t('tarifberatung.hero_desc')}
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/contact" className="px-8 py-4 bg-[#0047AB] hover:bg-[#003380] text-white rounded-full font-semibold transition-colors flex items-center shadow-lg hover:shadow-xl">
-              {t('tarifberatung.hero_btn_primary', 'Unverbindliche Anfrage stellen')} <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
+      <section className="relative min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
+        <div className="absolute inset-0 z-0">
+          <picture className="absolute inset-0 w-full h-full">
+            <source media="(min-width: 768px)" srcSet={heroDesk} />
+            <img 
+              src={heroMob} 
+              alt="Tarifberatung Aachen" 
+              className="w-full h-full object-cover object-center" 
+            />
+          </picture>
+          {/* LTR: dark on left, transparent on right */}
+          <div className="ltr:block rtl:hidden absolute top-0 left-0 bottom-0 w-full md:w-[80%] bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
+          {/* RTL: dark on right, transparent on left */}
+          <div className="rtl:block ltr:hidden absolute top-0 right-0 bottom-0 w-full md:w-[80%] bg-gradient-to-l from-[#0a1628]/95 via-[#0a1628]/60 to-transparent z-10" />
+          
+          {/* Subtle bottom gradient to blend with the next section */}
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white dark:from-[#0a1628] to-transparent z-10" />
+        </div>
+
+        <div className="container mx-auto px-6 relative z-20 flex flex-col md:flex-row items-center">
+          <div className="w-full md:w-[60%] lg:w-[55%] pt-12 md:pt-0">
+            <p className="text-[#E5A937] font-heading font-medium tracking-widest uppercase mb-3 md:mb-4 text-xs">
+              {t('tarifberatung.hero_badge', 'TARIFBERATUNG')}
+            </p>
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-4 md:mb-6 tracking-tight">
+              {t('tarifberatung.hero_title')}
+            </h1>
+            <p className="text-base text-white/75 mb-8 md:mb-10 max-w-md leading-relaxed font-light">
+              {t('tarifberatung.hero_desc')}
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 md:mb-0">
+              <Link 
+                to="/contact" 
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#0047AB] hover:bg-[#003380] text-white rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
+              >
+                {t('tarifberatung.hero_btn_primary', 'Unverbindliche Anfrage stellen')} <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
