@@ -56,8 +56,9 @@ export default function LanguageSwitcher({ isScrolled = true }: { isScrolled?: b
               <button
                 key={lng.code}
                 onClick={() => changeLanguage(lng.code)}
+                translate="no"
                 className={cn(
-                  'w-full text-left px-4 py-2 text-sm transition-colors',
+                  'w-full text-left px-4 py-2 text-sm transition-colors notranslate',
                   i18n.language?.startsWith(lng.code)
                     ? 'bg-slate-100 dark:bg-white/10 font-semibold text-slate-900 dark:text-white'
                     : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-white/5'
