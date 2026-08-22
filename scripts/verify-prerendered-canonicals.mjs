@@ -20,7 +20,7 @@ function walkHtmlFiles(dir) {
 
 const htmlFiles = walkHtmlFiles(distDir);
 
-console.log('=== Verifying Prerendered HTML Files for https://energie-alemi.de ===');
+console.log('=== Verifying Prerendered HTML Files for https://www.energie-alemi.de ===');
 let allValid = true;
 
 htmlFiles.forEach(filePath => {
@@ -34,8 +34,8 @@ htmlFiles.forEach(filePath => {
   const canonical = canonicalMatch ? canonicalMatch[1] : 'MISSING';
   const ogUrl = ogUrlMatch ? ogUrlMatch[1] : 'MISSING';
   
-  const isValidCanonical = canonical.startsWith('https://energie-alemi.de');
-  const isValidOgUrl = ogUrl.startsWith('https://energie-alemi.de');
+  const isValidCanonical = canonical.startsWith('https://www.energie-alemi.de');
+  const isValidOgUrl = ogUrl.startsWith('https://www.energie-alemi.de');
   
   if (!isValidCanonical || !isValidOgUrl) {
     allValid = false;
