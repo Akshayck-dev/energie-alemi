@@ -81,7 +81,8 @@ export default function HomeFeatures() {
                     <span>{t('home_features.feature1_desc')}</span>
                   </p>
                   <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
-                    <ArrowRight size={18} className="rtl:rotate-180" />
+                    <span className="sr-only">Mehr erfahren</span>
+                    <ArrowRight size={18} className="rtl:rotate-180" aria-hidden="true" />
                   </Link>
                 </div>
 
@@ -109,7 +110,8 @@ export default function HomeFeatures() {
                     <span>{t('home_features.feature2_desc')}</span>
                   </p>
                   <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
-                    <ArrowRight size={18} className="rtl:rotate-180" />
+                    <span className="sr-only">Mehr erfahren</span>
+                    <ArrowRight size={18} className="rtl:rotate-180" aria-hidden="true" />
                   </Link>
                 </div>
 
@@ -134,7 +136,8 @@ export default function HomeFeatures() {
                     <span>{t('home_features.feature3_desc')}</span>
                   </p>
                   <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
-                    <ArrowRight size={18} className="rtl:rotate-180" />
+                    <span className="sr-only">Mehr erfahren</span>
+                    <ArrowRight size={18} className="rtl:rotate-180" aria-hidden="true" />
                   </Link>
                 </div>
 
