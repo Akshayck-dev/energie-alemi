@@ -24,7 +24,7 @@ console.log(`🔍 Running build validation: ENV=${DEPLOYMENT_ENV}, ALLOW_INDEXIN
 // 1. Strict production indexing check
 const isProdEnv = DEPLOYMENT_ENV === 'production';
 const isAllowIndexing = ALLOW_INDEXING === 'true';
-const isProdUrl = SITE_URL === 'https://www.energie-alemi.de' || SITE_URL === 'https://energie-alemi.de';
+const isProdUrl = SITE_URL === 'https://energie-alemi.de' || SITE_URL === 'https://energie-alemi.de';
 
 if (isProdEnv) {
   if (!isAllowIndexing || !isProdUrl) {
