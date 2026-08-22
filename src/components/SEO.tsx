@@ -39,9 +39,7 @@ export default function SEO({ title, description, url, isArticle, datePublished,
 
   // Dynamic Base URL
   let rawBaseUrl = import.meta.env.VITE_SITE_URL || 'https://energie-alemi.de';
-  if (rawBaseUrl === 'https://energie-alemi.de') {
-    rawBaseUrl = 'https://energie-alemi.de';
-  }
+  rawBaseUrl = rawBaseUrl.replace('https://www.energie-alemi.de', 'https://energie-alemi.de');
   const baseUrl = rawBaseUrl;
   const canonicalUrl = url ? `${baseUrl}${url.replace(/\/$/, '')}` : baseUrl;
 

@@ -17,7 +17,10 @@ function getEnvValue(key) {
 
 const DEPLOYMENT_ENV = process.env.VITE_DEPLOYMENT_ENV || getEnvValue('VITE_DEPLOYMENT_ENV') || 'production';
 const ALLOW_INDEXING = process.env.VITE_ALLOW_INDEXING || getEnvValue('VITE_ALLOW_INDEXING') || 'true';
-const SITE_URL = process.env.VITE_SITE_URL || getEnvValue('VITE_SITE_URL');
+let SITE_URL = process.env.VITE_SITE_URL || getEnvValue('VITE_SITE_URL');
+if (SITE_URL) {
+  SITE_URL = SITE_URL.replace('https://www.energie-alemi.de', 'https://energie-alemi.de');
+}
 
 console.log(`🔍 Running build validation: ENV=${DEPLOYMENT_ENV}, ALLOW_INDEXING=${ALLOW_INDEXING}, SITE_URL=${SITE_URL}`);
 
