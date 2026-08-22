@@ -89,7 +89,7 @@ async function run() {
     let html = template;
     
     // Inject HTML lang attribute from Helmet if available, else fallback
-    html = html.replace(/<html[^>]*>/, `<html lang="de">`);
+    html = html.replace(/<html[^>]*>/, `<html lang="de" translate="no" class="notranslate">`);
     
     // Remove the default dev title in index.html to prevent duplication
     html = html.replace(/<title>[\s\S]*?<\/title>/i, '');

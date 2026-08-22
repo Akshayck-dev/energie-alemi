@@ -78,6 +78,9 @@ i18n.on('languageChanged', (lng) => {
 if (typeof document !== 'undefined') {
   document.documentElement.lang = initialLanguage;
   document.documentElement.dir = ['ar', 'fa'].includes(initialLanguage) ? 'rtl' : 'ltr';
+  // Prevent Chrome auto-translate from garbling German content
+  document.documentElement.setAttribute('translate', 'no');
+  document.documentElement.classList.add('notranslate');
 }
 
 export default i18n;
