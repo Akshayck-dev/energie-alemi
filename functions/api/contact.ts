@@ -94,8 +94,9 @@ export const onRequestPost: PagesFunction<{
 
     // 4. Retrieve environment secrets
     const { RESEND_API_KEY, CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL } = context.env;
+    console.log(`Diagnostics: hasResendApiKey=${!!RESEND_API_KEY}, hasContactToEmail=${!!CONTACT_TO_EMAIL}, hasContactFromEmail=${!!CONTACT_FROM_EMAIL}`);
     if (!RESEND_API_KEY || !CONTACT_TO_EMAIL || !CONTACT_FROM_EMAIL) {
-      console.error('Missing configuration variables.');
+      console.error(`Missing configuration: hasResendApiKey=${!!RESEND_API_KEY}, hasContactToEmail=${!!CONTACT_TO_EMAIL}, hasContactFromEmail=${!!CONTACT_FROM_EMAIL}`);
       return new Response(
         JSON.stringify({ error: 'Der Server ist vorübergehend nicht konfiguriert. Bitte kontaktieren Sie uns direkt per E-Mail.' }),
         { status: 500, headers: { 'Content-Type': 'application/json' } }
