@@ -308,7 +308,9 @@
     "cross_p3": ". Bei Fragen ",
     "cross_l3": "kontaktieren Sie uns",
     "cross_p4": " direkt oder lesen Sie unseren Ratgeber zur ",
-    "cross_l4": "Grundversorgung"
+    "cross_l4": "Grundversorgung",
+    "cross_p5": " oder lesen Sie unseren nützlichen ",
+    "cross_l5": "Gasvergleich-Ratgeber"
   },
   "internet": {
     "hero_t1": "Internettarife vergleichen",

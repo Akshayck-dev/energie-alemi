@@ -142,7 +142,7 @@ export default function GrundversorgungAachenStromGas() {
       </p>
       <ul>
         <li>Führen Sie einen schnellen <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromvergleich für Aachen</Link> durch.</li>
-        <li>Nutzen Sie den <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich für Aachen</Link>, um Heizkosten zu reduzieren.</li>
+        <li>Nutzen Sie den <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich für Aachen</Link>, um Heizkosten zu reduzieren (wertvolle Informationen hierzu bietet unser <Link to="/ratgeber/gasvergleich" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich-Ratgeber</Link>).</li>
         <li>Informieren Sie sich über unsere lokale <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung vor Ort in Aachen</Link>.</li>
       </ul>
       <p>

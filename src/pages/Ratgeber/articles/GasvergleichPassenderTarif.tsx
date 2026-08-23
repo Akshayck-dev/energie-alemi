@@ -67,6 +67,11 @@ export default function GasvergleichPassenderTarif() {
         Je nachdem, ob Sie nur warmes Wasser erzeugen, auch heizen oder gar ein ganzes Haus versorgen, ändert sich Ihr Verbrauch drastisch. Ihr individuelles Verbrauchsverhalten entscheidet darüber, ob sich eher ein Tarif mit hohem Grundpreis und niedrigem Arbeitspreis lohnt oder umgekehrt.
       </p>
 
+      <h3>Staatliche Abgaben und Netzentgelte</h3>
+      <p>
+        Neben den Beschaffungskosten des Anbieters wird der Gaspreis auch durch staatlich bestimmte Preisbestandteile und regulierte Netzentgelte beeinflusst. Die CO₂-Bepreisung fossiler Brennstoffe ist dabei ein Kostenfaktor, der sich auf die Gaspreise für Verbraucher auswirken kann. Informationen zu regulatorischen Rahmenbedingungen und Netzentgelten stellt unter anderem die <a href="https://www.bundesnetzagentur.de" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] underline hover:text-[#003380]">Bundesnetzagentur</a> bereit.
+      </p>
+
       <h2>Was kostet Gas bei 30.000 kWh?</h2>
       <p>
         Viele Hausbesitzer fragen sich: "Wie hoch sind meine <strong>30000 kWh Gas Kosten</strong>?" Die genauen Kosten lassen sich nicht pauschal beziffern, da sie von Ihrem aktuellen Tarif abhängen. Zur Berechnung multiplizieren Sie einfach den jährlichen Verbrauch (30.000 kWh) mit dem Arbeitspreis Ihres Tarifs und addieren anschließend den jährlichen Grundpreis (12 Monate × monatlicher Grundpreis).
@@ -93,6 +98,17 @@ export default function GasvergleichPassenderTarif() {
         <li><strong>Vertragslaufzeit:</strong> Binden Sie sich nicht länger als 12 Monate an einen Versorger, um flexibel auf den Markt reagieren zu können.</li>
         <li><strong>Kündigungsfrist:</strong> Die Frist sollte maximal vier Wochen zum Vertragsende betragen.</li>
         <li><strong>Boni und Prämien:</strong> Neukundenboni machen das erste Jahr oft sehr günstig, entfallen aber im zweiten Jahr. Prüfen Sie, ob der Tarif auch ohne Bonus wirtschaftlich sinnvoll ist.</li>
+      </ul>
+
+      <h2>Was Sie für einen Gastarifvergleich bereithalten sollten</h2>
+      <p>
+        Um Tarife schnell und passgenau vergleichen zu können, sollten Sie folgende Unterlagen bzw. Angaben zur Hand haben:
+      </p>
+      <ul>
+        <li><strong>Postleitzahl (PLZ):</strong> Da Netznutzungsentgelte regional variieren, bestimmt Ihr Wohnort die verfügbaren Tarife.</li>
+        <li><strong>Jahresverbrauch in kWh:</strong> Diesen finden Sie auf Ihrer letzten Jahresabrechnung. Alternativ können Sie Richtwerte basierend auf der Wohnfläche nutzen.</li>
+        <li><strong>Aktueller Anbieter &amp; Tarifname:</strong> Hilft beim direkten Vergleich Ihres bestehenden Arbeitspreises (Cent/kWh) und Grundpreises (Euro/Monat).</li>
+        <li><strong>Vertragslaufzeit &amp; Kündigungsfrist:</strong> Damit Sie wissen, zu welchem Wunschtermin der Wechsel vollzogen werden kann.</li>
       </ul>
 
       <h2>Gasanbieter wechseln – so funktioniert es</h2>

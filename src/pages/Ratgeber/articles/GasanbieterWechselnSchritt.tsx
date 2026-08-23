@@ -25,7 +25,7 @@ export default function GasanbieterWechselnSchritt() {
 
       <h2>Schritt 2: Neuen Tarif abschließen</h2>
       <p>
-        Über unseren <Link to="/gas" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Vergleichsrechner</Link> können Sie den passenden Tarif auswählen und den Wechsel direkt online beauftragen. Sie erteilen dem neuen Anbieter dabei eine Vollmacht.
+        Über unseren <Link to="/gas" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Vergleichsrechner</Link> können Sie den passenden Tarif auswählen. Umfassende Hilfestellung bei der Auswahl bietet unser <Link to="/ratgeber/gasvergleich" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Ratgeber zum Gasvergleich</Link>. Beim Online-Abschluss erteilen Sie dem neuen Anbieter eine Vollmacht für den Wechsel.
       </p>
 
       <h2>Schritt 3: Kündigung durch den neuen Anbieter</h2>
