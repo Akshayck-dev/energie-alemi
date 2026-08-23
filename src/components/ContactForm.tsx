@@ -66,7 +66,10 @@ export default function ContactForm() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(_data)
+        body: JSON.stringify({
+          ..._data,
+          pagePath: window.location.pathname
+        })
       });
 
       if (!response.ok) {
