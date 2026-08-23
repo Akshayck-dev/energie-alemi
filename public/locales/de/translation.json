@@ -265,7 +265,9 @@
     "cross_p3": ". Weitere Tipps finden Sie im ",
     "cross_l3": "Ratgeber",
     "cross_p4": ", beispielsweise zur ",
-    "cross_l4": "Grundversorgung"
+    "cross_l4": "Grundversorgung",
+    "cross_p5": " oder lesen Sie unseren Ratgeber zum ",
+    "cross_l5": "Stromanbieter wechseln"
   },
   "gas": {
     "hero_t1": "Smarte Energieentscheidungen.",

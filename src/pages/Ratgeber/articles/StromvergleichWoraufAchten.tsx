@@ -10,7 +10,7 @@ export default function StromvergleichWoraufAchten() {
   return (
     <ArticleLayout article={article}>
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
-        Der Strommarkt bietet hunderte verschiedene Tarife. Doch der billigste Tarif ist nicht immer der beste. Wer die Preisstrukturen und Vertragsbedingungen versteht, vermeidet böse Überraschungen im zweiten Vertragsjahr.
+        Der Strommarkt bietet hunderte verschiedene Tarife. Doch der billigste Tarif ist nicht immer der beste. Wer die Preisstrukturen und Vertragsbedingungen versteht, vermeidet böse Überraschungen im zweiten Vertragsjahr. Sobald Sie den passenden Tarif ermittelt haben, können Sie Ihren <Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromanbieter wechseln</Link> – wir erklären Ihnen das genaue Vorgehen.
       </p>
 
       <h2>Arbeitspreis vs. Grundpreis</h2>

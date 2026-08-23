@@ -13,7 +13,7 @@ export default function StromanbieterWechseln() {
     },
     {
       question: "Wie lange dauert ein Stromanbieterwechsel?",
-      answer: "Der reine Wechselprozess dauert meist zwei bis sechs Wochen, abhängig von der Kündigungsfrist Ihres alten Vertrags."
+      answer: "Nach den gesetzlichen Vorgaben (§ 20a EnWG) muss der technische Wechsel des Stromanbieters innerhalb von drei Wochen abgeschlossen sein. Ab dem 1. Januar 2026 gilt zudem die Vorgabe, dass der rein technische Anbieterwechsel an Werktagen innerhalb von 24 Stunden durchführbar sein muss. Bitte beachten Sie jedoch, dass sich der tatsächliche Lieferbeginn nach Ihren Kündigungsfristen und Vertragslaufzeiten beim bisherigen Versorger richtet."
     },
     {
       question: "Muss ich meinen alten Stromvertrag selbst kündigen?",
@@ -29,7 +29,7 @@ export default function StromanbieterWechseln() {
     },
     {
       question: "Gibt es eine Unterbrechung der Stromversorgung?",
-      answer: "Nein, die Stromversorgung ist gesetzlich gesichert. Selbst bei Verzögerungen während des Wechsels werden Sie lückenlos über den örtlichen Grundversorger mit Strom beliefert."
+      answer: "Nein, eine Unterbrechung ist gesetzlich ausgeschlossen. Der Gesetzgeber garantiert die kontinuierliche Stromversorgung über die sogenannte Ersatz- oder Grundversorgung gemäß § 36 und § 38 des Energiewirtschaftsgesetzes (EnWG), sodass Sie zu keinem Zeitpunkt ohne Strom dastehen."
     }
   ];
 
@@ -68,6 +68,19 @@ export default function StromanbieterWechseln() {
         Geben Sie online Ihre Daten, Ihre Zählernummer und den Namen Ihres bisherigen Anbieters ein. Mit dem Abschluss beauftragen Sie den neuen Anbieter, den Wechselprozess für Sie durchzuführen.
       </p>
 
+      <h2>Was Sie für einen Stromanbieterwechsel bereithalten sollten</h2>
+      <p>
+        Um den Wechsel schnell und reibungslos online durchzuführen, sollten Sie folgende Informationen und Unterlagen bereithalten:
+      </p>
+      <ul>
+        <li><strong>Postleitzahl und Ort:</strong> Ermöglicht die Ermittlung der Netznutzungsentgelte an Ihrer Adresse.</li>
+        <li><strong>Jahresstromverbrauch in kWh:</strong> Zu finden auf Ihrer letzten Jahresabrechnung.</li>
+        <li><strong>Aktueller Anbieter &amp; Vertragsdaten:</strong> Wichtig für die fristgerechte Kündigung.</li>
+        <li><strong>Zählernummer:</strong> Diese befindet sich direkt auf Ihrem Stromzähler.</li>
+        <li><strong>Marktlokations-ID (MaLo-ID):</strong> Eine 11-stellige Nummer, die Ihren konkreten Netzanschluss kennzeichnet und auf Ihrer Stromrechnung zu finden ist (nicht zu verwechseln mit der Zählernummer).</li>
+        <li><strong>Persönliche Kundendaten:</strong> Einschließlich Ihrer Kundennummer beim aktuellen Stromanbieter.</li>
+      </ul>
+
       <h2>Welche Fristen gelten beim Stromanbieterwechsel?</h2>
       <p>
         Bevor Sie den Anbieter wechseln, sollten Sie die Fristen Ihres aktuellen Vertrags kennen.
@@ -75,12 +88,12 @@ export default function StromanbieterWechseln() {
 
       <h3>Kündigungsfrist und Vertragslaufzeit</h3>
       <p>
-        Jeder Vertrag hat eine spezifische <strong>Kündigungsfrist</strong>. In der Grundversorgung beträgt diese meist nur zwei Wochen. Haben Sie jedoch einen Sondervertrag abgeschlossen, kann die Frist zwischen vier Wochen und drei Monaten zum Ende der Erstlaufzeit betragen.
+        Jeder Stromvertrag hat eine spezifische Kündigungsfrist. In der Grundversorgung beträgt diese gesetzlich zwei Wochen (§ 36 EnWG). Für Sonderverträge gilt seit dem Gesetz für faire Verbraucherverträge bei vielen nach dem 1. März 2022 abgeschlossenen Stromverträgen: Nach dem Ablauf der vertraglichen Erstlaufzeit verlängern sich diese nur noch auf unbestimmte Zeit und können mit einer Frist von maximal einem Monat gekündigt werden. Ältere Verträge oder abweichende Tarifkonstruktionen können andere Fristen aufweisen. Prüfen Sie daher Ihre individuellen Vertragsdaten.
       </p>
 
       <h3>Stromanbieter wechseln trotz laufendem Vertrag</h3>
       <p>
-        Viele Verbraucher fragen sich: Kann ich den <strong>Stromanbieter wechseln trotz Vertrag</strong>? Ja, Sie können sich heute schon einen günstigen Tarif für die Zukunft sichern. Der tatsächliche Lieferbeginn erfolgt dann nahtlos nach Ablauf Ihres aktuellen Vertrags. Eine Ausnahme besteht bei Preiserhöhungen: Hier greift ein Sonderkündigungsrecht, durch das Sie den Vertrag sofort ohne Einhaltung der regulären Frist beenden können.
+        Viele Verbraucher fragen sich: Kann ich den <strong>Stromanbieter wechseln trotz Vertrag</strong>? Ja, Sie können sich heute schon einen günstigen Tarif für die Zukunft sichern. Der tatsächliche Lieferbeginn erfolgt dann nahtlos nach Ablauf Ihres aktuellen Vertrags. Eine Ausnahme besteht bei Preiserhöhungen: Hier greift ein gesetzliches Sonderkündigungsrecht nach § 41 Abs. 5 EnWG, durch das Sie den Vertrag sofort ohne Einhaltung der regulären Frist beenden können.
       </p>
 
       <h2>Was passiert mit dem alten Stromvertrag?</h2>
@@ -95,7 +108,7 @@ export default function StromanbieterWechseln() {
 
       <h2>Worauf sollte man beim neuen Stromtarif achten?</h2>
       <p>
-        Um wirklich zu sparen, reicht ein Blick auf die monatlichen Abschläge nicht aus. Achten Sie auf folgende Details, bevor Sie den <strong>Stromvertrag wechseln</strong>:
+        Um wirklich zu sparen, reicht ein Blick auf die monatlichen Abschläge nicht aus. Achten Sie auf folgende Details, bevor Sie den <strong>Stromvertrag wechseln</strong>. Für eine ausführliche Erklärung aller Tarifdetails lesen Sie auch unseren Beitrag: <Link to="/ratgeber/stromvergleich" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Stromvertrag richtig vergleichen</Link>.
       </p>
 
       <h3>Arbeitspreis und Grundpreis</h3>
@@ -120,7 +133,7 @@ export default function StromanbieterWechseln() {
 
       <h2>Was passiert während des Anbieterwechsels?</h2>
       <p>
-        Während des Wechsels merken Sie in Ihrem Haushalt absolut nichts. Der Stromzähler und die Leitungen bleiben unangetastet. Es gibt keine Technikerbesuche und vor allem keinen Stromausfall. Im Hintergrund meldet Ihr neuer Anbieter Ihren Zähler beim Netzbetreiber um.
+        Während des Wechsels merken Sie in Ihrem Haushalt absolut nichts. Der Stromzähler und die Leitungen bleiben unangetastet. Es gibt keine Technikerbesuche und vor allem keinen Stromausfall. Im Hintergrund meldet Ihr neuer Anbieter Ihren Zähler beim Netzbetreiber um. Die lückenlose Stromversorgung ist dabei in Deutschland gesetzlich geregelt. Sollte sich der Wechsel verzögern, greift die gesetzliche Grund- und Ersatzversorgung nach dem Energiewirtschaftsgesetz (EnWG), wie auch die <a href="https://www.bundesnetzagentur.de" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] underline hover:text-[#003380]">Bundesnetzagentur</a> bestätigt.
       </p>
 
       <h2>Häufige Fehler beim Stromanbieterwechsel vermeiden</h2>
