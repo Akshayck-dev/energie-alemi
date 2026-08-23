@@ -18,6 +18,7 @@ const contactSchema = z.object({
   topic: z.string().min(1, 'Bitte wählen Sie ein Thema'),
   serviceType: z.string().min(1, 'Bitte wählen Sie eine Serviceart'),
   message: z.string().min(10, 'Nachricht muss mindestens 10 Zeichen lang sein'),
+  website: z.string().optional(), // Honeypot
   agreeToPrivacy: z.boolean().refine(val => val === true, {
     message: 'Sie müssen der Datenschutzerklärung zustimmen'
   })
@@ -30,6 +31,7 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [hasStartedForm, setHasStartedForm] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -40,7 +42,8 @@ export default function ContactForm() {
     resolver: zodResolver(contactSchema),
     defaultValues: {
       topic: '',
-      serviceType: ''
+      serviceType: '',
+      website: ''
     }
   });
 
@@ -56,18 +59,49 @@ export default function ContactForm() {
 
   const onSubmit = async (_data: ContactFormValues) => {
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    
-    // NOTE: generate_lead must only be added when a real backend/email/API submission returns confirmed success.
-    // Currently, this form submission is simulated locally on the client-side.
+    setSubmitError(null);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(_data)
+      });
 
-    setHasStartedForm(false);
-    reset();
-    setTimeout(() => {
-      setIsSuccess(false);
-    }, 5000);
+      if (!response.ok) {
+        let errMessage = t('contact.form_error', 'Fehler beim Senden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.');
+        try {
+          const resData = await response.json() as any;
+          if (resData && resData.error) {
+            errMessage = resData.error;
+          }
+        } catch (_) {}
+        throw new Error(errMessage);
+      }
+
+      setIsSuccess(true);
+      
+      // Track successful lead generation exactly once
+      trackEvent('generate_lead', {
+        lead_source: 'contact_form',
+        form_name: 'contact_form',
+        service_type: _data.topic || 'general',
+        service_category: _data.serviceType,
+        page_path: window.location.pathname
+      });
+
+      setHasStartedForm(false);
+      reset();
+      setTimeout(() => {
+        setIsSuccess(false);
+      }, 5000);
+
+    } catch (err: any) {
+      setSubmitError(err?.message || t('contact.form_error', 'Fehler beim Senden.'));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSuccess) {
@@ -217,6 +251,24 @@ export default function ContactForm() {
           </label>
         </div>
         {errors.agreeToPrivacy && <p className="text-sm text-red-500">{errors.agreeToPrivacy.message}</p>}
+
+        {/* Anti-Spam Honeypot Field */}
+        <div className="absolute opacity-0 pointer-events-none -z-50 w-0 h-0 overflow-hidden">
+          <label htmlFor="website">Leave this field blank</label>
+          <input
+            id="website"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            {...register('website')}
+          />
+        </div>
+
+        {submitError && (
+          <div className="p-4 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900/30 text-red-600 dark:text-red-400 text-sm font-medium">
+            {submitError}
+          </div>
+        )}
 
         <button 
           type="submit"

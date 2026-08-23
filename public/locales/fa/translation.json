@@ -205,7 +205,8 @@
     "form_service_type": "نوع خدمات / ساختمان",
     "form_service_business": "تجاری (شرکت‌ها)",
     "form_service_family_house": "خانه ویلایی",
-    "form_service_apartment_buildings": "آپارتمان مسکونی"
+    "form_service_apartment_buildings": "آپارتمان مسکونی",
+    "form_error": "ارسال پیام با خطا مواجه شد. لطفاً بعداً دوباره تلاش کنید یا مستقیماً با ما تماس بگیرید."
   },
   "elec": {
     "hero_t1": "Smarte Energieentscheidungen.",

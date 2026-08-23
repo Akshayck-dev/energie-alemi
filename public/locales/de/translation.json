@@ -223,7 +223,8 @@
     "form_service_private": "Privat",
     "form_service_business": "Gewerbe",
     "form_service_family_house": "Einfamilienhaus",
-    "form_service_apartment_buildings": "Mehrfamilienhaus"
+    "form_service_apartment_buildings": "Mehrfamilienhaus",
+    "form_error": "Fehler beim Senden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt."
   },
   "elec": {
     "hero_t1": "Smarte Energieentscheidungen.",

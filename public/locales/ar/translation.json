@@ -193,7 +193,8 @@
     "form_service_type": "نوع الخدمة / العقار",
     "form_service_business": "تجاري (شركات)",
     "form_service_family_house": "منزل عائلي",
-    "form_service_apartment_buildings": "عمارة سكنية"
+    "form_service_apartment_buildings": "عمارة سكنية",
+    "form_error": "فشل في إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقًا أو الاتصال بنا مباشرة."
   },
   "elec": {
     "hero_t1": "قرارات طاقة ذكية.",

@@ -223,7 +223,8 @@
     "form_service_private": "Private",
     "form_service_business": "Business",
     "form_service_family_house": "Family House",
-    "form_service_apartment_buildings": "Apartment Buildings"
+    "form_service_apartment_buildings": "Apartment Buildings",
+    "form_error": "Failed to send message. Please try again later or contact us directly."
   },
   "elec": {
     "hero_t1": "Smart energy decisions.",
