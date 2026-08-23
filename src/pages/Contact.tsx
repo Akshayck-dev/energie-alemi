@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import ContactForm from '../components/ContactForm';
 import { cn } from '../lib/utils';
 import SEO from "../components/SEO";
+import { trackEvent } from '../lib/analytics';
 
 export default function Contact() {
   const { t, i18n } = useTranslation();
@@ -72,12 +73,20 @@ export default function Contact() {
                 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center gap-6">
-                  <a href="tel:+4917665949390" className="bg-[#0047AB] hover:bg-[#003380] text-white px-8 py-3.5 rounded-full font-bold text-[15px] flex items-center gap-2 transition-colors w-full sm:w-auto justify-center group shadow-md shadow-blue-900/20">
+                  <a 
+                    href="tel:+4917665949390" 
+                    onClick={() => trackEvent('phone_click', { cta_location: 'contact_page_cta', page_path: window.location.pathname })}
+                    className="bg-[#0047AB] hover:bg-[#003380] text-white px-8 py-3.5 rounded-full font-bold text-[15px] flex items-center gap-2 transition-colors w-full sm:w-auto justify-center group shadow-md shadow-blue-900/20"
+                  >
                     <PhoneCall size={18} strokeWidth={2} />
                     {t('contact.btn_call')}
                     <ArrowRight size={18} strokeWidth={2} className={cn("ltr:ml-1 rtl:mr-1 transition-transform", i18n.dir() === 'rtl' ? "group-hover:-translate-x-1 rotate-180" : "group-hover:translate-x-1")} />
                   </a>
-                  <a href="mailto:info@energie-alemi.de" className="text-[#0047AB] dark:text-[#60a5fa] font-bold text-[15px] hover:text-[#003380] dark:hover:text-white transition-colors border-b-2 border-[#0047AB]/30 dark:border-[#60a5fa]/30 hover:border-[#0047AB] dark:hover:border-[#60a5fa] pb-1">
+                  <a 
+                    href="mailto:info@energie-alemi.de" 
+                    onClick={() => trackEvent('email_click', { cta_location: 'contact_page_cta', page_path: window.location.pathname })}
+                    className="text-[#0047AB] dark:text-[#60a5fa] font-bold text-[15px] hover:text-[#003380] dark:hover:text-white transition-colors border-b-2 border-[#0047AB]/30 dark:border-[#60a5fa]/30 hover:border-[#0047AB] dark:hover:border-[#60a5fa] pb-1"
+                  >
                     {t('contact.btn_msg')}
                   </a>
                 </div>

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import LogoVideo from './LogoVideo';
 import { cn } from '../lib/utils';
 import { openCookieSettings } from './CookieConsent';
+import { trackEvent } from '../lib/analytics';
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -44,13 +45,21 @@ export default function Footer() {
             <ul className="flex flex-col items-center md:items-start gap-4">
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 text-slate-600 dark:text-white/80">
                 <Phone size={20} className="md:mt-0.5 text-[#0047AB] dark:text-[#f0a83f]" />
-                <a href="tel:+4917665949390" className="hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors">
+                <a 
+                  href="tel:+4917665949390" 
+                  onClick={() => trackEvent('phone_click', { cta_location: 'footer', page_path: window.location.pathname })}
+                  className="hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors"
+                >
                   0176 659 493 90
                 </a>
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 text-slate-600 dark:text-white/80">
                 <Mail size={20} className="md:mt-0.5 text-[#0047AB] dark:text-[#f0a83f]" />
-                <a href="mailto:info@energie-alemi.de" className="hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors">
+                <a 
+                  href="mailto:info@energie-alemi.de" 
+                  onClick={() => trackEvent('email_click', { cta_location: 'footer', page_path: window.location.pathname })}
+                  className="hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors"
+                >
                   info@energie-alemi.de
                 </a>
               </li>

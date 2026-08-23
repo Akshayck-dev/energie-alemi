@@ -59,7 +59,8 @@ export default function HomeHero() {
     setIsCompareModalOpen(true);
     trackEvent('service_cta_click', {
       service_type: service.toLowerCase(),
-      cta_location: 'home_hero'
+      cta_location: 'home_hero',
+      page_path: window.location.pathname
     });
   };
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);

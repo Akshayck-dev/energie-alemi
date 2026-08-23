@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../lib/utils';
+import { trackEvent } from '../lib/analytics';
 
 interface CompareModalProps {
   isOpen: boolean;
@@ -23,6 +24,17 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
   const [details, setDetails] = useState('');
   const [mounted, setMounted] = useState(false);
   const firstInputRef = useRef<HTMLInputElement>(null);
+  const [hasStartedForm, setHasStartedForm] = useState(false);
+
+  const handleFormStart = () => {
+    if (!hasStartedForm) {
+      setHasStartedForm(true);
+      trackEvent('form_start', {
+        form_name: 'compare_form',
+        page_path: window.location.pathname
+      });
+    }
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -78,6 +90,16 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
     
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     
+    // Track WhatsApp submission event (interaction only, not a completed lead)
+    trackEvent('whatsapp_click', {
+      cta_location: 'compare_form',
+      page_path: window.location.pathname,
+      service_type: service ? service.toLowerCase() : 'general',
+      service_category: serviceType
+    });
+
+    setHasStartedForm(false);
+
     // Reset form and close
     setName('');
     setService('Strom');
@@ -146,7 +168,7 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
 
             {/* Scrollable Form Body */}
             <div className="p-5 sm:p-6 overflow-y-auto overscroll-contain flex-1">
-              <form id="compare-form" onSubmit={handleSubmit} className="flex flex-col gap-3.5 sm:gap-4">
+              <form id="compare-form" onSubmit={handleSubmit} onFocus={handleFormStart} className="flex flex-col gap-3.5 sm:gap-4">
                 <div>
                   <label className="block text-[11px] sm:text-xs font-bold text-slate-500 dark:text-white/60 uppercase tracking-wider mb-1.5 break-words">
                     {t('compare_modal.name_label', 'Name *')}

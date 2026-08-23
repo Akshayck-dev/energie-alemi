@@ -11,7 +11,8 @@ export default function GrundversorgungAachenStromGas() {
     trackEvent('service_cta_click', {
       service_type: 'grundversorgung',
       cta_location: 'grundversorgung_aachen_article',
-      destination: destination
+      destination: destination,
+      page_path: window.location.pathname
     });
   };
 

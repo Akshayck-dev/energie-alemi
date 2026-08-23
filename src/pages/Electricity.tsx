@@ -97,7 +97,7 @@ export default function Electricity() {
           buttonText={t('home_hero.contact_us', 'Contact us')}
           onButtonClick={() => {
             setIsModalOpen(true);
-            trackEvent('service_cta_click', { service_type: 'electricity', cta_location: 'service_hero' });
+            trackEvent('service_cta_click', { service_type: 'electricity', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
             { icon: <ShieldCheck size={24} />, title: t('elec_hero.bullet1_title') },

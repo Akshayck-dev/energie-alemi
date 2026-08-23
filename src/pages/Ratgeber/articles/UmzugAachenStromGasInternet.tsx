@@ -11,7 +11,8 @@ export default function UmzugAachenStromGasInternet() {
     trackEvent('service_cta_click', {
       service_type: 'umzug_tarifberatung',
       cta_location: 'ratgeber_umzug_aachen',
-      destination: destination
+      destination: destination,
+      page_path: window.location.pathname
     });
   };
 

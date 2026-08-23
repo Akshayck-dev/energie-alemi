@@ -29,6 +29,7 @@ export default function ContactForm() {
   const { t, i18n } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [hasStartedForm, setHasStartedForm] = useState(false);
 
   const {
     register,
@@ -43,19 +44,26 @@ export default function ContactForm() {
     }
   });
 
+  const handleFormStart = () => {
+    if (!hasStartedForm) {
+      setHasStartedForm(true);
+      trackEvent('form_start', {
+        form_name: 'contact_form',
+        page_path: window.location.pathname
+      });
+    }
+  };
+
   const onSubmit = async (_data: ContactFormValues) => {
     setIsSubmitting(true);
     await new Promise(resolve => setTimeout(resolve, 1500));
     setIsSubmitting(false);
     setIsSuccess(true);
     
-    // Track successful lead generation
-    trackEvent('generate_lead', {
-      service_type: _data.topic || 'general',
-      service_category: _data.serviceType,
-      page_path: window.location.pathname
-    });
+    // NOTE: generate_lead must only be added when a real backend/email/API submission returns confirmed success.
+    // Currently, this form submission is simulated locally on the client-side.
 
+    setHasStartedForm(false);
     reset();
     setTimeout(() => {
       setIsSuccess(false);
@@ -87,11 +95,19 @@ export default function ContactForm() {
       
       {/* Quick Contact & Address Info Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center flex-wrap gap-x-6 gap-y-3 mb-6 pb-6 border-b border-slate-100 dark:border-white/10 text-sm text-slate-600 dark:text-slate-350">
-        <a href="tel:+4917665949390" className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium">
+        <a 
+          href="tel:+4917665949390" 
+          onClick={() => trackEvent('phone_click', { cta_location: 'contact_form_info', page_path: window.location.pathname })}
+          className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium"
+        >
           <Phone size={16} className="text-[#f0a83f]" />
           <span>0176 659 493 90</span>
         </a>
-        <a href="mailto:info@energie-alemi.de" className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium">
+        <a 
+          href="mailto:info@energie-alemi.de" 
+          onClick={() => trackEvent('email_click', { cta_location: 'contact_form_info', page_path: window.location.pathname })}
+          className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium"
+        >
           <Mail size={16} className="text-[#f0a83f]" />
           <span>info@energie-alemi.de</span>
         </a>
@@ -101,7 +117,7 @@ export default function ContactForm() {
         </div>
       </div>
       
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 md:space-y-[16px]">
+      <form onSubmit={handleSubmit(onSubmit)} onFocus={handleFormStart} className="space-y-4 md:space-y-[16px]">
         <div className="grid grid-cols-2 gap-2.5 md:gap-[16px]">
           <Input 
             icon={User} 
