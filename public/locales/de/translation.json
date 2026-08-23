@@ -312,7 +312,9 @@
     "cross_p4": " direkt oder lesen Sie unseren Ratgeber zur ",
     "cross_l4": "Grundversorgung",
     "cross_p5": " oder lesen Sie unseren nützlichen ",
-    "cross_l5": "Gasvergleich-Ratgeber"
+    "cross_l5": "Gasvergleich-Ratgeber",
+    "cross_p6": " sowie unserem Ratgeber zum ",
+    "cross_l6": "Gasanbieter wechseln"
   },
   "internet": {
     "hero_t1": "Internettarife vergleichen",

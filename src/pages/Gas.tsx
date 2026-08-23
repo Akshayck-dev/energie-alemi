@@ -145,6 +145,8 @@ export default function Gas() {
                     <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{t('gas.cross_l4')}</Link>
                     <span>{t('gas.cross_p5', ' oder in unserem ')}</span>
                     <Link to="/ratgeber/gasvergleich" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{t('gas.cross_l5', 'Gasvergleich-Ratgeber')}</Link>
+                    <span>{t('gas.cross_p6', ' sowie unserem Ratgeber zum ')}</span>
+                    <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{t('gas.cross_l6', 'Gasanbieter wechseln')}</Link>
                     <span>.</span>
                   </p>
                   {/* Windmill graphic placeholder */}
