@@ -202,13 +202,13 @@ export default function ContactForm() {
           <div className="relative">
             <select 
               {...register('topic')}
-              className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-[#101828] dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.topic ? 'border-red-500' : ''}`}
+              className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-slate-900 dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.topic ? 'border-red-500' : ''}`}
             >
-              <option value="" disabled className="bg-white dark:bg-[#0a1628] text-slate-500">{t('contact.form_topic')}</option>
-              <option value="electricity" className="bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white">{t('contact.form_topic_elec')}</option>
-              <option value="gas" className="bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white">{t('contact.form_topic_gas')}</option>
-              <option value="internet" className="bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white">{t('contact.form_topic_net')}</option>
-              <option value="other" className="bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white">{t('contact.form_topic_other')}</option>
+              <option value="" disabled className="bg-white dark:bg-[#0a1628] text-slate-400 dark:text-white/40">{t('contact.form_topic')}</option>
+              <option value="electricity" className="bg-white dark:bg-[#0a1628] text-inherit">{t('contact.form_topic_elec')}</option>
+              <option value="gas" className="bg-white dark:bg-[#0a1628] text-inherit">{t('contact.form_topic_gas')}</option>
+              <option value="internet" className="bg-white dark:bg-[#0a1628] text-inherit">{t('contact.form_topic_net')}</option>
+              <option value="other" className="bg-white dark:bg-[#0a1628] text-inherit">{t('contact.form_topic_other')}</option>
             </select>
             <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 dark:text-white/50">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -221,11 +221,11 @@ export default function ContactForm() {
           <div className="relative">
             <select 
               {...register('serviceType')}
-              className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-[#101828] dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.serviceType ? 'border-red-500' : ''}`}
+              className={`flex h-12 w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#0a1628] px-4 py-2 text-sm text-slate-900 dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0047AB]/20 focus-visible:border-[#f0a83f] transition-all appearance-none ${errors.serviceType ? 'border-red-500' : ''}`}
             >
-              <option value="" disabled className="bg-white dark:bg-[#0a1628] text-slate-500">{t('contact.form_service_type')}</option>
-              <option value="private" className="bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white">{t('contact.form_service_private')}</option>
-              <option value="business" className="bg-white dark:bg-[#0a1628] text-slate-900 dark:text-white">{t('contact.form_service_business')}</option>
+              <option value="" disabled className="bg-white dark:bg-[#0a1628] text-slate-400 dark:text-white/40">{t('contact.form_service_type')}</option>
+              <option value="private" className="bg-white dark:bg-[#0a1628] text-inherit">{t('contact.form_service_private')}</option>
+              <option value="business" className="bg-white dark:bg-[#0a1628] text-inherit">{t('contact.form_service_business')}</option>
             </select>
             <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 dark:text-white/50">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -249,8 +249,8 @@ export default function ContactForm() {
             className="mt-0.5 w-[20px] h-[20px] shrink-0 rounded border-[#e5e9f0] dark:border-white/20 bg-white dark:bg-[#051024] text-[#f0a83f] focus:ring-[#f0a83f]"
             {...register('agreeToPrivacy')}
           />
-          <label htmlFor="privacy" className="text-[13px] md:text-[13.5px] text-[#475467] dark:text-slate-300 leading-[1.5]">
-            {t('contact.form_privacy_text')} <a href="#" className="text-[#0a1628] dark:text-[#f0a83f] font-semibold hover:underline">{t('contact.form_privacy_link')}</a>
+          <label htmlFor="privacy" className="text-[13px] md:text-[13.5px] text-slate-600 dark:text-slate-300 leading-[1.5]">
+            {t('contact.form_privacy_text')} <a href="#" className="text-secondary dark:text-accent font-semibold hover:underline">{t('contact.form_privacy_link')}</a>
           </label>
         </div>
         {errors.agreeToPrivacy && <p className="text-sm text-red-500 dark:text-red-400">{errors.agreeToPrivacy.message}</p>}
