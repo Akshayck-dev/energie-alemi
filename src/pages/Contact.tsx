@@ -148,7 +148,7 @@ export default function Contact() {
                 
                 <div className="flex flex-col relative z-10">
                   {/* Phone */}
-                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] border-b border-slate-100 md:border-t md:border-b-0 md:first:border-t-0">
+                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] border-b border-slate-100 dark:border-white/5 md:border-t md:border-b-0 md:first:border-t-0">
                     <div className="w-[42px] h-[42px] md:w-[46px] md:h-[46px] bg-[#f0a83f]/15 rounded-xl md:rounded-[13px] flex items-center justify-center shrink-0">
                       <Phone size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                     </div>
@@ -159,7 +159,7 @@ export default function Contact() {
                   </div>
                   
                   {/* E-Mail */}
-                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] border-b border-slate-100 md:border-t md:border-b-0">
+                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] border-b border-slate-100 dark:border-white/5 md:border-t md:border-b-0">
                     <div className="w-[42px] h-[42px] md:w-[46px] md:h-[46px] bg-[#f0a83f]/15 rounded-xl md:rounded-[13px] flex items-center justify-center shrink-0">
                       <Mail size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                     </div>
@@ -170,7 +170,7 @@ export default function Contact() {
                   </div>
                   
                   {/* Address */}
-                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] border-b border-slate-100 md:border-t md:border-b-0">
+                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] border-b border-slate-100 dark:border-white/5 md:border-t md:border-b-0">
                     <div className="w-[42px] h-[42px] md:w-[46px] md:h-[46px] bg-[#f0a83f]/15 rounded-xl md:rounded-[13px] flex items-center justify-center shrink-0">
                       <MapPin size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                     </div>
@@ -181,7 +181,7 @@ export default function Contact() {
                   </div>
                   
                   {/* Office Hours */}
-                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] md:border-t md:border-slate-100">
+                  <div className="flex gap-3.5 md:gap-[16px] items-start py-3.5 md:py-[16px] md:border-t md:border-slate-100 md:dark:border-white/5">
                     <div className="w-[42px] h-[42px] md:w-[46px] md:h-[46px] bg-[#f0a83f]/15 rounded-xl md:rounded-[13px] flex items-center justify-center shrink-0">
                       <Clock size={19} strokeWidth={1.5} className="text-[#f0a83f]" />
                     </div>
@@ -194,42 +194,42 @@ export default function Contact() {
               </div>
               
               {/* Why choose us Block */}
-              <div className="bg-white dark:bg-[#0a1628] p-6 md:p-[32px_30px] rounded-[20px] md:rounded-[22px] shadow-[0_4px_16px_rgba(10,22,40,0.06)] md:shadow-[0_8px_24px_rgba(10,22,40,0.06)] border border-[#e5e9f0]">
-                <h3 className="font-heading text-[19px] md:text-[21px] font-extrabold text-[#101828] mb-4 md:mb-[22px] tracking-[-0.01em]">
+              <div className="bg-white dark:bg-[#0a1628] p-6 md:p-[32px_30px] rounded-[20px] md:rounded-[22px] shadow-[0_4px_16px_rgba(10,22,40,0.06)] md:shadow-[0_8px_24px_rgba(10,22,40,0.06)] border border-[#e5e9f0] dark:border-white/10">
+                <h3 className="font-heading text-[19px] md:text-[21px] font-extrabold text-[#101828] dark:text-white mb-4 md:mb-[22px] tracking-[-0.01em]">
                   {t('contact.why_title')}
                 </h3>
                 
                 <div className="flex flex-col">
                   {/* Point 1 */}
-                  <div className="flex gap-3.5 md:gap-[16px] items-start py-4 md:py-[18px] border-b border-[#e5e9f0] md:border-t md:border-b-0 md:first:border-t-0">
+                  <div className="flex gap-3.5 md:gap-[16px] items-start py-4 md:py-[18px] border-b border-[#e5e9f0] dark:border-white/10 md:border-t md:border-b-0 md:first:border-t-0">
                     <div className="w-[42px] h-[42px] md:w-[46px] md:h-[46px] bg-slate-50 dark:bg-[#051024] rounded-xl md:rounded-[13px] flex items-center justify-center text-[#f0a83f] shrink-0 border border-slate-200 dark:border-white/10">
                       <ShieldCheck size={19} strokeWidth={1.5} />
                     </div>
                     <div>
-                      <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">{t('contact.why_f1_t')}</h4>
-                      <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f1_d')}</p>
+                      <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] dark:text-white mb-1">{t('contact.why_f1_t')}</h4>
+                      <p className="text-[#475467] dark:text-slate-300 text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f1_d')}</p>
                     </div>
                   </div>
                   
                   {/* Point 2 */}
-                  <div className="flex gap-3.5 md:gap-[16px] items-start py-4 md:py-[18px] border-b border-[#e5e9f0] md:border-t md:border-b-0">
+                  <div className="flex gap-3.5 md:gap-[16px] items-start py-4 md:py-[18px] border-b border-[#e5e9f0] dark:border-white/10 md:border-t md:border-b-0">
                     <div className="w-[42px] h-[42px] md:w-[46px] md:h-[46px] bg-slate-50 dark:bg-[#051024] rounded-xl md:rounded-[13px] flex items-center justify-center text-[#f0a83f] shrink-0 border border-slate-200 dark:border-white/10">
                       <LineChart size={19} strokeWidth={1.5} />
                     </div>
                     <div>
-                      <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">{t('contact.why_f2_t')}</h4>
-                      <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f2_d')}</p>
+                      <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] dark:text-white mb-1">{t('contact.why_f2_t')}</h4>
+                      <p className="text-[#475467] dark:text-slate-300 text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f2_d')}</p>
                     </div>
                   </div>
                   
                   {/* Point 3 */}
-                  <div className="flex gap-3.5 md:gap-[16px] items-start py-4 md:py-[18px] md:border-t md:border-[#e5e9f0]">
+                  <div className="flex gap-3.5 md:gap-[16px] items-start py-4 md:py-[18px] md:border-t md:border-[#e5e9f0] md:dark:border-white/10">
                     <div className="w-[42px] h-[42px] md:w-[46px] md:h-[46px] bg-slate-50 dark:bg-[#051024] rounded-xl md:rounded-[13px] flex items-center justify-center text-[#f0a83f] shrink-0 border border-slate-200 dark:border-white/10">
                       <Handshake size={19} strokeWidth={1.5} />
                     </div>
                     <div>
-                      <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] mb-1">{t('contact.why_f3_t')}</h4>
-                      <p className="text-[#475467] text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f3_d')}</p>
+                      <h4 className="font-heading text-[15.5px] md:text-[16px] font-bold text-[#101828] dark:text-white mb-1">{t('contact.why_f3_t')}</h4>
+                      <p className="text-[#475467] dark:text-slate-300 text-[13.5px] md:text-[14px] leading-[1.55]">{t('contact.why_f3_d')}</p>
                     </div>
                   </div>
                 </div>
