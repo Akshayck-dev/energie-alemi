@@ -123,7 +123,7 @@ export default function HomeHero() {
   }, [activeIndex, advanceSlide]);
 
   return (
-    <section className="relative min-h-[60vh] md:min-h-[75vh] lg:min-h-[85vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
+    <section className="relative min-h-screen md:min-h-[75vh] lg:min-h-[85vh] flex items-center pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden bg-white dark:bg-[#0a1628]">
       {/* LCP Optimization: Preload first slide images responsive using media queries */}
       <Helmet>
         {/* Mobile Preload */}
