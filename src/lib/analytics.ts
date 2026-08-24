@@ -21,17 +21,15 @@ function ensureDataLayer() {
   }
 }
 
+const CONSENT_KEY = 'ea_cookie_consent';
+const CONSENT_VERSION = 'v1';
+
 // Track whether script is already injected to prevent duplicates
 let isScriptInjected = false;
 let isConfigured = false;
 
-/**
- * Initializes Consent Mode v2 with default denied states.
- * Must be called early, even before script injection.
- */
-export function initializeConsentDefaults() {
-  if (!MEASUREMENT_ID) return;
-  
+// Synchronous default consent initialization and restoration on client-side
+if (typeof window !== 'undefined') {
   ensureDataLayer();
   
   // Set default consent state (all denied)
@@ -41,6 +39,46 @@ export function initializeConsentDefaults() {
     ad_personalization: 'denied',
     analytics_storage: 'denied',
   });
+
+  // Restore consent immediately if previously granted
+  const saved = localStorage.getItem(CONSENT_KEY);
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      if (parsed && parsed.version === CONSENT_VERSION && parsed.analytics) {
+        window.gtag('consent', 'update', {
+          analytics_storage: 'granted',
+        });
+        
+        // Inject script immediately
+        if (MEASUREMENT_ID && !isScriptInjected) {
+          const script = document.createElement('script');
+          script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
+          script.async = true;
+          document.head.appendChild(script);
+          isScriptInjected = true;
+        }
+
+        // Configure GA immediately
+        if (MEASUREMENT_ID && !isConfigured) {
+          window.gtag('js', new Date());
+          window.gtag('config', MEASUREMENT_ID, {
+            send_page_view: false,
+          });
+          isConfigured = true;
+        }
+      }
+    } catch (_) {}
+  }
+}
+
+/**
+ * Initializes Consent Mode v2 with default denied states.
+ * Keep as no-op to maintain interface compatibility.
+ */
+export function initializeConsentDefaults() {
+  if (!MEASUREMENT_ID) return;
+  ensureDataLayer();
 }
 
 /**
