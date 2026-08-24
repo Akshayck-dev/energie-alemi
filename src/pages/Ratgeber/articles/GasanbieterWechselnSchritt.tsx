@@ -30,7 +30,11 @@ export default function GasanbieterWechselnSchritt() {
   ];
 
   return (
-    <ArticleLayout article={article} faqs={faqs}>
+    <ArticleLayout 
+      article={article} 
+      customH1="Gasanbieter wechseln: Schritt-für-Schritt-Anleitung"
+      faqs={faqs}
+    >
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
         Der Wechsel des Gasanbieters funktioniert reibungslos im Hintergrund. Es sind keine technischen Anpassungen an Ihrer Heizung oder den Leitungen nötig.
       </p>
@@ -52,7 +56,7 @@ export default function GasanbieterWechselnSchritt() {
       
       <h3>Schritt 1: Tarife vergleichen</h3>
       <p>
-        Vergleichen Sie über unseren <Link to="/gas" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Vergleichsrechner</Link> verschiedene Angebote. Achten Sie auf Vertragslaufzeiten und Preisgarantien. Weitere Details zur Tarifwahl liefert unser <Link to="/ratgeber/gasvergleich" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Gasvergleich-Ratgeber</Link>.
+        Vergleichen Sie über unseren <Link to="/gas" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Gastarifvergleich</Link> verschiedene Angebote. Achten Sie auf Vertragslaufzeiten und Preisgarantien. Weitere Details zur Tarifwahl liefert unser <Link to="/ratgeber/gasvergleich" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Gasvergleich-Ratgeber</Link>.
       </p>
 
       <h3>Schritt 2: Neuen Vertrag abschließen</h3>
@@ -101,7 +105,7 @@ export default function GasanbieterWechselnSchritt() {
 
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
         <h3 className="text-2xl font-bold mb-4 mt-0">Jetzt Wechsel prüfen</h3>
-        <p className="mb-6">Vergleichen Sie jetzt die Tarife und ermitteln Sie Ihr Sparpotenzial.</p>
+        <p className="mb-6">Vergleichen Sie jetzt die Tarife oder kontaktieren Sie uns für eine persönliche Unterstützung über unser <Link to="/contact" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Kontaktformular</Link>.</p>
         <Link to="/gas">
           <Button variant="primary">Zum Gasvergleich</Button>
         </Link>

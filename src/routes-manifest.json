@@ -25,22 +25,22 @@
     "path": "/gas",
     "isPublic": true,
     "isIndexable": true,
-    "title": "Gasvergleich Aachen | Gastarife vergleichen & Anbieter wechseln",
-    "description": "Kostenloser Gasvergleich Aachen: Günstige Gasanbieter vergleichen und wechseln. Sichern Sie sich jetzt passende Gastarife in Aachen und sparen Sie Geld.",
+    "title": "Gastarife vergleichen & Anbieter wechseln | Energie Alemi",
+    "description": "Gastarife vergleichen, passenden Anbieter finden und mögliche Einsparpotenziale entdecken. Energie Alemi unterstützt Sie persönlich beim Gasanbieterwechsel.",
     "canonical": "/gas",
     "sitemapInclusion": true,
-    "lastmod": "2026-08-09",
+    "lastmod": "2026-08-24",
     "structuredDataType": "WebPage"
   },
   {
     "path": "/electricity",
     "isPublic": true,
     "isIndexable": true,
-    "title": "Stromvergleich Aachen | Stromtarife vergleichen – Energie Alemi",
-    "description": "Ihr Stromvergleich für Aachen: Jetzt Stromanbieter vergleichen und wechseln. Finden Sie günstige Stromtarife für Ihren Haushalt in Aachen.",
+    "title": "Stromtarife vergleichen & Anbieter wechseln | Energie Alemi",
+    "description": "Stromtarife vergleichen, passenden Anbieter finden und mögliche Einsparpotenziale entdecken. Energie Alemi unterstützt Sie persönlich beim Anbieterwechsel.",
     "canonical": "/electricity",
     "sitemapInclusion": true,
-    "lastmod": "2026-08-09",
+    "lastmod": "2026-08-24",
     "structuredDataType": "WebPage"
   },
   {
