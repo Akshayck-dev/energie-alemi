@@ -6,13 +6,14 @@ interface SEOProps {
   title?: string;
   description?: string;
   url?: string;
+  image?: string;
   isArticle?: boolean;
   datePublished?: string;
   dateModified?: string;
   faqs?: any;
 }
 
-export default function SEO({ title, description, url, isArticle, datePublished, dateModified, faqs }: SEOProps) {
+export default function SEO({ title, description, url, image, isArticle, datePublished, dateModified, faqs }: SEOProps) {
   const { i18n } = useTranslation();
   const lang = i18n.language || 'de';
 
@@ -40,6 +41,9 @@ export default function SEO({ title, description, url, isArticle, datePublished,
   // Dynamic Base URL
   const baseUrl = import.meta.env.VITE_SITE_URL || 'https://www.energie-alemi.de';
   const canonicalUrl = url ? `${baseUrl}${url.replace(/\/$/, '')}` : baseUrl;
+  
+  // Resolve image
+  const resolvedImage = image ? (image.startsWith('http') ? image : `${baseUrl}${image.startsWith('/') ? image : `/${image}`}`) : `${baseUrl}/about-hero-image.webp`;
 
   // Strict check on environment variable to prevent staging indexation
   const allowIndexing = import.meta.env.VITE_ALLOW_INDEXING === "true";
@@ -185,7 +189,7 @@ export default function SEO({ title, description, url, isArticle, datePublished,
       <meta property="og:title" content={seoTitle} />
       <meta property="og:description" content={seoDescription} />
       <meta property="og:type" content={isArticle ? "article" : "website"} />
-      <meta property="og:image" content={`${baseUrl}/about-hero-image.webp`} />
+      <meta property="og:image" content={resolvedImage} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:locale" content={ogLocale} />
       
@@ -193,7 +197,7 @@ export default function SEO({ title, description, url, isArticle, datePublished,
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seoTitle} />
       <meta name="twitter:description" content={seoDescription} />
-      <meta name="twitter:image" content={`${baseUrl}/about-hero-image.webp`} />
+      <meta name="twitter:image" content={resolvedImage} />
       
       {/* Structured Data */}
       <script type="application/ld+json">

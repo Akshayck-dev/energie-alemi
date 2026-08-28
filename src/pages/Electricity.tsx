@@ -85,7 +85,7 @@ export default function Electricity() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO url="/electricity" faqs={faqs} />
+      <SEO url="/electricity" image={elecHeroDesk} faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

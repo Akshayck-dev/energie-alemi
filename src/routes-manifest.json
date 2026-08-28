@@ -11,17 +11,6 @@
     "structuredDataType": "Organization"
   },
   {
-    "path": "/tarifberatung-aachen",
-    "isPublic": true,
-    "isIndexable": true,
-    "title": "Tarifberatung Aachen | Lokaler Partner für Strom, Gas & Internet",
-    "description": "Individuelle Tarifberatung in Aachen. Finden Sie persönliche und passende Energie Tarife für Strom, Gas und Internet bei Energie Alemi vor Ort.",
-    "canonical": "/tarifberatung-aachen",
-    "sitemapInclusion": true,
-    "lastmod": "2026-08-11",
-    "structuredDataType": "WebPage"
-  },
-  {
     "path": "/gas",
     "isPublic": true,
     "isIndexable": true,
@@ -58,7 +47,7 @@
     "path": "/about",
     "isPublic": true,
     "isIndexable": true,
-    "title": "Über uns - Energie Alemi",
+    "title": "Über uns | Energie Alemi – Tarifberatung Aachen",
     "description": "Erfahren Sie mehr über Energie Alemi. Wir sind Ihr zuverlässiger Partner für den Strom-, Gas- und Internetvergleich in Deutschland.",
     "canonical": "/about",
     "sitemapInclusion": true,
@@ -69,7 +58,7 @@
     "path": "/contact",
     "isPublic": true,
     "isIndexable": true,
-    "title": "Kontakt - Energie Alemi",
+    "title": "Kontakt | Energie Alemi – Beratung Strom, Gas, Internet Aachen",
     "description": "Haben Sie Fragen zu Strom-, Gas- oder Internettarifen? Kontaktieren Sie Energie Alemi per E-Mail, Telefon oder Kontaktformular.",
     "canonical": "/contact",
     "sitemapInclusion": true,

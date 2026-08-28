@@ -97,7 +97,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Follow Us */}
+          {/* Follow Us (Hidden until URLs are provided)
           <div className="flex flex-col items-center md:items-start gap-5">
             <h2 className="font-heading font-bold text-slate-900 dark:text-white text-xl">{t('footer.follow_us')}</h2>
             <div className="flex gap-4 text-slate-600 dark:text-white/80">
@@ -109,6 +109,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
+          */}
 
         </div>
 

@@ -250,7 +250,7 @@ export default function ContactForm() {
             {...register('agreeToPrivacy')}
           />
           <label htmlFor="privacy" className="text-[13px] md:text-[13.5px] text-slate-600 dark:text-slate-300 leading-[1.5]">
-            {t('contact.form_privacy_text')} <a href="#" className="text-secondary dark:text-accent font-semibold hover:underline">{t('contact.form_privacy_link')}</a>
+            {t('contact.form_privacy_text')} <a href="/datenschutz" className="text-secondary dark:text-accent font-semibold hover:underline">{t('contact.form_privacy_link')}</a>
           </label>
         </div>
         {errors.agreeToPrivacy && <p className="text-sm text-red-500 dark:text-red-400">{errors.agreeToPrivacy.message}</p>}

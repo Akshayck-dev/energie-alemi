@@ -93,10 +93,10 @@ export default function FAQ() {
             <p className="text-[#0047AB] dark:text-[#4F8CFF] font-heading font-medium tracking-wider uppercase text-sm mb-2">
               {t('faq_page.subtitle', 'FAQ')}
             </p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
+            <h1 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
               {t('faq_page.title', 'Häufig gestellte ')}{' '}
               <span className="text-slate-400 dark:text-white/50">{t('faq_page.title_span', 'Fragen.')}</span>
-            </h2>
+            </h1>
           </div>
 
           <div className="bg-white dark:bg-[#051024] rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-slate-100 dark:border-white/10 px-6 md:px-10">

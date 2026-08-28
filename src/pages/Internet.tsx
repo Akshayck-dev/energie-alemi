@@ -87,7 +87,7 @@ export default function Internet() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO url="/internet" faqs={faqs} />
+      <SEO url="/internet" image={netHeroDesk} faqs={faqs} />
       <div className="sticky top-0 z-0 md:relative">
         <ServiceHero 
           theme="dark"

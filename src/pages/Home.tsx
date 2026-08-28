@@ -7,6 +7,7 @@ import ProcessSection from '../components/sections/ProcessSection';
 import PromiseSection from '../components/sections/PromiseSection';
 import SEO from "../components/SEO";
 
+import heroDesk from '../assets/hero_desk.webp';
 import bannerDesk from '../assets/banner_desk.webp';
 import bannerMob from '../assets/banner_mob.webp';
 import ownerImg from '../assets/image-admin.JPG.webp';
@@ -16,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO url="/" />
+      <SEO url="/" image={heroDesk} />
       {/* Hero is sticky on mobile so the rest of the page slides over it */}
       <div className="sticky top-0 z-0 md:relative">
         <HomeHero />
