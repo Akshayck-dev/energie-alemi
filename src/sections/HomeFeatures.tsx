@@ -43,7 +43,7 @@ export default function HomeFeatures() {
             </p>
             <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mb-6">
               <span>{t('home_features.visit_us_part1')}</span>
-              <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('home_features.visit_us_link')}</Link>
+              <Link to="/contact" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('home_features.visit_us_link')}</Link>
               <span>{t('home_features.visit_us_part2')}</span>
             </p>
             <div className="w-12 h-[3px] bg-[#0047AB]"></div>

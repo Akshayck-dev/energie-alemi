@@ -34,7 +34,7 @@ export default function Contact() {
                   {t('contact.header_desc')}
                   <br /><br />
                   <span>{t('contact.visit_p1')}</span>
-                  <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('contact.visit_l1')}</Link>
+                  <span className="text-[#0047AB] dark:text-[#f0a83f] font-semibold">{t('contact.visit_l1')}</span>
                   <span>.</span>
                 </p>
                 

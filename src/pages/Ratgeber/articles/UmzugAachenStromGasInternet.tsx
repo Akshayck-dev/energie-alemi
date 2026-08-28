@@ -99,7 +99,7 @@ export default function UmzugAachenStromGasInternet() {
           <Link to="/contact" onClick={() => handleCtaClick('/contact')}>
             <Button variant="primary">Kostenfreie Beratung anfordern</Button>
           </Link>
-          <Link to="/tarifberatung-aachen" onClick={() => handleCtaClick('/tarifberatung-aachen')}>
+          <Link to="/contact" onClick={() => handleCtaClick('/contact')}>
             <Button variant="outline">Tarifberatung Details</Button>
           </Link>
         </div>

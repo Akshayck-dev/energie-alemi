@@ -144,7 +144,7 @@ export default function GrundversorgungAachenStromGas() {
       <ul>
         <li>Führen Sie einen schnellen <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Stromvergleich für Aachen</Link> durch (Einzelheiten zum Ablauf liefert unser <Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Ratgeber zum Anbieterwechsel</Link>).</li>
         <li>Nutzen Sie den <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich für Aachen</Link>, um Heizkosten zu reduzieren (wertvolle Informationen bieten unser <Link to="/ratgeber/gasvergleich" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gasvergleich-Ratgeber</Link> sowie unser <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Ratgeber zum Anbieterwechsel</Link>).</li>
-        <li>Informieren Sie sich über unsere lokale <Link to="/tarifberatung-aachen" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung vor Ort in Aachen</Link>.</li>
+        <li>Informieren Sie sich über unsere lokale <Link to="/contact" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Tarifberatung vor Ort in Aachen</Link>.</li>
       </ul>
       <p>
         Haben Sie Fragen zum Wechselprozess oder benötigen Hilfe bei der Kündigung Ihres alten Vertrages? Nehmen Sie einfach direkt <Link to="/contact" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Kontakt mit uns auf</Link>. Wir unterstützen Sie gerne unverbindlich.
@@ -159,7 +159,7 @@ export default function GrundversorgungAachenStromGas() {
           <Link to="/contact" onClick={() => handleCtaClick('/contact')}>
             <Button variant="primary">Kostenfreie Beratung anfordern</Button>
           </Link>
-          <Link to="/tarifberatung-aachen" onClick={() => handleCtaClick('/tarifberatung-aachen')}>
+          <Link to="/contact" onClick={() => handleCtaClick('/contact')}>
             <Button variant="outline">Tarifberatung Details</Button>
           </Link>
         </div>
