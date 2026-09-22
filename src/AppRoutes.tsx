@@ -16,6 +16,7 @@ import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import NotFound from './pages/NotFound';
 import StromanbieterAachen from './pages/StromanbieterAachen';
+import GasanbieterAachen from './pages/GasanbieterAachen';
 
 import FAQ from './pages/FAQ';
 import RatgeberIndex from './pages/Ratgeber/RatgeberIndex';
@@ -62,6 +63,7 @@ export default function AppRoutes() {
           {/* FAQ Route */}
           <Route path="/faq" element={<FAQ />} />
           <Route path="/stromanbieter-aachen" element={<StromanbieterAachen />} />
+          <Route path="/gasanbieter-aachen" element={<GasanbieterAachen />} />
           
           {/* Ratgeber Routes */}
           <Route path="/ratgeber" element={<RatgeberIndex />} />

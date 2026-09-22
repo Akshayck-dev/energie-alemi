@@ -207,5 +207,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-22",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/gasanbieter-aachen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasanbieter Aachen vergleichen | Energie Alemi",
+    "description": "Gasanbieter in Aachen vergleichen: Energie Alemi prüft Arbeitspreis, Grundpreis, Preisgarantie und Laufzeit – persönlich und transparent beraten.",
+    "canonical": "/gasanbieter-aachen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-22",
+    "structuredDataType": "FAQPage"
   }
 ]
