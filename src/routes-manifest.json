@@ -196,5 +196,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-08-16",
     "structuredDataType": "Article"
+  },
+  {
+    "path": "/stromanbieter-aachen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromanbieter Aachen vergleichen | Energie Alemi",
+    "description": "Stromtarife in Aachen vergleichen: Energie Alemi prüft Ihren Vertrag, findet passende Angebote und begleitet den Anbieterwechsel persönlich.",
+    "canonical": "/stromanbieter-aachen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-22",
+    "structuredDataType": "FAQPage"
   }
 ]
