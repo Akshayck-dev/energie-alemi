@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Routes, Route, useLocation, Navigate } from 'react-router';
+import { Routes, Route, useLocation } from 'react-router';
 import { useTranslation } from 'react-i18next';
 import MainLayout from './layouts/MainLayout';
 import SplashScreen from './components/SplashScreen';
@@ -51,7 +51,7 @@ export default function AppRoutes() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/tarifberatung-aachen" element={<Navigate to="/" replace />} />
+
           <Route path="/gas" element={<Gas />} />
           <Route path="/internet" element={<Internet />} />
           <Route path="/electricity" element={<Electricity />} />
