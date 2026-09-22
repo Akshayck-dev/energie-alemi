@@ -1,4 +1,4 @@
-import { Search, Handshake, ArrowLeftRight, Leaf, Calendar, BarChart3, CheckSquare, Zap, ArrowRight, Clock, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
+import { Search, Handshake, BarChart3, CheckSquare, Zap, ArrowRight, Clock, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
 import { Link } from 'react-router';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
@@ -8,7 +8,6 @@ import SectionHeader from '../components/ui/SectionHeader';
 import Timeline from '../components/ui/Timeline';
 import FAQ from '../components/ui/FAQ';
 import Button from '../components/ui/Button';
-import { cn } from '../lib/utils';
 import elecHeroDesk from '../assets/electricity hero desk.webp';
 import SEO from "../components/SEO";
 
