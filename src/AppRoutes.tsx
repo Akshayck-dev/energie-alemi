@@ -21,6 +21,9 @@ import InternetanbieterAachen from './pages/InternetanbieterAachen';
 import StromanbieterStolberg from './pages/StromanbieterStolberg';
 import GasanbieterStolberg from './pages/GasanbieterStolberg';
 import InternetanbieterStolberg from './pages/InternetanbieterStolberg';
+import StromanbieterEschweiler from './pages/StromanbieterEschweiler';
+import GasanbieterEschweiler from './pages/GasanbieterEschweiler';
+import InternetanbieterEschweiler from './pages/InternetanbieterEschweiler';
 
 import FAQ from './pages/FAQ';
 import RatgeberIndex from './pages/Ratgeber/RatgeberIndex';
@@ -72,6 +75,9 @@ export default function AppRoutes() {
           <Route path="/stromanbieter-stolberg" element={<StromanbieterStolberg />} />
           <Route path="/gasanbieter-stolberg" element={<GasanbieterStolberg />} />
           <Route path="/internetanbieter-stolberg" element={<InternetanbieterStolberg />} />
+          <Route path="/stromanbieter-eschweiler" element={<StromanbieterEschweiler />} />
+          <Route path="/gasanbieter-eschweiler" element={<GasanbieterEschweiler />} />
+          <Route path="/internetanbieter-eschweiler" element={<InternetanbieterEschweiler />} />
           
           {/* Ratgeber Routes */}
           <Route path="/ratgeber" element={<RatgeberIndex />} />

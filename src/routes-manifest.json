@@ -262,5 +262,38 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-26",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/stromanbieter-eschweiler",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromanbieter Eschweiler vergleichen | Energie Alemi",
+    "description": "Stromtarife in Eschweiler vergleichen: Energie Alemi prüft Kosten, Laufzeit und Vertragsdetails und begleitet auf Wunsch den Anbieterwechsel.",
+    "canonical": "/stromanbieter-eschweiler",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/gasanbieter-eschweiler",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasanbieter Eschweiler vergleichen | Energie Alemi",
+    "description": "Gastarife in Eschweiler vergleichen: Energie Alemi prüft Verbrauch, Gesamtkosten und Vertragsbedingungen und unterstützt beim Anbieterwechsel.",
+    "canonical": "/gasanbieter-eschweiler",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/internetanbieter-eschweiler",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Internetanbieter Eschweiler vergleichen | Energie Alemi",
+    "description": "Internettarife in Eschweiler vergleichen: Energie Alemi prüft Verfügbarkeit, Leistung, Kosten und Vertragsdetails für Privat- und Geschäftskunden.",
+    "canonical": "/internetanbieter-eschweiler",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
   }
 ]
