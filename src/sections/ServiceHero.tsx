@@ -7,7 +7,7 @@ export interface ServiceHeroProps {
   badgeIcon: React.ReactNode;
   badgeText: string;
   title: React.ReactNode;
-  description: string;
+  description: React.ReactNode;
   bgImage: string;
   bgImageMobile?: string;
   bulletPoints: {

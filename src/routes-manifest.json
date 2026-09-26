@@ -229,5 +229,41 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-26",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/stromanbieter-stolberg",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromanbieter Stolberg vergleichen | Energie Alemi",
+    "description": "Stromtarife in Stolberg persönlich vergleichen: Energie Alemi prüft Vertrag, Verbrauch und Konditionen und begleitet auf Wunsch den Anbieterwechsel.",
+    "canonical": "/stromanbieter-stolberg",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/gasanbieter-stolberg",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasanbieter Stolberg vergleichen | Energie Alemi",
+    "description": "Gastarife in Stolberg persönlich vergleichen: Energie Alemi prüft Verbrauch, Vertrag und Konditionen und begleitet auf Wunsch den Anbieterwechsel.",
+    "canonical": "/gasanbieter-stolberg",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/internetanbieter-stolberg",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Internetanbieter Stolberg vergleichen | Energie Alemi",
+    "description": "Internettarife in Stolberg vergleichen: Energie Alemi prüft Verfügbarkeit, Geschwindigkeit und Vertragskosten für Zuhause und Unternehmen.",
+    "canonical": "/internetanbieter-stolberg",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
+  },
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
   }
 ]
