@@ -12,7 +12,7 @@ export default function Footer() {
   const quickLinks = [
     { key: 'electricity', path: '/electricity', name: t('nav.electricity') },
     { key: 'gas', path: '/gas', name: t('nav.gas') },
-    { key: 'internet', path: '/internet', name: t('nav.internet') },
+    { key: 'internet', path: '/internetanbieter-aachen', name: t('nav.internet') },
     { key: 'ratgeber', path: '/ratgeber', name: t('nav.ratgeber') },
     { key: 'faq', path: '/faq', name: t('nav.faq', 'FAQ') },
     { key: 'about_us', path: '/about', name: t('nav.about_us') },

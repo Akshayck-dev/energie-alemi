@@ -1,5 +1,5 @@
 import { Search, Handshake, BarChart3, CheckSquare, Flame, ArrowRight, MapPin, Phone, Settings, ClipboardList } from 'lucide-react';
-
+import { Link } from 'react-router';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -148,6 +148,9 @@ export default function GasanbieterAachen() {
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Wir betrachten diese Punkte gemeinsam und ordnen Boni oder Aktionspreise so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine nachvollziehbare Entscheidungsgrundlage statt einer unübersichtlichen Tarifliste.
+          </p>
+          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
+            Übrigens: Wir beraten Sie nicht nur zu Gas, sondern unterstützen Sie als <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter</Link> und <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter in Aachen</Link> auch bei der gemeinsamen Vertragsoptimierung.
           </p>
         </div>
         

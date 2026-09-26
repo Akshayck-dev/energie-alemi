@@ -218,5 +218,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-22",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/internetanbieter-aachen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Internetanbieter Aachen | Tarife vergleichen | Energie Alemi",
+    "description": "Internettarife in Aachen vergleichen: persönliche Beratung für DSL, Kabel und Glasfaser. Kostenlose Bedarfsanalyse bei Energie Alemi.",
+    "canonical": "/internetanbieter-aachen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-26",
+    "structuredDataType": "FAQPage"
   }
 ]

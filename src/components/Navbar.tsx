@@ -12,7 +12,7 @@ const navLinks = [
   { key: 'home', path: '/' },
   { key: 'electricity', path: '/electricity' },
   { key: 'gas', path: '/gas' },
-  { key: 'internet', path: '/internet' },
+  { key: 'internet', path: '/internetanbieter-aachen' },
   { key: 'ratgeber', path: '/ratgeber' },
   { key: 'faq', path: '/faq' },
   { key: 'about_us', path: '/about' },

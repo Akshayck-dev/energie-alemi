@@ -1,0 +1,219 @@
+SEO-LANDINGPAGE
+Gasanbieter Aachen
+Vollständiger Seitentext, FAQs und React-Implementierung
+
+Ziel der Seite
+Menschen und Unternehmen in Aachen sollen Gastarife verständlich vergleichen, wichtige Vertragsdetails richtig einordnen und direkt eine persönliche Beratung bei Energie Alemi anfragen können.
+Primäres Keyword
+Gasanbieter Aachen
+Suchintention
+lokaler Tarifvergleich + persönliche Beratung
+Ziel-URL
+/gasanbieter-aachen/
+Primäre Conversion
+kostenlose Beratung anfragen
+Stand: September 2026
+
+SEO-Vorgaben
+URL
+/gasanbieter-aachen/
+SEO-Titel
+Gasanbieter Aachen vergleichen | Energie Alemi
+Meta Description
+Gasanbieter in Aachen vergleichen: Energie Alemi prüft Arbeitspreis, Grundpreis, Preisgarantie und Laufzeit – persönlich und transparent beraten.
+H1
+Gasanbieter Aachen vergleichen – persönlich beraten, klar entscheiden
+Canonical
+Selbstreferenziell auf die finale HTTPS-URL setzen
+Keyword-Set
+Primär: Gasanbieter Aachen. Sekundär und semantisch: Gasvergleich Aachen, Gastarif Aachen, Gasanbieter wechseln Aachen, Gasberatung Aachen, Gas Grundversorgung Aachen. Die Begriffe werden natürlich verteilt; die Seite bleibt für Menschen geschrieben.
+Redaktioneller Grundsatz
+Keine festen Preis- oder Sparversprechen nennen. Gaspreise und verfügbare Tarife ändern sich; konkrete Aussagen gehören in den individuellen Vergleich zum Zeitpunkt der Anfrage.
+
+
+Seitentext
+HERO
+Gasanbieter Aachen vergleichen – persönlich beraten, klar entscheiden
+Sie möchten Ihren Gastarif in Aachen prüfen oder den Gasanbieter wechseln? Energie Alemi vergleicht verfügbare Angebote verschiedener Anbieter und erklärt Ihnen verständlich, worauf es bei Preis, Laufzeit und Vertragsbedingungen ankommt.
+Primärer CTA: Jetzt Gastarif prüfen
+Sekundärer CTA: Kostenlose Beratung anfragen
+Kurzvorteile unter dem Hero
+Persönliche Beratung in Aachen  •  Transparenter Tarifvergleich  •  Unterstützung beim Anbieterwechsel
+
+Gasvergleich in Aachen: Nicht nur auf den Arbeitspreis schauen
+Ein günstiger Arbeitspreis wirkt attraktiv, entscheidet aber nicht allein über die tatsächlichen Jahreskosten. Auch der Grundpreis, die Preisgarantie, die Vertragslaufzeit und die Kündigungsfrist beeinflussen, ob ein Gastarif zu Ihrem Verbrauch und Ihrem Wunsch nach Flexibilität passt.
+Wir betrachten diese Punkte gemeinsam und ordnen Boni oder Aktionspreise so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine nachvollziehbare Entscheidungsgrundlage statt einer unübersichtlichen Tarifliste.
+Ihre Vorteile bei Energie Alemi
+Tarife verständlich vergleichen: Wir stellen Kosten und Vertragsbedingungen übersichtlich gegenüber.
+Persönlich vor Ort beraten: Bei Fragen haben Sie einen direkten Ansprechpartner in Aachen.
+Passend zum Bedarf auswählen: Verbrauch, Haushaltssituation und gewünschte Flexibilität fließen in die Auswahl ein.
+Beim Wechsel begleitet werden: Wir unterstützen Sie von der Prüfung Ihrer Unterlagen bis zum neuen Liefervertrag.
+Für wen lohnt sich ein Gasvergleich?
+Ein Vergleich kann besonders sinnvoll sein, wenn Ihre Preisgarantie bald endet, eine Preiserhöhung angekündigt wurde, Sie noch in der Grundversorgung sind oder sich Ihr Verbrauch verändert hat. Auch bei einem Umzug oder vor der Verlängerung eines bestehenden Vertrags lohnt sich ein genauer Blick auf die Konditionen.
+Wichtig für Mieterinnen und Mieter
+Wer eine eigene Gastherme und einen eigenen Gasliefervertrag hat, kann den Anbieter in der Regel selbst wählen. Bei einer zentralen Heizungsanlage liegt der Liefervertrag häufig bei der Vermietung oder Hausverwaltung.
+
+Das gehört in einen fairen Gastarif-Vergleich
+Kriterium
+Darauf kommt es an
+Prüffrage
+Arbeitspreis
+Preis je verbrauchter kWh
+Wie stark wirkt er bei meinem Verbrauch?
+Grundpreis
+Fester Betrag pro Monat/Jahr
+Wie hoch sind die Fixkosten?
+Preisgarantie
+Dauer und abgedeckte Bestandteile
+Was darf sich trotz Garantie ändern?
+Kündigungsfrist
+Frist und Vertragsverlängerung
+Bis wann muss gekündigt werden?
+Zusätzlich prüfen
+Vertragslaufzeit: Eine längere Bindung kann Planungssicherheit geben, schränkt aber die Flexibilität für einen späteren Wechsel ein.
+Bonusbedingungen: Neukunden- oder Sofortboni können den Preis im ersten Jahr senken. Entscheidend sind die Voraussetzungen und die Kosten ohne Bonus.
+Abschlag und Jahreskosten: Der monatliche Abschlag ist eine Vorauszahlung. Für den Vergleich zählt die nachvollziehbare Prognose der Gesamtkosten.
+Zahlungsweise: Tarife mit Vorkasse oder Paketmengen sollten besonders sorgfältig geprüft werden.
+CTA nach der Checkliste
+Sie möchten wissen, welcher Gastarif zu Ihrem Verbrauch passt? Jetzt Gasrechnung prüfen lassen.
+
+So funktioniert der Gasanbieterwechsel in vier Schritten
+1
+Verbrauch und Vertrag erfassen
+Wir prüfen Ihre letzte Gasrechnung, den Jahresverbrauch, den aktuellen Tarif und die Vertragsfristen.
+
+2
+Verfügbare Tarife vergleichen
+Wir stellen passende Angebote für Ihre Lieferadresse in Aachen gegenüber und erklären Preis sowie Vertragsbedingungen.
+
+3
+Tarif auswählen und Wechsel beauftragen
+Sie entscheiden in Ruhe. Anschließend wird der Lieferantenwechsel mit den erforderlichen Angaben angestoßen.
+
+4
+Bestätigung prüfen und weiter begleiten
+Wir achten auf Lieferbeginn, Abschlag und Vertragsbestätigung und bleiben bei Rückfragen erreichbar.
+
+Diese Angaben helfen beim Vergleich
+Lieferadresse: Postleitzahl und Anschrift in Aachen.
+Jahresverbrauch: Zu finden auf der letzten Jahresabrechnung, angegeben in Kilowattstunden.
+Vertragsdaten: Aktueller Anbieter, Tarif, Laufzeit und Kündigungsfrist.
+Zählerdaten: Zählernummer und später zum Wechseltermin der aktuelle Zählerstand.
+Gasversorgung in Aachen: Lieferant und Netzbetreiber sind nicht dasselbe
+In Aachen übernimmt die STAWAG die Gas-Grundversorgung. Die Grundversorgung ist der gesetzlich geregelte Basistarif des örtlichen Grundversorgers. Wer Gas entnimmt, ohne zuvor einen Sondervertrag abgeschlossen zu haben, kann – abhängig von der konkreten Situation – in der Grund- oder Ersatzversorgung landen.
+Für das Gasnetz in Aachen ist die Regionetz GmbH zuständig. Sie betreibt die Netzinfrastruktur; der gewählte Gasanbieter verkauft und liefert die Energie auf vertraglicher Ebene. Ein Anbieterwechsel ändert deshalb nicht das vorhandene Leitungsnetz und erfordert normalerweise keinen Austausch des Gaszählers.
+Rolle
+Unternehmen
+Aufgabe
+Grundversorger
+STAWAG
+Grund- und Ersatzversorgung; eigene Gastarife
+Netzbetreiber
+Regionetz GmbH
+Gasnetz, Anschluss und technische Netzinfrastruktur
+Was bedeutet das für Ihren Wechsel?
+Sie können einen anderen Lieferanten wählen, während der Netzbetreiber gleich bleibt. Der Wechsel ist ein vertraglicher Vorgang. Laut einer Verbraucherinformation des Bundes ist der Lieferantenwechsel kostenlos; die Energieversorgung bleibt dabei sichergestellt. Für einen Vertrag außerhalb der Grundversorgung gelten die vereinbarten Laufzeiten und Kündigungsfristen.
+Hinweis zur Grundversorgung
+Ein Gas-Grundversorgungsvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die jeweiligen Vertragsbedingungen.
+
+Persönliche Gasberatung in Aachen
+Ein Online-Rechner zeigt Zahlen. Eine persönliche Beratung hilft dabei, diese Zahlen richtig einzuordnen. Energie Alemi prüft mit Ihnen, welcher Gastarif zu Verbrauch, Immobilie und gewünschter Vertragsflexibilität passt – verständlich und direkt in Aachen.
+Die Beratung richtet sich an private Haushalte, Eigentümerinnen und Eigentümer sowie Gewerbekunden mit eigenem Gasliefervertrag. Wenn ein Wechsel aktuell nicht sinnvoll ist, sollte auch das aus dem Vergleich klar hervorgehen.
+Bereit für einen transparenten Gasvergleich?
+Bringen Sie einfach Ihre letzte Gasrechnung mit oder halten Sie Jahresverbrauch und aktuelle Vertragsdaten bereit. Wir prüfen die Ausgangslage und besprechen die nächsten Schritte.
+Primärer CTA: Kostenlose Gasberatung vereinbaren
+Sekundärer CTA: Letzte Gasrechnung prüfen lassen
+Kontaktzeile: Energie Alemi, Alexianergraben 9, 52064 Aachen · 0176 659 493 90
+Häufige Fragen zu Gasanbietern in Aachen
+Wer ist der Gas-Grundversorger in Aachen?
+Die STAWAG ist der örtliche Grundversorger für Gas in Aachen. Sie veröffentlicht dafür den Tarif „STAWAG Gas Basis“. Die Grundversorgung ist vom frei gewählten Sondervertrag zu unterscheiden.
+Wer ist der Gasnetzbetreiber in Aachen?
+Die Regionetz GmbH betreibt das Gasnetz in Aachen. Der Netzbetreiber ist für die technische Infrastruktur zuständig und bleibt auch dann derselbe, wenn Sie Ihren Gasanbieter wechseln.
+Kann ich meinen Gasanbieter in Aachen frei wählen?
+Wenn Sie selbst Vertragspartner für die Gaslieferung sind, können Sie grundsätzlich einen verfügbaren Anbieter wählen. Bei einer Zentralheizung im Mietshaus schließt häufig die Vermietung oder Hausverwaltung den Gasvertrag ab.
+Wird die Gasversorgung beim Anbieterwechsel unterbrochen?
+Ein regulärer Anbieterwechsel ist ein vertraglicher Vorgang; die Leitungen bleiben unverändert. Die Energieversorgung bleibt laut Verbraucherinformation des Bundes während des Wechsels sichergestellt.
+Muss der Gaszähler beim Wechsel ausgetauscht werden?
+Normalerweise nicht. Der vorhandene Zähler und das Netz bleiben bestehen. Zum Wechseltermin kann ein aktueller Zählerstand erforderlich sein.
+Welche Angaben brauche ich für einen Gasvergleich?
+Hilfreich sind Ihre Lieferadresse, der Jahresverbrauch in Kilowattstunden, die letzte Gasrechnung, der aktuelle Anbieter und Tarif sowie Laufzeit und Kündigungsfrist.
+Was ist der Unterschied zwischen Arbeitspreis und Grundpreis?
+Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt unabhängig vom Verbrauch als fester Betrag an. Für einen fairen Vergleich sollten immer die voraussichtlichen Jahreskosten betrachtet werden.
+Was bedeutet Preisgarantie beim Gastarif?
+Eine Preisgarantie begrenzt Preisänderungen für einen festgelegten Zeitraum. Je nach Tarif können einzelne Preisbestandteile ausgenommen sein. Deshalb sollten Dauer und Umfang der Garantie vor dem Abschluss geprüft werden.
+Wie lang ist die Kündigungsfrist in der Gas-Grundversorgung?
+Ein Grundversorgungsvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die im Vertrag vereinbarten Fristen.
+Kostet die Beratung bei Energie Alemi etwas?
+Die Tarifberatung wird als kostenlose Beratung angeboten. Für den konkreten Vergleich bringen Sie am besten Ihre letzte Rechnung und die aktuellen Vertragsdaten mit.
+CTA unter den FAQs
+Ihre Frage ist noch offen? Persönliche Beratung in Aachen anfragen.
+
+React-Implementierung
+Datei und Route
+Seitenkomponente: src/pages/GasanbieterAachen.tsx
+Route: /gasanbieter-aachen
+Route-Manifest: Eintrag für /gasanbieter-aachen mit SEO-Titel und Meta Description ergänzen.
+Canonical: Auf die finale HTTPS-URL mit der im Projekt verwendeten Slash-Konvention setzen.
+Empfohlene Komponentenfolge
+1
+SEO
+Title, Description, Canonical und FAQ-Daten.
+
+2
+ServiceHero
+H1, Einleitung sowie primärer und sekundärer CTA.
+
+3
+ServiceFeatures
+Vier Vorteile der persönlichen Gasberatung.
+
+4
+Vergleichs-Checkliste
+Arbeitspreis, Grundpreis, Preisgarantie und Kündigungsfrist.
+
+5
+Timeline
+Der Wechselprozess in vier Schritten.
+
+6
+Lokaler Aachen-Abschnitt
+STAWAG als Grundversorger und Regionetz GmbH als Netzbetreiber.
+
+7
+FAQ
+Die sichtbaren Fragen und Antworten aus diesem Dokument.
+
+8
+Abschluss-CTA
+Kostenlose Beratung beziehungsweise Rechnungsprüfung.
+
+Metadaten
+title: 'Gasanbieter Aachen vergleichen | Energie Alemi' description: 'Gasanbieter in Aachen vergleichen: Energie Alemi prüft Arbeitspreis, Grundpreis, Preisgarantie und Laufzeit – persönlich und transparent beraten.' canonicalPath: '/gasanbieter-aachen/' 
+FAQPage-Schema
+Die FAQ-Daten einmal zentral als Array pflegen und sowohl an die sichtbare FAQ-Komponente als auch an die bestehende SEO-Komponente übergeben. Dadurch bleiben Seitentext und strukturierte Daten identisch.
+Schema-Regel
+Nur Fragen und Antworten auszeichnen, die für Besucher vollständig sichtbar sind. FAQ-Markup verbessert die maschinenlesbare Struktur, garantiert aber keine besondere Darstellung in den Suchergebnissen.
+
+Technische SEO-Checkliste
+Indexierbarkeit: Kein noindex; Route muss serverseitig mit HTTP 200 erreichbar sein.
+Sitemap: Die finale URL in die XML-Sitemap aufnehmen.
+Interne Links: Von der Gas-Leistungsseite, der Startseite und passenden Ratgeberartikeln verlinken.
+Ein H1: Nur die Hero-Überschrift als H1 ausgeben; weitere Abschnitte als H2/H3.
+Breadcrumb: Wenn im Projekt vorhanden: Startseite > Gas > Gasanbieter Aachen.
+Open Graph: Title und Description übernehmen; vorhandenes Markenbild verwenden.
+CTAs: Alle Buttons auf den bestehenden Kontakt- oder Beratungsflow verlinken.
+Tracking: CTA-Klicks mit den bereits verwendeten Analytics-Events messen.
+Quellen und redaktionelle Hinweise
+Die lokalen und rechtlichen Aussagen in diesem Entwurf wurden anhand der folgenden Quellen eingeordnet. Preise wurden bewusst nicht in den Seitentext aufgenommen, weil sie sich ändern können.
+STAWAG – Preisblatt „Gas Basis“ ab 1. Januar 2026
+Belegt den veröffentlichten Gas-Grundversorgungstarif „STAWAG Gas Basis“. Keine konkreten Preise in die Landingpage übernehmen.
+Regionetz – Netzgebiete, Stand Januar 2026
+Ordnet Aachen dem Erdgas-Netzgebiet der Regionetz GmbH zu.
+Gesetze im Internet – § 36 EnWG
+Definiert die Grundversorgungspflicht und die Feststellung des Grundversorgers.
+GasGVV – § 20 Kündigung
+Belegt die zweiwöchige Kündigungsfrist für Grundversorgungsverträge.
+Bundesinformation – Wechsel des Strom- oder Gaslieferanten
+Belegt freie Lieferantenwahl, kostenlosen Wechsel und gesicherte Versorgung während des Wechsels.
+Energie Alemi – bestehender Marken- und Leistungsauftritt
+Grundlage für Tonalität, Leistungsrahmen, Adresse, Telefonnummer und kostenlose Beratung.

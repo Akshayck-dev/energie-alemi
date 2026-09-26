@@ -132,6 +132,9 @@ export default function StromanbieterAachen() {
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Energie Alemi nimmt sich Zeit für diese Details. Wir prüfen Ihre aktuelle Situation, vergleichen verschiedene Angebote und zeigen Ihnen verständlich, welche Konditionen langfristig relevant sind. So treffen Sie keine Entscheidung nur wegen eines kurzfristigen Lockpreises, sondern auf Basis eines nachvollziehbaren Gesamtpakets.
           </p>
+          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
+            Übrigens: Wir beraten Sie nicht nur zu Strom, sondern unterstützen Sie als <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter</Link> und <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter in Aachen</Link> auch bei der gemeinsamen Vertragsoptimierung.
+          </p>
         </div>
         
         <div className="container mx-auto px-6 mb-12">

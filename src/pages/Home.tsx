@@ -13,7 +13,7 @@ import bannerMob from '../assets/banner_mob.webp';
 import ownerImg from '../assets/image-admin.JPG.webp';
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
@@ -62,9 +62,9 @@ export default function Home() {
               color: 'text-blue-500',
               glow: 'group-hover:shadow-[0_0_24px_rgba(59,130,246,0.35)]',
               bg: 'bg-blue-500/10',
-              title: t('home_services.items.internet.title'),
+              title: i18n.language === 'de' ? 'Internettarife vergleichen' : t('home_services.items.internet.title'),
               description: t('home_services.items.internet.description'),
-              link: '/internet'
+              link: '/internetanbieter-aachen'
             }
           ]}
         />

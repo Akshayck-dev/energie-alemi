@@ -143,6 +143,9 @@ export default function Internet() {
                     <Link to="/ratgeber" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">{t('internet.cross_l3')}</Link>
                     <span>.</span>
                   </p>
+                  <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mt-4">
+                    Kommen Sie aus Aachen? <Link to="/internetanbieter-aachen" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">Hier finden Sie lokale Angebote für Aachen.</Link>
+                  </p>
                   {/* Router graphic placeholder */}
                   <div className="mt-12 opacity-80 flex flex-col items-center">
                     <div className="w-48 h-32 bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 shadow-sm rounded-xl flex items-center justify-center relative shadow-xl mb-4">

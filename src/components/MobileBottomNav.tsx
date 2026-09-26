@@ -9,7 +9,7 @@ export default function MobileBottomNav() {
     { to: "/", icon: <Home size={20} strokeWidth={2} />, label: t('nav.home') || 'Home' },
     { to: "/electricity", icon: <Zap size={20} strokeWidth={2} />, label: t('nav.electricity') || 'Strom' },
     { to: "/gas", icon: <Flame size={20} strokeWidth={2} />, label: t('nav.gas') || 'Gas' },
-    { to: "/internet", icon: <Wifi size={20} strokeWidth={2} />, label: t('nav.internet') || 'Internet' },
+    { to: "/internetanbieter-aachen", icon: <Wifi size={20} strokeWidth={2} />, label: t('nav.internet') || 'Internet' },
   ];
 
   return (
