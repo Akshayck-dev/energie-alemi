@@ -339,5 +339,38 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-27",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/stromanbieter-wuerselen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromanbieter Würselen vergleichen | Energie Alemi",
+    "description": "Stromtarife in Würselen vergleichen: Kosten, Vertragsdetails und Kündigungsfrist prüfen. Energie Alemi berät Haushalte und Unternehmen persönlich.",
+    "canonical": "/stromanbieter-wuerselen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-27",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/gasanbieter-wuerselen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasanbieter Würselen vergleichen | Energie Alemi",
+    "description": "Gastarife in Würselen vergleichen: Jahreskosten, Preisgarantie und Laufzeit auswerten. Kostenlose Tarifberatung für Privat- und Gewerbekunden.",
+    "canonical": "/gasanbieter-wuerselen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-27",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/internetanbieter-wuerselen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Internettarife Würselen vergleichen | Energie Alemi",
+    "description": "Internettarife in Würselen vergleichen: Verfügbarkeit, Geschwindigkeit, Kosten und Laufzeit prüfen – mit persönlicher Beratung von Energie Alemi.",
+    "canonical": "/internetanbieter-wuerselen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-27",
+    "structuredDataType": "FAQPage"
   }
 ]
