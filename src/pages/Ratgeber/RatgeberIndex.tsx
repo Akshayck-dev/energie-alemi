@@ -52,6 +52,26 @@ export default function RatgeberIndex() {
               </div>
             </Link>
           ))}
+          <Link 
+            to="/energie-fragen"
+            className="bg-white dark:bg-[#112240] rounded-2xl shadow-sm border border-slate-100 dark:border-white/5 overflow-hidden hover:shadow-lg transition-all duration-300 group flex flex-col h-full"
+          >
+            <div className="p-8 flex flex-col h-full">
+              <div className="inline-block px-3 py-1 rounded-full bg-[#f0f4ff] dark:bg-white/5 text-[#0047AB] dark:text-[#f0a83f] text-xs font-semibold mb-4 w-fit">
+                Q&A
+              </div>
+              <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-white mb-3 group-hover:text-[#0047AB] dark:group-hover:text-[#f0a83f] transition-colors">
+                Energie-Fragen & Antworten
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 text-sm mb-8 flex-grow">
+                Klare, eigenständige Antworten rund um Strom, Gas und Internet, die Nutzer sofort verstehen.
+              </p>
+              <div className="flex items-center gap-2 text-[#0047AB] dark:text-[#f0a83f] font-semibold text-sm mt-auto">
+                {t('ratgeber.read_article')} 
+                <ArrowRight size={16} className={cn("transition-transform", i18n.dir() === 'rtl' ? "rotate-180 group-hover:-translate-x-1" : "group-hover:translate-x-1")} />
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

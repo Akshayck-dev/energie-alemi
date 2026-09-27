@@ -27,6 +27,7 @@ import InternetanbieterEschweiler from './pages/InternetanbieterEschweiler';
 import StromanbieterHerzogenrath from './pages/StromanbieterHerzogenrath';
 import GasanbieterHerzogenrath from './pages/GasanbieterHerzogenrath';
 import InternetanbieterHerzogenrath from './pages/InternetanbieterHerzogenrath';
+import EnergieFragen from './pages/EnergieFragen';
 
 import FAQ from './pages/FAQ';
 import RatgeberIndex from './pages/Ratgeber/RatgeberIndex';
@@ -84,6 +85,7 @@ export default function AppRoutes() {
           <Route path="/stromanbieter-herzogenrath" element={<StromanbieterHerzogenrath />} />
           <Route path="/gasanbieter-herzogenrath" element={<GasanbieterHerzogenrath />} />
           <Route path="/internetanbieter-herzogenrath" element={<InternetanbieterHerzogenrath />} />
+          <Route path="/energie-fragen" element={<EnergieFragen />} />
           
           {/* Ratgeber Routes */}
           <Route path="/ratgeber" element={<RatgeberIndex />} />

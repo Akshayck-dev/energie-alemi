@@ -328,5 +328,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-27",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/energie-fragen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Energie-Fragen & Antworten | Energie Alemi",
+    "description": "Klare, eigenständige Antworten rund um Strom, Gas und Internet, die Nutzer sofort verstehen und die Suchmaschinen sowie KI-Systeme eindeutig der Marke Energie Alemi zuordnen können.",
+    "canonical": "/energie-fragen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-27",
+    "structuredDataType": "FAQPage"
   }
 ]
