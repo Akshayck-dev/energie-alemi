@@ -24,6 +24,9 @@ import InternetanbieterStolberg from './pages/InternetanbieterStolberg';
 import StromanbieterEschweiler from './pages/StromanbieterEschweiler';
 import GasanbieterEschweiler from './pages/GasanbieterEschweiler';
 import InternetanbieterEschweiler from './pages/InternetanbieterEschweiler';
+import StromanbieterHerzogenrath from './pages/StromanbieterHerzogenrath';
+import GasanbieterHerzogenrath from './pages/GasanbieterHerzogenrath';
+import InternetanbieterHerzogenrath from './pages/InternetanbieterHerzogenrath';
 
 import FAQ from './pages/FAQ';
 import RatgeberIndex from './pages/Ratgeber/RatgeberIndex';
@@ -78,6 +81,9 @@ export default function AppRoutes() {
           <Route path="/stromanbieter-eschweiler" element={<StromanbieterEschweiler />} />
           <Route path="/gasanbieter-eschweiler" element={<GasanbieterEschweiler />} />
           <Route path="/internetanbieter-eschweiler" element={<InternetanbieterEschweiler />} />
+          <Route path="/stromanbieter-herzogenrath" element={<StromanbieterHerzogenrath />} />
+          <Route path="/gasanbieter-herzogenrath" element={<GasanbieterHerzogenrath />} />
+          <Route path="/internetanbieter-herzogenrath" element={<InternetanbieterHerzogenrath />} />
           
           {/* Ratgeber Routes */}
           <Route path="/ratgeber" element={<RatgeberIndex />} />

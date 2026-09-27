@@ -295,5 +295,38 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-26",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/stromanbieter-herzogenrath",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Stromanbieter Herzogenrath vergleichen | Energie Alemi",
+    "description": "Stromtarife in Herzogenrath vergleichen: Energie Alemi prüft Jahreskosten, Vertragsdetails und Wechseltermin – kostenlos und persönlich.",
+    "canonical": "/stromanbieter-herzogenrath",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-27",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/gasanbieter-herzogenrath",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Gasanbieter Herzogenrath vergleichen | Energie Alemi",
+    "description": "Gastarife in Herzogenrath vergleichen: Energie Alemi bewertet Verbrauch, Jahreskosten, Preisgarantie und Vertragslaufzeit und hilft beim Wechsel.",
+    "canonical": "/gasanbieter-herzogenrath",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-27",
+    "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/internetanbieter-herzogenrath",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Internetanbieter Herzogenrath vergleichen | Energie Alemi",
+    "description": "Internettarife in Herzogenrath vergleichen: Energie Alemi prüft adressgenau Verfügbarkeit, Bandbreite, Kosten und Vertragsbedingungen.",
+    "canonical": "/internetanbieter-herzogenrath",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-27",
+    "structuredDataType": "FAQPage"
   }
 ]
