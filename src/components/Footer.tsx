@@ -65,14 +65,18 @@ export default function Footer() {
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 text-slate-600 dark:text-white/80">
                 <MapPin size={20} className="md:mt-0.5 text-[#0047AB] dark:text-[#f0a83f]" />
-                <a 
-                  href="https://maps.google.com/?q=Alexianergraben+9,+52064+Aachen" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors text-center md:text-left"
-                >
-                  Alexianergraben 9<br className="hidden md:block" /> <span className="md:hidden">, </span>52064 Aachen
-                </a>
+                <div className="text-center md:text-left">
+                  <span>Alexianergraben 9<br className="hidden md:block" /> <span className="md:hidden">, </span>52064 Aachen</span>
+                  <br />
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Energie+Alemi+Alexianergraben+9+52064+Aachen" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-sm font-semibold hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors"
+                  >
+                    Google Maps
+                  </a>
+                </div>
               </li>
             </ul>
           </div>

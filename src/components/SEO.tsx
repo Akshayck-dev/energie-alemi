@@ -46,7 +46,7 @@ export default function SEO({ title, description, url, image, isArticle, datePub
   const resolvedImage = image ? (image.startsWith('http') ? image : `${baseUrl}${image.startsWith('/') ? image : `/${image}`}`) : `${baseUrl}/about-hero-image.webp`;
 
   // Strict check on environment variable to prevent staging indexation
-  const allowIndexing = import.meta.env.VITE_ALLOW_INDEXING === "true";
+  const allowIndexing = import.meta.env.VITE_ALLOW_INDEXING === "true" && url !== '/404';
   const robotsContent = allowIndexing ? "index, follow" : "noindex, nofollow";
 
   // Base Structured Data
@@ -98,6 +98,56 @@ export default function SEO({ title, description, url, image, isArticle, datePub
       }
     ]
   });
+
+  graph.push({
+    "@type": "Organization",
+    "@id": `${baseUrl}/#organization_entity`,
+    "name": "Energie Alemi",
+    "url": `${baseUrl}/`,
+    "logo": `${baseUrl}/favicon.webp`,
+    "telephone": "+49 176 65949390",
+    "email": "info@energie-alemi.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Alexianergraben 9",
+      "addressLocality": "Aachen",
+      "postalCode": "52064",
+      "addressCountry": "Germany"
+    }
+  });
+
+  if (url && url.match(/^\/(strom|gas|internet)anbieter-(.+)$/)) {
+    const match = url.match(/^\/(strom|gas|internet)anbieter-(.+)$/);
+    if (match) {
+      const serviceTypeRaw = match[1];
+      const serviceNames: Record<string, string> = {
+        'strom': 'Stromtarifvergleich & Wechselhilfe',
+        'gas': 'Gastarifvergleich & Wechselhilfe',
+        'internet': 'Internettarifvergleich & Wechselhilfe'
+      };
+      const serviceName = serviceNames[serviceTypeRaw];
+      let town = match[2].charAt(0).toUpperCase() + match[2].slice(1);
+      if (town === 'Wuerselen') town = 'Würselen';
+      
+      graph.push({
+        "@type": "Service",
+        "name": serviceName,
+        "provider": {
+          "@id": orgId
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": town
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "description": "Kostenlose Tarifberatung"
+        }
+      });
+    }
+  }
 
   // 2. BreadcrumbList schema (for sub-pages only)
   if (url && url !== '/') {

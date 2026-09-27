@@ -176,7 +176,17 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">{t('contact.lbl_addr')}</p>
-                      <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">Alexianergraben 9<br/>52064 Aachen</p>
+                      <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">
+                        Alexianergraben 9<br/>52064 Aachen<br/>
+                        <a 
+                          href="https://www.google.com/maps/search/?api=1&query=Energie+Alemi+Alexianergraben+9+52064+Aachen" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-sm font-bold text-[#0047AB] dark:text-[#f0a83f] hover:underline mt-1 inline-block"
+                        >
+                          Google Maps
+                        </a>
+                      </p>
                     </div>
                   </div>
                   

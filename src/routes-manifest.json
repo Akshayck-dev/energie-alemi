@@ -372,5 +372,13 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-27",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/404",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Seite nicht gefunden | Energie Alemi",
+    "description": "Die gesuchte Seite konnte nicht gefunden werden.",
+    "sitemapInclusion": false
   }
 ]
