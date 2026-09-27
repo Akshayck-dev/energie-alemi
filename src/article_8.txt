@@ -1,0 +1,57 @@
+8. Gaspreise verstehen: Arbeitspreis, Grundpreis und Gesamtkosten
+Empfohlener Slug
+/ratgeber/gaspreise-verstehen
+SEO-Titel
+Gaspreise verstehen: Arbeitspreis & Grundpreis | Energie Alemi
+Meta-Description
+Gaspreise verständlich erklärt: Arbeitspreis, Grundpreis, Preisgarantie, Bonus und Jahreskosten richtig vergleichen.
+Primärkeyword
+Gaspreise verstehen
+Sekundärkeywords
+Gas Arbeitspreis Grundpreis; Gaskosten berechnen; Gastarif vergleichen; Gaspreisgarantie
+Der günstigste Arbeitspreis ist nicht automatisch der günstigste Tarif
+Ein Gastarif besteht in der Regel aus einem verbrauchsabhängigen Arbeitspreis und einem festen Grundpreis. Erst die Summe beider Bestandteile zeigt die erwarteten Jahreskosten. Bei hohem Verbrauch wirkt der Arbeitspreis stärker; bei niedrigem Verbrauch kann der Grundpreis entscheidend sein.
+Die Vergleichsformel lautet: Jahresverbrauch in kWh × Arbeitspreis in Euro/kWh + Grundpreis pro Jahr = erwartete Jahreskosten.
+Arbeitspreis und Grundpreis einfach erklärt
+Der Arbeitspreis wird für jede verbrauchte Kilowattstunde berechnet. Ein Unterschied von 1 Cent/kWh macht bei 15.000 kWh Jahresverbrauch 150 Euro aus.
+Der Grundpreis fällt unabhängig vom Verbrauch an. Er deckt feste Kostenbestandteile des Tarifs. Ein Grundpreis von 15 Euro pro Monat entspricht 180 Euro pro Jahr.
+Beispiel A: 15.000 kWh × 0,10 Euro + 180 Euro = 1.680 Euro/Jahr.
+Beispiel B: 15.000 kWh × 0,095 Euro + 260 Euro = 1.685 Euro/Jahr.
+Obwohl Tarif B den niedrigeren Arbeitspreis hat, ist Tarif A bei diesem Verbrauch rechnerisch günstiger. Das Beispiel ist kein aktuelles Angebot.
+Was eine Preisgarantie tatsächlich abdeckt
+Preisgarantie ist nicht gleich Preisgarantie. Eine vollständige Garantie kann mehr Preisbestandteile erfassen als eine eingeschränkte Garantie, die beispielsweise nur Beschaffung und Vertrieb schützt. Steuern, Abgaben oder regulierte Entgelte können je nach Vertragsklausel ausgenommen sein.
+Lesen Sie deshalb Dauer und Umfang der Garantie. Eine lange Garantie ist nur dann wertvoll, wenn sie zum geplanten Vertragszeitraum passt und die wichtigen Bestandteile einschließt.
+Boni getrennt betrachten
+Sofort- und Neukundenboni können die Kosten des ersten Jahres senken. Prüfen Sie Auszahlungsvoraussetzungen, Mindestbelieferungszeit und die regulären Kosten ohne Bonus. Ein Tarif sollte nicht allein wegen eines hohen Bonus gewählt werden.
+Auch der monatliche Abschlag ist kein Tarifpreis. Er ist eine Vorauszahlung auf die spätere Abrechnung. Entscheidend bleiben tatsächlicher Verbrauch und vereinbarte Preisbestandteile.
+Weitere Vertragsmerkmale im Vergleich
+Mindestvertragslaufzeit und automatische Verlängerung;
+Kündigungsfrist;
+Preisgarantie und Ausnahmen;
+Vorkasse oder Kaution;
+Paketmengen und Folgen bei Mehr- oder Minderverbrauch;
+Vertragsbedingungen für Umzug und Preisänderung;
+Kundenservice und Erreichbarkeit.
+Tarife mit Vorkasse oder großen Paketmengen können zusätzliche Risiken bergen. Ein transparenter Vergleich bewertet daher nicht nur den rechnerischen Preis.
+So nutzen Sie Ihre Jahresabrechnung
+Auf der Abrechnung finden Sie Jahresverbrauch, bisherigen Arbeitspreis, Grundpreis und geleistete Abschläge. Verwenden Sie den Verbrauch für einen aktuellen Tarifvergleich. Hat sich Wohnfläche, Heizverhalten oder Personenzahl geändert, passen Sie die Prognose vorsichtig an.
+CTA: Energie Alemi vergleicht Gastarife anhand Ihres Verbrauchs und zeigt Jahreskosten, Bonuswirkung und Vertragsbedingungen getrennt voneinander.
+Häufige Fragen
+Was ist wichtiger: Arbeitspreis oder Grundpreis?
+Das hängt vom Verbrauch ab. Bei hohem Verbrauch wirkt sich der Arbeitspreis stärker aus. Bei niedrigem Verbrauch kann ein geringer Grundpreis den Ausschlag geben. Vergleichen Sie immer die Gesamtkosten.
+Ist der Abschlag der monatliche Preis?
+Nein. Der Abschlag ist eine Vorauszahlung. Die endgültigen Kosten ergeben sich aus tatsächlichem Verbrauch, Arbeitspreis und Grundpreis.
+Was passiert bei einer Preiserhöhung?
+Prüfen Sie das Schreiben, den Geltungstermin und ein mögliches Sonderkündigungsrecht. Lesen Sie außerdem den Zählerstand zum Änderungszeitpunkt ab, damit der Verbrauch sauber abgegrenzt werden kann.
+Sind Tarife mit Bonus immer günstiger?
+Nein. Der Bonus kann nur das erste Jahr verbilligen. Entscheidend sind auch die regulären Kosten, Bedingungen und Folgekosten.
+Interne Links: /ratgeber/gasverbrauch-berechnen · /ratgeber/gasvergleich · /ratgeber/gasanbieter-wechseln · /gasanbieter-aachen
+Quellen und Redaktionsgrundlage
+Energie Alemi, Website und Live-Sitemap: https://www.energie-alemi.de/ und https://www.energie-alemi.de/sitemap.xml
+Verbraucherzentrale NRW, „Was passiert beim Umzug mit Stromvertrag oder Gasvertrag?“: https://www.Verbraucherzentrale.nrw/wissen/energie/preise-tarife-anbieterwechsel/was-passiert-beim-umzug-mit-stromvertrag-oder-gasvertrag-10915
+Stadtwerke Düsseldorf, Umzugsratgeber und Regelung seit 6. Juni 2025: https://www.swd-ag.de/kontakt-service/service/umzugsratgeber/
+Stromspiegel, „Stromverbrauch im Haushalt: Durchschnitt für 1–5 Personen“: https://www.stromspiegel.de/stromverbrauch-verstehen/stromverbrauch-im-haushalt/
+Alliander Netz, Umrechnung Gasverbrauch: https://www.alliander-netz.de/wp-content/uploads/2019/08/Umrechnung_Gasverbrauch.pdf
+TEAG, „Gasverbrauch berechnen: m³ in kWh umrechnen“: https://mein-zuhause.teag.de/energie-ratgeber/heizen/gasverbrauch-berechnen-umrechnen
+STAWAG, Preisblatt Strom Basis ab 1. Januar 2026: https://www.stawag.de/fileadmin/stawag/content/Dokumente/Strom/Preisblatt_Strom_Basis_mErgBed_2026.pdf
+Redaktioneller Hinweis: Gesetzliche Regeln, Tarifpreise und Preisblätter können sich ändern. Vor der Veröffentlichung sollte bei zeitabhängigen Angaben das jeweilige Aktualisierungsdatum geprüft werden.

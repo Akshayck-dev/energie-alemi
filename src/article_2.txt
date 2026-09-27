@@ -1,0 +1,43 @@
+2. Stromverbrauch im 1-Personen-Haushalt: Was ist normal?
+Empfohlener Slug
+/ratgeber/stromverbrauch-1-person
+SEO-Titel
+Stromverbrauch 1 Person: Richtwerte & Spartipps | Energie Alemi
+Meta-Description
+Wie viel Strom verbraucht eine Person? Richtwerte für Wohnung und Haus, mit oder ohne elektrisches Warmwasser, plus einfache Spartipps.
+Primärkeyword
+Stromverbrauch 1 Person
+Sekundärkeywords
+Stromverbrauch Singlehaushalt; Stromkosten 1 Person; kWh pro Jahr 1 Person
+Für eine Person sind Wohnform und Warmwasser entscheidend
+Ein 1-Personen-Haushalt verbraucht nach den Vergleichswerten des Stromspiegels im Durchschnitt rund 1.200 Kilowattstunden (kWh) pro Jahr in einer Wohnung und etwa 1.800 kWh in einem Einfamilienhaus, jeweils ohne elektrische Warmwasserbereitung. Wird Warmwasser über Boiler oder Durchlauferhitzer erzeugt, steigen die Vergleichswerte auf rund 1.600 beziehungsweise 2.100 kWh pro Jahr.
+Diese Zahlen sind Orientierung, keine feste Obergrenze. Homeoffice, alte Kühlgeräte, ein Aquarium, Klimageräte oder häufiges Kochen können den Verbrauch erhöhen. Umgekehrt kann eine kleine, effizient ausgestattete Wohnung deutlich darunterliegen.
+Richtwerte richtig einordnen
+Wohnung, Warmwasser nicht elektrisch: etwa 1.200 kWh/Jahr
+Wohnung, Warmwasser elektrisch: etwa 1.600 kWh/Jahr
+Einfamilienhaus, Warmwasser nicht elektrisch: etwa 1.800 kWh/Jahr
+Einfamilienhaus, Warmwasser elektrisch: etwa 2.100 kWh/Jahr
+Im Einfamilienhaus trägt eine Person zusätzliche Grundlast allein, etwa für Heizungspumpe, Außenbeleuchtung, Garage oder Gebäudetechnik. Deshalb ist der Verbrauch dort meist höher als in einer Wohnung im Mehrfamilienhaus.
+So lesen Sie Ihren eigenen Verbrauch
+Der verlässlichste Wert steht auf der letzten Jahresabrechnung. Vergleichen Sie Ablesezeitraum und tatsächliche Tage, bevor Sie den Wert mit einem Jahresrichtwert abgleichen. Bei einem kürzeren Zeitraum lässt sich der Verbrauch nur grob hochrechnen, weil Winter und Sommer unterschiedlich ausfallen können.
+Wenn keine Abrechnung vorliegt, hilft eine monatliche Zählerablesung. Die Differenz zwischen zwei Ständen zeigt den Verbrauch im Zeitraum. Auffällige Sprünge lassen sich anschließend mit Nutzung, Urlaub, neuen Geräten oder elektrischer Warmwasserbereitung abgleichen.
+Die größten Hebel im Singlehaushalt
+Kühlschrank, Gefriergerät, Waschmaschine, Trockner und Unterhaltungselektronik bilden oft einen großen Teil des Haushaltsstroms. Im Homeoffice kommen Monitor, Computer und Router hinzu. Sinnvoll ist es, zuerst die Dauerverbraucher zu prüfen:
+Temperatur von Kühl- und Gefriergeräten passend einstellen;
+alte Geräte mit einem Strommessgerät kontrollieren;
+Stand-by-Verbrauch über schaltbare Steckdosen reduzieren;
+Waschmaschine voll beladen und Eco-Programme nutzen;
+Wasser im Wasserkocher statt auf der Herdplatte erhitzen;
+bei elektrischem Warmwasser Duschdauer und Temperatur bewusst steuern.
+Nicht jede Neuanschaffung rechnet sich sofort. Messen Sie zunächst den realen Verbrauch und vergleichen Sie Anschaffungskosten mit der möglichen jährlichen Einsparung.
+Stromkosten aus dem Verbrauch ableiten
+Die jährlichen Stromkosten bestehen aus Verbrauch mal Arbeitspreis plus Grundpreis. Bei 1.200 kWh, einem Beispiel-Arbeitspreis von 0,35 Euro/kWh und 120 Euro Grundpreis ergeben sich 540 Euro pro Jahr. Das ist ein Rechenbeispiel, kein aktuelles Tarifangebot.
+CTA: Sie möchten wissen, welcher Tarif zu Ihrem tatsächlichen Single-Verbrauch passt? Energie Alemi vergleicht Arbeitspreis, Grundpreis und Vertragsbedingungen kostenlos.
+Häufige Fragen
+Sind 1.500 kWh für eine Person viel?
+In einer Wohnung ohne elektrische Warmwasserbereitung liegt der Wert über dem Stromspiegel-Durchschnitt von rund 1.200 kWh, kann aber je nach Ausstattung plausibel sein. In einem Einfamilienhaus ist 1.500 kWh eher niedrig.
+Warum ist der Pro-Kopf-Verbrauch allein höher?
+Viele Geräte verursachen eine Grundlast unabhängig von der Personenzahl. Kühlschrank, Router oder Herd werden in größeren Haushalten gemeinsam genutzt; ein Single trägt diesen Verbrauch allein.
+Wie erkenne ich elektrisches Warmwasser?
+Typische Hinweise sind ein Durchlauferhitzer im Bad oder ein Boiler unter dem Waschbecken. Im Zweifel helfen Mietunterlagen, Vermieter oder Hausverwaltung.
+Interne Links: /ratgeber/stromkosten-berechnen · /ratgeber/stromvergleich · /electricity · /contact

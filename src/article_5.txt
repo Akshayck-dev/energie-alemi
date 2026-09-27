@@ -1,0 +1,45 @@
+5. Stromkosten berechnen: Formel, Beispiele und Tarifvergleich
+Empfohlener Slug
+/ratgeber/stromkosten-berechnen
+SEO-Titel
+Stromkosten berechnen: Formel & Beispiele 2026 | Energie Alemi
+Meta-Description
+Stromkosten einfach berechnen: Jahresverbrauch, Arbeitspreis und Grundpreis richtig einsetzen und Tarife realistisch vergleichen.
+Primärkeyword
+Stromkosten berechnen
+Sekundärkeywords
+Stromkosten Formel; Stromkosten pro Jahr; Arbeitspreis Grundpreis; Stromtarif vergleichen
+Die Jahreskosten bestehen aus Arbeitspreis und Grundpreis
+Die einfache Formel lautet: Jahresverbrauch in kWh × Arbeitspreis in Euro pro kWh + jährlicher Grundpreis = erwartete Stromkosten pro Jahr. Für eine realistische Rechnung müssen beide Preisbestandteile berücksichtigt werden.
+Beispiel: 2.500 kWh × 0,35 Euro/kWh + 120 Euro Grundpreis ergeben 995 Euro pro Jahr. Der rechnerische Monatswert beträgt rund 82,92 Euro. Dieses Beispiel ist kein Tarifangebot.
+Cent richtig in Euro umrechnen
+Tarife nennen den Arbeitspreis meist in Cent pro Kilowattstunde. Teilen Sie den Cent-Wert durch 100. Aus 35 Cent/kWh werden 0,35 Euro/kWh. Erst dann wird mit dem Jahresverbrauch multipliziert.
+Formel: Jahreskosten = (Jahresverbrauch × Arbeitspreis/100) + Grundpreis
+Bei monatlichem Grundpreis wird dieser zuerst mit zwölf multipliziert. Ein Grundpreis von 10 Euro pro Monat entspricht 120 Euro pro Jahr.
+Rechenbeispiele für unterschiedliche Haushalte
+Bei einem Beispieltarif mit 35 Cent/kWh und 120 Euro Grundpreis ergeben sich:
+1.200 kWh: 540 Euro/Jahr
+1.900 kWh: 785 Euro/Jahr
+2.600 kWh: 1.030 Euro/Jahr
+3.800 kWh: 1.450 Euro/Jahr
+Die Beispiele zeigen: Bei niedrigem Verbrauch wiegt der Grundpreis relativ stärker. Bei hohem Verbrauch ist der Arbeitspreis meist der größere Hebel.
+Bonus und Abschlag sind nicht dasselbe wie Tarifkosten
+Ein Sofortbonus oder Neukundenbonus kann die Kosten im ersten Jahr senken, gilt aber häufig nicht dauerhaft. Vergleichen Sie deshalb sowohl die Kosten im ersten Vertragsjahr als auch die Kosten ohne Bonus. Prüfen Sie die Bedingungen für Auszahlung und Mindestbelieferungszeit.
+Der monatliche Abschlag ist lediglich eine Vorauszahlung. Die endgültige Rechnung richtet sich nach dem tatsächlichen Verbrauch und den vereinbarten Preisen. Ein niedriger Abschlag macht einen Tarif nicht automatisch günstig; er kann später zu einer Nachzahlung führen.
+Lokales Beispiel: Grundversorgung Strom in Aachen
+Das veröffentlichte STAWAG-Preisblatt für „Strom Basis“ nennt ab 1. Januar 2026 für Haushaltsbedarf einen Brutto-Arbeitspreis von 37,13 Cent/kWh und einen Brutto-Grundpreis von 114 Euro pro Jahr. Bei 2.500 kWh ergibt das rechnerisch 1.042,25 Euro pro Jahr. Preise können sich ändern; prüfen Sie vor einer Entscheidung immer das aktuell gültige Preisblatt.
+So vergleichen Sie zwei Tarife fair
+Verwenden Sie bei beiden Tarifen denselben Jahresverbrauch.
+Rechnen Sie Arbeitspreis und Grundpreis zusammen.
+Stellen Sie Kosten mit und ohne Bonus gegenüber.
+Prüfen Sie Laufzeit, Kündigungsfrist und Preisgarantie.
+Bewerten Sie nicht nur das erste Jahr, sondern auch die Folgekosten.
+CTA: Energie Alemi berechnet Ihre voraussichtlichen Jahreskosten auf Basis der letzten Abrechnung und erklärt die Vertragsbedingungen verständlich.
+Häufige Fragen
+Wie berechne ich den monatlichen Abschlag?
+Teilen Sie die erwarteten Jahreskosten durch zwölf. Berücksichtigen Sie, dass der Anbieter den Abschlag anhand von Verbrauchsprognose und bisherigen Daten abweichend festlegen kann.
+Welcher Preis ist wichtiger: Arbeits- oder Grundpreis?
+Bei hohem Verbrauch hat der Arbeitspreis meist mehr Gewicht. Bei sehr niedrigem Verbrauch kann ein niedriger Grundpreis entscheidend sein. Maßgeblich sind immer die gesamten Jahreskosten.
+Gehört der Bonus in den Vergleich?
+Ja, aber getrennt. Zeigen Sie die Kosten des ersten Jahres mit Bonus und die regulären Kosten ohne Bonus. So vermeiden Sie einen verzerrten Langfristvergleich.
+Interne Links: /ratgeber/stromvergleich · /ratgeber/stromanbieter-wechseln · /ratgeber/stromverbrauch-1-person · /stromanbieter-aachen

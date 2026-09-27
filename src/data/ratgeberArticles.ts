@@ -86,4 +86,77 @@ export const articles: RatgeberArticle[] = [
     publishedDate: '2026-08-16',
     componentName: 'DslVsGlasfaserAachen'
   }
+,
+  {
+    id: '9',
+    slug: 'strom-anmelden-umzug',
+    title: 'Strom anmelden beim Umzug: Checkliste 2026 | Energie Alemi',
+    description: 'Strom beim Umzug richtig an- und abmelden: Fristen, Zählerstand, MaLo-ID und Anbieterwahl verständlich erklärt. Persönliche Hilfe in Aachen.',
+    category: 'Strom',
+    publishedDate: '2026-09-27',
+    componentName: 'StromAnmeldenUmzug'
+  },
+  {
+    id: '10',
+    slug: 'stromverbrauch-1-person',
+    title: 'Stromverbrauch 1 Person: Richtwerte & Spartipps | Energie Alemi',
+    description: 'Wie viel Strom verbraucht eine Person? Richtwerte für Wohnung und Haus, mit oder ohne elektrisches Warmwasser, plus einfache Spartipps.',
+    category: 'Strom',
+    publishedDate: '2026-09-27',
+    componentName: 'Stromverbrauch1Person'
+  },
+  {
+    id: '11',
+    slug: 'stromverbrauch-2-personen',
+    title: 'Stromverbrauch 2 Personen: kWh, Kosten & Tipps | Energie Alemi',
+    description: 'Stromverbrauch für 2 Personen einordnen: Richtwerte für Wohnung und Haus, Einfluss von Warmwasser und praktische Spartipps.',
+    category: 'Strom',
+    publishedDate: '2026-09-27',
+    componentName: 'Stromverbrauch2Personen'
+  },
+  {
+    id: '12',
+    slug: 'stromverbrauch-4-personen',
+    title: 'Stromverbrauch 4 Personen: Richtwerte & Kosten | Energie Alemi',
+    description: 'Wie viel Strom braucht eine vierköpfige Familie? Richtwerte nach Wohnform und Warmwasserart sowie Tipps für niedrigere Stromkosten.',
+    category: 'Strom',
+    publishedDate: '2026-09-27',
+    componentName: 'Stromverbrauch4Personen'
+  },
+  {
+    id: '13',
+    slug: 'stromkosten-berechnen',
+    title: 'Stromkosten berechnen: Formel & Beispiele 2026 | Energie Alemi',
+    description: 'Stromkosten einfach berechnen: Jahresverbrauch, Arbeitspreis und Grundpreis richtig einsetzen und Tarife realistisch vergleichen.',
+    category: 'Strom',
+    publishedDate: '2026-09-27',
+    componentName: 'StromkostenBerechnen'
+  },
+  {
+    id: '14',
+    slug: 'gas-anmelden-umzug',
+    title: 'Gas anmelden beim Umzug: Schritt-für-Schritt | Energie Alemi',
+    description: 'Gas beim Umzug richtig anmelden: Vertrag prüfen, Zählerstand sichern, neuen Tarif wählen und doppelte Kosten vermeiden.',
+    category: 'Gas',
+    publishedDate: '2026-09-27',
+    componentName: 'GasAnmeldenUmzug'
+  },
+  {
+    id: '15',
+    slug: 'gasverbrauch-berechnen',
+    title: 'Gasverbrauch berechnen: m³ in kWh umrechnen | Energie Alemi',
+    description: 'Gasverbrauch korrekt berechnen: Zählerstand in m³ ablesen, mit Brennwert und Zustandszahl in kWh umrechnen und Kosten abschätzen.',
+    category: 'Gas',
+    publishedDate: '2026-09-27',
+    componentName: 'GasverbrauchBerechnen'
+  },
+  {
+    id: '16',
+    slug: 'gaspreise-verstehen',
+    title: 'Gaspreise verstehen: Arbeitspreis & Grundpreis | Energie Alemi',
+    description: 'Gaspreise verständlich erklärt: Arbeitspreis, Grundpreis, Preisgarantie, Bonus und Jahreskosten richtig vergleichen.',
+    category: 'Gas',
+    publishedDate: '2026-09-27',
+    componentName: 'GaspreiseVerstehen'
+  }
 ];

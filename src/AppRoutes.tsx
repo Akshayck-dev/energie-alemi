@@ -43,6 +43,15 @@ import UmzugAachenStromGasInternet from './pages/Ratgeber/articles/UmzugAachenSt
 import GrundversorgungAachenStromGas from './pages/Ratgeber/articles/GrundversorgungAachenStromGas';
 import DslVsGlasfaserAachen from './pages/Ratgeber/articles/DslVsGlasfaserAachen';
 
+import StromAnmeldenUmzug from './pages/Ratgeber/articles/StromAnmeldenUmzug';
+import Stromverbrauch1Person from './pages/Ratgeber/articles/Stromverbrauch1Person';
+import Stromverbrauch2Personen from './pages/Ratgeber/articles/Stromverbrauch2Personen';
+import Stromverbrauch4Personen from './pages/Ratgeber/articles/Stromverbrauch4Personen';
+import StromkostenBerechnen from './pages/Ratgeber/articles/StromkostenBerechnen';
+import GasAnmeldenUmzug from './pages/Ratgeber/articles/GasAnmeldenUmzug';
+import GasverbrauchBerechnen from './pages/Ratgeber/articles/GasverbrauchBerechnen';
+import GaspreiseVerstehen from './pages/Ratgeber/articles/GaspreiseVerstehen';
+
 export default function AppRoutes() {
   const { i18n } = useTranslation();
 
@@ -104,7 +113,15 @@ export default function AppRoutes() {
           <Route path="/ratgeber/grundversorgung-aachen-strom-gas" element={<GrundversorgungAachenStromGas />} />
           <Route path="/ratgeber/dsl-vs-glasfaser-aachen" element={<DslVsGlasfaserAachen />} />
           
-          <Route path="*" element={<NotFound />} />
+                <Route path="/ratgeber/strom-anmelden-umzug" element={<StromAnmeldenUmzug />} />
+      <Route path="/ratgeber/stromverbrauch-1-person" element={<Stromverbrauch1Person />} />
+      <Route path="/ratgeber/stromverbrauch-2-personen" element={<Stromverbrauch2Personen />} />
+      <Route path="/ratgeber/stromverbrauch-4-personen" element={<Stromverbrauch4Personen />} />
+      <Route path="/ratgeber/stromkosten-berechnen" element={<StromkostenBerechnen />} />
+      <Route path="/ratgeber/gas-anmelden-umzug" element={<GasAnmeldenUmzug />} />
+      <Route path="/ratgeber/gasverbrauch-berechnen" element={<GasverbrauchBerechnen />} />
+      <Route path="/ratgeber/gaspreise-verstehen" element={<GaspreiseVerstehen />} />
+      <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </ThemeProvider>

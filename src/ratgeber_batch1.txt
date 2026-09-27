@@ -1,0 +1,397 @@
+ENERGIE ALEMI
+Ratgeber-Entwürfe
+Batch 1
+8 SEO-Artikel zu Stromverbrauch, Umzug und Gaspreisen
+Redaktionsstand: 27. September 2026
+Veröffentlichungsfertige Textbasis mit SEO-Metadaten, FAQ und internen Linkzielen.
+Energie Alemi · Alexianergraben 9 · 52064 Aachen
+Inhalt und Einsatz
+Die acht Entwürfe ergänzen die bereits veröffentlichten Ratgeberseiten. Jeder Artikel kann als eigene URL umgesetzt werden; Meta-Daten, FAQ und Linkziele sind direkt beim Text notiert.
+Nr.
+Artikel
+Suchintention
+1
+Strom anmelden beim Umzug: So klappt der Wechsel ohne Lücke
+Umzug / Anmeldung
+2
+Stromverbrauch im 1-Personen-Haushalt: Was ist normal?
+Verbrauch / Single
+3
+Stromverbrauch im 2-Personen-Haushalt: Richtwerte und Kosten
+Verbrauch / Paar
+4
+Stromverbrauch im 4-Personen-Haushalt: Richtwerte für Familien
+Verbrauch / Familie
+5
+Stromkosten berechnen: Formel, Beispiele und Tarifvergleich
+Kosten / Rechner
+6
+Gas anmelden beim Umzug: Vertrag, Zähler und Fristen
+Umzug / Gas
+7
+Gasverbrauch berechnen: Kubikmeter in kWh umrechnen
+Verbrauch / Umrechnung
+8
+Gaspreise verstehen: Arbeitspreis, Grundpreis und Gesamtkosten
+Tarif / Preislogik
+Empfohlene Umsetzung: Pro Artikel genau eine indexierbare URL, Article- und BreadcrumbList-Schema sowie FAQPage-Schema nur für sichtbar dargestellte FAQ-Fragen.
+1. Strom anmelden beim Umzug: So klappt der Wechsel ohne Lücke
+Empfohlener Slug
+/ratgeber/strom-anmelden-umzug
+SEO-Titel
+Strom anmelden beim Umzug: Checkliste 2026 | Energie Alemi
+Meta-Description
+Strom beim Umzug richtig an- und abmelden: Fristen, Zählerstand, MaLo-ID und Anbieterwahl verständlich erklärt. Persönliche Hilfe in Aachen.
+Primärkeyword
+Strom anmelden Umzug
+Sekundärkeywords
+Strom ummelden Aachen; Stromvertrag Umzug; Strom anmelden neue Wohnung; Zählerstand Umzug
+Strom sollte vor dem Einzug angemeldet werden
+Wer umzieht, sollte den Stromvertrag für die neue Wohnung vor dem Einzug organisieren und den bisherigen Anbieter rechtzeitig über den Auszug informieren. Seit dem 6. Juni 2025 können An- und Abmeldungen im Strommarkt nicht mehr rückwirkend vorgenommen werden. Der technische Lieferantenwechsel kann zwar werktags innerhalb von 24 Stunden verarbeitet werden, Vertragslaufzeiten und Kündigungsfristen gelten aber weiterhin.
+Ohne gewählten Tarif bleibt die neue Wohnung nicht dunkel: In der Regel entsteht durch die Stromentnahme ein Vertrag mit dem örtlichen Grundversorger. Das sichert die Versorgung, ist jedoch nicht automatisch die wirtschaftlichste Lösung. Ein rechtzeitiger Vergleich schafft Klarheit über Arbeitspreis, Grundpreis, Laufzeit und Preisgarantie.
+Diese Angaben werden für die Anmeldung benötigt
+Für eine eindeutige Zuordnung sollten folgende Daten bereitliegen:
+vollständige Anschrift der neuen Lieferstelle;
+Einzugsdatum beziehungsweise Datum der Schlüsselübergabe;
+Zählernummer und Zählerstand am Übergabetag;
+Marktlokations-Identifikationsnummer (MaLo-ID), falls vorhanden;
+Name der bisherigen Vertragspartei und Kundennummer für den alten Vertrag;
+geschätzter Jahresverbrauch oder letzte Jahresabrechnung;
+Bankverbindung für das Lastschriftverfahren, falls gewünscht.
+Die MaLo-ID ist eine elfstellige Kennung der Verbrauchsstelle. Sie steht häufig auf der Stromrechnung. Ist sie nicht zur Hand, helfen meist Adresse und Zählernummer bei der Zuordnung.
+Die Umzugs-Checkliste in fünf Schritten
+Vertrag prüfen: Kontrollieren Sie Laufzeit, Kündigungsfrist und Umzugsklausel des bestehenden Vertrags. Ein Umzug beendet einen Sondervertrag nicht in jedem Fall automatisch.
+Anbieter früh informieren: Melden Sie Auszug und neue Adresse so früh wie möglich. Eine Vorlaufzeit von etwa zwei Wochen gibt Spielraum für Rückfragen.
+Neuen Tarif vergleichen: Vergleichen Sie nicht nur den Arbeitspreis, sondern die erwarteten Jahreskosten einschließlich Grundpreis. Prüfen Sie außerdem Laufzeit, Verlängerung und Garantieumfang.
+Zählerstände dokumentieren: Fotografieren Sie am Tag der Übergabe die Zähler in der alten und neuen Wohnung. Notieren Sie Zählernummer, Datum und Stand im Übergabeprotokoll.
+Bestätigungen prüfen: Kontrollieren Sie Lieferbeginn, Vertragskonto und Abschlag. Stimmen Adresse oder Zählernummer nicht, sollte der Anbieter sofort informiert werden.
+24-Stunden-Wechsel bedeutet nicht 24-Stunden-Kündigung
+Die seit Juni 2025 geltende Regel beschleunigt den elektronischen Datenaustausch zwischen Lieferant, Netzbetreiber und Messstellenbetreiber. Sie hebt keine Mindestvertragslaufzeit und keine vertragliche Kündigungsfrist auf. Der mögliche Lieferbeginn hängt deshalb weiterhin vom bestehenden Vertrag und von vollständigen Angaben ab.
+Besonders wichtig: Eine verspätete Auszugsmeldung kann nicht nachträglich auf ein früheres Datum zurückgesetzt werden. Dadurch können Kosten an der alten Lieferstelle weiterlaufen. Zählerfoto und Übergabeprotokoll schützen bei späteren Rückfragen.
+Persönliche Unterstützung in Aachen
+Energie Alemi prüft bestehende Vertragsdaten, vergleicht passende Tarife und unterstützt bei der Vorbereitung des Anbieterwechsels. Die Beratung in Aachen ist kostenlos; die Tarifentscheidung bleibt transparent bei Ihnen.
+CTA: Umzug geplant? Lassen Sie Ihren Stromtarif vor dem Einzug kostenlos prüfen: Telefon 0176 659 493 90 oder über die Kontaktseite.
+Häufige Fragen
+Wie früh sollte ich Strom für die neue Wohnung anmelden?
+Am besten organisieren Sie die Anmeldung etwa zwei Wochen vor der Schlüsselübergabe. So bleibt Zeit, fehlende Daten zu klären. Entscheidend ist, dass der gewünschte Lieferbeginn in der Zukunft liegt.
+Wird der Strom beim Anbieterwechsel unterbrochen?
+Nein. Die physische Versorgung läuft über das bestehende Netz weiter. Gewechselt wird der Vertragspartner für die Belieferung, nicht die Leitung.
+Was passiert, wenn ich noch keinen Vertrag abgeschlossen habe?
+Wenn Sie Strom entnehmen, kommt regelmäßig eine Belieferung durch den örtlichen Grundversorger zustande. Sie können anschließend unter Beachtung der geltenden Fristen in einen anderen Tarif wechseln.
+Muss ich den alten Vertrag selbst kündigen?
+Das hängt vom Fall ab. Bei einem regulären Lieferantenwechsel übernimmt der neue Anbieter häufig die Kündigung. Bei Umzug, Sonderkündigung oder sehr knapper Frist sollten Sie die Abmeldung und Kündigung selbst kontrollieren und sich schriftlich bestätigen lassen.
+Interne Links: /ratgeber/umzug-aachen-strom-gas-internet · /ratgeber/stromanbieter-wechseln · /stromanbieter-aachen · /contact
+2. Stromverbrauch im 1-Personen-Haushalt: Was ist normal?
+Empfohlener Slug
+/ratgeber/stromverbrauch-1-person
+SEO-Titel
+Stromverbrauch 1 Person: Richtwerte & Spartipps | Energie Alemi
+Meta-Description
+Wie viel Strom verbraucht eine Person? Richtwerte für Wohnung und Haus, mit oder ohne elektrisches Warmwasser, plus einfache Spartipps.
+Primärkeyword
+Stromverbrauch 1 Person
+Sekundärkeywords
+Stromverbrauch Singlehaushalt; Stromkosten 1 Person; kWh pro Jahr 1 Person
+Für eine Person sind Wohnform und Warmwasser entscheidend
+Ein 1-Personen-Haushalt verbraucht nach den Vergleichswerten des Stromspiegels im Durchschnitt rund 1.200 Kilowattstunden (kWh) pro Jahr in einer Wohnung und etwa 1.800 kWh in einem Einfamilienhaus, jeweils ohne elektrische Warmwasserbereitung. Wird Warmwasser über Boiler oder Durchlauferhitzer erzeugt, steigen die Vergleichswerte auf rund 1.600 beziehungsweise 2.100 kWh pro Jahr.
+Diese Zahlen sind Orientierung, keine feste Obergrenze. Homeoffice, alte Kühlgeräte, ein Aquarium, Klimageräte oder häufiges Kochen können den Verbrauch erhöhen. Umgekehrt kann eine kleine, effizient ausgestattete Wohnung deutlich darunterliegen.
+Richtwerte richtig einordnen
+Wohnung, Warmwasser nicht elektrisch: etwa 1.200 kWh/Jahr
+Wohnung, Warmwasser elektrisch: etwa 1.600 kWh/Jahr
+Einfamilienhaus, Warmwasser nicht elektrisch: etwa 1.800 kWh/Jahr
+Einfamilienhaus, Warmwasser elektrisch: etwa 2.100 kWh/Jahr
+Im Einfamilienhaus trägt eine Person zusätzliche Grundlast allein, etwa für Heizungspumpe, Außenbeleuchtung, Garage oder Gebäudetechnik. Deshalb ist der Verbrauch dort meist höher als in einer Wohnung im Mehrfamilienhaus.
+So lesen Sie Ihren eigenen Verbrauch
+Der verlässlichste Wert steht auf der letzten Jahresabrechnung. Vergleichen Sie Ablesezeitraum und tatsächliche Tage, bevor Sie den Wert mit einem Jahresrichtwert abgleichen. Bei einem kürzeren Zeitraum lässt sich der Verbrauch nur grob hochrechnen, weil Winter und Sommer unterschiedlich ausfallen können.
+Wenn keine Abrechnung vorliegt, hilft eine monatliche Zählerablesung. Die Differenz zwischen zwei Ständen zeigt den Verbrauch im Zeitraum. Auffällige Sprünge lassen sich anschließend mit Nutzung, Urlaub, neuen Geräten oder elektrischer Warmwasserbereitung abgleichen.
+Die größten Hebel im Singlehaushalt
+Kühlschrank, Gefriergerät, Waschmaschine, Trockner und Unterhaltungselektronik bilden oft einen großen Teil des Haushaltsstroms. Im Homeoffice kommen Monitor, Computer und Router hinzu. Sinnvoll ist es, zuerst die Dauerverbraucher zu prüfen:
+Temperatur von Kühl- und Gefriergeräten passend einstellen;
+alte Geräte mit einem Strommessgerät kontrollieren;
+Stand-by-Verbrauch über schaltbare Steckdosen reduzieren;
+Waschmaschine voll beladen und Eco-Programme nutzen;
+Wasser im Wasserkocher statt auf der Herdplatte erhitzen;
+bei elektrischem Warmwasser Duschdauer und Temperatur bewusst steuern.
+Nicht jede Neuanschaffung rechnet sich sofort. Messen Sie zunächst den realen Verbrauch und vergleichen Sie Anschaffungskosten mit der möglichen jährlichen Einsparung.
+Stromkosten aus dem Verbrauch ableiten
+Die jährlichen Stromkosten bestehen aus Verbrauch mal Arbeitspreis plus Grundpreis. Bei 1.200 kWh, einem Beispiel-Arbeitspreis von 0,35 Euro/kWh und 120 Euro Grundpreis ergeben sich 540 Euro pro Jahr. Das ist ein Rechenbeispiel, kein aktuelles Tarifangebot.
+CTA: Sie möchten wissen, welcher Tarif zu Ihrem tatsächlichen Single-Verbrauch passt? Energie Alemi vergleicht Arbeitspreis, Grundpreis und Vertragsbedingungen kostenlos.
+Häufige Fragen
+Sind 1.500 kWh für eine Person viel?
+In einer Wohnung ohne elektrische Warmwasserbereitung liegt der Wert über dem Stromspiegel-Durchschnitt von rund 1.200 kWh, kann aber je nach Ausstattung plausibel sein. In einem Einfamilienhaus ist 1.500 kWh eher niedrig.
+Warum ist der Pro-Kopf-Verbrauch allein höher?
+Viele Geräte verursachen eine Grundlast unabhängig von der Personenzahl. Kühlschrank, Router oder Herd werden in größeren Haushalten gemeinsam genutzt; ein Single trägt diesen Verbrauch allein.
+Wie erkenne ich elektrisches Warmwasser?
+Typische Hinweise sind ein Durchlauferhitzer im Bad oder ein Boiler unter dem Waschbecken. Im Zweifel helfen Mietunterlagen, Vermieter oder Hausverwaltung.
+Interne Links: /ratgeber/stromkosten-berechnen · /ratgeber/stromvergleich · /electricity · /contact
+3. Stromverbrauch im 2-Personen-Haushalt: Richtwerte und Kosten
+Empfohlener Slug
+/ratgeber/stromverbrauch-2-personen
+SEO-Titel
+Stromverbrauch 2 Personen: kWh, Kosten & Tipps | Energie Alemi
+Meta-Description
+Stromverbrauch für 2 Personen einordnen: Richtwerte für Wohnung und Haus, Einfluss von Warmwasser und praktische Spartipps.
+Primärkeyword
+Stromverbrauch 2 Personen
+Sekundärkeywords
+Stromverbrauch 2-Personen-Haushalt; Stromkosten 2 Personen; kWh pro Jahr 2 Personen
+Zwei Personen verbrauchen nicht doppelt so viel wie eine
+Für zwei Personen nennt der Stromspiegel durchschnittlich rund 1.900 kWh pro Jahr in einer Wohnung und etwa 2.700 kWh im Einfamilienhaus, jeweils ohne elektrische Warmwasserbereitung. Mit Boiler oder Durchlauferhitzer liegen die Vergleichswerte bei rund 2.500 beziehungsweise 3.200 kWh pro Jahr.
+Der Verbrauch steigt nicht proportional zur Personenzahl. Kühlschrank, Router, Beleuchtung oder Fernseher werden gemeinsam genutzt. Dadurch sinkt der durchschnittliche Verbrauch pro Person gegenüber einem Singlehaushalt.
+Vergleichswerte für zwei Personen
+Wohnung, Warmwasser nicht elektrisch: etwa 1.900 kWh/Jahr
+Wohnung, Warmwasser elektrisch: etwa 2.500 kWh/Jahr
+Einfamilienhaus, Warmwasser nicht elektrisch: etwa 2.700 kWh/Jahr
+Einfamilienhaus, Warmwasser elektrisch: etwa 3.200 kWh/Jahr
+Für eine faire Einordnung müssen Wohnform und Warmwasserart zusammenpassen. Ein Wert von 2.800 kWh kann in einer Wohnung mit elektrischem Warmwasser normal, in einer vergleichbaren Wohnung ohne Durchlauferhitzer aber ein Anlass zur Prüfung sein.
+Warum der Verbrauch höher oder niedriger ausfallen kann
+Homeoffice an mehreren Tagen, zwei leistungsstarke Computer, ein Wäschetrockner oder ein zweiter Kühlschrank erhöhen den Verbrauch. Auch dauerhaft laufende Pumpen, alte Gefriertruhen und elektrische Zusatzheizungen fallen stark ins Gewicht. Weniger relevant ist oft die Zahl kleiner Ladegeräte.
+Prüfen Sie bei einem unerwartet hohen Wert zuerst Geräte mit hoher Leistung oder langer Laufzeit. Ein einfaches Strommessgerät zeigt bei steckbaren Geräten, wie viel sie innerhalb von 24 Stunden oder einer Woche benötigen.
+Vier Schritte für einen belastbaren Vergleich
+Lesen Sie den Jahresverbrauch auf der letzten Rechnung ab.
+Klären Sie, ob Warmwasser elektrisch erzeugt wird.
+Vergleichen Sie nur mit derselben Wohnform.
+Beobachten Sie den Zähler monatlich, wenn der Wert auffällig ist.
+Eine einzelne hohe Monatsablesung muss noch kein Problem bedeuten. Saison, Urlaub, Homeoffice und neue Geräte sollten mitbetrachtet werden. Ein dauerhaft steigender Grundverbrauch verdient dagegen Aufmerksamkeit.
+Beispielrechnung für die Jahreskosten
+Bei 1.900 kWh Jahresverbrauch, 0,35 Euro Arbeitspreis pro kWh und 120 Euro Grundpreis ergeben sich rechnerisch 785 Euro im Jahr. Bei 2.700 kWh wären es 1.065 Euro. Die Werte dienen nur als Rechenbeispiele; für einen echten Vergleich gelten die aktuellen Konditionen des jeweiligen Tarifs.
+CTA: Energie Alemi vergleicht Stromtarife anhand Ihres realen Jahresverbrauchs und erklärt transparent, wie sich Arbeitspreis und Grundpreis auswirken.
+Häufige Fragen
+Sind 3.000 kWh für zwei Personen zu viel?
+Das hängt von Wohnform und Warmwasser ab. Im Einfamilienhaus oder bei elektrischem Warmwasser kann der Wert plausibel sein. In einer Wohnung ohne elektrische Warmwasserbereitung liegt er deutlich über dem Durchschnitt und sollte geprüft werden.
+Welcher Verbrauch gehört in den Tarifvergleich?
+Nutzen Sie möglichst den tatsächlichen Jahresverbrauch aus der letzten Abrechnung. Fehlt er, ist ein passender Richtwert besser als eine willkürliche Schätzung.
+Wie oft sollte ich den Zähler ablesen?
+Für die laufende Kontrolle ist eine monatliche Ablesung sinnvoll. So werden Veränderungen früh sichtbar und lassen sich leichter einem Gerät oder einer Nutzungsänderung zuordnen.
+Interne Links: /ratgeber/stromverbrauch-1-person · /ratgeber/stromverbrauch-4-personen · /ratgeber/stromkosten-berechnen · /stromanbieter-aachen
+4. Stromverbrauch im 4-Personen-Haushalt: Richtwerte für Familien
+Empfohlener Slug
+/ratgeber/stromverbrauch-4-personen
+SEO-Titel
+Stromverbrauch 4 Personen: Richtwerte & Kosten | Energie Alemi
+Meta-Description
+Wie viel Strom braucht eine vierköpfige Familie? Richtwerte nach Wohnform und Warmwasserart sowie Tipps für niedrigere Stromkosten.
+Primärkeyword
+Stromverbrauch 4 Personen
+Sekundärkeywords
+Stromverbrauch Familie; Stromkosten 4 Personen; kWh pro Jahr 4 Personen
+Für vier Personen liegt der Durchschnitt je nach Wohnform weit auseinander
+Der Stromspiegel nennt für vier Personen rund 2.600 kWh pro Jahr in einer Wohnung und etwa 3.800 kWh im Einfamilienhaus, wenn Warmwasser nicht elektrisch erzeugt wird. Mit elektrischer Warmwasserbereitung liegen die Vergleichswerte bei rund 4.000 beziehungsweise 4.700 kWh pro Jahr.
+Ein einzelner Pauschalwert ist deshalb wenig hilfreich. Eine Familie in einer Wohnung mit zentraler Warmwasserversorgung hat ein anderes Lastprofil als ein Haushalt im Haus mit Durchlauferhitzer, Gartenpumpe, Gefriertruhe und mehreren Homeoffice-Arbeitsplätzen.
+Richtwerte für einen Vier-Personen-Haushalt
+Wohnung, Warmwasser nicht elektrisch: etwa 2.600 kWh/Jahr
+Wohnung, Warmwasser elektrisch: etwa 4.000 kWh/Jahr
+Einfamilienhaus, Warmwasser nicht elektrisch: etwa 3.800 kWh/Jahr
+Einfamilienhaus, Warmwasser elektrisch: etwa 4.700 kWh/Jahr
+Die Werte sind Durchschnittswerte. Ein höherer Verbrauch beweist nicht automatisch Verschwendung. Er zeigt, dass sich ein Blick auf Warmwasser, Haustechnik und größere Geräte lohnt.
+Wo Familien besonders viel Strom benötigen
+Waschmaschine und Trockner laufen häufiger, Kühl- und Gefrierkapazität ist größer und mehrere Bildschirme können gleichzeitig aktiv sein. Bei elektrischem Warmwasser wächst der Verbrauch zusätzlich mit Zahl und Dauer der Duschen. Im Einfamilienhaus kommen häufig Pumpen, Außenbeleuchtung, Garage oder Lüftung hinzu.
+Für die Ursachenanalyse hilft eine einfache Reihenfolge: zuerst Warmwasserart, dann Heiz- und Gebäudetechnik, danach Kühlgeräte, Trockner und Unterhaltungselektronik prüfen. Kleine Ladegeräte sind selten der wichtigste Hebel.
+Verbrauch senken, ohne den Alltag kompliziert zu machen
+Wasch- und Spülmaschine voll beladen und Eco-Programme nutzen.
+Wäsche möglichst lufttrocknen und den Trockner gezielt einsetzen.
+Kühlschrank auf etwa 7 °C und Gefrierfach auf etwa −18 °C einstellen.
+Spielekonsolen, Fernseher und Computer vollständig ausschalten, wenn sie länger nicht genutzt werden.
+Duschdauer reduzieren, wenn Warmwasser elektrisch erzeugt wird.
+Monatswerte notieren und ungewöhnliche Sprünge sofort prüfen.
+Eine Familie muss nicht jede Gewohnheit gleichzeitig ändern. Zwei oder drei messbare Maßnahmen sind wirksamer als eine lange Liste ohne Kontrolle.
+Beispiel: Was 1.000 kWh Unterschied kosten
+Bei einem Beispiel-Arbeitspreis von 0,35 Euro/kWh entsprechen 1.000 kWh Mehrverbrauch 350 Euro zusätzlichen Verbrauchskosten pro Jahr. Der Grundpreis verändert sich dadurch nicht. Das Beispiel zeigt, warum ein Durchlauferhitzer oder ein altes Dauergerät die Rechnung merklich beeinflussen kann.
+CTA: Bringen Sie Ihre letzte Jahresabrechnung mit. Energie Alemi ordnet Verbrauch und Tarif ein und vergleicht passende Angebote für Ihren Haushalt.
+Häufige Fragen
+Sind 4.000 kWh für vier Personen normal?
+In einer Wohnung mit elektrischem Warmwasser entspricht das ungefähr dem Vergleichswert. Ohne elektrische Warmwasserbereitung wäre der Wert für eine Wohnung überdurchschnittlich; in einem Einfamilienhaus liegt er nahe am Durchschnitt.
+Warum verbraucht ein Haus mehr als eine Wohnung?
+Im Haus fallen zusätzliche Verbraucher wie Pumpen, Außenbeleuchtung, Garage oder Gebäudetechnik an. Außerdem ist die Wohnfläche häufig größer.
+Wie kann eine Familie den Verbrauch zuverlässig verfolgen?
+Lesen Sie den Zähler einmal pro Monat am gleichen Tag ab. Notieren Sie zusätzlich längere Abwesenheiten und neue Geräte. So entsteht nach wenigen Monaten ein belastbares Verbrauchsprofil.
+Interne Links: /ratgeber/stromverbrauch-2-personen · /ratgeber/stromkosten-berechnen · /ratgeber/stromvergleich · /electricity
+5. Stromkosten berechnen: Formel, Beispiele und Tarifvergleich
+Empfohlener Slug
+/ratgeber/stromkosten-berechnen
+SEO-Titel
+Stromkosten berechnen: Formel & Beispiele 2026 | Energie Alemi
+Meta-Description
+Stromkosten einfach berechnen: Jahresverbrauch, Arbeitspreis und Grundpreis richtig einsetzen und Tarife realistisch vergleichen.
+Primärkeyword
+Stromkosten berechnen
+Sekundärkeywords
+Stromkosten Formel; Stromkosten pro Jahr; Arbeitspreis Grundpreis; Stromtarif vergleichen
+Die Jahreskosten bestehen aus Arbeitspreis und Grundpreis
+Die einfache Formel lautet: Jahresverbrauch in kWh × Arbeitspreis in Euro pro kWh + jährlicher Grundpreis = erwartete Stromkosten pro Jahr. Für eine realistische Rechnung müssen beide Preisbestandteile berücksichtigt werden.
+Beispiel: 2.500 kWh × 0,35 Euro/kWh + 120 Euro Grundpreis ergeben 995 Euro pro Jahr. Der rechnerische Monatswert beträgt rund 82,92 Euro. Dieses Beispiel ist kein Tarifangebot.
+Cent richtig in Euro umrechnen
+Tarife nennen den Arbeitspreis meist in Cent pro Kilowattstunde. Teilen Sie den Cent-Wert durch 100. Aus 35 Cent/kWh werden 0,35 Euro/kWh. Erst dann wird mit dem Jahresverbrauch multipliziert.
+Formel: Jahreskosten = (Jahresverbrauch × Arbeitspreis/100) + Grundpreis
+Bei monatlichem Grundpreis wird dieser zuerst mit zwölf multipliziert. Ein Grundpreis von 10 Euro pro Monat entspricht 120 Euro pro Jahr.
+Rechenbeispiele für unterschiedliche Haushalte
+Bei einem Beispieltarif mit 35 Cent/kWh und 120 Euro Grundpreis ergeben sich:
+1.200 kWh: 540 Euro/Jahr
+1.900 kWh: 785 Euro/Jahr
+2.600 kWh: 1.030 Euro/Jahr
+3.800 kWh: 1.450 Euro/Jahr
+Die Beispiele zeigen: Bei niedrigem Verbrauch wiegt der Grundpreis relativ stärker. Bei hohem Verbrauch ist der Arbeitspreis meist der größere Hebel.
+Bonus und Abschlag sind nicht dasselbe wie Tarifkosten
+Ein Sofortbonus oder Neukundenbonus kann die Kosten im ersten Jahr senken, gilt aber häufig nicht dauerhaft. Vergleichen Sie deshalb sowohl die Kosten im ersten Vertragsjahr als auch die Kosten ohne Bonus. Prüfen Sie die Bedingungen für Auszahlung und Mindestbelieferungszeit.
+Der monatliche Abschlag ist lediglich eine Vorauszahlung. Die endgültige Rechnung richtet sich nach dem tatsächlichen Verbrauch und den vereinbarten Preisen. Ein niedriger Abschlag macht einen Tarif nicht automatisch günstig; er kann später zu einer Nachzahlung führen.
+Lokales Beispiel: Grundversorgung Strom in Aachen
+Das veröffentlichte STAWAG-Preisblatt für „Strom Basis“ nennt ab 1. Januar 2026 für Haushaltsbedarf einen Brutto-Arbeitspreis von 37,13 Cent/kWh und einen Brutto-Grundpreis von 114 Euro pro Jahr. Bei 2.500 kWh ergibt das rechnerisch 1.042,25 Euro pro Jahr. Preise können sich ändern; prüfen Sie vor einer Entscheidung immer das aktuell gültige Preisblatt.
+So vergleichen Sie zwei Tarife fair
+Verwenden Sie bei beiden Tarifen denselben Jahresverbrauch.
+Rechnen Sie Arbeitspreis und Grundpreis zusammen.
+Stellen Sie Kosten mit und ohne Bonus gegenüber.
+Prüfen Sie Laufzeit, Kündigungsfrist und Preisgarantie.
+Bewerten Sie nicht nur das erste Jahr, sondern auch die Folgekosten.
+CTA: Energie Alemi berechnet Ihre voraussichtlichen Jahreskosten auf Basis der letzten Abrechnung und erklärt die Vertragsbedingungen verständlich.
+Häufige Fragen
+Wie berechne ich den monatlichen Abschlag?
+Teilen Sie die erwarteten Jahreskosten durch zwölf. Berücksichtigen Sie, dass der Anbieter den Abschlag anhand von Verbrauchsprognose und bisherigen Daten abweichend festlegen kann.
+Welcher Preis ist wichtiger: Arbeits- oder Grundpreis?
+Bei hohem Verbrauch hat der Arbeitspreis meist mehr Gewicht. Bei sehr niedrigem Verbrauch kann ein niedriger Grundpreis entscheidend sein. Maßgeblich sind immer die gesamten Jahreskosten.
+Gehört der Bonus in den Vergleich?
+Ja, aber getrennt. Zeigen Sie die Kosten des ersten Jahres mit Bonus und die regulären Kosten ohne Bonus. So vermeiden Sie einen verzerrten Langfristvergleich.
+Interne Links: /ratgeber/stromvergleich · /ratgeber/stromanbieter-wechseln · /ratgeber/stromverbrauch-1-person · /stromanbieter-aachen
+6. Gas anmelden beim Umzug: Vertrag, Zähler und Fristen
+Empfohlener Slug
+/ratgeber/gas-anmelden-umzug
+SEO-Titel
+Gas anmelden beim Umzug: Schritt-für-Schritt | Energie Alemi
+Meta-Description
+Gas beim Umzug richtig anmelden: Vertrag prüfen, Zählerstand sichern, neuen Tarif wählen und doppelte Kosten vermeiden.
+Primärkeyword
+Gas anmelden Umzug
+Sekundärkeywords
+Gas ummelden Aachen; Gasvertrag Umzug; Gas anmelden neue Wohnung; Gaszähler ablesen
+Vor dem Umzug muss geklärt werden, wer den Gasvertrag hält
+Bei einer eigenen Gastherme schließen Mieter oder Eigentümer meist selbst einen Gasvertrag ab. Bei einer Zentralheizung läuft der Vertrag dagegen häufig über Vermieter oder Hausverwaltung; die Kosten erscheinen dann in der Nebenkostenabrechnung. Klären Sie deshalb zuerst, ob die neue Wohnung überhaupt eine eigene Gaslieferstelle besitzt.
+Besteht ein eigener Vertrag, sollten Sie den bisherigen Anbieter frühzeitig über den Umzug informieren. Ob der Vertrag an der neuen Adresse fortgeführt, beendet oder durch einen neuen Tarif ersetzt wird, richtet sich nach Vertrag, Liefermöglichkeit und Umzugsklausel.
+Diese Daten brauchen Sie
+Anschrift der alten und neuen Lieferstelle;
+Auszugs- und Einzugsdatum;
+Gaszählernummern und Zählerstände;
+Kundennummer und Vertragsdaten;
+gewünschter Lieferbeginn;
+letzte Jahresabrechnung oder erwarteter Jahresverbrauch;
+neue Rechnungsanschrift.
+Fotografieren Sie den Zähler bei der Schlüsselübergabe und übernehmen Sie den Stand in das Protokoll. Das Foto sollte Nummer, Stand und möglichst das Datum nachvollziehbar dokumentieren.
+Gasvertrag mitnehmen oder neu vergleichen?
+Viele Sonderverträge können am neuen Wohnort fortgeführt werden, sofern der Anbieter dort liefern kann. Prüfen Sie dennoch die Konditionen: Der Tarif muss nicht automatisch die günstigste Wahl für die neue Wohnsituation sein. Bei größerer Fläche, anderer Heiztechnik oder besserem Dämmstandard kann sich auch der erwartete Verbrauch ändern.
+Kann der bisherige Anbieter die neue Lieferstelle nicht versorgen, kommt je nach Vertrag eine Beendigung infrage. Verlassen Sie sich nicht auf Annahmen, sondern lassen Sie sich Lieferende und Schlussrechnung schriftlich bestätigen.
+Was passiert ohne gewählten Gastarif?
+Wenn an einer eigenen Gaslieferstelle Gas entnommen wird, greift regelmäßig die gesetzlich abgesicherte Belieferung durch den örtlichen Grundversorger. Das verhindert eine Versorgungslücke. Trotzdem sollten Preis und Bedingungen zeitnah mit verfügbaren Sondertarifen verglichen werden.
+Bei Zentralheizung müssen Bewohner in der Regel keinen eigenen Liefervertrag anmelden. Hier entscheidet der Vermieter oder die Gemeinschaft über den Gaslieferanten.
+Praktische Umzugs-Checkliste
+Heizungsart und eigene Gaslieferstelle klären.
+Bestehenden Vertrag samt Umzugsklausel prüfen.
+Anbieter rechtzeitig über beide Adressen informieren.
+Tarif für den neuen Verbrauch vergleichen.
+Zählerstand bei Aus- und Einzug fotografieren.
+Lieferbestätigung und später die Schlussrechnung kontrollieren.
+CTA: Energie Alemi prüft Ihren Gasvertrag und vergleicht passende Tarife für die neue Adresse in Aachen und der Region.
+Häufige Fragen
+Muss ich Gas anmelden, wenn die Wohnung eine Zentralheizung hat?
+Meist nicht. Läuft die Anlage über Vermieter oder Hausverwaltung, werden die Heizkosten über die Nebenkosten abgerechnet. Fragen Sie vor dem Einzug nach.
+Kann ich meinen bisherigen Gasvertrag mitnehmen?
+Häufig ja, wenn der Anbieter die neue Adresse beliefert und der Vertrag die Fortführung vorsieht. Maßgeblich sind die individuellen Vertragsbedingungen.
+Welche Zählerstände brauche ich?
+Notieren Sie den Endstand der alten und den Anfangsstand der neuen Lieferstelle. Zählernummer und Foto helfen, beide Werte eindeutig zuzuordnen.
+Wer kündigt den alten Gasvertrag?
+Bei einem regulären Anbieterwechsel übernimmt häufig der neue Lieferant die Kündigung. Bei einem Umzug sollten Sie die Meldung selbst kontrollieren, weil zusätzlich Lieferstelle, Datum und neue Anschrift zugeordnet werden müssen.
+Interne Links: /ratgeber/umzug-aachen-strom-gas-internet · /ratgeber/gasanbieter-wechseln · /gasanbieter-aachen · /contact
+7. Gasverbrauch berechnen: Kubikmeter in kWh umrechnen
+Empfohlener Slug
+/ratgeber/gasverbrauch-berechnen
+SEO-Titel
+Gasverbrauch berechnen: m³ in kWh umrechnen | Energie Alemi
+Meta-Description
+Gasverbrauch korrekt berechnen: Zählerstand in m³ ablesen, mit Brennwert und Zustandszahl in kWh umrechnen und Kosten abschätzen.
+Primärkeyword
+Gasverbrauch berechnen
+Sekundärkeywords
+m3 Gas in kWh; Gasverbrauch Formel; Brennwert Zustandszahl; Gaskosten berechnen
+Der Gaszähler misst m³, die Rechnung verwendet kWh
+Der Gasverbrauch am Zähler wird in Kubikmetern (m³) erfasst. Für die Abrechnung wird dieses Volumen in Kilowattstunden (kWh) umgerechnet. Die genaue Formel lautet: Verbrauch in m³ × Zustandszahl × Brennwert = Verbrauch in kWh.
+Brennwert und Zustandszahl stehen auf der Gasabrechnung. Ohne diese Werte ist nur eine grobe Schätzung möglich. Eine verbreitete Faustformel lautet m³ × 10, ersetzt aber nicht die exakte Abrechnung.
+Die drei Werte der Formel
+Verbrauch in m³: Ziehen Sie den alten Zählerstand vom neuen Stand ab. Die Differenz ist das im Zeitraum gemessene Gasvolumen.
+Zustandszahl: Sie korrigiert das gemessene Volumen auf einen definierten Normzustand, unter anderem wegen Druck und Temperatur an der Lieferstelle.
+Brennwert: Er beschreibt, wie viel Energie im gelieferten Gas steckt. Der Wert wird in kWh pro m³ angegeben und kann je nach Gasbeschaffenheit und Abrechnungszeitraum variieren.
+Beispiel für die exakte Umrechnung
+Angenommen, der Zähler zeigt für den Abrechnungszeitraum eine Differenz von 1.200 m³. Auf der Rechnung stehen eine Zustandszahl von 0,95 und ein Brennwert von 11,1 kWh/m³.
+1.200 m³ × 0,95 × 11,1 kWh/m³ = 12.654 kWh.
+Mit der Faustformel m³ × 10 wären es 12.000 kWh. Die Abweichung zeigt, warum für die Rechnungsprüfung die echten Faktoren verwendet werden sollten.
+Vom Verbrauch zu den Gaskosten
+Sind die Kilowattstunden bekannt, lautet die Kostenformel:
+Jahresverbrauch in kWh × Arbeitspreis in Euro/kWh + jährlicher Grundpreis = erwartete Jahreskosten.
+Beispiel: 12.654 kWh × 0,10 Euro/kWh + 180 Euro Grundpreis ergeben 1.445,40 Euro pro Jahr. Das ist ein Rechenbeispiel und kein aktuelles Tarifangebot.
+Warum der Verbrauch von Jahr zu Jahr schwankt
+Gas wird häufig zum Heizen eingesetzt. Ein kalter Winter, längere Anwesenheit, eine höhere Raumtemperatur oder veränderte Warmwassernutzung können den Jahresverbrauch erhöhen. Auch Wohnfläche, Dämmung, Heizungszustand und Anzahl der Bewohner wirken sich aus.
+Vergleichen Sie daher nicht nur zwei absolute Jahreswerte. Berücksichtigen Sie Wetter, Abrechnungsdauer und Veränderungen im Haushalt. Für eine frühe Kontrolle können monatliche Zählerstände hilfreich sein.
+Gasrechnung prüfen
+Kontrollieren Sie Anfangs- und Endzählerstand, Abrechnungszeitraum, Umrechnungsfaktoren, Arbeitspreis und Grundpreis. Kennzeichnen Rechnung oder Anbieter einen Zählerstand als geschätzt, vergleichen Sie ihn mit eigenen Fotos oder Notizen.
+CTA: Energie Alemi hilft Ihnen, Verbrauch und Tarifkosten nachvollziehbar einzuordnen und passende Gastarife zu vergleichen.
+Häufige Fragen
+Wie viele kWh sind ein Kubikmeter Gas?
+Das hängt von Brennwert und Zustandszahl ab. Als grobe Orientierung wird oft mit etwa 10 kWh pro m³ gerechnet; exakt ist nur die Formel mit den Faktoren Ihrer Abrechnung.
+Wo finde ich Brennwert und Zustandszahl?
+Beide Werte stehen im technischen oder Verbrauchsabschnitt der Jahresabrechnung. Der Brennwert kann für Teilzeiträume unterschiedlich ausgewiesen sein.
+Kann ich mit der Formel meine Rechnung kontrollieren?
+Ja. Verwenden Sie die auf der Rechnung genannten Faktoren und denselben Abrechnungszeitraum. Kleine Abweichungen können durch Rundungen entstehen.
+Interne Links: /ratgeber/gaspreise-verstehen · /ratgeber/gasvergleich · /ratgeber/gasanbieter-wechseln · /gas
+8. Gaspreise verstehen: Arbeitspreis, Grundpreis und Gesamtkosten
+Empfohlener Slug
+/ratgeber/gaspreise-verstehen
+SEO-Titel
+Gaspreise verstehen: Arbeitspreis & Grundpreis | Energie Alemi
+Meta-Description
+Gaspreise verständlich erklärt: Arbeitspreis, Grundpreis, Preisgarantie, Bonus und Jahreskosten richtig vergleichen.
+Primärkeyword
+Gaspreise verstehen
+Sekundärkeywords
+Gas Arbeitspreis Grundpreis; Gaskosten berechnen; Gastarif vergleichen; Gaspreisgarantie
+Der günstigste Arbeitspreis ist nicht automatisch der günstigste Tarif
+Ein Gastarif besteht in der Regel aus einem verbrauchsabhängigen Arbeitspreis und einem festen Grundpreis. Erst die Summe beider Bestandteile zeigt die erwarteten Jahreskosten. Bei hohem Verbrauch wirkt der Arbeitspreis stärker; bei niedrigem Verbrauch kann der Grundpreis entscheidend sein.
+Die Vergleichsformel lautet: Jahresverbrauch in kWh × Arbeitspreis in Euro/kWh + Grundpreis pro Jahr = erwartete Jahreskosten.
+Arbeitspreis und Grundpreis einfach erklärt
+Der Arbeitspreis wird für jede verbrauchte Kilowattstunde berechnet. Ein Unterschied von 1 Cent/kWh macht bei 15.000 kWh Jahresverbrauch 150 Euro aus.
+Der Grundpreis fällt unabhängig vom Verbrauch an. Er deckt feste Kostenbestandteile des Tarifs. Ein Grundpreis von 15 Euro pro Monat entspricht 180 Euro pro Jahr.
+Beispiel A: 15.000 kWh × 0,10 Euro + 180 Euro = 1.680 Euro/Jahr.
+Beispiel B: 15.000 kWh × 0,095 Euro + 260 Euro = 1.685 Euro/Jahr.
+Obwohl Tarif B den niedrigeren Arbeitspreis hat, ist Tarif A bei diesem Verbrauch rechnerisch günstiger. Das Beispiel ist kein aktuelles Angebot.
+Was eine Preisgarantie tatsächlich abdeckt
+Preisgarantie ist nicht gleich Preisgarantie. Eine vollständige Garantie kann mehr Preisbestandteile erfassen als eine eingeschränkte Garantie, die beispielsweise nur Beschaffung und Vertrieb schützt. Steuern, Abgaben oder regulierte Entgelte können je nach Vertragsklausel ausgenommen sein.
+Lesen Sie deshalb Dauer und Umfang der Garantie. Eine lange Garantie ist nur dann wertvoll, wenn sie zum geplanten Vertragszeitraum passt und die wichtigen Bestandteile einschließt.
+Boni getrennt betrachten
+Sofort- und Neukundenboni können die Kosten des ersten Jahres senken. Prüfen Sie Auszahlungsvoraussetzungen, Mindestbelieferungszeit und die regulären Kosten ohne Bonus. Ein Tarif sollte nicht allein wegen eines hohen Bonus gewählt werden.
+Auch der monatliche Abschlag ist kein Tarifpreis. Er ist eine Vorauszahlung auf die spätere Abrechnung. Entscheidend bleiben tatsächlicher Verbrauch und vereinbarte Preisbestandteile.
+Weitere Vertragsmerkmale im Vergleich
+Mindestvertragslaufzeit und automatische Verlängerung;
+Kündigungsfrist;
+Preisgarantie und Ausnahmen;
+Vorkasse oder Kaution;
+Paketmengen und Folgen bei Mehr- oder Minderverbrauch;
+Vertragsbedingungen für Umzug und Preisänderung;
+Kundenservice und Erreichbarkeit.
+Tarife mit Vorkasse oder großen Paketmengen können zusätzliche Risiken bergen. Ein transparenter Vergleich bewertet daher nicht nur den rechnerischen Preis.
+So nutzen Sie Ihre Jahresabrechnung
+Auf der Abrechnung finden Sie Jahresverbrauch, bisherigen Arbeitspreis, Grundpreis und geleistete Abschläge. Verwenden Sie den Verbrauch für einen aktuellen Tarifvergleich. Hat sich Wohnfläche, Heizverhalten oder Personenzahl geändert, passen Sie die Prognose vorsichtig an.
+CTA: Energie Alemi vergleicht Gastarife anhand Ihres Verbrauchs und zeigt Jahreskosten, Bonuswirkung und Vertragsbedingungen getrennt voneinander.
+Häufige Fragen
+Was ist wichtiger: Arbeitspreis oder Grundpreis?
+Das hängt vom Verbrauch ab. Bei hohem Verbrauch wirkt sich der Arbeitspreis stärker aus. Bei niedrigem Verbrauch kann ein geringer Grundpreis den Ausschlag geben. Vergleichen Sie immer die Gesamtkosten.
+Ist der Abschlag der monatliche Preis?
+Nein. Der Abschlag ist eine Vorauszahlung. Die endgültigen Kosten ergeben sich aus tatsächlichem Verbrauch, Arbeitspreis und Grundpreis.
+Was passiert bei einer Preiserhöhung?
+Prüfen Sie das Schreiben, den Geltungstermin und ein mögliches Sonderkündigungsrecht. Lesen Sie außerdem den Zählerstand zum Änderungszeitpunkt ab, damit der Verbrauch sauber abgegrenzt werden kann.
+Sind Tarife mit Bonus immer günstiger?
+Nein. Der Bonus kann nur das erste Jahr verbilligen. Entscheidend sind auch die regulären Kosten, Bedingungen und Folgekosten.
+Interne Links: /ratgeber/gasverbrauch-berechnen · /ratgeber/gasvergleich · /ratgeber/gasanbieter-wechseln · /gasanbieter-aachen
+Quellen und Redaktionsgrundlage
+Energie Alemi, Website und Live-Sitemap: https://www.energie-alemi.de/ und https://www.energie-alemi.de/sitemap.xml
+Verbraucherzentrale NRW, „Was passiert beim Umzug mit Stromvertrag oder Gasvertrag?“: https://www.Verbraucherzentrale.nrw/wissen/energie/preise-tarife-anbieterwechsel/was-passiert-beim-umzug-mit-stromvertrag-oder-gasvertrag-10915
+Stadtwerke Düsseldorf, Umzugsratgeber und Regelung seit 6. Juni 2025: https://www.swd-ag.de/kontakt-service/service/umzugsratgeber/
+Stromspiegel, „Stromverbrauch im Haushalt: Durchschnitt für 1–5 Personen“: https://www.stromspiegel.de/stromverbrauch-verstehen/stromverbrauch-im-haushalt/
+Alliander Netz, Umrechnung Gasverbrauch: https://www.alliander-netz.de/wp-content/uploads/2019/08/Umrechnung_Gasverbrauch.pdf
+TEAG, „Gasverbrauch berechnen: m³ in kWh umrechnen“: https://mein-zuhause.teag.de/energie-ratgeber/heizen/gasverbrauch-berechnen-umrechnen
+STAWAG, Preisblatt Strom Basis ab 1. Januar 2026: https://www.stawag.de/fileadmin/stawag/content/Dokumente/Strom/Preisblatt_Strom_Basis_mErgBed_2026.pdf
+Redaktioneller Hinweis: Gesetzliche Regeln, Tarifpreise und Preisblätter können sich ändern. Vor der Veröffentlichung sollte bei zeitabhängigen Angaben das jeweilige Aktualisierungsdatum geprüft werden.
