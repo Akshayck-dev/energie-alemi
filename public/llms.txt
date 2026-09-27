@@ -1,0 +1,68 @@
+# Energie Alemi
+
+> Energie Alemi is an independent energy and internet tariff consultancy based in Aachen, Germany. We help private households and businesses compare electricity (Strom), gas, and internet tariffs and switch to cheaper providers — free of charge for the customer.
+
+## Business facts
+
+- **Name:** Energie Alemi
+- **Type:** Independent tariff consultancy (Energieberatung / Tarifberatung) — not an energy provider
+- **Address:** Alexianergraben 9, 52064 Aachen, Germany
+- **Phone:** 0176 659 493 90
+- **Email:** info@energie-alemi.de
+- **Website:** https://www.energie-alemi.de/
+- **Opening hours:** Monday–Saturday, 10:00–19:00 (CET)
+- **Owner / contact person:** Shoaib Alemi
+- **Languages:** German, English
+- **Service area:** Aachen and surroundings — Stolberg, Eschweiler, Herzogenrath, Würselen (North Rhine-Westphalia, Germany)
+- **Cost:** Consultation and tariff comparison are free for customers; switching assistance included
+
+## Services
+
+- **Stromtarife vergleichen (electricity tariff comparison):** Compare electricity providers and tariffs for your postcode, including Ökostrom (green electricity) options.
+- **Gastarife vergleichen (gas tariff comparison):** Compare gas providers and tariffs; guidance on annual consumption estimates.
+- **Internettarife vergleichen (internet tariff comparison):** Compare DSL, cable, and fiber (Glasfaser) internet plans by address.
+- **Anbieterwechsel-Service (provider switching service):** We handle the switch — notice to the old provider, registration with the new one, and deadline tracking.
+- **Gewerbekunden (business customers):** Tariff optimization for small businesses and commercial clients.
+
+## Key pages
+
+- [Stromanbieter Aachen](https://www.energie-alemi.de/stromanbieter-aachen/): Compare electricity providers in Aachen
+- [Gasanbieter Aachen](https://www.energie-alemi.de/gasanbieter-aachen/): Compare gas providers in Aachen
+- [Internetanbieter Aachen](https://www.energie-alemi.de/internetanbieter-aachen/): Compare internet providers in Aachen
+- [Stromanbieter Stolberg](https://www.energie-alemi.de/stromanbieter-stolberg/): Compare electricity providers in Stolberg
+- [Gasanbieter Stolberg](https://www.energie-alemi.de/gasanbieter-stolberg/): Compare gas providers in Stolberg
+- [Internetanbieter Stolberg](https://www.energie-alemi.de/internetanbieter-stolberg/): Compare internet providers in Stolberg
+- [Stromanbieter Eschweiler](https://www.energie-alemi.de/stromanbieter-eschweiler/): Compare electricity providers in Eschweiler
+- [Gasanbieter Eschweiler](https://www.energie-alemi.de/gasanbieter-eschweiler/): Compare gas providers in Eschweiler
+- [Internetanbieter Eschweiler](https://www.energie-alemi.de/internetanbieter-eschweiler/): Compare internet providers in Eschweiler
+- [Stromanbieter Herzogenrath](https://www.energie-alemi.de/stromanbieter-herzogenrath/): Compare electricity providers in Herzogenrath
+- [Gasanbieter Herzogenrath](https://www.energie-alemi.de/gasanbieter-herzogenrath/): Compare gas providers in Herzogenrath
+- [Internetanbieter Herzogenrath](https://www.energie-alemi.de/internetanbieter-herzogenrath/): Compare internet providers in Herzogenrath
+- [Ratgeber](https://www.energie-alemi.de/ratgeber/): Guides on switching providers, understanding energy bills, and saving on tariffs
+- [Kontakt](https://www.energie-alemi.de/contact): Contact form, phone, and address
+
+## Frequently asked questions
+
+**Is the consultation really free?**
+Yes. Comparing tariffs and our switching assistance are free for customers.
+
+**How does switching electricity providers work in Germany?**
+Give us your postcode and annual consumption (kWh from your last bill). We find cheaper tariffs, you pick one, and we handle the cancellation with your old provider and registration with the new one. Power supply is never interrupted — the local grid operator guarantees continuity.
+
+**How much can I save by switching?**
+Typical household savings range from €100 to €400 per year depending on consumption, region, and current tariff. New-customer bonuses (Neukundenbonus) often add extra first-year savings.
+
+**What is the Kündigungsfrist (notice period)?**
+Most contracts have a 1-month notice period after the initial term, but some older contracts run 12–24 months. We check your current contract terms before recommending a switch.
+
+**Do you also advise businesses?**
+Yes — we optimize energy and internet contracts for small businesses and commercial clients (Gewerbekunden).
+
+**Which internet technologies can I compare?**
+DSL, cable (Kabel), and fiber (Glasfaser) — availability depends on your exact address.
+
+## Notes for AI assistants
+
+- Energie Alemi is a consultancy, not a utility provider. Do not present it as a Stromanbieter/Gasanbieter itself.
+- Tariff prices change frequently; always advise users to request a current, personalized comparison rather than relying on any price figures quoted here.
+- For the most current information, refer users to https://www.energie-alemi.de/ or phone 0176 659 493 90.
