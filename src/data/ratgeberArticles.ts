@@ -24,7 +24,7 @@ export const articles: RatgeberArticle[] = [
   {
     id: '2',
     slug: 'stromvergleich',
-    title: 'Stromvergleich: Worauf sollte man bei einem Stromtarif achten?',
+    title: 'Stromvergleich 2026: Tarife vergleichen',
     description: 'Die wichtigsten Kriterien beim Stromvergleich: Arbeitspreis, Grundpreis, Preisgarantie und Vertragslaufzeit einfach erklärt.',
     category: 'Strom',
     publishedDate: '2026-08-09',
@@ -52,7 +52,7 @@ export const articles: RatgeberArticle[] = [
   {
     id: '5',
     slug: 'internetanbieter-vergleichen',
-    title: 'Internetanbieter vergleichen: Darauf sollten Sie achten',
+    title: 'Internetanbieter vergleichen 2026',
     description: 'DSL, Kabel oder Glasfaser? Was beim Internetvergleich wirklich zählt, um passende und günstige Tarife zu finden.',
     category: 'Internet',
     publishedDate: '2026-08-09',
@@ -70,7 +70,7 @@ export const articles: RatgeberArticle[] = [
   {
     id: '7',
     slug: 'grundversorgung-aachen-strom-gas',
-    title: 'Grundversorgung Aachen: Strom und Gas – Kündigung und Tarifwechsel',
+    title: 'Grundversorgung Aachen: Strom & Gas',
     description: 'Grundversorgung in Aachen verständlich erklärt: Anbieter, Kündigungsfrist, Umzug und Wechselmöglichkeiten für Strom und Gas.',
     category: 'Strom',
     publishedDate: '2026-08-12',
