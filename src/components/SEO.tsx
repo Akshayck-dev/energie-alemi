@@ -61,7 +61,7 @@ export default function SEO({ title, description, url, image, isArticle, datePub
     "@id": websiteId,
     "url": `${baseUrl}/`,
     "name": "Energie Alemi",
-    "description": "Kostenloser Vergleich für Strom, Gas und Internet.",
+            "description": "Free comparison for electricity, gas, and internet.",
     "inLanguage": lang === 'de' ? 'de-DE' : lang,
     "publisher": {
       "@id": orgId
@@ -78,7 +78,7 @@ export default function SEO({ title, description, url, image, isArticle, datePub
       "url": `${baseUrl}/favicon.webp`
     },
     "image": `${baseUrl}/about-hero-image.webp`,
-    "description": "Berater für Energie- und Telekommunikationstarife in Aachen und ganz Deutschland.",
+            "description": "Consultant for energy and telecommunications tariffs in Aachen and all of Germany.",
     "telephone": "+4917665949390",
     "email": "info@energie-alemi.de",
     "priceRange": "Kostenlose Beratung",

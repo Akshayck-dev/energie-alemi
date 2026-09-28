@@ -17,8 +17,8 @@ export default function Footer() {
     { key: 'faq', path: '/faq', name: t('nav.faq', 'FAQ') },
     { key: 'about_us', path: '/about', name: t('nav.about_us') },
     { key: 'contact', path: '/contact', name: t('nav.contact') },
-    { key: 'impressum', path: '/impressum', name: 'Impressum' },
-    { key: 'datenschutz', path: '/datenschutz', name: 'Datenschutz' }
+    { key: 'impressum', path: '/impressum', name: i18n.language === 'en' ? 'Legal Notice' : 'Impressum' },
+    { key: 'datenschutz', path: '/datenschutz', name: i18n.language === 'en' ? 'Privacy Policy' : 'Datenschutz' }
   ];
 
   return (

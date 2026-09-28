@@ -80,8 +80,8 @@ export default function HomeFeatures() {
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     <span>{t('home_features.feature1_desc')}</span>
                   </p>
-                  <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
-                    <span className="sr-only">Mehr erfahren</span>
+                  <Link to="/contact" aria-label={i18n.language === 'en' ? 'Learn more' : 'Mehr erfahren'} className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                    <span className="sr-only">{i18n.language === 'en' ? 'Learn more' : 'Mehr erfahren'}</span>
                     <ArrowRight size={18} className="rtl:rotate-180" aria-hidden="true" />
                   </Link>
                 </div>
@@ -109,8 +109,8 @@ export default function HomeFeatures() {
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     <span>{t('home_features.feature2_desc')}</span>
                   </p>
-                  <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
-                    <span className="sr-only">Mehr erfahren</span>
+                  <Link to="/contact" aria-label={i18n.language === 'en' ? 'Learn more' : 'Mehr erfahren'} className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                    <span className="sr-only">{i18n.language === 'en' ? 'Learn more' : 'Mehr erfahren'}</span>
                     <ArrowRight size={18} className="rtl:rotate-180" aria-hidden="true" />
                   </Link>
                 </div>
@@ -135,8 +135,8 @@ export default function HomeFeatures() {
                   <p className="text-slate-600 dark:text-white/80 text-[13.5px] leading-snug min-h-[60px] flex items-start justify-center max-w-[220px]">
                     <span>{t('home_features.feature3_desc')}</span>
                   </p>
-                  <Link to="/contact" aria-label="Mehr erfahren" className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
-                    <span className="sr-only">Mehr erfahren</span>
+                  <Link to="/contact" aria-label={i18n.language === 'en' ? 'Learn more' : 'Mehr erfahren'} className="mt-auto w-10 h-10 rounded-full bg-[#0047AB] text-white flex items-center justify-center hover:bg-[#051024] transition-colors shadow-md shadow-blue-900/20 shrink-0 hover:scale-110 active:scale-95 duration-200">
+                    <span className="sr-only">{i18n.language === 'en' ? 'Learn more' : 'Mehr erfahren'}</span>
                     <ArrowRight size={18} className="rtl:rotate-180" aria-hidden="true" />
                   </Link>
                 </div>
