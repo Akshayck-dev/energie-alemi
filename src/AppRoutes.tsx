@@ -52,6 +52,7 @@ import GasAnmeldenUmzug from './pages/Ratgeber/articles/GasAnmeldenUmzug';
 import GasverbrauchBerechnen from './pages/Ratgeber/articles/GasverbrauchBerechnen';
 import GaspreiseVerstehen from './pages/Ratgeber/articles/GaspreiseVerstehen';
 
+import EnergieberaterAachen from './pages/Ratgeber/articles/EnergieberaterAachen';
 export default function AppRoutes() {
   const { i18n } = useTranslation();
 
@@ -121,7 +122,8 @@ export default function AppRoutes() {
       <Route path="/ratgeber/gas-anmelden-umzug" element={<GasAnmeldenUmzug />} />
       <Route path="/ratgeber/gasverbrauch-berechnen" element={<GasverbrauchBerechnen />} />
       <Route path="/ratgeber/gaspreise-verstehen" element={<GaspreiseVerstehen />} />
-      <Route path="*" element={<NotFound />} />
+            <Route path="/ratgeber/energieberater-aachen" element={<EnergieberaterAachen />} />
+<Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </ThemeProvider>

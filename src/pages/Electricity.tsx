@@ -155,7 +155,64 @@ export default function Electricity() {
         </section>
       </div>
 
-      {/* FAQ Section */}
+      
+      <div className="relative z-25 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
+        <section className="py-14 md:py-24">
+          <div className="container mx-auto px-6 max-w-[1000px]">
+            <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Stromkosten in Aachen: Was ist normal?</h2>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-6">
+                Um zu beurteilen, ob Ihr aktueller Stromtarif zu teuer ist, hilft ein Blick auf die durchschnittlichen Verbrauchswerte. Der Stromverbrauch hängt stark von der Haushaltsgröße und der Art der Warmwasserbereitung ab.
+              </p>
+              <ul className="list-disc pl-6 mb-6 text-slate-700 dark:text-slate-300 text-lg space-y-2">
+                <li><strong>1-Personen-Haushalt:</strong> ca. 1.500 kWh pro Jahr. (<a href="/ratgeber/stromverbrauch-1-person" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Details zum Single-Haushalt</a>)</li>
+                <li><strong>2-Personen-Haushalt:</strong> ca. 2.500 kWh pro Jahr. (<a href="/ratgeber/stromverbrauch-2-personen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Details für Paare</a>)</li>
+                <li><strong>4-Personen-Haushalt:</strong> ca. 4.000 kWh pro Jahr. (<a href="/ratgeber/stromverbrauch-4-personen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Details für Familien</a>)</li>
+              </ul>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                Liegt Ihr Verbrauch deutlich darüber, helfen Energiespartipps. Liegen Ihre Kosten pro kWh jedoch deutlich über dem Marktdurchschnitt, sollten Sie umgehend den Tarif wechseln.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Ökostrom oder Normalstrom?</h2>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
+                Viele Kunden fragen uns, ob sich der Umstieg auf Ökostrom lohnt. Die Antwort lautet ganz klar: Ja. Strom aus erneuerbaren Energien (wie Wind-, Sonnen- oder Wasserkraft) ist in den letzten Jahren enorm konkurrenzfähig geworden.
+              </p>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
+                Oftmals sind reine Ökostromtarife sogar günstiger als die klassischen Graustrom-Mixe der regionalen Grundversorger. Ein Wechsel zu Ökostrom bedeutet also nicht, dass Sie mehr bezahlen müssen. Im Gegenteil: Sie schonen die Umwelt und entlasten gleichzeitig Ihren Geldbeutel.
+              </p>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                In unserer Tarifberatung weisen wir echte Ökotarife (mit Zertifikaten wie ok-power oder Grüner Strom Label) transparent aus, sodass Sie eine informierte Entscheidung treffen können.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Für wen lohnt sich der Wechsel besonders?</h2>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
+                Das größte Sparpotenzial haben Haushalte, die noch nie ihren Stromanbieter gewechselt haben und sich in der sogenannten Grundversorgung befinden. Die Grundversorgung ist zwar flexibel, aber strukturell oft sehr teuer.
+              </p>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
+                Auch nach einer Preiserhöhung Ihres aktuellen Anbieters oder bei einem anstehenden Umzug ist der optimale Zeitpunkt gekommen, um aktiv zu werden. Sie profitieren dann nicht nur von besseren Kilowattstundenpreisen, sondern oft auch von attraktiven Neukundenboni.
+              </p>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                Erfahren Sie in unserem Ratgeber mehr darüber, wie Sie den <a href="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Stromanbieter richtig wechseln</a> und Fristen optimal nutzen.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10">
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Strom, Gas & Internet aus einer Hand</h2>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
+                Energie Alemi bietet Ihnen den Komfort, nicht nur Ihren Stromtarif zu optimieren. Wir prüfen auf Wunsch auch Ihre Verträge für andere grundlegende Haushaltsausgaben.
+              </p>
+              <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                Mit einem kombinierten Blick auf Ihre Kosten für <a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Gas</a> und <a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Internet (DSL & Glasfaser)</a> lässt sich die Haushaltskasse oft um mehrere hundert Euro im Jahr entlasten. Wir sind Ihr zentraler Ansprechpartner für alle Versorgungsverträge in Aachen und bundesweit.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+{/* FAQ Section */}
       <div className="relative z-30 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">

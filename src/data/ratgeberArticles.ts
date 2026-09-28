@@ -159,4 +159,13 @@ export const articles: RatgeberArticle[] = [
     publishedDate: '2026-09-27',
     componentName: 'GaspreiseVerstehen'
   }
+  ,{
+    id: '17',
+    slug: 'energieberater-aachen',
+    title: 'Energieberater Aachen: Hilfe beim Stromanbieterwechsel',
+    description: 'Energieberater in Aachen gesucht? Wir zeigen, wer beim Stromanbieterwechsel wirklich hilft – Tarifberatung, Verbraucherzentrale & worauf Sie achten sollten.',
+    category: 'Strom',
+    publishedDate: '2026-09-28',
+    componentName: 'EnergieberaterAachen'
+  }
 ];

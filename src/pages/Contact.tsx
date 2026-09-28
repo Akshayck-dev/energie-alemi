@@ -244,6 +244,57 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+
+            <div className="w-full flex flex-col gap-10 mt-16 col-span-1 md:col-span-2">
+              <div className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 p-8 rounded-[20px] shadow-sm text-slate-900 dark:text-white">
+                <h2 className="text-2xl font-bold mb-6 text-[#101828] dark:text-white">Was passiert nach Ihrer Anfrage?</h2>
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div>
+                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">1. Schnelle Rückmeldung</h3>
+                    <p className="text-slate-600 dark:text-slate-300">Wir sichten Ihre Anfrage und melden uns in der Regel innerhalb von 24 Stunden telefonisch oder per E-Mail bei Ihnen zurück.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">2. Kostenloses Erstgespräch</h3>
+                    <p className="text-slate-600 dark:text-slate-300">In einem kurzen Gespräch klären wir Ihren aktuellen Energiebedarf, prüfen Ihren bestehenden Vertrag und besprechen Ihre Wünsche.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">3. Unverbindliches Angebot</h3>
+                    <p className="text-slate-600 dark:text-slate-300">Sie erhalten von uns einen passgenauen Tarifvorschlag. Wenn Sie einverstanden sind, übernehmen wir die komplette Wechselabwicklung für Sie.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 p-8 rounded-[20px] shadow-sm text-slate-900 dark:text-white">
+                <h2 className="text-2xl font-bold mb-4 text-[#101828] dark:text-white">Persönliche Beratung vor Ort in Aachen</h2>
+                <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                  Wir glauben an den Wert des persönlichen Gesprächs. Anstatt sich durch unpersönliche Online-Portale zu klicken, laden wir Sie herzlich in unser Büro am Alexianergraben 9, 52064 Aachen ein. Bringen Sie einfach Ihre letzte Strom- oder Gasabrechnung mit. Wir schauen gemeinsam darauf und finden die besten Sparpotenziale für Sie. 
+                  <br/><br/>
+                  Nutzen Sie unseren <a href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] font-semibold hover:underline">Google Maps Link</a>, um direkt den Weg zu uns zu finden.
+                </p>
+              </div>
+
+              <div className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 p-8 rounded-[20px] shadow-sm text-slate-900 dark:text-white">
+                <h2 className="text-2xl font-bold mb-6 text-[#101828] dark:text-white">Häufige Anliegen unserer Kunden</h2>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-[#0047AB] pl-4">
+                    <h3 className="font-bold text-lg">Stromrechnung zu hoch?</h3>
+                    <p className="text-slate-600 dark:text-slate-300">Wir prüfen Ihren Tarif und vergleichen ihn mit aktuellen Angeboten. Erfahren Sie mehr auf unserer <a href="/electricity" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Seite zum Stromanbieterwechsel</a>.</p>
+                  </div>
+                  <div className="border-l-4 border-[#f0a83f] pl-4">
+                    <h3 className="font-bold text-lg">Sie planen einen Umzug?</h3>
+                    <p className="text-slate-600 dark:text-slate-300">Ein Umzug ist der perfekte Zeitpunkt für einen Wechsel. Wir stellen sicher, dass Sie am neuen Wohnort direkt günstig versorgt sind. Tipps finden Sie im <a href="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Ratgeber Umzug in Aachen</a>.</p>
+                  </div>
+                  <div className="border-l-4 border-[#10b981] pl-4">
+                    <h3 className="font-bold text-lg">Gasvergleich gewünscht?</h3>
+                    <p className="text-slate-600 dark:text-slate-300">Sichern Sie sich langfristige Preisgarantien und schützen Sie sich vor starken Preisschwankungen. Besuchen Sie unsere <a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Gasanbieter-Seite</a>.</p>
+                  </div>
+                  <div className="border-l-4 border-[#8b5cf6] pl-4">
+                    <h3 className="font-bold text-lg">Internet zu langsam oder zu teuer?</h3>
+                    <p className="text-slate-600 dark:text-slate-300">Wir prüfen die Verfügbarkeit von DSL, Kabel und Glasfaser an Ihrer Adresse. Infos gibt es in unserem Bereich für <a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Internetverträge</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </section>

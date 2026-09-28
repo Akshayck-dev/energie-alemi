@@ -58,34 +58,98 @@ function FAQItem({ item, isOpen, onToggle }: FAQItemProps) {
 
 export default function FAQ() {
   const { t } = useTranslation();
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openId, setOpenId] = useState<string | null>("cat0-0");
 
-  const faqs = [
+  const categories = [
     {
-      question: t('faq_page.q1', 'Ist die Beratung wirklich kostenlos?'),
-      answer: t('faq_page.a1', 'Ja, unsere Tarifberatung ist zu 100% kostenlos und unverbindlich. Wir vergleichen Strom-, Gas- und Internet-Tarife für Sie – ohne versteckte Kosten.'),
+      title: "Allgemeine Fragen",
+      items: [
+        {
+          question: t('faq_page.q1', 'Ist die Beratung wirklich kostenlos?'),
+          answer: t('faq_page.a1', 'Ja, unsere Tarifberatung ist zu 100% kostenlos und unverbindlich. Wir vergleichen Strom-, Gas- und Internet-Tarife für Sie – ohne versteckte Kosten.')
+        },
+        {
+          question: t('faq_page.q2', 'Wie lange dauert der Anbieterwechsel?'),
+          answer: t('faq_page.a2', 'Wir übernehmen den kompletten Prozess für Sie. In der Regel dauert der Wechsel 2–4 Wochen, und Sie müssen sich um nichts kümmern.')
+        },
+        {
+          question: t('faq_page.q3', 'Beraten Sie auch Unternehmen?'),
+          answer: t('faq_page.a3', 'Ja, wir beraten sowohl Privatkunden als auch Unternehmen – persönlich, unabhängig und kostenlos.')
+        },
+        {
+          question: t('faq_page.q4', 'Muss ich meinen aktuellen Vertrag kündigen?'),
+          answer: t('faq_page.a4', 'Nein. Sobald Sie sich für einen neuen Tarif entscheiden, übernehmen wir die Kündigung Ihres alten Vertrags sowie den gesamten Wechselprozess für Sie.')
+        },
+        {
+          question: t('faq_page.q5', 'In welchen Regionen sind Sie tätig?'),
+          answer: t('faq_page.a5', 'Unser Hauptstandort ist Aachen, Alexianergraben 9. Wir beraten aber auch Kunden in ganz Deutschland – persönlich vor Ort oder telefonisch.')
+        }
+      ]
     },
     {
-      question: t('faq_page.q2', 'Wie lange dauert der Anbieterwechsel?'),
-      answer: t('faq_page.a2', 'Wir übernehmen den kompletten Prozess für Sie. In der Regel dauert der Wechsel 2–4 Wochen, und Sie müssen sich um nichts kümmern.'),
+      title: "Strom & Tarife",
+      items: [
+        {
+          question: "Was ist die Strom-Grundversorgung?",
+          answer: "Die Grundversorgung ist der Tarif, in den Sie automatisch fallen, wenn Sie keinen aktiven Stromvertrag abschließen (z.B. beim Umzug). Sie ist sehr flexibel, gehört aber meist zu den teuersten Tarifen am Markt."
+        },
+        {
+          question: "Lohnt sich der Wechsel zu Ökostrom?",
+          answer: "Absolut. Ökostrom aus erneuerbaren Energien ist heute oft genauso günstig oder sogar günstiger als Graustrom. Sie schonen die Umwelt, ohne mehr zu bezahlen."
+        },
+        {
+          question: "Muss beim Anbieterwechsel der Stromzähler getauscht werden?",
+          answer: "Nein, ein Zählertausch ist nicht nötig. Ihr Stromzähler und die Leitungen bleiben im Besitz des örtlichen Netzbetreibers, der weiterhin für die Wartung zuständig ist."
+        }
+      ]
     },
     {
-      question: t('faq_page.q3', 'Beraten Sie auch Unternehmen?'),
-      answer: t('faq_page.a3', 'Ja, wir beraten sowohl Privatkunden als auch Unternehmen – persönlich, unabhängig und kostenlos.'),
+      title: "Gas & Heizen",
+      items: [
+        {
+          question: "Wie berechnet sich der Gaspreis?",
+          answer: "Der Gaspreis setzt sich aus einem festen Grundpreis (für Bereitstellung und Zähler) und einem variablen Arbeitspreis (Kosten pro verbrauchter Kilowattstunde) zusammen."
+        },
+        {
+          question: "Sollte ich einen Gastarif mit Preisgarantie wählen?",
+          answer: "In der Regel ja. Eine Preisgarantie über 12 oder 24 Monate schützt Sie vor unerwarteten Preiserhöhungen auf dem Energiemarkt."
+        }
+      ]
     },
     {
-      question: t('faq_page.q4', 'Muss ich meinen aktuellen Vertrag kündigen?'),
-      answer: t('faq_page.a4', 'Nein. Sobald Sie sich für einen neuen Tarif entscheiden, übernehmen wir die Kündigung Ihres alten Vertrags sowie den gesamten Wechselprozess für Sie.'),
+      title: "Internet & DSL",
+      items: [
+        {
+          question: "Was ist besser: DSL, Kabel oder Glasfaser?",
+          answer: "Das hängt von der lokalen Verfügbarkeit ab. Glasfaser bietet die stabilsten und höchsten Geschwindigkeiten, ist aber noch nicht überall verfügbar. Kabel ist oft schneller als DSL, kann aber zu Stoßzeiten Schwankungen unterliegen."
+        },
+        {
+          question: "Brauche ich einen neuen Router beim Anbieterwechsel?",
+          answer: "Das kommt auf Ihren aktuellen Router und die neue Technologie an. Viele Anbieter stellen bei Vertragsabschluss kostenlos oder zur Miete einen passenden Router zur Verfügung. Bei einem reinen Anbieterwechsel ohne Technologiewechsel können Sie moderne Geräte oft weiter nutzen."
+        }
+      ]
     },
     {
-      question: t('faq_page.q5', 'In welchen Regionen sind Sie tätig?'),
-      answer: t('faq_page.a5', 'Unser Hauptstandort ist Aachen, Alexianergraben 9. Wir beraten aber auch Kunden in ganz Deutschland – persönlich vor Ort oder telefonisch.'),
-    },
+      title: "Der Wechselprozess",
+      items: [
+        {
+          question: "Kann mir bei einem Wechsel der Strom oder das Gas abgestellt werden?",
+          answer: "Nein. Die durchgängige Energieversorgung ist in Deutschland gesetzlich garantiert. Sie stehen zu keinem Zeitpunkt ohne Strom oder Gas da."
+        },
+        {
+          question: "Gibt es beim Wechseln Kündigungsfristen?",
+          answer: "Ja, diese hängen von Ihrem aktuellen Vertrag ab. In der Grundversorgung beträgt die Frist meist 2 Wochen. Sonderverträge haben längere Laufzeiten – wir prüfen das gerne für Sie und übernehmen die fristgerechte Kündigung."
+        }
+      ]
+    }
   ];
+
+  // Flatten FAQs for SEO schema
+  const flatFaqs = categories.flatMap(cat => cat.items);
 
   return (
     <>
-      <SEO url="/faq" faqs={faqs} />
+      <SEO url="/faq" faqs={flatFaqs} />
 
       <section className="py-20 md:py-32 bg-slate-50 dark:bg-[#0a1628]">
         <div className="container mx-auto px-6 max-w-3xl">
@@ -99,18 +163,30 @@ export default function FAQ() {
             </h1>
           </div>
 
-          <div className="bg-white dark:bg-[#051024] rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-slate-100 dark:border-white/10 px-6 md:px-10">
-            {faqs.map((item, i) => (
-              <FAQItem
-                key={i}
-                item={item}
-                isOpen={openIndex === i}
-                onToggle={() => setOpenIndex(openIndex === i ? -1 : i)}
-              />
+          <div className="space-y-12">
+            {categories.map((category, catIndex) => (
+              <div key={catIndex}>
+                <h2 className="text-2xl font-bold text-slate-800 dark:text-white mb-6 border-b border-slate-200 dark:border-white/10 pb-2">
+                  {category.title}
+                </h2>
+                <div className="bg-white dark:bg-[#051024] rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.05)] border border-slate-100 dark:border-white/10 px-6 md:px-10">
+                  {category.items.map((item, itemIndex) => {
+                    const id = `cat${catIndex}-${itemIndex}`;
+                    return (
+                      <FAQItem
+                        key={id}
+                        item={item}
+                        isOpen={openId === id}
+                        onToggle={() => setOpenId(openId === id ? null : id)}
+                      />
+                    );
+                  })}
+                </div>
+              </div>
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <p className="text-slate-600 dark:text-white/70 mb-4">
               {t('faq_page.more_questions', 'Ihre Frage war nicht dabei?')}
             </p>

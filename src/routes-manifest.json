@@ -468,5 +468,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-27",
     "structuredDataType": "Article"
+  },
+  {
+    "path": "/ratgeber/energieberater-aachen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Energieberater Aachen: Hilfe beim Stromanbieterwechsel",
+    "description": "Energieberater in Aachen gesucht? Wir zeigen, wer beim Stromanbieterwechsel wirklich hilft \u2013 Tarifberatung, Verbraucherzentrale & worauf Sie achten sollten.",
+    "canonical": "/ratgeber/energieberater-aachen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-09-28",
+    "structuredDataType": "Article"
   }
 ]
