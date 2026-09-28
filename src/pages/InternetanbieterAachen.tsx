@@ -268,7 +268,7 @@ export default function InternetanbieterAachen() {
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>
                   Kostenlose Beratung anfragen
                 </Button>
-                <a href="tel:017665949390" className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">
+                <a data-track="phone" href="tel:017665949390" className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">
                   0176 659 493 90 anrufen
                 </a>
               </div>

@@ -230,7 +230,7 @@ export default function StromanbieterAachen() {
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
               <h4 className="font-semibold text-xl mb-1">Telefon</h4>
-              <a href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
+              <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
@@ -263,7 +263,7 @@ export default function StromanbieterAachen() {
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>
                   KOSTENLOSE TARIFBERATUNG ANFRAGEN
                 </Button>
-                <a href="tel:017665949390" className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#0047AB] dark:border-[#f0a83f] text-[#0047AB] dark:text-[#f0a83f] font-semibold rounded-full hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#0a1628] transition-colors">
+                <a data-track="phone" href="tel:017665949390" className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#0047AB] dark:border-[#f0a83f] text-[#0047AB] dark:text-[#f0a83f] font-semibold rounded-full hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#0a1628] transition-colors">
                   <Phone size={18} className="mr-2" />
                   JETZT ANRUFEN
                 </a>

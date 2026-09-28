@@ -132,7 +132,7 @@ export default function ContactForm() {
       
       {/* Quick Contact & Address Info Bar */}
       <div className="flex flex-col sm:flex-row sm:items-center flex-wrap gap-x-6 gap-y-3 mb-6 pb-6 border-b border-slate-100 dark:border-white/10 text-sm text-slate-600 dark:text-slate-350">
-        <a 
+        <a data-track="phone" 
           href="tel:+4917665949390" 
           onClick={() => trackEvent('phone_click', { cta_location: 'contact_form_info', page_path: window.location.pathname })}
           className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium"
@@ -273,7 +273,7 @@ export default function ContactForm() {
           </div>
         )}
 
-        <button 
+        <button data-track="contact-submit" 
           type="submit"
           className="w-full md:w-auto mt-5 md:mt-[24px] rounded-full h-[52px] md:h-[54px] md:px-[30px] font-bold text-[15px] bg-[#0047AB] hover:bg-[#003380] text-white flex items-center justify-center gap-2.5 transition-colors disabled:opacity-50"
           disabled={isSubmitting}

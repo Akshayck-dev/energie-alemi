@@ -226,7 +226,7 @@ export default function InternetanbieterHerzogenrath() {
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
               <h4 className="font-semibold text-xl mb-1">Telefon</h4>
-              <a href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
+              <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>
         </div>

@@ -38,7 +38,7 @@ export default function FloatingActionButtons() {
       {/* WhatsApp Button */}
       <div className="relative flex items-center justify-center group">
         <div className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-25 [animation-duration:2.5s]" />
-        <a
+        <a data-track="whatsapp"
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"

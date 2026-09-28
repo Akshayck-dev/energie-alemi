@@ -332,7 +332,7 @@ export default function GasanbieterAachen() {
               </div>
               <div className="pt-8 border-t border-white/20 text-blue-100 flex flex-col md:flex-row justify-center gap-4 md:gap-8 text-sm">
                 <span className="flex items-center justify-center"><MapPin size={16} className="mr-2"/> Energie Alemi, Alexianergraben 9, 52064 Aachen</span>
-                <span className="flex items-center justify-center"><Phone size={16} className="mr-2"/> <a href="tel:017665949390" className="hover:underline hover:text-white">0176 659 493 90</a></span>
+                <span className="flex items-center justify-center"><Phone size={16} className="mr-2"/> <a data-track="phone" href="tel:017665949390" className="hover:underline hover:text-white">0176 659 493 90</a></span>
               </div>
             </div>
           </div>

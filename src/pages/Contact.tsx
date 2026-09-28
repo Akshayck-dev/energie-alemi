@@ -73,7 +73,7 @@ export default function Contact() {
                 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center gap-6">
-                  <a 
+                  <a data-track="phone" 
                     href="tel:+4917665949390" 
                     onClick={() => trackEvent('phone_click', { cta_location: 'contact_page_cta', page_path: window.location.pathname })}
                     className="bg-[#0047AB] hover:bg-[#003380] text-white px-8 py-3.5 rounded-full font-bold text-[15px] flex items-center gap-2 transition-colors w-full sm:w-auto justify-center group shadow-md shadow-blue-900/20"
@@ -178,7 +178,7 @@ export default function Contact() {
                       <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">{t('contact.lbl_addr')}</p>
                       <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">
                         Alexianergraben 9<br/>52064 Aachen<br/>
-                        <a 
+                        <a data-track="google-maps" 
                           href="https://www.google.com/maps/search/?api=1&query=Energie+Alemi+Alexianergraben+9+52064+Aachen" 
                           target="_blank" 
                           rel="noopener noreferrer" 
@@ -269,7 +269,7 @@ export default function Contact() {
                 <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
                   Wir glauben an den Wert des persönlichen Gesprächs. Anstatt sich durch unpersönliche Online-Portale zu klicken, laden wir Sie herzlich in unser Büro am Alexianergraben 9, 52064 Aachen ein. Bringen Sie einfach Ihre letzte Strom- oder Gasabrechnung mit. Wir schauen gemeinsam darauf und finden die besten Sparpotenziale für Sie. 
                   <br/><br/>
-                  Nutzen Sie unseren <a href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] font-semibold hover:underline">Google Maps Link</a>, um direkt den Weg zu uns zu finden.
+                  Nutzen Sie unseren <a data-track="google-maps" href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] font-semibold hover:underline">Google Maps Link</a>, um direkt den Weg zu uns zu finden.
                 </p>
               </div>
 
@@ -337,7 +337,7 @@ export default function Contact() {
                 <span className="text-[12px] font-bold tracking-[0.1em] text-[#f0a83f]">{t('contact.map_city')}</span>
               </div>
               
-              <a href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noreferrer" className="w-full md:w-auto mt-4 md:mt-0 bg-transparent border-[1.5px] border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 rounded-full py-4 md:py-[17px] px-0 md:px-[30px] text-[15px] font-bold flex items-center justify-center gap-2 md:gap-[10px] hover:bg-slate-100 dark:hover:bg-[#0c1d3d] hover:text-slate-900 dark:hover:text-white transition-colors">
+              <a data-track="google-maps" href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noreferrer" className="w-full md:w-auto mt-4 md:mt-0 bg-transparent border-[1.5px] border-slate-300 dark:border-white/20 text-slate-700 dark:text-slate-300 rounded-full py-4 md:py-[17px] px-0 md:px-[30px] text-[15px] font-bold flex items-center justify-center gap-2 md:gap-[10px] hover:bg-slate-100 dark:hover:bg-[#0c1d3d] hover:text-slate-900 dark:hover:text-white transition-colors">
                 {t('contact.map_btn')}
                 <MapPin size={15} strokeWidth={1.6} />
               </a>
