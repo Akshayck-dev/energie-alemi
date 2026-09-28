@@ -118,7 +118,7 @@ export default function InternetanbieterStolberg() {
             Die Verfügbarkeit kann sich in Stolberg von Straße zu Straße und sogar zwischen Gebäuden unterscheiden. Deshalb beginnt die Beratung mit der konkreten Adresse und Ihrem Nutzungsprofil – nicht mit einer pauschalen Empfehlung.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Ob in Atsch, Büsbach, Breinig, Mausbach, Vicht oder Zweifall: Energie Alemi prüft die verfügbaren Optionen für den jeweiligen Standort und erklärt die Unterschiede verständlich. Erfahren Sie auch mehr über unsere Services als <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link> oder lesen Sie unseren Ratgeber zum Thema <Link to="/ratgeber/internetanbieter-vergleichen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter vergleichen</Link>.
+            Ob in Atsch, Büsbach, Breinig, Mausbach, Vicht oder Zweifall: Energie Alemi prüft die verfügbaren Optionen für den jeweiligen Standort und erklärt die Unterschiede verständlich. Erfahren Sie auch mehr über unsere Dienstleistungen als <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link> oder lesen Sie unseren Ratgeber zum Thema <Link to="/ratgeber/internetanbieter-vergleichen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter vergleichen</Link>.
           </p>
         </div>
         

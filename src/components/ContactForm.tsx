@@ -257,7 +257,7 @@ export default function ContactForm() {
 
         {/* Anti-Spam Honeypot Field */}
         <div className="absolute opacity-0 pointer-events-none -z-50 w-0 h-0 overflow-hidden">
-          <label htmlFor="website">Leave this field blank</label>
+          <label htmlFor="website">Dieses Feld leer lassen</label>
           <input
             id="website"
             type="text"
