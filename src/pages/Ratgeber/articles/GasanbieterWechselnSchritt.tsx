@@ -1,12 +1,14 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import ArticleLayout from '../ArticleLayout';
 import { articles } from '../../../data/ratgeberArticles';
 import Button from '../../../components/ui/Button';
 
 export default function GasanbieterWechselnSchritt() {
+  const { i18n } = useTranslation();
   const article = articles.find(a => a.slug === 'gasanbieter-wechseln')!;
 
-  const faqs = [
+  const faqsDe = [
     {
       question: "Wie lange dauert ein Gasanbieterwechsel?",
       answer: "Nach § 20a EnWG muss das Verfahren zum Lieferantenwechsel innerhalb von drei Wochen abgeschlossen sein. Zudem muss der technische Wechsel ab 2026 an Werktagen innerhalb von 24 Stunden möglich sein. Der tatsächliche Lieferbeginn hängt jedoch von den Fristen Ihres Altvertrags ab."
@@ -28,13 +30,128 @@ export default function GasanbieterWechselnSchritt() {
       answer: "Ja, wenn Ihr bisheriger Anbieter Ihnen am neuen Wohnort keinen vergleichbaren Tarif anbieten kann, steht Ihnen ein Sonderkündigungsrecht mit einer Frist von sechs Wochen zu (§ 41b Abs. 4 EnWG)."
     }
   ];
+  const faqsEn = [
+    {
+      question: "How long does a gas provider switch take?",
+      answer: "According to § 20a EnWG, the supplier switching procedure must be completed within three weeks. In addition, the technical switch must be possible within 24 hours on working days from 2026. However, the actual start of delivery depends on the deadlines of your old contract."
+    },
+    {
+      question: "Do I have to cancel my old gas provider myself?",
+      answer: "No, as a rule, your new provider cancels for you. You should only cancel yourself if the notice period is very imminent, e.g., in the case of a special right of termination due to a price increase."
+    },
+    {
+      question: "Will my gas supply be interrupted when switching providers?",
+      answer: "No, an interruption is legally excluded. The local basic supplier secures the gas delivery via the substitute or basic supply according to § 36/38 EnWG at any time."
+    },
+    {
+      question: "What data do I need for the gas provider switch?",
+      answer: "You need your zip code, your annual consumption in kWh (from the last bill), your current provider, and your gas meter number."
+    },
+    {
+      question: "Can I switch my gas provider when moving?",
+      answer: "Yes, if your previous provider cannot offer you a comparable tariff at the new residence, you are entitled to a special right of termination with a notice period of six weeks (§ 41b Paragraph 4 EnWG)."
+    }
+  ];
+  const faqs = i18n.language === 'en' ? faqsEn : faqsDe;
 
   return (
     <ArticleLayout 
       article={article} 
-      customH1="Gasanbieter wechseln: Schritt-für-Schritt-Anleitung"
+      customH1={i18n.language === 'en' ? "Switching Gas Providers: Step-by-Step Guide" : "Gasanbieter wechseln: Schritt-für-Schritt-Anleitung"}
       faqs={faqs}
     >
+      {i18n.language === 'en' ? (
+        <>
+
+      <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
+        Switching gas providers works smoothly in the background. No technical adjustments to your heating or pipes are necessary.
+      </p>
+
+      <h2>What you should have ready for a gas provider switch</h2>
+      <p>
+        To carry out the gas provider switch quickly and easily, you should have the following documents and data at hand:
+      </p>
+      <ul>
+        <li><strong>Zip code and city:</strong> Since network usage charges vary regionally, your address determines the available tariffs.</li>
+        <li><strong>Annual gas consumption (in kWh):</strong> You can find this value on your last annual statement.</li>
+        <li><strong>Previous gas supplier &amp; tariff name:</strong> Serves for a direct price comparison.</li>
+        <li><strong>Gas meter number:</strong> Located directly on your gas meter.</li>
+        <li><strong>Market Location ID (MaLo-ID):</strong> An 11-digit number sequence for the clear identification of your gas grid connection (if present on the invoice).</li>
+        <li><strong>Desired delivery date / notice periods:</strong> Indicates when the switch should take place.</li>
+      </ul>
+
+      <h2>Procedure for switching gas providers: Step-by-Step</h2>
+      
+      <h3>Step 1: Compare tariffs</h3>
+      <p>
+        Compare different offers via our <Link to="/gas" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Gas Tariff Comparison</Link>. Pay attention to contract terms and price guarantees. Further details on choosing a tariff are provided in our <Link to="/ratgeber/gasvergleich" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Gas Comparison Guide</Link>.
+      </p>
+
+      <h3>Step 2: Sign a new contract</h3>
+      <p>
+        Once you have chosen a suitable tariff, fill out the online form. By doing so, you give the new provider a power of attorney to carry out the cancellation with the old supplier.
+      </p>
+
+      <h3>Step 3: Cancellation and handover</h3>
+      <p>
+        Your new provider will cancel the previous contract at the next possible date. Only cancel yourself if deadlines are very tight (e.g., in the case of a special right of termination).
+      </p>
+
+      <h2>Deadlines and special rights of termination</h2>
+      
+      <h3>Notice periods and contract term</h3>
+      <p>
+        In the statutory basic supply, the notice period is two weeks (§ 20 GasGVV). For special contracts (e.g., tariffs with a 12 or 24-month term), you must comply with the contractually agreed notice period. According to the regulations of the Act for Fair Consumer Contracts, the following applies to contracts concluded from March 1, 2022: After the initial term expires, they only extend for an indefinite period and can be terminated with a maximum notice period of one month.
+      </p>
+
+      <h3>Special right of termination in case of price increases</h3>
+      <p>
+        In the event of a price or contract change by your provider, you are entitled to a statutory special right of termination under § 41 Paragraph 5 EnWG. You can cancel the contract without notice until the change takes effect.
+      </p>
+
+      <h3>Switching when moving</h3>
+      <p>
+        When moving, you can cancel your gas contract according to § 41b Paragraph 4 EnWG with a notice period of six weeks if your previous provider cannot offer you a continuation of the contract under the same conditions at the new residence. Detailed information can be found in the <Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Moving Guide</Link>.
+      </p>
+
+      <h2>Duration of switch and security of supply</h2>
+
+      <h3>How long does the switch take?</h3>
+      <p>
+        According to § 20a EnWG, the procedure for switching energy suppliers must be completed within three weeks. In addition, from January 1, 2026, the requirement applies that the purely technical switch of the energy provider must be feasible on working days within 24 hours. Please note, however, that the actual start of delivery continues to depend on your notice periods and the regular end of the contract with the previous supplier.
+      </p>
+
+      <h3>Seamless gas supply is legally secured</h3>
+      <p>
+        The seamless energy supply is regulated by law in Germany. Should there be delays in the changeover, the local basic supplier is obliged according to § 36 and § 38 EnWG to supply you without interruption as part of the substitute or basic supply. The <a href="https://www.bundesnetzagentur.de" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] underline hover:text-[#003380]">Federal Network Agency</a> provides further official consumer information on this.
+      </p>
+
+      <h2>Do I have to read the meter?</h2>
+      <p>
+        Yes. On the switching date, your network operator or the old provider will ask you to report the meter reading so that an accurate final billing can take place.
+      </p>
+
+      <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
+        <h3 className="text-2xl font-bold mb-4 mt-0">Check switch now</h3>
+        <p className="mb-6">Compare tariffs now or contact us for personal support via our <Link to="/contact" className="text-[#0047AB] dark:text-[#60a5fa] underline decoration-[#0047AB]/30 dark:decoration-[#60a5fa]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#60a5fa] underline-offset-4 font-semibold">Contact form</Link>.</p>
+        <Link to="/gas">
+          <Button variant="primary">To the gas comparison</Button>
+        </Link>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+      <div className="space-y-6 mt-8">
+        {faqs.map((faq, index) => (
+          <div key={index} className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+            <h3 className="text-lg font-bold mt-0 mb-2">{faq.question}</h3>
+            <p className="mb-0 text-slate-600 dark:text-slate-300">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+
+        </>
+      ) : (
+        <>
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
         Der Wechsel des Gasanbieters funktioniert reibungslos im Hintergrund. Es sind keine technischen Anpassungen an Ihrer Heizung oder den Leitungen nötig.
       </p>
@@ -120,6 +237,8 @@ export default function GasanbieterWechselnSchritt() {
           </div>
         ))}
       </div>
+    </>
+      )}
     </ArticleLayout>
   );
 }

@@ -48,7 +48,7 @@ export default function GasanbieterStolberg() {
       answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Bringen Sie für einen konkreten Vergleich am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
     },
     {
-      question: "Kann jeder Haushalt in Stolberg den Gasanbieter wechseln?",
+      question: "Kann jeder Haushalt in Stolberg den Gas{i18n.language === 'en' ? 'providers?' : 'anbieter wechseln?'}",
       answer: "Ein Wechsel ist möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind und an Ihrer Adresse ein Gasanschluss genutzt wird. Bei einer Zentralheizung schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
     },
     {

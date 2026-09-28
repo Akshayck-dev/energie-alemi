@@ -144,7 +144,7 @@ export default function Internet() {
                     <span>.</span>
                   </p>
                   <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mt-4">
-                    Kommen Sie aus Aachen? <Link to="/internetanbieter-aachen" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">Hier finden Sie lokale Angebote für Aachen.</Link>
+                    {i18n.language === 'en' ? 'Are you from Aachen?' : 'Kommen Sie aus Aachen?'} <Link to="/internetanbieter-aachen" className="text-[#2563eb] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'Here you can find local offers for Aachen.' : 'Hier finden Sie lokale Angebote für Aachen.'}</Link>
                   </p>
                   {/* Router graphic placeholder */}
                   <div className="mt-12 opacity-80 flex flex-col items-center">

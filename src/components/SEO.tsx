@@ -35,7 +35,18 @@ export default function SEO({ title, description, url, image, isArticle, datePub
   const resolvedTitle = title || (manifestEntry ? manifestEntry.title : defaultTitle);
   const resolvedDescription = description || (manifestEntry ? manifestEntry.description : defaultDescription);
   
-  const seoTitle = (resolvedTitle.includes('Energie Alemi') || resolvedTitle.includes('ALEMI')) ? resolvedTitle : `${resolvedTitle} | Energie Alemi`;
+  
+  const enTitles: Record<string, string> = {
+    '/contact': 'Contact | Energie Alemi – Tariff Advice for Electricity, Gas & Internet Aachen',
+    '/faq': 'FAQ | Energie Alemi',
+    '/about': 'About Us | Energie Alemi – Tariff Advice Aachen',
+    '/electricity': 'Compare Electricity Tariffs & Switch Provider | Energie Alemi'
+  };
+  
+  const finalResolvedTitle = (lang === 'en' && url && enTitles[url]) ? enTitles[url] : resolvedTitle;
+
+  const seoTitle = (finalResolvedTitle.includes('Energie Alemi') || finalResolvedTitle.includes('ALEMI')) ? finalResolvedTitle : `${finalResolvedTitle} | Energie Alemi`;
+// || resolvedTitle.includes('ALEMI')) ? resolvedTitle : `${resolvedTitle} | Energie Alemi`;
   const seoDescription = resolvedDescription;
 
   // Dynamic Base URL

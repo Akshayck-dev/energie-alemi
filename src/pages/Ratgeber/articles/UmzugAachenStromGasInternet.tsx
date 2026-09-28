@@ -1,10 +1,12 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import ArticleLayout from '../ArticleLayout';
 import { articles } from '../../../data/ratgeberArticles';
 import Button from '../../../components/ui/Button';
 import { trackEvent } from '../../../lib/analytics';
 
 export default function UmzugAachenStromGasInternet() {
+  const { i18n } = useTranslation();
   const article = articles.find(a => a.slug === 'umzug-aachen-strom-gas-internet')!;
 
   const handleCtaClick = (destination: string) => {
@@ -18,6 +20,115 @@ export default function UmzugAachenStromGasInternet() {
 
   return (
     <ArticleLayout article={article}>
+      {i18n.language === 'en' ? (
+        <>
+
+      <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
+        Moving to a new city like Aachen brings many changes. Besides packing boxes and changing your address, you should not neglect registering electricity, gas, and the internet. Timely planning protects you from unnecessary costs and ensures that the lights are on, the heating works, and the WiFi functions on move-in day.
+      </p>
+
+      <h2>1. Practical checklist for moving</h2>
+      <p>
+        To ensure a smooth transition, a structured process is recommended. Use this short overview for your scheduling:
+      </p>
+      <ul>
+        <li><strong>4 to 6 weeks before moving:</strong> Check the cancellation and portability options of your existing contracts for electricity, gas, and internet.</li>
+        <li><strong>2 weeks before moving:</strong> Register your internet connection for the new address, as connections often require several weeks of lead time.</li>
+        <li><strong>On the day of the key handover:</strong> Note all meter readings for electricity and gas in the handover protocol and photograph the meters as proof.</li>
+        <li><strong>Within the first few days after moving in:</strong> Register electricity and, if applicable, gas with the chosen provider to avoid remaining in the expensive basic supply.</li>
+      </ul>
+
+      <h2>2. Registering electricity in Aachen: What to look out for?</h2>
+      <p>
+        As soon as you turn on the first light bulb or use electricity, you draw energy. If you do not decide on a tariff in advance, you automatically fall into the so-called <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Basic Supply</Link>. In Aachen, the <i>STAWAG (Stadtwerke Aachen AG)</i> is the local basic supplier.
+      </p>
+      <p>
+        The basic supply offers maximum flexibility (it can legally be canceled at any time with a notice period of two weeks), but is usually noticeably more expensive compared to special tariffs. Therefore, a timely <Link to="/electricity" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Electricity Comparison</Link> is worthwhile to find a suitable and cheaper tariff. You can read exactly how the <Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">switching electricity provider process</Link> works in our guide.
+      </p>
+      <h3>Special right of termination when moving</h3>
+      <p>
+        According to § 41b Paragraph 4 of the Energy Industry Act (EnWG), you can cancel your current electricity contract when moving with a notice period of six weeks. However, this special right of termination only applies if your previous supplier cannot offer you a comparable contract under the same conditions at the new address. If they offer to supply you at the new residence, the contract continues unchanged.
+      </p>
+
+      <h2>3. Registering gas when using it in the new home</h2>
+      <p>
+        If your new apartment in Aachen has gas floor heating or a gas connection, the same principle applies here as for electricity. Without your own registration, STAWAG takes over the basic supply.
+      </p>
+      <p>
+        Due to the often higher consumption when heating, the savings potential with gas is particularly high. Ideally, carry out a neutral <Link to="/gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Gas Comparison</Link> before moving in by <Link to="/ratgeber/gasvergleich" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">comparing gas tariffs</Link> to avoid high advance payments in the basic supply. Our <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Provider Switch Guide</Link> provides helpful details on the process.
+      </p>
+
+      <h2>4. Registering internet: Availability and deadlines</h2>
+      <p>
+        Unlike the energy supply, there is no automatic "basic supply" for the internet – if you don't take care of it, you stay offline. 
+      </p>
+      <h3>Taking the existing contract with you (§ 60 TKG)</h3>
+      <p>
+        According to the Telecommunications Act (TKG), providers are obliged to continue the contractually agreed service at the new residence without additional costs and without extending the minimum contract term – provided that the transmission is technically possible there.
+      </p>
+      <p>
+        If the provider cannot provide the service at the new residence or can only provide it with a lower bandwidth, you have a <strong>special right of termination with a notice period of one month</strong> according to § 60 Paragraph 2 TKG. The notice period begins on the day of the actual move at the earliest.
+      </p>
+      <p>
+        We recommend that you check the availability at your new address in Aachen in good time and initiate the contract changeover at least four weeks in advance. Use our <Link to="/internet" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">Internet Comparison</Link> to determine DSL, cable, or fiber optic options for Aachen.
+      </p>
+
+      <h2>5. What data should you prepare?</h2>
+      <p>
+        For the smooth registration of the contracts, you should have the following documents and details ready:
+      </p>
+      <ul>
+        <li><strong>Your new address</strong> (including floor details or apartment number)</li>
+        <li><strong>The official move-in date</strong> (usually the start of the rental agreement)</li>
+        <li><strong>Meter number (Electricity &amp; Gas):</strong> You will find this directly on the meter in the basement or hallway, as well as frequently in the handover protocol.</li>
+        <li><strong>Meter reading on the day of key handover:</strong> Note this down precisely.</li>
+        <li><strong>Existing contract data:</strong> Customer number and name of the previous provider, if you wish to cancel or take contracts with you.</li>
+      </ul>
+
+      <h2>6. Common mistakes you should avoid</h2>
+      <p>
+        Many people who move make mistakes that lead to unnecessary costs. Pay attention to the following:
+      </p>
+      <ul>
+        <li><strong>Premature cancellation of the internet contract:</strong> Do not cancel yourself if the provider can provide the service at the new address. Otherwise, you violate the contract term.</li>
+        <li><strong>Missing meter photos:</strong> Without documented meter readings, you risk being billed for the previous tenant's consumption values.</li>
+        <li><strong>Relying on verbal promises:</strong> Always get special agreements or cancellation confirmations in writing or by email.</li>
+      </ul>
+
+      <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
+        <h3 className="text-2xl font-bold mb-4 mt-0">We help you with a stress-free provider switch</h3>
+        <p className="mb-6">
+          Our service takes the paperwork off your hands. We compare tariffs for electricity, gas, and internet in Aachen and support you free of charge with registration and switching.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Link to="/contact" onClick={() => handleCtaClick('/contact')}>
+            <Button variant="primary">Request free advice</Button>
+          </Link>
+          <Link to="/contact" onClick={() => handleCtaClick('/contact')}>
+            <Button variant="outline">Tariff Advice Details</Button>
+          </Link>
+        </div>
+      </div>
+
+      <hr className="my-8 border-slate-200 dark:border-white/10" />
+
+      <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400">Consumer and Regulatory Portals</h3>
+      <ul className="text-sm text-slate-500 dark:text-slate-400 list-none pl-0">
+        <li>
+          - <strong>Federal Network Agency:</strong> Information on consumer rights when moving at <a href="https://www.bundesnetzagentur.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0047AB]">www.bundesnetzagentur.de</a>
+        </li>
+        <li>
+          - <strong>Consumer Center NRW:</strong> Helpful guides to switching electricity and gas providers at <a href="https://www.verbraucherzentrale.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#0047AB]">www.verbraucherzentrale.de</a>
+        </li>
+      </ul>
+
+      <p className="text-xs text-slate-400 mt-8 italic">
+        Important Note: This guide is intended solely for general information and orientation. It does not constitute legal advice. The legal regulations were last carefully checked on August 11, 2026.
+      </p>
+
+        </>
+      ) : (
+        <>
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
         Ein Umzug in eine neue Stadt wie Aachen bringt viele Veränderungen mit sich. Neben dem Kistenpacken und der Adressänderung sollten Sie die Anmeldung von Strom, Gas und Internet nicht vernachlässigen. Eine rechtzeitige Planung schützt Sie vor unnötigen Kosten und sorgt dafür, dass am Einzugstag Licht brennt, die Heizung läuft und das WLAN funktioniert.
       </p>
@@ -120,6 +231,8 @@ export default function UmzugAachenStromGasInternet() {
       <p className="text-xs text-slate-400 mt-8 italic">
         Wichtiger Hinweis: Dieser Ratgeber dient ausschließlich der allgemeinen Information und Orientierung. Er stellt keine Rechtsberatung dar. Die gesetzlichen Regelungen wurden zuletzt am 11. August 2026 sorgfältig überprüft.
       </p>
+    </>
+      )}
     </ArticleLayout>
   );
 }

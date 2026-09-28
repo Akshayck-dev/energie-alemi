@@ -62,7 +62,7 @@ export default function GasanbieterEschweiler() {
       answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich bringen Sie am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
     },
     {
-      question: "Kann ich in einer Mietwohnung den Gasanbieter wechseln?",
+      question: "Kann ich in einer Mietwohnung den Gas{i18n.language === 'en' ? 'providers?' : 'anbieter wechseln?'}",
       answer: "Das ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
     },
     {

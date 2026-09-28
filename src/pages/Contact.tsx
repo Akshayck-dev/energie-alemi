@@ -247,50 +247,50 @@ export default function Contact() {
 
             <div className="w-full flex flex-col gap-10 mt-16 col-span-1 md:col-span-2">
               <div className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 p-8 rounded-[20px] shadow-sm text-slate-900 dark:text-white">
-                <h2 className="text-2xl font-bold mb-6 text-[#101828] dark:text-white">Was passiert nach Ihrer Anfrage?</h2>
+                <h2 className="text-2xl font-bold mb-6 text-[#101828] dark:text-white">{i18n.language === 'en' ? 'What happens after your request?' : 'Was passiert nach Ihrer Anfrage?'}</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div>
-                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">1. Schnelle Rückmeldung</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Wir sichten Ihre Anfrage und melden uns in der Regel innerhalb von 24 Stunden telefonisch oder per E-Mail bei Ihnen zurück.</p>
+                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">{i18n.language === 'en' ? '1. Fast Response' : '1. Schnelle Rückmeldung'}</h3>
+                    <p className="text-slate-600 dark:text-slate-300">{i18n.language === 'en' ? 'We review your request and usually get back to you by phone or email within 24 hours.' : 'Wir sichten Ihre Anfrage und melden uns in der Regel innerhalb von 24 Stunden telefonisch oder per E-Mail bei Ihnen zurück.'}</p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">2. Kostenloses Erstgespräch</h3>
-                    <p className="text-slate-600 dark:text-slate-300">In einem kurzen Gespräch klären wir Ihren aktuellen Energiebedarf, prüfen Ihren bestehenden Vertrag und besprechen Ihre Wünsche.</p>
+                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">{i18n.language === 'en' ? '2. Free Initial Consultation' : '2. Kostenloses Erstgespräch'}</h3>
+                    <p className="text-slate-600 dark:text-slate-300">{i18n.language === 'en' ? 'In a brief conversation, we clarify your current energy needs, check your existing contract, and discuss your wishes.' : 'In einem kurzen Gespräch klären wir Ihren aktuellen Energiebedarf, prüfen Ihren bestehenden Vertrag und besprechen Ihre Wünsche.'}</p>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">3. Unverbindliches Angebot</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Sie erhalten von uns einen passgenauen Tarifvorschlag. Wenn Sie einverstanden sind, übernehmen wir die komplette Wechselabwicklung für Sie.</p>
+                    <h3 className="font-bold text-[#0047AB] dark:text-[#60a5fa] mb-2 text-lg">{i18n.language === 'en' ? '3. Non-Binding Offer' : '3. Unverbindliches Angebot'}</h3>
+                    <p className="text-slate-600 dark:text-slate-300">{i18n.language === 'en' ? 'You will receive a tailor-made tariff proposal from us. If you agree, we will handle the entire switching process for you.' : 'Sie erhalten von uns einen passgenauen Tarifvorschlag. Wenn Sie einverstanden sind, übernehmen wir die komplette Wechselabwicklung für Sie.'}</p>
                   </div>
                 </div>
               </div>
 
               <div className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 p-8 rounded-[20px] shadow-sm text-slate-900 dark:text-white">
-                <h2 className="text-2xl font-bold mb-4 text-[#101828] dark:text-white">Persönliche Beratung vor Ort in Aachen</h2>
+                <h2 className="text-2xl font-bold mb-4 text-[#101828] dark:text-white">{i18n.language === 'en' ? 'Personal Consultation on Site in Aachen' : 'Persönliche Beratung vor Ort in Aachen'}</h2>
                 <p className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-                  Wir glauben an den Wert des persönlichen Gesprächs. Anstatt sich durch unpersönliche Online-Portale zu klicken, laden wir Sie herzlich in unser Büro am Alexianergraben 9, 52064 Aachen ein. Bringen Sie einfach Ihre letzte Strom- oder Gasabrechnung mit. Wir schauen gemeinsam darauf und finden die besten Sparpotenziale für Sie. 
+                  {i18n.language === 'en' ? 'We believe in the value of personal conversation. Instead of clicking through impersonal online portals, we cordially invite you to our office at Alexianergraben 9, 52064 Aachen. Just bring your latest electricity or gas bill. We will look at it together and find the best potential savings for you.' : 'Wir glauben an den Wert des persönlichen Gesprächs. Anstatt sich durch unpersönliche Online-Portale zu klicken, laden wir Sie herzlich in unser Büro am Alexianergraben 9, 52064 Aachen ein. Bringen Sie einfach Ihre letzte Strom- oder Gasabrechnung mit. Wir schauen gemeinsam darauf und finden die besten Sparpotenziale für Sie.'} 
                   <br/><br/>
-                  Nutzen Sie unseren <a data-track="google-maps" href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] font-semibold hover:underline">Google Maps Link</a>, um direkt den Weg zu uns zu finden.
+                  {i18n.language === 'en' ? 'Use our' : 'Nutzen Sie unseren'} <a data-track="google-maps" href="https://maps.app.goo.gl/PD45bFPqEn6h4Udw9" target="_blank" rel="noopener noreferrer" className="text-[#0047AB] dark:text-[#60a5fa] font-semibold hover:underline">{i18n.language === 'en' ? 'Google Maps link' : 'Google Maps Link'}</a>{i18n.language === 'en' ? ' to find your way directly to us.' : ', um direkt den Weg zu uns zu finden.'}
                 </p>
               </div>
 
               <div className="bg-white dark:bg-[#0a1628] border border-slate-200 dark:border-white/10 p-8 rounded-[20px] shadow-sm text-slate-900 dark:text-white">
-                <h2 className="text-2xl font-bold mb-6 text-[#101828] dark:text-white">Häufige Anliegen unserer Kunden</h2>
+                <h2 className="text-2xl font-bold mb-6 text-[#101828] dark:text-white">{i18n.language === 'en' ? 'Common Concerns of Our Customers' : 'Häufige Anliegen unserer Kunden'}</h2>
                 <div className="space-y-4">
                   <div className="border-l-4 border-[#0047AB] pl-4">
-                    <h3 className="font-bold text-lg">Stromrechnung zu hoch?</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Wir prüfen Ihren Tarif und vergleichen ihn mit aktuellen Angeboten. Erfahren Sie mehr auf unserer <a href="/electricity" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Seite zum Stromanbieterwechsel</a>.</p>
+                    <h3 className="font-bold text-lg">{i18n.language === 'en' ? 'Electricity bill too high?' : 'Stromrechnung zu hoch?'}</h3>
+                    <p className="text-slate-600 dark:text-slate-300">{i18n.language === 'en' ? 'We check your tariff and compare it with current offers. Learn more on our ' : 'Wir prüfen Ihren Tarif und vergleichen ihn mit aktuellen Angeboten. Erfahren Sie mehr auf unserer '}<a href="/electricity" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">{i18n.language === 'en' ? 'page for switching electricity providers' : 'Seite zum Stromanbieterwechsel'}</a>.</p>
                   </div>
                   <div className="border-l-4 border-[#f0a83f] pl-4">
-                    <h3 className="font-bold text-lg">Sie planen einen Umzug?</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Ein Umzug ist der perfekte Zeitpunkt für einen Wechsel. Wir stellen sicher, dass Sie am neuen Wohnort direkt günstig versorgt sind. Tipps finden Sie im <a href="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Ratgeber Umzug in Aachen</a>.</p>
+                    <h3 className="font-bold text-lg">{i18n.language === 'en' ? 'Are you planning a move?' : 'Sie planen einen Umzug?'}</h3>
+                    <p className="text-slate-600 dark:text-slate-300">{i18n.language === 'en' ? 'A move is the perfect time for a switch. We ensure that you are supplied affordably right away at your new home. You can find tips in the ' : 'Ein Umzug ist der perfekte Zeitpunkt für einen Wechsel. Wir stellen sicher, dass Sie am neuen Wohnort direkt günstig versorgt sind. Tipps finden Sie im '}<a href="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">{i18n.language === 'en' ? 'guide for moving in Aachen' : 'Ratgeber Umzug in Aachen'}</a>.</p>
                   </div>
                   <div className="border-l-4 border-[#10b981] pl-4">
-                    <h3 className="font-bold text-lg">Gasvergleich gewünscht?</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Sichern Sie sich langfristige Preisgarantien und schützen Sie sich vor starken Preisschwankungen. Besuchen Sie unsere <a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Gasanbieter-Seite</a>.</p>
+                    <h3 className="font-bold text-lg">{i18n.language === 'en' ? 'Want a gas comparison?' : 'Gasvergleich gewünscht?'}</h3>
+                    <p className="text-slate-600 dark:text-slate-300">{i18n.language === 'en' ? 'Secure long-term price guarantees and protect yourself against strong price fluctuations. Visit our ' : 'Sichern Sie sich langfristige Preisgarantien und schützen Sie sich vor starken Preisschwankungen. Besuchen Sie unsere '}<a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">{i18n.language === 'en' ? 'gas provider page' : 'Gasanbieter-Seite'}</a>.</p>
                   </div>
                   <div className="border-l-4 border-[#8b5cf6] pl-4">
-                    <h3 className="font-bold text-lg">Internet zu langsam oder zu teuer?</h3>
-                    <p className="text-slate-600 dark:text-slate-300">Wir prüfen die Verfügbarkeit von DSL, Kabel und Glasfaser an Ihrer Adresse. Infos gibt es in unserem Bereich für <a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">Internetverträge</a>.</p>
+                    <h3 className="font-bold text-lg">{i18n.language === 'en' ? 'Internet too slow or too expensive?' : 'Internet zu langsam oder zu teuer?'}</h3>
+                    <p className="text-slate-600 dark:text-slate-300">{i18n.language === 'en' ? 'We check the availability of DSL, cable, and fiber optics at your address. Information is available in our section for ' : 'Wir prüfen die Verfügbarkeit von DSL, Kabel und Glasfaser an Ihrer Adresse. Infos gibt es in unserem Bereich für '}<a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-medium">{i18n.language === 'en' ? 'internet contracts' : 'Internetverträge'}</a>.</p>
                   </div>
                 </div>
               </div>

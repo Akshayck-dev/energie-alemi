@@ -141,8 +141,8 @@ export default function Electricity() {
                     <Link to="/ratgeber" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l3')}</Link>
                     <span>{t('elec.cross_p4')}</span>
                     <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l4')}</Link>
-                    <span>{t('elec.cross_p5', ' oder in unserem Ratgeber zum ')}</span>
-                    <Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l5', 'Stromanbieter wechseln')}</Link>
+                    <span>{t('elec.cross_p5', i18n.language === 'en' ? ' or read our guide on ' : ' oder in unserem Ratgeber zum ')}</span>
+                    <Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l5', i18n.language === 'en' ? 'switching electricity providers' : 'Stromanbieter wechseln')}</Link>
                     <span>.</span>
                   </p>
                 </div>
@@ -160,14 +160,14 @@ export default function Electricity() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-[1000px]">
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Stromkosten in Aachen: Was ist normal?</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Electricity Costs in Aachen: What is Normal?' : 'Stromkosten in Aachen: Was ist normal?'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-6">
-                Um zu beurteilen, ob Ihr aktueller Stromtarif zu teuer ist, hilft ein Blick auf die durchschnittlichen Verbrauchswerte. Der Stromverbrauch hängt stark von der Haushaltsgröße und der Art der Warmwasserbereitung ab.
+                Um zu beurteilen, ob Ihr aktueller Stromtarif zu teuer ist, hilft ein Blick auf die durchschnittlichen Verbrauchswerte. Der Stromverbrauch hängt stark von der Haushaltsgröße{i18n.language === 'en' ? ' and ' : ' und '}der Art der Warmwasserbereitung ab.
               </p>
               <ul className="list-disc pl-6 mb-6 text-slate-700 dark:text-slate-300 text-lg space-y-2">
-                <li><strong>1-Personen-Haushalt:</strong> ca. 1.500 kWh pro Jahr. (<a href="/ratgeber/stromverbrauch-1-person" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Details zum Single-Haushalt</a>)</li>
-                <li><strong>2-Personen-Haushalt:</strong> ca. 2.500 kWh pro Jahr. (<a href="/ratgeber/stromverbrauch-2-personen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Details für Paare</a>)</li>
-                <li><strong>4-Personen-Haushalt:</strong> ca. 4.000 kWh pro Jahr. (<a href="/ratgeber/stromverbrauch-4-personen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Details für Familien</a>)</li>
+                <li><strong>{i18n.language === 'en' ? '1-Person Household:' : '1-Personen-Haushalt:'}</strong> {i18n.language === 'en' ? 'approx. 1,500 kWh per year. (' : 'ca. 1.500 kWh pro Jahr. ('}<a href="/ratgeber/stromverbrauch-1-person" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'Details for single households' : 'Details zum Single-Haushalt'}</a>)</li>
+                <li><strong>{i18n.language === 'en' ? '2-Person Household:' : '2-Personen-Haushalt:'}</strong> {i18n.language === 'en' ? 'approx. 2,500 kWh per year. (' : 'ca. 2.500 kWh pro Jahr. ('}<a href="/ratgeber/stromverbrauch-2-personen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'Details for couples' : 'Details für Paare'}</a>)</li>
+                <li><strong>{i18n.language === 'en' ? '4-Person Household:' : '4-Personen-Haushalt:'}</strong> {i18n.language === 'en' ? 'approx. 4,000 kWh per year. (' : 'ca. 4.000 kWh pro Jahr. ('}<a href="/ratgeber/stromverbrauch-4-personen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'Details for families' : 'Details für Familien'}</a>)</li>
               </ul>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
                 Liegt Ihr Verbrauch deutlich darüber, helfen Energiespartipps. Liegen Ihre Kosten pro kWh jedoch deutlich über dem Marktdurchschnitt, sollten Sie umgehend den Tarif wechseln.
@@ -175,12 +175,12 @@ export default function Electricity() {
             </div>
 
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Ökostrom oder Normalstrom?</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Green Electricity or Normal Electricity?' : 'Ökostrom oder Normalstrom?'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
                 Viele Kunden fragen uns, ob sich der Umstieg auf Ökostrom lohnt. Die Antwort lautet ganz klar: Ja. Strom aus erneuerbaren Energien (wie Wind-, Sonnen- oder Wasserkraft) ist in den letzten Jahren enorm konkurrenzfähig geworden.
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-                Oftmals sind reine Ökostromtarife sogar günstiger als die klassischen Graustrom-Mixe der regionalen Grundversorger. Ein Wechsel zu Ökostrom bedeutet also nicht, dass Sie mehr bezahlen müssen. Im Gegenteil: Sie schonen die Umwelt und entlasten gleichzeitig Ihren Geldbeutel.
+                Oftmals sind reine Ökostromtarife sogar günstiger als die klassischen Graustrom-Mixe der regionalen Grundversorger. Ein Wechsel zu Ökostrom bedeutet also nicht, dass Sie mehr bezahlen müssen. Im Gegenteil: Sie schonen die Umwelt{i18n.language === 'en' ? ' and ' : ' und '}entlasten gleichzeitig Ihren Geldbeutel.
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
                 In unserer Tarifberatung weisen wir echte Ökotarife (mit Zertifikaten wie ok-power oder Grüner Strom Label) transparent aus, sodass Sie eine informierte Entscheidung treffen können.
@@ -188,25 +188,25 @@ export default function Electricity() {
             </div>
 
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Für wen lohnt sich der Wechsel besonders?</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Who benefits most from switching?' : 'Für wen lohnt sich der Wechsel besonders?'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-                Das größte Sparpotenzial haben Haushalte, die noch nie ihren Stromanbieter gewechselt haben und sich in der sogenannten Grundversorgung befinden. Die Grundversorgung ist zwar flexibel, aber strukturell oft sehr teuer.
+                Das größte Sparpotenzial haben Haushalte, die noch nie ihren Stromanbieter gewechselt haben{i18n.language === 'en' ? ' and ' : ' und '}sich in der sogenannten Grundversorgung befinden. Die Grundversorgung ist zwar flexibel, aber strukturell oft sehr teuer.
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
                 Auch nach einer Preiserhöhung Ihres aktuellen Anbieters oder bei einem anstehenden Umzug ist der optimale Zeitpunkt gekommen, um aktiv zu werden. Sie profitieren dann nicht nur von besseren Kilowattstundenpreisen, sondern oft auch von attraktiven Neukundenboni.
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-                Erfahren Sie in unserem Ratgeber mehr darüber, wie Sie den <a href="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Stromanbieter richtig wechseln</a> und Fristen optimal nutzen.
+                Erfahren Sie in unserem Ratgeber mehr darüber, wie Sie den <a href="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'switch electricity providers correctly' : 'Stromanbieter richtig wechseln'}</a>{i18n.language === 'en' ? ' and ' : ' und '}Fristen optimal nutzen.
               </p>
             </div>
 
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10">
-              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">Strom, Gas & Internet aus einer Hand</h2>
+              <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Electricity, Gas & Internet from a Single Source' : 'Strom, Gas & Internet aus einer Hand'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
                 Energie Alemi bietet Ihnen den Komfort, nicht nur Ihren Stromtarif zu optimieren. Wir prüfen auf Wunsch auch Ihre Verträge für andere grundlegende Haushaltsausgaben.
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-                Mit einem kombinierten Blick auf Ihre Kosten für <a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Gas</a> und <a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Internet (DSL & Glasfaser)</a> lässt sich die Haushaltskasse oft um mehrere hundert Euro im Jahr entlasten. Wir sind Ihr zentraler Ansprechpartner für alle Versorgungsverträge in Aachen und bundesweit.
+                Mit einem kombinierten Blick auf Ihre Kosten für <a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'gas' : 'Gas'}</a>{i18n.language === 'en' ? ' and ' : ' und '}<a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'internet (DSL & fiber optics)' : 'Internet (DSL & Glasfaser)'}</a> lässt sich die Haushaltskasse oft um mehrere hundert Euro im Jahr entlasten. Wir sind Ihr zentraler Ansprechpartner für alle Versorgungsverträge in Aachen{i18n.language === 'en' ? ' and ' : ' und '}bundesweit.
               </p>
             </div>
           </div>

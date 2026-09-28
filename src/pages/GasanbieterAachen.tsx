@@ -124,7 +124,7 @@ export default function GasanbieterAachen() {
           badgeIcon={<Flame size={24} />}
           badgeText="Gasanbieter Aachen"
           title="Gasanbieter Aachen vergleichen – persönlich beraten, klar entscheiden"
-          description="Sie möchten Ihren Gastarif in Aachen prüfen oder den Gasanbieter wechseln? Energie Alemi vergleicht verfügbare Angebote verschiedener Anbieter und erklärt Ihnen verständlich, worauf es bei Preis, Laufzeit und Vertragsbedingungen ankommt."
+          description="Sie möchten Ihren Gastarif in Aachen prüfen oder den Gas{i18n.language === 'en' ? 'providers?' : 'anbieter wechseln?'} Energie Alemi vergleicht verfügbare Angebote verschiedener Anbieter und erklärt Ihnen verständlich, worauf es bei Preis, Laufzeit und Vertragsbedingungen ankommt."
           bgImage={gasHeroDesk}
           buttonText="Jetzt Gastarif prüfen"
           onButtonClick={() => {

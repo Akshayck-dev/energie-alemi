@@ -62,7 +62,7 @@ export default function GasanbieterHerzogenrath() {
       answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich sind die letzte Gasrechnung und die aktuellen Vertragsdaten besonders hilfreich."
     },
     {
-      question: "Kann ich als Mieterin oder Mieter den Gasanbieter wechseln?",
+      question: "Kann ich als Mieterin oder Mieter den Gas{i18n.language === 'en' ? 'providers?' : 'anbieter wechseln?'}",
       answer: "Nur wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage liegt der Vertrag häufig bei Vermietung oder Hausverwaltung."
     },
     {

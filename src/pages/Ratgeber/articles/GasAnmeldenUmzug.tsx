@@ -1,12 +1,14 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import ArticleLayout from '../ArticleLayout';
 import { articles } from '../../../data/ratgeberArticles';
 import Button from '../../../components/ui/Button';
 
 export default function GasAnmeldenUmzug() {
+  const { i18n } = useTranslation();
   const article = articles.find(a => a.slug === 'gas-anmelden-umzug')!;
 
-  const faqs = [
+  const faqsDe = [
     {
       question: "Muss ich Gas anmelden, wenn die Wohnung eine Zentralheizung hat?",
       answer: "Meist nicht. Läuft die Anlage über Vermieter oder Hausverwaltung, werden die Heizkosten über die Nebenkosten abgerechnet. Fragen Sie vor dem Einzug nach."
@@ -24,13 +26,120 @@ export default function GasAnmeldenUmzug() {
       answer: "Bei einem regulären Anbieterwechsel übernimmt häufig der neue Lieferant die Kündigung. Bei einem Umzug sollten Sie die Meldung selbst kontrollieren, weil zusätzlich Lieferstelle, Datum und neue Anschrift zugeordnet werden müssen."
     },
   ];
+  const faqsEn = [
+    {
+      question: "Do I have to register gas if the apartment has central heating?",
+      answer: "Usually not. If the system is run by the landlord or property management, heating costs are billed via additional costs. Ask before moving in."
+    },
+    {
+      question: "Can I take my current gas contract with me?",
+      answer: "Often yes, if the provider supplies the new address and the contract allows continuation. The individual contract terms are decisive."
+    },
+    {
+      question: "Which meter readings do I need?",
+      answer: "Note the final reading of the old and the initial reading of the new delivery point. Meter number and photo help assign both values clearly."
+    },
+    {
+      question: "Who cancels the old gas contract?",
+      answer: "With a regular provider switch, the new supplier often handles the cancellation. In the case of a move, you should control the notification yourself, because delivery point, date, and new address must additionally be assigned."
+    },
+  ];
+  const faqs = i18n.language === 'en' ? faqsEn : faqsDe;
 
   return (
     <ArticleLayout 
       article={article} 
-      customH1="Gas anmelden beim Umzug: Vertrag, Zähler und Fristen"
+      customH1={i18n.language === 'en' ? "Register Gas when Moving: Contract, Meter and Deadlines" : "Gas anmelden beim Umzug: Vertrag, Zähler und Fristen"}
       faqs={faqs}
     >
+      {i18n.language === 'en' ? (
+        <>
+
+      <h2>Before moving in, clarify who holds the gas contract</h2>
+      <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
+        With their own gas boiler, tenants or owners usually sign a gas contract themselves. With central heating, however, the contract often runs via the landlord or property management; the costs then appear in the utility bill. Therefore, first clarify whether the new apartment even has its own gas delivery point.
+      </p>
+      <p>
+        If a separate contract exists, you should inform the current provider about the move early on. Whether the contract is continued at the new address, terminated, or replaced by a new tariff depends on the contract, delivery options, and the moving clause.
+      </p>
+      <h2>You need this data</h2>
+      <h2>Address of the old and new delivery point;</h2>
+      <h2>Move-out and move-in date;</h2>
+      <h2>Gas meter numbers and meter readings;</h2>
+      <h2>Customer number and contract data;</h2>
+      <h2>Desired delivery start date;</h2>
+      <h2>Last annual statement or expected annual consumption;</h2>
+      <p>
+        New billing address.
+      </p>
+      <p>
+        Photograph the meter when the keys are handed over and transfer the reading into the protocol. The photo should clearly document the number, reading, and ideally the date.
+      </p>
+      <h2>Take your gas contract with you or compare anew?</h2>
+      <p>
+        Many special contracts can be continued at the new residence, provided the provider can deliver there. Nevertheless, check the conditions: The tariff is not automatically the cheapest choice for the new living situation. With a larger area, different heating technology, or a better insulation standard, the expected consumption can also change.
+      </p>
+      <p>
+        If the previous provider cannot supply the new delivery point, termination may be considered depending on the contract. Do not rely on assumptions; get the end of delivery and final invoice confirmed in writing.
+      </p>
+      <h2>What happens without a chosen gas tariff?</h2>
+      <p>
+        If gas is drawn at a separate gas delivery point, the legally secured supply by the local basic supplier regularly takes effect. This prevents a supply gap. Nevertheless, price and conditions should be compared promptly with available special tariffs.
+      </p>
+      <p>
+        With central heating, residents usually do not have to register their own supply contract. Here the landlord or the community decides on the gas supplier.
+      </p>
+      <h2>Practical Moving Checklist</h2>
+      <p>
+        Clarify heating type and separate gas delivery point.
+      </p>
+      <p>
+        Check existing contract including moving clause.
+      </p>
+      <p>
+        Inform provider early about both addresses.
+      </p>
+      <p>
+        Compare tariff for the new consumption.
+      </p>
+      <p>
+        Photograph meter reading at move-out and move-in.
+      </p>
+      <p>
+        Check delivery confirmation and later the final invoice.
+      </p>
+
+      <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
+        <h3 className="text-2xl font-bold mb-4 mt-0">Consulting & Service</h3>
+        <p className="mb-6">Energie Alemi checks your gas contract and compares suitable tariffs for the new address in Aachen and the region.</p>
+        <Link to="/contact">
+          <Button variant="primary">Contact us now</Button>
+        </Link>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div className="space-y-6 mt-8">
+        {faqs.map((faq, index) => (
+          <div key={index} className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+            <h3 className="text-lg font-bold mt-0 mb-2">{faq.question}</h3>
+            <p className="mb-0 text-slate-600 dark:text-slate-300">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
+        <h3 className="text-xl font-bold mb-4">Further Information</h3>
+        <ul className="flex flex-col gap-2">
+          <li><Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Moving to Aachen Electricity Gas Internet</Link></li>
+          <li><Link to="/ratgeber/gasanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Switching Gas Providers</Link></li>
+          <li><Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Gas Providers Aachen</Link></li>
+          <li><Link to="/contact" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Contact</Link></li>
+        </ul>
+      </div>
+
+        </>
+      ) : (
+        <>
       <h2>Vor dem Umzug muss geklärt werden, wer den Gasvertrag hält</h2>
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
         Bei einer eigenen Gastherme schließen Mieter oder Eigentümer meist selbst einen Gasvertrag ab. Bei einer Zentralheizung läuft der Vertrag dagegen häufig über Vermieter oder Hausverwaltung; die Kosten erscheinen dann in der Nebenkostenabrechnung. Klären Sie deshalb zuerst, ob die neue Wohnung überhaupt eine eigene Gaslieferstelle besitzt.
@@ -113,6 +222,8 @@ export default function GasAnmeldenUmzug() {
         </ul>
       </div>
 
+    </>
+      )}
     </ArticleLayout>
   );
 }
