@@ -134,7 +134,7 @@ export default function InternetanbieterHerzogenrath() {
             Deshalb beginnt die Beratung für Herzogenrath-Mitte, Kohlscheid und Merkstein immer mit der vollständigen Anschlussadresse. Anschließend werden die tatsächlich buchbaren Optionen mit dem persönlichen oder betrieblichen Nutzungsprofil abgeglichen.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Ein reduzierter Monatspreis gilt häufig nur für einen Aktionszeitraum. Für einen fairen Vergleich werden daher regulärer Monatspreis, Bereitstellungsentgelt, Routerkosten, Versand, mögliche Anschlussarbeiten und die Vertragsdauer gemeinsam betrachtet. Erfahren Sie mehr über unsere Leistungen als <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link>.
+            Ein reduzierter Monatspreis gilt häufig nur für einen Aktionszeitraum. Für einen fairen Vergleich werden daher regulärer Monatspreis, Bereitstellungsentgelt, Routerkosten, Versand, mögliche Anschlussarbeiten und die Vertragsdauer gemeinsam betrachtet. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -146,7 +146,7 @@ export default function InternetanbieterHerzogenrath() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas provider in Herzogenrath' : 'Gasanbieter in Herzogenrath'}</Link> zu finden.
+            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas provider in Herzogenrath' : 'Gasanbieter in Herzogenrath'}</Link> {i18n.language === "en" ? "." : "zu finden."}
           </p>
         </div>
       </div>

@@ -120,7 +120,7 @@ export default function GasanbieterStolberg() {
             Auch die Wohn- oder Gebäudesituation ist wichtig: Wer in einem Mietshaus mit Zentralheizung lebt, schließt den Gasvertrag häufig nicht selbst ab. Ein eigener Anbieterwechsel ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Energie Alemi prüft Ihre letzte Gasrechnung und erklärt die verfügbaren Optionen verständlich. Die Beratung ist für Privatpersonen, Gewerbe und Industrie aus Stolberg gedacht – vom Kernstadtbereich bis zu Stadtteilen wie Breinig, Mausbach, Gressenich, Vicht und Zweifall. Erfahren Sie mehr über unsere Leistungen als <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
+            Energie Alemi prüft Ihre letzte Gasrechnung und erklärt die verfügbaren Optionen verständlich. Die Beratung ist für Privatpersonen, Gewerbe und Industrie aus Stolberg gedacht – vom Kernstadtbereich bis zu Stadtteilen wie Breinig, Mausbach, Gressenich, Vicht und Zweifall. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -130,7 +130,7 @@ export default function GasanbieterStolberg() {
             Ein hoher Neukundenbonus kann ein Angebot im ersten Jahr attraktiv wirken lassen, sagt aber wenig über die laufenden Kosten danach aus. Deshalb betrachten wir die voraussichtlichen Jahreskosten und die Konditionen für die gesamte relevante Vertragsdauer.
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-            Bei gewerblich genutzten Immobilien oder höherem Verbrauch gewinnen Planungssicherheit und verlässliche Vertragsbedingungen zusätzlich an Bedeutung. Hier wird der Vergleich an den konkreten Bedarf angepasst. Bei einer gemeinsamen Vertragsoptimierung helfen wir Ihnen natürlich auch dabei, einen passenden <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Stolberg' : 'Internetanbieter in Stolberg'}</Link> zu finden.
+            Bei gewerblich genutzten Immobilien oder höherem Verbrauch gewinnen Planungssicherheit und verlässliche Vertragsbedingungen zusätzlich an Bedeutung. Hier wird der Vergleich an den konkreten Bedarf angepasst. Bei einer gemeinsamen Vertragsoptimierung helfen wir Ihnen natürlich auch dabei, einen passenden <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Stolberg' : 'Internetanbieter in Stolberg'}</Link> {i18n.language === "en" ? "." : "zu finden."}
           </p>
         </div>
       </div>

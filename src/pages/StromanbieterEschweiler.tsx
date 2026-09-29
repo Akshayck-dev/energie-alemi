@@ -134,7 +134,7 @@ export default function StromanbieterEschweiler() {
             Energie Alemi berücksichtigt außerdem Laufzeit, Kündigungsfrist, Zahlungsweise und Umfang der Preisgarantie. So lässt sich erkennen, ob ein Angebot nicht nur im Aktionszeitraum, sondern auch für Ihre persönliche Planung geeignet ist.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Die Beratung richtet sich an Kundinnen und Kunden aus dem gesamten Eschweiler Stadtgebiet – unter anderem aus Dürwiß, Weisweiler, Röhe, Röthgen, Bergrath und Nothberg. Sie erfolgt telefonisch oder persönlich am Standort von Energie Alemi in Aachen. Erfahren Sie mehr über unsere Leistungen als <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
+            Die Beratung richtet sich an Kundinnen und Kunden aus dem gesamten Eschweiler Stadtgebiet – unter anderem aus Dürwiß, Weisweiler, Röhe, Röthgen, Bergrath und Nothberg. Sie erfolgt telefonisch oder persönlich am Standort von Energie Alemi in Aachen. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -146,7 +146,7 @@ export default function StromanbieterEschweiler() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Eschweiler' : 'Internetanbieter in Eschweiler'}</Link> zu finden.
+            {i18n.language === "en" ? "By the way: In addition to electricity and gas advice, we also help you find the right" : "Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden"} <Link to="/internetanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Eschweiler' : 'Internetanbieter in Eschweiler'}</Link> {i18n.language === "en" ? "." : "zu finden."}
           </p>
         </div>
       </div>

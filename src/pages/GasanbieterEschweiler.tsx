@@ -84,7 +84,7 @@ export default function GasanbieterEschweiler() {
       answer: "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt verbrauchsunabhängig an. Für den Vergleich zählt die Summe der erwarteten Jahreskosten."
     },
     {
-      question: "Muss ich meinen bisherigen Gasvertrag selbst kündigen?",
+      question: i18n.language === "en" ? "Do I have to cancel my current gas contract myself?" : "Muss ich meinen bisherigen Gasvertrag selbst kündigen?",
       answer: "Im Regelfall übernimmt der neue Lieferant die Kündigung nach entsprechender Bevollmächtigung. Sonderkündigungen, Umzüge und knappe Fristen sollten vorab separat geprüft werden."
     },
     {
@@ -134,7 +134,7 @@ export default function GasanbieterEschweiler() {
             Wichtig ist außerdem, wer den Gasliefervertrag abgeschlossen hat. Bei einer Wohnung mit Zentralheizung liegt der Vertrag häufig bei Vermietung oder Hausverwaltung. Selbst wechseln können Sie nur, wenn Sie selbst Vertragspartner der Gaslieferung sind.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Energie Alemi berät Kundinnen und Kunden aus der Eschweiler Innenstadt ebenso wie aus Dürwiß, Weisweiler, Kinzweiler, St. Jöris, Bergrath oder Nothberg. Die Beratung erfolgt telefonisch oder am Standort in Aachen. Erfahren Sie mehr über unsere Leistungen als <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
+            Energie Alemi berät Kundinnen und Kunden aus der Eschweiler Innenstadt ebenso wie aus Dürwiß, Weisweiler, Kinzweiler, St. Jöris, Bergrath oder Nothberg. Die Beratung erfolgt telefonisch oder am Standort in Aachen. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -146,7 +146,7 @@ export default function GasanbieterEschweiler() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Eschweiler' : 'Internetanbieter in Eschweiler'}</Link> zu finden.
+            {i18n.language === "en" ? "By the way: In addition to electricity and gas advice, we also help you find the right" : "Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden"} <Link to="/internetanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Eschweiler' : 'Internetanbieter in Eschweiler'}</Link> {i18n.language === "en" ? "." : "zu finden."}
           </p>
         </div>
       </div>

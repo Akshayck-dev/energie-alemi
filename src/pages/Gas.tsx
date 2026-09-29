@@ -144,9 +144,9 @@ export default function Gas() {
                     <span>{t('gas.cross_p4')}</span>
                     <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{t('gas.cross_l4')}</Link>
                     <span>{i18n.language === 'en' ? ' or read our useful ' : t('gas.cross_p5', ' oder lesen Sie unseren nützlichen ')}</span>
-                    <Link to="/ratgeber/gasvergleich" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{t('gas.cross_l5', i18n.language === 'en' ? 'gas comparison guide' : 'Gasvergleich-Ratgeber')}</Link>
+                    <Link to="/ratgeber/gasvergleich" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas comparison guide' : 'Gasvergleich-Ratgeber'}</Link>
                     <span>{i18n.language === 'en' ? ' as well as our guide on ' : t('gas.cross_p6', ' sowie unserem Ratgeber zum ')}</span>
-                    <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{t('gas.cross_l6', i18n.language === 'en' ? 'switching gas providers' : 'Gasanbieter wechseln')}</Link>
+                    <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'switching gas providers' : 'Gasanbieter wechseln'}</Link>
                     <span>.</span>
                   </p>
                   {/* Windmill graphic placeholder */}

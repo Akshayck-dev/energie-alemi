@@ -134,7 +134,7 @@ export default function InternetanbieterEschweiler() {
             Die Verfügbarkeit kann zwischen Eschweiler-Mitte, Dürwiß, Weisweiler, Röhe, Bergrath, Nothberg und weiteren Stadtteilen unterschiedlich sein. Selbst benachbarte Häuser können verschiedene technische Voraussetzungen haben. Deshalb beginnt jede Empfehlung mit der vollständigen Anschlussadresse.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Energie Alemi prüft die Optionen für Privathaushalte, Gewerbe und Industrie und erklärt, welche Unterschiede im Alltag oder im Betrieb wirklich relevant sind. Erfahren Sie mehr über unsere Leistungen als <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link>.
+            Energie Alemi prüft die Optionen für Privathaushalte, Gewerbe und Industrie und erklärt, welche Unterschiede im Alltag oder im Betrieb wirklich relevant sind. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -146,7 +146,7 @@ export default function InternetanbieterEschweiler() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas provider in Eschweiler' : 'Gasanbieter in Eschweiler'}</Link> zu finden.
+            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas provider in Eschweiler' : 'Gasanbieter in Eschweiler'}</Link> {i18n.language === "en" ? "." : "zu finden."}
           </p>
         </div>
       </div>

@@ -134,7 +134,7 @@ export default function StromanbieterHerzogenrath() {
             Zusätzlich gehören Mindestlaufzeit, Kündigungsfrist, Zahlungsweise, Preisgarantie und Bonusbedingungen in die Entscheidung. Ein günstiger Einstiegswert kann sonst darüber hinwegtäuschen, dass der Vertrag später weniger flexibel oder im Folgejahr teurer ist.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Das Angebot richtet sich an Kundinnen und Kunden aus Herzogenrath-Mitte, Kohlscheid und Merkstein. Die Beratung erfolgt telefonisch oder persönlich bei Energie Alemi am Alexianergraben 9 in Aachen. Erfahren Sie mehr über unsere Leistungen als <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
+            Das Angebot richtet sich an Kundinnen und Kunden aus Herzogenrath-Mitte, Kohlscheid und Merkstein. Die Beratung erfolgt telefonisch oder persönlich bei Energie Alemi am Alexianergraben 9 in Aachen. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -146,7 +146,7 @@ export default function StromanbieterHerzogenrath() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Herzogenrath' : 'Internetanbieter in Herzogenrath'}</Link> zu finden.
+            {i18n.language === "en" ? "By the way: In addition to electricity and gas advice, we also help you find the right" : "Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden"} <Link to="/internetanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Herzogenrath' : 'Internetanbieter in Herzogenrath'}</Link> {i18n.language === "en" ? "." : "zu finden."}
           </p>
         </div>
       </div>
