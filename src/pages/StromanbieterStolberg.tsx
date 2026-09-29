@@ -22,12 +22,12 @@ export default function StromanbieterStolberg() {
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
       title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
-      description: "Privathaushalte profitieren von einem Vergleich, der Haushaltsgröße, Jahresverbrauch und persönliche Prioritäten berücksichtigt. Wer Wert auf erneuerbare Energien legt, kann die ausgewiesene Stromherkunft und die Bedingungen entsprechender Tarife in die Auswahl einbeziehen."
+      description: i18n.language === "en" ? "Private households benefit from a comparison that takes into account household size, annual consumption and personal priorities. Those who value renewable energies can include the stated origin of electricity and the conditions of corresponding tariffs in the selection." : "Privathaushalte profitieren von einem Vergleich, der Haushaltsgröße, Jahresverbrauch und persönliche Prioritäten berücksichtigt. Wer Wert auf erneuerbare Energien legt, kann die ausgewiesene Stromherkunft und die Bedingungen entsprechender Tarife in die Auswahl einbeziehen."
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
-      title: "Gewerbe & Industrie",
-      description: "Bei Gewerbe- und Industriekunden stehen Verbrauchsprofil, Planungssicherheit und passende Vertragskonditionen im Vordergrund. Energie Alemi erfasst die betriebliche Situation und bespricht die verfügbaren Optionen verständlich und strukturiert."
+      title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
+      description: i18n.language === "en" ? "For commercial and industrial customers, the consumption profile, planning security and suitable contract conditions are paramount. Energie Alemi records the operational situation and discusses the available options in a clear and structured manner." : "Bei Gewerbe- und Industriekunden stehen Verbrauchsprofil, Planungssicherheit und passende Vertragskonditionen im Vordergrund. Energie Alemi erfasst die betriebliche Situation und bespricht die verfügbaren Optionen verständlich und strukturiert."
     }
   ];
 
@@ -35,41 +35,41 @@ export default function StromanbieterStolberg() {
     {
       number: 1,
       icon: <Search size={24} />,
-      title: "Vertrag und Verbrauch prüfen",
-      description: "Halten Sie Ihre letzte Jahresabrechnung, den aktuellen Vertrag und möglichst Zählernummer oder Marktlokations-ID bereit."
+      title: i18n.language === "en" ? "Check contract and consumption" : "Vertrag und Verbrauch prüfen",
+      description: i18n.language === "en" ? "Keep your last annual statement, current contract and, if possible, meter number or market location ID ready." : "Halten Sie Ihre letzte Jahresabrechnung, den aktuellen Vertrag und möglichst Zählernummer oder Marktlokations-ID bereit."
     },
     {
       number: 2,
       icon: <BarChart3 size={24} />,
       title: i18n.language === 'en' ? 'Compare offers comprehensively' : 'Angebote nachvollziehbar vergleichen',
-      description: "Wir betrachten Jahreskosten, Laufzeit, Kündigungsfrist, Preisgarantie, Zahlungsweise und Bonusregeln gemeinsam."
+      description: i18n.language === "en" ? "We consider annual costs, term, cancellation period, price guarantee, payment method and bonus rules together." : "Wir betrachten Jahreskosten, Laufzeit, Kündigungsfrist, Preisgarantie, Zahlungsweise und Bonusregeln gemeinsam."
     },
     {
       number: 3,
       icon: <CheckSquare size={24} />,
       title: i18n.language === 'en' ? 'Choose a suitable tariff' : 'Passenden Tarif auswählen',
-      description: "Sie entscheiden, welches Angebot zu Ihren Anforderungen passt und erhalten vor dem Abschluss die relevanten Vertragsinformationen."
+      description: i18n.language === "en" ? "You decide which offer suits your requirements and receive the relevant contract information before signing." : "Sie entscheiden, welches Angebot zu Ihren Anforderungen passt und erhalten vor dem Abschluss die relevanten Vertragsinformationen."
     },
     {
       number: 4,
       icon: <Handshake size={24} />,
       title: i18n.language === 'en' ? 'Get support with switching' : 'Wechsel begleiten lassen',
-      description: "Auf Wunsch unterstützen wir die notwendigen Schritte und bleiben auch nach dem Wechsel Ihr Ansprechpartner."
+      description: i18n.language === "en" ? "If you wish, we can support you with the necessary steps and remain your contact person even after the switch." : "Auf Wunsch unterstützen wir die notwendigen Schritte und bleiben auch nach dem Wechsel Ihr Ansprechpartner."
     }
   ];
 
   const faqs = [
     {
-      question: "Ist die Tarifberatung für Kundinnen und Kunden aus Stolberg kostenlos?",
-      answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Vor einem Vertragsabschluss erhalten Sie die relevanten Tarif- und Vertragsinformationen."
+      question: i18n.language === "en" ? "Is the tariff advice for customers from Stolberg free of charge?" : "Ist die Tarifberatung für Kundinnen und Kunden aus Stolberg kostenlos?",
+      answer: i18n.language === "en" ? "Yes. Energie Alemi offers tariff advice free of charge. You will receive the relevant tariff and contract information before signing a contract." : i18n.language === "en" ? "Yes. Energie Alemi offers tariff advice free of charge. You will receive the relevant tariff and contract information before signing a contract." : i18n.language === "en" ? "Yes. Energie Alemi offers tariff advice free of charge. You will receive the relevant tariff and contract information before signing a contract." : i18n.language === "en" ? "Yes. Energie Alemi offers tariff advice free of charge. You will receive the relevant tariff and contract information before signing a contract." : i18n.language === "en" ? "Yes. Energie Alemi offers tariff advice free of charge. You will receive the relevant tariff and contract information before signing a contract." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Vor einem Vertragsabschluss erhalten Sie die relevanten Tarif- und Vertragsinformationen."
     },
     {
-      question: "Welche Stromanbieter sind an meiner Adresse in Stolberg verfügbar?",
-      answer: "Die verfügbaren Angebote hängen von der Lieferadresse und den aktuellen Tarifbedingungen ab. Für einen konkreten Vergleich werden deshalb Ihre Adresse und Verbrauchsdaten benötigt."
+      question: i18n.language === "en" ? "Which electricity providers are available at my address in Stolberg?" : "Welche Stromanbieter sind an meiner Adresse in Stolberg verfügbar?",
+      answer: i18n.language === "en" ? "The available offers depend on the delivery address and current tariff conditions. Your address and consumption data are therefore required for a concrete comparison." : i18n.language === "en" ? "The available offers depend on the delivery address and current tariff conditions. Your address and consumption data are therefore required for a concrete comparison." : i18n.language === "en" ? "The available offers depend on the delivery address and current tariff conditions. Your address and consumption data are therefore required for a concrete comparison." : i18n.language === "en" ? "The available offers depend on the delivery address and current tariff conditions. Your address and consumption data are therefore required for a concrete comparison." : i18n.language === "en" ? "The available offers depend on the delivery address and current tariff conditions. Your address and consumption data are therefore required for a concrete comparison." : "Die verfügbaren Angebote hängen von der Lieferadresse und den aktuellen Tarifbedingungen ab. Für einen konkreten Vergleich werden deshalb Ihre Adresse und Verbrauchsdaten benötigt."
     },
     {
       question: i18n.language === 'en' ? 'Will my electricity be interrupted when I change providers?' : 'Wird mein Strom beim Anbieterwechsel unterbrochen?',
-      answer: "Ein regulärer Lieferantenwechsel ist ein vertraglicher Vorgang; Netz und Zähler bleiben bestehen. Die gesetzlich vorgesehene Grund- oder Ersatzversorgung sichert die Stromlieferung ab."
+      answer: i18n.language === "en" ? "A regular change of supplier is a contractual process; network and meter remain. The statutory basic or replacement supply secures the electricity supply." : i18n.language === "en" ? "A regular change of supplier is a contractual process; network and meter remain. The statutory basic or replacement supply secures the electricity supply." : i18n.language === "en" ? "A regular change of supplier is a contractual process; network and meter remain. The statutory basic or replacement supply secures the electricity supply." : i18n.language === "en" ? "A regular change of supplier is a contractual process; network and meter remain. The statutory basic or replacement supply secures the electricity supply." : i18n.language === "en" ? "A regular change of supplier is a contractual process; network and meter remain. The statutory basic or replacement supply secures the electricity supply." : "Ein regulärer Lieferantenwechsel ist ein vertraglicher Vorgang; Netz und Zähler bleiben bestehen. Die gesetzlich vorgesehene Grund- oder Ersatzversorgung sichert die Stromlieferung ab."
     },
     {
       question: "Welche Unterlagen brauche ich für den Stromvergleich?",
@@ -77,19 +77,19 @@ export default function StromanbieterStolberg() {
     },
     {
       question: "Muss ich meinen bisherigen Stromvertrag selbst kündigen?",
-      answer: "Im Normalfall übernimmt der neue Lieferant die Kündigung, wenn Sie ihn bevollmächtigen. Bei Sonderkündigungen, einem Umzug oder sehr kurzen Fristen kann ein anderes Vorgehen nötig sein."
+      answer: i18n.language === "en" ? "Normally, the new supplier takes over the cancellation if you authorize them to do so. A different procedure may be necessary for special cancellations, moving house or very short notice periods." : i18n.language === "en" ? "Normally, the new supplier takes over the cancellation if you authorize them to do so. A different procedure may be necessary for special cancellations, moving house or very short notice periods." : i18n.language === "en" ? "Normally, the new supplier takes over the cancellation if you authorize them to do so. A different procedure may be necessary for special cancellations, moving house or very short notice periods." : i18n.language === "en" ? "Normally, the new supplier takes over the cancellation if you authorize them to do so. A different procedure may be necessary for special cancellations, moving house or very short notice periods." : i18n.language === "en" ? "Normally, the new supplier takes over the cancellation if you authorize them to do so. A different procedure may be necessary for special cancellations, moving house or very short notice periods." : "Im Normalfall übernimmt der neue Lieferant die Kündigung, wenn Sie ihn bevollmächtigen. Bei Sonderkündigungen, einem Umzug oder sehr kurzen Fristen kann ein anderes Vorgehen nötig sein."
     },
     {
       question: "Wie lange dauert der Stromanbieterwechsel?",
-      answer: "Der mögliche Lieferbeginn hängt vor allem von der Restlaufzeit, der Kündigungsfrist und vollständig vorliegenden Daten ab. Der technische Wechselprozess ersetzt keine vertragliche Kündigungsfrist."
+      answer: i18n.language === "en" ? "The possible start of delivery depends mainly on the remaining term, cancellation period and complete data. The technical switching process does not replace a contractual cancellation period." : i18n.language === "en" ? "The possible start of delivery depends mainly on the remaining term, cancellation period and complete data. The technical switching process does not replace a contractual cancellation period." : i18n.language === "en" ? "The possible start of delivery depends mainly on the remaining term, cancellation period and complete data. The technical switching process does not replace a contractual cancellation period." : i18n.language === "en" ? "The possible start of delivery depends mainly on the remaining term, cancellation period and complete data. The technical switching process does not replace a contractual cancellation period." : i18n.language === "en" ? "The possible start of delivery depends mainly on the remaining term, cancellation period and complete data. The technical switching process does not replace a contractual cancellation period." : "Der mögliche Lieferbeginn hängt vor allem von der Restlaufzeit, der Kündigungsfrist und vollständig vorliegenden Daten ab. Der technische Wechselprozess ersetzt keine vertragliche Kündigungsfrist."
     },
     {
-      question: "Berät Energie Alemi auch Gewerbe- und Industriekunden in Stolberg?",
-      answer: "Ja. Die Beratung richtet sich an Privat-, Gewerbe- und Industriekunden. Der Vergleich wird an Verbrauch, Vertragsziel und betriebliche Anforderungen angepasst."
+      question: i18n.language === "en" ? "Does Energie Alemi also advise commercial and industrial customers in Stolberg?" : "Berät Energie Alemi auch Gewerbe- und Industriekunden in Stolberg?",
+      answer: i18n.language === "en" ? "Yes. The advice is aimed at private, commercial and industrial customers. The comparison is adapted to consumption, contract goals and operational requirements." : i18n.language === "en" ? "Yes. The advice is aimed at private, commercial and industrial customers. The comparison is adapted to consumption, contract goals and operational requirements." : i18n.language === "en" ? "Yes. The advice is aimed at private, commercial and industrial customers. The comparison is adapted to consumption, contract goals and operational requirements." : i18n.language === "en" ? "Yes. The advice is aimed at private, commercial and industrial customers. The comparison is adapted to consumption, contract goals and operational requirements." : i18n.language === "en" ? "Yes. The advice is aimed at private, commercial and industrial customers. The comparison is adapted to consumption, contract goals and operational requirements." : "Ja. Die Beratung richtet sich an Privat-, Gewerbe- und Industriekunden. Der Vergleich wird an Verbrauch, Vertragsziel und betriebliche Anforderungen angepasst."
     },
     {
-      question: "Kann ich beim Vergleich Ökostrom berücksichtigen?",
-      answer: "Ja. Wenn Ihnen die Stromherkunft wichtig ist, können entsprechende Tarife in die Auswahl einbezogen werden. Entscheidend sind die konkreten Angaben und Bedingungen des jeweiligen Angebots."
+      question: i18n.language === "en" ? "Can I consider green electricity in the comparison?" : i18n.language === "en" ? "Can I consider green electricity in the comparison?" : i18n.language === "en" ? "Can I consider green electricity in the comparison?" : i18n.language === "en" ? "Can I consider green electricity in the comparison?" : i18n.language === "en" ? "Can I consider green electricity in the comparison?" : "Kann ich beim Vergleich Ökostrom berücksichtigen?",
+      answer: i18n.language === "en" ? "Yes. If the origin of electricity is important to you, corresponding tariffs can be included in the selection. The specific details and conditions of the respective offer are decisive." : i18n.language === "en" ? "Yes. If the origin of electricity is important to you, corresponding tariffs can be included in the selection. The specific details and conditions of the respective offer are decisive." : i18n.language === "en" ? "Yes. If the origin of electricity is important to you, corresponding tariffs can be included in the selection. The specific details and conditions of the respective offer are decisive." : i18n.language === "en" ? "Yes. If the origin of electricity is important to you, corresponding tariffs can be included in the selection. The specific details and conditions of the respective offer are decisive." : i18n.language === "en" ? "Yes. If the origin of electricity is important to you, corresponding tariffs can be included in the selection. The specific details and conditions of the respective offer are decisive." : "Ja. Wenn Ihnen die Stromherkunft wichtig ist, können entsprechende Tarife in die Auswahl einbezogen werden. Entscheidend sind die konkreten Angaben und Bedingungen des jeweiligen Angebots."
     }
   ];
 
@@ -98,7 +98,7 @@ export default function StromanbieterStolberg() {
       <SEO 
         url="/stromanbieter-stolberg" 
         title={i18n.language === 'en' ? 'Compare Electricity Providers Stolberg | Energie Alemi' : 'Stromanbieter Stolberg vergleichen | Energie Alemi'}
-        description="Stromtarife in Stolberg persönlich vergleichen: Energie Alemi prüft Vertrag, Verbrauch und Konditionen und begleitet auf Wunsch den Anbieterwechsel."
+        description={i18n.language === "en" ? "Compare electricity tariffs in Stolberg personally: Energie Alemi checks contract, consumption and conditions and accompanies the change of provider if desired." : "Stromtarife in Stolberg persönlich vergleichen: Energie Alemi prüft Vertrag, Verbrauch und Konditionen und begleitet auf Wunsch den Anbieterwechsel."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />
@@ -110,15 +110,15 @@ export default function StromanbieterStolberg() {
           title={i18n.language === 'en' ? 'Compare electricity providers in Stolberg – switch with personal advice' : 'Stromanbieter in Stolberg vergleichen – persönlich beraten wechseln'}
           description={<>Sie wohnen oder arbeiten in Stolberg und möchten Ihren Stromvertrag verständlich prüfen lassen? Energie Alemi vergleicht passende Tarife verschiedener Anbieter und begleitet Sie auf Wunsch beim Wechsel – für Privathaushalte, Gewerbe und Industrie. Übrigens helfen wir Ihnen auch bei der Suche nach einem passenden <Link to="/gasanbieter-stolberg" className="hover:underline font-semibold text-blue-300">Gasanbieter in Stolberg</Link>.</>}
           bgImage={elecHeroDesk}
-          buttonText="Jetzt Stromtarife für Stolberg prüfen lassen"
+          buttonText={i18n.language === "en" ? "Have electricity tariffs for Stolberg checked now" : "Jetzt Stromtarife für Stolberg prüfen lassen"}
           onButtonClick={() => {
             setIsModalOpen(true);
             trackEvent('service_cta_click', { service_type: 'stromanbieter_stolberg', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: "Kostenlose Tarifberatung" },
-            { icon: <MapPin size={24} />, title: "Persönlicher Ansprechpartner in Aachen" },
-            { icon: <Handshake size={24} />, title: "Begleitung beim Anbieterwechsel" },
+            { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
+            { icon: <MapPin size={24} />, title: i18n.language === "en" ? "Personal contact in Aachen" : "Persönlicher Ansprechpartner in Aachen" },
+            { icon: <Handshake size={24} />, title: i18n.language === "en" ? "Support when switching providers" : "Begleitung beim Anbieterwechsel" },
           ]}
           accentColor="bg-amber-500 hover:bg-amber-600"
         />
@@ -126,7 +126,7 @@ export default function StromanbieterStolberg() {
 
       <div className="relative z-10 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-12 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Ein guter Stromtarif passt zu Verbrauch und Vertragsziel</h2>
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{i18n.language === "en" ? "A good electricity tariff matches consumption and contract goals" : "Ein guter Stromtarif passt zu Verbrauch und Vertragsziel"}</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
             Ein niedriger Arbeitspreis allein macht noch keinen guten Stromvertrag. Für einen belastbaren Vergleich zählen die voraussichtlichen Jahreskosten: Arbeitspreis, Grundpreis und mögliche Boni müssen gemeinsam betrachtet werden. Ebenso wichtig sind Laufzeit, Kündigungsfrist, Zahlungsweise und der genaue Umfang einer Preisgarantie.
           </p>
@@ -140,7 +140,7 @@ export default function StromanbieterStolberg() {
         
         <div className="container mx-auto px-6 mb-12">
           <SectionHeader 
-            title="Stromtarife für Privathaushalte, Gewerbe und Industrie"
+            title={i18n.language === "en" ? "Electricity tariffs for private households, businesses and industry" : "Stromtarife für Privathaushalte, Gewerbe und Industrie"}
             align="center"
             className="mb-12 max-w-4xl mx-auto"
           />
@@ -188,11 +188,11 @@ export default function StromanbieterStolberg() {
           />
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: "Grundpreis und Arbeitspreis gemeinsam auf den erwarteten Jahresverbrauch beziehen." },
-              { title: i18n.language === 'en' ? 'Contract term' : 'Vertragslaufzeit', desc: "Prüfen, wie lange Sie gebunden sind und wann ein weiterer Wechsel möglich wäre." },
+              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: i18n.language === "en" ? "Relate the basic price and energy price together to the expected annual consumption." : "Grundpreis und Arbeitspreis gemeinsam auf den erwarteten Jahresverbrauch beziehen." },
+              { title: i18n.language === 'en' ? 'Contract term' : 'Vertragslaufzeit', desc: i18n.language === "en" ? "Check how long you are bound and when another switch would be possible." : "Prüfen, wie lange Sie gebunden sind und wann ein weiterer Wechsel möglich wäre." },
               { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: i18n.language === 'en' ? 'Take into account the next possible cancellation date of the existing contract.' : 'Den nächstmöglichen Kündigungstermin des bestehenden Vertrags berücksichtigen.' },
               { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === 'en' ? 'Look closely at which price components are covered and how long the guarantee is valid.' : 'Genau ansehen, welche Preisbestandteile erfasst sind und wie lange die Garantie gilt.' },
-              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: "Einmalige Boni getrennt von den laufenden Kosten im Folgejahr bewerten." },
+              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: i18n.language === "en" ? "Evaluate one-off bonuses separately from the running costs in the following year." : "Einmalige Boni getrennt von den laufenden Kosten im Folgejahr bewerten." },
               { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === 'en' ? 'Monthly installments are generally clearer than advance payment or high advance payments.' : 'Monatliche Abschläge sind in der Regel übersichtlicher als Vorkasse oder hohe Vorauszahlungen.' }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
@@ -212,7 +212,7 @@ export default function StromanbieterStolberg() {
       {/* Contact Section */}
       <div className="relative z-25 bg-[#0047AB] dark:bg-[#002f75] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-16 text-white text-center shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-6">Persönliche Tarifberatung für Stolberg – direkt aus Aachen</h2>
+          <h2 className="text-3xl font-bold mb-6">{i18n.language === "en" ? "Personal tariff advice for Stolberg – directly from Aachen" : "Persönliche Tarifberatung für Stolberg – direkt aus Aachen"}</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
             Sie möchten Ihren Stromvertrag nicht allein anhand langer Vergleichslisten beurteilen? Energie Alemi berät Kundinnen und Kunden aus Stolberg telefonisch und persönlich am Alexianergraben 9 in 52064 Aachen. Bringen Sie Ihre letzte Stromrechnung mit oder halten Sie Jahresverbrauch und Vertragsdaten bereit.
           </p>
@@ -237,16 +237,16 @@ export default function StromanbieterStolberg() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">
             <SectionHeader 
-              title="Häufige Fragen zu Stromtarifen in Stolberg"
+              title={i18n.language === "en" ? "Frequently asked questions about electricity tariffs in Stolberg" : "Häufige Fragen zu Stromtarifen in Stolberg"}
               align="center"
               className="mb-12"
             />
             <FAQ items={faqs} className="mb-12" />
             
             <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 dark:border-slate-800 mt-16">
-              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Jetzt Stromtarife für Stolberg prüfen lassen</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">{i18n.language === "en" ? "Have electricity tariffs for Stolberg checked now" : "Jetzt Stromtarife für Stolberg prüfen lassen"}</h3>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite.
+                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

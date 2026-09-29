@@ -128,7 +128,7 @@ export default function InternetanbieterAachen() {
       <SEO 
         url="/internetanbieter-aachen" 
         title="Internetanbieter Aachen | Tarife vergleichen | Energie Alemi"
-        description="Internettarife in Aachen vergleichen: persönliche Beratung für DSL, Kabel und Glasfaser. Kostenlose Bedarfsanalyse bei Energie Alemi."
+        description={i18n.language === "en" ? "Compare internet tariffs in Aachen: personal advice for DSL, cable and fiber. Free needs analysis at Energie Alemi." : "Internettarife in Aachen vergleichen: persönliche Beratung für DSL, Kabel und Glasfaser. Kostenlose Bedarfsanalyse bei Energie Alemi."}
         image={internetHeroDesk} 
         faqs={structuredFaqs} 
       />

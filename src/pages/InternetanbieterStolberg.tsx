@@ -46,7 +46,7 @@ export default function InternetanbieterStolberg() {
 
   const faqs = [
     {
-      question: "Welche Internetanbieter sind an meiner Adresse in Stolberg verfügbar?",
+      question: i18n.language === "en" ? "Which internet providers are available at my address in Stolberg?" : "Welche Internetanbieter sind an meiner Adresse in Stolberg verfügbar?",
       answer: "Die Verfügbarkeit hängt von Straße, Hausnummer und vorhandener Gebäudetechnik ab. Eine adressgenaue Prüfung zeigt, welche Anschlussarten und Tarife konkret buchbar sind."
     },
     {
@@ -198,7 +198,7 @@ export default function InternetanbieterStolberg() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">
             <SectionHeader 
-              title="Häufige Fragen zu Internettarifen in Stolberg"
+              title={i18n.language === "en" ? "Frequently asked questions about internet tariffs in Stolberg" : "Häufige Fragen zu Internettarifen in Stolberg"}
               align="center"
               className="mb-12"
             />
@@ -207,7 +207,7 @@ export default function InternetanbieterStolberg() {
             <div className="bg-[#0047AB] dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-transparent dark:border-slate-800 text-white mt-16">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Jetzt Internetverfügbarkeit in Stolberg prüfen lassen</h3>
               <p className="text-blue-100 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite.
+                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

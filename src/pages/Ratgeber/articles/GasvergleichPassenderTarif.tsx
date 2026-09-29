@@ -125,7 +125,7 @@ export default function GasvergleichPassenderTarif() {
         To be able to compare tariffs quickly and accurately, you should have the following documents or information at hand:
       </p>
       <ul>
-        <li><strong>Zip code (PLZ):</strong> Since network usage charges vary regionally, your place of residence determines the available tariffs.</li>
+        <li><strong>Zip code:</strong> Since network usage charges vary regionally, your place of residence determines the available tariffs.</li>
         <li><strong>Annual consumption in kWh:</strong> You will find this on your last annual statement. Alternatively, you can use benchmarks based on living space.</li>
         <li><strong>Current provider &amp; tariff name:</strong> Helps with the direct comparison of your existing unit price (cents/kWh) and base price (euros/month).</li>
         <li><strong>Contract term &amp; notice period:</strong> So that you know by which desired date the switch can be carried out.</li>

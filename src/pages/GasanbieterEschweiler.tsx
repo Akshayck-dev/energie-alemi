@@ -26,7 +26,7 @@ export default function GasanbieterEschweiler() {
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
-      title: "Gewerbe & Industrie",
+      title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
       description: "Bei höherem Verbrauch, vermieteten Objekten oder betrieblich genutzten Gebäuden sind kalkulierbare Konditionen besonders wichtig. Der Vergleich wird deshalb an die konkrete Nutzung angepasst."
     }
   ];
@@ -64,7 +64,7 @@ export default function GasanbieterEschweiler() {
       answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich bringen Sie am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
     },
     {
-      question: "Kann ich in einer Mietwohnung den Gas{i18n.language === 'en' ? 'providers?' : 'anbieter wechseln?'}",
+      question: i18n.language === "en" ? "Can I switch gas providers in a rented apartment?" : "Kann ich in einer Mietwohnung den Gasanbieter wechseln?",
       answer: "Das ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
     },
     {
@@ -116,7 +116,7 @@ export default function GasanbieterEschweiler() {
             trackEvent('service_cta_click', { service_type: 'gasanbieter_eschweiler', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: "Kostenlose Tarifberatung" },
+            { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
             { icon: <MapPin size={24} />, title: "Prüfung nach Gebäude und Verbrauch" },
             { icon: <Handshake size={24} />, title: "Unterstützung beim Anbieterwechsel" },
           ]}
@@ -237,7 +237,7 @@ export default function GasanbieterEschweiler() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">
             <SectionHeader 
-              title="Häufige Fragen zu Gastarifen in Eschweiler"
+              title={i18n.language === "en" ? "Frequently asked questions about gas tariffs in Eschweiler" : "Häufige Fragen zu Gastarifen in Eschweiler"}
               align="center"
               className="mb-12"
             />
@@ -246,7 +246,7 @@ export default function GasanbieterEschweiler() {
             <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 dark:border-slate-800 mt-16">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Gastarife für Eschweiler vergleichen</h3>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite.
+                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

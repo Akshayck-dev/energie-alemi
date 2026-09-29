@@ -36,11 +36,18 @@ export default function SEO({ title, description, url, image, isArticle, datePub
   const resolvedDescription = description || (manifestEntry ? manifestEntry.description : defaultDescription);
   
   
-  const enTitles: Record<string, string> = {
+    const enTitles: Record<string, string> = {
     '/contact': 'Contact | Energie Alemi – Tariff Advice for Electricity, Gas & Internet Aachen',
     '/faq': 'FAQ | Energie Alemi',
     '/about': 'About Us | Energie Alemi – Tariff Advice Aachen',
-    '/electricity': 'Compare Electricity Tariffs & Switch Provider | Energie Alemi'
+    '/electricity': 'Compare Electricity Tariffs & Switch Provider | Energie Alemi',
+    '/gas': 'Compare Gas Tariffs & Switch Provider | Energie Alemi',
+    '/internet': 'Compare Internet Providers | DSL, Cable, Fibre | Energie Alemi',
+    '/internetanbieter-aachen': 'Compare Internet Providers in Aachen | Energie Alemi',
+    '/internetanbieter-wuerselen': 'Compare Internet Tariffs in Würselen | Energie Alemi',
+    '/internetanbieter-stolberg': 'Compare Internet Tariffs in Stolberg | Energie Alemi',
+    '/internetanbieter-eschweiler': 'Compare Internet Tariffs in Eschweiler | Energie Alemi',
+    '/internetanbieter-herzogenrath': 'Compare Internet Tariffs in Herzogenrath | Energie Alemi'
   };
   
   const finalResolvedTitle = (lang === 'en' && url && enTitles[url]) ? enTitles[url] : resolvedTitle;

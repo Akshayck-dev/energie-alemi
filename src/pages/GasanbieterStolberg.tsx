@@ -50,7 +50,7 @@ export default function GasanbieterStolberg() {
       answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Bringen Sie für einen konkreten Vergleich am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
     },
     {
-      question: "Kann jeder Haushalt in Stolberg den Gas{i18n.language === 'en' ? 'providers?' : 'anbieter wechseln?'}",
+      question: i18n.language === "en" ? "Can every household in Stolberg switch gas providers?" : "Kann jeder Haushalt in Stolberg den Gasanbieter wechseln?",
       answer: "Ein Wechsel ist möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind und an Ihrer Adresse ein Gasanschluss genutzt wird. Bei einer Zentralheizung schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
     },
     {
@@ -102,7 +102,7 @@ export default function GasanbieterStolberg() {
             trackEvent('service_cta_click', { service_type: 'gasanbieter_stolberg', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: "Kostenlose Tarifberatung" },
+            { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
             { icon: <Search size={24} />, title: "Vergleich nach Verbrauch und Gebäudesituation" },
             { icon: <Handshake size={24} />, title: "Unterstützung beim Wechsel" },
           ]}
@@ -226,7 +226,7 @@ export default function GasanbieterStolberg() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">
             <SectionHeader 
-              title="Häufige Fragen zu Gastarifen in Stolberg"
+              title={i18n.language === "en" ? "Frequently asked questions about gas tariffs in Stolberg" : "Häufige Fragen zu Gastarifen in Stolberg"}
               align="center"
               className="mb-12"
             />
@@ -235,7 +235,7 @@ export default function GasanbieterStolberg() {
             <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-transparent dark:border-slate-800 mt-16">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Jetzt Gastarife für Stolberg vergleichen</h3>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite.
+                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

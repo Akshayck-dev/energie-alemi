@@ -26,7 +26,7 @@ export default function StromanbieterEschweiler() {
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
-      title: "Gewerbe & Industrie",
+      title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
       description: "Bei Gewerbe- und Industriekunden können Lastverlauf, planbare Vertragskosten und betriebliche Anforderungen stärker ins Gewicht fallen. Deshalb wird die Ausgangslage vor dem Vergleich strukturiert erfasst, statt einen Standardtarif für jede Situation zu empfehlen."
     }
   ];
@@ -116,7 +116,7 @@ export default function StromanbieterEschweiler() {
             trackEvent('service_cta_click', { service_type: 'stromanbieter_eschweiler', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: "Kostenlose Tarifberatung" },
+            { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
             { icon: <BarChart3 size={24} />, title: "Vergleich nach Jahreskosten" },
             { icon: <Handshake size={24} />, title: "Begleitung bis zum Lieferbeginn" },
           ]}
@@ -243,7 +243,7 @@ export default function StromanbieterEschweiler() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">
             <SectionHeader 
-              title="Häufige Fragen zu Stromtarifen in Eschweiler"
+              title={i18n.language === "en" ? "Frequently asked questions about electricity tariffs in Eschweiler" : "Häufige Fragen zu Stromtarifen in Eschweiler"}
               align="center"
               className="mb-12"
             />
@@ -252,7 +252,7 @@ export default function StromanbieterEschweiler() {
             <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 dark:border-slate-800 mt-16">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Stromtarife für Eschweiler prüfen lassen</h3>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite.
+                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

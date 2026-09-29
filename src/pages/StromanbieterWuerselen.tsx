@@ -26,7 +26,7 @@ export default function StromanbieterWürselen() {
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
-      title: "Gewerbe & Industrie",
+      title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
       description: "Bei Gewerbe und Industrie können Lastprofil, planbare Kosten, Vertragslaufzeit und betriebliche Abläufe stärker ins Gewicht fallen. Energie Alemi erfasst deshalb zuerst die konkrete Ausgangslage, bevor Angebote eingeordnet werden."
     }
   ];
@@ -64,7 +64,7 @@ export default function StromanbieterWürselen() {
       answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Vor einem Abschluss erhalten Sie die wesentlichen Preis- und Vertragsangaben des ausgewählten Angebots."
     },
     {
-      question: "Welche Stromanbieter sind an meiner Adresse in Würselen verfügbar?",
+      question: i18n.language === "en" ? "Which electricity providers are available at my address in Wuerselen?" : "Welche Stromanbieter sind an meiner Adresse in Würselen verfügbar?",
       answer: "Die konkrete Auswahl hängt von Lieferadresse, Verbrauch und dem aktuellen Marktangebot ab. Deshalb werden für den Vergleich Ihre individuellen Liefer- und Verbrauchsdaten benötigt."
     },
     {
@@ -116,7 +116,7 @@ export default function StromanbieterWürselen() {
             trackEvent('service_cta_click', { service_type: 'stromanbieter_wuerselen', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: "Kostenlose Tarifberatung" },
+            { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
             { icon: <BarChart3 size={24} />, title: "Jahreskosten statt Lockpreis vergleichen" },
             { icon: <Building2 size={24} />, title: "Für Privat, Gewerbe und Industrie" },
           ]}
@@ -248,7 +248,7 @@ export default function StromanbieterWürselen() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">
             <SectionHeader 
-              title="Häufige Fragen zu Stromtarifen in Würselen"
+              title={i18n.language === "en" ? "Frequently asked questions about electricity tariffs in Wuerselen" : "Häufige Fragen zu Stromtarifen in Würselen"}
               align="center"
               className="mb-12"
             />
@@ -257,7 +257,7 @@ export default function StromanbieterWürselen() {
             <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 dark:border-slate-800 mt-16">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Stromtarife für Würselen prüfen lassen</h3>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite.
+                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

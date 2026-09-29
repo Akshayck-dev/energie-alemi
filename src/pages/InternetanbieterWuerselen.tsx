@@ -26,7 +26,7 @@ export default function InternetanbieterWürselen() {
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
-      title: "Gewerbe & Industrie",
+      title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
       description: "Geschäftskunden benötigen je nach Arbeitsweise zusätzlich passende Servicebedingungen, stabile Telefonie, genügend Leistungsreserve und gegebenenfalls eine Ausfallstrategie. Mehr Bandbreite ist nur dann sinnvoll, wenn sie am Standort nutzbar ist und einen konkreten Bedarf erfüllt."
     }
   ];
@@ -60,7 +60,7 @@ export default function InternetanbieterWürselen() {
 
   const faqs = [
     {
-      question: "Welche Internetanbieter sind an meiner Adresse in Würselen verfügbar?",
+      question: i18n.language === "en" ? "Which internet providers are available at my address in Wuerselen?" : "Welche Internetanbieter sind an meiner Adresse in Würselen verfügbar?",
       answer: "Die Auswahl hängt von Straße, Hausnummer, Netzausbau und Hausanschluss ab. Eine adressgenaue Prüfung zeigt, welche Technologien und Tarife konkret buchbar sind."
     },
     {
@@ -242,7 +242,7 @@ export default function InternetanbieterWürselen() {
         <section className="py-14 md:py-24">
           <div className="container mx-auto px-6 max-w-4xl">
             <SectionHeader 
-              title="Häufige Fragen zu Internettarifen in Würselen"
+              title={i18n.language === "en" ? "Frequently asked questions about internet tariffs in Wuerselen" : "Häufige Fragen zu Internettarifen in Würselen"}
               align="center"
               className="mb-12"
             />
@@ -251,7 +251,7 @@ export default function InternetanbieterWürselen() {
             <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 dark:border-slate-800 mt-16">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Internetverfügbarkeit in Würselen prüfen lassen</h3>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite.
+                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>
