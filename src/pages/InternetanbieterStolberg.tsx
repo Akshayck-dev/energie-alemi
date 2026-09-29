@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Wifi, ArrowRight, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import { trackEvent } from '../lib/analytics';
@@ -13,6 +14,7 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function InternetanbieterStolberg() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const steps = [
@@ -81,7 +83,7 @@ export default function InternetanbieterStolberg() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/internetanbieter-stolberg" 
-        title="Internetanbieter Stolberg vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Internet Providers Stolberg | Energie Alemi' : 'Internetanbieter Stolberg vergleichen | Energie Alemi'}
         description="Internettarife in Stolberg vergleichen: Energie Alemi prüft Verfügbarkeit, Geschwindigkeit und Vertragskosten für Zuhause und Unternehmen."
         image={internetHeroDesk} 
         faqs={faqs} 
@@ -90,9 +92,9 @@ export default function InternetanbieterStolberg() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Wifi size={24} />}
-          badgeText="Internetanbieter Stolberg"
+          badgeText={i18n.language === 'en' ? 'Internet Providers Stolberg' : 'Internetanbieter Stolberg'}
           title="Internetanbieter in Stolberg vergleichen – passend zu Adresse und Bedarf"
-          description={<>Welcher Internetanschluss passt zu Ihrem Zuhause oder Unternehmen in Stolberg? Energie Alemi prüft den Bedarf, vergleicht die an Ihrer Adresse verfügbaren Tarife und unterstützt Sie auf Wunsch beim Anbieterwechsel. Übrigens: Wenn Sie auch an Tarifen für Energie interessiert sind, prüfen wir gerne mit Ihnen zusammen den passenden <Link to="/stromanbieter-stolberg" className="hover:underline font-semibold text-blue-300">Stromanbieter</Link> oder <Link to="/gasanbieter-stolberg" className="hover:underline font-semibold text-blue-300">Gasanbieter</Link> in Stolberg.</>}
+          description={<>Welcher Internetanschluss passt zu Ihrem Zuhause oder Unternehmen in Stolberg? Energie Alemi prüft den Bedarf, vergleicht die an Ihrer Adresse verfügbaren Tarife und unterstützt Sie auf Wunsch beim Anbieterwechsel. Übrigens: Wenn Sie auch an Tarifen für Energie interessiert sind, prüfen wir gerne mit Ihnen zusammen den passenden <Link to="/stromanbieter-stolberg" className="hover:underline font-semibold text-blue-300">{i18n.language === 'en' ? 'electricity provider' : 'Stromanbieter'}</Link> oder <Link to="/gasanbieter-stolberg" className="hover:underline font-semibold text-blue-300">Gasanbieter</Link> in Stolberg.</>}
           bgImage={internetHeroDesk}
           buttonText="Jetzt Internetverfügbarkeit in Stolberg prüfen lassen"
           onButtonClick={() => {
@@ -118,7 +120,7 @@ export default function InternetanbieterStolberg() {
             Die Verfügbarkeit kann sich in Stolberg von Straße zu Straße und sogar zwischen Gebäuden unterscheiden. Deshalb beginnt die Beratung mit der konkreten Adresse und Ihrem Nutzungsprofil – nicht mit einer pauschalen Empfehlung.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Ob in Atsch, Büsbach, Breinig, Mausbach, Vicht oder Zweifall: Energie Alemi prüft die verfügbaren Optionen für den jeweiligen Standort und erklärt die Unterschiede verständlich. Erfahren Sie auch mehr über unsere Dienstleistungen als <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link> oder lesen Sie unseren Ratgeber zum Thema <Link to="/ratgeber/internetanbieter-vergleichen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter vergleichen</Link>.
+            Ob in Atsch, Büsbach, Breinig, Mausbach, Vicht oder Zweifall: Energie Alemi prüft die verfügbaren Optionen für den jeweiligen Standort und erklärt die Unterschiede verständlich. {i18n.language === 'en' ? 'Learn more about our services as' : 'Erfahren Sie auch mehr über unsere Dienstleistungen als'} <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter Aachen</Link> oder lesen Sie unseren Ratgeber zum Thema <Link to="/ratgeber/internetanbieter-vergleichen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter vergleichen</Link>.
           </p>
         </div>
         
@@ -154,7 +156,7 @@ export default function InternetanbieterStolberg() {
                         So funktioniert die <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Internet-Tarifberatung</span>
                       </>
                     }
-                    subtitle="Ein transparenter und einfacher Ablauf für Ihren neuen Internettarif."
+                    subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new internet tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Internettarif.'}
                     align="left"
                     className="mb-8"
                   />
@@ -178,13 +180,13 @@ export default function InternetanbieterStolberg() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Flame, ArrowRight, MapPin, Phone, Settings, ClipboardList } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,6 +15,7 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function GasanbieterAachen() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
@@ -113,7 +115,7 @@ export default function GasanbieterAachen() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/gasanbieter-aachen" 
-        title="Gasanbieter Aachen vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Gas Providers Aachen | Energie Alemi' : 'Gasanbieter Aachen vergleichen | Energie Alemi'}
         description="Gasanbieter in Aachen vergleichen: Energie Alemi prüft Arbeitspreis, Grundpreis, Preisgarantie und Laufzeit – persönlich und transparent beraten."
         image={gasHeroDesk} 
         faqs={faqs} 
@@ -122,7 +124,7 @@ export default function GasanbieterAachen() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Flame size={24} />}
-          badgeText="Gasanbieter Aachen"
+          badgeText={i18n.language === 'en' ? 'Gas Providers Aachen' : 'Gasanbieter Aachen'}
           title="Gasanbieter Aachen vergleichen – persönlich beraten, klar entscheiden"
           description="Sie möchten Ihren Gastarif in Aachen prüfen oder den Gas{i18n.language === 'en' ? 'providers?' : 'anbieter wechseln?'} Energie Alemi vergleicht verfügbare Angebote verschiedener Anbieter und erklärt Ihnen verständlich, worauf es bei Preis, Laufzeit und Vertragsbedingungen ankommt."
           bgImage={gasHeroDesk}
@@ -150,7 +152,7 @@ export default function GasanbieterAachen() {
             Wir betrachten diese Punkte gemeinsam und ordnen Boni oder Aktionspreise so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine nachvollziehbare Entscheidungsgrundlage statt einer unübersichtlichen Tarifliste.
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Übrigens: Wir beraten Sie nicht nur zu Gas, sondern unterstützen Sie als <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter</Link> und <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter in Aachen</Link> auch bei der gemeinsamen Vertragsoptimierung.
+            {i18n.language === 'en' ? 'By the way: We not only advise you on gas, but also support you as a' : 'Übrigens: Wir beraten Sie nicht nur zu Gas, sondern unterstützen Sie als'} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'electricity provider' : 'Stromanbieter'}</Link> und <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'internet provider in Aachen' : 'Internetanbieter in Aachen'}</Link> {i18n.language === 'en' ? 'also with joint contract optimization.' : 'auch bei der gemeinsamen Vertragsoptimierung.'}
           </p>
         </div>
         
@@ -187,12 +189,12 @@ export default function GasanbieterAachen() {
             {[
               { title: "Arbeitspreis", desc: "Preis je verbrauchter kWh. Wie stark wirkt er bei meinem Verbrauch?" },
               { title: "Grundpreis", desc: "Fester Betrag pro Monat/Jahr. Wie hoch sind die Fixkosten?" },
-              { title: "Preisgarantie", desc: "Dauer und abgedeckte Bestandteile. Was darf sich trotz Garantie ändern?" },
-              { title: "Kündigungsfrist", desc: "Frist und Vertragsverlängerung. Bis wann muss gekündigt werden?" },
-              { title: "Vertragslaufzeit", desc: "Eine längere Bindung kann Planungssicherheit geben, schränkt aber die Flexibilität für einen späteren Wechsel ein." },
-              { title: "Bonusbedingungen", desc: "Neukunden- oder Sofortboni können den Preis im ersten Jahr senken. Entscheidend sind die Voraussetzungen und die Kosten ohne Bonus." },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: "Dauer und abgedeckte Bestandteile. Was darf sich trotz Garantie ändern?" },
+              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: "Frist und Vertragsverlängerung. Bis wann muss gekündigt werden?" },
+              { title: i18n.language === 'en' ? 'Contract term' : 'Vertragslaufzeit', desc: "Eine längere Bindung kann Planungssicherheit geben, schränkt aber die Flexibilität für einen späteren Wechsel ein." },
+              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: "Neukunden- oder Sofortboni können den Preis im ersten Jahr senken. Entscheidend sind die Voraussetzungen und die Kosten ohne Bonus." },
               { title: "Abschlag und Jahreskosten", desc: "Der monatliche Abschlag ist eine Vorauszahlung. Für den Vergleich zählt die nachvollziehbare Prognose der Gesamtkosten." },
-              { title: "Zahlungsweise", desc: "Tarife mit Vorkasse oder Paketmengen sollten besonders sorgfältig geprüft werden." }
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: "Tarife mit Vorkasse oder Paketmengen sollten besonders sorgfältig geprüft werden." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-white dark:bg-[#122340] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -224,10 +226,10 @@ export default function GasanbieterAachen() {
                   <SectionHeader 
                     title={
                       <>
-                        So funktioniert der <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Gasanbieterwechsel</span> in vier Schritten
+                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'gas provider switch' : 'Gasanbieterwechsel'}</span> in vier Schritten
                       </>
                     }
-                    subtitle="Ein transparenter und einfacher Ablauf für Ihren neuen Gastarif."
+                    subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new gas tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Gastarif.'}
                     align="left"
                     className="mb-8"
                   />

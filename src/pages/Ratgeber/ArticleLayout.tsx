@@ -30,8 +30,8 @@ export default function ArticleLayout({ article, children, faqs, customH1 }: Art
   return (
     <div className="min-h-screen bg-white dark:bg-[#0a1628] py-24 md:py-32">
       <SEO 
-        title={article.title} 
-        description={article.description} 
+        title={i18n.language === 'en' && article.titleEn ? article.titleEn : article.title} 
+        description={i18n.language === 'en' && article.descriptionEn ? article.descriptionEn : article.description} 
         url={url} 
         faqs={faqs}
         isArticle={true}
@@ -46,13 +46,13 @@ export default function ArticleLayout({ article, children, faqs, customH1 }: Art
           <ChevronRight size={14} className={cn("shrink-0", i18n.dir() === 'rtl' && "rotate-180")} />
           <Link to="/ratgeber" className="hover:text-[#0047AB] dark:hover:text-[#60a5fa] transition-colors">{t('nav.ratgeber')}</Link>
           <ChevronRight size={14} className={cn("shrink-0", i18n.dir() === 'rtl' && "rotate-180")} />
-          <span className="text-slate-800 dark:text-slate-200 truncate">{article.title}</span>
+          <span className="text-slate-800 dark:text-slate-200 truncate">{i18n.language === 'en' && article.titleEn ? article.titleEn : article.title}</span>
         </nav>
 
         {/* Header */}
         <header className="mb-10">
           <div className="inline-block px-3 py-1 rounded-full bg-[#f0f4ff] dark:bg-[#1a2c47] text-[#0047AB] dark:text-[#60a5fa] text-sm font-semibold mb-6">
-            {article.category}
+            {i18n.language === 'en' ? (article.category === 'Strom' ? 'Electricity' : article.category === 'Gas' ? 'Gas' : 'Internet') : article.category}
           </div>
           <h1 className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white leading-tight mb-6">
             {customH1 || article.title}

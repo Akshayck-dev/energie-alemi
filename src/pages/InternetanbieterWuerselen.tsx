@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Wifi, ArrowRight, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,12 +15,13 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function InternetanbieterWürselen() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: "Privathaushalte",
+      title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
       description: "Für Streaming, Homeoffice, Gaming, Videokonferenzen und Cloud-Dienste sind Anzahl der Personen, gleichzeitig aktive Geräte und Upload-Bedarf wichtig. Wer regelmäßig große Dateien sendet oder Backups hochlädt, sollte die Upload-Leistung ausdrücklich mitprüfen."
     },
     {
@@ -104,7 +106,7 @@ export default function InternetanbieterWürselen() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Wifi size={24} />}
-          badgeText="Internetanbieter Würselen"
+          badgeText={i18n.language === 'en' ? 'Internet Providers Würselen' : 'Internetanbieter Würselen'}
           title="Internetanbieter in Würselen vergleichen – Verfügbarkeit zuerst prüfen"
           description={<>Welche Internetverbindung ist an Ihrer Adresse in Würselen tatsächlich buchbar? Energie Alemi prüft die Verfügbarkeit und vergleicht Leistung, Gesamtkosten und Vertragsdetails passend zu Ihrer Nutzung. Übrigens prüfen wir auch gerne für Sie den Wechsel zu einem günstigen <Link to="/stromanbieter-wuerselen" className="hover:underline font-semibold text-blue-300">Stromanbieter in Würselen</Link>.</>}
           bgImage={internetHeroDesk}
@@ -144,7 +146,7 @@ export default function InternetanbieterWürselen() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Gasanbieter in Würselen</Link> zu finden.
+            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas provider in Würselen' : 'Gasanbieter in Würselen'}</Link> zu finden.
           </p>
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-4 max-w-4xl mx-auto border-t border-slate-200 dark:border-slate-800 pt-6">
             Wir beraten Sie nicht nur in Würselen, sondern in der gesamten Städteregion. Vergleichen Sie auch Tarife für <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Aachen</Link>, <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stolberg</Link>, <Link to="/internetanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Eschweiler</Link> und <Link to="/internetanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Herzogenrath</Link>.
@@ -222,13 +224,13 @@ export default function InternetanbieterWürselen() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>

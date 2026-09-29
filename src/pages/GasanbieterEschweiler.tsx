@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Flame, ArrowRight, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,12 +15,13 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function GasanbieterEschweiler() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: "Privathaushalte",
+      title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
       description: "Ein Bonus kann die rechnerischen Kosten im ersten Jahr senken. Für eine tragfähige Entscheidung sollten jedoch auch die Kosten ohne Einmalvorteil, die Auszahlungsvoraussetzungen und der Preis nach dem Aktionszeitraum sichtbar sein."
     },
     {
@@ -95,7 +97,7 @@ export default function GasanbieterEschweiler() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/gasanbieter-eschweiler" 
-        title="Gasanbieter Eschweiler vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Gas Providers Eschweiler | Energie Alemi' : 'Gasanbieter Eschweiler vergleichen | Energie Alemi'}
         description="Gastarife in Eschweiler vergleichen: Energie Alemi prüft Verbrauch, Gesamtkosten und Vertragsbedingungen und unterstützt beim Anbieterwechsel."
         image={gasHeroDesk} 
         faqs={faqs} 
@@ -104,7 +106,7 @@ export default function GasanbieterEschweiler() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Flame size={24} />}
-          badgeText="Gasanbieter Eschweiler"
+          badgeText={i18n.language === 'en' ? 'Gas Providers Eschweiler' : 'Gasanbieter Eschweiler'}
           title="Gasanbieter in Eschweiler vergleichen – Kosten und Vertrag prüfen"
           description={<>Sie beziehen Gas über einen eigenen Liefervertrag in Eschweiler? Energie Alemi prüft Ihre Abrechnung, vergleicht passende Tarife und unterstützt Sie auf Wunsch beim Wechsel – persönlich und nachvollziehbar. Übrigens helfen wir Ihnen auch bei der Suche nach einem passenden <Link to="/stromanbieter-eschweiler" className="hover:underline font-semibold text-blue-300">Stromanbieter in Eschweiler</Link>.</>}
           bgImage={gasHeroDesk}
@@ -144,7 +146,7 @@ export default function GasanbieterEschweiler() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internetanbieter in Eschweiler</Link> zu finden.
+            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Eschweiler' : 'Internetanbieter in Eschweiler'}</Link> zu finden.
           </p>
         </div>
       </div>
@@ -162,7 +164,7 @@ export default function GasanbieterEschweiler() {
                         So funktioniert die <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Gas-Tarifberatung</span>
                       </>
                     }
-                    subtitle="Ein transparenter und einfacher Ablauf für Ihren neuen Gastarif."
+                    subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new gas tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Gastarif.'}
                     align="left"
                     className="mb-8"
                   />
@@ -188,9 +190,9 @@ export default function GasanbieterEschweiler() {
             {[
               { title: "Verbrauch", desc: "Die letzte Jahresabrechnung liefert die verlässlichste Vergleichsgrundlage." },
               { title: "Jahreskosten", desc: "Arbeitspreis und Grundpreis zusammenrechnen, statt nur einen Einzelwert zu vergleichen." },
-              { title: "Preisgarantie", desc: "Prüfen, wie lange sie gilt und welche Bestandteile ausgenommen sein können." },
-              { title: "Kündigungsfrist", desc: "Den frühestmöglichen Wechseltermin des bisherigen Vertrags beachten." },
-              { title: "Bonusbedingungen", desc: "Voraussetzungen und Auszahlungszeitpunkt nachvollziehen." },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: "Prüfen, wie lange sie gilt und welche Bestandteile ausgenommen sein können." },
+              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: "Den frühestmöglichen Wechseltermin des bisherigen Vertrags beachten." },
+              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: "Voraussetzungen und Auszahlungszeitpunkt nachvollziehen." },
               { title: "Vorauszahlung", desc: "Angebote mit Vorkasse oder hohen Abschlägen besonders sorgfältig prüfen." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
@@ -217,13 +219,13 @@ export default function GasanbieterEschweiler() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>

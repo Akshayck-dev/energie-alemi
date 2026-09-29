@@ -37,13 +37,13 @@ export default function RatgeberIndex() {
             >
               <div className="p-8 flex flex-col h-full">
                 <div className="inline-block px-3 py-1 rounded-full bg-[#f0f4ff] dark:bg-white/5 text-[#0047AB] dark:text-[#f0a83f] text-xs font-semibold mb-4 w-fit">
-                  {article.category}
+                  {i18n.language === 'en' ? (article.category === 'Strom' ? 'Electricity' : article.category === 'Gas' ? 'Gas' : 'Internet') : article.category}
                 </div>
                 <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-white mb-3 group-hover:text-[#0047AB] dark:group-hover:text-[#f0a83f] transition-colors">
-                  {article.title}
+                  {i18n.language === 'en' && article.titleEn ? article.titleEn : article.title}
                 </h2>
                 <p className="text-slate-600 dark:text-slate-400 text-sm mb-8 flex-grow">
-                  {article.description}
+                  {i18n.language === 'en' && article.descriptionEn ? article.descriptionEn : article.description}
                 </p>
                 <div className="flex items-center gap-2 text-[#0047AB] dark:text-[#f0a83f] font-semibold text-sm mt-auto">
                   {t('ratgeber.read_article')} 

@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Zap, ArrowRight, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,12 +15,13 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function StromanbieterWürselen() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: "Privathaushalte",
+      title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
       description: "Für Privathaushalte zählen neben dem Verbrauch häufig flexible Vertragsbedingungen, nachvollziehbare Abschläge und auf Wunsch die ausgewiesene Stromherkunft. Die Haushaltsgröße hilft bei einer Schätzung, ersetzt aber keine vorhandene Jahresabrechnung."
     },
     {
@@ -95,7 +97,7 @@ export default function StromanbieterWürselen() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/stromanbieter-wuerselen" 
-        title="Stromanbieter Würselen vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Electricity Providers Würselen | Energie Alemi' : 'Stromanbieter Würselen vergleichen | Energie Alemi'}
         description="Stromtarife in Würselen vergleichen: Kosten, Vertragsdetails und Kündigungsfrist prüfen. Energie Alemi berät Haushalte und Unternehmen persönlich."
         image={elecHeroDesk} 
         faqs={faqs} 
@@ -104,7 +106,7 @@ export default function StromanbieterWürselen() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Zap size={24} />}
-          badgeText="Stromanbieter Würselen"
+          badgeText={i18n.language === 'en' ? 'Electricity Providers Würselen' : 'Stromanbieter Würselen'}
           title="Stromanbieter in Würselen vergleichen – Konditionen klar bewerten"
           description={<>Sie möchten in Würselen einen neuen Stromvertrag abschließen oder Ihren bestehenden Tarif prüfen? Energie Alemi vergleicht Angebote nach Verbrauch, Jahreskosten und Vertragsbedingungen und begleitet Sie auf Wunsch beim Wechsel. Übrigens helfen wir Ihnen auch bei der Suche nach einem passenden <Link to="/gasanbieter-wuerselen" className="hover:underline font-semibold text-blue-300">Gasanbieter in Würselen</Link>.</>}
           bgImage={elecHeroDesk}
@@ -144,7 +146,7 @@ export default function StromanbieterWürselen() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internetanbieter in Würselen</Link> zu finden.
+            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Würselen' : 'Internetanbieter in Würselen'}</Link> zu finden.
           </p>
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-4 max-w-4xl mx-auto border-t border-slate-200 dark:border-slate-800 pt-6">
             Wir beraten Sie nicht nur in Würselen, sondern in der gesamten Städteregion. Vergleichen Sie auch Tarife für <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Aachen</Link>, <Link to="/stromanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stolberg</Link>, <Link to="/stromanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Eschweiler</Link> und <Link to="/stromanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Herzogenrath</Link>.
@@ -196,11 +198,11 @@ export default function StromanbieterWürselen() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "Jahresverbrauch", desc: "Möglichst den Abrechnungswert nutzen, nicht nur eine allgemeine Personenschätzung." },
-              { title: "Gesamtkosten", desc: "Grundpreis und verbrauchsabhängigen Arbeitspreis für zwölf Monate zusammen betrachten." },
-              { title: "Preisgarantie", desc: "Laufzeit, Umfang und mögliche Ausnahmen im Angebot nachlesen." },
-              { title: "Bonusbedingungen", desc: "Voraussetzungen und Auszahlung getrennt von den laufenden Tarifkosten bewerten." },
-              { title: "Kündigungsfrist", desc: "Den frühestmöglichen Vertragsbeginn realistisch planen." },
-              { title: "Zahlungsweise", desc: "Monatliche Abschläge sind meist leichter einzuordnen als Vorkasse oder hohe Vorauszahlungen." }
+              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: "Grundpreis und verbrauchsabhängigen Arbeitspreis für zwölf Monate zusammen betrachten." },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: "Laufzeit, Umfang und mögliche Ausnahmen im Angebot nachlesen." },
+              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: "Voraussetzungen und Auszahlung getrennt von den laufenden Tarifkosten bewerten." },
+              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: "Den frühestmöglichen Vertragsbeginn realistisch planen." },
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: "Monatliche Abschläge sind meist leichter einzuordnen als Vorkasse oder hohe Vorauszahlungen." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -228,13 +230,13 @@ export default function StromanbieterWürselen() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>

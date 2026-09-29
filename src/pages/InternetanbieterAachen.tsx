@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Wifi, ArrowRight, MapPin, Phone, Settings } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,6 +15,7 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function InternetanbieterAachen() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
@@ -134,7 +136,7 @@ export default function InternetanbieterAachen() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Wifi size={24} />}
-          badgeText="Internetanbieter Aachen"
+          badgeText={i18n.language === 'en' ? 'Internet Providers Aachen' : 'Internetanbieter Aachen'}
           title="Internetanbieter in Aachen vergleichen"
           description="Welcher Internettarif passt zu Ihrem Zuhause oder Unternehmen? Energie Alemi prüft Ihren Bedarf, vergleicht verfügbare Tarife und unterstützt Sie beim Wechsel. Persönlich, transparent und direkt in Aachen."
           bgImage={internetHeroDesk}
@@ -234,7 +236,7 @@ export default function InternetanbieterAachen() {
                         So funktioniert die <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Internet-Tarifberatung</span>
                       </>
                     }
-                    subtitle="Ein transparenter und einfacher Ablauf für Ihren neuen Internettarif."
+                    subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new internet tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Internettarif.'}
                     align="left"
                     className="mb-8"
                   />

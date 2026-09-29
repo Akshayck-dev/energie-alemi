@@ -141,7 +141,7 @@ export default function Electricity() {
                     <Link to="/ratgeber" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l3')}</Link>
                     <span>{t('elec.cross_p4')}</span>
                     <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l4')}</Link>
-                    <span>{t('elec.cross_p5', i18n.language === 'en' ? ' or read our guide on ' : ' oder in unserem Ratgeber zum ')}</span>
+                    <span>{i18n.language === 'en' ? ' or read our guide on ' : t('elec.cross_p5', ' oder in unserem Ratgeber zum ')}</span>
                     <Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#f0a83f] underline decoration-[#0047AB]/30 dark:decoration-[#f0a83f]/30 hover:decoration-[#0047AB] dark:hover:decoration-[#f0a83f] underline-offset-4 font-semibold">{t('elec.cross_l5', i18n.language === 'en' ? 'switching electricity providers' : 'Stromanbieter wechseln')}</Link>
                     <span>.</span>
                   </p>
@@ -162,7 +162,7 @@ export default function Electricity() {
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
               <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Electricity Costs in Aachen: What is Normal?' : 'Stromkosten in Aachen: Was ist normal?'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-6">
-                Um zu beurteilen, ob Ihr aktueller Stromtarif zu teuer ist, hilft ein Blick auf die durchschnittlichen Verbrauchswerte. Der Stromverbrauch hängt stark von der Haushaltsgröße{i18n.language === 'en' ? ' and ' : ' und '}der Art der Warmwasserbereitung ab.
+                {i18n.language === 'en' ? 'To assess whether your current electricity tariff is too expensive, a look at average consumption values helps. Electricity consumption depends heavily on the household size and the type of water heating.' : 'Um zu beurteilen, ob Ihr aktueller Stromtarif zu teuer ist, hilft ein Blick auf die durchschnittlichen Verbrauchswerte. Der Stromverbrauch hängt stark von der Haushaltsgröße und der Art der Warmwasserbereitung ab.'}
               </p>
               <ul className="list-disc pl-6 mb-6 text-slate-700 dark:text-slate-300 text-lg space-y-2">
                 <li><strong>{i18n.language === 'en' ? '1-Person Household:' : '1-Personen-Haushalt:'}</strong> {i18n.language === 'en' ? 'approx. 1,500 kWh per year. (' : 'ca. 1.500 kWh pro Jahr. ('}<a href="/ratgeber/stromverbrauch-1-person" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'Details for single households' : 'Details zum Single-Haushalt'}</a>)</li>
@@ -170,43 +170,43 @@ export default function Electricity() {
                 <li><strong>{i18n.language === 'en' ? '4-Person Household:' : '4-Personen-Haushalt:'}</strong> {i18n.language === 'en' ? 'approx. 4,000 kWh per year. (' : 'ca. 4.000 kWh pro Jahr. ('}<a href="/ratgeber/stromverbrauch-4-personen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'Details for families' : 'Details für Familien'}</a>)</li>
               </ul>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-                Liegt Ihr Verbrauch deutlich darüber, helfen Energiespartipps. Liegen Ihre Kosten pro kWh jedoch deutlich über dem Marktdurchschnitt, sollten Sie umgehend den Tarif wechseln.
+                {i18n.language === 'en' ? 'If your consumption is significantly higher, energy-saving tips can help. However, if your costs per kWh are significantly above the market average, you should switch your tariff immediately.' : 'Liegt Ihr Verbrauch deutlich darüber, helfen Energiespartipps. Liegen Ihre Kosten pro kWh jedoch deutlich über dem Marktdurchschnitt, sollten Sie umgehend den Tarif wechseln.'}
               </p>
             </div>
 
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
               <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Green Electricity or Normal Electricity?' : 'Ökostrom oder Normalstrom?'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-                Viele Kunden fragen uns, ob sich der Umstieg auf Ökostrom lohnt. Die Antwort lautet ganz klar: Ja. Strom aus erneuerbaren Energien (wie Wind-, Sonnen- oder Wasserkraft) ist in den letzten Jahren enorm konkurrenzfähig geworden.
+                {i18n.language === 'en' ? 'Many customers ask us if switching to green electricity is worth it. The answer is clearly: Yes. Electricity from renewable energies (such as wind, solar, or hydro power) has become enormously competitive in recent years.' : 'Viele Kunden fragen uns, ob sich der Umstieg auf Ökostrom lohnt. Die Antwort lautet ganz klar: Ja. Strom aus erneuerbaren Energien (wie Wind-, Sonnen- oder Wasserkraft) ist in den letzten Jahren enorm konkurrenzfähig geworden.'}
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-                Oftmals sind reine Ökostromtarife sogar günstiger als die klassischen Graustrom-Mixe der regionalen Grundversorger. Ein Wechsel zu Ökostrom bedeutet also nicht, dass Sie mehr bezahlen müssen. Im Gegenteil: Sie schonen die Umwelt{i18n.language === 'en' ? ' and ' : ' und '}entlasten gleichzeitig Ihren Geldbeutel.
+                {i18n.language === 'en' ? 'Often, pure green electricity tariffs are even cheaper than the classic grey electricity mixes of regional basic suppliers. Switching to green electricity therefore does not mean you have to pay more. On the contrary: you protect the environment and relieve your wallet at the same time.' : 'Oftmals sind reine Ökostromtarife sogar günstiger als die klassischen Graustrom-Mixe der regionalen Grundversorger. Ein Wechsel zu Ökostrom bedeutet also nicht, dass Sie mehr bezahlen müssen. Im Gegenteil: Sie schonen die Umwelt und entlasten gleichzeitig Ihren Geldbeutel.'}
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-                In unserer Tarifberatung weisen wir echte Ökotarife (mit Zertifikaten wie ok-power oder Grüner Strom Label) transparent aus, sodass Sie eine informierte Entscheidung treffen können.
+                {i18n.language === 'en' ? 'In our tariff advice, we transparently identify genuine eco-tariffs (with certificates like ok-power or Grüner Strom Label) so that you can make an informed decision.' : 'In unserer Tarifberatung weisen wir echte Ökotarife (mit Zertifikaten wie ok-power oder Grüner Strom Label) transparent aus, sodass Sie eine informierte Entscheidung treffen können.'}
               </p>
             </div>
 
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10 mb-12">
               <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Who benefits most from switching?' : 'Für wen lohnt sich der Wechsel besonders?'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-                Das größte Sparpotenzial haben Haushalte, die noch nie ihren Stromanbieter gewechselt haben{i18n.language === 'en' ? ' and ' : ' und '}sich in der sogenannten Grundversorgung befinden. Die Grundversorgung ist zwar flexibel, aber strukturell oft sehr teuer.
+                {i18n.language === 'en' ? 'The greatest savings potential is found in households that have never switched their electricity provider and are in the so-called basic supply. Although the basic supply is flexible, it is structurally often very expensive.' : 'Das größte Sparpotenzial haben Haushalte, die noch nie ihren Stromanbieter gewechselt haben und sich in der sogenannten Grundversorgung befinden. Die Grundversorgung ist zwar flexibel, aber strukturell oft sehr teuer.'}
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-                Auch nach einer Preiserhöhung Ihres aktuellen Anbieters oder bei einem anstehenden Umzug ist der optimale Zeitpunkt gekommen, um aktiv zu werden. Sie profitieren dann nicht nur von besseren Kilowattstundenpreisen, sondern oft auch von attraktiven Neukundenboni.
+                {i18n.language === 'en' ? 'Even after a price increase from your current provider or an upcoming move, the optimal time has come to take action. You then benefit not only from better kilowatt-hour prices, but often also from attractive new customer bonuses.' : 'Auch nach einer Preiserhöhung Ihres aktuellen Anbieters oder bei einem anstehenden Umzug ist der optimale Zeitpunkt gekommen, um aktiv zu werden. Sie profitieren dann nicht nur von besseren Kilowattstundenpreisen, sondern oft auch von attraktiven Neukundenboni.'}
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-                Erfahren Sie in unserem Ratgeber mehr darüber, wie Sie den <a href="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'switch electricity providers correctly' : 'Stromanbieter richtig wechseln'}</a>{i18n.language === 'en' ? ' and ' : ' und '}Fristen optimal nutzen.
+                {i18n.language === 'en' ? 'Find out more in our guide on how to ' : 'Erfahren Sie in unserem Ratgeber mehr darüber, wie Sie den '}<a href="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'switch electricity providers correctly' : 'Stromanbieter richtig wechseln'}</a>{i18n.language === 'en' ? ' and make optimal use of deadlines.' : ' und Fristen optimal nutzen.'}
               </p>
             </div>
 
             <div className="bg-white dark:bg-[#051024] p-8 md:p-12 rounded-3xl shadow-sm border border-slate-100 dark:border-white/10">
               <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white font-heading">{i18n.language === 'en' ? 'Electricity, Gas & Internet from a Single Source' : 'Strom, Gas & Internet aus einer Hand'}</h2>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-                Energie Alemi bietet Ihnen den Komfort, nicht nur Ihren Stromtarif zu optimieren. Wir prüfen auf Wunsch auch Ihre Verträge für andere grundlegende Haushaltsausgaben.
+                {i18n.language === 'en' ? 'Energie Alemi offers you the convenience of not only optimizing your electricity tariff. We can also check your contracts for other basic household expenses upon request.' : 'Energie Alemi bietet Ihnen den Komfort, nicht nur Ihren Stromtarif zu optimieren. Wir prüfen auf Wunsch auch Ihre Verträge für andere grundlegende Haushaltsausgaben.'}
               </p>
               <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
-                Mit einem kombinierten Blick auf Ihre Kosten für <a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'gas' : 'Gas'}</a>{i18n.language === 'en' ? ' and ' : ' und '}<a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'internet (DSL & fiber optics)' : 'Internet (DSL & Glasfaser)'}</a> lässt sich die Haushaltskasse oft um mehrere hundert Euro im Jahr entlasten. Wir sind Ihr zentraler Ansprechpartner für alle Versorgungsverträge in Aachen{i18n.language === 'en' ? ' and ' : ' und '}bundesweit.
+                {i18n.language === 'en' ? 'With a combined look at your costs for ' : 'Mit einem kombinierten Blick auf Ihre Kosten für '}<a href="/gas" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'gas' : 'Gas'}</a>{i18n.language === 'en' ? ' and ' : ' und '}<a href="/internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">{i18n.language === 'en' ? 'internet (DSL & fiber optics)' : 'Internet (DSL & Glasfaser)'}</a>{i18n.language === 'en' ? ', the household budget can often be relieved by several hundred euros a year. We are your central contact for all supply contracts in Aachen and nationwide.' : ' lässt sich die Haushaltskasse oft um mehrere hundert Euro im Jahr entlasten. Wir sind Ihr zentraler Ansprechpartner für alle Versorgungsverträge in Aachen und bundesweit.'}
               </p>
             </div>
           </div>

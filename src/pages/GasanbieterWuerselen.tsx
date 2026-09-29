@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Flame, ArrowRight, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,12 +15,13 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function GasanbieterWürselen() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: "Privathaushalte",
+      title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
       description: "Ein Neukundenbonus kann die Rechnung im ersten Vertragsjahr beeinflussen. Für eine langfristig nachvollziehbare Entscheidung werden auch die Kosten ohne Einmalbonus, die Auszahlungsbedingungen und die Konditionen nach dem Aktionszeitraum betrachtet."
     },
     {
@@ -95,7 +97,7 @@ export default function GasanbieterWürselen() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/gasanbieter-wuerselen" 
-        title="Gasanbieter Würselen vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Gas Providers Würselen | Energie Alemi' : 'Gasanbieter Würselen vergleichen | Energie Alemi'}
         description="Gastarife in Würselen vergleichen: Jahreskosten, Preisgarantie und Laufzeit auswerten. Kostenlose Tarifberatung für Privat- und Gewerbekunden."
         image={gasHeroDesk} 
         faqs={faqs} 
@@ -104,7 +106,7 @@ export default function GasanbieterWürselen() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Flame size={24} />}
-          badgeText="Gasanbieter Würselen"
+          badgeText={i18n.language === 'en' ? 'Gas Providers Würselen' : 'Gasanbieter Würselen'}
           title="Gasanbieter in Würselen vergleichen – Jahreskosten realistisch prüfen"
           description={<>Sie haben in Würselen einen eigenen Gasliefervertrag? Energie Alemi prüft Ihre Ausgangslage, vergleicht passende Angebote und erklärt Kosten und Vertragsbedingungen verständlich. Übrigens helfen wir Ihnen auch bei der Suche nach einem passenden <Link to="/stromanbieter-wuerselen" className="hover:underline font-semibold text-blue-300">Stromanbieter in Würselen</Link>.</>}
           bgImage={gasHeroDesk}
@@ -144,7 +146,7 @@ export default function GasanbieterWürselen() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internetanbieter in Würselen</Link> zu finden.
+            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Würselen' : 'Internetanbieter in Würselen'}</Link> zu finden.
           </p>
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-4 max-w-4xl mx-auto border-t border-slate-200 dark:border-slate-800 pt-6">
             Wir beraten Sie nicht nur in Würselen, sondern in der gesamten Städteregion. Vergleichen Sie auch Tarife für <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Aachen</Link>, <Link to="/gasanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stolberg</Link>, <Link to="/gasanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Eschweiler</Link> und <Link to="/gasanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Herzogenrath</Link>.
@@ -199,7 +201,7 @@ export default function GasanbieterWürselen() {
               { title: "Lieferadresse", desc: "Sie ist für die konkrete Tarifauswahl erforderlich." },
               { title: "Zählerdaten", desc: "Zählernummer und aktueller Stand können für die Abwicklung benötigt werden." },
               { title: "Vertragsstatus", desc: "Laufzeit, Kündigungsfrist und bisheriger Anbieter bestimmen den möglichen Starttermin." },
-              { title: "Zahlungsweise", desc: "Abschläge, Vorkasse und mögliche Kautionen sollten vor dem Abschluss klar sein." }
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: "Abschläge, Vorkasse und mögliche Kautionen sollten vor dem Abschluss klar sein." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -227,13 +229,13 @@ export default function GasanbieterWürselen() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>

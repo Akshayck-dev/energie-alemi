@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Wifi, ArrowRight, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,12 +15,13 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function InternetanbieterEschweiler() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: "Privathaushalte",
+      title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
       description: "Für einen Haushalt zählen die Zahl der Personen und Geräte sowie Anwendungen wie Homeoffice, Videokonferenzen, Streaming, Gaming und Cloud-Backups. Besonders bei häufigen Uploads sollte nicht nur die Download-Zahl betrachtet werden."
     },
     {
@@ -95,7 +97,7 @@ export default function InternetanbieterEschweiler() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/internetanbieter-eschweiler" 
-        title="Internetanbieter Eschweiler vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Internet Providers Eschweiler | Energie Alemi' : 'Internetanbieter Eschweiler vergleichen | Energie Alemi'}
         description="Internettarife in Eschweiler vergleichen: Energie Alemi prüft Verfügbarkeit, Leistung, Kosten und Vertragsdetails für Privat- und Geschäftskunden."
         image={internetHeroDesk} 
         faqs={faqs} 
@@ -104,7 +106,7 @@ export default function InternetanbieterEschweiler() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Wifi size={24} />}
-          badgeText="Internetanbieter Eschweiler"
+          badgeText={i18n.language === 'en' ? 'Internet Providers Eschweiler' : 'Internetanbieter Eschweiler'}
           title="Internetanbieter in Eschweiler vergleichen – adressgenau beraten"
           description={<>Welcher Internetanschluss ist an Ihrer Adresse in Eschweiler verfügbar und welche Leistung brauchen Sie wirklich? Energie Alemi verbindet die Verfügbarkeitsprüfung mit einem verständlichen Tarifvergleich. Übrigens prüfen wir auch gerne für Sie den Wechsel zu einem günstigen <Link to="/stromanbieter-eschweiler" className="hover:underline font-semibold text-blue-300">Stromanbieter in Eschweiler</Link>.</>}
           bgImage={internetHeroDesk}
@@ -144,7 +146,7 @@ export default function InternetanbieterEschweiler() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Gasanbieter in Eschweiler</Link> zu finden.
+            Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas provider in Eschweiler' : 'Gasanbieter in Eschweiler'}</Link> zu finden.
           </p>
         </div>
       </div>
@@ -219,13 +221,13 @@ export default function InternetanbieterEschweiler() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>

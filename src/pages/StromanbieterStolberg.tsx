@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Zap, ArrowRight, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import ServiceFeatures from '../sections/ServiceFeatures';
@@ -14,12 +15,13 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function StromanbieterStolberg() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const features = [
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: "Privathaushalte",
+      title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
       description: "Privathaushalte profitieren von einem Vergleich, der Haushaltsgröße, Jahresverbrauch und persönliche Prioritäten berücksichtigt. Wer Wert auf erneuerbare Energien legt, kann die ausgewiesene Stromherkunft und die Bedingungen entsprechender Tarife in die Auswahl einbeziehen."
     },
     {
@@ -39,19 +41,19 @@ export default function StromanbieterStolberg() {
     {
       number: 2,
       icon: <BarChart3 size={24} />,
-      title: "Angebote nachvollziehbar vergleichen",
+      title: i18n.language === 'en' ? 'Compare offers comprehensively' : 'Angebote nachvollziehbar vergleichen',
       description: "Wir betrachten Jahreskosten, Laufzeit, Kündigungsfrist, Preisgarantie, Zahlungsweise und Bonusregeln gemeinsam."
     },
     {
       number: 3,
       icon: <CheckSquare size={24} />,
-      title: "Passenden Tarif auswählen",
+      title: i18n.language === 'en' ? 'Choose a suitable tariff' : 'Passenden Tarif auswählen',
       description: "Sie entscheiden, welches Angebot zu Ihren Anforderungen passt und erhalten vor dem Abschluss die relevanten Vertragsinformationen."
     },
     {
       number: 4,
       icon: <Handshake size={24} />,
-      title: "Wechsel begleiten lassen",
+      title: i18n.language === 'en' ? 'Get support with switching' : 'Wechsel begleiten lassen',
       description: "Auf Wunsch unterstützen wir die notwendigen Schritte und bleiben auch nach dem Wechsel Ihr Ansprechpartner."
     }
   ];
@@ -66,12 +68,12 @@ export default function StromanbieterStolberg() {
       answer: "Die verfügbaren Angebote hängen von der Lieferadresse und den aktuellen Tarifbedingungen ab. Für einen konkreten Vergleich werden deshalb Ihre Adresse und Verbrauchsdaten benötigt."
     },
     {
-      question: "Wird mein Strom beim Anbieterwechsel unterbrochen?",
+      question: i18n.language === 'en' ? 'Will my electricity be interrupted when I change providers?' : 'Wird mein Strom beim Anbieterwechsel unterbrochen?',
       answer: "Ein regulärer Lieferantenwechsel ist ein vertraglicher Vorgang; Netz und Zähler bleiben bestehen. Die gesetzlich vorgesehene Grund- oder Ersatzversorgung sichert die Stromlieferung ab."
     },
     {
       question: "Welche Unterlagen brauche ich für den Stromvergleich?",
-      answer: "Hilfreich sind die letzte Jahresabrechnung, der aktuelle Vertrag, Ihr Jahresverbrauch, die Zählernummer oder Marktlokations-ID, der bisherige Anbieter und Ihre Kundennummer."
+      answer: i18n.language === 'en' ? 'The last annual statement, the current contract, your annual consumption, the meter number or market location ID, the previous provider and your customer number are helpful.' : 'Hilfreich sind die letzte Jahresabrechnung, der aktuelle Vertrag, Ihr Jahresverbrauch, die Zählernummer oder Marktlokations-ID, der bisherige Anbieter und Ihre Kundennummer.'
     },
     {
       question: "Muss ich meinen bisherigen Stromvertrag selbst kündigen?",
@@ -95,7 +97,7 @@ export default function StromanbieterStolberg() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/stromanbieter-stolberg" 
-        title="Stromanbieter Stolberg vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Electricity Providers Stolberg | Energie Alemi' : 'Stromanbieter Stolberg vergleichen | Energie Alemi'}
         description="Stromtarife in Stolberg persönlich vergleichen: Energie Alemi prüft Vertrag, Verbrauch und Konditionen und begleitet auf Wunsch den Anbieterwechsel."
         image={elecHeroDesk} 
         faqs={faqs} 
@@ -104,8 +106,8 @@ export default function StromanbieterStolberg() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Zap size={24} />}
-          badgeText="Stromanbieter Stolberg"
-          title="Stromanbieter in Stolberg vergleichen – persönlich beraten wechseln"
+          badgeText={i18n.language === 'en' ? 'Electricity Providers Stolberg' : 'Stromanbieter Stolberg'}
+          title={i18n.language === 'en' ? 'Compare electricity providers in Stolberg – switch with personal advice' : 'Stromanbieter in Stolberg vergleichen – persönlich beraten wechseln'}
           description={<>Sie wohnen oder arbeiten in Stolberg und möchten Ihren Stromvertrag verständlich prüfen lassen? Energie Alemi vergleicht passende Tarife verschiedener Anbieter und begleitet Sie auf Wunsch beim Wechsel – für Privathaushalte, Gewerbe und Industrie. Übrigens helfen wir Ihnen auch bei der Suche nach einem passenden <Link to="/gasanbieter-stolberg" className="hover:underline font-semibold text-blue-300">Gasanbieter in Stolberg</Link>.</>}
           bgImage={elecHeroDesk}
           buttonText="Jetzt Stromtarife für Stolberg prüfen lassen"
@@ -144,7 +146,7 @@ export default function StromanbieterStolberg() {
           />
           <ServiceFeatures features={features} />
           <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internetanbieter in Stolberg</Link> zu finden.
+            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Stolberg' : 'Internetanbieter in Stolberg'}</Link> zu finden.
           </p>
         </div>
       </div>
@@ -159,10 +161,10 @@ export default function StromanbieterStolberg() {
                   <SectionHeader 
                     title={
                       <>
-                        So funktioniert der <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Stromanbieterwechsel</span> in vier Schritten
+                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'electricity provider switch' : 'Stromanbieterwechsel'}</span> in vier Schritten
                       </>
                     }
-                    subtitle="Ein transparenter und einfacher Ablauf für Ihren neuen Stromtarif."
+                    subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new electricity tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Stromtarif.'}
                     align="left"
                     className="mb-8"
                   />
@@ -180,18 +182,18 @@ export default function StromanbieterStolberg() {
       <div className="relative z-25 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-16 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <div className="container mx-auto px-6 max-w-4xl">
           <SectionHeader 
-            title="Darauf sollten Sie beim Stromvergleich achten"
+            title={i18n.language === 'en' ? 'What you should pay attention to when comparing electricity' : 'Darauf sollten Sie beim Stromvergleich achten'}
             align="center"
             className="mb-12"
           />
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: "Gesamtkosten", desc: "Grundpreis und Arbeitspreis gemeinsam auf den erwarteten Jahresverbrauch beziehen." },
-              { title: "Vertragslaufzeit", desc: "Prüfen, wie lange Sie gebunden sind und wann ein weiterer Wechsel möglich wäre." },
-              { title: "Kündigungsfrist", desc: "Den nächstmöglichen Kündigungstermin des bestehenden Vertrags berücksichtigen." },
-              { title: "Preisgarantie", desc: "Genau ansehen, welche Preisbestandteile erfasst sind und wie lange die Garantie gilt." },
-              { title: "Bonusbedingungen", desc: "Einmalige Boni getrennt von den laufenden Kosten im Folgejahr bewerten." },
-              { title: "Zahlungsweise", desc: "Monatliche Abschläge sind in der Regel übersichtlicher als Vorkasse oder hohe Vorauszahlungen." }
+              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: "Grundpreis und Arbeitspreis gemeinsam auf den erwarteten Jahresverbrauch beziehen." },
+              { title: i18n.language === 'en' ? 'Contract term' : 'Vertragslaufzeit', desc: "Prüfen, wie lange Sie gebunden sind und wann ein weiterer Wechsel möglich wäre." },
+              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: i18n.language === 'en' ? 'Take into account the next possible cancellation date of the existing contract.' : 'Den nächstmöglichen Kündigungstermin des bestehenden Vertrags berücksichtigen.' },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === 'en' ? 'Look closely at which price components are covered and how long the guarantee is valid.' : 'Genau ansehen, welche Preisbestandteile erfasst sind und wie lange die Garantie gilt.' },
+              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: "Einmalige Boni getrennt von den laufenden Kosten im Folgejahr bewerten." },
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === 'en' ? 'Monthly installments are generally clearer than advance payment or high advance payments.' : 'Monatliche Abschläge sind in der Regel übersichtlicher als Vorkasse oder hohe Vorauszahlungen.' }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -217,13 +219,13 @@ export default function StromanbieterStolberg() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>

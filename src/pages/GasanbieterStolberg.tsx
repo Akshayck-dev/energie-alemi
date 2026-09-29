@@ -1,5 +1,6 @@
 import { Search, Handshake, BarChart3, CheckSquare, Flame, ArrowRight, MapPin, Phone, ShieldCheck, ClipboardList } from 'lucide-react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
 import ServiceHero from '../sections/ServiceHero';
 import { trackEvent } from '../lib/analytics';
@@ -13,6 +14,7 @@ import SEO from "../components/SEO";
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
 export default function GasanbieterStolberg() {
+  const { i18n } = useTranslation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   
   const steps = [
@@ -37,7 +39,7 @@ export default function GasanbieterStolberg() {
     {
       number: 4,
       icon: <Handshake size={24} />,
-      title: "Wechsel begleiten lassen",
+      title: i18n.language === 'en' ? 'Get support with switching' : 'Wechsel begleiten lassen',
       description: "Auf Wunsch unterstützen wir die notwendigen Schritte und bleiben bei Rückfragen erreichbar."
     }
   ];
@@ -68,7 +70,7 @@ export default function GasanbieterStolberg() {
       answer: "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt unabhängig vom Verbrauch als fester Betrag an. Für den Vergleich zählen die erwarteten Jahreskosten aus beiden Bestandteilen."
     },
     {
-      question: "Muss ich meinen alten Gasvertrag selbst kündigen?",
+      question: i18n.language === 'en' ? 'Do I have to cancel my old gas contract myself?' : 'Muss ich meinen alten Gasvertrag selbst kündigen?',
       answer: "Im Normalfall übernimmt der neue Lieferant die Kündigung nach entsprechender Bevollmächtigung. Bei Sonderkündigungen, Umzügen oder knappen Fristen sollte das Vorgehen vorab geklärt werden."
     },
     {
@@ -81,7 +83,7 @@ export default function GasanbieterStolberg() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/gasanbieter-stolberg" 
-        title="Gasanbieter Stolberg vergleichen | Energie Alemi"
+        title={i18n.language === 'en' ? 'Compare Gas Providers Stolberg | Energie Alemi' : 'Gasanbieter Stolberg vergleichen | Energie Alemi'}
         description="Gastarife in Stolberg persönlich vergleichen: Energie Alemi prüft Verbrauch, Vertrag und Konditionen und begleitet auf Wunsch den Anbieterwechsel."
         image={gasHeroDesk} 
         faqs={faqs} 
@@ -90,7 +92,7 @@ export default function GasanbieterStolberg() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Flame size={24} />}
-          badgeText="Gasanbieter Stolberg"
+          badgeText={i18n.language === 'en' ? 'Gas Providers Stolberg' : 'Gasanbieter Stolberg'}
           title="Gasanbieter in Stolberg vergleichen – Tarife verständlich prüfen"
           description={<>Sie haben in Stolberg einen eigenen Gasliefervertrag und möchten Kosten und Vertragsbedingungen prüfen? Energie Alemi vergleicht passende Gastarife verschiedener Anbieter und begleitet Sie auf Wunsch beim Wechsel – persönlich, transparent und gut erreichbar aus Stolberg. Wir helfen Ihnen auch gerne bei der Suche nach einem passenden <Link to="/stromanbieter-stolberg" className="hover:underline font-semibold text-amber-200">Stromanbieter in Stolberg</Link>.</>}
           bgImage={gasHeroDesk}
@@ -128,7 +130,7 @@ export default function GasanbieterStolberg() {
             Ein hoher Neukundenbonus kann ein Angebot im ersten Jahr attraktiv wirken lassen, sagt aber wenig über die laufenden Kosten danach aus. Deshalb betrachten wir die voraussichtlichen Jahreskosten und die Konditionen für die gesamte relevante Vertragsdauer.
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-            Bei gewerblich genutzten Immobilien oder höherem Verbrauch gewinnen Planungssicherheit und verlässliche Vertragsbedingungen zusätzlich an Bedeutung. Hier wird der Vergleich an den konkreten Bedarf angepasst. Bei einer gemeinsamen Vertragsoptimierung helfen wir Ihnen natürlich auch dabei, einen passenden <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internetanbieter in Stolberg</Link> zu finden.
+            Bei gewerblich genutzten Immobilien oder höherem Verbrauch gewinnen Planungssicherheit und verlässliche Vertragsbedingungen zusätzlich an Bedeutung. Hier wird der Vergleich an den konkreten Bedarf angepasst. Bei einer gemeinsamen Vertragsoptimierung helfen wir Ihnen natürlich auch dabei, einen passenden <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Stolberg' : 'Internetanbieter in Stolberg'}</Link> zu finden.
           </p>
         </div>
       </div>
@@ -146,9 +148,9 @@ export default function GasanbieterStolberg() {
               { title: "Jahresverbrauch", desc: "Die letzte Abrechnung liefert die beste Grundlage für eine realistische Berechnung." },
               { title: "Arbeitspreis und Grundpreis", desc: "Beide Bestandteile bestimmen zusammen die voraussichtlichen Gesamtkosten." },
               { title: "Laufzeit und Kündigungsfrist", desc: "Prüfen, wann der bestehende Vertrag endet und wie flexibel der neue Vertrag bleibt." },
-              { title: "Preisgarantie", desc: "Dauer und ausgeschlossene Preisbestandteile genau lesen." },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: "Dauer und ausgeschlossene Preisbestandteile genau lesen." },
               { title: "Bonusregeln", desc: "Voraussetzungen und Auszahlungstermin prüfen; das zweite Vertragsjahr separat betrachten." },
-              { title: "Zahlungsweise", desc: "Tarife mit Vorkasse oder hohen Vorauszahlungen besonders kritisch einordnen." }
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: "Tarife mit Vorkasse oder hohen Vorauszahlungen besonders kritisch einordnen." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-white dark:bg-[#122340] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -179,10 +181,10 @@ export default function GasanbieterStolberg() {
                   <SectionHeader 
                     title={
                       <>
-                        So funktioniert der <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Gasanbieterwechsel</span> in vier Schritten
+                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'gas provider switch' : 'Gasanbieterwechsel'}</span> in vier Schritten
                       </>
                     }
-                    subtitle="Ein transparenter und einfacher Ablauf für Ihren neuen Gastarif."
+                    subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new gas tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Gastarif.'}
                     align="left"
                     className="mb-8"
                   />
@@ -206,13 +208,13 @@ export default function GasanbieterStolberg() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
               <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Adresse</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
               <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
             </div>
             <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
             <div className="flex flex-col items-center">
               <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">Telefon</h4>
+              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
               <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
             </div>
           </div>
