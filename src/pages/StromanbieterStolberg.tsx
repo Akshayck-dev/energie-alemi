@@ -214,7 +214,7 @@ export default function StromanbieterStolberg() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">{i18n.language === "en" ? "Personal tariff advice for Stolberg – directly from Aachen" : "Persönliche Tarifberatung für Stolberg – direkt aus Aachen"}</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Sie möchten Ihren Stromvertrag nicht allein anhand langer Vergleichslisten beurteilen? Energie Alemi berät Kundinnen und Kunden aus Stolberg telefonisch und persönlich am Alexianergraben 9 in 52064 Aachen. Bringen Sie Ihre letzte Stromrechnung mit oder halten Sie Jahresverbrauch und Vertragsdaten bereit.
+            {i18n.language === "en" ? "You don't want to evaluate your electricity contract based on long comparison lists alone? Energie Alemi advises customers from Stolberg by phone and in person at Alexianergraben 9 in 52064 Aachen. Bring your last electricity bill with you or have your annual consumption and contract data ready." : "Sie möchten Ihren Stromvertrag nicht allein anhand langer Vergleichslisten beurteilen\? Energie Alemi berät Kundinnen und Kunden aus Stolberg telefonisch und persönlich am Alexianergraben 9 in 52064 Aachen. Bringen Sie Ihre letzte Stromrechnung mit oder halten Sie Jahresverbrauch und Vertragsdaten bereit."}
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
@@ -250,11 +250,11 @@ export default function StromanbieterStolberg() {
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>
-                  Jetzt Stromtarife für Stolberg prüfen lassen
+                  {i18n.language === "en" ? "Have electricity tariffs for Stolberg checked now" : "Jetzt Stromtarife für Stolberg prüfen lassen"}
                 </Button>
                 <Link to="/contact" className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#0047AB] dark:border-[#f0a83f] text-[#0047AB] dark:text-[#f0a83f] font-semibold rounded-full hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#0a1628] transition-colors">
                   <Phone size={18} className="mr-2" />
-                  Kostenlose Beratung
+                  {i18n.language === "en" ? "Free advice" : "Kostenlose Beratung"}
                 </Link>
               </div>
             </div>

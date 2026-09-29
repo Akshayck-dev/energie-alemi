@@ -215,7 +215,7 @@ export default function InternetanbieterStolberg() {
                 </Button>
                 <Link to="/contact" className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">
                   <Phone size={18} className="mr-2" />
-                  Kostenlose Beratung
+                  {i18n.language === "en" ? "Free advice" : "Kostenlose Beratung"}
                 </Link>
               </div>
             </div>

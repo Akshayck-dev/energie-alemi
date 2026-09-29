@@ -259,7 +259,7 @@ export default function InternetanbieterWürselen() {
                 </Button>
                 <Link to="/contact" className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#0047AB] dark:border-[#f0a83f] text-[#0047AB] dark:text-[#f0a83f] font-semibold rounded-full hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#0a1628] transition-colors">
                   <Phone size={18} className="mr-2" />
-                  Kostenlose Beratung
+                  {i18n.language === "en" ? "Free advice" : "Kostenlose Beratung"}
                 </Link>
               </div>
             </div>
