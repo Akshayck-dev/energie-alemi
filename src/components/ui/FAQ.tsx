@@ -41,7 +41,7 @@ export default function FAQ({ items, className }: FAQProps) {
               </div>
             </Accordion.Trigger>
           </Accordion.Header>
-          <Accordion.Content className="overflow-hidden text-slate-600 dark:text-white/80 data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
+          <Accordion.Content forceMount className="overflow-hidden text-slate-600 dark:text-white/80 data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up data-[state=closed]:h-0">
             <div className="px-6 pb-5 pt-0 text-base leading-relaxed">
               {item.answer}
             </div>
