@@ -22,12 +22,12 @@ export default function StromanbieterWürselen() {
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
       title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
-      description: "Für Privathaushalte zählen neben dem Verbrauch häufig flexible Vertragsbedingungen, nachvollziehbare Abschläge und auf Wunsch die ausgewiesene Stromherkunft. Die Haushaltsgröße hilft bei einer Schätzung, ersetzt aber keine vorhandene Jahresabrechnung."
+      description: i18n.language === "en" ? "Für private households zählen neben dem Verbrauch häufig flexible contract conditions, comprehensiblee Abschläge und auf Wunsch die ausgewiesene origin of electricity. Die household size hilft bei einer Schätzung, ersetzt aber keine vorhandene annual statement." : "Für Privathaushalte zählen neben dem Verbrauch häufig flexible Vertragsbedingungen, nachvollziehbare Abschläge und auf Wunsch die ausgewiesene Stromherkunft. Die Haushaltsgröße hilft bei einer Schätzung, ersetzt aber keine vorhandene Jahresabrechnung."
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
       title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
-      description: "Bei Gewerbe und Industrie können Lastprofil, planbare Kosten, Vertragslaufzeit und betriebliche Abläufe stärker ins Gewicht fallen. Energie Alemi erfasst deshalb zuerst die konkrete Ausgangslage, bevor Angebote eingeordnet werden."
+      description: i18n.language === "en" ? "Bei business and industry können load profile, planbare Kosten, contract duration und betriebliche Abläufe stärker ins Gewicht fallen. Energie Alemi erfasst deshalb zuerst die konkrete Ausgangslage, bevor Angebote eingeordnet werden." : "Bei Gewerbe und Industrie können Lastprofil, planbare Kosten, Vertragslaufzeit und betriebliche Abläufe stärker ins Gewicht fallen. Energie Alemi erfasst deshalb zuerst die konkrete Ausgangslage, bevor Angebote eingeordnet werden."
     }
   ];
 
@@ -61,31 +61,31 @@ export default function StromanbieterWürselen() {
   const faqs = [
     {
       question: "Ist die Stromtarifberatung für Würselen kostenlos?",
-      answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Vor einem Abschluss erhalten Sie die wesentlichen Preis- und Vertragsangaben des ausgewählten Angebots."
+      answer: i18n.language === "en" ? "Ja. Energie Alemi bietet die tariff advice free of charge an. Vor einem Abschluss erhalten Sie die wesentlichen Preis- und Vertragsangaben des ausgewählten Angebots." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Vor einem Abschluss erhalten Sie die wesentlichen Preis- und Vertragsangaben des ausgewählten Angebots."
     },
     {
       question: i18n.language === "en" ? "Which electricity providers are available at my address in Wuerselen?" : "Welche Stromanbieter sind an meiner Adresse in Würselen verfügbar?",
-      answer: "Die konkrete Auswahl hängt von Lieferadresse, Verbrauch und dem aktuellen Marktangebot ab. Deshalb werden für den Vergleich Ihre individuellen Liefer- und Verbrauchsdaten benötigt."
+      answer: i18n.language === "en" ? "Die konkrete Auswahl hängt von delivery address, Verbrauch und dem aktuellen Marktangebot ab. Deshalb werden für den Vergleich Ihre individuellen Liefer- und consumption data benötigt." : "Die konkrete Auswahl hängt von Lieferadresse, Verbrauch und dem aktuellen Marktangebot ab. Deshalb werden für den Vergleich Ihre individuellen Liefer- und Verbrauchsdaten benötigt."
     },
     {
       question: "Welche Angaben brauche ich für einen Stromvergleich?",
-      answer: "Hilfreich sind die letzte Jahresabrechnung, der aktuelle Vertrag, Jahresverbrauch, Lieferadresse, bisherige Kundennummer sowie Zählernummer oder Marktlokations-ID."
+      answer: i18n.language === "en" ? "Hilfreich sind die letzte annual statement, der aktuelle Vertrag, annual consumption, delivery address, bisherige customer number sowie meter number oder market location ID." : "Hilfreich sind die letzte Jahresabrechnung, der aktuelle Vertrag, Jahresverbrauch, Lieferadresse, bisherige Kundennummer sowie Zählernummer oder Marktlokations-ID."
     },
     {
       question: "Kann ich bei einem Umzug nach Würselen rückwirkend Strom anmelden?",
-      answer: "Eine rückwirkende Zuordnung sollte nicht eingeplant werden. Melden Sie Einzug und gewünschte Belieferung möglichst vorab und stimmen Sie die geltenden Fristen mit dem Anbieter ab."
+      answer: i18n.language === "en" ? "Eine retroactivelye Zuordnung sollte nicht eingeplant werden. Melden Sie Einzug und gewünschte Belieferung if possible vorab und stimmen Sie die geltenden Fristen mit dem Anbieter ab." : "Eine rückwirkende Zuordnung sollte nicht eingeplant werden. Melden Sie Einzug und gewünschte Belieferung möglichst vorab und stimmen Sie die geltenden Fristen mit dem Anbieter ab."
     },
     {
       question: "Wird die Stromversorgung durch den Anbieterwechsel unterbrochen?",
-      answer: "Ein regulärer Wechsel betrifft den Liefervertrag; Netzanschluss und Zähler bleiben bestehen. Die gesetzlich geregelte Grund- oder Ersatzversorgung sichert die Belieferung ab."
+      answer: i18n.language === "en" ? "Ein regulärer Wechsel betrifft den supply contract; network connection und Zähler bleiben bestehen. Die gesetzlich geregelte Grund- oder replacement supply sichert die Belieferung ab." : "Ein regulärer Wechsel betrifft den Liefervertrag; Netzanschluss und Zähler bleiben bestehen. Die gesetzlich geregelte Grund- oder Ersatzversorgung sichert die Belieferung ab."
     },
     {
       question: "Wer kündigt meinen bisherigen Stromvertrag?",
-      answer: "Im Normalfall übernimmt der neue Lieferant die Kündigung, wenn Sie ihn dazu bevollmächtigen. Bei Sonderkündigung, Umzug oder knappen Fristen sollte das Vorgehen vorher geklärt werden."
+      answer: i18n.language === "en" ? "Im Normalfall übernimmt der neue Lieferant die cancellation, wenn Sie ihn dazu bevollmächtigen. Bei special cancellation, Umzug oder knappen Fristen sollte das Vorgehen vorher geklärt werden." : "Im Normalfall übernimmt der neue Lieferant die Kündigung, wenn Sie ihn dazu bevollmächtigen. Bei Sonderkündigung, Umzug oder knappen Fristen sollte das Vorgehen vorher geklärt werden."
     },
     {
       question: "Kann ich Ökostromtarife für Würselen vergleichen?",
-      answer: "Ja. Wenn die Stromherkunft für Sie wichtig ist, können entsprechende Angebote berücksichtigt werden. Entscheidend bleiben die konkreten Tarifangaben und Vertragsbedingungen."
+      answer: i18n.language === "en" ? "Ja. Wenn die origin of electricity für Sie wichtig ist, können entsprechende Angebote berücksichtigt werden. Entscheidend bleiben die konkreten Tarifangaben und contract conditions." : "Ja. Wenn die Stromherkunft für Sie wichtig ist, können entsprechende Angebote berücksichtigt werden. Entscheidend bleiben die konkreten Tarifangaben und Vertragsbedingungen."
     },
     {
       question: "Berät Energie Alemi auch Betriebe in Würselen?",
@@ -98,7 +98,7 @@ export default function StromanbieterWürselen() {
       <SEO 
         url="/stromanbieter-wuerselen" 
         title={i18n.language === 'en' ? 'Compare Electricity Providers Würselen | Energie Alemi' : 'Stromanbieter Würselen vergleichen | Energie Alemi'}
-        description="Stromtarife in Würselen vergleichen: Kosten, Vertragsdetails und Kündigungsfrist prüfen. Energie Alemi berät Haushalte und Unternehmen persönlich."
+        description={i18n.language === "en" ? "electricity tariffs in Würselen vergleichen: Kosten, contract details und cancellation period prüfen. Energie Alemi berät Haushalte und Unternehmen personally." : "Stromtarife in Würselen vergleichen: Kosten, Vertragsdetails und Kündigungsfrist prüfen. Energie Alemi berät Haushalte und Unternehmen persönlich."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />
@@ -118,7 +118,7 @@ export default function StromanbieterWürselen() {
           bulletPoints={[
             { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
             { icon: <BarChart3 size={24} />, title: "Jahreskosten statt Lockpreis vergleichen" },
-            { icon: <Building2 size={24} />, title: "Für Privat, Gewerbe und Industrie" },
+            { icon: <Building2 size={24} />, title: i18n.language === "en" ? "Für Privat, business and industry" : "Für Privat, Gewerbe und Industrie" },
           ]}
           accentColor="bg-amber-500 hover:bg-amber-600"
         />
@@ -128,13 +128,13 @@ export default function StromanbieterWürselen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Stromtarife für Würselen mit den richtigen Daten vergleichen</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            Ein aussagekräftiger Vergleich beginnt mit dem Jahresverbrauch aus Ihrer letzten Abrechnung. Erst wenn Arbeitspreis und Grundpreis auf diesen Verbrauch bezogen werden, lassen sich die erwarteten Jahreskosten verschiedener Tarife sinnvoll gegenüberstellen.
+            {i18n.language === "en" ? "Ein aussagekräftiger Vergleich beginnt mit dem annual consumption aus Ihrer letzten Abrechnung. Erst wenn energy price und basic price auf diesen Verbrauch bezogen werden, lassen sich die erwarteten annual costs verschiedener Tarife sinnvoll gegenüberstellen." : "Ein aussagekräftiger Vergleich beginnt mit dem Jahresverbrauch aus Ihrer letzten Abrechnung. Erst wenn Arbeitspreis und Grundpreis auf diesen Verbrauch bezogen werden, lassen sich die erwarteten Jahreskosten verschiedener Tarife sinnvoll gegenüberstellen."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            Zusätzlich gehören Mindestlaufzeit, Kündigungsfrist, Zahlungsweise, Preisgarantie und Bonusbedingungen in die Entscheidung. Ein günstiger Einstiegswert kann sonst darüber hinwegtäuschen, dass der Vertrag später weniger flexibel oder im Folgejahr teurer ist.
+            {i18n.language === "en" ? "Zusätzlich gehören minimum term, cancellation period, payment method, price guarantee und bonus conditions in die Entscheidung. Ein günstiger Einstiegswert kann sonst darüber hinwegtäuschen, dass der Vertrag später weniger flexibel oder im Folgejahr teurer ist." : "Zusätzlich gehören Mindestlaufzeit, Kündigungsfrist, Zahlungsweise, Preisgarantie und Bonusbedingungen in die Entscheidung. Ein günstiger Einstiegswert kann sonst darüber hinwegtäuschen, dass der Vertrag später weniger flexibel oder im Folgejahr teurer ist."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Das Angebot richtet sich an Kundinnen und Kunden aus Würselen-Mitte, Kohlscheid und Merkstein. Die Beratung erfolgt telefonisch oder persönlich bei Energie Alemi am Alexianergraben 9 in Aachen. Erfahren Sie mehr über unsere Leistungen als <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
+            Das Angebot richtet sich an Kundinnen und Kunden aus Würselen-Mitte, Bardenberg und Broichweiden. Die Beratung erfolgt telefonisch oder persönlich bei Energie Alemi am Alexianergraben 9 in Aachen. Erfahren Sie mehr über unsere Leistungen als <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -164,17 +164,17 @@ export default function StromanbieterWürselen() {
                   <SectionHeader 
                     title={
                       <>
-                        So läuft die <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Stromberatung</span> in vier Schritten
+                        {i18n.language === "en" ? "This is how the " : "So läuft die "}<span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === "en" ? "electricity advice" : "Stromberatung"}</span>{i18n.language === "en" ? " works in four steps" : " in vier Schritten"}
                       </>
                     }
-                    subtitle="Wer nach Würselen zieht oder innerhalb der Stadt umzieht, sollte die neue Lieferstelle frühzeitig melden. Benötigt werden in der Regel die vollständige Adresse, Einzugsdatum, Zählernummer und – sofern vorhanden – die Marktlokations-ID."
+                    subtitle={i18n.language === "en" ? "Wer nach Würselen zieht oder innerhalb der Stadt umzieht, sollte die neue delivery point frühzeitig melden. Benötigt werden in der Regel die vollständige Adresse, Einzugsdatum, meter number und – sofern vorhanden – die market location ID." : "Wer nach Würselen zieht oder innerhalb der Stadt umzieht, sollte die neue Lieferstelle frühzeitig melden. Benötigt werden in der Regel die vollständige Adresse, Einzugsdatum, Zählernummer und – sofern vorhanden – die Marktlokations-ID."}
                     align="left"
                     className="mb-8"
                   />
                   <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800">
                     <h3 className="font-semibold text-slate-900 dark:text-white mb-4">Beim Umzug rechtzeitig Lieferadresse und Termin festlegen</h3>
                     <p className="text-slate-600 dark:text-slate-400">
-                      Der technische Lieferantenwechsel und die vertragliche Kündigung sind zwei verschiedene Dinge. Auch bei einem schnelleren Wechselprozess bleiben vereinbarte Laufzeiten und Kündigungsfristen maßgeblich. Deshalb wird der gewünschte Lieferbeginn mit dem bisherigen Vertrag abgestimmt.
+                      {i18n.language === "en" ? "Der technische supplier switch und die vertragliche cancellation sind zwei verschiedene Dinge. Auch bei einem schnelleren Wechselprozess bleiben vereinbarte Laufzeiten und cancellation perioden maßgeblich. Deshalb wird der gewünschte delivery start mit dem bisherigen Vertrag abgestimmt." : "Der technische Lieferantenwechsel und die vertragliche Kündigung sind zwei verschiedene Dinge. Auch bei einem schnelleren Wechselprozess bleiben vereinbarte Laufzeiten und Kündigungsfristen maßgeblich. Deshalb wird der gewünschte Lieferbeginn mit dem bisherigen Vertrag abgestimmt."}
                     </p>
                   </div>
                 </div>
@@ -197,12 +197,12 @@ export default function StromanbieterWürselen() {
           />
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: "Jahresverbrauch", desc: "Möglichst den Abrechnungswert nutzen, nicht nur eine allgemeine Personenschätzung." },
-              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: "Grundpreis und verbrauchsabhängigen Arbeitspreis für zwölf Monate zusammen betrachten." },
-              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: "Laufzeit, Umfang und mögliche Ausnahmen im Angebot nachlesen." },
-              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: "Voraussetzungen und Auszahlung getrennt von den laufenden Tarifkosten bewerten." },
-              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: "Den frühestmöglichen Vertragsbeginn realistisch planen." },
-              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: "Monatliche Abschläge sind meist leichter einzuordnen als Vorkasse oder hohe Vorauszahlungen." }
+              { title: "Jahresverbrauch", desc: i18n.language === "en" ? "Use the statement value if possible, not just a general estimate based on people." : "Möglichst den Abrechnungswert nutzen, nicht nur eine allgemeine Personenschätzung." },
+              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: i18n.language === "en" ? "basic price und verbrauchsabhängigen energy price für zwölf Monate zusammen betrachten." : "Grundpreis und verbrauchsabhängigen Arbeitspreis für zwölf Monate zusammen betrachten." },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === "en" ? "Check duration, scope and possible exceptions in the offer." : "Laufzeit, Umfang und mögliche Ausnahmen im Angebot nachlesen." },
+              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: i18n.language === "en" ? "Evaluate requirements and payout separately from the running tariff costs." : "Voraussetzungen und Auszahlung getrennt von den laufenden Tarifkosten bewerten." },
+              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: i18n.language === "en" ? "Plan the earliest possible contract start realistically." : "Den frühestmöglichen Vertragsbeginn realistisch planen." },
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Monatliche Abschläge sind meist leichter einzuordnen als advance payment oder hohe advance payments." : "Monatliche Abschläge sind meist leichter einzuordnen als Vorkasse oder hohe Vorauszahlungen." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -225,7 +225,7 @@ export default function StromanbieterWürselen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">Stromberatung für Würselen – erreichbar in Aachen</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Energie Alemi unterstützt Privat-, Gewerbe- und Industriekunden aus Würselen telefonisch und persönlich in Aachen. Für eine erste Prüfung reichen meist die letzte Stromrechnung und die aktuellen Vertragsdaten.
+            {i18n.language === "en" ? "Energie Alemi unterstützt Privat-, Gewerbe- und industrial customers aus Würselen by phone und personally in Aachen. Für eine erste Prüfung reichen meist die letzte electricity bill und die aktuellen contract data." : "Energie Alemi unterstützt Privat-, Gewerbe- und Industriekunden aus Würselen telefonisch und persönlich in Aachen. Für eine erste Prüfung reichen meist die letzte Stromrechnung und die aktuellen Vertragsdaten."}
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">

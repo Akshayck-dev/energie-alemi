@@ -22,12 +22,12 @@ export default function GasanbieterWürselen() {
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
       title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
-      description: "Ein Neukundenbonus kann die Rechnung im ersten Vertragsjahr beeinflussen. Für eine langfristig nachvollziehbare Entscheidung werden auch die Kosten ohne Einmalbonus, die Auszahlungsbedingungen und die Konditionen nach dem Aktionszeitraum betrachtet."
+      description: i18n.language === "en" ? "Ein new customer bonus kann die Rechnung im ersten Vertragsjahr beeinflussen. Für eine langfristig comprehensiblee Entscheidung werden auch die Kosten ohne Einmalbonus, die Auszahlungsbedingungen und die Konditionen nach dem promotional period betrachtet." : "Ein Neukundenbonus kann die Rechnung im ersten Vertragsjahr beeinflussen. Für eine langfristig nachvollziehbare Entscheidung werden auch die Kosten ohne Einmalbonus, die Auszahlungsbedingungen und die Konditionen nach dem Aktionszeitraum betrachtet."
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
       title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
-      description: "Kurze Kündigungsfristen schaffen Flexibilität, während längere Laufzeiten mehr Bindung bedeuten. Welche Gewichtung sinnvoll ist, hängt von Verbrauch, Gebäude, Nutzung und persönlicher Planung ab – besonders bei Gewerbeobjekten oder höherem Bedarf."
+      description: i18n.language === "en" ? "Kurze cancellation perioden schaffen Flexibilität, während längere Laufzeiten mehr Bindung bedeuten. Welche Gewichtung sinnvoll ist, hängt von Verbrauch, Gebäude, Nutzung und personallyer Planung ab – besonders bei Gewerbeobjekten oder höherem Bedarf." : "Kurze Kündigungsfristen schaffen Flexibilität, während längere Laufzeiten mehr Bindung bedeuten. Welche Gewichtung sinnvoll ist, hängt von Verbrauch, Gebäude, Nutzung und persönlicher Planung ab – besonders bei Gewerbeobjekten oder höherem Bedarf."
     }
   ];
 
@@ -35,61 +35,61 @@ export default function GasanbieterWürselen() {
     {
       number: 1,
       icon: <Search size={24} />,
-      title: "Vertragssituation klären",
-      description: "Sie prüfen, ob Sie selbst Vertragspartner sind, und stellen Rechnung, Lieferadresse sowie Zählerdaten bereit."
+      title: i18n.language === "en" ? "Clarify contract situation" : "Vertragssituation klären",
+      description: i18n.language === "en" ? "Sie prüfen, ob Sie selbst Vertragspartner sind, und stellen Rechnung, delivery address sowie meter data bereit." : "Sie prüfen, ob Sie selbst Vertragspartner sind, und stellen Rechnung, Lieferadresse sowie Zählerdaten bereit."
     },
     {
       number: 2,
       icon: <BarChart3 size={24} />,
-      title: "Verbrauch einordnen",
-      description: "Der letzte Jahreswert wird als Grundlage für einen realistischen Kostenvergleich verwendet."
+      title: i18n.language === "en" ? "Classify consumption" : "Verbrauch einordnen",
+      description: i18n.language === "en" ? "The last annual value is used as the basis for a realistic cost comparison." : "Der letzte Jahreswert wird als Grundlage für einen realistischen Kostenvergleich verwendet."
     },
     {
       number: 3,
       icon: <CheckSquare size={24} />,
       title: "Angebote bewerten",
-      description: "Jahreskosten, Preisgarantie, Laufzeit, Kündigungsfrist, Bonus und Zahlungsweise werden gegenübergestellt."
+      description: i18n.language === "en" ? "annual costs, price guarantee, Laufzeit, cancellation period, Bonus und payment method werden gegenübergestellt." : "Jahreskosten, Preisgarantie, Laufzeit, Kündigungsfrist, Bonus und Zahlungsweise werden gegenübergestellt."
     },
     {
       number: 4,
       icon: <Handshake size={24} />,
       title: "Wechsel vorbereiten",
-      description: "Nach Ihrer Tarifentscheidung unterstützt Energie Alemi auf Wunsch die nächsten Schritte."
+      description: i18n.language === "en" ? "After your tariff decision, Energie Alemi supports the next steps if you wish." : "Nach Ihrer Tarifentscheidung unterstützt Energie Alemi auf Wunsch die nächsten Schritte."
     }
   ];
 
   const faqs = [
     {
-      question: "Ist die Gasberatung für Würselen kostenlos?",
-      answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich sind die letzte Gasrechnung und die aktuellen Vertragsdaten besonders hilfreich."
+      question: i18n.language === "en" ? "Ist die gas consultation für Würselen free of charge?" : "Ist die Gasberatung für Würselen kostenlos?",
+      answer: i18n.language === "en" ? "Ja. Energie Alemi bietet die tariff advice free of charge an. Für einen konkreten Vergleich sind die letzte gas bill und die aktuellen contract data besonders hilfreich." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich sind die letzte Gasrechnung und die aktuellen Vertragsdaten besonders hilfreich."
     },
     {
       question: i18n.language === "en" ? "Can I switch gas providers as a tenant?" : "Kann ich als Mieterin oder Mieter den Gasanbieter wechseln?",
-      answer: "Nur wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage liegt der Vertrag häufig bei Vermietung oder Hausverwaltung."
+      answer: i18n.language === "en" ? "Nur wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen heating system liegt der Vertrag häufig bei landlord oder property management." : "Nur wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage liegt der Vertrag häufig bei Vermietung oder Hausverwaltung."
     },
     {
-      question: "Welche Gastarife sind in Würselen verfügbar?",
-      answer: "Das hängt von Lieferadresse, Verbrauch und aktuellem Marktangebot ab. Eine belastbare Auskunft ist deshalb erst nach Prüfung der individuellen Daten möglich."
+      question: i18n.language === "en" ? "Welche gas tariffs sind in Würselen verfügbar?" : "Welche Gastarife sind in Würselen verfügbar?",
+      answer: i18n.language === "en" ? "Das hängt von delivery address, Verbrauch und aktuellem Marktangebot ab. Eine belastbare Auskunft ist deshalb erst nach Prüfung der individuellen Daten möglich." : "Das hängt von Lieferadresse, Verbrauch und aktuellem Marktangebot ab. Eine belastbare Auskunft ist deshalb erst nach Prüfung der individuellen Daten möglich."
     },
     {
-      question: "Was ist beim Vergleich wichtiger: Arbeitspreis oder Grundpreis?",
-      answer: "Beide Preisbestandteile gehören zusammen. Der Arbeitspreis wird auf den Verbrauch berechnet, der Grundpreis fällt unabhängig davon an; entscheidend sind die erwarteten Jahreskosten."
+      question: i18n.language === "en" ? "Was ist beim Vergleich wichtiger: energy price oder basic price?" : "Was ist beim Vergleich wichtiger: Arbeitspreis oder Grundpreis?",
+      answer: i18n.language === "en" ? "Beide price components gehören zusammen. Der energy price wird auf den Verbrauch berechnet, der basic price fällt unabhängig davon an; entscheidend sind die erwarteten annual costs." : "Beide Preisbestandteile gehören zusammen. Der Arbeitspreis wird auf den Verbrauch berechnet, der Grundpreis fällt unabhängig davon an; entscheidend sind die erwarteten Jahreskosten."
     },
     {
-      question: "Muss beim Gasanbieterwechsel der Zähler getauscht werden?",
-      answer: "In der Regel nicht. Leitungen und Zähler bleiben normalerweise bestehen. Zum Wechseltermin kann jedoch ein aktueller Zählerstand erforderlich sein."
+      question: i18n.language === "en" ? "Muss beim gas providerwechsel der Zähler getauscht werden?" : "Muss beim Gasanbieterwechsel der Zähler getauscht werden?",
+      answer: i18n.language === "en" ? "In der Regel nicht. Leitungen und Zähler bleiben normalerweise bestehen. Zum switching date kann jedoch ein aktueller meter reading erforderlich sein." : "In der Regel nicht. Leitungen und Zähler bleiben normalerweise bestehen. Zum Wechseltermin kann jedoch ein aktueller Zählerstand erforderlich sein."
     },
     {
-      question: "Ist die Gasversorgung während eines Wechsels gesichert?",
-      answer: "Ein regulärer Wechsel ändert den Liefervertrag, nicht das vorhandene Netz. Die gesetzlich geregelte Grund- oder Ersatzversorgung sichert die Belieferung ab."
+      question: i18n.language === "en" ? "Is the gas supply secured during a switch?" : "Ist die Gasversorgung während eines Wechsels gesichert?",
+      answer: i18n.language === "en" ? "Ein regulärer Wechsel ändert den supply contract, nicht das vorhandene Netz. Die gesetzlich geregelte Grund- oder replacement supply sichert die Belieferung ab." : "Ein regulärer Wechsel ändert den Liefervertrag, nicht das vorhandene Netz. Die gesetzlich geregelte Grund- oder Ersatzversorgung sichert die Belieferung ab."
     },
     {
-      question: "Übernimmt der neue Anbieter die Kündigung?",
-      answer: "Im Normalfall ja, wenn er entsprechend bevollmächtigt wird. Sonderkündigungen, Umzüge und sehr kurze Fristen sollten separat abgestimmt werden."
+      question: i18n.language === "en" ? "Übernimmt der neue Anbieter die cancellation?" : "Übernimmt der neue Anbieter die Kündigung?",
+      answer: i18n.language === "en" ? "Im Normalfall ja, wenn er entsprechend bevollmächtigt wird. special cancellations, Umzüge und sehr kurze Fristen sollten separat abgestimmt werden." : "Im Normalfall ja, wenn er entsprechend bevollmächtigt wird. Sonderkündigungen, Umzüge und sehr kurze Fristen sollten separat abgestimmt werden."
     },
     {
-      question: "Warum sollte ich Bonus und Folgejahr getrennt betrachten?",
-      answer: "Ein einmaliger Bonus kann das erste Jahr rechnerisch günstiger machen. Für die weitere Vertragsdauer sind die laufenden Preise und Bedingungen ohne Einmalvorteil entscheidend."
+      question: i18n.language === "en" ? "Why should I consider bonus and following year separately?" : "Warum sollte ich Bonus und Folgejahr getrennt betrachten?",
+      answer: i18n.language === "en" ? "Ein einmaliger Bonus kann das erste Jahr rechnerisch günstiger machen. Für die weitere contract duration sind die laufenden Preise und Bedingungen ohne Einmalvorteil entscheidend." : "Ein einmaliger Bonus kann das erste Jahr rechnerisch günstiger machen. Für die weitere Vertragsdauer sind die laufenden Preise und Bedingungen ohne Einmalvorteil entscheidend."
     }
   ];
 
@@ -98,7 +98,7 @@ export default function GasanbieterWürselen() {
       <SEO 
         url="/gasanbieter-wuerselen" 
         title={i18n.language === 'en' ? 'Compare Gas Providers Würselen | Energie Alemi' : 'Gasanbieter Würselen vergleichen | Energie Alemi'}
-        description="Gastarife in Würselen vergleichen: Jahreskosten, Preisgarantie und Laufzeit auswerten. Kostenlose Tarifberatung für Privat- und Gewerbekunden."
+        description={i18n.language === "en" ? "gas tariffs in Würselen vergleichen: annual costs, price guarantee und Laufzeit auswerten. Free tariff advice für Privat- und business customers." : "Gastarife in Würselen vergleichen: Jahreskosten, Preisgarantie und Laufzeit auswerten. Kostenlose Tarifberatung für Privat- und Gewerbekunden."}
         image={gasHeroDesk} 
         faqs={faqs} 
       />
@@ -117,8 +117,8 @@ export default function GasanbieterWürselen() {
           }}
           bulletPoints={[
             { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
-            { icon: <MapPin size={24} />, title: "Verbrauch und Gebäude berücksichtigen" },
-            { icon: <Handshake size={24} />, title: "Vertragsdetails transparent prüfen" },
+            { icon: <MapPin size={24} />, title: i18n.language === "en" ? "Consider consumption and building" : "Verbrauch und Gebäude berücksichtigen" },
+            { icon: <Handshake size={24} />, title: i18n.language === "en" ? "contract details transparent prüfen" : "Vertragsdetails transparent prüfen" },
           ]}
           accentColor="bg-amber-500 hover:bg-amber-600"
         />
@@ -128,10 +128,10 @@ export default function GasanbieterWürselen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Zuerst klären, wer den Gasvertrag abgeschlossen hat</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            Nicht jeder Haushalt kann den Gasanbieter selbst wechseln. In einem Gebäude mit zentraler Heizungsanlage wird der Liefervertrag häufig von der Vermietung oder Hausverwaltung geführt. Ein eigener Tarifwechsel kommt nur infrage, wenn Sie selbst Vertragspartner für die Gaslieferung sind.
+            {i18n.language === "en" ? "Nicht jeder Haushalt kann den gas provider selbst wechseln. In einem Gebäude mit zentraler heating system wird der supply contract häufig von der landlord oder property management geführt. Ein eigener Tarifwechsel kommt nur infrage, wenn Sie selbst Vertragspartner für die Gaslieferung sind." : "Nicht jeder Haushalt kann den Gasanbieter selbst wechseln. In einem Gebäude mit zentraler Heizungsanlage wird der Liefervertrag häufig von der Vermietung oder Hausverwaltung geführt. Ein eigener Tarifwechsel kommt nur infrage, wenn Sie selbst Vertragspartner für die Gaslieferung sind."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            Ist ein eigener Vertrag vorhanden, bilden Jahresverbrauch, Lieferadresse und bestehende Konditionen die Vergleichsbasis. Energie Alemi berät Kundinnen und Kunden aus Würselen-Mitte, Kohlscheid und Merkstein telefonisch oder persönlich am Standort in Aachen.
+            {i18n.language === "en" ? "Ist ein eigener Vertrag vorhanden, bilden annual consumption, delivery address und bestehende Konditionen die Vergleichsbasis. Energie Alemi berät customers aus Würselen-Mitte, Bardenberg und Broichweiden by phone oder personally am Standort in Aachen." : "Ist ein eigener Vertrag vorhanden, bilden Jahresverbrauch, Lieferadresse und bestehende Konditionen die Vergleichsbasis. Energie Alemi berät Kundinnen und Kunden aus Würselen-Mitte, Bardenberg und Broichweiden telefonisch oder persönlich am Standort in Aachen."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Arbeitspreis und Grundpreis wirken je nach Verbrauch unterschiedlich. Deshalb werden nicht nur einzelne Preisangaben, sondern die erwarteten Gesamtkosten für zwölf Monate verglichen. Bei wechselndem Verbrauch sollte zusätzlich geprüft werden, wie belastbar die zugrunde gelegte Prognose ist. Erfahren Sie mehr über unsere Leistungen als <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
@@ -164,17 +164,17 @@ export default function GasanbieterWürselen() {
                   <SectionHeader 
                     title={
                       <>
-                        So läuft der <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Gasvergleich</span> in vier klaren Schritten
+                        {i18n.language === "en" ? "This is how the " : "So läuft der "}<span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === "en" ? "gas comparison" : "Gasvergleich"}</span>{i18n.language === "en" ? " works in four clear steps" : " in vier klaren Schritten"}
                       </>
                     }
-                    subtitle="Eine Preisgarantie kann Planungssicherheit geben, erfasst aber nicht automatisch jeden Preisbestandteil. Dauer, Umfang und mögliche Ausnahmen müssen daher im jeweiligen Angebot gelesen werden."
+                    subtitle={i18n.language === "en" ? "Eine price guarantee kann planning security geben, erfasst aber nicht automatisch jeden price component. Dauer, Umfang und mögliche Ausnahmen müssen daher im jeweiligen Angebot gelesen werden." : "Eine Preisgarantie kann Planungssicherheit geben, erfasst aber nicht automatisch jeden Preisbestandteil. Dauer, Umfang und mögliche Ausnahmen müssen daher im jeweiligen Angebot gelesen werden."}
                     align="left"
                     className="mb-8"
                   />
                   <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800">
                     <h3 className="font-semibold text-slate-900 dark:text-white mb-4">Preisgarantie und Flexibilität gemeinsam bewerten</h3>
                     <p className="text-slate-600 dark:text-slate-400">
-                      Dauer, Umfang und mögliche Ausnahmen müssen im jeweiligen Angebot gelesen werden, damit die Preisgarantie die gewünschte Sicherheit bietet.
+                      {i18n.language === "en" ? "Dauer, Umfang und mögliche Ausnahmen müssen im jeweiligen Angebot gelesen werden, damit die price guarantee die gewünschte Sicherheit bietet." : "Dauer, Umfang und mögliche Ausnahmen müssen im jeweiligen Angebot gelesen werden, damit die Preisgarantie die gewünschte Sicherheit bietet."}
                     </p>
                   </div>
                 </div>
@@ -197,11 +197,11 @@ export default function GasanbieterWürselen() {
           />
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: "Jahresabrechnung", desc: "Sie enthält Verbrauch, Abrechnungszeitraum und häufig die wichtigsten Vertragsdaten." },
-              { title: "Lieferadresse", desc: "Sie ist für die konkrete Tarifauswahl erforderlich." },
-              { title: "Zählerdaten", desc: "Zählernummer und aktueller Stand können für die Abwicklung benötigt werden." },
-              { title: "Vertragsstatus", desc: "Laufzeit, Kündigungsfrist und bisheriger Anbieter bestimmen den möglichen Starttermin." },
-              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: "Abschläge, Vorkasse und mögliche Kautionen sollten vor dem Abschluss klar sein." }
+              { title: "Jahresabrechnung", desc: i18n.language === "en" ? "Sie enthält Verbrauch, Abrechnungszeitraum und häufig die wichtigsten contract data." : "Sie enthält Verbrauch, Abrechnungszeitraum und häufig die wichtigsten Vertragsdaten." },
+              { title: "Lieferadresse", desc: i18n.language === "en" ? "It is required for the specific tariff selection." : "Sie ist für die konkrete Tarifauswahl erforderlich." },
+              { title: i18n.language === "en" ? "meter data" : "Zählerdaten", desc: i18n.language === "en" ? "meter number und aktueller Stand können für die Abwicklung benötigt werden." : "Zählernummer und aktueller Stand können für die Abwicklung benötigt werden." },
+              { title: "Vertragsstatus", desc: i18n.language === "en" ? "Laufzeit, cancellation period und bisheriger Anbieter bestimmen den möglichen Starttermin." : "Laufzeit, Kündigungsfrist und bisheriger Anbieter bestimmen den möglichen Starttermin." },
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Abschläge, advance payment und mögliche Kautionen sollten vor dem Abschluss klar sein." : "Abschläge, Vorkasse und mögliche Kautionen sollten vor dem Abschluss klar sein." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -224,7 +224,7 @@ export default function GasanbieterWürselen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">Gasberatung für Würselen – persönlich aus Aachen</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Energie Alemi vergleicht Gastarife für Kundinnen und Kunden aus Würselen und erklärt die relevanten Unterschiede ohne pauschale Sparversprechen. Die Beratung ist telefonisch oder persönlich am Alexianergraben 9 in 52064 Aachen möglich.
+            {i18n.language === "en" ? "Energie Alemi vergleicht gas tariffs für customers aus Würselen und erklärt die relevanten Unterschiede ohne pauschale Sparversprechen. Die Beratung ist by phone oder personally am Alexianergraben 9 in 52064 Aachen möglich." : "Energie Alemi vergleicht Gastarife für Kundinnen und Kunden aus Würselen und erklärt die relevanten Unterschiede ohne pauschale Sparversprechen. Die Beratung ist telefonisch oder persönlich am Alexianergraben 9 in 52064 Aachen möglich."}
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
