@@ -93,6 +93,7 @@ export default function ContactForm() {
         service_category: _data.serviceType,
         page_path: window.location.pathname
       });
+      window.gtag?.('event', 'form_submit', { page_path: window.location.pathname });
 
       setHasStartedForm(false);
       reset();
@@ -257,7 +258,7 @@ export default function ContactForm() {
 
         {/* Anti-Spam Honeypot Field */}
         <div className="absolute opacity-0 pointer-events-none -z-50 w-0 h-0 overflow-hidden">
-          <label htmlFor="website">Dieses Feld leer lassen</label>
+          <label htmlFor="website">{i18n.language === 'en' ? 'Leave this field blank' : 'Dieses Feld leer lassen'}</label>
           <input
             id="website"
             type="text"

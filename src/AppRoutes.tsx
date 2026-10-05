@@ -63,10 +63,30 @@ export default function AppRoutes() {
     }
   }, [i18n, i18n.language]);
 
-  // Track SPA page views
+  // Track SPA page views and global clicks
   const location = useLocation();
   useEffect(() => {
     trackPageView(location.pathname);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const link = target.closest('a');
+      if (!link) return;
+
+      const href = link.getAttribute('href') || '';
+      if (href.includes('wa.me')) {
+        window.gtag?.('event', 'whatsapp_click', { page_path: location.pathname });
+      } else if (href.startsWith('tel:')) {
+        window.gtag?.('event', 'phone_click', { page_path: location.pathname });
+      } else if (href.includes('google.com/maps') || href.includes('maps.google.com') || href.includes('maps.app.goo.gl')) {
+        window.gtag?.('event', 'maps_click', { page_path: location.pathname });
+      }
+    };
+
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
   }, [location.pathname]);
 
   return (
