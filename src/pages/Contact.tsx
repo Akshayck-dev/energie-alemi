@@ -83,7 +83,7 @@ export default function Contact() {
                     <ArrowRight size={18} strokeWidth={2} className={cn("ltr:ml-1 rtl:mr-1 transition-transform", i18n.dir() === 'rtl' ? "group-hover:-translate-x-1 rotate-180" : "group-hover:translate-x-1")} />
                   </a>
                   <a 
-                    href="mailto:info@energie-alemi.de" 
+                    href="mailto:webloveyfreelance@gmail.com" 
                     onClick={() => trackEvent('email_click', { cta_location: 'contact_page_cta', page_path: window.location.pathname })}
                     className="text-[#0047AB] dark:text-[#60a5fa] font-bold text-[15px] hover:text-[#003380] dark:hover:text-white transition-colors border-b-2 border-[#0047AB]/30 dark:border-[#60a5fa]/30 hover:border-[#0047AB] dark:hover:border-[#60a5fa] pb-1"
                   >
@@ -165,7 +165,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-slate-500 dark:text-white/60 text-[11px] md:text-[11.5px] font-bold uppercase tracking-[0.08em] mb-[3px] md:mb-1">{t('contact.lbl_email')}</p>
-                      <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">info@energie-alemi.de</p>
+                      <p className="font-semibold text-[15px] md:text-[16px] leading-[1.4]">webloveyfreelance@gmail.com</p>
                     </div>
                   </div>
                   

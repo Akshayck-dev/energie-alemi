@@ -98,7 +98,7 @@ export default function SEO({ title, description, url, image, isArticle, datePub
     "image": `${baseUrl}/about-hero-image.webp`,
             "description": "Consultant for energy and telecommunications tariffs in Aachen and all of Germany.",
     "telephone": "+4917665949390",
-    "email": "info@energie-alemi.de",
+    "email": "webloveyfreelance@gmail.com",
     "priceRange": "Kostenlose Beratung",
     "address": {
       "@type": "PostalAddress",
@@ -124,7 +124,7 @@ export default function SEO({ title, description, url, image, isArticle, datePub
     "url": `${baseUrl}/`,
     "logo": `${baseUrl}/favicon.webp`,
     "telephone": "+49 176 65949390",
-    "email": "info@energie-alemi.de",
+    "email": "webloveyfreelance@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Alexianergraben 9",

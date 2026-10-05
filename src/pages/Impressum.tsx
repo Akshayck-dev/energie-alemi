@@ -22,7 +22,7 @@ export default function Impressum() {
             <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Kontakt</h2>
             <p className="leading-relaxed">
               Telefon: +49 176 65949390<br />
-              E-Mail: info@energie-alemi.de<br />
+              E-Mail: webloveyfreelance@gmail.com<br />
             </p>
           </section>
 

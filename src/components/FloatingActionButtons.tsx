@@ -5,7 +5,7 @@ import { trackEvent } from '../lib/analytics';
 export default function FloatingActionButtons() {
   const { t } = useTranslation();
   const whatsappUrl = "https://wa.me/4917665949390";
-  const mailUrl = "mailto:info@energie-alemi.de?subject=Anfrage&body=Hallo%20Energie%20Alemi,%0A%0AIch%20interessiere%20mich%20f%C3%BCr%20Ihre%20Dienstleistungen.";
+  const mailUrl = "mailto:webloveyfreelance@gmail.com?subject=Anfrage&body=Hallo%20Energie%20Alemi,%0A%0AIch%20interessiere%20mich%20f%C3%BCr%20Ihre%20Dienstleistungen.";
   const phoneUrl = "tel:+4917665949390";
 
   return (
@@ -28,7 +28,7 @@ export default function FloatingActionButtons() {
               {t('fab.email_tooltip', 'E-MAIL SENDEN')}
             </span>
             <span className="text-slate-800 dark:text-white text-xs font-bold tracking-tight">
-              info@energie-alemi.de
+              webloveyfreelance@gmail.com
             </span>
             <div className="absolute right-[-5px] top-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-white dark:bg-[#0a1628] border-r border-t border-slate-150 dark:border-white/10 rotate-45 z-10" />
           </div>

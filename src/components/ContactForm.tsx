@@ -142,12 +142,12 @@ export default function ContactForm() {
           <span>0176 659 493 90</span>
         </a>
         <a 
-          href="mailto:info@energie-alemi.de" 
+          href="mailto:webloveyfreelance@gmail.com" 
           onClick={() => trackEvent('email_click', { cta_location: 'contact_form_info', page_path: window.location.pathname })}
           className="flex items-center gap-2 hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors font-medium"
         >
           <Mail size={16} className="text-[#f0a83f]" />
-          <span>info@energie-alemi.de</span>
+          <span>webloveyfreelance@gmail.com</span>
         </a>
         <div className="flex items-center gap-2 font-medium">
           <MapPin size={16} className="text-[#f0a83f]" />

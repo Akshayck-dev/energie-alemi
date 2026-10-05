@@ -56,11 +56,11 @@ export default function Footer() {
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 text-slate-600 dark:text-white/80">
                 <Mail size={20} className="md:mt-0.5 text-[#0047AB] dark:text-[#f0a83f]" />
                 <a 
-                  href="mailto:info@energie-alemi.de" 
+                  href="mailto:webloveyfreelance@gmail.com" 
                   onClick={() => trackEvent('email_click', { cta_location: 'footer', page_path: window.location.pathname })}
                   className="hover:text-[#0047AB] dark:hover:text-[#f0a83f] transition-colors"
                 >
-                  info@energie-alemi.de
+                  webloveyfreelance@gmail.com
                 </a>
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3 text-slate-600 dark:text-white/80">
