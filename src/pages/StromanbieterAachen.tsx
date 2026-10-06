@@ -137,6 +137,13 @@ export default function StromanbieterAachen() {
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             {i18n.language === 'en' ? 'By the way: We not only advise you on electricity, but also support you as a' : 'Übrigens: Wir beraten Sie nicht nur zu Strom, sondern unterstützen Sie als'} <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'gas provider' : 'Gasanbieter'}</Link> {i18n.language === "en" ? "and" : "und"} <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'internet provider in Aachen' : 'Internetanbieter in Aachen'}</Link> {i18n.language === 'en' ? 'also with joint contract optimization.' : 'auch bei der gemeinsamen Vertragsoptimierung.'}
           </p>
+          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
+            {i18n.language === 'en' ? 'As your independent ' : 'Als Ihr unabhängiger '}
+            <Link to="/ratgeber/energieberater-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">
+              {i18n.language === 'en' ? 'energy consultant in Aachen' : 'Energieberater in Aachen'}
+            </Link>
+            {i18n.language === 'en' ? ', we will also help you find the right tariff for your specific needs.' : ', helfen wir Ihnen, den passenden Tarif für Ihren Bedarf zu finden.'}
+          </p>
         </div>
         
         <div className="container mx-auto px-6 mb-12">
@@ -160,7 +167,7 @@ export default function StromanbieterAachen() {
                   <SectionHeader 
                     title={
                       <>
-                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'electricity provider switch' : 'Stromanbieterwechsel'}</span> in vier Schritten
+                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'electricity provider switch' : 'Stromanbieterwechsel'}</span>{i18n.language === 'en' ? ' in four steps' : ' in vier Schritten'}
                       </>
                     }
                     subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new electricity tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Stromtarif.'}

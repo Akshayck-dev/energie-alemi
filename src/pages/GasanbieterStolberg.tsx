@@ -21,61 +21,61 @@ export default function GasanbieterStolberg() {
     {
       number: 1,
       icon: <ClipboardList size={24} />,
-      title: "Rechnung und Vertrag ansehen",
-      description: "Halten Sie Jahresverbrauch, Lieferadresse, Zählernummer, bisherigen Anbieter und aktuelle Vertragsdaten bereit."
+      title: i18n.language === "en" ? "Review bill and contract" : "Rechnung und Vertrag ansehen",
+      description: i18n.language === "en" ? "Halten Sie annual consumption, delivery address, meter number, bisherigen Anbieter und aktuelle contract data bereit." : "Halten Sie Jahresverbrauch, Lieferadresse, Zählernummer, bisherigen Anbieter und aktuelle Vertragsdaten bereit."
     },
     {
       number: 2,
       icon: <BarChart3 size={24} />,
-      title: "Tarife und Bedingungen vergleichen",
-      description: "Wir prüfen Jahreskosten, Laufzeit, Kündigungsfrist, Preisgarantie, Zahlungsweise und Bonusregeln."
+      title: i18n.language === "en" ? "Compare tariffs and conditions" : "Tarife und Bedingungen vergleichen",
+      description: i18n.language === "en" ? "Wir prüfen annual costs, Laufzeit, cancellation period, price guarantee, payment method und Bonusregeln." : "Wir prüfen Jahreskosten, Laufzeit, Kündigungsfrist, Preisgarantie, Zahlungsweise und Bonusregeln."
     },
     {
       number: 3,
       icon: <CheckSquare size={24} />,
-      title: "Geeignetes Angebot auswählen",
-      description: "Sie erhalten die relevanten Informationen und entscheiden, welcher Tarif zu Ihrer Situation passt."
+      title: i18n.language === "en" ? "Select suitable offer" : "Geeignetes Angebot auswählen",
+      description: i18n.language === "en" ? "You receive the relevant information and decide which tariff suits your situation." : "Sie erhalten die relevanten Informationen und entscheiden, welcher Tarif zu Ihrer Situation passt."
     },
     {
       number: 4,
       icon: <Handshake size={24} />,
       title: i18n.language === 'en' ? 'Get support with switching' : 'Wechsel begleiten lassen',
-      description: "Auf Wunsch unterstützen wir die notwendigen Schritte und bleiben bei Rückfragen erreichbar."
+      description: i18n.language === "en" ? "If you wish, we support the necessary steps and remain available for questions." : "Auf Wunsch unterstützen wir die notwendigen Schritte und bleiben bei Rückfragen erreichbar."
     }
   ];
 
   const faqs = [
     {
-      question: "Ist die Gasberatung für Kundinnen und Kunden aus Stolberg kostenlos?",
-      answer: "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Bringen Sie für einen konkreten Vergleich am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
+      question: i18n.language === "en" ? "Ist die gas consultation für customers aus Stolberg free of charge?" : "Ist die Gasberatung für Kundinnen und Kunden aus Stolberg kostenlos?",
+      answer: i18n.language === "en" ? "Ja. Energie Alemi bietet die tariff advice free of charge an. Bringen Sie für einen konkreten Vergleich am besten Ihre letzte gas bill und die aktuellen contract data mit." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Bringen Sie für einen konkreten Vergleich am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
     },
     {
       question: i18n.language === "en" ? "Can every household in Stolberg switch gas providers?" : "Kann jeder Haushalt in Stolberg den Gasanbieter wechseln?",
-      answer: "Ein Wechsel ist möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind und an Ihrer Adresse ein Gasanschluss genutzt wird. Bei einer Zentralheizung schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
+      answer: i18n.language === "en" ? "Ein Wechsel ist möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind und an Ihrer Adresse ein gas connection genutzt wird. Bei einer central heating schließt häufig die landlord oder property management den Vertrag ab." : "Ein Wechsel ist möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind und an Ihrer Adresse ein Gasanschluss genutzt wird. Bei einer Zentralheizung schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
     },
     {
       question: "Wird die Gasversorgung beim Anbieterwechsel unterbrochen?",
-      answer: "Ein regulärer Anbieterwechsel ändert den Liefervertrag, nicht die vorhandenen Leitungen. Netz und Zähler bleiben in der Regel unverändert; die Energieversorgung bleibt gesetzlich abgesichert."
+      answer: i18n.language === "en" ? "Ein regulärer provider switch ändert den supply contract, nicht die vorhandenen Leitungen. Netz und Zähler bleiben in der Regel unverändert; die Energieversorgung bleibt gesetzlich abgesichert." : "Ein regulärer Anbieterwechsel ändert den Liefervertrag, nicht die vorhandenen Leitungen. Netz und Zähler bleiben in der Regel unverändert; die Energieversorgung bleibt gesetzlich abgesichert."
     },
     {
-      question: "Muss der Gaszähler beim Wechsel ausgetauscht werden?",
-      answer: "Normalerweise nicht. Zum Wechseltermin kann jedoch ein aktueller Zählerstand benötigt werden."
+      question: i18n.language === "en" ? "Does the gas meter need to be replaced when switching?" : "Muss der Gaszähler beim Wechsel ausgetauscht werden?",
+      answer: i18n.language === "en" ? "Normalerweise nicht. Zum switching date kann jedoch ein aktueller meter reading benötigt werden." : "Normalerweise nicht. Zum Wechseltermin kann jedoch ein aktueller Zählerstand benötigt werden."
     },
     {
-      question: "Welche Angaben brauche ich für einen Gasvergleich?",
-      answer: "Hilfreich sind Lieferadresse, Jahresverbrauch in Kilowattstunden, letzte Gasrechnung, aktueller Anbieter und Tarif, Zählernummer, Kundennummer sowie Laufzeit und Kündigungsfrist."
+      question: i18n.language === "en" ? "Welche Angaben brauche ich für einen gas comparison?" : "Welche Angaben brauche ich für einen Gasvergleich?",
+      answer: i18n.language === "en" ? "Hilfreich sind delivery address, annual consumption in kilowatt hours, letzte gas bill, aktueller Anbieter und Tarif, meter number, customer number sowie Laufzeit und cancellation period." : "Hilfreich sind Lieferadresse, Jahresverbrauch in Kilowattstunden, letzte Gasrechnung, aktueller Anbieter und Tarif, Zählernummer, Kundennummer sowie Laufzeit und Kündigungsfrist."
     },
     {
-      question: "Was ist der Unterschied zwischen Arbeitspreis und Grundpreis?",
-      answer: "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt unabhängig vom Verbrauch als fester Betrag an. Für den Vergleich zählen die erwarteten Jahreskosten aus beiden Bestandteilen."
+      question: i18n.language === "en" ? "Was ist der Unterschied zwischen energy price und basic price?" : "Was ist der Unterschied zwischen Arbeitspreis und Grundpreis?",
+      answer: i18n.language === "en" ? "Der energy price wird je verbrauchter Kilowattstunde berechnet. Der basic price fällt unabhängig vom Verbrauch als fester Betrag an. Für den Vergleich zählen die erwarteten annual costs aus beiden Bestandteilen." : "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt unabhängig vom Verbrauch als fester Betrag an. Für den Vergleich zählen die erwarteten Jahreskosten aus beiden Bestandteilen."
     },
     {
       question: i18n.language === 'en' ? 'Do I have to cancel my old gas contract myself?' : 'Muss ich meinen alten Gasvertrag selbst kündigen?',
-      answer: "Im Normalfall übernimmt der neue Lieferant die Kündigung nach entsprechender Bevollmächtigung. Bei Sonderkündigungen, Umzügen oder knappen Fristen sollte das Vorgehen vorab geklärt werden."
+      answer: i18n.language === "en" ? "Im Normalfall übernimmt der neue Lieferant die cancellation nach entsprechender Bevollmächtigung. Bei special cancellations, Umzügen oder knappen Fristen sollte das Vorgehen vorab geklärt werden." : "Im Normalfall übernimmt der neue Lieferant die Kündigung nach entsprechender Bevollmächtigung. Bei Sonderkündigungen, Umzügen oder knappen Fristen sollte das Vorgehen vorab geklärt werden."
     },
     {
       question: "Was bedeutet eine Preisgarantie beim Gastarif?",
-      answer: "Eine Preisgarantie begrenzt Preisänderungen für einen festgelegten Zeitraum. Je nach Tarif können einzelne Preisbestandteile ausgenommen sein; deshalb sollten Dauer und Umfang vor dem Abschluss geprüft werden."
+      answer: i18n.language === "en" ? "Eine price guarantee begrenzt Preisänderungen für einen festgelegten Zeitraum. Je nach Tarif können einzelne price components ausgenommen sein; deshalb sollten Dauer und Umfang vor dem Abschluss geprüft werden." : "Eine Preisgarantie begrenzt Preisänderungen für einen festgelegten Zeitraum. Je nach Tarif können einzelne Preisbestandteile ausgenommen sein; deshalb sollten Dauer und Umfang vor dem Abschluss geprüft werden."
     }
   ];
 
@@ -103,8 +103,8 @@ export default function GasanbieterStolberg() {
           }}
           bulletPoints={[
             { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
-            { icon: <Search size={24} />, title: "Vergleich nach Verbrauch und Gebäudesituation" },
-            { icon: <Handshake size={24} />, title: "Unterstützung beim Wechsel" },
+            { icon: <Search size={24} />, title: i18n.language === "en" ? "Comparison by consumption and building situation" : "Vergleich nach Verbrauch und Gebäudesituation" },
+            { icon: <Handshake size={24} />, title: i18n.language === "en" ? "Support with switching" : "Unterstützung beim Wechsel" },
           ]}
           accentColor="bg-amber-500 hover:bg-amber-600"
         />
@@ -114,10 +114,10 @@ export default function GasanbieterStolberg() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Ein sinnvoller Gasvergleich beginnt mit Ihrer tatsächlichen Ausgangslage</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            Beim Gastarif zählt nicht nur der Preis pro Kilowattstunde. Für einen fairen Vergleich werden Arbeitspreis und Grundpreis auf Ihren Jahresverbrauch bezogen. Zusätzlich sollten Laufzeit, Kündigungsfrist, Zahlungsweise, Preisgarantie und mögliche Bonusbedingungen gemeinsam bewertet werden.
+            {i18n.language === "en" ? "Beim gas tariff zählt nicht nur der Preis pro Kilowattstunde. Für einen fairen Vergleich werden energy price und basic price auf Ihren annual consumption bezogen. Zusätzlich sollten Laufzeit, cancellation period, payment method, price guarantee und mögliche bonus conditions gemeinsam bewertet werden." : "Beim Gastarif zählt nicht nur der Preis pro Kilowattstunde. Für einen fairen Vergleich werden Arbeitspreis und Grundpreis auf Ihren Jahresverbrauch bezogen. Zusätzlich sollten Laufzeit, Kündigungsfrist, Zahlungsweise, Preisgarantie und mögliche Bonusbedingungen gemeinsam bewertet werden."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            Auch die Wohn- oder Gebäudesituation ist wichtig: Wer in einem Mietshaus mit Zentralheizung lebt, schließt den Gasvertrag häufig nicht selbst ab. Ein eigener Anbieterwechsel ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind.
+            {i18n.language === "en" ? "Auch die Wohn- oder Gebäudesituation ist wichtig: Wer in einem rental building mit central heating lebt, schließt den Gasvertrag häufig nicht selbst ab. Ein eigener provider switch ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind." : "Auch die Wohn- oder Gebäudesituation ist wichtig: Wer in einem Mietshaus mit Zentralheizung lebt, schließt den Gasvertrag häufig nicht selbst ab. Ein eigener Anbieterwechsel ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Energie Alemi prüft Ihre letzte Gasrechnung und erklärt die verfügbaren Optionen verständlich. Die Beratung ist für Privatpersonen, Gewerbe und Industrie aus Stolberg gedacht – vom Kernstadtbereich bis zu Stadtteilen wie Breinig, Mausbach, Gressenich, Vicht und Zweifall. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
@@ -127,7 +127,7 @@ export default function GasanbieterStolberg() {
         <div className="container mx-auto px-6 max-w-4xl mt-8 bg-slate-50 dark:bg-[#122340] rounded-3xl p-8 border border-slate-100 dark:border-slate-800">
           <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Gasverträge ohne Lockpreis-Falle vergleichen</h2>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
-            Ein hoher Neukundenbonus kann ein Angebot im ersten Jahr attraktiv wirken lassen, sagt aber wenig über die laufenden Kosten danach aus. Deshalb betrachten wir die voraussichtlichen Jahreskosten und die Konditionen für die gesamte relevante Vertragsdauer.
+            {i18n.language === "en" ? "Ein hoher new customer bonus kann ein Angebot im ersten Jahr attraktiv wirken lassen, sagt aber wenig über die laufenden Kosten danach aus. Deshalb betrachten wir die projected annual costs und die Konditionen für die gesamte relevante contract duration." : "Ein hoher Neukundenbonus kann ein Angebot im ersten Jahr attraktiv wirken lassen, sagt aber wenig über die laufenden Kosten danach aus. Deshalb betrachten wir die voraussichtlichen Jahreskosten und die Konditionen für die gesamte relevante Vertragsdauer."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
             Bei gewerblich genutzten Immobilien oder höherem Verbrauch gewinnen Planungssicherheit und verlässliche Vertragsbedingungen zusätzlich an Bedeutung. Hier wird der Vergleich an den konkreten Bedarf angepasst. Bei einer gemeinsamen Vertragsoptimierung helfen wir Ihnen natürlich auch dabei, einen passenden <Link to="/internetanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Stolberg' : 'Internetanbieter in Stolberg'}</Link> {i18n.language === "en" ? "." : "zu finden."}
@@ -145,12 +145,12 @@ export default function GasanbieterStolberg() {
           />
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
-              { title: "Jahresverbrauch", desc: "Die letzte Abrechnung liefert die beste Grundlage für eine realistische Berechnung." },
-              { title: "Arbeitspreis und Grundpreis", desc: "Beide Bestandteile bestimmen zusammen die voraussichtlichen Gesamtkosten." },
-              { title: "Laufzeit und Kündigungsfrist", desc: "Prüfen, wann der bestehende Vertrag endet und wie flexibel der neue Vertrag bleibt." },
-              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: "Dauer und ausgeschlossene Preisbestandteile genau lesen." },
-              { title: "Bonusregeln", desc: "Voraussetzungen und Auszahlungstermin prüfen; das zweite Vertragsjahr separat betrachten." },
-              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: "Tarife mit Vorkasse oder hohen Vorauszahlungen besonders kritisch einordnen." }
+              { title: "Jahresverbrauch", desc: i18n.language === "en" ? "The last statement provides the best basis for a realistic calculation." : "Die letzte Abrechnung liefert die beste Grundlage für eine realistische Berechnung." },
+              { title: i18n.language === "en" ? "energy price und basic price" : "Arbeitspreis und Grundpreis", desc: "Beide Bestandteile bestimmen zusammen die voraussichtlichen Gesamtkosten." },
+              { title: i18n.language === "en" ? "Laufzeit und cancellation period" : "Laufzeit und Kündigungsfrist", desc: i18n.language === "en" ? "Check when the existing contract ends and how flexible the new contract remains." : "Prüfen, wann der bestehende Vertrag endet und wie flexibel der neue Vertrag bleibt." },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === "en" ? "Dauer und ausgeschlossene price components genau lesen." : "Dauer und ausgeschlossene Preisbestandteile genau lesen." },
+              { title: "Bonusregeln", desc: i18n.language === "en" ? "Check requirements and payout date; consider the second contract year separately." : "Voraussetzungen und Auszahlungstermin prüfen; das zweite Vertragsjahr separat betrachten." },
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Tarife mit advance payment oder hohen advance payments besonders kritisch einordnen." : "Tarife mit Vorkasse oder hohen Vorauszahlungen besonders kritisch einordnen." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-white dark:bg-[#122340] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -203,7 +203,7 @@ export default function GasanbieterStolberg() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">Persönliche Gasberatung für Stolberg – erreichbar in Aachen</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Ein Online-Rechner liefert viele Zahlen, aber nicht immer eine klare Entscheidung. Energie Alemi unterstützt Kundinnen und Kunden aus Stolberg telefonisch und am Standort Alexianergraben 9 in 52064 Aachen. Für den Termin genügt zunächst Ihre letzte Gasrechnung oder eine Übersicht zu Verbrauch und aktuellem Vertrag.
+            {i18n.language === "en" ? "Ein Online-Rechner liefert viele Zahlen, aber nicht immer eine klare Entscheidung. Energie Alemi unterstützt customers aus Stolberg by phone und am Standort Alexianergraben 9 in 52064 Aachen. Für den Termin genügt zunächst Ihre letzte gas bill oder eine Übersicht zu Verbrauch und aktuellem Vertrag." : "Ein Online-Rechner liefert viele Zahlen, aber nicht immer eine klare Entscheidung. Energie Alemi unterstützt Kundinnen und Kunden aus Stolberg telefonisch und am Standort Alexianergraben 9 in 52064 Aachen. Für den Termin genügt zunächst Ihre letzte Gasrechnung oder eine Übersicht zu Verbrauch und aktuellem Vertrag."}
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">

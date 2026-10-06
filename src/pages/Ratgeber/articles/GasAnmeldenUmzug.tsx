@@ -131,6 +131,7 @@ export default function GasAnmeldenUmzug() {
         <h3 className="text-xl font-bold mb-4">Further Information</h3>
         <ul className="flex flex-col gap-2">
           <li><Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Moving to Aachen Electricity Gas Internet</Link></li>
+          <li><Link to="/ratgeber/strom-anmelden-umzug" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Register Electricity when Moving</Link></li>
           <li><Link to="/ratgeber/gasanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Switching Gas Providers</Link></li>
           <li><Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Gas Providers Aachen</Link></li>
           <li><Link to="/contact" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Contact</Link></li>
@@ -216,6 +217,7 @@ export default function GasAnmeldenUmzug() {
         <h3 className="text-xl font-bold mb-4">Weitere Informationen</h3>
         <ul className="flex flex-col gap-2">
           <li><Link to="/ratgeber/umzug-aachen-strom-gas-internet" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Umzug Aachen Strom Gas Internet</Link></li>
+          <li><Link to="/ratgeber/strom-anmelden-umzug" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Strom anmelden beim Umzug</Link></li>
           <li><Link to="/ratgeber/gasanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Gasanbieter Wechseln</Link></li>
           <li><Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Gasanbieter Aachen</Link></li>
           <li><Link to="/contact" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Kontakt</Link></li>

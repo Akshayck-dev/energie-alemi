@@ -134,19 +134,36 @@ export default function SEO({ title, description, url, image, isArticle, datePub
     }
   });
 
-  if (url && url.match(/^\/(strom|gas|internet)anbieter-(.+)$/)) {
-    const match = url.match(/^\/(strom|gas|internet)anbieter-(.+)$/);
-    if (match) {
-      const serviceTypeRaw = match[1];
-      const serviceNames: Record<string, string> = {
-        'strom': 'Stromtarifvergleich & Wechselhilfe',
-        'gas': 'Gastarifvergleich & Wechselhilfe',
-        'internet': 'Internettarifvergleich & Wechselhilfe'
-      };
-      const serviceName = serviceNames[serviceTypeRaw];
-      let town = match[2].charAt(0).toUpperCase() + match[2].slice(1);
-      if (town === 'Wuerselen') town = 'Würselen';
-      
+  if (url === '/electricity' || url === '/gas' || url === '/internet' || (url && url.match(/^\/(strom|gas|internet)anbieter-(.+)$/))) {
+    let serviceName = '';
+    let areaType = 'City';
+    let areaName = 'Deutschland';
+    
+    if (url === '/electricity') {
+      serviceName = 'Stromtarifvergleich & Wechselhilfe';
+      areaType = 'Country';
+    } else if (url === '/gas') {
+      serviceName = 'Gastarifvergleich & Wechselhilfe';
+      areaType = 'Country';
+    } else if (url === '/internet') {
+      serviceName = 'Internettarifvergleich & Wechselhilfe';
+      areaType = 'Country';
+    } else {
+      const match = url.match(/^\/(strom|gas|internet)anbieter-(.+)$/);
+      if (match) {
+        const serviceTypeRaw = match[1];
+        const serviceNames: Record<string, string> = {
+          'strom': 'Stromtarifvergleich & Wechselhilfe',
+          'gas': 'Gastarifvergleich & Wechselhilfe',
+          'internet': 'Internettarifvergleich & Wechselhilfe'
+        };
+        serviceName = serviceNames[serviceTypeRaw];
+        areaName = match[2].charAt(0).toUpperCase() + match[2].slice(1);
+        if (areaName === 'Wuerselen') areaName = 'Würselen';
+      }
+    }
+
+    if (serviceName) {
       graph.push({
         "@type": "Service",
         "name": serviceName,
@@ -154,8 +171,8 @@ export default function SEO({ title, description, url, image, isArticle, datePub
           "@id": orgId
         },
         "areaServed": {
-          "@type": "City",
-          "name": town
+          "@type": areaType,
+          "name": areaName
         },
         "offers": {
           "@type": "Offer",

@@ -1,9 +1,12 @@
-import { Search, Zap, MapPin, Phone, Home as HomeIcon, CheckCircle2, Factory } from 'lucide-react';
+import re
+
+content = """import { Search, Zap, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon, CheckCircle2, Factory } from 'lucide-react';
 import { Link } from 'react-router';
 import { useState, lazy, Suspense } from 'react';
 import { trackEvent } from '../lib/analytics';
 import SEO from "../components/SEO";
 import elecHeroDesk from '../assets/electricity hero desk.webp';
+import Button from '../components/ui/Button';
 import SectionHeader from '../components/ui/SectionHeader';
 
 const CompareModal = lazy(() => import('../components/CompareModal'));
@@ -172,3 +175,7 @@ export default function StromanbieterWuerselen() {
     </div>
   );
 }
+"""
+
+with open("src/pages/StromanbieterWuerselen.tsx", "w") as f:
+    f.write(content)

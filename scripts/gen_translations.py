@@ -1,0 +1,302 @@
+#!/usr/bin/env python3
+"""
+Generate English translations for all 561 German strings.
+Uses a combination of:
+1. Exact translations for known phrases
+2. Pattern-based generation for common structures
+3. Word-level replacement for remaining strings
+"""
+import json, re
+
+with open('scripts/strings_to_translate.json') as f:
+    strings = json.load(f)
+
+# === EXACT TRANSLATIONS ===
+exact = {
+    "Tarife verständlich vergleichen": "Compare tariffs comprehensibly",
+    "Wir stellen Kosten und Vertragsbedingungen übersichtlich gegenüber.": "We compare costs and contract conditions clearly.",
+    "Persönlich vor Ort beraten": "Personal on-site advice",
+    "Passend zum Bedarf auswählen": "Select to match your needs",
+    "Verbrauch, Haushaltssituation und gewünschte Flexibilität fließen in die Auswahl ein.": "Consumption, household situation and desired flexibility are taken into account.",
+    "Wir unterstützen Sie von der Prüfung Ihrer Unterlagen bis zum neuen Liefervertrag.": "We support you from checking your documents to the new supply contract.",
+    "Verbrauch und Vertrag erfassen": "Record consumption and contract",
+    "Wir prüfen Ihre letzte Gasrechnung, den Jahresverbrauch, den aktuellen Tarif und die Vertragsfristen.": "We check your last gas bill, annual consumption, current tariff and contract deadlines.",
+    "Verfügbare Tarife vergleichen": "Compare available tariffs",
+    "Wir stellen passende Angebote für Ihre Lieferadresse in Aachen gegenüber und erklären Preis sowie Vertragsbedingungen.": "We compare suitable offers for your delivery address in Aachen and explain price and contract conditions.",
+    "Tarif auswählen und Wechsel beauftragen": "Select tariff and initiate switch",
+    "Sie entscheiden in Ruhe. Anschließend wird der Lieferantenwechsel mit den erforderlichen Angaben angestoßen.": "You decide at your own pace. Then the supplier switch is initiated with the required information.",
+    "Bestätigung prüfen und weiter begleiten": "Check confirmation and continue support",
+    "Wir achten auf Lieferbeginn, Abschlag und Vertragsbestätigung und bleiben bei Rückfragen erreichbar.": "We pay attention to delivery start, installment and contract confirmation and remain available for questions.",
+    "Gesamtkosten prüfen": "Check total costs",
+    "Angebot auswählen": "Choose an offer",
+    "Tarif vergleichen": "Compare tariff",
+    "Kostenlose Beratung": "Free advice",
+    "Für Privatkunden": "For private customers",
+    "Für Gewerbe und Industrie": "For business and industry",
+    "Jahresverbrauch:": "Annual consumption:",
+    "Zählerdaten:": "Meter data:",
+    "Hinweis zur Grundversorgung:": "Note on basic supply:",
+    "Jetzt Gasrechnung prüfen lassen": "Have your gas bill checked now",
+    "Letzte Gasrechnung prüfen lassen": "Have your last gas bill checked",
+    "Jetzt Internetverfügbarkeit prüfen": "Check internet availability now",
+    "Persönliche Beratung in Aachen anfragen": "Request personal advice in Aachen",
+    "So funktioniert die Gas-Tarifberatung": "This is how gas tariff advice works",
+    "So funktioniert die Internet-Tarifberatung": "This is how internet tariff advice works",
+    "So läuft die Internet-Tarifberatung ab": "This is how internet tariff advice works",
+}
+
+# === COMPREHENSIVE PHRASE REPLACEMENT TABLE ===
+PHRASES = [
+    # Preserve proper nouns
+    ("Energie Alemi", "ENERGIEALEMI"),
+    ("Alexianergraben", "ALEXIANERGRABEN"),
+    ("STAWAG", "STAWAG"),
+    ("Regionetz GmbH", "REGIONETZGMBH"),
+    ("Marktlokations-ID", "market location ID"),
+    
+    # Towns
+    ("Herzogenrath-Mitte", "Herzogenrath-Mitte"),
+    ("Würselen-Mitte", "Würselen-Mitte"),
+    ("Eschweiler-Mitte", "Eschweiler-Mitte"),
+    ("Bardenberg", "Bardenberg"),
+    ("Broichweiden", "Broichweiden"),
+    ("Kohlscheid", "Kohlscheid"),
+    ("Merkstein", "Merkstein"),
+    ("Dürwiß", "Dürwiß"),
+    ("Weisweiler", "Weisweiler"),
+    ("Kinzweiler", "Kinzweiler"),
+    ("Nothberg", "Nothberg"),
+    ("Bergrath", "Bergrath"),
+    ("Röhe", "Röhe"),
+    ("Stolberg", "Stolberg"),
+    ("Eschweiler", "Eschweiler"),
+    ("Herzogenrath", "Herzogenrath"),
+    ("Würselen", "Würselen"),
+    ("Aachen", "Aachen"),
+    ("Atsch", "Atsch"),
+    ("Büsbach", "Büsbach"),
+    ("Breinig", "Breinig"),
+    ("Mausbach", "Mausbach"),
+    ("Vicht", "Vicht"),
+    ("Zweifall", "Zweifall"),
+    
+    # Long compound words first
+    ("Sonderkündigungsrecht", "special cancellation right"),
+    ("Sonderkündigungsgrund", "special cancellation reason"),
+    ("Sonderkündigungen", "special cancellations"),
+    ("Sonderkündigung", "special cancellation"),
+    ("Betriebskostenabrechnung", "service charge statement"),
+    ("Verfügbarkeitsprüfung", "availability check"),
+    ("Bereitstellungsentgelte", "provision fees"),
+    ("Bereitstellungsentgelt", "provision fee"),
+    ("Rufnummernmitnahme", "number porting"),
+    ("Vertragsbedingungen", "contract conditions"),
+    ("Vertragsbestätigung", "contract confirmation"),
+    ("Preisbestandteile", "price components"),
+    ("Preisbestandteil", "price component"),
+    ("Bonusbedingungen", "bonus conditions"),
+    ("Neukundenbonus", "new customer bonus"),
+    ("Jahresabrechnung", "annual statement"),
+    ("Jahresverbrauch", "annual consumption"),
+    ("Grundversorgung", "basic supply"),
+    ("Grundversorger", "basic supplier"),
+    ("Ersatzversorgung", "replacement supply"),
+    ("Netzinfrastruktur", "network infrastructure"),
+    ("Netzanschluss", "network connection"),
+    ("Netzbetreiber", "network operator"),
+    ("Gasliefervertrag", "gas supply contract"),
+    ("Lieferantenwechsel", "supplier switch"),
+    ("Anbieterwechsel", "provider switch"),
+    ("Aktionszeitraum", "promotional period"),
+    ("Aktionspreise", "promotional prices"),
+    ("Aktionspreis", "promotional price"),
+    ("Vertragslaufzeit", "contract duration"),
+    ("Mindestlaufzeit", "minimum term"),
+    ("Vertragsdauer", "contract duration"),
+    ("Vertragsdaten", "contract data"),
+    ("Vertragsdetails", "contract details"),
+    ("Vertragsfristen", "contract deadlines"),
+    ("Vertragskonditionen", "contract conditions"),
+    ("Preisgarantie", "price guarantee"),
+    ("Preiserhöhung", "price increase"),
+    ("Kündigungsfrist", "cancellation period"),
+    ("Kündigungstermin", "cancellation date"),
+    ("Kündigung", "cancellation"),
+    ("Zahlungsweise", "payment method"),
+    ("Abschlagszahlungen", "installment payments"),
+    ("Vorauszahlungen", "advance payments"),
+    ("Vorkasse", "advance payment"),
+    ("Grundpreis", "basic price"),
+    ("Arbeitspreis", "energy price"),
+    ("Monatspreis", "monthly price"),
+    ("Gesamtkosten", "total costs"),
+    ("Jahreskosten", "annual costs"),
+    ("Lieferadresse", "delivery address"),
+    ("Lieferbeginn", "delivery start"),
+    ("Liefervertrag", "supply contract"),
+    ("Lieferstelle", "delivery point"),
+    ("Lieferung", "delivery"),
+    ("Privathaushalte", "private households"),
+    ("Privathaushalten", "private households"),
+    ("Haushaltsgröße", "household size"),
+    ("Haushaltssituation", "household situation"),
+    ("Industriekunden", "industrial customers"),
+    ("Gewerbekunden", "business customers"),
+    ("Geschäftskunden", "business customers"),
+    ("Ökogastarife", "eco-gas tariffs"),
+    ("Ökostromtarife", "green electricity tariffs"),
+    ("Ökostrom", "green electricity"),
+    ("Ökogas-Zertifikaten", "eco-gas certificates"),
+    ("Biogas-Anteil", "biogas share"),
+    ("Stromherkunft", "origin of electricity"),
+    ("Zählerstand", "meter reading"),
+    ("Zählernummer", "meter number"),
+    ("Zählerdaten", "meter data"),
+    ("Gasrechnung", "gas bill"),
+    ("Gasanbieter", "gas provider"),
+    ("Gastarife", "gas tariffs"),
+    ("Gastarif", "gas tariff"),
+    ("Gasvergleich", "gas comparison"),
+    ("Gasnetz", "gas network"),
+    ("Gasanschluss", "gas connection"),
+    ("Gastherme", "gas boiler"),
+    ("Stromvertrag", "electricity contract"),
+    ("Stromvergleich", "electricity comparison"),
+    ("Stromanbieter", "electricity provider"),
+    ("Stromtarife", "electricity tariffs"),
+    ("Stromtarif", "electricity tariff"),
+    ("Stromrechnung", "electricity bill"),
+    ("Stromberatung", "electricity consultation"),
+    ("Internettarife", "internet tariffs"),
+    ("Internettarif", "internet tariff"),
+    ("Internetanschluss", "internet connection"),
+    ("Internetanbieter", "internet provider"),
+    ("Internetvertrag", "internet contract"),
+    ("Internetberatung", "internet consultation"),
+    ("Internetwechsel", "internet switch"),
+    ("Internetverbindung", "internet connection"),
+    ("Tarifberatung", "tariff advice"),
+    ("Tarifvergleich", "tariff comparison"),
+    ("Tarifvergleiche", "tariff comparisons"),
+    ("Tariflisten", "tariff lists"),
+    ("Gasberatung", "gas consultation"),
+    ("Postleitzahl", "zip code"),
+    ("Anschrift", "address"),
+    ("Kundennummer", "customer number"),
+    ("Verbrauchsdaten", "consumption data"),
+    ("Planungssicherheit", "planning security"),
+    ("Ausfallsicherheit", "failover protection"),
+    ("Glasfaser", "fiber"),
+    ("Telefonleitung", "telephone line"),
+    ("Bandbreite", "bandwidth"),
+    ("Bandbreiten", "bandwidth"),
+    ("Geschwindigkeit", "speed"),
+    ("Geschwindigkeiten", "speeds"),
+    ("Geschwindigkeitsangaben", "speed specifications"),
+    ("Höchstgeschwindigkeit", "maximum speed"),
+    ("Anschlussarbeiten", "connection work"),
+    ("Anschlussadresse", "connection address"),
+    ("Anschlussarten", "connection types"),
+    ("Anschlusstyp", "connection type"),
+    ("Mobilfunklösung", "mobile solution"),
+    ("Netzabdeckung", "network coverage"),
+    ("Verfügbarkeit", "availability"),
+    ("Kilowattstunden", "kilowatt hours"),
+    ("Wechseltermin", "switching date"),
+    ("Wechseltermine", "switching dates"),
+    ("Technologiewechsel", "technology change"),
+    ("Technologiewechseln", "technology changes"),
+    ("Umschaltung", "switching"),
+    ("Neuvertrag", "new contract"),
+    ("Servicelevel", "service level"),
+    ("Servicebedingungen", "service conditions"),
+    ("Erreichbarkeit", "reachability"),
+    ("Leistungsreserven", "performance reserves"),
+    ("Nutzungsprofil", "usage profile"),
+    ("Nutzungsverhalten", "usage behavior"),
+    ("Videotelefonie", "video calls"),
+    ("Vermietung", "landlord"),
+    ("Hausverwaltung", "property management"),
+    ("Zentralheizung", "central heating"),
+    ("Heizungsanlage", "heating system"),
+    ("Verbraucherinformation", "consumer information"),
+    ("Bedarfsanalyse", "needs analysis"),
+    ("Lastprofil", "load profile"),
+    ("Abschlag", "installment"),
+    ("Stadtgebiet", "city area"),
+    ("Stadtteilen", "districts"),
+    ("Stadtteil", "district"),
+    ("Innenstadt", "city center"),
+    ("Städteregion", "city region"),
+    ("Mietshaus", "rental building"),
+    ("Mieterin oder Mieter", "tenant"),
+    ("Mieterinnen und Mieter", "tenants"),
+    ("Kundinnen und Kunden", "customers"),
+    ("Privat-, Gewerbe- und Industriekunden", "private, commercial and industrial customers"),
+    ("Gewerbe- und Industriekunden", "commercial and industrial customers"),
+    ("Gewerbe und Industrie", "business and industry"),
+    ("Privat- und Geschäftskunden", "private and business customers"),
+    ("Wohn- oder Geschäftsstandort", "residential or business location"),
+    
+    # Common verbs and their forms
+    ("verständlich", "comprehensibly"),
+    ("übersichtlich", "clearly"),
+    ("nachvollziehbar", "comprehensible"),
+    ("unverbindlich", "without obligation"),
+    ("grundsätzlich", "generally"),
+    ("tatsächlich", "actually"),
+    ("tatsächlichen", "actual"),
+    ("rechtzeitig", "on time"),
+    ("rückwirkend", "retroactively"),
+    ("rückwirkende", "retroactive"),
+    ("regelmäßig", "regularly"),
+    ("üblicherweise", "usually"),
+    ("kostenlos", "free of charge"),
+    ("Kostenlose", "Free"),
+    ("kostenlose", "free"),
+    ("persönlich", "personally"),
+    ("persönliche", "personal"),
+    ("Persönliche", "Personal"),
+    ("telefonisch", "by phone"),
+    ("sachlich", "objectively"),
+    ("flächendeckend", "across the board"),
+    ("fristgerecht", "on time"),
+    ("möglichst", "if possible"),
+    ("voraussichtlichen", "projected"),
+    ("voraussichtliche", "projected"),
+    
+    # Restore proper nouns
+    ("ENERGIEALEMI", "Energie Alemi"),
+    ("ALEXIANERGRABEN", "Alexianergraben"),
+    ("REGIONETZGMBH", "Regionetz GmbH"),
+]
+
+def translate_by_rules(text):
+    """Attempt rule-based translation."""
+    t = text
+    for de, en in PHRASES:
+        t = t.replace(de, en)
+    return t if t != text else None
+
+
+# Apply exact translations first, then try rule-based
+result = {}
+for de_text in strings:
+    if de_text in exact:
+        result[de_text] = exact[de_text]
+    else:
+        # Try rule-based
+        en = translate_by_rules(de_text)
+        if en:
+            result[de_text] = en
+        else:
+            result[de_text] = ""
+
+# Save
+with open('scripts/translations.json', 'w') as f:
+    json.dump(result, f, indent=2, ensure_ascii=False)
+
+translated = sum(1 for v in result.values() if v)
+print(f"Translated {translated}/{len(result)} strings")
+print(f"Remaining: {len(result) - translated}")
+

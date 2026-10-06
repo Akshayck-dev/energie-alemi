@@ -149,6 +149,13 @@ export default function GasanbieterWechselnSchritt() {
         ))}
       </div>
 
+      <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
+        <h3 className="text-xl font-bold mb-4">Further Information</h3>
+        <ul className="flex flex-col gap-2">
+          <li><Link to="/energie-fragen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Energy Q&A</Link></li>
+          <li><Link to="/contact" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Contact us</Link></li>
+        </ul>
+      </div>
         </>
       ) : (
         <>
@@ -236,6 +243,14 @@ export default function GasanbieterWechselnSchritt() {
             <p className="mb-0 text-slate-600 dark:text-slate-300">{faq.answer}</p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
+        <h3 className="text-xl font-bold mb-4">Weitere Informationen</h3>
+        <ul className="flex flex-col gap-2">
+          <li><Link to="/energie-fragen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Energie-Fragen & Antworten</Link></li>
+          <li><Link to="/contact" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Kontakt aufnehmen</Link></li>
+        </ul>
       </div>
     </>
       )}

@@ -1,5 +1,6 @@
 import { Zap, ShieldCheck, Users, LineChart, Handshake } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router';
 import { motion, type Variants } from 'framer-motion';
 import ownerImg from '../assets/image-admin.JPG.webp';
 import SEO from "../components/SEO";
@@ -20,7 +21,7 @@ const staggerContainer: Variants = {
 };
 
 export default function About() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628] min-h-screen">
@@ -166,6 +167,12 @@ export default function About() {
                   </p>
                   <p>
                     {t('about.phil_p3')}
+                  </p>
+                  <p>
+                    {i18n.language === 'en' ? 'Learn more about our work as an ' : 'Erfahren Sie mehr über unsere Arbeit als '}
+                    <Link to="/ratgeber/energieberater-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">
+                      {i18n.language === 'en' ? 'energy consultant in Aachen' : 'Energieberater in Aachen'}
+                    </Link>.
                   </p>
                 </div>
 

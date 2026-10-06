@@ -22,22 +22,22 @@ export default function InternetanbieterAachen() {
     {
       icon: <Search size={28} strokeWidth={1.5} />,
       title: "DSL",
-      description: "Eine verbreitete Lösung über die Telefonleitung. Die erreichbare Geschwindigkeit hängt unter anderem vom Standort und der Leitung ab."
+      description: i18n.language === "en" ? "Eine verbreitete Lösung über die telephone line. Die erreichbare speed hängt unter anderem vom Standort und der Leitung ab." : "Eine verbreitete Lösung über die Telefonleitung. Die erreichbare Geschwindigkeit hängt unter anderem vom Standort und der Leitung ab."
     },
     {
       icon: <Settings size={28} strokeWidth={1.5} />,
       title: "Kabel",
-      description: "Kann hohe Bandbreiten ermöglichen, sofern ein geeigneter Kabelanschluss am Gebäude verfügbar ist."
+      description: i18n.language === "en" ? "Kann hohe bandwidthn ermöglichen, sofern ein geeigneter Kabelanschluss am Gebäude verfügbar ist." : "Kann hohe Bandbreiten ermöglichen, sofern ein geeigneter Kabelanschluss am Gebäude verfügbar ist."
     },
     {
       icon: <Wifi size={28} strokeWidth={1.5} />,
       title: "Glasfaser",
-      description: "Bietet hohe Leistungsreserven und ist besonders interessant, wenn am Standort bereits ein Glasfaseranschluss verfügbar oder geplant ist."
+      description: i18n.language === "en" ? "Bietet hohe performance reserves und ist besonders interessant, wenn am Standort bereits ein fiberanschluss verfügbar oder geplant ist." : "Bietet hohe Leistungsreserven und ist besonders interessant, wenn am Standort bereits ein Glasfaseranschluss verfügbar oder geplant ist."
     },
     {
       icon: <MapPin size={28} strokeWidth={1.5} />,
-      title: "LTE oder 5G",
-      description: "Kann eine Alternative sein, wenn ein geeigneter Festnetzanschluss fehlt. Entscheidend sind Netzabdeckung, Datenvolumen und Empfang am Standort."
+      title: i18n.language === "en" ? "LTE or 5G" : "LTE oder 5G",
+      description: i18n.language === "en" ? "Kann eine Alternative sein, wenn ein geeigneter Festnetzanschluss fehlt. Entscheidend sind network coverage, Datenvolumen und Empfang am Standort." : "Kann eine Alternative sein, wenn ein geeigneter Festnetzanschluss fehlt. Entscheidend sind Netzabdeckung, Datenvolumen und Empfang am Standort."
     }
   ];
 
@@ -45,81 +45,81 @@ export default function InternetanbieterAachen() {
     {
       number: 1,
       icon: <Phone size={24} />,
-      title: "Kontakt und Beratung",
-      description: "Wir besprechen Ihren aktuellen Vertrag, Ihren Standort und Ihre Anforderungen."
+      title: i18n.language === "en" ? "Contact and advice" : "Kontakt und Beratung",
+      description: i18n.language === "en" ? "We discuss your current contract, your location and your requirements." : "Wir besprechen Ihren aktuellen Vertrag, Ihren Standort und Ihre Anforderungen."
     },
     {
       number: 2,
       icon: <BarChart3 size={24} />,
-      title: "Verfügbarkeit und Vergleich",
-      description: "Wir prüfen passende Optionen für Ihre Adresse und vergleichen relevante Tarifmerkmale."
+      title: i18n.language === "en" ? "availability und Vergleich" : "Verfügbarkeit und Vergleich",
+      description: i18n.language === "en" ? "We check suitable options for your address and compare relevant tariff features." : "Wir prüfen passende Optionen für Ihre Adresse und vergleichen relevante Tarifmerkmale."
     },
     {
       number: 3,
       icon: <CheckSquare size={24} />,
-      title: "Entscheidung und Wechsel",
-      description: "Sie erhalten eine verständliche Empfehlung. Auf Wunsch unterstützen wir den Wechselprozess."
+      title: i18n.language === "en" ? "Decision and switch" : "Entscheidung und Wechsel",
+      description: i18n.language === "en" ? "Sie erhalten eine comprehensiblye Empfehlung. Auf Wunsch unterstützen wir den Wechselprozess." : "Sie erhalten eine verständliche Empfehlung. Auf Wunsch unterstützen wir den Wechselprozess."
     },
     {
       number: 4,
       icon: <Handshake size={24} />,
       title: "Langfristiger Support",
-      description: "Auch nach dem Wechsel bleibt Energie Alemi Ihr Ansprechpartner."
+      description: i18n.language === "en" ? "Even after the switch, Energie Alemi remains your contact." : "Auch nach dem Wechsel bleibt Energie Alemi Ihr Ansprechpartner."
     }
   ];
 
   const faqs = [
     {
-      question: "Welcher Internetanbieter ist in Aachen verfügbar?",
-      answer: "Die Verfügbarkeit unterscheidet sich je nach Straße, Hausnummer und vorhandener Gebäudetechnik. Eine adressgenaue Prüfung zeigt, welche Anschlussarten und Tarife konkret infrage kommen."
+      question: i18n.language === "en" ? "Welcher internet provider ist in Aachen verfügbar?" : "Welcher Internetanbieter ist in Aachen verfügbar?",
+      answer: i18n.language === "en" ? "Die availability unterscheidet sich je nach Straße, Hausnummer und vorhandener Gebäudetechnik. Eine adressgenaue Prüfung zeigt, welche connection types und Tarife konkret infrage kommen." : "Die Verfügbarkeit unterscheidet sich je nach Straße, Hausnummer und vorhandener Gebäudetechnik. Eine adressgenaue Prüfung zeigt, welche Anschlussarten und Tarife konkret infrage kommen."
     },
     {
       question: "Welche Internetgeschwindigkeit brauche ich?",
-      answer: "Das hängt von der Zahl der Nutzer, den Geräten und den Anwendungen ab. Für Videokonferenzen, große Uploads, Streaming oder Gaming können andere Anforderungen gelten als für E-Mail und normales Surfen. Wir ermitteln den Bedarf vor dem Tarifvergleich."
+      answer: i18n.language === "en" ? "Das hängt von der Zahl der Nutzer, den Geräten und den Anwendungen ab. Für Videokonferenzen, große Uploads, Streaming oder Gaming können andere Anforderungen gelten als für E-Mail und normales Surfen. Wir ermitteln den Bedarf vor dem tariff comparison." : "Das hängt von der Zahl der Nutzer, den Geräten und den Anwendungen ab. Für Videokonferenzen, große Uploads, Streaming oder Gaming können andere Anforderungen gelten als für E-Mail und normales Surfen. Wir ermitteln den Bedarf vor dem Tarifvergleich."
     },
     {
-      question: "Was ist besser: DSL, Kabel oder Glasfaser?",
+      question: i18n.language === "en" ? "Was ist besser: DSL, Kabel oder fiber?" : "Was ist besser: DSL, Kabel oder Glasfaser?",
       answer: <>Es gibt keine pauschal beste Lösung. Glasfaser bietet hohe Leistungsreserven, Kabel kann hohe Bandbreiten ermöglichen und DSL ist weit verbreitet. Entscheidend sind Verfügbarkeit, tatsächlicher Bedarf, Vertragsbedingungen und Gesamtkosten. Mehr dazu in unserem Ratgeber: <Link to="/ratgeber/dsl-vs-glasfaser-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">DSL vs. Glasfaser in Aachen</Link>.</>
     },
     {
       question: "Kann ich meine Festnetznummer beim Anbieterwechsel behalten?",
-      answer: "Eine Rufnummernmitnahme ist in vielen Fällen möglich. Die Voraussetzungen und der Ablauf hängen vom bisherigen und neuen Vertrag ab und sollten im Wechselauftrag korrekt angegeben werden."
+      answer: i18n.language === "en" ? "Eine number porting ist in vielen Fällen möglich. Die Voraussetzungen und der Ablauf hängen vom bisherigen und neuen Vertrag ab und sollten im Wechselauftrag korrekt angegeben werden." : "Eine Rufnummernmitnahme ist in vielen Fällen möglich. Die Voraussetzungen und der Ablauf hängen vom bisherigen und neuen Vertrag ab und sollten im Wechselauftrag korrekt angegeben werden."
     },
     {
-      question: "Soll ich meinen alten Internetvertrag selbst kündigen?",
-      answer: "Bei einem regulären Anbieterwechsel sollte der Ablauf zuerst mit dem neuen Anbieter abgestimmt werden, damit Kündigung, Schaltung und eine mögliche Rufnummernmitnahme zusammenpassen. Sonderfälle wie Umzug oder außerordentliche Kündigung müssen individuell geprüft werden."
+      question: i18n.language === "en" ? "Soll ich meinen alten internet contract selbst kündigen?" : "Soll ich meinen alten Internetvertrag selbst kündigen?",
+      answer: i18n.language === "en" ? "Bei einem regulären provider switch sollte der Ablauf zuerst mit dem neuen Anbieter abgestimmt werden, damit cancellation, Schaltung und eine mögliche number porting zusammenpassen. Sonderfälle wie Umzug oder außerordentliche cancellation müssen individuell geprüft werden." : "Bei einem regulären Anbieterwechsel sollte der Ablauf zuerst mit dem neuen Anbieter abgestimmt werden, damit Kündigung, Schaltung und eine mögliche Rufnummernmitnahme zusammenpassen. Sonderfälle wie Umzug oder außerordentliche Kündigung müssen individuell geprüft werden."
     },
     {
       question: "Wie lange dauert ein Internetanbieterwechsel?",
-      answer: "Die Dauer hängt unter anderem von Vertragslaufzeit, Kündigungsfrist, Anschlussart, Verfügbarkeit und einem möglichen Technikertermin ab. Beginnen Sie deshalb möglichst früh mit der Prüfung."
+      answer: i18n.language === "en" ? "Die Dauer hängt unter anderem von contract duration, cancellation period, Anschlussart, availability und einem möglichen Technikertermin ab. Beginnen Sie deshalb if possible früh mit der Prüfung." : "Die Dauer hängt unter anderem von Vertragslaufzeit, Kündigungsfrist, Anschlussart, Verfügbarkeit und einem möglichen Technikertermin ab. Beginnen Sie deshalb möglichst früh mit der Prüfung."
     },
     {
-      question: "Ist die Beratung bei Energie Alemi kostenlos?",
-      answer: "Ja. Energie Alemi weist die Beratung auf der eigenen Website als kostenlos aus. Rufen Sie an oder vereinbaren Sie einen Termin vor Ort in Aachen."
+      question: i18n.language === "en" ? "Ist die Beratung bei Energie Alemi free of charge?" : "Ist die Beratung bei Energie Alemi kostenlos?",
+      answer: i18n.language === "en" ? "Ja. Energie Alemi weist die Beratung auf der eigenen Website als free of charge aus. Rufen Sie an oder vereinbaren Sie einen Termin vor Ort in Aachen." : "Ja. Energie Alemi weist die Beratung auf der eigenen Website als kostenlos aus. Rufen Sie an oder vereinbaren Sie einen Termin vor Ort in Aachen."
     },
     {
-      question: "Berät Energie Alemi auch Unternehmen?",
-      answer: "Ja. Die Beratung richtet sich laut Unternehmenswebsite an Privat-, Gewerbe- und Industriekunden und umfasst auch Telekommunikationsverträge."
+      question: i18n.language === "en" ? "Does Energie Alemi also advise businesses?" : "Berät Energie Alemi auch Unternehmen?",
+      answer: i18n.language === "en" ? "Ja. Die Beratung richtet sich laut Unternehmenswebsite an Privat-, Gewerbe- und industrial customers und umfasst auch Telekommunikationsverträge." : "Ja. Die Beratung richtet sich laut Unternehmenswebsite an Privat-, Gewerbe- und Industriekunden und umfasst auch Telekommunikationsverträge."
     }
   ];
 
   // Pass only specific structured data matching the exact FAQPage definition
   const structuredFaqs = [
     {
-      question: "Welcher Internetanbieter ist in Aachen verfügbar?",
-      answer: "Die Verfügbarkeit unterscheidet sich je nach Straße, Hausnummer und vorhandener Gebäudetechnik. Eine adressgenaue Prüfung zeigt, welche Anschlussarten und Tarife konkret infrage kommen."
+      question: i18n.language === "en" ? "Welcher internet provider ist in Aachen verfügbar?" : "Welcher Internetanbieter ist in Aachen verfügbar?",
+      answer: i18n.language === "en" ? "Die availability unterscheidet sich je nach Straße, Hausnummer und vorhandener Gebäudetechnik. Eine adressgenaue Prüfung zeigt, welche connection types und Tarife konkret infrage kommen." : "Die Verfügbarkeit unterscheidet sich je nach Straße, Hausnummer und vorhandener Gebäudetechnik. Eine adressgenaue Prüfung zeigt, welche Anschlussarten und Tarife konkret infrage kommen."
     },
     {
       question: "Welche Internetgeschwindigkeit brauche ich?",
-      answer: "Das hängt von der Zahl der Nutzer, den Geräten und den Anwendungen ab. Energie Alemi ermittelt den Bedarf vor dem Tarifvergleich."
+      answer: i18n.language === "en" ? "Das hängt von der Zahl der Nutzer, den Geräten und den Anwendungen ab. Energie Alemi ermittelt den Bedarf vor dem tariff comparison." : "Das hängt von der Zahl der Nutzer, den Geräten und den Anwendungen ab. Energie Alemi ermittelt den Bedarf vor dem Tarifvergleich."
     },
     {
-      question: "Was ist besser: DSL, Kabel oder Glasfaser?",
-      answer: "Es gibt keine pauschal beste Lösung. Entscheidend sind Verfügbarkeit, tatsächlicher Bedarf, Vertragsbedingungen und Gesamtkosten."
+      question: i18n.language === "en" ? "Was ist besser: DSL, Kabel oder fiber?" : "Was ist besser: DSL, Kabel oder Glasfaser?",
+      answer: i18n.language === "en" ? "Es gibt keine pauschal beste Lösung. Entscheidend sind availability, actuallyer Bedarf, contract conditions und total costs." : "Es gibt keine pauschal beste Lösung. Entscheidend sind Verfügbarkeit, tatsächlicher Bedarf, Vertragsbedingungen und Gesamtkosten."
     },
     {
-      question: "Ist die Beratung bei Energie Alemi kostenlos?",
-      answer: "Ja. Energie Alemi weist die Beratung auf der eigenen Website als kostenlos aus. Termine sind telefonisch oder vor Ort in Aachen möglich."
+      question: i18n.language === "en" ? "Ist die Beratung bei Energie Alemi free of charge?" : "Ist die Beratung bei Energie Alemi kostenlos?",
+      answer: i18n.language === "en" ? "Ja. Energie Alemi weist die Beratung auf der eigenen Website als free of charge aus. Termine sind by phone oder vor Ort in Aachen möglich." : "Ja. Energie Alemi weist die Beratung auf der eigenen Website als kostenlos aus. Termine sind telefonisch oder vor Ort in Aachen möglich."
     }
   ];
 
@@ -127,7 +127,7 @@ export default function InternetanbieterAachen() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/internetanbieter-aachen" 
-        title="Internetanbieter Aachen | Tarife vergleichen | Energie Alemi"
+        title={i18n.language === "en" ? "internet provider Aachen | Tarife vergleichen | Energie Alemi" : "Internetanbieter Aachen | Tarife vergleichen | Energie Alemi"}
         description={i18n.language === "en" ? "Compare internet tariffs in Aachen: personal advice for DSL, cable and fiber. Free needs analysis at Energie Alemi." : "Internettarife in Aachen vergleichen: persönliche Beratung für DSL, Kabel und Glasfaser. Kostenlose Bedarfsanalyse bei Energie Alemi."}
         image={internetHeroDesk} 
         faqs={structuredFaqs} 
@@ -138,17 +138,17 @@ export default function InternetanbieterAachen() {
           badgeIcon={<Wifi size={24} />}
           badgeText={i18n.language === 'en' ? 'Internet Providers Aachen' : 'Internetanbieter Aachen'}
           title="Internetanbieter in Aachen vergleichen"
-          description="Welcher Internettarif passt zu Ihrem Zuhause oder Unternehmen? Energie Alemi prüft Ihren Bedarf, vergleicht verfügbare Tarife und unterstützt Sie beim Wechsel. Persönlich, transparent und direkt in Aachen."
+          description={i18n.language === "en" ? "Welcher internet tariff passt zu Ihrem Zuhause oder Unternehmen? Energie Alemi prüft Ihren Bedarf, vergleicht verfügbare Tarife und unterstützt Sie beim Wechsel. Persönlich, transparent und direkt in Aachen." : "Welcher Internettarif passt zu Ihrem Zuhause oder Unternehmen? Energie Alemi prüft Ihren Bedarf, vergleicht verfügbare Tarife und unterstützt Sie beim Wechsel. Persönlich, transparent und direkt in Aachen."}
           bgImage={internetHeroDesk}
-          buttonText="Kostenlose Beratung anfragen"
+          buttonText={i18n.language === "en" ? "Free Beratung anfragen" : "Kostenlose Beratung anfragen"}
           onButtonClick={() => {
             setIsModalOpen(true);
             trackEvent('service_cta_click', { service_type: 'internetanbieter_aachen', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
             { icon: <MapPin size={24} />, title: "Standort in Aachen" },
-            { icon: <Search size={24} />, title: "Persönliche Tarifberatung" },
-            { icon: <Handshake size={24} />, title: "Für Privat, Gewerbe und Industrie" },
+            { icon: <Search size={24} />, title: i18n.language === "en" ? "Personal tariff advice" : "Persönliche Tarifberatung" },
+            { icon: <Handshake size={24} />, title: i18n.language === "en" ? "Für Privat, business and industry" : "Für Privat, Gewerbe und Industrie" },
           ]}
           accentColor="bg-blue-500 hover:bg-blue-600"
         />
@@ -158,7 +158,7 @@ export default function InternetanbieterAachen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Der passende Internetanschluss beginnt mit Ihrem Bedarf</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            Ein günstiger Monatspreis allein macht noch keinen passenden Internettarif. Entscheidend sind die Verfügbarkeit an Ihrer Adresse, die benötigte Geschwindigkeit, die Vertragsbedingungen und die tatsächliche Nutzung. Wir betrachten diese Punkte gemeinsam und helfen Ihnen, eine wirtschaftliche Lösung zu finden, die zu Ihrem Alltag oder Betrieb passt.
+            {i18n.language === "en" ? "Ein günstiger monthly price allein macht noch keinen passenden internet tariff. Entscheidend sind die availability an Ihrer Adresse, die benötigte speed, die contract conditions und die actuallye Nutzung. Wir betrachten diese Punkte gemeinsam und helfen Ihnen, eine wirtschaftliche Lösung zu finden, die zu Ihrem Alltag oder Betrieb passt." : "Ein günstiger Monatspreis allein macht noch keinen passenden Internettarif. Entscheidend sind die Verfügbarkeit an Ihrer Adresse, die benötigte Geschwindigkeit, die Vertragsbedingungen und die tatsächliche Nutzung. Wir betrachten diese Punkte gemeinsam und helfen Ihnen, eine wirtschaftliche Lösung zu finden, die zu Ihrem Alltag oder Betrieb passt."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Je nach Adresse können DSL, Kabel, Glasfaser oder funkbasierte Lösungen infrage kommen. Deshalb beginnt unsere Beratung mit einer Verfügbarkeits- und Bedarfsprüfung statt mit einer pauschalen Empfehlung. Wenn Sie sich vorab informieren möchten, können Sie auch <Link to="/ratgeber/internetanbieter-vergleichen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter vergleichen</Link>.
@@ -178,7 +178,7 @@ export default function InternetanbieterAachen() {
           <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Internet für Zuhause und Unternehmen in Aachen</h3>
           <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Für Privatkunden</h4>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
-            Streaming, Videotelefonie, Gaming, Homeoffice und viele gleichzeitig verbundene Geräte stellen unterschiedliche Anforderungen an einen Anschluss. Wir klären, welche Leistung sinnvoll ist, welche Vertragsdetails wichtig sind und welche Optionen an Ihrer Adresse verfügbar sind.
+            {i18n.language === "en" ? "Streaming, video calls, Gaming, Homeoffice und viele gleichzeitig verbundene Geräte stellen unterschiedliche Anforderungen an einen Anschluss. Wir klären, welche Leistung sinnvoll ist, welche contract details wichtig sind und welche Optionen an Ihrer Adresse verfügbar sind." : "Streaming, Videotelefonie, Gaming, Homeoffice und viele gleichzeitig verbundene Geräte stellen unterschiedliche Anforderungen an einen Anschluss. Wir klären, welche Leistung sinnvoll ist, welche Vertragsdetails wichtig sind und welche Optionen an Ihrer Adresse verfügbar sind."}
           </p>
           <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Für Gewerbe und Industrie</h4>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -197,11 +197,11 @@ export default function InternetanbieterAachen() {
           />
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
-              { title: "Verfügbarkeit", desc: "Welche Anschlussarten und Tarife sind an der konkreten Adresse möglich?" },
-              { title: "Leistung", desc: "Welche Download- und Upload-Geschwindigkeit passt zur Nutzung?" },
-              { title: "Gesamtkosten", desc: "Wie wirken sich Grundpreis, Bereitstellung, Hardware und mögliche Aktionszeiträume aus?" },
-              { title: "Vertrag", desc: "Welche Laufzeit, Kündigungsfrist und Preisentwicklung gelten?" },
-              { title: "Service", desc: "Welche Unterstützung und Bedingungen bietet der jeweilige Tarif?" }
+              { title: i18n.language === "en" ? "availability" : "Verfügbarkeit", desc: i18n.language === "en" ? "Welche connection types und Tarife sind an der konkreten Adresse möglich?" : "Welche Anschlussarten und Tarife sind an der konkreten Adresse möglich?" },
+              { title: "Leistung", desc: i18n.language === "en" ? "Welche Download- und Upload-speed passt zur Nutzung?" : "Welche Download- und Upload-Geschwindigkeit passt zur Nutzung?" },
+              { title: "Gesamtkosten", desc: i18n.language === "en" ? "Wie wirken sich basic price, Bereitstellung, Hardware und mögliche Aktionszeiträume aus?" : "Wie wirken sich Grundpreis, Bereitstellung, Hardware und mögliche Aktionszeiträume aus?" },
+              { title: i18n.language === "en" ? "Contract" : "Vertrag", desc: i18n.language === "en" ? "Welche Laufzeit, cancellation period und Preisentwicklung gelten?" : "Welche Laufzeit, Kündigungsfrist und Preisentwicklung gelten?" },
+              { title: "Service", desc: i18n.language === "en" ? "What support and conditions does the respective tariff offer?" : "Welche Unterstützung und Bedingungen bietet der jeweilige Tarif?" }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-white dark:bg-[#122340] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -233,7 +233,7 @@ export default function InternetanbieterAachen() {
                   <SectionHeader 
                     title={
                       <>
-                        So funktioniert die <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">Internet-Tarifberatung</span>
+                        {i18n.language === "en" ? "This is how the " : "So funktioniert die "}<span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === "en" ? "internet tariff advice" : "Internet-Tarifberatung"}</span>{i18n.language === "en" ? " works" : ""}
                       </>
                     }
                     subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new internet tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Internettarif.'}
@@ -264,11 +264,11 @@ export default function InternetanbieterAachen() {
             <div className="bg-[#0047AB] dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-transparent dark:border-slate-800 text-white mt-16">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">KOSTENLOSE BERATUNG ANFRAGEN</h3>
               <p className="text-blue-100 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                0176 659 493 90  ·  Beratung am Alexianergraben 9, 52064 Aachen
+                {i18n.language === "en" ? "0176 659 493 90  ·  Advice at Alexianergraben 9, 52064 Aachen" : "0176 659 493 90  ·  Beratung am Alexianergraben 9, 52064 Aachen"}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>
-                  Kostenlose Beratung anfragen
+                  {i18n.language === "en" ? "Free Beratung anfragen" : "Kostenlose Beratung anfragen"}
                 </Button>
                 <a data-track="phone" href="tel:017665949390" className="inline-flex items-center justify-center px-6 py-3 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">
                   0176 659 493 90 anrufen

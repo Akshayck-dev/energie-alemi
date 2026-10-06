@@ -42,6 +42,19 @@ export default function StromvergleichWoraufAchten() {
         If sustainability is important to you, look for certified eco-electricity (e.g., ok-power label or Grüner Strom label), which not only comes from renewable energies but also promotes the expansion of new plants.
       </p>
 
+      <h2>The right handling of bonuses</h2>
+      <p>
+        Many providers offer attractive bonuses to win new customers. These are divided into immediate bonuses (Sofortbonus), which are paid out shortly after the start of delivery, and new customer bonuses (Neukundenbonus), which are usually credited with the first annual statement. 
+      </p>
+      <p>
+        <strong>Tip:</strong> Tariffs with high bonuses are often very cheap in the first year but become significantly more expensive in the second year. If you choose such a tariff, you should compare again in good time before the notice period expires and switch if necessary.
+      </p>
+
+      <h2>What to do in the event of price increases?</h2>
+      <p>
+        If your current provider increases the prices, you have a statutory special right of termination. You can then terminate the contract without notice until the price increase takes effect. This is the ideal time to look for a cheaper alternative.
+      </p>
+
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
         <h3 className="text-2xl font-bold mb-4 mt-0">Compare tariffs transparently</h3>
         <p className="mb-6">Find the tariff that perfectly matches your consumption.</p>
@@ -50,6 +63,21 @@ export default function StromvergleichWoraufAchten() {
         </Link>
       </div>
 
+      <h2>Frequently Asked Questions</h2>
+      <div className="space-y-6 mt-8">
+        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+          <h3 className="text-lg font-bold mt-0 mb-2">Is a switch worthwhile despite a new customer bonus?</h3>
+          <p className="mb-0 text-slate-600 dark:text-slate-300">Yes, but you should look closely at the total costs for the first year. Sometimes tariffs without a bonus but with a lower basic and unit price are cheaper in the long run.</p>
+        </div>
+        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+          <h3 className="text-lg font-bold mt-0 mb-2">What is the difference between a price guarantee and a limited price guarantee?</h3>
+          <p className="mb-0 text-slate-600 dark:text-slate-300">A full price guarantee covers all price components except VAT. A limited price guarantee excludes state taxes, levies, and surcharges. If these rise, your price can increase despite the guarantee.</p>
+        </div>
+        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+          <h3 className="text-lg font-bold mt-0 mb-2">How long does the provider switch take?</h3>
+          <p className="mb-0 text-slate-600 dark:text-slate-300">A regular switch usually takes three to six weeks. The exact date depends on the notice period of your old contract.</p>
+        </div>
+      </div>
         </>
       ) : (
         <>
@@ -81,12 +109,41 @@ export default function StromvergleichWoraufAchten() {
         Wenn Ihnen Nachhaltigkeit wichtig ist, achten Sie auf zertifizierten Ökostrom (z.B. ok-power-Label oder Grüner Strom-Label), der nicht nur aus Erneuerbaren Energien stammt, sondern auch den Ausbau neuer Anlagen fördert.
       </p>
 
+      <h2>Der richtige Umgang mit Boni</h2>
+      <p>
+        Viele Anbieter gewähren attraktive Boni, um Neukunden zu gewinnen. Diese unterteilen sich in Sofortboni, die kurz nach Lieferbeginn ausgezahlt werden, und Neukundenboni, die meist mit der ersten Jahresabrechnung gutgeschrieben werden.
+      </p>
+      <p>
+        <strong>Tipp:</strong> Tarife mit hohen Boni sind im ersten Jahr oft sehr günstig, werden im zweiten Jahr aber deutlich teurer. Wenn Sie einen solchen Tarif wählen, sollten Sie rechtzeitig vor Ablauf der Kündigungsfrist erneut vergleichen und gegebenenfalls wechseln.
+      </p>
+
+      <h2>Was tun bei Preiserhöhungen?</h2>
+      <p>
+        Wenn Ihr aktueller Anbieter die Preise erhöht, steht Ihnen ein gesetzliches Sonderkündigungsrecht zu. Sie können den Vertrag dann fristlos bis zum Wirksamwerden der Preiserhöhung kündigen. Dies ist der ideale Zeitpunkt, um nach einer günstigeren Alternative zu suchen.
+      </p>
+
       <div className="bg-[#f0f4ff] dark:bg-[#112240] p-8 rounded-2xl my-10 border border-[#e0e7ff] dark:border-white/10">
         <h3 className="text-2xl font-bold mb-4 mt-0">Tarife transparent vergleichen</h3>
         <p className="mb-6">Finden Sie den Tarif, der perfekt zu Ihrem Verbrauch passt.</p>
         <Link to="/electricity">
           <Button variant="primary">Zum kostenlosen Stromvergleich</Button>
         </Link>
+      </div>
+
+      <h2>Häufige Fragen (FAQ)</h2>
+      <div className="space-y-6 mt-8">
+        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+          <h3 className="text-lg font-bold mt-0 mb-2">Lohnt sich ein Wechsel trotz Neukundenbonus?</h3>
+          <p className="mb-0 text-slate-600 dark:text-slate-300">Ja, aber Sie sollten die Gesamtkosten für das erste Jahr genau betrachten. Manchmal sind Tarife ohne Bonus, aber mit niedrigerem Grund- und Arbeitspreis langfristig günstiger.</p>
+        </div>
+        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+          <h3 className="text-lg font-bold mt-0 mb-2">Was ist der Unterschied zwischen Preisgarantie und eingeschränkter Preisgarantie?</h3>
+          <p className="mb-0 text-slate-600 dark:text-slate-300">Eine volle Preisgarantie sichert alle Preisbestandteile bis auf die Mehrwertsteuer ab. Eine eingeschränkte Preisgarantie klammert staatliche Steuern, Abgaben und Umlagen aus. Steigen diese, kann Ihr Preis trotz Garantie steigen.</p>
+        </div>
+        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-100 dark:border-slate-700">
+          <h3 className="text-lg font-bold mt-0 mb-2">Wie lange dauert der Anbieterwechsel?</h3>
+          <p className="mb-0 text-slate-600 dark:text-slate-300">Ein regulärer Wechsel dauert in der Regel drei bis sechs Wochen. Das genaue Datum hängt von der Kündigungsfrist Ihres alten Vertrages ab.</p>
+        </div>
       </div>
     </>
       )}

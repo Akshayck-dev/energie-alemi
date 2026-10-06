@@ -147,6 +147,10 @@ export default function Gas() {
                     <Link to="/ratgeber/gasvergleich" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas comparison guide' : 'Gasvergleich-Ratgeber'}</Link>
                     <span>{i18n.language === 'en' ? ' as well as our guide on ' : t('gas.cross_p6', ' sowie unserem Ratgeber zum ')}</span>
                     <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'switching gas providers' : 'Gasanbieter wechseln'}</Link>
+                    <span>. {i18n.language === 'en' ? 'Also see our guide to ' : 'Siehe auch unseren Leitfaden zu '}</span>
+                    <Link to="/ratgeber/gaspreise-verstehen" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'understanding gas prices' : 'Gaspreise verstehen'}</Link>
+                    <span> {i18n.language === 'en' ? 'or' : 'oder'} </span>
+                    <Link to="/ratgeber/gas-anmelden-umzug" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'registering gas when moving' : 'Gas anmelden beim Umzug'}</Link>
                     <span>.</span>
                   </p>
                   {/* Windmill graphic placeholder */}

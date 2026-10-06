@@ -1,276 +1,143 @@
-import { Search, Handshake, BarChart3, CheckSquare, Flame, ArrowRight, ShieldCheck, MapPin, Phone, Building2, Home as HomeIcon } from 'lucide-react';
+import { Search, Flame, MapPin, Phone, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router';
-import { useTranslation } from 'react-i18next';
 import { useState, lazy, Suspense } from 'react';
-import ServiceHero from '../sections/ServiceHero';
-import ServiceFeatures from '../sections/ServiceFeatures';
 import { trackEvent } from '../lib/analytics';
-import SectionHeader from '../components/ui/SectionHeader';
-import Timeline from '../components/ui/Timeline';
-import FAQ from '../components/ui/FAQ';
-import Button from '../components/ui/Button';
-import gasHeroDesk from '../assets/gas hero desk.webp';
 import SEO from "../components/SEO";
+import gasHeroDesk from '../assets/gas hero desk.webp';
+import SectionHeader from '../components/ui/SectionHeader';
 
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
-export default function GasanbieterWürselen() {
-  const { i18n } = useTranslation();
+export default function GasanbieterWuerselen() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
-  const features = [
-    {
-      icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
-      description: i18n.language === "en" ? "Ein new customer bonus kann die Rechnung im ersten Vertragsjahr beeinflussen. Für eine langfristig comprehensiblee Entscheidung werden auch die Kosten ohne Einmalbonus, die Auszahlungsbedingungen und die Konditionen nach dem promotional period betrachtet." : "Ein Neukundenbonus kann die Rechnung im ersten Vertragsjahr beeinflussen. Für eine langfristig nachvollziehbare Entscheidung werden auch die Kosten ohne Einmalbonus, die Auszahlungsbedingungen und die Konditionen nach dem Aktionszeitraum betrachtet."
-    },
-    {
-      icon: <Building2 size={28} strokeWidth={1.5} />,
-      title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
-      description: i18n.language === "en" ? "Kurze cancellation perioden schaffen Flexibilität, während längere Laufzeiten mehr Bindung bedeuten. Welche Gewichtung sinnvoll ist, hängt von Verbrauch, Gebäude, Nutzung und personallyer Planung ab – besonders bei Gewerbeobjekten oder höherem Bedarf." : "Kurze Kündigungsfristen schaffen Flexibilität, während längere Laufzeiten mehr Bindung bedeuten. Welche Gewichtung sinnvoll ist, hängt von Verbrauch, Gebäude, Nutzung und persönlicher Planung ab – besonders bei Gewerbeobjekten oder höherem Bedarf."
-    }
-  ];
 
-  const steps = [
+  const wuerselenFaqs = [
     {
-      number: 1,
-      icon: <Search size={24} />,
-      title: i18n.language === "en" ? "Clarify contract situation" : "Vertragssituation klären",
-      description: i18n.language === "en" ? "Sie prüfen, ob Sie selbst Vertragspartner sind, und stellen Rechnung, delivery address sowie meter data bereit." : "Sie prüfen, ob Sie selbst Vertragspartner sind, und stellen Rechnung, Lieferadresse sowie Zählerdaten bereit."
+      question: "Wer ist der lokale Grundversorger für Gas in Würselen?",
+      answer: "Die lokale Grundversorgung in Würselen wird in der Regel durch die enwor (Energie- und Wasserversorgung GmbH) sichergestellt. Allerdings sind Sie nicht verpflichtet, dort zu bleiben. Ein Anbieterwechsel kann Ihre jährlichen Heizkosten deutlich reduzieren."
     },
     {
-      number: 2,
-      icon: <BarChart3 size={24} />,
-      title: i18n.language === "en" ? "Classify consumption" : "Verbrauch einordnen",
-      description: i18n.language === "en" ? "The last annual value is used as the basis for a realistic cost comparison." : "Der letzte Jahreswert wird als Grundlage für einen realistischen Kostenvergleich verwendet."
+      question: "Ich heize in Bardenberg noch mit Öl und möchte auf Gas umstellen. Helfen Sie dabei?",
+      answer: "Wir können Sie bei der Wahl des passenden Gasanbieters beraten, sobald der Netzanschluss steht. Für die physische Umrüstung der Heizungsanlage wenden Sie sich bitte an einen lokalen Heizungsinstallateur."
     },
     {
-      number: 3,
-      icon: <CheckSquare size={24} />,
-      title: "Angebote bewerten",
-      description: i18n.language === "en" ? "annual costs, price guarantee, Laufzeit, cancellation period, Bonus und payment method werden gegenübergestellt." : "Jahreskosten, Preisgarantie, Laufzeit, Kündigungsfrist, Bonus und Zahlungsweise werden gegenübergestellt."
+      question: "Wie berechne ich meinen Gasverbrauch für ein Reihenhaus in Broichweiden?",
+      answer: "Wenn Sie noch keine Vorjahresrechnung haben, rechnen wir als Faustformel mit ca. 140 bis 160 kWh pro Quadratmeter Wohnfläche im Jahr. Bei 120 Quadratmetern wären das etwa 16.800 bis 19.200 kWh Gas."
     },
     {
-      number: 4,
-      icon: <Handshake size={24} />,
-      title: "Wechsel vorbereiten",
-      description: i18n.language === "en" ? "After your tariff decision, Energie Alemi supports the next steps if you wish." : "Nach Ihrer Tarifentscheidung unterstützt Energie Alemi auf Wunsch die nächsten Schritte."
-    }
-  ];
-
-  const faqs = [
-    {
-      question: i18n.language === "en" ? "Ist die gas consultation für Würselen free of charge?" : "Ist die Gasberatung für Würselen kostenlos?",
-      answer: i18n.language === "en" ? "Ja. Energie Alemi bietet die tariff advice free of charge an. Für einen konkreten Vergleich sind die letzte gas bill und die aktuellen contract data besonders hilfreich." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich sind die letzte Gasrechnung und die aktuellen Vertragsdaten besonders hilfreich."
-    },
-    {
-      question: i18n.language === "en" ? "Can I switch gas providers as a tenant?" : "Kann ich als Mieterin oder Mieter den Gasanbieter wechseln?",
-      answer: i18n.language === "en" ? "Nur wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen heating system liegt der Vertrag häufig bei landlord oder property management." : "Nur wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage liegt der Vertrag häufig bei Vermietung oder Hausverwaltung."
-    },
-    {
-      question: i18n.language === "en" ? "Welche gas tariffs sind in Würselen verfügbar?" : "Welche Gastarife sind in Würselen verfügbar?",
-      answer: i18n.language === "en" ? "Das hängt von delivery address, Verbrauch und aktuellem Marktangebot ab. Eine belastbare Auskunft ist deshalb erst nach Prüfung der individuellen Daten möglich." : "Das hängt von Lieferadresse, Verbrauch und aktuellem Marktangebot ab. Eine belastbare Auskunft ist deshalb erst nach Prüfung der individuellen Daten möglich."
-    },
-    {
-      question: i18n.language === "en" ? "Was ist beim Vergleich wichtiger: energy price oder basic price?" : "Was ist beim Vergleich wichtiger: Arbeitspreis oder Grundpreis?",
-      answer: i18n.language === "en" ? "Beide price components gehören zusammen. Der energy price wird auf den Verbrauch berechnet, der basic price fällt unabhängig davon an; entscheidend sind die erwarteten annual costs." : "Beide Preisbestandteile gehören zusammen. Der Arbeitspreis wird auf den Verbrauch berechnet, der Grundpreis fällt unabhängig davon an; entscheidend sind die erwarteten Jahreskosten."
-    },
-    {
-      question: i18n.language === "en" ? "Muss beim gas providerwechsel der Zähler getauscht werden?" : "Muss beim Gasanbieterwechsel der Zähler getauscht werden?",
-      answer: i18n.language === "en" ? "In der Regel nicht. Leitungen und Zähler bleiben normalerweise bestehen. Zum switching date kann jedoch ein aktueller meter reading erforderlich sein." : "In der Regel nicht. Leitungen und Zähler bleiben normalerweise bestehen. Zum Wechseltermin kann jedoch ein aktueller Zählerstand erforderlich sein."
-    },
-    {
-      question: i18n.language === "en" ? "Is the gas supply secured during a switch?" : "Ist die Gasversorgung während eines Wechsels gesichert?",
-      answer: i18n.language === "en" ? "Ein regulärer Wechsel ändert den supply contract, nicht das vorhandene Netz. Die gesetzlich geregelte Grund- oder replacement supply sichert die Belieferung ab." : "Ein regulärer Wechsel ändert den Liefervertrag, nicht das vorhandene Netz. Die gesetzlich geregelte Grund- oder Ersatzversorgung sichert die Belieferung ab."
-    },
-    {
-      question: i18n.language === "en" ? "Übernimmt der neue Anbieter die cancellation?" : "Übernimmt der neue Anbieter die Kündigung?",
-      answer: i18n.language === "en" ? "Im Normalfall ja, wenn er entsprechend bevollmächtigt wird. special cancellations, Umzüge und sehr kurze Fristen sollten separat abgestimmt werden." : "Im Normalfall ja, wenn er entsprechend bevollmächtigt wird. Sonderkündigungen, Umzüge und sehr kurze Fristen sollten separat abgestimmt werden."
-    },
-    {
-      question: i18n.language === "en" ? "Why should I consider bonus and following year separately?" : "Warum sollte ich Bonus und Folgejahr getrennt betrachten?",
-      answer: i18n.language === "en" ? "Ein einmaliger Bonus kann das erste Jahr rechnerisch günstiger machen. Für die weitere contract duration sind die laufenden Preise und Bedingungen ohne Einmalvorteil entscheidend." : "Ein einmaliger Bonus kann das erste Jahr rechnerisch günstiger machen. Für die weitere Vertragsdauer sind die laufenden Preise und Bedingungen ohne Einmalvorteil entscheidend."
+      question: "Bieten Sie auch Biogas für Würselen an?",
+      answer: "Ja, wir haben Tarife im Portfolio, die einen festen Anteil an Biogas beinhalten oder durch Klimaschutzprojekte CO2-kompensiert sind. Sprechen Sie uns bei der Beratung einfach darauf an."
     }
   ];
 
   return (
-    <div className="relative bg-white dark:bg-[#0a1628]">
+    <div className="bg-slate-50 dark:bg-[#051024] min-h-screen">
       <SEO 
         url="/gasanbieter-wuerselen" 
-        title={i18n.language === 'en' ? 'Compare Gas Providers Würselen | Energie Alemi' : 'Gasanbieter Würselen vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "gas tariffs in Würselen vergleichen: annual costs, price guarantee und Laufzeit auswerten. Free tariff advice für Privat- und business customers." : "Gastarife in Würselen vergleichen: Jahreskosten, Preisgarantie und Laufzeit auswerten. Kostenlose Tarifberatung für Privat- und Gewerbekunden."}
+        title="Gasanbieter Würselen: Günstige Gastarife finden | Energie Alemi"
+        description="Vergleichen Sie Gasanbieter in Würselen. Wir finden den günstigsten Tarif für Ihr Zuhause in Broichweiden, Bardenberg oder Mitte. Kostenloser Wechselservice."
         image={gasHeroDesk} 
-        faqs={faqs} 
+        faqs={wuerselenFaqs} 
       />
-      <div className="sticky top-0 z-0 md:relative">
-        <ServiceHero 
-          theme="dark"
-          badgeIcon={<Flame size={24} />}
-          badgeText={i18n.language === 'en' ? 'Gas Providers Würselen' : 'Gasanbieter Würselen'}
-          title="Gasanbieter in Würselen vergleichen – Jahreskosten realistisch prüfen"
-          description={<>Sie haben in Würselen einen eigenen Gasliefervertrag? Energie Alemi prüft Ihre Ausgangslage, vergleicht passende Angebote und erklärt Kosten und Vertragsbedingungen verständlich. Übrigens helfen wir Ihnen auch bei der Suche nach einem passenden <Link to="/stromanbieter-wuerselen" className="hover:underline font-semibold text-blue-300">Stromanbieter in Würselen</Link>.</>}
-          bgImage={gasHeroDesk}
-          buttonText="Gastarife für Würselen vergleichen"
-          onButtonClick={() => {
-            setIsModalOpen(true);
-            trackEvent('service_cta_click', { service_type: 'gasanbieter_wuerselen', cta_location: 'service_hero', page_path: window.location.pathname });
-          }}
-          bulletPoints={[
-            { icon: <ShieldCheck size={24} />, title: i18n.language === "en" ? "Free tariff advice" : "Kostenlose Tarifberatung" },
-            { icon: <MapPin size={24} />, title: i18n.language === "en" ? "Consider consumption and building" : "Verbrauch und Gebäude berücksichtigen" },
-            { icon: <Handshake size={24} />, title: i18n.language === "en" ? "contract details transparent prüfen" : "Vertragsdetails transparent prüfen" },
-          ]}
-          accentColor="bg-amber-500 hover:bg-amber-600"
-        />
-      </div>
-
-      <div className="relative z-10 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-12 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Zuerst klären, wer den Gasvertrag abgeschlossen hat</h2>
-          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "Nicht jeder Haushalt kann den gas provider selbst wechseln. In einem Gebäude mit zentraler heating system wird der supply contract häufig von der landlord oder property management geführt. Ein eigener Tarifwechsel kommt nur infrage, wenn Sie selbst Vertragspartner für die Gaslieferung sind." : "Nicht jeder Haushalt kann den Gasanbieter selbst wechseln. In einem Gebäude mit zentraler Heizungsanlage wird der Liefervertrag häufig von der Vermietung oder Hausverwaltung geführt. Ein eigener Tarifwechsel kommt nur infrage, wenn Sie selbst Vertragspartner für die Gaslieferung sind."}
-          </p>
-          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "Ist ein eigener Vertrag vorhanden, bilden annual consumption, delivery address und bestehende Konditionen die Vergleichsbasis. Energie Alemi berät customers aus Würselen-Mitte, Bardenberg und Broichweiden by phone oder personally am Standort in Aachen." : "Ist ein eigener Vertrag vorhanden, bilden Jahresverbrauch, Lieferadresse und bestehende Konditionen die Vergleichsbasis. Energie Alemi berät Kundinnen und Kunden aus Würselen-Mitte, Bardenberg und Broichweiden telefonisch oder persönlich am Standort in Aachen."}
-          </p>
-          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            Arbeitspreis und Grundpreis wirken je nach Verbrauch unterschiedlich. Deshalb werden nicht nur einzelne Preisangaben, sondern die erwarteten Gesamtkosten für zwölf Monate verglichen. Bei wechselndem Verbrauch sollte zusätzlich geprüft werden, wie belastbar die zugrunde gelegte Prognose ist. Erfahren Sie mehr über unsere Leistungen als <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
-          </p>
-        </div>
-        
-        <div className="container mx-auto px-6 mb-12">
-          <SectionHeader 
-            title="Beim Gaspreis zählt die Rechnung für ein ganzes Jahr"
-            align="center"
-            className="mb-12 max-w-4xl mx-auto"
-          />
-          <ServiceFeatures features={features} />
-          <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-6 max-w-4xl mx-auto">
-            Übrigens: Neben der Strom- und Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/internetanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'internet provider in Würselen' : 'Internetanbieter in Würselen'}</Link> zu finden.
-          </p>
-          <p className="text-center text-slate-700 dark:text-slate-300 text-lg leading-relaxed mt-4 max-w-4xl mx-auto border-t border-slate-200 dark:border-slate-800 pt-6">
-            Wir beraten Sie nicht nur in Würselen, sondern in der gesamten Städteregion. Vergleichen Sie auch Tarife für <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Aachen</Link>, <Link to="/gasanbieter-stolberg" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stolberg</Link>, <Link to="/gasanbieter-eschweiler" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Eschweiler</Link> und <Link to="/gasanbieter-herzogenrath" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Herzogenrath</Link>.
-          </p>
-        </div>
-      </div>
       
-      {/* Timeline Section */}
-      <div className="relative z-20 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
-        <section className="py-14 md:py-24">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-              <div className="lg:w-1/3">
-                <div className="sticky top-32">
-                  <SectionHeader 
-                    title={
-                      <>
-                        {i18n.language === "en" ? "This is how the " : "So läuft der "}<span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === "en" ? "gas comparison" : "Gasvergleich"}</span>{i18n.language === "en" ? " works in four clear steps" : " in vier klaren Schritten"}
-                      </>
-                    }
-                    subtitle={i18n.language === "en" ? "Eine price guarantee kann planning security geben, erfasst aber nicht automatisch jeden price component. Dauer, Umfang und mögliche Ausnahmen müssen daher im jeweiligen Angebot gelesen werden." : "Eine Preisgarantie kann Planungssicherheit geben, erfasst aber nicht automatisch jeden Preisbestandteil. Dauer, Umfang und mögliche Ausnahmen müssen daher im jeweiligen Angebot gelesen werden."}
-                    align="left"
-                    className="mb-8"
-                  />
-                  <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800">
-                    <h3 className="font-semibold text-slate-900 dark:text-white mb-4">Preisgarantie und Flexibilität gemeinsam bewerten</h3>
-                    <p className="text-slate-600 dark:text-slate-400">
-                      {i18n.language === "en" ? "Dauer, Umfang und mögliche Ausnahmen müssen im jeweiligen Angebot gelesen werden, damit die price guarantee die gewünschte Sicherheit bietet." : "Dauer, Umfang und mögliche Ausnahmen müssen im jeweiligen Angebot gelesen werden, damit die Preisgarantie die gewünschte Sicherheit bietet."}
-                    </p>
+      <section className="relative bg-[#00173A] dark:bg-[#030914] text-white pt-24 pb-16 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+            <img src={gasHeroDesk} alt="Gas Background" className="w-full h-full object-cover" />
+        </div>
+        <div className="container mx-auto px-6 relative z-10 max-w-5xl">
+           <div className="flex items-center gap-2 mb-4 text-orange-500 font-bold uppercase tracking-wider text-sm">
+              <Flame size={18} /> Gasversorgung Würselen
+           </div>
+           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+              Heizkosten senken mit <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">dem perfekten Gastarif</span>
+           </h1>
+           <p className="text-lg md:text-xl text-blue-100 max-w-3xl mb-8 leading-relaxed">
+             Heizen muss nicht teuer sein. Egal ob Altbau in Würselen-Mitte oder neues Eigenheim in Bardenberg – wir filtern den Tarif-Dschungel nach den besten Gasanbietern für Ihre Postleitzahl.
+           </p>
+           <div className="flex flex-col sm:flex-row gap-4">
+             <button 
+                onClick={() => {
+                  setIsModalOpen(true);
+                  trackEvent('service_cta_click', { service_type: 'gasanbieter_wuerselen_custom' });
+                }}
+                className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-full transition-transform hover:scale-105 flex items-center justify-center gap-2"
+             >
+                <Search size={20} /> Gasvergleich starten
+             </button>
+           </div>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-6 py-16 max-w-5xl">
+         
+         <div className="bg-white dark:bg-[#0a1628] rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200 dark:border-slate-800 mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Warum sich der Wechsel in Würselen lohnt</h2>
+            <div className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed space-y-6">
+               <p>
+                 Durch die geopolitischen Veränderungen der letzten Jahre sind die Gaspreise starken Schwankungen unterworfen. Wer in der Grundversorgung verbleibt, verschenkt oft hunderte Euro pro Jahr.
+               </p>
+               <p>
+                 Wir helfen Ihnen, einen Vertrag mit <Link to="/ratgeber/gaspreise-verstehen" className="text-orange-600 hover:underline">robuster Preisgarantie</Link> zu finden. So schützen Sie sich effektiv vor plötzlichen Preisanpassungen im Winter. Unser lokaler Fokus auf die Region Aachen/Würselen bedeutet, dass wir die Netzbetreiberstrukturen genau kennen.
+               </p>
+            </div>
+         </div>
+
+         <SectionHeader title="Schritt für Schritt zum neuen Gasanbieter" align="center" className="mb-10" />
+         <div className="flex flex-col gap-6 mb-20">
+            <div className="flex flex-col md:flex-row items-center bg-blue-50 dark:bg-[#0f1d35] p-6 rounded-2xl gap-6 border-l-4 border-orange-500">
+               <div className="w-16 h-16 shrink-0 bg-white dark:bg-[#051024] rounded-full flex items-center justify-center text-orange-600 font-bold text-2xl shadow-sm">1</div>
+               <div>
+                  <h3 className="text-xl font-bold mb-2 dark:text-white">Datenaufnahme</h3>
+                  <p className="text-slate-600 dark:text-slate-400">Halten Sie Ihre letzte Gasrechnung bereit. Wir notieren Ihren Jahresverbrauch (in kWh) und Ihre Zählernummer.</p>
+               </div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center bg-blue-50 dark:bg-[#0f1d35] p-6 rounded-2xl gap-6 border-l-4 border-orange-500">
+               <div className="w-16 h-16 shrink-0 bg-white dark:bg-[#051024] rounded-full flex items-center justify-center text-orange-600 font-bold text-2xl shadow-sm">2</div>
+               <div>
+                  <h3 className="text-xl font-bold mb-2 dark:text-white">Angebotsvergleich</h3>
+                  <p className="text-slate-600 dark:text-slate-400">Wir prüfen alle relevanten Gastarife für das Würselener Stadtgebiet (PLZ 52146). Dabei achten wir besonders auf Arbeitspreis und versteckte Boni-Bedingungen.</p>
+               </div>
+            </div>
+            <div className="flex flex-col md:flex-row items-center bg-blue-50 dark:bg-[#0f1d35] p-6 rounded-2xl gap-6 border-l-4 border-orange-500">
+               <div className="w-16 h-16 shrink-0 bg-white dark:bg-[#051024] rounded-full flex items-center justify-center text-orange-600 font-bold text-2xl shadow-sm">3</div>
+               <div>
+                  <h3 className="text-xl font-bold mb-2 dark:text-white">Vertragsabschluss & Kündigung</h3>
+                  <p className="text-slate-600 dark:text-slate-400">Wir senden den neuen Vertrag ein und kündigen parallel fristgerecht bei Ihrem alten Gasanbieter.</p>
+               </div>
+            </div>
+         </div>
+
+         <div className="bg-white dark:bg-[#0a1628] p-8 md:p-12 rounded-3xl border border-slate-200 dark:border-slate-800">
+             <h3 className="text-3xl font-bold mb-8 dark:text-white">Häufig gestellte Fragen (Gas in Würselen)</h3>
+             <div className="space-y-6">
+                {wuerselenFaqs.map((faq, idx) => (
+                  <div key={idx} className="border-b border-slate-100 dark:border-slate-800 pb-6 last:border-0 last:pb-0">
+                     <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-start gap-2">
+                       <CheckCircle2 className="text-green-500 shrink-0 mt-1" size={20} />
+                       {faq.question}
+                     </h4>
+                     <p className="text-slate-600 dark:text-slate-400 pl-7">{faq.answer}</p>
                   </div>
-                </div>
-              </div>
-              <div className="lg:w-2/3">
-                <Timeline steps={steps} />
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      
-      {/* Criteria Section */}
-      <div className="relative z-25 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-16 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <SectionHeader 
-            title="Diese Unterlagen beschleunigen die Prüfung"
-            align="center"
-            className="mb-12"
-          />
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              { title: "Jahresabrechnung", desc: i18n.language === "en" ? "Sie enthält Verbrauch, Abrechnungszeitraum und häufig die wichtigsten contract data." : "Sie enthält Verbrauch, Abrechnungszeitraum und häufig die wichtigsten Vertragsdaten." },
-              { title: "Lieferadresse", desc: i18n.language === "en" ? "It is required for the specific tariff selection." : "Sie ist für die konkrete Tarifauswahl erforderlich." },
-              { title: i18n.language === "en" ? "meter data" : "Zählerdaten", desc: i18n.language === "en" ? "meter number und aktueller Stand können für die Abwicklung benötigt werden." : "Zählernummer und aktueller Stand können für die Abwicklung benötigt werden." },
-              { title: "Vertragsstatus", desc: i18n.language === "en" ? "Laufzeit, cancellation period und bisheriger Anbieter bestimmen den möglichen Starttermin." : "Laufzeit, Kündigungsfrist und bisheriger Anbieter bestimmen den möglichen Starttermin." },
-              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Abschläge, advance payment und mögliche Kautionen sollten vor dem Abschluss klar sein." : "Abschläge, Vorkasse und mögliche Kautionen sollten vor dem Abschluss klar sein." }
-            ].map((item, i) => (
-              <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
-                <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
-                  <CheckSquare size={20} />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-slate-900 dark:text-white mb-1">
-                    <Link to={item.title === "Jahresabrechnung" || item.title === "Zahlungsweise" ? "/ratgeber/gasvergleich" : item.title === "Vertragsstatus" ? "/ratgeber/grundversorgung-aachen-strom-gas" : "/ratgeber/gasanbieter-wechseln"} className="hover:underline">{item.title}</Link>
-                  </h4>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      
-      {/* Contact Section */}
-      <div className="relative z-25 bg-[#0047AB] dark:bg-[#002f75] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-16 text-white text-center shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-6">Gasberatung für Würselen – persönlich aus Aachen</h2>
-          <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            {i18n.language === "en" ? "Energie Alemi vergleicht gas tariffs für customers aus Würselen und erklärt die relevanten Unterschiede ohne pauschale Sparversprechen. Die Beratung ist by phone oder personally am Alexianergraben 9 in 52064 Aachen möglich." : "Energie Alemi vergleicht Gastarife für Kundinnen und Kunden aus Würselen und erklärt die relevanten Unterschiede ohne pauschale Sparversprechen. Die Beratung ist telefonisch oder persönlich am Alexianergraben 9 in 52064 Aachen möglich."}
-          </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
-            <div className="flex flex-col items-center">
-              <MapPin size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Address' : 'Adresse'}</h4>
-              <p className="text-blue-100">Alexianergraben 9, 52064 Aachen</p>
-            </div>
-            <div className="hidden md:block w-px h-16 bg-blue-400/50"></div>
-            <div className="flex flex-col items-center">
-              <Phone size={32} className="mb-3 text-blue-300" />
-              <h4 className="font-semibold text-xl mb-1">{i18n.language === 'en' ? 'Phone' : 'Telefon'}</h4>
-              <a data-track="phone" href="tel:017665949390" className="text-blue-100 hover:text-white hover:underline">0176 659 493 90</a>
-            </div>
-          </div>
-        </div>
-      </div>
+                ))}
+             </div>
+         </div>
 
-      {/* FAQ Section */}
-      <div className="relative z-30 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
-        <section className="py-14 md:py-24">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <SectionHeader 
-              title={i18n.language === "en" ? "Frequently asked questions about gas tariffs in Wuerselen" : "Häufige Fragen zu Gastarifen in Würselen"}
-              align="center"
-              className="mb-12"
-            />
-            <FAQ items={faqs} className="mb-12" />
-            
-            <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 dark:border-slate-800 mt-16">
-              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">Gastarife für Würselen vergleichen</h3>
-              <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                {i18n.language === "en" ? "Free advice at 0176 659 493 90 or via the contact page." : "Kostenlose Beratung unter 0176 659 493 90 oder über die Kontaktseite."}
-              </p>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>
-                  Gastarife für Würselen vergleichen
-                </Button>
-                <Link to="/contact" className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#0047AB] dark:border-[#f0a83f] text-[#0047AB] dark:text-[#f0a83f] font-semibold rounded-full hover:bg-[#0047AB] hover:text-white dark:hover:bg-[#f0a83f] dark:hover:text-[#0a1628] transition-colors">
-                  <Phone size={18} className="mr-2" />
-                  {i18n.language === "en" ? "Free advice" : "Kostenlose Beratung"}
-                </Link>
-              </div>
+         <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold mb-6 dark:text-white">Lassen Sie uns helfen</h3>
+            <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
+              Als Ihr Ansprechpartner vor Ort sind wir für Würselen da. Kontaktieren Sie uns direkt für ein unverbindliches Gespräch.
+            </p>
+            <div className="flex justify-center gap-6">
+               <a href="tel:017665949390" className="flex items-center gap-2 text-orange-600 dark:text-orange-500 font-bold hover:underline">
+                  <Phone size={20} /> 0176 659 493 90
+               </a>
+               <Link to="/contact" className="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-bold hover:underline">
+                  <MapPin size={20} /> Büro in Aachen besuchen
+               </Link>
             </div>
-          </div>
-        </section>
+         </div>
       </div>
+      
       {isModalOpen && (
         <Suspense fallback={null}>
           <CompareModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} defaultService="Gas" />
