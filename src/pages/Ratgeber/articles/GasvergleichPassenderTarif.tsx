@@ -207,7 +207,7 @@ export default function GasvergleichPassenderTarif() {
 
       <h2>Was kostet Gas bei 30.000 kWh?</h2>
       <p>
-        Viele Hausbesitzer fragen sich: "Wie hoch sind meine <strong>30000 kWh Gas Kosten</strong>?" Die genauen Kosten lassen sich nicht pauschal beziffern, da sie von Ihrem aktuellen Tarif abhängen. Zur Berechnung multiplizieren Sie einfach den jährlichen Verbrauch (30.000 kWh) mit dem Arbeitspreis Ihres Tarifs und addieren anschließend den jährlichen Grundpreis (12 Monate × monatlicher Grundpreis).
+        Viele Hausbesitzer fragen sich: "Wie hoch sind meine <strong>30000 kWh Gas Kosten</strong>?" Die genauen Kosten lassen sich nicht pauschal beziffern, da sie von Ihrem aktuellen Tarif abhängen. Wenn Sie detailliert Ihren <Link to="/ratgeber/gasverbrauch-berechnen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline font-semibold">Gasverbrauch berechnen</Link> möchten, multiplizieren Sie einfach den jährlichen Verbrauch (30.000 kWh) mit dem Arbeitspreis Ihres Tarifs und addieren anschließend den jährlichen Grundpreis (12 Monate × monatlicher Grundpreis).
       </p>
       <p>
         Beispiel bei einem Arbeitspreis von 10 Cent/kWh und einem Grundpreis von 15 Euro im Monat:
