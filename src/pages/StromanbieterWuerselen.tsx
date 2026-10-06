@@ -150,6 +150,7 @@ export default function StromanbieterWuerselen() {
 
          <div className="mt-16 text-center">
             <h3 className="text-2xl font-bold mb-6 dark:text-white">Persönliche Beratung in Aachen</h3>
+            <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">Übrigens: Neben der Stromberatung helfen wir Ihnen auch dabei, den passenden <Link to="/gasanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Gasanbieter in Würselen</Link> oder <Link to="/internetanbieter-wuerselen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline font-semibold">Internetanbieter in Würselen</Link> zu finden.</p>
             <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
               Unser Büro liegt in Aachen (Alexianergraben 9). Sie können uns schnell aus Würselen erreichen oder ganz bequem telefonisch beraten werden.
             </p>

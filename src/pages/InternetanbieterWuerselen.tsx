@@ -143,6 +143,7 @@ export default function InternetanbieterWuerselen() {
 
          <div className="mt-16 flex flex-col items-center">
             <h3 className="text-2xl font-bold mb-4 dark:text-white">Kostenlose Beratung anfordern</h3>
+            <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-xl text-center">Übrigens: Neben der Internetberatung helfen wir Ihnen auch dabei, den passenden <Link to="/stromanbieter-wuerselen" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">Stromanbieter in Würselen</Link> oder <Link to="/gasanbieter-wuerselen" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">Gasanbieter in Würselen</Link> zu finden.</p>
             <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-xl text-center">
               Lassen Sie sich von unserem Expertenteam in Aachen neutral und unabhängig zu den besten Breitbandtarifen für Würselen beraten.
             </p>

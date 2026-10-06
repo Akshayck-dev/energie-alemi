@@ -124,6 +124,7 @@ export default function GasanbieterWuerselen() {
 
          <div className="mt-16 text-center">
             <h3 className="text-2xl font-bold mb-6 dark:text-white">Lassen Sie uns helfen</h3>
+            <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">Übrigens: Neben der Gasberatung helfen wir Ihnen auch dabei, den passenden <Link to="/stromanbieter-wuerselen" className="text-orange-600 dark:text-orange-500 hover:underline font-semibold">Stromanbieter in Würselen</Link> oder <Link to="/internetanbieter-wuerselen" className="text-orange-600 dark:text-orange-500 hover:underline font-semibold">Internetanbieter in Würselen</Link> zu finden.</p>
             <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
               Als Ihr Ansprechpartner vor Ort sind wir für Würselen da. Kontaktieren Sie uns direkt für ein unverbindliches Gespräch.
             </p>

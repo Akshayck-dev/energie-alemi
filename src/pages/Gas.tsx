@@ -153,6 +153,9 @@ export default function Gas() {
                     <Link to="/ratgeber/gas-anmelden-umzug" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'registering gas when moving' : 'Gas anmelden beim Umzug'}</Link>
                     <span>.</span>
                   </p>
+                    <p className="text-slate-600 dark:text-white/80 text-lg leading-relaxed mt-4">
+                      {i18n.language === 'en' ? 'Are you from Aachen or Würselen?' : 'Kommen Sie aus Aachen oder Würselen?'} <Link to="/gasanbieter-aachen" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'Here you can find local offers for Aachen' : 'Hier finden Sie lokale Angebote für Aachen'}</Link> {i18n.language === 'en' ? 'and' : 'und'} <Link to="/gasanbieter-wuerselen" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'Würselen' : 'Würselen'}</Link>.
+                    </p>
                   {/* Windmill graphic placeholder */}
                   <div className="mt-12 opacity-50 flex flex-col items-center">
                     <svg width="100%" height="200" viewBox="0 0 200 100" fill="none" stroke="#94a3b8" strokeWidth="1" className="mb-4">
