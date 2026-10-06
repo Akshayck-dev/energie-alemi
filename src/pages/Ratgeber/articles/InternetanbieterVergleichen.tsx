@@ -8,9 +8,24 @@ import Button from '../../../components/ui/Button';
 export default function InternetanbieterVergleichen() {
   const { i18n } = useTranslation();
   const article = articles.find(a => a.slug === 'internetanbieter-vergleichen')!;
+  const faqs = [
+    {
+      question: "Kann ich meinen Router beim Wechsel behalten?",
+      answer: "Wenn es sich um einen eigenen Router handelt, der technisch zum neuen Anschluss passt (z. B. eine frei gekaufte FRITZ!Box), können Sie diesen meist weiter nutzen. Mietgeräte des alten Anbieters müssen Sie zurückgeben."
+    },
+    {
+      question: "Ist die gebuchte Geschwindigkeit garantiert?",
+      answer: "Anbieter sprechen oft von 'bis zu'-Geschwindigkeiten. Im Produktinformationsblatt finden Sie jedoch die 'normalerweise zur Verfügung stehende' und die 'minimale' Geschwindigkeit. Werden diese dauerhaft unterschritten, haben Sie ein Recht auf Preisminderung oder Sonderkündigung."
+    },
+    {
+      question: "Brauche ich einen Techniker für den Wechsel?",
+      answer: "Das hängt von der Anschlussart ab. Wechseln Sie von DSL zu DSL, reicht oft eine Fernschaltung. Beim Wechsel von DSL auf Kabel oder Glasfaser ist meist ein Technikertermin notwendig."
+    }
+  ];
+
   
   return (
-    <ArticleLayout article={article}>
+    <ArticleLayout article={article} faqs={faqs}>
       {i18n.language === 'en' ? (
         <>
 

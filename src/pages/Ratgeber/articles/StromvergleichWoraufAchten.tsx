@@ -8,9 +8,24 @@ import Button from '../../../components/ui/Button';
 export default function StromvergleichWoraufAchten() {
   const { i18n } = useTranslation();
   const article = articles.find(a => a.slug === 'stromvergleich')!;
+  const faqs = [
+    {
+      question: "Lohnt sich ein Wechsel trotz Neukundenbonus?",
+      answer: "Ja, aber Sie sollten die Gesamtkosten für das erste Jahr genau betrachten. Manchmal sind Tarife ohne Bonus, aber mit niedrigerem Grund- und Arbeitspreis langfristig günstiger."
+    },
+    {
+      question: "Was ist der Unterschied zwischen Preisgarantie und eingeschränkter Preisgarantie?",
+      answer: "Eine volle Preisgarantie sichert alle Preisbestandteile bis auf die Mehrwertsteuer ab. Eine eingeschränkte Preisgarantie klammert staatliche Steuern, Abgaben und Umlagen aus. Steigen diese, kann Ihr Preis trotz Garantie steigen."
+    },
+    {
+      question: "Wie lange dauert der Anbieterwechsel?",
+      answer: "Ein regulärer Wechsel dauert in der Regel drei bis sechs Wochen. Das genaue Datum hängt von der Kündigungsfrist Ihres alten Vertrages ab."
+    }
+  ];
+
   
   return (
-    <ArticleLayout article={article}>
+    <ArticleLayout article={article} faqs={faqs}>
       {i18n.language === 'en' ? (
         <>
 

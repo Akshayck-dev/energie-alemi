@@ -16,8 +16,8 @@ export const articles: RatgeberArticle[] = [
   {
     id: '1',
     slug: 'stromanbieter-wechseln',
-    title: 'Stromanbieter wechseln 2026: So einfach geht der Wechsel | ALEMI',
-    titleEn: 'Switching Electricity Providers 2026: It\'s That Easy | ALEMI',
+    title: 'Stromanbieter wechseln 2026: So einfach geht der Wechsel | Energie Alemi',
+    titleEn: 'Switching Electricity Providers 2026: It\'s That Easy | Energie Alemi',
     description: 'Stromanbieter wechseln leicht gemacht: Erfahren Sie, wie der Wechsel abläuft, welche Fristen gelten, was Sie beachten sollten und wie Sie einen passenden Stromtarif finden.',
     descriptionEn: 'Switching electricity providers made easy: Find out how the switch works, which deadlines apply, what you should consider and how to find a suitable electricity tariff.',
     category: 'Strom',
@@ -39,8 +39,8 @@ export const articles: RatgeberArticle[] = [
   {
     id: '3',
     slug: 'gasvergleich',
-    title: 'Gastarife vergleichen 2026: Günstigen Gastarif finden | ALEMI',
-    titleEn: 'Compare Gas Tariffs 2026: Find a Cheap Gas Tariff | ALEMI',
+    title: 'Gastarife vergleichen 2026: Günstigen Gastarif finden | Energie Alemi',
+    titleEn: 'Compare Gas Tariffs 2026: Find a Cheap Gas Tariff | Energie Alemi',
     description: 'Gastarife vergleichen und den passenden Gastarif finden. Erfahren Sie, worauf Sie bei Gaspreisen, Verbrauch, Vertragslaufzeit und Anbieterwechsel achten sollten.',
     descriptionEn: 'Compare gas tariffs and find the right gas tariff. Find out what you should look out for regarding gas prices, consumption, contract terms and switching providers.',
     category: 'Gas',
@@ -73,7 +73,7 @@ export const articles: RatgeberArticle[] = [
   {
     id: '6',
     slug: 'umzug-aachen-strom-gas-internet',
-    title: 'Umzug nach Aachen: Strom, Gas und Internet richtig anmelden',
+    title: 'Umzug Aachen: Strom, Gas, Internet anmelden | Energie Alemi',
     titleEn: 'Moving to Aachen: Registering Electricity, Gas and Internet Correctly',
     description: 'Praktischer Ratgeber für Ihren Umzug nach Aachen. Erfahren Sie alles zu Anmeldefristen, Sonderkündigungsrechten (EnWG & TKG) und wie Sie typische Fehler vermeiden.',
     descriptionEn: 'Practical guide for your move to Aachen. Learn everything about registration deadlines, special termination rights (EnWG & TKG) and how to avoid typical mistakes.',
@@ -196,7 +196,7 @@ export const articles: RatgeberArticle[] = [
   ,{
     id: '17',
     slug: 'energieberater-aachen',
-    title: 'Energieberater Aachen: Hilfe beim Stromanbieterwechsel',
+    title: 'Energieberater Aachen: Hilfe beim Wechsel | Energie Alemi',
     titleEn: 'Energy Consultant Aachen: Help with Switching Electricity Providers',
     description: 'Energieberater in Aachen gesucht? Wir zeigen, wer beim Stromanbieterwechsel wirklich hilft – Tarifberatung, Verbraucherzentrale & worauf Sie achten sollten.',
     descriptionEn: 'Looking for an energy consultant in Aachen? We show who really helps with switching electricity providers – tariff advice, consumer advice center & what you should look out for.',
