@@ -145,7 +145,7 @@ export default function Gas() {
                     <Link to="/ratgeber/grundversorgung-aachen-strom-gas" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{t('gas.cross_l4')}</Link>
                     <span>{i18n.language === 'en' ? ' or read our useful ' : t('gas.cross_p5', ' oder lesen Sie unseren nützlichen ')}</span>
                     <Link to="/ratgeber/gasvergleich" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'gas comparison guide' : 'Gasvergleich-Ratgeber'}</Link>
-                    <span>{i18n.language === 'en' ? ' as well as our guide on ' : t('gas.cross_p6', ' sowie unserem Ratgeber zum ')}</span>
+                    <span>{i18n.language === 'en' ? ' as well as our guide on ' : t('gas.cross_p6', ' sowie unseren Ratgeber zum ')}</span>
                     <Link to="/ratgeber/gasanbieter-wechseln" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'switching gas providers' : 'Gasanbieter wechseln'}</Link>
                     <span>. {i18n.language === 'en' ? 'Also see our guide to ' : 'Siehe auch unseren Leitfaden zu '}</span>
                     <Link to="/ratgeber/gaspreise-verstehen" className="text-[#ea580c] dark:text-[#f0a83f] hover:underline font-semibold">{i18n.language === 'en' ? 'understanding gas prices' : 'Gaspreise verstehen'}</Link>
