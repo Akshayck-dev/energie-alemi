@@ -85,9 +85,7 @@ function generateSitemap() {
     
     xml += `  <url>\n`;
     xml += `    <loc>${loc}</loc>\n`;
-    if (finalLastMod) {
-      xml += `    <lastmod>${finalLastMod}</lastmod>\n`;
-    }
+
     xml += `  </url>\n`;
   });
   

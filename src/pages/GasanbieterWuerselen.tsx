@@ -14,7 +14,7 @@ export default function GasanbieterWuerselen() {
   const wuerselenFaqs = [
     {
       question: "Wer ist der lokale Grundversorger für Gas in Würselen?",
-      answer: "Die lokale Grundversorgung in Würselen wird in der Regel durch die enwor (Energie- und Wasserversorgung GmbH) sichergestellt. Allerdings sind Sie nicht verpflichtet, dort zu bleiben. Ein Anbieterwechsel kann Ihre jährlichen Heizkosten deutlich reduzieren."
+      answer: "Die lokale Grundversorgung in Würselen stellt der örtliche Grundversorger sicher. Allerdings sind Sie nicht verpflichtet, dort zu bleiben. Ein Anbieterwechsel kann Ihre jährlichen Heizkosten deutlich reduzieren."
     },
     {
       question: "Ich heize in Bardenberg noch mit Öl und möchte auf Gas umstellen. Helfen Sie dabei?",
@@ -27,6 +27,15 @@ export default function GasanbieterWuerselen() {
     {
       question: "Bieten Sie auch Biogas für Würselen an?",
       answer: "Ja, wir haben Tarife im Portfolio, die einen festen Anteil an Biogas beinhalten oder durch Klimaschutzprojekte CO2-kompensiert sind. Sprechen Sie uns bei der Beratung einfach darauf an."
+    },
+  
+    {
+      question: "Lohnt sich ein Wechsel des Gasanbieters auch bei kleinen Wohnungen in Würselen-Mitte?",
+      answer: "Absolut. Auch bei einem geringeren Verbrauch in einer Etagenwohnung lassen sich durch den Wechsel in einen günstigeren Tarif oft spürbare Einsparungen erzielen, da auch die monatlichen Grundpreise der Anbieter stark variieren."
+    },
+    {
+      question: "Lohnt sich ein Wechsel des Gasanbieters auch bei kleinen Wohnungen in Würselen-Mitte?",
+      answer: "Absolut. Auch bei einem geringeren Verbrauch in einer Etagenwohnung lassen sich durch den Wechsel in einen günstigeren Tarif oft spürbare Einsparungen erzielen, da auch die monatlichen Grundpreise der Anbieter stark variieren."
     }
   ];
 
@@ -79,6 +88,16 @@ export default function GasanbieterWuerselen() {
                <p>
                  Wir helfen Ihnen, einen Vertrag mit <Link to="/ratgeber/gaspreise-verstehen" className="text-orange-600 hover:underline">robuster Preisgarantie</Link> zu finden. So schützen Sie sich effektiv vor plötzlichen Preisanpassungen im Winter. Unser lokaler Fokus auf die Region Aachen/Würselen bedeutet, dass wir die Netzbetreiberstrukturen genau kennen.
                </p>
+            </div>
+         </div>
+
+         
+         <div className="bg-white dark:bg-[#0a1628] rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200 dark:border-slate-800 mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Lokale Expertise für Würselen und Umgebung</h2>
+            <div className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed space-y-6">
+               <p>Würselen ist mit seinen lebendigen Ortsteilen wie Bardenberg, Broichweiden und Würselen-Mitte eine gefragte Wohn- und Wirtschaftsregion. Durch die direkte Nähe zu Aachen und Herzogenrath sowie die hervorragende Anbindung am Aachener Kreuz wächst die Stadt kontinuierlich. Für viele Familien und Unternehmen stellt die Gasversorgung jedoch einen erheblichen Kostenfaktor dar, insbesondere in den Wintermonaten.</p>
+               <p>Unsere regionale Nähe erlaubt es uns, die Besonderheiten des lokalen Marktes genau zu verstehen. Oftmals verbleiben Haushalte aus reiner Gewohnheit in teuren Altverträgen, während sich die Preise am Markt längst entspannt haben. Wir helfen Ihnen, diese Preisunterschiede transparent zu machen. Egal ob Sie ein klassisches Reihenhaus in Broichweiden oder eine Gewerbeimmobilie am Aachener Kreuz beheizen – wir finden den Gastarif, der genau zu Ihrem Verbrauchsverhalten passt. Ein Wechsel ist unkompliziert und wird von uns komplett begleitet, sodass Sie sich um keine administrativen Hürden kümmern müssen. So kombinieren Sie regionale Verbundenheit mit messbaren finanziellen Einsparungen bei Ihren Heizkosten.</p>
+                           <p>Ein weiterer großer Vorteil für Haushalte in Würselen ist unser umfassender Wechselservice. Von der ersten Prüfung Ihrer Jahresabrechnung bis hin zur Übermittlung des Zählerstands an den neuen Versorger kümmern wir uns um alle administrativen Details. Besonders in älteren Wohngebäuden in Würselen-Mitte oder historischen Immobilien in Bardenberg kann ein optimierter Gastarif entscheidend zur Entlastung der Haushaltskasse beitragen. Darüber hinaus beraten wir Sie gerne zu Tarifen mit robuster Preisgarantie, die Sie zuverlässig vor unerwarteten Preissprüngen in der nächsten Heizperiode schützen. So verbinden wir echten lokalen Service mit maximaler Sicherheit für Ihr Budget.</p>
             </div>
          </div>
 

@@ -27,6 +27,15 @@ export default function InternetanbieterWuerselen() {
     {
       question: "Kümmert sich Energie Alemi auch um meinen neuen Router?",
       answer: "Ja, wir beraten Sie, ob es wirtschaftlicher ist, den Router beim Anbieter zu mieten oder ein eigenes Gerät (z.B. eine aktuelle FRITZ!Box) zu kaufen. Die Einrichtung müssen Sie jedoch selbst vornehmen oder einen IT-Service beauftragen."
+    },
+  
+    {
+      question: "Ist ein Wechsel des Internetanbieters in Würselen mit Ausfallzeiten verbunden?",
+      answer: "Nein, bei einem regulären Anbieterwechsel ist gesetzlich geregelt, dass die Ausfallzeit maximal einen Arbeitstag betragen darf. In der Praxis verläuft die Umschaltung meist fließend, sodass Sie in Würselen nahezu unterbrechungsfrei online bleiben."
+    },
+    {
+      question: "Ist ein Wechsel des Internetanbieters in Würselen mit Ausfallzeiten verbunden?",
+      answer: "Nein, bei einem regulären Anbieterwechsel ist gesetzlich geregelt, dass die Ausfallzeit maximal einen Arbeitstag betragen darf. In der Praxis verläuft die Umschaltung meist fließend, sodass Sie in Würselen nahezu unterbrechungsfrei online bleiben."
     }
   ];
 
@@ -85,6 +94,16 @@ export default function InternetanbieterWuerselen() {
          </div>
 
          {/* Two Column Process */}
+         
+         <div className="bg-white dark:bg-[#0a1628] rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200 dark:border-slate-800 mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Lokale Expertise für Würselen und Umgebung</h2>
+            <div className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed space-y-6">
+               <p>Die Stadt Würselen mit ihren Ortsteilen Bardenberg, Broichweiden und Würselen-Mitte zeichnet sich durch eine hohe Lebensqualität und eine starke wirtschaftliche Dynamik aus. Insbesondere die exzellente Lage am Aachener Kreuz und die direkte Nachbarschaft zu Aachen und Herzogenrath machen die Region attraktiv. Diese positive Entwicklung spiegelt sich auch im wachsenden Bedarf an schnellen, stabilen Internetverbindungen wider – sowohl für das private Home-Office als auch für lokale Gewerbebetriebe.</p>
+               <p>Als Ihr Berater aus der Region kennen wir die Herausforderungen des lokalen Breitbandausbaus. Die Verfügbarkeit von VDSL, Kabel-Internet oder Glasfaser kann selbst innerhalb von Würselen von Straße zu Straße variieren. Deshalb verlassen wir uns nicht auf pauschale Werbeversprechen, sondern führen für Ihre genaue Adresse eine detaillierte Verfügbarkeitsprüfung durch. Egal ob Sie in Bardenberg wohnen oder ein Büro in Broichweiden betreiben – wir finden die Technologie und den Anbieter, der Ihnen die versprochene Leistung auch tatsächlich liefert. Wir übernehmen die Kommunikation mit den Providern und sorgen für einen reibungslosen Wechsel, damit Sie stets optimal vernetzt bleiben.</p>
+                           <p>Neben der reinen Anschlussgeschwindigkeit legen wir in Würselen großen Wert auf Stabilität und verlässlichen Service. Egal ob Sie für Ihr Home-Office auf eine konstante Upload-Rate angewiesen sind oder abends mit der ganzen Familie ruckelfrei streamen möchten – die Wahl des richtigen Routers und die passenden Vertragsoptionen machen den Unterschied. Wir helfen Ihnen auch bei komplexeren Anforderungen, etwa wenn Sie Ihre alte Festnetznummer portieren möchten oder spezifische TV-Pakete benötigen. Durch unseren lokalen Fokus wissen wir aus Erfahrung, welche Anbieter in welchen Teilen von Würselen, sei es in Broichweiden oder am Aachener Kreuz, ihre Leistungsversprechen auch wirklich in der Praxis einhalten.</p>
+            </div>
+         </div>
+
          <SectionHeader title="Ablauf des Anbieterwechsels" align="center" className="mb-10" />
          <div className="grid md:grid-cols-2 gap-8 mb-20">
             <div className="bg-slate-50 dark:bg-[#0f1d35] p-8 rounded-2xl border border-slate-200 dark:border-slate-800">

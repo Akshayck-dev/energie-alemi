@@ -27,6 +27,10 @@ export default function StromanbieterWuerselen() {
     {
       question: "Unterstützt Energie Alemi bei der Installation von Smart Metern in Würselen?",
       answer: "Wir beraten Sie, welche Tarife von Smart Metern (intelligenten Messsystemen) profitieren, wie beispielsweise dynamische Stromtarife. Den eigentlichen Einbau übernimmt jedoch Ihr lokaler Messstellenbetreiber."
+    },
+    {
+      question: "Gibt es spezielle Stromtarife für Wärmepumpen in Würselen?",
+      answer: "Ja, wenn Sie in Würselen eine Wärmepumpe betreiben, können Sie oft von speziellen Wärmepumpentarifen profitieren. Wir prüfen gerne, ob Ihr Netzanschluss die technischen Voraussetzungen dafür erfüllt und vergleichen die entsprechenden Angebote für Sie."
     }
   ];
 
@@ -87,6 +91,16 @@ export default function StromanbieterWuerselen() {
          </div>
 
          {/* Grid Layout for Process */}
+         
+         <div className="bg-white dark:bg-[#0a1628] rounded-3xl p-8 md:p-12 shadow-sm border border-slate-200 dark:border-slate-800 mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Lokale Expertise für Würselen und Umgebung</h2>
+            <div className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed space-y-6">
+               <p>Als direkte Nachbarstadt von Aachen bietet Würselen – mit seinen bekannten Ortsteilen wie Bardenberg, Broichweiden und Würselen-Mitte – eine lebendige Mischung aus Wohnquartieren und starken Gewerbegebieten. Besonders rund um das Aachener Kreuz wachsen Wirtschaft und Infrastruktur. Die Nähe zu Aachen und Herzogenrath macht Würselen zu einem attraktiven Lebensmittelpunkt. Doch egal ob Sie eine Wohnung im Zentrum, ein Einfamilienhaus in Bardenberg oder einen Betrieb in Broichweiden haben, die Stromkosten sind ein zentraler Faktor der monatlichen Ausgaben.</p>
+               <p>Durch unsere regionale Nähe kennen wir die Gegebenheiten vor Ort genau. Wir wissen, dass viele Haushalte in Würselen historische Verträge haben, die längst nicht mehr den aktuellen Marktbedingungen entsprechen. Ein regelmäßiger Vergleich lohnt sich hier besonders. Wir analysieren Ihren Verbrauch transparent und zeigen Ihnen, welche Einsparpotenziale in Ihrem aktuellen Stromtarif stecken. So profitieren Sie von unserer lokalen Expertise und sichern sich dauerhaft attraktive Konditionen, ohne auf einen verlässlichen Ansprechpartner verzichten zu müssen. Wir begleiten Sie von der ersten Beratung bis zum erfolgreichen Wechsel des Anbieters und stehen Ihnen auch danach bei Fragen jederzeit zur Verfügung. So wird der Stromanbieterwechsel für Sie in Würselen absolut stressfrei.</p>
+                           <p>Viele unserer Kundinnen und Kunden aus Würselen schätzen besonders den direkten, persönlichen Draht zu uns. Anstatt in unpersönlichen Hotline-Warteschleifen festzuhängen, haben Sie bei uns einen festen Ansprechpartner, der Ihre individuelle Situation – ob Gewerbe am Kaninsberg oder Wohnung in Bardenberg – genau kennt. Wir behalten für Sie auch langfristig den Markt im Blick. Sollten sich die Strompreise nach Ablauf Ihrer Preisgarantie ändern, informieren wir Sie proaktiv über neue, günstigere Optionen. Dieser kontinuierliche Service garantiert, dass Sie nicht nur einmalig beim Wechsel sparen, sondern Ihre Energiekosten dauerhaft auf einem niedrigen Niveau halten können, ohne selbst ständig Tarife vergleichen zu müssen.</p>
+            </div>
+         </div>
+
          <SectionHeader title="So funktioniert unser Service" align="center" className="mb-10" />
          <div className="grid md:grid-cols-3 gap-8 mb-20">
             <div className="bg-blue-50 dark:bg-[#0f1d35] p-8 rounded-2xl">

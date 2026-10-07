@@ -65,11 +65,11 @@
     "items": {
       "electricity": {
         "title": "Electricity",
-        "description": "100% green energy for a sustainable tomorrow."
+        "description": "Green energy tariffs upon request."
       },
       "gas": {
         "title": "Gas",
-        "description": "Reliable and affordable climate-neutral gas tariffs."
+        "description": "Reliable gas tariffs with CO₂ compensation upon request."
       },
       "internet": {
         "title": "Internet",

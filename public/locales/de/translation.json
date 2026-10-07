@@ -65,11 +65,11 @@
     "items": {
       "electricity": {
         "title": "Strom",
-        "description": "100% Ökostrom für ein nachhaltiges Morgen. Unser umfassender Stromvergleich berücksichtigt nicht nur den reinen Arbeitspreis pro Kilowattstunde, sondern auch den monatlichen Grundpreis, die Vertragslaufzeit und den Umfang der Preisgarantie. Egal ob Single-Haushalt, Großfamilie oder Unternehmen – wir finden den Tarif, der Ihre laufenden Stromkosten spürbar senkt und vor plötzlichen Preiserhöhungen schützt. Wechseln Sie sicher den Stromanbieter."
+        "description": "Ökostrom-Tarife auf Wunsch. Unser umfassender Stromvergleich berücksichtigt nicht nur den reinen Arbeitspreis pro Kilowattstunde, sondern auch den monatlichen Grundpreis, die Vertragslaufzeit und den Umfang der Preisgarantie. Egal ob Single-Haushalt, Großfamilie oder Unternehmen – wir finden den Tarif, der Ihre laufenden Stromkosten spürbar senkt und vor plötzlichen Preiserhöhungen schützt. Wechseln Sie sicher den Stromanbieter."
       },
       "gas": {
         "title": "Gas",
-        "description": "Zuverlässige und günstige klimaneutrale Gastarife. Die Entwicklungen auf dem Gasmarkt sind oft unübersichtlich. Wir analysieren für Sie das Verhältnis von Arbeitspreis zu Grundpreis und prüfen Vertragslaufzeiten sowie Wechselboni im Detail. Unser Service richtet sich an alle, die verlässlich heizen und dabei Budgetsicherheit genießen wollen. Entdecken Sie jetzt, wie einfach ein Gasanbieterwechsel mit unserer Begleitung ist."
+        "description": "Zuverlässige Gastarife mit CO₂-Ausgleich auf Wunsch. Die Entwicklungen auf dem Gasmarkt sind oft unübersichtlich. Wir analysieren für Sie das Verhältnis von Arbeitspreis zu Grundpreis und prüfen Vertragslaufzeiten sowie Wechselboni im Detail. Unser Service richtet sich an alle, die verlässlich heizen und dabei Budgetsicherheit genießen wollen. Entdecken Sie jetzt, wie einfach ein Gasanbieterwechsel mit unserer Begleitung ist."
       },
       "internet": {
         "title": "Internet",
