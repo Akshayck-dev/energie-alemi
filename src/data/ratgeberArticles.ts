@@ -152,9 +152,9 @@ export const articles: RatgeberArticle[] = [
   {
     id: '13',
     slug: 'stromkosten-berechnen',
-    title: 'Stromkosten berechnen: Formel & Beispiele 2026 | Energie Alemi',
+    title: 'Stromkosten berechnen: Rechner, Formel & Beispiele | Energie Alemi',
     titleEn: 'Calculate Electricity Costs: Formula & Examples 2026 | Energie Alemi',
-    description: 'Stromkosten einfach berechnen: Jahresverbrauch, Arbeitspreis und Grundpreis richtig einsetzen und Tarife realistisch vergleichen.',
+    description: 'Stromkosten in 30 Sekunden berechnen: kostenloser Rechner, einfache Formel und Beispiele für 1- bis 4-Personen-Haushalte – inkl. Vergleich zur STAWAG-Grundversorgung in Aachen.',
     descriptionEn: 'Calculate electricity costs easily: correctly apply annual consumption, energy price and basic price and realistically compare tariffs.',
     category: 'Strom',
     publishedDate: '2026-09-27',

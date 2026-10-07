@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import ArticleLayout from '../ArticleLayout';
 import { articles } from '../../../data/ratgeberArticles';
 import Button from '../../../components/ui/Button';
+import StromkostenRechner from '../../../components/StromkostenRechner';
 
 export default function StromkostenBerechnen() {
   const { i18n } = useTranslation();
@@ -51,6 +52,7 @@ export default function StromkostenBerechnen() {
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
         The simple formula is: Annual consumption in kWh × Unit price in euros per kWh + annual base price = expected electricity costs per year. For a realistic calculation, both price components must be taken into account.
       </p>
+      <StromkostenRechner />
       <p>
         Example: 2,500 kWh × 0.35 Euro/kWh + 120 Euro base price equals 995 Euros per year. The calculated monthly value is around 82.92 Euros. This example is not a tariff offer.
       </p>
@@ -122,6 +124,8 @@ export default function StromkostenBerechnen() {
         <ul className="flex flex-col gap-2">
           <li><Link to="/ratgeber/stromvergleich" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Electricity Comparison</Link></li>
           <li><Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Switching Electricity Providers</Link></li>
+          <li><Link to="/ratgeber/arbeitspreis-strom" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Arbeitspreis Strom</Link></li>
+          <li><Link to="/ratgeber/arbeitspreis-strom" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Electricity Unit Price</Link></li>
           <li><Link to="/ratgeber/stromverbrauch-1-person" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Electricity Consumption 1 Person</Link></li>
           <li><Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Electricity Providers Aachen</Link></li>
         </ul>
@@ -134,6 +138,7 @@ export default function StromkostenBerechnen() {
       <p className="lead text-xl text-slate-600 dark:text-slate-300 font-medium mb-8">
         Die einfache Formel lautet: Jahresverbrauch in kWh × Arbeitspreis in Euro pro kWh + jährlicher Grundpreis = erwartete Stromkosten pro Jahr. Für eine realistische Rechnung müssen beide Preisbestandteile berücksichtigt werden.
       </p>
+      <StromkostenRechner />
       <p>
         Beispiel: 2.500 kWh × 0,35 Euro/kWh + 120 Euro Grundpreis ergeben 995 Euro pro Jahr. Der rechnerische Monatswert beträgt rund 82,92 Euro. Dieses Beispiel ist kein Tarifangebot.
       </p>
@@ -205,6 +210,8 @@ export default function StromkostenBerechnen() {
         <ul className="flex flex-col gap-2">
           <li><Link to="/ratgeber/stromvergleich" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Stromvergleich</Link></li>
           <li><Link to="/ratgeber/stromanbieter-wechseln" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Stromanbieter Wechseln</Link></li>
+          <li><Link to="/ratgeber/arbeitspreis-strom" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Arbeitspreis Strom</Link></li>
+          <li><Link to="/ratgeber/arbeitspreis-strom" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Electricity Unit Price</Link></li>
           <li><Link to="/ratgeber/stromverbrauch-1-person" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Stromverbrauch 1 Person</Link></li>
           <li><Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#60a5fa] hover:underline">Stromanbieter Aachen</Link></li>
         </ul>
