@@ -31,6 +31,7 @@ import StromanbieterWuerselen from './pages/StromanbieterWuerselen';
 import GasanbieterWuerselen from './pages/GasanbieterWuerselen';
 import InternetanbieterWuerselen from './pages/InternetanbieterWuerselen';
 import EnergieFragen from './pages/EnergieFragen';
+import Wechselservice from './pages/Wechselservice';
 
 import FAQ from './pages/FAQ';
 import RatgeberIndex from './pages/Ratgeber/RatgeberIndex';
@@ -122,6 +123,7 @@ export default function AppRoutes() {
           <Route path="/gasanbieter-wuerselen" element={<GasanbieterWuerselen />} />
           <Route path="/internetanbieter-wuerselen" element={<InternetanbieterWuerselen />} />
           <Route path="/energie-fragen" element={<EnergieFragen />} />
+          <Route path="/energievertrag-wechseln-lassen" element={<Wechselservice />} />
           
           {/* Ratgeber Routes */}
           <Route path="/ratgeber" element={<RatgeberIndex />} />

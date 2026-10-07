@@ -479,5 +479,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-09-28",
     "structuredDataType": "Article"
+  },
+  {
+    "path": "/energievertrag-wechseln-lassen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Energievertrag wechseln lassen in Aachen | Energie Alemi",
+    "description": "Strom-, Gas- oder Internetvertrag wechseln lassen, ohne selbst zu k\u00fcndigen: Energie Alemi vergleicht Tarife, \u00fcbernimmt K\u00fcndigung und Anmeldung in Aachen. Kostenlose Beratung.",
+    "canonical": "/energievertrag-wechseln-lassen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-10-07",
+    "structuredDataType": "FAQPage"
   }
 ]

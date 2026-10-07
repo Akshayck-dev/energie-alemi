@@ -154,6 +154,9 @@ export default function GasanbieterAachen() {
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             {i18n.language === 'en' ? 'By the way: We not only advise you on gas, but also support you as a' : 'Übrigens: Wir beraten Sie nicht nur zu Gas, sondern unterstützen Sie als'} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'electricity provider' : 'Stromanbieter'}</Link> und <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'internet provider in Aachen' : 'Internetanbieter in Aachen'}</Link> {i18n.language === 'en' ? 'also with joint contract optimization.' : 'auch bei der gemeinsamen Vertragsoptimierung.'}
           </p>
+          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
+            {i18n.language === 'en' ? 'Alternatively, let us change your contract' : 'Alternativ lassen Sie Ihren Vertrag von uns wechseln'}: <Link to="/energievertrag-wechseln-lassen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Energievertrag wechseln lassen</Link>.
+          </p>
         </div>
         
         <div className="container mx-auto px-6 mb-12">

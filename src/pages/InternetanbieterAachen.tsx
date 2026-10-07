@@ -163,6 +163,9 @@ export default function InternetanbieterAachen() {
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Je nach Adresse können DSL, Kabel, Glasfaser oder funkbasierte Lösungen infrage kommen. Deshalb beginnt unsere Beratung mit einer Verfügbarkeits- und Bedarfsprüfung statt mit einer pauschalen Empfehlung. Wenn Sie sich vorab informieren möchten, können Sie auch <Link to="/ratgeber/internetanbieter-vergleichen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Internetanbieter vergleichen</Link>.
           </p>
+          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
+            {i18n.language === 'en' ? 'Alternatively, let us change your contract' : 'Alternativ lassen Sie Ihren Vertrag von uns wechseln'}: <Link to="/energievertrag-wechseln-lassen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Energievertrag wechseln lassen</Link>.
+          </p>
         </div>
         
         <div className="container mx-auto px-6 mb-12">

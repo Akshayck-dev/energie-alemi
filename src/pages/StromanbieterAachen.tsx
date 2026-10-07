@@ -144,6 +144,9 @@ export default function StromanbieterAachen() {
             </Link>
             {i18n.language === 'en' ? ', we will also help you find the right tariff for your specific needs.' : ', helfen wir Ihnen, den passenden Tarif für Ihren Bedarf zu finden.'}
           </p>
+          <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
+            {i18n.language === 'en' ? 'Alternatively, let us change your contract' : 'Alternativ lassen Sie Ihren Vertrag von uns wechseln'}: <Link to="/energievertrag-wechseln-lassen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Energievertrag wechseln lassen</Link>.
+          </p>
         </div>
         
         <div className="container mx-auto px-6 mb-12">
