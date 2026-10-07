@@ -54,6 +54,7 @@ import GasverbrauchBerechnen from './pages/Ratgeber/articles/GasverbrauchBerechn
 import GaspreiseVerstehen from './pages/Ratgeber/articles/GaspreiseVerstehen';
 
 import EnergieberaterAachen from './pages/Ratgeber/articles/EnergieberaterAachen';
+import ArbeitspreisStrom from './pages/Ratgeber/articles/ArbeitspreisStrom';
 export default function AppRoutes() {
   const { i18n } = useTranslation();
 
@@ -145,6 +146,7 @@ export default function AppRoutes() {
       <Route path="/ratgeber/gasverbrauch-berechnen" element={<GasverbrauchBerechnen />} />
       <Route path="/ratgeber/gaspreise-verstehen" element={<GaspreiseVerstehen />} />
             <Route path="/ratgeber/energieberater-aachen" element={<EnergieberaterAachen />} />
+      <Route path="/ratgeber/arbeitspreis-strom" element={<ArbeitspreisStrom />} />
 <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

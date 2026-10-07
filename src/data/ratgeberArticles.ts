@@ -203,5 +203,14 @@ export const articles: RatgeberArticle[] = [
     category: 'Strom',
     publishedDate: '2026-09-28',
     componentName: 'EnergieberaterAachen'
-  }
+  },
+  {
+    id: 'arbeitspreis-strom',
+    slug: 'arbeitspreis-strom',
+    title: 'Arbeitspreis Strom erklärt: Definition & aktuelle Werte | Energie Alemi',
+    description: 'Arbeitspreis und Grundpreis einfach erklärt: Bedeutung, Berechnung mit Beispiel, aktuelle Werte 2026 und warum der Arbeitspreis bei hohem Verbrauch entscheidet.',
+    category: 'Strom',
+    publishedDate: '2026-10-07',
+    componentName: 'ArbeitspreisStrom'
+  },
 ];

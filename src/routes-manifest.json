@@ -490,5 +490,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-10-07",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/ratgeber/arbeitspreis-strom",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Arbeitspreis Strom erkl\u00e4rt: Definition & aktuelle Werte | Energie Alemi",
+    "description": "Arbeitspreis und Grundpreis einfach erkl\u00e4rt: Bedeutung, Berechnung mit Beispiel, aktuelle Werte 2026 und warum der Arbeitspreis bei hohem Verbrauch entscheidet.",
+    "canonical": "/ratgeber/arbeitspreis-strom",
+    "sitemapInclusion": true,
+    "lastmod": "2026-10-07",
+    "structuredDataType": "FAQPage"
   }
 ]
