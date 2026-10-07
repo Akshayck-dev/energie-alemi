@@ -134,7 +134,7 @@ export default function SEO({ title, description, url, image, isArticle, datePub
     }
   });
 
-  if (url === '/electricity' || url === '/gas' || url === '/internet' || (url && url.match(/^\/(strom|gas|internet)anbieter-(.+)$/))) {
+  if (url === '/electricity' || url === '/gas' || url === '/internet' || url === '/energieberater-aachen' || url === '/energievertrag-wechseln-lassen' || (url && url.match(/^\/(strom|gas|internet)anbieter-(.+)$/))) {
     let serviceName = '';
     let areaType = 'City';
     let areaName = 'Deutschland';
@@ -148,6 +148,12 @@ export default function SEO({ title, description, url, image, isArticle, datePub
     } else if (url === '/internet') {
       serviceName = 'Internettarifvergleich & Wechselhilfe';
       areaType = 'Country';
+    } else if (url === '/energieberater-aachen') {
+      serviceName = 'Tarifberatung & Wechselhilfe';
+      areaName = 'Aachen';
+    } else if (url === '/energievertrag-wechseln-lassen') {
+      serviceName = 'Tarifvergleich & Wechselservice';
+      areaName = 'Aachen';
     } else {
       const match = url.match(/^\/(strom|gas|internet)anbieter-(.+)$/);
       if (match) {

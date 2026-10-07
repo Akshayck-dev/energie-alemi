@@ -501,5 +501,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-10-07",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/energieberater-aachen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Energieberater Aachen: Strom, Gas & Internet sparen | Energie Alemi",
+    "description": "Ihr Energieberater in Aachen f\u00fcr Strom-, Gas- und Internettarife: kostenloser Tarifvergleich, Wechsel ohne Papierkram, Beratung vor Ort am Alexianergraben 9.",
+    "canonical": "/energieberater-aachen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-10-07",
+    "structuredDataType": "FAQPage"
   }
 ]

@@ -55,6 +55,7 @@ import GaspreiseVerstehen from './pages/Ratgeber/articles/GaspreiseVerstehen';
 
 import EnergieberaterAachen from './pages/Ratgeber/articles/EnergieberaterAachen';
 import ArbeitspreisStrom from './pages/Ratgeber/articles/ArbeitspreisStrom';
+import EnergieberaterServiceAachen from './pages/EnergieberaterServiceAachen';
 export default function AppRoutes() {
   const { i18n } = useTranslation();
 
@@ -125,6 +126,7 @@ export default function AppRoutes() {
           <Route path="/internetanbieter-wuerselen" element={<InternetanbieterWuerselen />} />
           <Route path="/energie-fragen" element={<EnergieFragen />} />
           <Route path="/energievertrag-wechseln-lassen" element={<Wechselservice />} />
+        <Route path="/energieberater-aachen" element={<EnergieberaterServiceAachen />} />
           
           {/* Ratgeber Routes */}
           <Route path="/ratgeber" element={<RatgeberIndex />} />
