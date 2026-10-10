@@ -44,6 +44,7 @@ import UmzugAachenStromGasInternet from './pages/Ratgeber/articles/UmzugAachenSt
 import GrundversorgungAachenStromGas from './pages/Ratgeber/articles/GrundversorgungAachenStromGas';
 import DslVsGlasfaserAachen from './pages/Ratgeber/articles/DslVsGlasfaserAachen';
 
+import StromUmzugAnmelden from './pages/Ratgeber/articles/StromUmzugAnmelden';
 import StromAnmeldenUmzug from './pages/Ratgeber/articles/StromAnmeldenUmzug';
 import Stromverbrauch1Person from './pages/Ratgeber/articles/Stromverbrauch1Person';
 import Stromverbrauch2Personen from './pages/Ratgeber/articles/Stromverbrauch2Personen';
@@ -139,7 +140,8 @@ export default function AppRoutes() {
           <Route path="/ratgeber/grundversorgung-aachen-strom-gas" element={<GrundversorgungAachenStromGas />} />
           <Route path="/ratgeber/dsl-vs-glasfaser-aachen" element={<DslVsGlasfaserAachen />} />
           
-                <Route path="/ratgeber/strom-anmelden-umzug" element={<StromAnmeldenUmzug />} />
+          <Route path="/ratgeber/strom-umzug-anmelden" element={<StromUmzugAnmelden />} />
+          <Route path="/ratgeber/strom-anmelden-umzug" element={<StromAnmeldenUmzug />} />
       <Route path="/ratgeber/stromverbrauch-1-person" element={<Stromverbrauch1Person />} />
       <Route path="/ratgeber/stromverbrauch-2-personen" element={<Stromverbrauch2Personen />} />
       <Route path="/ratgeber/stromverbrauch-4-personen" element={<Stromverbrauch4Personen />} />

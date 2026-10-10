@@ -16,9 +16,9 @@ export const articles: RatgeberArticle[] = [
   {
     id: '1',
     slug: 'stromanbieter-wechseln',
-    title: 'Stromanbieter wechseln 2026: So einfach geht der Wechsel | Energie Alemi',
+    title: 'Stromanbieter wechseln: Ablauf, Fristen & Checkliste | Energie Alemi',
     titleEn: 'Switching Electricity Providers 2026: It\'s That Easy | Energie Alemi',
-    description: 'Stromanbieter wechseln leicht gemacht: Erfahren Sie, wie der Wechsel abläuft, welche Fristen gelten, was Sie beachten sollten und wie Sie einen passenden Stromtarif finden.',
+    description: 'Stromanbieter wechseln ohne Fehler: Ablauf Schritt für Schritt, Kündigungsfristen und was Sie beachten müssen – verständlich erklärt, mit kostenloser Hilfe in Aachen.',
     descriptionEn: 'Switching electricity providers made easy: Find out how the switch works, which deadlines apply, what you should consider and how to find a suitable electricity tariff.',
     category: 'Strom',
     publishedDate: '2026-08-09',
@@ -96,10 +96,10 @@ export const articles: RatgeberArticle[] = [
   {
     id: '6',
     slug: 'dsl-vs-glasfaser-aachen',
-    title: 'DSL vs. Glasfaser in Aachen: Lohnt sich der Wechsel?',
-    titleEn: 'DSL vs. Fiber Optics in Aachen: Is It Worth Switching?',
-    description: 'Aachen baut sein Glasfasernetz aus. Wir klären die Unterschiede zu DSL und zeigen, für wen sich der schnelle Anschluss wirklich lohnt.',
-    descriptionEn: 'Aachen is expanding its fiber optic network. We clarify the differences to DSL and show who the fast connection is really worth for.',
+    title: 'Glasfaser in Aachen: Ausbau, Verfügbarkeit & DSL-Vergleich | Energie Alemi',
+    titleEn: 'Fiber Optics in Aachen: Expansion, Availability & DSL Comparison | Energie Alemi',
+    description: 'Glasfaser oder DSL in Aachen? Ausbau-Status, Verfügbarkeits-Prüfung und ehrlicher Vergleich für Brand, Haaren und ganz Aachen – kostenlose Beratung bei Energie Alemi.',
+    descriptionEn: 'Fiber optics or DSL in Aachen? Expansion status, availability check and honest comparison for Brand, Haaren and all of Aachen – free advice from Energie Alemi.',
     category: 'Internet',
     publishedDate: '2026-08-16',
     componentName: 'DslVsGlasfaserAachen'
@@ -213,4 +213,15 @@ export const articles: RatgeberArticle[] = [
     publishedDate: '2026-10-07',
     componentName: 'ArbeitspreisStrom'
   },
+  {
+    id: 'strom-umzug-anmelden',
+    slug: 'strom-umzug-anmelden',
+    title: 'Strom beim Umzug anmelden: Checkliste für Aachen | Energie Alemi',
+    titleEn: 'Registering Electricity When Moving: Checklist for Aachen | Energie Alemi',
+    description: 'Strom beim Umzug richtig anmelden: Fristen, Zählernummer, Grundversorgung vermeiden und Checkliste für Aachen – verständlich erklärt von Energie Alemi.',
+    descriptionEn: 'Registering electricity correctly when moving: Deadlines, meter number, avoiding basic supply and checklist for Aachen – clearly explained by Energie Alemi.',
+    category: 'Strom',
+    publishedDate: '2026-10-10',
+    componentName: 'StromUmzugAnmelden'
+  }
 ];

@@ -112,6 +112,7 @@ export default function EnergieberaterServiceAachen() {
             { icon: <Phone size={24} />, title: "0176 659 493 90 (Mo-Sa)" },
           ]}
           accentColor="bg-blue-600 hover:bg-blue-700"
+          bgAltText="Beratung bei Energie Alemi in Aachen"
         />
       </div>
 

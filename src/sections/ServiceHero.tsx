@@ -18,6 +18,7 @@ export interface ServiceHeroProps {
   buttonText: string;
   onButtonClick?: () => void;
   accentColor?: string;
+  bgAltText?: string;
 }
 
 export default function ServiceHero({
@@ -32,6 +33,7 @@ export default function ServiceHero({
   buttonText,
   onButtonClick,
   accentColor = 'bg-amber-500',
+  bgAltText = '',
 }: ServiceHeroProps) {
   const isDark = theme === 'dark';
   const [isRTL, setIsRTL] = useState(false);
@@ -59,7 +61,7 @@ export default function ServiceHero({
           <>
             <img
               src={bgImage}
-              alt=""
+              alt={bgAltText}
               className="hidden md:block w-full h-full object-cover object-center"
               loading="eager"
               fetchPriority="high"
@@ -67,7 +69,7 @@ export default function ServiceHero({
             />
             <img
               src={bgImageMobile}
-              alt=""
+              alt={bgAltText}
               className="block md:hidden w-full h-full object-cover object-center"
               loading="eager"
               fetchPriority="high"
@@ -77,7 +79,7 @@ export default function ServiceHero({
         ) : (
           <img
             src={bgImage}
-            alt=""
+            alt={bgAltText}
             className="w-full h-full object-cover object-center"
             loading="eager"
             fetchPriority="high"
