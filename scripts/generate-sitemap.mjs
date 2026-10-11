@@ -113,6 +113,9 @@ function generateRobotsTxt() {
   
   const txt = `User-agent: *
 ${allow}
+Disallow: /admin
+Disallow: /*.php
+Disallow: /wp-*
 
 Sitemap: ${sitemapUrl}
 `;

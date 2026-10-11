@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /*.php
+Disallow: /wp-*
 
 Sitemap: https://www.energie-alemi.de/sitemap.xml

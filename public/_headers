@@ -1,0 +1,26 @@
+# Cloudflare Pages Headers Configuration
+# Ensures edge caching, stale-while-revalidate resiliency against 521/504 errors, and security headers
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Pre-rendered HTML routes: cache at Cloudflare edge with stale-while-revalidate fallback
+/*.html
+  Cache-Control: public, max-age=0, s-maxage=86400, stale-while-revalidate=86400
+
+# Immutable static assets
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static media assets
+/*.webp
+  Cache-Control: public, max-age=2592000, immutable
+/*.png
+  Cache-Control: public, max-age=2592000, immutable
+/*.svg
+  Cache-Control: public, max-age=2592000, immutable
+/*.ico
+  Cache-Control: public, max-age=2592000, immutable
