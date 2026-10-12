@@ -534,5 +534,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-10-12",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/gewerbe",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Energieberatung Gewerbe Aachen: Kosten senken | Energie Alemi",
+    "description": "Energieberatung für Gewerbe in Aachen: Strom, Gas & Internet optimieren. Kostenlose Tarifanalyse, Verhandlung & Wechselservice für Ihr Unternehmen.",
+    "canonical": "/gewerbe",
+    "sitemapInclusion": true,
+    "lastmod": "2026-10-12",
+    "structuredDataType": "FAQPage"
   }
 ]

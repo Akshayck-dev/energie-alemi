@@ -58,6 +58,7 @@ import EnergieberaterAachen from './pages/Ratgeber/articles/EnergieberaterAachen
 import ArbeitspreisStrom from './pages/Ratgeber/articles/ArbeitspreisStrom';
 import EnergieberaterServiceAachen from './pages/EnergieberaterServiceAachen';
 import StrompreiseAachen from './pages/StrompreiseAachen';
+import Gewerbe from './pages/Gewerbe';
 export default function AppRoutes() {
   const { i18n } = useTranslation();
 
@@ -130,6 +131,7 @@ export default function AppRoutes() {
           <Route path="/energievertrag-wechseln-lassen" element={<Wechselservice />} />
         <Route path="/energieberater-aachen" element={<EnergieberaterServiceAachen />} />
         <Route path="/strompreise-aachen" element={<StrompreiseAachen />} />
+        <Route path="/gewerbe" element={<Gewerbe />} />
         <Route path="/strom" element={<Electricity />} />
         <Route path="/stromrechner" element={<StromkostenBerechnen />} />
         <Route path="/stromkosten-berechnen" element={<StromkostenBerechnen />} />

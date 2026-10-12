@@ -13,6 +13,7 @@ const navLinks = [
   { key: 'electricity', path: '/electricity' },
   { key: 'gas', path: '/gas' },
   { key: 'internet', path: '/internetanbieter-aachen' },
+  { key: 'gewerbe', path: '/gewerbe' },
   { key: 'ratgeber', path: '/ratgeber' },
   { key: 'faq', path: '/faq' },
   { key: 'about_us', path: '/about' },
@@ -76,7 +77,7 @@ export default function Navbar() {
                     : "text-white/80 hover:text-white"
                 )}
               >
-                {t(`nav.${link.key}`, { defaultValue: link.key === 'faq' ? 'FAQ' : undefined })}
+                {t(`nav.${link.key}`, { defaultValue: link.key === 'faq' ? 'FAQ' : (link.key === 'gewerbe' ? 'Gewerbe' : undefined) })}
                 <span 
                   className={cn(
                     "absolute -bottom-2 rtl:right-0 ltr:left-0 h-[2px] bg-[#0047AB] transition-all duration-300",
@@ -176,7 +177,7 @@ export default function Navbar() {
               {/* Links */}
               <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-5">
                 {navLinks.map((link, i) => {
-                  const isPrimary = ['home', 'electricity', 'gas', 'internet'].includes(link.key);
+                  const isPrimary = ['home', 'electricity', 'gas', 'internet', 'gewerbe'].includes(link.key);
                   return (
                     <motion.div
                       key={link.key}
@@ -184,7 +185,7 @@ export default function Navbar() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.1 + i * 0.05, duration: 0.3 }}
                     >
-                      {i === 4 && (
+                      {i === 5 && (
                          <div className="w-full h-px bg-slate-100 dark:bg-white/10 mb-5" />
                       )}
                       <Link
@@ -197,7 +198,7 @@ export default function Navbar() {
                             : "text-lg text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white"
                         )}
                       >
-                        {t(`nav.${link.key}`, { defaultValue: link.key === 'faq' ? 'FAQ' : undefined })}
+                        {t(`nav.${link.key}`, { defaultValue: link.key === 'faq' ? 'FAQ' : (link.key === 'gewerbe' ? 'Gewerbe' : undefined) })}
                       </Link>
                     </motion.div>
                   );
