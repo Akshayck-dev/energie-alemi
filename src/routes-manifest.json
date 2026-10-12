@@ -523,5 +523,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-10-10",
     "structuredDataType": "Article"
+  },
+  {
+    "path": "/strompreise-aachen",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Strompreise Aachen 2026: Tarife & Spartipps | Energie Alemi",
+    "description": "Strompreise in Aachen 2026: Aktuelle Arbeitspreise, Grundpreise & Spartipps. Grundversorgung vs. Alternativtarife im Vergleich bei 2.500 bis 5.000 kWh.",
+    "canonical": "/strompreise-aachen",
+    "sitemapInclusion": true,
+    "lastmod": "2026-10-12",
+    "structuredDataType": "FAQPage"
   }
 ]
