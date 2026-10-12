@@ -12,6 +12,7 @@ import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
 import elecHeroDesk from '../assets/electricity hero desk.webp';
 import SEO from "../components/SEO";
+import RechenbeispielBox from '../components/RechenbeispielBox';
 
 const CompareModal = lazy(() => import('../components/CompareModal'));
 
@@ -109,7 +110,17 @@ export default function Electricity() {
       </div>
 
       <div className="relative z-10 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
-        <ServiceFeatures features={features} />
+        <ServiceFeatures 
+          features={features} 
+          rechenbeispiel={
+            <RechenbeispielBox 
+              service="electricity" 
+              onCtaClick={() => {
+                trackEvent('rechenbeispiel_cta_click', { service: 'electricity', page: window.location.pathname });
+              }} 
+            />
+          }
+        />
       </div>
       
       {/* Timeline Section */}
