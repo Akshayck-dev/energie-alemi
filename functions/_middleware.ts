@@ -25,5 +25,22 @@ export const onRequest: PagesFunction = async (context) => {
     });
   }
 
-  return context.next();
+  const response = await context.next();
+
+  // Cache pre-rendered HTML at Cloudflare edge with stale-while-revalidate resilience against 521/504 origin drops
+  const contentType = response.headers.get('content-type') || '';
+  if (response.status === 200 && contentType.includes('text/html')) {
+    const newHeaders = new Headers(response.headers);
+    newHeaders.set(
+      'Cache-Control',
+      'public, max-age=0, s-maxage=86400, stale-while-revalidate=86400'
+    );
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: newHeaders
+    });
+  }
+
+  return response;
 };
