@@ -115,8 +115,8 @@ export default function GasanbieterAachen() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/gasanbieter-aachen" 
-        title={i18n.language === 'en' ? 'Compare Gas Providers Aachen | Energie Alemi' : 'Gasanbieter Aachen vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "gas provider in Aachen vergleichen: Energie Alemi prüft energy price, basic price, price guarantee und Laufzeit – personally und transparent beraten." : "Gasanbieter in Aachen vergleichen: Energie Alemi prüft Arbeitspreis, Grundpreis, Preisgarantie und Laufzeit – persönlich und transparent beraten."}
+        title={i18n.language === 'en' ? 'Switch Gas Provider in Aachen | Energie Alemi' : 'Gasanbieter wechseln in Aachen: Kosten senken | Energie Alemi'}
+        description={i18n.language === "en" ? "Switch gas provider in Aachen: Compare transparent gas tariffs, save heating costs, and get free personal advice from Energie Alemi. Check now!" : "Gasanbieter wechseln in Aachen: Vergleichen Sie faire Gastarife und senken Sie Ihre Heizkosten. Jetzt kostenlose Tarifberatung bei Energie Alemi sichern!"}
         image={gasHeroDesk} 
         faqs={faqs} 
       />
@@ -124,8 +124,8 @@ export default function GasanbieterAachen() {
         <ServiceHero 
           theme="dark"
           badgeIcon={<Flame size={24} />}
-          badgeText={i18n.language === 'en' ? 'Gas Providers Aachen' : 'Gasanbieter Aachen'}
-          title="Gasanbieter Aachen vergleichen – persönlich beraten, klar entscheiden"
+          badgeText={i18n.language === 'en' ? 'Switch Gas Provider Aachen' : 'Gasanbieter wechseln Aachen'}
+          title={i18n.language === 'en' ? 'Switch Gas Provider in Aachen' : 'Gasanbieter wechseln in Aachen'}
           description={i18n.language === "en" ? "Would you like to check your gas tariff in Aachen or switch gas providers? Energie Alemi compares available offers from different providers and explains understandably what is important regarding price, term and contract conditions." : "Sie möchten Ihren Gastarif in Aachen prüfen oder den Gasanbieter wechseln? Energie Alemi vergleicht verfügbare Angebote verschiedener Anbieter und erklärt Ihnen verständlich, worauf es bei Preis, Laufzeit und Vertragsbedingungen ankommt."}
           bgImage={gasHeroDesk}
           buttonText="Jetzt Gastarif prüfen"
@@ -144,9 +144,9 @@ export default function GasanbieterAachen() {
 
       <div className="relative z-10 bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-12 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Gasvergleich in Aachen: Nicht nur auf den Arbeitspreis schauen</h2>
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Gasanbieter wechseln in Aachen: Nicht nur auf den Arbeitspreis schauen</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "Ein günstiger energy price wirkt attraktiv, entscheidet aber nicht allein über die actuallyen annual costs. Auch der basic price, die price guarantee, die contract duration und die cancellation period beeinflussen, ob ein gas tariff zu Ihrem Verbrauch und Ihrem Wunsch nach Flexibilität passt." : "Ein günstiger Arbeitspreis wirkt attraktiv, entscheidet aber nicht allein über die tatsächlichen Jahreskosten. Auch der Grundpreis, die Preisgarantie, die Vertragslaufzeit und die Kündigungsfrist beeinflussen, ob ein Gastarif zu Ihrem Verbrauch und Ihrem Wunsch nach Flexibilität passt."}
+            {i18n.language === "en" ? "If you want to switch gas providers in Aachen, looking at the energy price alone is not enough. A favorable unit price looks attractive, but does not determine the actual annual costs on its own. The basic price, price guarantee, contract duration, and cancellation period also determine whether a gas tariff fits your consumption and flexibility requirements." : "Wer in Aachen den Gasanbieter wechseln möchte, blickt oft zuerst auf den Arbeitspreis. Ein günstiger Arbeitspreis wirkt attraktiv, entscheidet aber nicht allein über die tatsächlichen Jahreskosten. Auch der Grundpreis, die Preisgarantie, die Vertragslaufzeit und die Kündigungsfrist beeinflussen, ob ein Gastarif zu Ihrem Verbrauch und Ihrem Wunsch nach Flexibilität passt."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             {i18n.language === "en" ? "Wir betrachten diese Punkte gemeinsam und ordnen Boni oder promotional prices so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine comprehensiblee Entscheidungsgrundlage statt einer unclearlyen Tarifliste." : "Wir betrachten diese Punkte gemeinsam und ordnen Boni oder Aktionspreise so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine nachvollziehbare Entscheidungsgrundlage statt einer unübersichtlichen Tarifliste."}
