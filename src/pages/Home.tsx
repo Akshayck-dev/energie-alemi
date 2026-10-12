@@ -4,6 +4,8 @@ import { Zap, Flame, Wifi, PhoneCall, Search, FileCheck, Handshake, ShieldCheck,
 import HomeHero from '../sections/HomeHero';
 import HomeFeatures from '../sections/HomeFeatures';
 import ServicesSection from '../components/sections/ServicesSection';
+import ReviewsSection from '../components/sections/ReviewsSection';
+import HomeMeeting from '../sections/HomeMeeting';
 import ProcessSection from '../components/sections/ProcessSection';
 import PromiseSection from '../components/sections/PromiseSection';
 import SEO from "../components/SEO";
@@ -82,6 +84,16 @@ export default function Home() {
             }
           ]}
         />
+      </div>
+
+      {/* Customer Reviews Section ("Das sagen unsere Kunden") */}
+      <div className="relative z-[25] bg-white dark:bg-[#051024] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
+        <ReviewsSection />
+      </div>
+
+      {/* Contact CTA Section */}
+      <div className="relative z-[28] bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-6 md:pt-0 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
+        <HomeMeeting />
       </div>
 
       {/* Process section slides over Services */}
