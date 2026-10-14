@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import Button from '../components/ui/Button';
 import { cn } from '../lib/utils';
+import { GOOGLE_REVIEW_COUNT } from '../lib/site';
 import { trackEvent } from '../lib/analytics';
 
 const CompareModal = lazy(() => import('../components/CompareModal'));
@@ -305,7 +306,7 @@ export default function HomeHero() {
             >
               <span className="text-amber-400 font-bold">★</span>
               <span className="font-semibold text-white">5,0 auf Google</span>
-              <span className="text-white/75">(16 Bewertungen)</span>
+              <span className="text-white/75">({GOOGLE_REVIEW_COUNT} Bewertungen)</span>
             </a>
             <span className="text-white/40 hidden sm:inline">·</span>
             <div className="flex items-center gap-2 text-xs sm:text-sm">

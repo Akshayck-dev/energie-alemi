@@ -1,5 +1,6 @@
 import { Star, ExternalLink, Quote, CheckCircle2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { GOOGLE_REVIEW_COUNT } from '../../lib/site';
 
 export default function ReviewsSection() {
   const { i18n } = useTranslation();
@@ -94,7 +95,7 @@ export default function ReviewsSection() {
                 </div>
               </div>
               <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                {isEn ? '16 Google Reviews' : '16 Google-Bewertungen'}
+                {isEn ? `${GOOGLE_REVIEW_COUNT} Google Reviews` : `${GOOGLE_REVIEW_COUNT} Google-Bewertungen`}
               </p>
             </div>
 

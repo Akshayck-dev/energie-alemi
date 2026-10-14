@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import routesManifest from '../routes-manifest.json';
+import { GOOGLE_REVIEW_COUNT } from '../lib/site';
 
 interface SEOProps {
   title?: string;
@@ -120,8 +121,8 @@ export default function SEO({ title, description, url, image, isArticle, datePub
       "ratingValue": "5.0",
       "bestRating": "5",
       "worstRating": "1",
-      "ratingCount": 16,
-      "reviewCount": 16
+      "ratingCount": GOOGLE_REVIEW_COUNT,
+      "reviewCount": GOOGLE_REVIEW_COUNT
     },
     "review": [
       {
