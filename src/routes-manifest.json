@@ -545,5 +545,16 @@
     "sitemapInclusion": true,
     "lastmod": "2026-10-12",
     "structuredDataType": "FAQPage"
+  },
+  {
+    "path": "/wechsel-checkliste",
+    "isPublic": true,
+    "isIndexable": true,
+    "title": "Anbieterwechsel Checkliste: In 5 Schritten sparen | Energie Alemi",
+    "description": "Anbieterwechsel leicht gemacht: Unsere Checkliste zeigt Ihnen in 5 Schritten, wie Sie Strom-, Gas- oder Internetanbieter wechseln. Kostenlos & unverbindlich.",
+    "canonical": "/wechsel-checkliste",
+    "sitemapInclusion": true,
+    "lastmod": "2026-10-14",
+    "structuredDataType": "FAQPage"
   }
 ]
