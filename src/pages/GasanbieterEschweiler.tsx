@@ -98,7 +98,7 @@ export default function GasanbieterEschweiler() {
       <SEO 
         url="/gasanbieter-eschweiler" 
         title={i18n.language === 'en' ? 'Compare Gas Providers Eschweiler | Energie Alemi' : 'Gasanbieter Eschweiler vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "gas tariffs in Eschweiler vergleichen: Energie Alemi prüft Verbrauch, total costs und contract conditions und unterstützt beim provider switch." : "Gastarife in Eschweiler vergleichen: Energie Alemi prüft Verbrauch, Gesamtkosten und Vertragsbedingungen und unterstützt beim Anbieterwechsel."}
+        description={i18n.language === "en" ? "gas tariffs in Eschweiler vergleichen: Energie Alemi prüft Verbrauch, total costs und contract conditions und unterstützt beim provider switch." : "Gasanbieter in Eschweiler vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={gasHeroDesk} 
         faqs={faqs} 
       />

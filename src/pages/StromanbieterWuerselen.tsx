@@ -38,8 +38,8 @@ export default function StromanbieterWuerselen() {
     <div className="bg-slate-50 dark:bg-[#051024] min-h-screen">
       <SEO 
         url="/stromanbieter-wuerselen" 
-        title="Stromanbieter Würselen: Lokale Beratung & Tarifwechsel | Energie Alemi"
-        description="Wechseln Sie Ihren Stromanbieter in Würselen ohne Aufwand. Unabhängige Tarifberatung für Haushalte in Broichweiden, Bardenberg, Mitte und Gewerbe am Aachener Kreuz."
+        title="Stromanbieter Würselen vergleichen | Energie Alemi"
+        description="Stromanbieter in Würselen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."
         image={elecHeroDesk} 
         faqs={wuerselenFaqs} 
       />

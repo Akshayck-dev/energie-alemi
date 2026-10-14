@@ -82,7 +82,7 @@ export default function StromanbieterHerzogenrath() {
       <SEO 
         url="/stromanbieter-herzogenrath" 
         title={i18n.language === 'en' ? 'Electricity Providers Herzogenrath: Compare & Switch | Energie Alemi' : 'Stromanbieter Herzogenrath: Tarife vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "Find the best electricity provider in Herzogenrath. Personal advice for Kohlscheid, Merkstein and Center. Compare safely and switch without stress." : "Finden Sie den passenden Stromanbieter in Herzogenrath. Persönliche Beratung für Kohlscheid, Merkstein und Mitte. Sicher vergleichen und wechseln."}
+        description={i18n.language === "en" ? "Find the best electricity provider in Herzogenrath. Personal advice for Kohlscheid, Merkstein and Center. Compare safely and switch without stress." : "Stromanbieter in Herzogenrath vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />

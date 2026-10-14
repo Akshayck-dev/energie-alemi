@@ -77,7 +77,7 @@ export default function GasanbieterHerzogenrath() {
       <SEO 
         url="/gasanbieter-herzogenrath" 
         title="Gasanbieter Herzogenrath: Tarife vergleichen | Energie Alemi"
-        description="Gastarife in Herzogenrath vergleichen: Senken Sie Ihre Heizkosten in Kohlscheid, Merkstein und Mitte. Kostenlose, persönliche Beratung von Energie Alemi."
+        description="Gasanbieter in Herzogenrath vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."
         image={gasHeroDesk} 
         faqs={faqs} 
       />

@@ -88,7 +88,7 @@ export default function Wechselservice() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         title="Energievertrag wechseln lassen in Aachen | Energie Alemi"
-        description="Strom-, Gas- oder Internetvertrag wechseln lassen, ohne selbst zu kündigen: Energie Alemi vergleicht Tarife, übernimmt Kündigung und Anmeldung in Aachen. Kostenlose Beratung."
+        description="Energievertrag wechseln lassen in Aachen – wir vergleichen Tarife und übernehmen Kündigung & Anmeldung. Kostenlos, 5,0★ auf Google."
         url="/energievertrag-wechseln-lassen"
         faqs={faqs} 
       />

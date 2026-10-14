@@ -84,7 +84,7 @@ export default function InternetanbieterStolberg() {
       <SEO 
         url="/internetanbieter-stolberg" 
         title={i18n.language === 'en' ? 'Compare Internet Providers Stolberg | Energie Alemi' : 'Internetanbieter Stolberg vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "internet tariffs in Stolberg vergleichen: Energie Alemi prüft availability, speed und Vertragskosten für Zuhause und Unternehmen." : "Internettarife in Stolberg vergleichen: Energie Alemi prüft Verfügbarkeit, Geschwindigkeit und Vertragskosten für Zuhause und Unternehmen."}
+        description={i18n.language === "en" ? "internet tariffs in Stolberg vergleichen: Energie Alemi prüft availability, speed und Vertragskosten für Zuhause und Unternehmen." : "Internetanbieter in Stolberg vergleichen: DSL, Kabel & Glasfaser. Kostenlose Bedarfsanalyse, persönliche Beratung – 5,0★ auf Google."}
         image={internetHeroDesk} 
         faqs={faqs} 
       />

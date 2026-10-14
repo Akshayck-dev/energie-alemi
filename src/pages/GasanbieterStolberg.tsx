@@ -84,7 +84,7 @@ export default function GasanbieterStolberg() {
       <SEO 
         url="/gasanbieter-stolberg" 
         title={i18n.language === 'en' ? 'Compare Gas Providers Stolberg | Energie Alemi' : 'Gasanbieter Stolberg vergleichen | Energie Alemi'}
-        description="Gastarife in Stolberg persönlich vergleichen: Energie Alemi prüft Verbrauch, Vertrag und Konditionen und begleitet auf Wunsch den Anbieterwechsel."
+        description="Gasanbieter in Stolberg vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."
         image={gasHeroDesk} 
         faqs={faqs} 
       />

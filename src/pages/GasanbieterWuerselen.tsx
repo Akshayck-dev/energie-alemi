@@ -44,7 +44,7 @@ export default function GasanbieterWuerselen() {
       <SEO 
         url="/gasanbieter-wuerselen" 
         title="Gasanbieter Würselen: Günstige Gastarife finden | Energie Alemi"
-        description="Vergleichen Sie Gasanbieter in Würselen. Wir finden den günstigsten Tarif für Ihr Zuhause in Broichweiden, Bardenberg oder Mitte. Kostenloser Wechselservice."
+        description="Gasanbieter in Würselen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."
         image={gasHeroDesk} 
         faqs={wuerselenFaqs} 
       />

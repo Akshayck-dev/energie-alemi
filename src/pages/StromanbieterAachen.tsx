@@ -99,7 +99,7 @@ export default function StromanbieterAachen() {
       <SEO 
         url="/stromanbieter-aachen" 
         title={i18n.language === 'en' ? 'Compare Electricity Providers Aachen | Energie Alemi' : 'Stromanbieter Aachen vergleichen | Energie Alemi'}
-        description={i18n.language === 'en' ? 'Compare electricity tariffs in Aachen: Energie Alemi checks your contract, finds suitable offers and accompanies the change of provider personally.' : 'Stromtarife in Aachen vergleichen: Energie Alemi prüft Ihren Vertrag, findet passende Angebote und begleitet den Anbieterwechsel persönlich.'}
+        description={i18n.language === 'en' ? 'Compare electricity tariffs in Aachen: Energie Alemi checks your contract, finds suitable offers and accompanies the change of provider personally.' : 'Stromanbieter in Aachen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google.'}
         image={elecHeroDesk} 
         faqs={faqs} 
       />

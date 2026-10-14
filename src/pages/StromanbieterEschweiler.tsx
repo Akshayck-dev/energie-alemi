@@ -98,7 +98,7 @@ export default function StromanbieterEschweiler() {
       <SEO 
         url="/stromanbieter-eschweiler" 
         title={i18n.language === 'en' ? 'Compare Electricity Providers Eschweiler | Energie Alemi' : 'Stromanbieter Eschweiler vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "electricity tariffs in Eschweiler vergleichen: Energie Alemi prüft Kosten, Laufzeit und contract details und begleitet auf Wunsch den provider switch." : "Stromtarife in Eschweiler vergleichen: Energie Alemi prüft Kosten, Laufzeit und Vertragsdetails und begleitet auf Wunsch den Anbieterwechsel."}
+        description={i18n.language === "en" ? "electricity tariffs in Eschweiler vergleichen: Energie Alemi prüft Kosten, Laufzeit und contract details und begleitet auf Wunsch den provider switch." : "Stromanbieter in Eschweiler vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />

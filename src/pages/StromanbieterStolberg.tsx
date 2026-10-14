@@ -98,7 +98,7 @@ export default function StromanbieterStolberg() {
       <SEO 
         url="/stromanbieter-stolberg" 
         title={i18n.language === 'en' ? 'Compare Electricity Providers Stolberg | Energie Alemi' : 'Stromanbieter Stolberg vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "Compare electricity tariffs in Stolberg personally: Energie Alemi checks contract, consumption and conditions and accompanies the change of provider if desired." : "Stromtarife in Stolberg persönlich vergleichen: Energie Alemi prüft Vertrag, Verbrauch und Konditionen und begleitet auf Wunsch den Anbieterwechsel."}
+        description={i18n.language === "en" ? "Compare electricity tariffs in Stolberg personally: Energie Alemi checks contract, consumption and conditions and accompanies the change of provider if desired." : "Stromanbieter in Stolberg vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />

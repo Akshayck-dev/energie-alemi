@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
-      <SEO url="/" title="Tarifberatung Strom, Gas & Internet Aachen | Energie Alemi" image={heroDesk} />
+      <SEO url="/" title="Strom, Gas & Internet in Aachen – kostenlos | Energie Alemi" image={heroDesk} />
       {/* Hero is sticky on mobile so the rest of the page slides over it */}
       <div className="sticky top-0 z-0 md:relative">
         <HomeHero />

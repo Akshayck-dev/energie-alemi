@@ -87,8 +87,8 @@ export default function EnergieberaterServiceAachen() {
   return (
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
-        title="Energieberater Aachen: Strom, Gas & Internet sparen | Energie Alemi"
-        description="Ihr Energieberater in Aachen für Strom-, Gas- und Internettarife: kostenloser Tarifvergleich, Wechsel ohne Papierkram, Beratung vor Ort am Alexianergraben 9."
+        title="Energieberater Aachen – Tarifberatung | Energie Alemi"
+        description="Energieberater in Aachen: Strom, Gas & Internet – wir prüfen Ihre Verträge und finden die passenden Tarife. Kostenlos & unverbindlich, 5,0★ auf Google."
         url="/energieberater-aachen"
         faqs={faqs} 
       />

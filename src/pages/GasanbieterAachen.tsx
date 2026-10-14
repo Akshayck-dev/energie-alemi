@@ -116,7 +116,7 @@ export default function GasanbieterAachen() {
       <SEO 
         url="/gasanbieter-aachen" 
         title={i18n.language === 'en' ? 'Switch Gas Provider in Aachen | Energie Alemi' : 'Gasanbieter wechseln in Aachen: Kosten senken | Energie Alemi'}
-        description={i18n.language === "en" ? "Switch gas provider in Aachen: Compare transparent gas tariffs, save heating costs, and get free personal advice from Energie Alemi. Check now!" : "Gasanbieter wechseln in Aachen: Vergleichen Sie faire Gastarife und senken Sie Ihre Heizkosten. Jetzt kostenlose Tarifberatung bei Energie Alemi sichern!"}
+        description={i18n.language === "en" ? "Switch gas provider in Aachen: Compare transparent gas tariffs, save heating costs, and get free personal advice from Energie Alemi. Check now!" : "Gasanbieter in Aachen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={gasHeroDesk} 
         faqs={faqs} 
       />

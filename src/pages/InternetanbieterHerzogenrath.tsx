@@ -77,7 +77,7 @@ export default function InternetanbieterHerzogenrath() {
       <SEO 
         url="/internetanbieter-herzogenrath" 
         title="Internetanbieter Herzogenrath vergleichen | Energie Alemi"
-        description="Internetanbieter in Herzogenrath vergleichen: Wir prüfen DSL, Kabel & Glasfaser in Kohlscheid, Merkstein & Mitte. Unabhängige Tarifberatung."
+        description="Internetanbieter in Herzogenrath vergleichen: DSL, Kabel & Glasfaser. Kostenlose Bedarfsanalyse, persönliche Beratung – 5,0★ auf Google."
         image={internetHeroDesk} 
         faqs={faqs} 
       />

@@ -92,7 +92,7 @@ export default function EnergieFragen() {
       <SEO 
         url="/energie-fragen" 
         title="Energie-Fragen & Antworten | Energie Alemi"
-        description="Klare, eigenständige Antworten rund um Strom, Gas und Internet, die Nutzer sofort verstehen und die Suchmaschinen sowie KI-Systeme eindeutig der Marke Energie Alemi zuordnen können."
+        description="Klare Antworten rund um Strom, Gas und Internet – sofort verständlich, von Energie Alemi."
         faqs={faqsForSeo}
       />
       

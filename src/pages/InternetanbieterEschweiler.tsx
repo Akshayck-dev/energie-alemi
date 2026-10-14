@@ -98,7 +98,7 @@ export default function InternetanbieterEschweiler() {
       <SEO 
         url="/internetanbieter-eschweiler" 
         title={i18n.language === 'en' ? 'Compare Internet Providers Eschweiler | Energie Alemi' : 'Internetanbieter Eschweiler vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "internet tariffs in Eschweiler vergleichen: Energie Alemi prüft availability, Leistung, Kosten und contract details für Privat- und business customers." : "Internettarife in Eschweiler vergleichen: Energie Alemi prüft Verfügbarkeit, Leistung, Kosten und Vertragsdetails für Privat- und Geschäftskunden."}
+        description={i18n.language === "en" ? "internet tariffs in Eschweiler vergleichen: Energie Alemi prüft availability, Leistung, Kosten und contract details für Privat- und business customers." : "Internetanbieter in Eschweiler vergleichen: DSL, Kabel & Glasfaser. Kostenlose Bedarfsanalyse, persönliche Beratung – 5,0★ auf Google."}
         image={internetHeroDesk} 
         faqs={faqs} 
       />

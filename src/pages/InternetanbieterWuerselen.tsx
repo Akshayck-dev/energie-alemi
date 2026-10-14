@@ -44,7 +44,7 @@ export default function InternetanbieterWuerselen() {
       <SEO 
         url="/internetanbieter-wuerselen" 
         title="Internetanbieter Würselen: DSL, Kabel & Glasfaser vergleichen"
-        description="Finden Sie das schnellste und günstigste Internet in Würselen. Kostenlose Beratung zu VDSL, Kabel und Glasfaser für Privathaushalte und Gewerbe."
+        description="Internetanbieter in Würselen vergleichen: DSL, Kabel & Glasfaser. Kostenlose Bedarfsanalyse, persönliche Beratung – 5,0★ auf Google."
         image={internetHeroDesk} 
         faqs={wuerselenFaqs} 
       />
