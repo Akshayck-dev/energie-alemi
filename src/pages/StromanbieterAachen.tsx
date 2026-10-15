@@ -66,11 +66,11 @@ export default function StromanbieterAachen() {
   const faqs = [
     {
       question: i18n.language === 'en' ? 'Is the tariff advice at Energie Alemi free of charge?' : 'Ist die Tarifberatung bei Energie Alemi kostenlos?',
-      answer: i18n.language === 'en' ? 'Yes. Energie Alemi shows the advice on the website as free of charge. Before concluding a contract, you will receive the relevant tariff and contract information.' : 'Ja. Energie Alemi weist die Beratung auf der Website als kostenlos aus. Vor einem Vertragsabschluss erhalten Sie die relevanten Tarif- und Vertragsinformationen.'
+      answer: i18n.language === 'en' ? 'Yes. Before concluding a contract, you receive the relevant tariff and contract information.' : 'Ja. Energie Alemi weist die Beratung auf der Website als kostenlos aus. Vor einem Vertragsabschluss erhalten Sie die relevanten Tarif- und Vertragsinformationen.'
     },
     {
       question: i18n.language === 'en' ? 'Will my electricity be interrupted when I change providers?' : 'Wird mein Strom beim Anbieterwechsel unterbrochen?',
-      answer: i18n.language === 'en' ? 'No. Energy supply is guaranteed during a change of supplier. The local network operator remains responsible for the electricity grid; only the supply contract is changed.' : 'Nein. Die Energieversorgung bleibt beim Lieferantenwechsel sichergestellt. Der örtliche Netzbetreiber bleibt für das Stromnetz zuständig; geändert wird der Liefervertrag.'
+      answer: i18n.language === 'en' ? 'No. Supply is guaranteed during a change of supplier. The local network operator remains responsible for the grid; only the supply contract changes.' : 'Nein. Die Energieversorgung bleibt beim Lieferantenwechsel sichergestellt. Der örtliche Netzbetreiber bleibt für das Stromnetz zuständig; geändert wird der Liefervertrag.'
     },
     {
       question: i18n.language === 'en' ? 'What documents do I need for the comparison?' : 'Welche Unterlagen brauche ich für den Vergleich?',
@@ -86,11 +86,11 @@ export default function StromanbieterAachen() {
     },
     {
       question: i18n.language === 'en' ? 'Does Energie Alemi also advise commercial and industrial customers?' : 'Berät Energie Alemi auch Gewerbe- und Industriekunden?',
-      answer: i18n.language === 'en' ? 'Yes. According to Energie Alemi, the advice is aimed at private, commercial and industrial customers. The comparison is adapted to the respective needs.' : 'Ja. Die Beratung richtet sich laut Energie Alemi an Privat-, Gewerbe- und Industriekunden. Der Vergleich wird an den jeweiligen Bedarf angepasst.'
+      answer: i18n.language === 'en' ? 'Yes — the advice is aimed at private, commercial and industrial customers, and the comparison is adapted to each need.' : 'Ja. Die Beratung richtet sich laut Energie Alemi an Privat-, Gewerbe- und Industriekunden. Der Vergleich wird an den jeweiligen Bedarf angepasst.'
     },
     {
-      question: i18n.language === 'en' ? 'Can I also consider green electricity in the comparison?' : 'Kann ich beim Vergleich auch Ökostrom berücksichtigen?',
-      answer: i18n.language === 'en' ? 'Yes. If the origin of the electricity is important to you, it can be included in the comparison as a selection criterion. The decisive factors are the specific details and conditions of the respective tariff.' : 'Ja. Wenn die Stromherkunft für Sie wichtig ist, kann sie als Auswahlkriterium in den Vergleich einfließen. Entscheidend sind die konkreten Angaben und Bedingungen des jeweiligen Tarifs.'
+      question: i18n.language === 'en' ? 'Can I also consider green electricity?' : 'Kann ich beim Vergleich auch Ökostrom berücksichtigen?',
+      answer: i18n.language === 'en' ? 'Yes. If the origin of the electricity is important to you, it can be included as a selection criterion.' : 'Ja. Wenn die Stromherkunft für Sie wichtig ist, kann sie als Auswahlkriterium in den Vergleich einfließen. Entscheidend sind die konkreten Angaben und Bedingungen des jeweiligen Tarifs.'
     }
   ];
 
@@ -98,8 +98,8 @@ export default function StromanbieterAachen() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/stromanbieter-aachen" 
-        title={i18n.language === 'en' ? 'Compare Electricity Providers Aachen | Energie Alemi' : 'Stromanbieter Aachen vergleichen | Energie Alemi'}
-        description={i18n.language === 'en' ? 'Compare electricity tariffs in Aachen: Energie Alemi checks your contract, finds suitable offers and accompanies the change of provider personally.' : 'Stromanbieter in Aachen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google.'}
+        title={i18n.language === 'en' ? 'Compare Electricity Providers in Aachen | Energie Alemi' : 'Stromanbieter Aachen vergleichen | Energie Alemi'}
+        description={i18n.language === 'en' ? 'Compare electricity tariffs in Aachen with personal advice. Energie Alemi checks your current contract, compares real annual costs and helps you switch — free of charge.' : 'Stromanbieter in Aachen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google.'}
         image={elecHeroDesk} 
         faqs={faqs} 
       />
@@ -129,10 +129,10 @@ export default function StromanbieterAachen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">{i18n.language === 'en' ? 'A suitable electricity tariff begins with your actual needs' : 'Ein passender Stromtarif beginnt mit Ihrem tatsächlichen Bedarf'}</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === 'en' ? 'A low energy price alone does not make a good electricity contract. It is crucial how the tariff suits your consumption, your desired term and your personal planning. Basic price, cancellation period, price guarantee, payment method and possible bonus conditions should also be considered together.' : 'Ein niedriger Arbeitspreis allein macht noch keinen guten Stromvertrag. Entscheidend ist, wie der Tarif zu Ihrem Verbrauch, Ihrer gewünschten Laufzeit und Ihrer persönlichen Planung passt. Auch Grundpreis, Kündigungsfrist, Preisgarantie, Zahlungsweise und mögliche Bonusbedingungen sollten gemeinsam betrachtet werden.'}
+            {i18n.language === 'en' ? 'A low energy price alone does not make a good electricity contract. What matters is how the tariff suits your consumption, your desired term and your personal planning. Basic price, cancellation period, price guarantee, payment method and bonus conditions should always be considered together.' : 'Ein niedriger Arbeitspreis allein macht noch keinen guten Stromvertrag. Entscheidend ist, wie der Tarif zu Ihrem Verbrauch, Ihrer gewünschten Laufzeit und Ihrer persönlichen Planung passt. Auch Grundpreis, Kündigungsfrist, Preisgarantie, Zahlungsweise und mögliche Bonusbedingungen sollten gemeinsam betrachtet werden.'}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            {i18n.language === 'en' ? 'Energie Alemi takes time for these details. We check your current situation, compare different offers and show you understandably which conditions are relevant in the long term. This way, you don\'t make a decision just because of a short-term bait price, but on the basis of a comprehensible overall package.' : 'Energie Alemi nimmt sich Zeit für diese Details. Wir prüfen Ihre aktuelle Situation, vergleichen verschiedene Angebote und zeigen Ihnen verständlich, welche Konditionen langfristig relevant sind. So treffen Sie keine Entscheidung nur wegen eines kurzfristigen Lockpreises, sondern auf Basis eines nachvollziehbaren Gesamtpakets.'}
+            {i18n.language === 'en' ? 'Energie Alemi takes time for these details: we check your current situation, compare different offers and explain understandably which conditions matter in the long term — so you decide on the basis of a comprehensible overall package, not a short-term bait price.' : 'Energie Alemi nimmt sich Zeit für diese Details. Wir prüfen Ihre aktuelle Situation, vergleichen verschiedene Angebote und zeigen Ihnen verständlich, welche Konditionen langfristig relevant sind. So treffen Sie keine Entscheidung nur wegen eines kurzfristigen Lockpreises, sondern auf Basis eines nachvollziehbaren Gesamtpakets.'}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             {i18n.language === 'en' ? 'By the way: We not only advise you on electricity, but also support you as a' : 'Übrigens: Wir beraten Sie nicht nur zu Strom, sondern unterstützen Sie als'} <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'gas provider' : 'Gasanbieter'}</Link> {i18n.language === "en" ? "and" : "und"} <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'internet provider in Aachen' : 'Internetanbieter in Aachen'}</Link> {i18n.language === 'en' ? 'also with joint contract optimization.' : 'auch bei der gemeinsamen Vertragsoptimierung.'}
@@ -230,7 +230,7 @@ export default function StromanbieterAachen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">{i18n.language === 'en' ? 'Personally available in the center of Aachen' : 'Persönlich erreichbar im Zentrum von Aachen'}</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            {i18n.language === 'en' ? 'You don\'t want to compare your electricity contract alone online? Visit Energie Alemi at Alexianergraben 9 in 52064 Aachen. We will discuss your situation personally and explain the next steps in clear language.' : 'Sie möchten Ihren Stromvertrag nicht allein online vergleichen? Besuchen Sie Energie Alemi am Alexianergraben 9 in 52064 Aachen. Wir besprechen Ihre Situation persönlich und erklären die nächsten Schritte in verständlicher Sprache.'}
+            {i18n.language === 'en' ? 'You don\'t want to compare your electricity contract alone online? Visit Energie Alemi at Alexianergraben 9 in 52064 Aachen. We discuss your situation personally and explain the next steps in clear language. Opening hours Monday to Saturday, 10:00 AM–7:00 PM. Phone 0176 659 493 90.' : 'Sie möchten Ihren Stromvertrag nicht allein online vergleichen? Besuchen Sie Energie Alemi am Alexianergraben 9 in 52064 Aachen. Wir besprechen Ihre Situation persönlich und erklären die nächsten Schritte in verständlicher Sprache.'}
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
@@ -267,9 +267,9 @@ export default function StromanbieterAachen() {
             <FAQ items={faqs} className="mb-12" />
             
             <div className="bg-white dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-slate-100 dark:border-slate-800 mt-16">
-              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">{i18n.language === 'en' ? 'Have electricity tariffs in Aachen checked now' : 'Jetzt Stromtarife in Aachen prüfen lassen'}</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">{i18n.language === 'en' ? 'Have your electricity tariff in Aachen checked now' : 'Jetzt Stromtarife in Aachen prüfen lassen'}</h3>
               <p className="text-slate-600 dark:text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-                {i18n.language === 'en' ? 'Arrange your free tariff advice at Energie Alemi - in person at Alexianergraben 9 or by phone at 0176 659 493 90.' : 'Vereinbaren Sie Ihre kostenlose Tarifberatung bei Energie Alemi – persönlich am Alexianergraben 9 oder telefonisch unter 0176 659 493 90.'}
+                {i18n.language === 'en' ? 'Arrange free tariff advice at Energie Alemi, in person at Alexianergraben 9 or by phone at 0176 659 493 90.' : 'Vereinbaren Sie Ihre kostenlose Tarifberatung bei Energie Alemi – persönlich am Alexianergraben 9 oder telefonisch unter 0176 659 493 90.'}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

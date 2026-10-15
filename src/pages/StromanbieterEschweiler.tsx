@@ -22,12 +22,12 @@ export default function StromanbieterEschweiler() {
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
       title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
-      description: i18n.language === "en" ? "In private householdsn bilden household size, bisheriger annual consumption und gewünschte Vertragsflexibilität die Vergleichsbasis. Auf Wunsch kann auch die ausgewiesene origin of electricity als Kriterium berücksichtigt werden." : "In Privathaushalten bilden Haushaltsgröße, bisheriger Jahresverbrauch und gewünschte Vertragsflexibilität die Vergleichsbasis. Auf Wunsch kann auch die ausgewiesene Stromherkunft als Kriterium berücksichtigt werden."
+      description: i18n.language === "en" ? "Private households: household size, previous annual consumption and desired contract flexibility form the basis of the comparison; on request, the stated origin of electricity can also be included as a criterion." : "In Privathaushalten bilden Haushaltsgröße, bisheriger Jahresverbrauch und gewünschte Vertragsflexibilität die Vergleichsbasis. Auf Wunsch kann auch die ausgewiesene Stromherkunft als Kriterium berücksichtigt werden."
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
       title: i18n.language === "en" ? "Business & Industry" : "Gewerbe & Industrie",
-      description: i18n.language === "en" ? "Bei Gewerbe- und industrial customers können Lastverlauf, planbare Vertragskosten und betriebliche Anforderungen stärker ins Gewicht fallen. Deshalb wird die Ausgangslage vor dem Vergleich strukturiert erfasst, statt einen Standardtarif für jede Situation zu empfehlen." : "Bei Gewerbe- und Industriekunden können Lastverlauf, planbare Vertragskosten und betriebliche Anforderungen stärker ins Gewicht fallen. Deshalb wird die Ausgangslage vor dem Vergleich strukturiert erfasst, statt einen Standardtarif für jede Situation zu empfehlen."
+      description: i18n.language === "en" ? "For business and industrial customers, load profile, plannable contract costs and operational requirements can weigh more heavily. The starting situation is therefore recorded in a structured way before the comparison, instead of recommending a standard tariff for every situation." : "Bei Gewerbe- und Industriekunden können Lastverlauf, planbare Vertragskosten und betriebliche Anforderungen stärker ins Gewicht fallen. Deshalb wird die Ausgangslage vor dem Vergleich strukturiert erfasst, statt einen Standardtarif für jede Situation zu empfehlen."
     }
   ];
 
@@ -36,13 +36,13 @@ export default function StromanbieterEschweiler() {
       number: 1,
       icon: <Search size={24} />,
       title: "Ausgangslage erfassen",
-      description: i18n.language === "en" ? "Sie stellen die letzte annual statement, den aktuellen Vertrag und if possible meter number oder market location ID bereit." : "Sie stellen die letzte Jahresabrechnung, den aktuellen Vertrag und möglichst Zählernummer oder Marktlokations-ID bereit."
+      description: i18n.language === "en" ? "You provide the last annual statement, the current contract and, if possible, meter number or market location ID." : "Sie stellen die letzte Jahresabrechnung, den aktuellen Vertrag und möglichst Zählernummer oder Marktlokations-ID bereit."
     },
     {
       number: 2,
       icon: <BarChart3 size={24} />,
       title: "Angebote bewerten",
-      description: i18n.language === "en" ? "annual costs, Laufzeit, cancellation period, price guarantee, payment method und bonus conditions werden gemeinsam geprüft." : "Jahreskosten, Laufzeit, Kündigungsfrist, Preisgarantie, Zahlungsweise und Bonusbedingungen werden gemeinsam geprüft."
+      description: i18n.language === "en" ? "Annual costs, term, cancellation period, price guarantee, payment method and bonus conditions are checked together." : "Jahreskosten, Laufzeit, Kündigungsfrist, Preisgarantie, Zahlungsweise und Bonusbedingungen werden gemeinsam geprüft."
     },
     {
       number: 3,
@@ -61,35 +61,35 @@ export default function StromanbieterEschweiler() {
   const faqs = [
     {
       question: "Ist die Stromtarifberatung für Eschweiler kostenlos?",
-      answer: i18n.language === "en" ? "Ja. Energie Alemi bietet die tariff advice free of charge an. Vor einem Abschluss erhalten Sie die relevanten Tarif- und Vertragsinformationen." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Vor einem Abschluss erhalten Sie die relevanten Tarif- und Vertragsinformationen."
+      answer: i18n.language === "en" ? "Yes. Energie Alemi offers tariff advice free of charge. Before signing, you receive the relevant tariff and contract information." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Vor einem Abschluss erhalten Sie die relevanten Tarif- und Vertragsinformationen."
     },
     {
-      question: i18n.language === "en" ? "Welche electricity tariffs sind an meiner Adresse in Eschweiler verfügbar?" : "Welche Stromtarife sind an meiner Adresse in Eschweiler verfügbar?",
-      answer: i18n.language === "en" ? "Das hängt von der delivery address, dem Verbrauch und den aktuell angebotenen Konditionen ab. Für ein konkretes Ergebnis werden deshalb Ihre Vertrags- und consumption data benötigt." : "Das hängt von der Lieferadresse, dem Verbrauch und den aktuell angebotenen Konditionen ab. Für ein konkretes Ergebnis werden deshalb Ihre Vertrags- und Verbrauchsdaten benötigt."
+      question: i18n.language === "en" ? "Which electricity tariffs are available at my address in Eschweiler?" : "Welche Stromtarife sind an meiner Adresse in Eschweiler verfügbar?",
+      answer: i18n.language === "en" ? "That depends on the delivery address, consumption and currently offered conditions. Your contract and consumption data are therefore needed for a concrete result." : "Das hängt von der Lieferadresse, dem Verbrauch und den aktuell angebotenen Konditionen ab. Für ein konkretes Ergebnis werden deshalb Ihre Vertrags- und Verbrauchsdaten benötigt."
     },
     {
       question: "Welche Unterlagen sollte ich zum Stromvergleich mitbringen?",
-      answer: i18n.language === "en" ? "Hilfreich sind die letzte annual statement, der aktuelle Vertrag, annual consumption, bisherige customer number sowie meter number oder market location ID." : "Hilfreich sind die letzte Jahresabrechnung, der aktuelle Vertrag, Jahresverbrauch, bisherige Kundennummer sowie Zählernummer oder Marktlokations-ID."
+      answer: i18n.language === "en" ? "Helpful are the last annual statement, the current contract, annual consumption, previous customer number, as well as meter number or market location ID." : "Hilfreich sind die letzte Jahresabrechnung, der aktuelle Vertrag, Jahresverbrauch, bisherige Kundennummer sowie Zählernummer oder Marktlokations-ID."
     },
     {
       question: i18n.language === "en" ? "Does the electricity supply continue during the switch?" : "Bleibt die Stromversorgung während des Wechsels bestehen?",
-      answer: i18n.language === "en" ? "Ein regulärer provider switch betrifft den supply contract; Leitungen und Zähler bleiben bestehen. Die gesetzlich vorgesehene Grund- oder replacement supply sichert die Belieferung ab." : "Ein regulärer Anbieterwechsel betrifft den Liefervertrag; Leitungen und Zähler bleiben bestehen. Die gesetzlich vorgesehene Grund- oder Ersatzversorgung sichert die Belieferung ab."
+      answer: i18n.language === "en" ? "A regular provider switch concerns the supply contract; lines and meter remain. The legally provided basic or replacement supply secures delivery." : "Ein regulärer Anbieterwechsel betrifft den Liefervertrag; Leitungen und Zähler bleiben bestehen. Die gesetzlich vorgesehene Grund- oder Ersatzversorgung sichert die Belieferung ab."
     },
     {
-      question: i18n.language === "en" ? "Kündigt der neue electricity provider meinen bisherigen Vertrag?" : "Kündigt der neue Stromanbieter meinen bisherigen Vertrag?",
-      answer: i18n.language === "en" ? "Im Regelfall übernimmt der neue Lieferant die cancellation, wenn er dazu bevollmächtigt wird. Bei special cancellations, Umzügen oder sehr kurzen Fristen sollte das Vorgehen separat geklärt werden." : "Im Regelfall übernimmt der neue Lieferant die Kündigung, wenn er dazu bevollmächtigt wird. Bei Sonderkündigungen, Umzügen oder sehr kurzen Fristen sollte das Vorgehen separat geklärt werden."
+      question: i18n.language === "en" ? "Does the new electricity provider cancel my previous contract?" : "Kündigt der neue Stromanbieter meinen bisherigen Vertrag?",
+      answer: i18n.language === "en" ? "Normally, the new supplier takes over the cancellation when authorised to do so. For special cancellations, moves or very short deadlines, the procedure should be clarified separately." : "Im Regelfall übernimmt der neue Lieferant die Kündigung, wenn er dazu bevollmächtigt wird. Bei Sonderkündigungen, Umzügen oder sehr kurzen Fristen sollte das Vorgehen separat geklärt werden."
     },
     {
-      question: i18n.language === "en" ? "Wann kann der neue electricity tariff starten?" : "Wann kann der neue Stromtarif starten?",
-      answer: i18n.language === "en" ? "Der mögliche delivery start richtet sich unter anderem nach contract duration, cancellation period und vollständig vorliegenden Daten. Ein schneller technischer Wechsel hebt bestehende contract deadlines nicht auf." : "Der mögliche Lieferbeginn richtet sich unter anderem nach Vertragslaufzeit, Kündigungsfrist und vollständig vorliegenden Daten. Ein schneller technischer Wechsel hebt bestehende Vertragsfristen nicht auf."
+      question: i18n.language === "en" ? "When can the new electricity tariff start?" : "Wann kann der neue Stromtarif starten?",
+      answer: i18n.language === "en" ? "The possible delivery start depends on contract term, cancellation period and complete data, among other things. A fast technical switch does not lift existing contract deadlines." : "Der mögliche Lieferbeginn richtet sich unter anderem nach Vertragslaufzeit, Kündigungsfrist und vollständig vorliegenden Daten. Ein schneller technischer Wechsel hebt bestehende Vertragsfristen nicht auf."
     },
     {
-      question: i18n.language === "en" ? "Kann ich für Eschweiler auch green electricity tariffs vergleichen?" : "Kann ich für Eschweiler auch Ökostromtarife vergleichen?",
-      answer: i18n.language === "en" ? "Ja. Wenn Ihnen die origin of electricity wichtig ist, können passende Angebote berücksichtigt werden. Maßgeblich sind die Angaben und Bedingungen des jeweiligen Tarifs." : "Ja. Wenn Ihnen die Stromherkunft wichtig ist, können passende Angebote berücksichtigt werden. Maßgeblich sind die Angaben und Bedingungen des jeweiligen Tarifs."
+      question: i18n.language === "en" ? "Can I also compare green electricity tariffs for Eschweiler?" : "Kann ich für Eschweiler auch Ökostromtarife vergleichen?",
+      answer: i18n.language === "en" ? "Yes. If the origin of electricity is important to you, suitable offers can be considered. The details and conditions of the respective tariff are decisive." : "Ja. Wenn Ihnen die Stromherkunft wichtig ist, können passende Angebote berücksichtigt werden. Maßgeblich sind die Angaben und Bedingungen des jeweiligen Tarifs."
     },
     {
       question: i18n.language === "en" ? "Does Energie Alemi also advise businesses from Eschweiler?" : "Berät Energie Alemi auch Unternehmen aus Eschweiler?",
-      answer: i18n.language === "en" ? "Ja. Die Beratung richtet sich an Privat-, Gewerbe- und industrial customers und wird an Verbrauch, Vertragsziel und betriebliche Anforderungen angepasst." : "Ja. Die Beratung richtet sich an Privat-, Gewerbe- und Industriekunden und wird an Verbrauch, Vertragsziel und betriebliche Anforderungen angepasst."
+      answer: i18n.language === "en" ? "Yes. The advice is aimed at private, commercial and industrial customers and is adapted to consumption, contract goals and operational requirements." : "Ja. Die Beratung richtet sich an Privat-, Gewerbe- und Industriekunden und wird an Verbrauch, Vertragsziel und betriebliche Anforderungen angepasst."
     }
   ];
 
@@ -98,7 +98,7 @@ export default function StromanbieterEschweiler() {
       <SEO 
         url="/stromanbieter-eschweiler" 
         title={i18n.language === 'en' ? 'Compare Electricity Providers Eschweiler | Energie Alemi' : 'Stromanbieter Eschweiler vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "electricity tariffs in Eschweiler vergleichen: Energie Alemi prüft Kosten, Laufzeit und contract details und begleitet auf Wunsch den provider switch." : "Stromanbieter in Eschweiler vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
+        description={i18n.language === "en" ? "Compare electricity tariffs in Eschweiler with personal advice. Energie Alemi checks annual costs, terms and price guarantees — and helps you switch. Free advice." : "Stromanbieter in Eschweiler vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />
@@ -107,7 +107,7 @@ export default function StromanbieterEschweiler() {
           theme="dark"
           badgeIcon={<Zap size={24} />}
           badgeText={i18n.language === 'en' ? 'Electricity Providers Eschweiler' : 'Stromanbieter Eschweiler'}
-          title={i18n.language === "en" ? "electricity provider in Eschweiler vergleichen – Tarif personally prüfen" : "Stromanbieter in Eschweiler vergleichen – Tarif persönlich prüfen"}
+          title={i18n.language === "en" ? "Compare electricity providers in Eschweiler – check your tariff personally" : "Stromanbieter in Eschweiler vergleichen – Tarif persönlich prüfen"}
           description={<>Sie möchten Ihren Stromvertrag in Eschweiler neu abschließen oder bestehende Konditionen überprüfen? Energie Alemi vergleicht verfügbare Angebote anhand Ihres Verbrauchs und Ihrer Vertragsziele – für Privathaushalte, Gewerbe und Industrie. Übrigens helfen wir Ihnen auch bei der Suche nach einem passenden <Link to="/gasanbieter-eschweiler" className="hover:underline font-semibold text-blue-300">Gasanbieter in Eschweiler</Link>.</>}
           bgImage={elecHeroDesk}
           buttonText="Stromtarife für Eschweiler prüfen lassen"
@@ -128,10 +128,10 @@ export default function StromanbieterEschweiler() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Stromkosten in Eschweiler richtig einordnen</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "Ein tariff comparison sollte nicht bei einem einzelnen Cent-Wert enden. Erst aus energy price, basic price und dem erwarteten annual consumption ergeben sich belastbare annual costs. Boni können das erste Vertragsjahr verändern, ersetzen aber keinen Blick auf die laufenden Konditionen." : "Ein Tarifvergleich sollte nicht bei einem einzelnen Cent-Wert enden. Erst aus Arbeitspreis, Grundpreis und dem erwarteten Jahresverbrauch ergeben sich belastbare Jahreskosten. Boni können das erste Vertragsjahr verändern, ersetzen aber keinen Blick auf die laufenden Konditionen."}
+            {i18n.language === "en" ? "A tariff comparison should not end at a single cent value. Only from the energy price, basic price and expected annual consumption do reliable annual costs result. Bonuses can change the first contract year, but they do not replace a look at the ongoing conditions." : "Ein Tarifvergleich sollte nicht bei einem einzelnen Cent-Wert enden. Erst aus Arbeitspreis, Grundpreis und dem erwarteten Jahresverbrauch ergeben sich belastbare Jahreskosten. Boni können das erste Vertragsjahr verändern, ersetzen aber keinen Blick auf die laufenden Konditionen."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "Energie Alemi berücksichtigt außerdem Laufzeit, cancellation period, payment method und Umfang der price guarantee. So lässt sich erkennen, ob ein Angebot nicht nur im promotional period, sondern auch für Ihre personallye Planung geeignet ist." : "Energie Alemi berücksichtigt außerdem Laufzeit, Kündigungsfrist, Zahlungsweise und Umfang der Preisgarantie. So lässt sich erkennen, ob ein Angebot nicht nur im Aktionszeitraum, sondern auch für Ihre persönliche Planung geeignet ist."}
+            {i18n.language === "en" ? "Energie Alemi also considers term, cancellation period, payment method and the scope of the price guarantee — so you can see whether an offer is suitable not only during the promotional period, but also for your personal planning." : "Energie Alemi berücksichtigt außerdem Laufzeit, Kündigungsfrist, Zahlungsweise und Umfang der Preisgarantie. So lässt sich erkennen, ob ein Angebot nicht nur im Aktionszeitraum, sondern auch für Ihre persönliche Planung geeignet ist."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Die Beratung richtet sich an Kundinnen und Kunden aus dem gesamten Eschweiler Stadtgebiet – unter anderem aus Dürwiß, Weisweiler, Röhe, Röthgen, Bergrath und Nothberg. Sie erfolgt telefonisch oder persönlich am Standort von Energie Alemi in Aachen. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
@@ -164,7 +164,7 @@ export default function StromanbieterEschweiler() {
                         {i18n.language === "en" ? "This is how the " : "So läuft der "}<span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === "en" ? "electricity comparison" : "Stromvergleich"}</span>{i18n.language === "en" ? " works in four steps" : " in vier Schritten"}
                       </>
                     }
-                    subtitle={i18n.language === "en" ? "Ein technisch schneller supplier switch beendet keinen laufenden Vertrag vorzeitig. Entscheidend bleiben minimum term, cancellation period und ein möglicher special cancellation reason. Der gewünschte delivery start sollte deshalb mit den contract data abgestimmt werden. Für einen Umzug nach oder innerhalb von Eschweiler sollten delivery address, Einzugsdatum und meter data frühzeitig bereitliegen. So kann geprüft werden, welcher Starttermin realistisch ist." : "Ein technisch schneller Lieferantenwechsel beendet keinen laufenden Vertrag vorzeitig. Entscheidend bleiben Mindestlaufzeit, Kündigungsfrist und ein möglicher Sonderkündigungsgrund. Der gewünschte Lieferbeginn sollte deshalb mit den Vertragsdaten abgestimmt werden. Für einen Umzug nach oder innerhalb von Eschweiler sollten Lieferadresse, Einzugsdatum und Zählerdaten frühzeitig bereitliegen. So kann geprüft werden, welcher Starttermin realistisch ist."}
+                    subtitle={i18n.language === "en" ? "A technically fast supplier switch does not end a running contract early. Minimum term, cancellation period and a possible special cancellation reason remain decisive. The desired delivery start should therefore be coordinated with the contract data. For a move to or within Eschweiler, delivery address, move-in date and meter data should be ready early so it can be checked which start date is realistic." : "Ein technisch schneller Lieferantenwechsel beendet keinen laufenden Vertrag vorzeitig. Entscheidend bleiben Mindestlaufzeit, Kündigungsfrist und ein möglicher Sonderkündigungsgrund. Der gewünschte Lieferbeginn sollte deshalb mit den Vertragsdaten abgestimmt werden. Für einen Umzug nach oder innerhalb von Eschweiler sollten Lieferadresse, Einzugsdatum und Zählerdaten frühzeitig bereitliegen. So kann geprüft werden, welcher Starttermin realistisch ist."}
                     align="left"
                     className="mb-8"
                   />
@@ -195,11 +195,11 @@ export default function StromanbieterEschweiler() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "Jahresverbrauch", desc: i18n.language === "en" ? "The consumption from the last statement is more accurate than a flat-rate household estimate." : "Der Verbrauch aus der letzten Abrechnung ist genauer als eine pauschale Haushaltsschätzung." },
-              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: i18n.language === "en" ? "energy price und basic price auf ein vollständiges Jahr beziehen." : "Arbeitspreis und Grundpreis auf ein vollständiges Jahr beziehen." },
-              { title: "Vertragsstatus", desc: i18n.language === "en" ? "Laufzeit, cancellation period und mögliche Preisänderungen prüfen." : "Laufzeit, Kündigungsfrist und mögliche Preisänderungen prüfen." },
-              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === "en" ? "Dauer und erfasste price components genau vergleichen." : "Dauer und erfasste Preisbestandteile genau vergleichen." },
+              { title: i18n.language === 'en' ? 'Total costs' : 'Gesamtkosten', desc: i18n.language === "en" ? "Relate energy price and basic price to a full year." : "Arbeitspreis und Grundpreis auf ein vollständiges Jahr beziehen." },
+              { title: "Vertragsstatus", desc: i18n.language === "en" ? "Check term, cancellation period and possible price changes." : "Laufzeit, Kündigungsfrist und mögliche Preisänderungen prüfen." },
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === "en" ? "Compare duration and covered price components carefully." : "Dauer und erfasste Preisbestandteile genau vergleichen." },
               { title: "Bonus", desc: i18n.language === "en" ? "Consider requirements, payout and costs in the following year separately." : "Voraussetzungen, Auszahlung und Kosten im Folgejahr getrennt betrachten." },
-              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Regelmäßige Abschläge gegenüber advance payment oder hohen advance payments abwägen." : "Regelmäßige Abschläge gegenüber Vorkasse oder hohen Vorauszahlungen abwägen." }
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Weigh regular installments against advance payment or high advance payments." : "Regelmäßige Abschläge gegenüber Vorkasse oder hohen Vorauszahlungen abwägen." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -220,7 +220,7 @@ export default function StromanbieterEschweiler() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">Persönliche Stromberatung für Eschweiler aus Aachen</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            {i18n.language === "en" ? "Energie Alemi berät customers aus Eschweiler by phone und personally am Alexianergraben 9 in 52064 Aachen. Für die erste Prüfung genügen in der Regel die letzte electricity bill und die Daten des bestehenden Vertrags." : "Energie Alemi berät Kundinnen und Kunden aus Eschweiler telefonisch und persönlich am Alexianergraben 9 in 52064 Aachen. Für die erste Prüfung genügen in der Regel die letzte Stromrechnung und die Daten des bestehenden Vertrags."}
+            {i18n.language === "en" ? "Energie Alemi advises customers from Eschweiler by phone and in person at Alexianergraben 9 in 52064 Aachen. For the first check, the last electricity bill and the data of the existing contract are usually sufficient." : "Energie Alemi berät Kundinnen und Kunden aus Eschweiler telefonisch und persönlich am Alexianergraben 9 in 52064 Aachen. Für die erste Prüfung genügen in der Regel die letzte Stromrechnung und die Daten des bestehenden Vertrags."}
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">

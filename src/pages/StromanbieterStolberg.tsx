@@ -98,7 +98,7 @@ export default function StromanbieterStolberg() {
       <SEO 
         url="/stromanbieter-stolberg" 
         title={i18n.language === 'en' ? 'Compare Electricity Providers Stolberg | Energie Alemi' : 'Stromanbieter Stolberg vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "Compare electricity tariffs in Stolberg personally: Energie Alemi checks contract, consumption and conditions and accompanies the change of provider if desired." : "Stromanbieter in Stolberg vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
+        description={i18n.language === "en" ? "Compare electricity tariffs in Stolberg with personal advice. Energie Alemi checks your contract and real annual costs and helps you switch \u2014 free of charge." : "Stromanbieter in Stolberg vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />
@@ -134,7 +134,7 @@ export default function StromanbieterStolberg() {
             {i18n.language === "en" ? "Energie Alemi checks your current bill and categorizes the offers so that you don't just see a short-term promotional price. The goal is a comprehensible decision that suits your consumption and your desired flexibility." : "Energie Alemi prüft Ihre aktuelle Rechnung und ordnet die Angebote so ein, dass Sie nicht nur einen kurzfristigen Aktionspreis sehen. Ziel ist eine nachvollziehbare Entscheidung, die zu Ihrem Verbrauch und Ihrer gewünschten Flexibilität passt."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            {i18n.language === "en" ? "The advice is aimed at customers throughout the Stolberg city area" : "Die Beratung richtet sich an Kundinnen und Kunden im gesamten Stolberger Stadtgebiet"} – etwa in Atsch, Büsbach, Breinig, Mausbach, Vicht oder Zweifall. Die persönliche Beratung findet telefonisch oder am Standort von Energie Alemi in Aachen statt. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
+            {i18n.language === "en" ? "The advice is aimed at customers throughout the Stolberg city area" : "Die Beratung richtet sich an Kundinnen und Kunden im gesamten Stolberger Stadtgebiet"} {i18n.language === "en" ? "— for example in Atsch, Büsbach, Breinig, Mausbach, Vicht or Zweifall. Personal advice takes place by phone or at the Energie Alemi location in Aachen." : "– etwa in Atsch, Büsbach, Breinig, Mausbach, Vicht oder Zweifall. Die persönliche Beratung findet telefonisch oder am Standort von Energie Alemi in Aachen statt."} {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Stromanbieter Aachen</Link>.
           </p>
         </div>
         
@@ -161,7 +161,7 @@ export default function StromanbieterStolberg() {
                   <SectionHeader 
                     title={
                       <>
-                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'electricity provider switch' : 'Stromanbieterwechsel'}</span> in vier Schritten
+                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'electricity provider switch' : 'Stromanbieterwechsel'}</span>{i18n.language === 'en' ? ' in four steps' : ' in vier Schritten'}
                       </>
                     }
                     subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new electricity tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Stromtarif.'}

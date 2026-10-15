@@ -70,11 +70,11 @@ export default function GasanbieterAachen() {
 
   const faqs = [
     {
-      question: i18n.language === "en" ? "Wer ist der Gas-basic supplier in Aachen?" : "Wer ist der Gas-Grundversorger in Aachen?",
-      answer: i18n.language === "en" ? "Die STAWAG ist der örtliche basic supplier für Gas in Aachen. Sie veröffentlicht dafür den Tarif „STAWAG Gas Basis“. Die basic supply ist vom frei gewählten Sondervertrag zu unterscheiden." : "Die STAWAG ist der örtliche Grundversorger für Gas in Aachen. Sie veröffentlicht dafür den Tarif „STAWAG Gas Basis“. Die Grundversorgung ist vom frei gewählten Sondervertrag zu unterscheiden."
+      question: i18n.language === "en" ? "Who is the basic gas supplier in Aachen?" : "Wer ist der Gas-Grundversorger in Aachen?",
+      answer: i18n.language === "en" ? "STAWAG is the local basic supplier for gas in Aachen and publishes the “STAWAG Gas Basis” tariff. Basic supply is distinct from a freely chosen special contract." : "Die STAWAG ist der örtliche Grundversorger für Gas in Aachen. Sie veröffentlicht dafür den Tarif „STAWAG Gas Basis“. Die Grundversorgung ist vom frei gewählten Sondervertrag zu unterscheiden."
     },
     {
-      question: i18n.language === "en" ? "Wer ist der gas networkbetreiber in Aachen?" : "Wer ist der Gasnetzbetreiber in Aachen?",
+      question: i18n.language === "en" ? "Who operates the gas network in Aachen?" : "Wer ist der Gasnetzbetreiber in Aachen?",
       answer: "Die Regionetz GmbH betreibt das Gasnetz in Aachen. Der Netzbetreiber ist für die technische Infrastruktur zuständig und bleibt auch dann derselbe, wenn Sie Ihren Gasanbieter wechseln."
     },
     {
@@ -87,27 +87,27 @@ export default function GasanbieterAachen() {
     },
     {
       question: i18n.language === "en" ? "Does the gas meter need to be replaced when switching?" : "Muss der Gaszähler beim Wechsel ausgetauscht werden?",
-      answer: i18n.language === "en" ? "Normalerweise nicht. Der vorhandene Zähler und das Netz bleiben bestehen. Zum switching date kann ein aktueller meter reading erforderlich sein." : "Normalerweise nicht. Der vorhandene Zähler und das Netz bleiben bestehen. Zum Wechseltermin kann ein aktueller Zählerstand erforderlich sein."
+      answer: i18n.language === "en" ? "Normally not. The existing meter and network remain in place. A current meter reading may be required at the switching date." : "Normalerweise nicht. Der vorhandene Zähler und das Netz bleiben bestehen. Zum Wechseltermin kann ein aktueller Zählerstand erforderlich sein."
     },
     {
-      question: i18n.language === "en" ? "Welche Angaben brauche ich für einen gas comparison?" : "Welche Angaben brauche ich für einen Gasvergleich?",
-      answer: i18n.language === "en" ? "Hilfreich sind Ihre delivery address, der annual consumption in kilowatt hours, die letzte gas bill, der aktuelle Anbieter und Tarif sowie Laufzeit und cancellation period." : "Hilfreich sind Ihre Lieferadresse, der Jahresverbrauch in Kilowattstunden, die letzte Gasrechnung, der aktuelle Anbieter und Tarif sowie Laufzeit und Kündigungsfrist."
+      question: i18n.language === "en" ? "What information do I need for a gas comparison?" : "Welche Angaben brauche ich für einen Gasvergleich?",
+      answer: i18n.language === "en" ? "Helpful are your delivery address, annual consumption in kilowatt-hours, last gas bill, current provider and tariff, as well as term and cancellation period." : "Hilfreich sind Ihre Lieferadresse, der Jahresverbrauch in Kilowattstunden, die letzte Gasrechnung, der aktuelle Anbieter und Tarif sowie Laufzeit und Kündigungsfrist."
     },
     {
-      question: i18n.language === "en" ? "Was ist der Unterschied zwischen energy price und basic price?" : "Was ist der Unterschied zwischen Arbeitspreis und Grundpreis?",
-      answer: i18n.language === "en" ? "Der energy price wird je verbrauchter Kilowattstunde berechnet. Der basic price fällt unabhängig vom Verbrauch als fester Betrag an. Für einen fairen Vergleich sollten immer die projected annual costs betrachtet werden." : "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt unabhängig vom Verbrauch als fester Betrag an. Für einen fairen Vergleich sollten immer die voraussichtlichen Jahreskosten betrachtet werden."
+      question: i18n.language === "en" ? "What is the difference between energy price and basic price?" : "Was ist der Unterschied zwischen Arbeitspreis und Grundpreis?",
+      answer: i18n.language === "en" ? "The energy price is charged per kilowatt-hour consumed. The basic price applies as a fixed amount regardless of consumption. For a fair comparison, always consider the projected annual costs." : "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt unabhängig vom Verbrauch als fester Betrag an. Für einen fairen Vergleich sollten immer die voraussichtlichen Jahreskosten betrachtet werden."
     },
     {
       question: "Was bedeutet Preisgarantie beim Gastarif?",
-      answer: i18n.language === "en" ? "Eine price guarantee begrenzt Preisänderungen für einen festgelegten Zeitraum. Je nach Tarif können einzelne price components ausgenommen sein. Deshalb sollten Dauer und Umfang der Garantie vor dem Abschluss geprüft werden." : "Eine Preisgarantie begrenzt Preisänderungen für einen festgelegten Zeitraum. Je nach Tarif können einzelne Preisbestandteile ausgenommen sein. Deshalb sollten Dauer und Umfang der Garantie vor dem Abschluss geprüft werden."
+      answer: i18n.language === "en" ? "A price guarantee limits price changes for a defined period. Depending on the tariff, individual price components may be excluded. Duration and scope of the guarantee should therefore be checked before signing." : "Eine Preisgarantie begrenzt Preisänderungen für einen festgelegten Zeitraum. Je nach Tarif können einzelne Preisbestandteile ausgenommen sein. Deshalb sollten Dauer und Umfang der Garantie vor dem Abschluss geprüft werden."
     },
     {
-      question: i18n.language === "en" ? "Wie lang ist die cancellation period in der Gas-basic supply?" : "Wie lang ist die Kündigungsfrist in der Gas-Grundversorgung?",
-      answer: i18n.language === "en" ? "Ein basic supplysvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die im Vertrag vereinbarten Fristen." : "Ein Grundversorgungsvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die im Vertrag vereinbarten Fristen."
+      question: i18n.language === "en" ? "How long is the cancellation period for basic gas supply?" : "Wie lang ist die Kündigungsfrist in der Gas-Grundversorgung?",
+      answer: i18n.language === "en" ? "A basic supply contract can be cancelled with two weeks’ notice under § 20 GasGVV. For special contracts, the contractually agreed periods apply." : "Ein Grundversorgungsvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die im Vertrag vereinbarten Fristen."
     },
     {
       question: i18n.language === "en" ? "Does the advice at Energie Alemi cost anything?" : "Kostet die Beratung bei Energie Alemi etwas?",
-      answer: i18n.language === "en" ? "Die tariff advice wird als free of chargee Beratung angeboten. Für den konkreten Vergleich bringen Sie am besten Ihre letzte Rechnung und die aktuellen contract data mit." : "Die Tarifberatung wird als kostenlose Beratung angeboten. Für den konkreten Vergleich bringen Sie am besten Ihre letzte Rechnung und die aktuellen Vertragsdaten mit."
+      answer: i18n.language === "en" ? "Tariff advice is offered free of charge. For a specific comparison, please bring your last bill and current contract data." : "Die Tarifberatung wird als kostenlose Beratung angeboten. Für den konkreten Vergleich bringen Sie am besten Ihre letzte Rechnung und die aktuellen Vertragsdaten mit."
     }
   ];
 
@@ -115,8 +115,8 @@ export default function GasanbieterAachen() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/gasanbieter-aachen" 
-        title={i18n.language === 'en' ? 'Switch Gas Provider in Aachen | Energie Alemi' : 'Gasanbieter wechseln in Aachen: Kosten senken | Energie Alemi'}
-        description={i18n.language === "en" ? "Switch gas provider in Aachen: Compare transparent gas tariffs, save heating costs, and get free personal advice from Energie Alemi. Check now!" : "Gasanbieter in Aachen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
+        title={i18n.language === 'en' ? 'Compare Gas Providers in Aachen | Energie Alemi' : 'Gasanbieter wechseln in Aachen: Kosten senken | Energie Alemi'}
+        description={i18n.language === "en" ? "Compare gas tariffs in Aachen with personal advice. Energie Alemi checks energy price, basic price, price guarantee and term — and helps you switch. Free advice." : "Gasanbieter in Aachen vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={gasHeroDesk} 
         faqs={faqs} 
       />
@@ -125,8 +125,8 @@ export default function GasanbieterAachen() {
           theme="dark"
           badgeIcon={<Flame size={24} />}
           badgeText={i18n.language === 'en' ? 'Switch Gas Provider Aachen' : 'Gasanbieter wechseln Aachen'}
-          title={i18n.language === 'en' ? 'Switch Gas Provider in Aachen' : 'Gasanbieter wechseln in Aachen'}
-          description={i18n.language === "en" ? "Would you like to check your gas tariff in Aachen or switch gas providers? Energie Alemi compares available offers from different providers and explains understandably what is important regarding price, term and contract conditions." : "Sie möchten Ihren Gastarif in Aachen prüfen oder den Gasanbieter wechseln? Energie Alemi vergleicht verfügbare Angebote verschiedener Anbieter und erklärt Ihnen verständlich, worauf es bei Preis, Laufzeit und Vertragsbedingungen ankommt."}
+          title={i18n.language === 'en' ? 'Compare gas providers in Aachen – personal advice, clear decisions' : 'Gasanbieter wechseln in Aachen'}
+          description={i18n.language === "en" ? "Would you like to check your gas tariff in Aachen or switch gas providers? Energie Alemi compares available offers from different providers and explains understandably what matters regarding price, term and contract conditions." : "Sie möchten Ihren Gastarif in Aachen prüfen oder den Gasanbieter wechseln? Energie Alemi vergleicht verfügbare Angebote verschiedener Anbieter und erklärt Ihnen verständlich, worauf es bei Preis, Laufzeit und Vertragsbedingungen ankommt."}
           bgImage={gasHeroDesk}
           buttonText="Jetzt Gastarif prüfen"
           onButtonClick={() => {
@@ -134,9 +134,9 @@ export default function GasanbieterAachen() {
             trackEvent('service_cta_click', { service_type: 'gasanbieter_aachen', cta_location: 'service_hero', page_path: window.location.pathname });
           }}
           bulletPoints={[
-            { icon: <MapPin size={24} />, title: i18n.language === "en" ? "Personal Beratung in Aachen" : "Persönliche Beratung in Aachen" },
+            { icon: <MapPin size={24} />, title: i18n.language === "en" ? "Personal advice in Aachen" : "Persönliche Beratung in Aachen" },
             { icon: <Search size={24} />, title: "Transparenter Tarifvergleich" },
-            { icon: <Handshake size={24} />, title: i18n.language === "en" ? "Unterstützung beim provider switch" : "Unterstützung beim Anbieterwechsel" },
+            { icon: <Handshake size={24} />, title: i18n.language === "en" ? "Support with switching" : "Unterstützung beim Anbieterwechsel" },
           ]}
           accentColor="bg-amber-500 hover:bg-amber-600"
         />
@@ -146,10 +146,10 @@ export default function GasanbieterAachen() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Gasanbieter wechseln in Aachen: Nicht nur auf den Arbeitspreis schauen</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "If you want to switch gas providers in Aachen, looking at the energy price alone is not enough. A favorable unit price looks attractive, but does not determine the actual annual costs on its own. The basic price, price guarantee, contract duration, and cancellation period also determine whether a gas tariff fits your consumption and flexibility requirements." : "Wer in Aachen den Gasanbieter wechseln möchte, blickt oft zuerst auf den Arbeitspreis. Ein günstiger Arbeitspreis wirkt attraktiv, entscheidet aber nicht allein über die tatsächlichen Jahreskosten. Auch der Grundpreis, die Preisgarantie, die Vertragslaufzeit und die Kündigungsfrist beeinflussen, ob ein Gastarif zu Ihrem Verbrauch und Ihrem Wunsch nach Flexibilität passt."}
+            {i18n.language === "en" ? "An attractive price per kilowatt-hour alone does not decide your actual annual costs. The basic price, the price guarantee, the contract term and the cancellation period also determine whether a gas tariff fits your consumption and your wish for flexibility." : "Wer in Aachen den Gasanbieter wechseln möchte, blickt oft zuerst auf den Arbeitspreis. Ein günstiger Arbeitspreis wirkt attraktiv, entscheidet aber nicht allein über die tatsächlichen Jahreskosten. Auch der Grundpreis, die Preisgarantie, die Vertragslaufzeit und die Kündigungsfrist beeinflussen, ob ein Gastarif zu Ihrem Verbrauch und Ihrem Wunsch nach Flexibilität passt."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
-            {i18n.language === "en" ? "Wir betrachten diese Punkte gemeinsam und ordnen Boni oder promotional prices so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine comprehensiblee Entscheidungsgrundlage statt einer unclearlyen Tarifliste." : "Wir betrachten diese Punkte gemeinsam und ordnen Boni oder Aktionspreise so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine nachvollziehbare Entscheidungsgrundlage statt einer unübersichtlichen Tarifliste."}
+            {i18n.language === "en" ? "We look at these points together and classify bonuses and promotional prices so that you can compare the first contract year with the time after — a comprehensible basis for your decision instead of an opaque tariff list." : "Wir betrachten diese Punkte gemeinsam und ordnen Boni oder Aktionspreise so ein, dass Sie das erste Vertragsjahr und die Zeit danach vergleichen können. So erhalten Sie eine nachvollziehbare Entscheidungsgrundlage statt einer unübersichtlichen Tarifliste."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             {i18n.language === 'en' ? 'By the way: We not only advise you on gas, but also support you as a' : 'Übrigens: Wir beraten Sie nicht nur zu Gas, sondern unterstützen Sie als'} <Link to="/stromanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'electricity provider' : 'Stromanbieter'}</Link> und <Link to="/internetanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">{i18n.language === 'en' ? 'internet provider in Aachen' : 'Internetanbieter in Aachen'}</Link> {i18n.language === 'en' ? 'also with joint contract optimization.' : 'auch bei der gemeinsamen Vertragsoptimierung.'}
@@ -171,11 +171,11 @@ export default function GasanbieterAachen() {
         <div className="container mx-auto px-6 max-w-4xl mt-16 bg-slate-50 dark:bg-[#122340] rounded-3xl p-8 border border-slate-100 dark:border-slate-800">
           <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Für wen lohnt sich ein Gasvergleich?</h3>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
-            {i18n.language === "en" ? "Ein Vergleich kann besonders sinnvoll sein, wenn Ihre price guarantee bald endet, eine price increase angekündigt wurde, Sie noch in der basic supply sind oder sich Ihr Verbrauch verändert hat. Auch bei einem Umzug oder vor der Verlängerung eines bestehenden Vertrags lohnt sich ein genauer Blick auf die Konditionen." : "Ein Vergleich kann besonders sinnvoll sein, wenn Ihre Preisgarantie bald endet, eine Preiserhöhung angekündigt wurde, Sie noch in der Grundversorgung sind oder sich Ihr Verbrauch verändert hat. Auch bei einem Umzug oder vor der Verlängerung eines bestehenden Vertrags lohnt sich ein genauer Blick auf die Konditionen."}
+            {i18n.language === "en" ? "A comparison is particularly worthwhile if your price guarantee is about to end, a price increase has been announced, you are still on the basic supply tariff, or your consumption has changed. It is also worth a close look at the conditions when moving house or before an existing contract is extended." : "Ein Vergleich kann besonders sinnvoll sein, wenn Ihre Preisgarantie bald endet, eine Preiserhöhung angekündigt wurde, Sie noch in der Grundversorgung sind oder sich Ihr Verbrauch verändert hat. Auch bei einem Umzug oder vor der Verlängerung eines bestehenden Vertrags lohnt sich ein genauer Blick auf die Konditionen."}
           </p>
           <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-2">Wichtig für Mieterinnen und Mieter</h4>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-            {i18n.language === "en" ? "Wer eine eigene gas boiler und einen eigenen gas supply contract hat, kann den Anbieter in der Regel selbst wählen. Bei einer zentralen heating system liegt der supply contract häufig bei der landlord oder property management." : "Wer eine eigene Gastherme und einen eigenen Gasliefervertrag hat, kann den Anbieter in der Regel selbst wählen. Bei einer zentralen Heizungsanlage liegt der Liefervertrag häufig bei der Vermietung oder Hausverwaltung."}
+            {i18n.language === "en" ? "If you have your own gas boiler and your own gas supply contract, you can usually choose your provider yourself. With a central heating system, the supply contract often lies with the landlord or property management." : "Wer eine eigene Gastherme und einen eigenen Gasliefervertrag hat, kann den Anbieter in der Regel selbst wählen. Bei einer zentralen Heizungsanlage liegt der Liefervertrag häufig bei der Vermietung oder Hausverwaltung."}
           </p>
         </div>
       </div>
@@ -190,14 +190,14 @@ export default function GasanbieterAachen() {
           />
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {[
-              { title: "Arbeitspreis", desc: i18n.language === "en" ? "Price per kWh consumed. How much does it affect my consumption?" : "Preis je verbrauchter kWh. Wie stark wirkt er bei meinem Verbrauch?" },
+              { title: "Arbeitspreis", desc: i18n.language === "en" ? "Price per kWh consumed; how strongly does it affect your consumption?" : "Preis je verbrauchter kWh. Wie stark wirkt er bei meinem Verbrauch?" },
               { title: "Grundpreis", desc: "Fester Betrag pro Monat/Jahr. Wie hoch sind die Fixkosten?" },
-              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === "en" ? "Duration and covered components. What may change despite the guarantee?" : "Dauer und abgedeckte Bestandteile. Was darf sich trotz Garantie ändern?" },
-              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: i18n.language === "en" ? "Deadline and contract extension. By when must the cancellation be made?" : "Frist und Vertragsverlängerung. Bis wann muss gekündigt werden?" },
-              { title: i18n.language === 'en' ? 'Contract term' : 'Vertragslaufzeit', desc: i18n.language === "en" ? "Eine längere Bindung kann planning security geben, schränkt aber die Flexibilität für einen späteren Wechsel ein." : "Eine längere Bindung kann Planungssicherheit geben, schränkt aber die Flexibilität für einen späteren Wechsel ein." },
-              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: i18n.language === "en" ? "New customer or instant bonuses can reduce the price in the first year. The requirements and costs without bonus are decisive." : "Neukunden- oder Sofortboni können den Preis im ersten Jahr senken. Entscheidend sind die Voraussetzungen und die Kosten ohne Bonus." },
-              { title: i18n.language === "en" ? "installment und annual costs" : "Abschlag und Jahreskosten", desc: i18n.language === "en" ? "Der monatliche installment ist eine Vorauszahlung. Für den Vergleich zählt die comprehensiblee Prognose der total costs." : "Der monatliche Abschlag ist eine Vorauszahlung. Für den Vergleich zählt die nachvollziehbare Prognose der Gesamtkosten." },
-              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Tarife mit advance payment oder Paketmengen sollten besonders sorgfältig geprüft werden." : "Tarife mit Vorkasse oder Paketmengen sollten besonders sorgfältig geprüft werden." }
+              { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === "en" ? "Duration and covered components; what may change despite the guarantee?" : "Dauer und abgedeckte Bestandteile. Was darf sich trotz Garantie ändern?" },
+              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: i18n.language === "en" ? "Deadline and contract extension; by when must cancellation happen?" : "Frist und Vertragsverlängerung. Bis wann muss gekündigt werden?" },
+              { title: i18n.language === 'en' ? 'Contract term' : 'Vertragslaufzeit', desc: i18n.language === "en" ? "A longer commitment can give planning security but limits flexibility for a later switch." : "Eine längere Bindung kann Planungssicherheit geben, schränkt aber die Flexibilität für einen späteren Wechsel ein." },
+              { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: i18n.language === "en" ? "New-customer or instant bonuses can reduce the first-year price; the requirements and the costs without the bonus are decisive." : "Neukunden- oder Sofortboni können den Preis im ersten Jahr senken. Entscheidend sind die Voraussetzungen und die Kosten ohne Bonus." },
+              { title: i18n.language === "en" ? "Installment and annual costs" : "Abschlag und Jahreskosten", desc: i18n.language === "en" ? "The monthly installment is an advance payment; what counts for the comparison is a comprehensible forecast of total costs." : "Der monatliche Abschlag ist eine Vorauszahlung. Für den Vergleich zählt die nachvollziehbare Prognose der Gesamtkosten." },
+              { title: i18n.language === 'en' ? 'Payment method' : 'Zahlungsweise', desc: i18n.language === "en" ? "Tariffs with advance payment or fixed consumption packages should be examined especially carefully." : "Tarife mit Vorkasse oder Paketmengen sollten besonders sorgfältig geprüft werden." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-white dark:bg-[#122340] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -229,7 +229,7 @@ export default function GasanbieterAachen() {
                   <SectionHeader 
                     title={
                       <>
-                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'gas provider switch' : 'Gasanbieterwechsel'}</span> in vier Schritten
+                        {i18n.language === 'en' ? 'This is how the ' : 'So funktioniert der '} <span className="font-serif italic font-normal block mt-2 text-[#0047AB]">{i18n.language === 'en' ? 'gas provider switch' : 'Gasanbieterwechsel'}</span>{i18n.language === 'en' ? ' in four steps' : ' in vier Schritten'}
                       </>
                     }
                     subtitle={i18n.language === 'en' ? 'A transparent and simple process for your new gas tariff.' : 'Ein transparenter und einfacher Ablauf für Ihren neuen Gastarif.'}
@@ -259,15 +259,15 @@ export default function GasanbieterAachen() {
       <div className="relative z-25 bg-slate-50 dark:bg-[#0a1628] rounded-t-[2.5rem] md:rounded-none mt-[-2.5rem] md:mt-0 pt-16 pb-16 shadow-[0_-5px_15px_rgba(0,0,0,0.05)] dark:shadow-[0_-5px_15px_rgba(0,0,0,0.2)] md:shadow-none">
         <div className="container mx-auto px-6 max-w-4xl">
           <SectionHeader 
-            title={i18n.language === "en" ? "Gasversorgung in Aachen: Lieferant und network operator sind nicht dasselbe" : "Gasversorgung in Aachen: Lieferant und Netzbetreiber sind nicht dasselbe"}
+            title={i18n.language === "en" ? "Gas supply in Aachen: supplier and network operator are not the same thing" : "Gasversorgung in Aachen: Lieferant und Netzbetreiber sind nicht dasselbe"}
             align="center"
             className="mb-10"
           />
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-6">
-            {i18n.language === "en" ? "In Aachen übernimmt die STAWAG die Gas-basic supply. Die basic supply ist der gesetzlich geregelte Basistarif des örtlichen basic suppliers. Wer Gas entnimmt, ohne zuvor einen Sondervertrag abgeschlossen zu haben, kann – abhängig von der konkreten Situation – in der Grund- oder replacement supply landen." : "In Aachen übernimmt die STAWAG die Gas-Grundversorgung. Die Grundversorgung ist der gesetzlich geregelte Basistarif des örtlichen Grundversorgers. Wer Gas entnimmt, ohne zuvor einen Sondervertrag abgeschlossen zu haben, kann – abhängig von der konkreten Situation – in der Grund- oder Ersatzversorgung landen."}
+            {i18n.language === "en" ? "In Aachen, STAWAG provides the basic gas supply — the regulated default tariff of the local basic supplier. Anyone who draws gas without having concluded a special contract can, depending on the situation, end up in basic or replacement supply." : "In Aachen übernimmt die STAWAG die Gas-Grundversorgung. Die Grundversorgung ist der gesetzlich geregelte Basistarif des örtlichen Grundversorgers. Wer Gas entnimmt, ohne zuvor einen Sondervertrag abgeschlossen zu haben, kann – abhängig von der konkreten Situation – in der Grund- oder Ersatzversorgung landen."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-8">
-            {i18n.language === "en" ? "Für das gas network in Aachen ist die Regionetz GmbH zuständig. Sie betreibt die network infrastructure; der gewählte gas provider verkauft und liefert die Energie auf vertraglicher Ebene. Ein provider switch ändert deshalb nicht das vorhandene Leitungsnetz und erfordert normalerweise keinen Austausch des Gaszählers." : "Für das Gasnetz in Aachen ist die Regionetz GmbH zuständig. Sie betreibt die Netzinfrastruktur; der gewählte Gasanbieter verkauft und liefert die Energie auf vertraglicher Ebene. Ein Anbieterwechsel ändert deshalb nicht das vorhandene Leitungsnetz und erfordert normalerweise keinen Austausch des Gaszählers."}
+            {i18n.language === "en" ? "Regionetz GmbH is responsible for the Aachen gas network: it operates the network infrastructure, while your chosen gas provider sells and delivers the energy under contract. A provider switch therefore does not change the existing pipe network and normally requires no gas meter replacement." : "Für das Gasnetz in Aachen ist die Regionetz GmbH zuständig. Sie betreibt die Netzinfrastruktur; der gewählte Gasanbieter verkauft und liefert die Energie auf vertraglicher Ebene. Ein Anbieterwechsel ändert deshalb nicht das vorhandene Leitungsnetz und erfordert normalerweise keinen Austausch des Gaszählers."}
           </p>
           
           <div className="bg-white dark:bg-[#122340] rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden mb-10">
@@ -292,11 +292,11 @@ export default function GasanbieterAachen() {
           
           <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Was bedeutet das für Ihren Wechsel?</h4>
           <p className="text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
-            {i18n.language === "en" ? "Sie können einen anderen Lieferanten wählen, während der network operator gleich bleibt. Der Wechsel ist ein vertraglicher Vorgang. Laut einer consumer information des Bundes ist der supplier switch free of charge; die Energieversorgung bleibt dabei sichergestellt. Für einen Vertrag außerhalb der basic supply gelten die vereinbarten Laufzeiten und cancellation perioden." : "Sie können einen anderen Lieferanten wählen, während der Netzbetreiber gleich bleibt. Der Wechsel ist ein vertraglicher Vorgang. Laut einer Verbraucherinformation des Bundes ist der Lieferantenwechsel kostenlos; die Energieversorgung bleibt dabei sichergestellt. Für einen Vertrag außerhalb der Grundversorgung gelten die vereinbarten Laufzeiten und Kündigungsfristen."}
+            {i18n.language === "en" ? "You can choose a different supplier while the network operator stays the same; the switch is a contractual process, supply remains secured throughout, and a basic-supply contract can be cancelled with two weeks’ notice under § 20 GasGVV." : "Sie können einen anderen Lieferanten wählen, während der Netzbetreiber gleich bleibt. Der Wechsel ist ein vertraglicher Vorgang. Laut einer Verbraucherinformation des Bundes ist der Lieferantenwechsel kostenlos; die Energieversorgung bleibt dabei sichergestellt. Für einen Vertrag außerhalb der Grundversorgung gelten die vereinbarten Laufzeiten und Kündigungsfristen."}
           </p>
           <div className="bg-blue-50 dark:bg-blue-900/20 text-blue-900 dark:text-blue-100 p-4 rounded-xl border border-blue-100 dark:border-blue-800/30">
             <strong className="block mb-1">Hinweis zur Grundversorgung:</strong>
-            {i18n.language === "en" ? "Ein Gas-basic supplysvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die jeweiligen contract conditions." : "Ein Gas-Grundversorgungsvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die jeweiligen Vertragsbedingungen."}
+            {i18n.language === "en" ? "A basic-supply gas contract can be cancelled with two weeks’ notice under § 20 GasGVV. For special contracts, the agreed terms apply." : "Ein Gas-Grundversorgungsvertrag kann nach § 20 GasGVV mit einer Frist von zwei Wochen gekündigt werden. Bei Sonderverträgen gelten die jeweiligen Vertragsbedingungen."}
           </div>
         </div>
       </div>
@@ -322,10 +322,10 @@ export default function GasanbieterAachen() {
             <div className="bg-[#0047AB] dark:bg-[#122340] rounded-3xl p-8 md:p-12 text-center shadow-sm border border-transparent dark:border-slate-800 text-white mt-16">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Bereit für einen transparenten Gasvergleich?</h3>
               <p className="text-blue-100 dark:text-slate-300 text-lg mb-4 max-w-2xl mx-auto">
-                {i18n.language === "en" ? "Ein Online-Rechner zeigt Zahlen. Eine personallye Beratung hilft dabei, diese Zahlen richtig einzuordnen. Energie Alemi prüft mit Ihnen, welcher gas tariff zu Verbrauch, Immobilie und gewünschter Vertragsflexibilität passt – comprehensibly und direkt in Aachen." : "Ein Online-Rechner zeigt Zahlen. Eine persönliche Beratung hilft dabei, diese Zahlen richtig einzuordnen. Energie Alemi prüft mit Ihnen, welcher Gastarif zu Verbrauch, Immobilie und gewünschter Vertragsflexibilität passt – verständlich und direkt in Aachen."}
+                {i18n.language === "en" ? "Have your gas tariff in Aachen checked now — free advice at 0176 659 493 90 or at Alexianergraben 9, 52064 Aachen." : "Ein Online-Rechner zeigt Zahlen. Eine persönliche Beratung hilft dabei, diese Zahlen richtig einzuordnen. Energie Alemi prüft mit Ihnen, welcher Gastarif zu Verbrauch, Immobilie und gewünschter Vertragsflexibilität passt – verständlich und direkt in Aachen."}
               </p>
               <p className="text-blue-200 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-                {i18n.language === "en" ? "Bringen Sie einfach Ihre letzte gas bill mit oder halten Sie annual consumption und aktuelle contract data bereit. Wir prüfen die Ausgangslage und besprechen die nächsten Schritte." : "Bringen Sie einfach Ihre letzte Gasrechnung mit oder halten Sie Jahresverbrauch und aktuelle Vertragsdaten bereit. Wir prüfen die Ausgangslage und besprechen die nächsten Schritte."}
+                {i18n.language === "en" ? "Simply bring your last gas bill or have your annual consumption and current contract data ready. We review your situation and discuss the next steps." : "Bringen Sie einfach Ihre letzte Gasrechnung mit oder halten Sie Jahresverbrauch und aktuelle Vertragsdaten bereit. Wir prüfen die Ausgangslage und besprechen die nächsten Schritte."}
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
                 <Button variant="primary" icon={<ArrowRight size={18} />} onClick={() => setIsModalOpen(true)}>

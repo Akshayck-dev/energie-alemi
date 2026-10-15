@@ -21,13 +21,13 @@ export default function StromanbieterHerzogenrath() {
   const features = [
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
-      title: i18n.language === 'en' ? 'Living in the Border Region' : 'Wohnen in der Grenzregion',
-      description: i18n.language === "en" ? "Herzogenrath's unique location directly bordering Kerkrade means many cross-border commuters live here. Flexible contract conditions and reliable price guarantees are essential for households in Kohlscheid, Merkstein, and the city center." : "Die besondere Lage Herzogenraths direkt an der Grenze zu Kerkrade zieht viele Pendler an. Für Haushalte in Kohlscheid, Merkstein und der Innenstadt sind daher flexible Vertragsbedingungen und verlässliche Preisgarantien beim Strom wichtig."
+      title: i18n.language === 'en' ? 'Living in the border region' : 'Wohnen in der Grenzregion',
+      description: i18n.language === "en" ? "Herzogenrath's unique location directly bordering Kerkrade means many cross-border commuters live here — as long as your residence and electricity meter are in Herzogenrath, German market rules apply in full, and your employment in the Netherlands has no impact on your choice of electricity provider. Flexible contract conditions and reliable price guarantees are essential for households in Kohlscheid, Merkstein and the city centre." : "Die besondere Lage Herzogenraths direkt an der Grenze zu Kerkrade zieht viele Pendler an. Für Haushalte in Kohlscheid, Merkstein und der Innenstadt sind daher flexible Vertragsbedingungen und verlässliche Preisgarantien beim Strom wichtig."
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
-      title: i18n.language === "en" ? "Commercial & Tech Park" : "Gewerbe & Technologiepark",
-      description: i18n.language === "en" ? "Local businesses, especially around the TPH (Technologiepark Herzogenrath), require stable energy costs. We analyze your load profile and find suitable commercial electricity tariffs to ensure planning security." : "Lokale Unternehmen, insbesondere rund um den TPH (Technologiepark Herzogenrath), benötigen stabile Energiekosten. Wir analysieren Ihr Lastprofil und finden passende Gewerbestromtarife für Planungssicherheit."
+      title: i18n.language === "en" ? "Commercial & tech park" : "Gewerbe & Technologiepark",
+      description: i18n.language === "en" ? "local businesses, especially around the TPH (Technologiepark Herzogenrath), require stable energy costs. We analyse your load profile and find suitable commercial electricity tariffs to ensure planning security." : "Lokale Unternehmen, insbesondere rund um den TPH (Technologiepark Herzogenrath), benötigen stabile Energiekosten. Wir analysieren Ihr Lastprofil und finden passende Gewerbestromtarife für Planungssicherheit."
     }
   ];
 
@@ -61,19 +61,19 @@ export default function StromanbieterHerzogenrath() {
   const faqs = [
     {
       question: "Warum lohnt sich ein Stromvergleich speziell für Herzogenrath?",
-      answer: i18n.language === "en" ? "Because local network usage charges in the Aachen region affect the final electricity price. A comparison tailored to your Herzogenrath postal code shows exactly which national and regional providers currently offer the best rates." : "Weil lokale Netznutzungsentgelte in der Städteregion Aachen den Strompreis beeinflussen. Ein Vergleich mit Ihrer Herzogenrather Postleitzahl zeigt exakt, welche überregionalen und regionalen Versorger aktuell die besten Konditionen bieten."
+      answer: i18n.language === "en" ? "Because local network usage charges in the Aachen region affect the final electricity price. A comparison tailored to your Herzogenrath postcode shows exactly which national and regional providers currently offer the best rates." : "Weil lokale Netznutzungsentgelte in der Städteregion Aachen den Strompreis beeinflussen. Ein Vergleich mit Ihrer Herzogenrather Postleitzahl zeigt exakt, welche überregionalen und regionalen Versorger aktuell die besten Konditionen bieten."
     },
     {
       question: "Ich ziehe nach Herzogenrath-Kohlscheid. Wann sollte ich Strom anmelden?",
-      answer: i18n.language === "en" ? "You should register your electricity about 2-4 weeks before handing over the keys. If you move in without a contract, you automatically fall into the often more expensive basic supply." : "Am besten melden Sie Ihren Strom etwa 2-4 Wochen vor der Schlüsselübergabe an. Wer ohne Vertrag einzieht, fällt automatisch in die oft teurere Grundversorgung. Mehr dazu in unserem Ratgeber zum Umzug."
+      answer: i18n.language === "en" ? "You should register about 2-4 weeks before handing over the keys. If you move in without a contract, you automatically fall into the often more expensive basic supply." : "Am besten melden Sie Ihren Strom etwa 2-4 Wochen vor der Schlüsselübergabe an. Wer ohne Vertrag einzieht, fällt automatisch in die oft teurere Grundversorgung. Mehr dazu in unserem Ratgeber zum Umzug."
     },
     {
       question: "Wirken sich Grenzpendler-Situationen auf den deutschen Stromvertrag aus?",
-      answer: i18n.language === "en" ? "As long as your residence and the electricity meter are located in Herzogenrath (Germany), German market rules apply entirely. Your employment in the Netherlands (e.g., Kerkrade) has no impact on the choice of your electricity provider." : "Solange Ihr Wohnsitz und der Stromzähler in Herzogenrath (Deutschland) liegen, gelten vollständig die deutschen Marktregeln. Eine Berufstätigkeit in den Niederlanden (z.B. Kerkrade) hat keinen Einfluss auf die Wahl Ihres Stromanbieters."
+      answer: i18n.language === "en" ? "As long as your residence and the electricity meter are located in Herzogenrath (Germany), German market rules apply entirely. Your employment in the Netherlands (e.g. Kerkrade) has no impact on the choice of your electricity provider." : "Solange Ihr Wohnsitz und der Stromzähler in Herzogenrath (Deutschland) liegen, gelten vollständig die deutschen Marktregeln. Eine Berufstätigkeit in den Niederlanden (z.B. Kerkrade) hat keinen Einfluss auf die Wahl Ihres Stromanbieters."
     },
     {
       question: "Bietet Energie Alemi auch Ökostrom in Herzogenrath an?",
-      answer: i18n.language === "en" ? "Yes, you can specifically choose green electricity tariffs for Herzogenrath. We ensure the electricity comes from renewable sources." : "Ja, Sie können gezielt Ökostromtarife für Herzogenrath wählen. Wir achten darauf, dass der Strom aus erneuerbaren Energien stammt und die Tarife dennoch wirtschaftlich bleiben."
+      answer: i18n.language === "en" ? "Yes, you can specifically choose green electricity tariffs for Herzogenrath. We make sure the electricity comes from renewable sources." : "Ja, Sie können gezielt Ökostromtarife für Herzogenrath wählen. Wir achten darauf, dass der Strom aus erneuerbaren Energien stammt und die Tarife dennoch wirtschaftlich bleiben."
     }
   ];
 
@@ -81,8 +81,8 @@ export default function StromanbieterHerzogenrath() {
     <div className="relative bg-white dark:bg-[#0a1628]">
       <SEO 
         url="/stromanbieter-herzogenrath" 
-        title={i18n.language === 'en' ? 'Electricity Providers Herzogenrath: Compare & Switch | Energie Alemi' : 'Stromanbieter Herzogenrath: Tarife vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "Find the best electricity provider in Herzogenrath. Personal advice for Kohlscheid, Merkstein and Center. Compare safely and switch without stress." : "Stromanbieter in Herzogenrath vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
+        title={i18n.language === 'en' ? 'Compare Electricity Providers in Herzogenrath | Energie Alemi' : 'Stromanbieter Herzogenrath: Tarife vergleichen | Energie Alemi'}
+        description={i18n.language === "en" ? "Compare electricity tariffs in Herzogenrath with personal advice for Kohlscheid, Merkstein and the centre. Energie Alemi checks real annual costs — free of charge." : "Stromanbieter in Herzogenrath vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={elecHeroDesk} 
         faqs={faqs} 
       />

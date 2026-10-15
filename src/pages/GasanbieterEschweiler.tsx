@@ -22,7 +22,7 @@ export default function GasanbieterEschweiler() {
     {
       icon: <HomeIcon size={28} strokeWidth={1.5} />,
       title: i18n.language === 'en' ? 'Private households' : 'Privathaushalte',
-      description: i18n.language === "en" ? "Ein Bonus kann die rechnerischen Kosten im ersten Jahr senken. Für eine tragfähige Entscheidung sollten jedoch auch die Kosten ohne Einmalvorteil, die Auszahlungsvoraussetzungen und der Preis nach dem promotional period sichtbar sein." : "Ein Bonus kann die rechnerischen Kosten im ersten Jahr senken. Für eine tragfähige Entscheidung sollten jedoch auch die Kosten ohne Einmalvorteil, die Auszahlungsvoraussetzungen und der Preis nach dem Aktionszeitraum sichtbar sein."
+      description: i18n.language === "en" ? "A bonus can reduce the calculated costs in the first year. For a sound decision, however, the costs without the one-off advantage, the payout requirements and the price after the promotional period should also be visible." : "Ein Bonus kann die rechnerischen Kosten im ersten Jahr senken. Für eine tragfähige Entscheidung sollten jedoch auch die Kosten ohne Einmalvorteil, die Auszahlungsvoraussetzungen und der Preis nach dem Aktionszeitraum sichtbar sein."
     },
     {
       icon: <Building2 size={28} strokeWidth={1.5} />,
@@ -36,19 +36,19 @@ export default function GasanbieterEschweiler() {
       number: 1,
       icon: <Search size={24} />,
       title: i18n.language === "en" ? "Check contract and bill" : "Vertrag und Rechnung prüfen",
-      description: i18n.language === "en" ? "Benötigt werden if possible annual consumption, delivery address, meter number, aktueller Anbieter und contract data." : "Benötigt werden möglichst Jahresverbrauch, Lieferadresse, Zählernummer, aktueller Anbieter und Vertragsdaten."
+      description: i18n.language === "en" ? "Annual consumption, delivery address, meter number, current provider and contract data are needed if possible." : "Benötigt werden möglichst Jahresverbrauch, Lieferadresse, Zählernummer, aktueller Anbieter und Vertragsdaten."
     },
     {
       number: 2,
       icon: <BarChart3 size={24} />,
       title: "Jahreskosten vergleichen",
-      description: i18n.language === "en" ? "energy price, basic price, Boni und payment method werden auf die actuallye Verbrauchssituation bezogen." : "Arbeitspreis, Grundpreis, Boni und Zahlungsweise werden auf die tatsächliche Verbrauchssituation bezogen."
+      description: i18n.language === "en" ? "Energy price, basic price, bonuses and payment method are related to the actual consumption situation." : "Arbeitspreis, Grundpreis, Boni und Zahlungsweise werden auf die tatsächliche Verbrauchssituation bezogen."
     },
     {
       number: 3,
       icon: <CheckSquare size={24} />,
       title: "Vertragsbedingungen einordnen",
-      description: i18n.language === "en" ? "Laufzeit, cancellation period und Umfang der price guarantee werden vor der Entscheidung besprochen." : "Laufzeit, Kündigungsfrist und Umfang der Preisgarantie werden vor der Entscheidung besprochen."
+      description: i18n.language === "en" ? "Term, cancellation period and the scope of the price guarantee are discussed before the decision." : "Laufzeit, Kündigungsfrist und Umfang der Preisgarantie werden vor der Entscheidung besprochen."
     },
     {
       number: 4,
@@ -60,36 +60,36 @@ export default function GasanbieterEschweiler() {
 
   const faqs = [
     {
-      question: i18n.language === "en" ? "Ist die gas consultation für customers aus Eschweiler free of charge?" : "Ist die Gasberatung für Kundinnen und Kunden aus Eschweiler kostenlos?",
-      answer: i18n.language === "en" ? "Ja. Energie Alemi bietet die tariff advice free of charge an. Für einen konkreten Vergleich bringen Sie am besten Ihre letzte gas bill und die aktuellen contract data mit." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich bringen Sie am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
+      question: i18n.language === "en" ? "Is the gas consultation for customers from Eschweiler free of charge?" : "Ist die Gasberatung für Kundinnen und Kunden aus Eschweiler kostenlos?",
+      answer: i18n.language === "en" ? "Yes. Energie Alemi offers tariff advice free of charge. For a specific comparison, please bring your last gas bill and current contract data." : "Ja. Energie Alemi bietet die Tarifberatung kostenlos an. Für einen konkreten Vergleich bringen Sie am besten Ihre letzte Gasrechnung und die aktuellen Vertragsdaten mit."
     },
     {
       question: i18n.language === "en" ? "Can I switch gas providers in a rented apartment?" : "Kann ich in einer Mietwohnung den Gasanbieter wechseln?",
-      answer: i18n.language === "en" ? "Das ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen heating system schließt häufig die landlord oder property management den Vertrag ab." : "Das ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
+      answer: i18n.language === "en" ? "This is only possible if you are the contract partner for the gas supply yourself. With a central heating system, the landlord or property management often concludes the contract." : "Das ist nur möglich, wenn Sie selbst Vertragspartner für die Gaslieferung sind. Bei einer zentralen Heizungsanlage schließt häufig die Vermietung oder Hausverwaltung den Vertrag ab."
     },
     {
-      question: i18n.language === "en" ? "Welche gas tariffs sind in Eschweiler verfügbar?" : "Welche Gastarife sind in Eschweiler verfügbar?",
-      answer: i18n.language === "en" ? "Die Auswahl hängt von delivery address, Verbrauch und aktuellem Marktangebot ab. Ein konkreter Vergleich ist deshalb erst mit den individuellen Angaben möglich." : "Die Auswahl hängt von Lieferadresse, Verbrauch und aktuellem Marktangebot ab. Ein konkreter Vergleich ist deshalb erst mit den individuellen Angaben möglich."
+      question: i18n.language === "en" ? "Which gas tariffs are available in Eschweiler?" : "Welche Gastarife sind in Eschweiler verfügbar?",
+      answer: i18n.language === "en" ? "The selection depends on delivery address, consumption and current market offers. A specific comparison is therefore only possible with your individual details." : "Die Auswahl hängt von Lieferadresse, Verbrauch und aktuellem Marktangebot ab. Ein konkreter Vergleich ist deshalb erst mit den individuellen Angaben möglich."
     },
     {
       question: i18n.language === "en" ? "Is the gas meter replaced when switching?" : "Wird beim Wechsel der Gaszähler ausgetauscht?",
-      answer: i18n.language === "en" ? "Normalerweise nicht. Leitungen und Zähler bleiben in der Regel bestehen; zum switching date kann jedoch ein aktueller meter reading benötigt werden." : "Normalerweise nicht. Leitungen und Zähler bleiben in der Regel bestehen; zum Wechseltermin kann jedoch ein aktueller Zählerstand benötigt werden."
+      answer: i18n.language === "en" ? "Normally not. Pipes and meter generally remain; however, a current meter reading may be required at the switching date." : "Normalerweise nicht. Leitungen und Zähler bleiben in der Regel bestehen; zum Wechseltermin kann jedoch ein aktueller Zählerstand benötigt werden."
     },
     {
       question: "Kann die Gasversorgung beim Anbieterwechsel unterbrochen werden?",
-      answer: i18n.language === "en" ? "Ein regulärer Wechsel ändert den supply contract, nicht das vorhandene Netz. Die gesetzlich vorgesehene Grund- oder replacement supply sichert die Belieferung ab." : "Ein regulärer Wechsel ändert den Liefervertrag, nicht das vorhandene Netz. Die gesetzlich vorgesehene Grund- oder Ersatzversorgung sichert die Belieferung ab."
+      answer: i18n.language === "en" ? "A regular switch changes the supply contract, not the existing network. The legally provided basic or replacement supply secures delivery." : "Ein regulärer Wechsel ändert den Liefervertrag, nicht das vorhandene Netz. Die gesetzlich vorgesehene Grund- oder Ersatzversorgung sichert die Belieferung ab."
     },
     {
-      question: i18n.language === "en" ? "Was bedeuten energy price und basic price beim Gas?" : "Was bedeuten Arbeitspreis und Grundpreis beim Gas?",
-      answer: i18n.language === "en" ? "Der energy price wird je verbrauchter Kilowattstunde berechnet. Der basic price fällt verbrauchsunabhängig an. Für den Vergleich zählt die Summe der erwarteten annual costs." : "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt verbrauchsunabhängig an. Für den Vergleich zählt die Summe der erwarteten Jahreskosten."
+      question: i18n.language === "en" ? "What do energy price and basic price mean for gas?" : "Was bedeuten Arbeitspreis und Grundpreis beim Gas?",
+      answer: i18n.language === "en" ? "The energy price is charged per kilowatt-hour consumed. The basic price applies regardless of consumption. For the comparison, the sum of the expected annual costs counts." : "Der Arbeitspreis wird je verbrauchter Kilowattstunde berechnet. Der Grundpreis fällt verbrauchsunabhängig an. Für den Vergleich zählt die Summe der erwarteten Jahreskosten."
     },
     {
       question: i18n.language === "en" ? "Do I have to cancel my current gas contract myself?" : "Muss ich meinen bisherigen Gasvertrag selbst kündigen?",
-      answer: i18n.language === "en" ? "Im Regelfall übernimmt der neue Lieferant die cancellation nach entsprechender Bevollmächtigung. special cancellations, Umzüge und knappe Fristen sollten vorab separat geprüft werden." : "Im Regelfall übernimmt der neue Lieferant die Kündigung nach entsprechender Bevollmächtigung. Sonderkündigungen, Umzüge und knappe Fristen sollten vorab separat geprüft werden."
+      answer: i18n.language === "en" ? "Normally, the new supplier takes over the cancellation after corresponding authorisation. Special cancellations, moves and tight deadlines should be checked separately in advance." : "Im Regelfall übernimmt der neue Lieferant die Kündigung nach entsprechender Bevollmächtigung. Sonderkündigungen, Umzüge und knappe Fristen sollten vorab separat geprüft werden."
     },
     {
-      question: i18n.language === "en" ? "Für wen lohnt sich eine price guarantee?" : "Für wen lohnt sich eine Preisgarantie?",
-      answer: i18n.language === "en" ? "Eine price guarantee kann die Planung erleichtern, gilt aber nur für den vereinbarten Zeitraum und möglicherweise nicht für alle price components. Umfang und Ausschlüsse sollten deshalb genau gelesen werden." : "Eine Preisgarantie kann die Planung erleichtern, gilt aber nur für den vereinbarten Zeitraum und möglicherweise nicht für alle Preisbestandteile. Umfang und Ausschlüsse sollten deshalb genau gelesen werden."
+      question: i18n.language === "en" ? "Who benefits from a price guarantee?" : "Für wen lohnt sich eine Preisgarantie?",
+      answer: i18n.language === "en" ? "A price guarantee can make planning easier, but only applies for the agreed period and possibly not for all price components. Scope and exclusions should therefore be read carefully." : "Eine Preisgarantie kann die Planung erleichtern, gilt aber nur für den vereinbarten Zeitraum und möglicherweise nicht für alle Preisbestandteile. Umfang und Ausschlüsse sollten deshalb genau gelesen werden."
     }
   ];
 
@@ -98,7 +98,7 @@ export default function GasanbieterEschweiler() {
       <SEO 
         url="/gasanbieter-eschweiler" 
         title={i18n.language === 'en' ? 'Compare Gas Providers Eschweiler | Energie Alemi' : 'Gasanbieter Eschweiler vergleichen | Energie Alemi'}
-        description={i18n.language === "en" ? "gas tariffs in Eschweiler vergleichen: Energie Alemi prüft Verbrauch, total costs und contract conditions und unterstützt beim provider switch." : "Gasanbieter in Eschweiler vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
+        description={i18n.language === "en" ? "Compare gas tariffs in Eschweiler with personal advice. Energie Alemi checks your bill, real annual costs and contract terms — and helps you switch. Free advice." : "Gasanbieter in Eschweiler vergleichen – Anbieterwechsel kostenlos & unverbindlich. Persönliche Beratung vor Ort, 5,0★ auf Google."}
         image={gasHeroDesk} 
         faqs={faqs} 
       />
@@ -128,10 +128,10 @@ export default function GasanbieterEschweiler() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Der Gasvergleich beginnt mit Verbrauch und Gebäudesituation</h2>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "Bei Gas können sich die annual costs je nach Verbrauch deutlich unterscheiden. Deshalb werden energy price und basic price immer gemeinsam auf die Verbrauchsmenge bezogen. Laufzeit, cancellation period, payment method, price guarantee und Bonusregeln gehören ebenfalls in die Bewertung." : "Bei Gas können sich die Jahreskosten je nach Verbrauch deutlich unterscheiden. Deshalb werden Arbeitspreis und Grundpreis immer gemeinsam auf die Verbrauchsmenge bezogen. Laufzeit, Kündigungsfrist, Zahlungsweise, Preisgarantie und Bonusregeln gehören ebenfalls in die Bewertung."}
+            {i18n.language === "en" ? "With gas, annual costs can differ significantly depending on consumption, which is why the energy price and basic price are always related to the consumption quantity together. Term, cancellation period, payment method, price guarantee and bonus rules also belong in the evaluation." : "Bei Gas können sich die Jahreskosten je nach Verbrauch deutlich unterscheiden. Deshalb werden Arbeitspreis und Grundpreis immer gemeinsam auf die Verbrauchsmenge bezogen. Laufzeit, Kündigungsfrist, Zahlungsweise, Preisgarantie und Bonusregeln gehören ebenfalls in die Bewertung."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
-            {i18n.language === "en" ? "Wichtig ist außerdem, wer den gas supply contract abgeschlossen hat. Bei einer Wohnung mit central heating liegt der Vertrag häufig bei landlord oder property management. Selbst wechseln können Sie nur, wenn Sie selbst Vertragspartner der Gaslieferung sind." : "Wichtig ist außerdem, wer den Gasliefervertrag abgeschlossen hat. Bei einer Wohnung mit Zentralheizung liegt der Vertrag häufig bei Vermietung oder Hausverwaltung. Selbst wechseln können Sie nur, wenn Sie selbst Vertragspartner der Gaslieferung sind."}
+            {i18n.language === "en" ? "It also matters who concluded the gas supply contract: in a flat with central heating, the contract often lies with the landlord or property management. You can only switch yourself if you are the contract partner for the gas supply." : "Wichtig ist außerdem, wer den Gasliefervertrag abgeschlossen hat. Bei einer Wohnung mit Zentralheizung liegt der Vertrag häufig bei Vermietung oder Hausverwaltung. Selbst wechseln können Sie nur, wenn Sie selbst Vertragspartner der Gaslieferung sind."}
           </p>
           <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-12">
             Energie Alemi berät Kundinnen und Kunden aus der Eschweiler Innenstadt ebenso wie aus Dürwiß, Weisweiler, Kinzweiler, St. Jöris, Bergrath oder Nothberg. Die Beratung erfolgt telefonisch oder am Standort in Aachen. {i18n.language === "en" ? "Learn more about our services as" : "Erfahren Sie mehr über unsere Leistungen als"} <Link to="/gasanbieter-aachen" className="text-[#0047AB] dark:text-[#f0a83f] hover:underline">Gasanbieter Aachen</Link>.
@@ -140,7 +140,7 @@ export default function GasanbieterEschweiler() {
         
         <div className="container mx-auto px-6 mb-12">
           <SectionHeader 
-            title={i18n.language === "en" ? "Nicht nur den new customer bonus betrachten" : "Nicht nur den Neukundenbonus betrachten"}
+            title={i18n.language === "en" ? "Don't just look at the new-customer bonus" : "Nicht nur den Neukundenbonus betrachten"}
             align="center"
             className="mb-12 max-w-4xl mx-auto"
           />
@@ -188,12 +188,12 @@ export default function GasanbieterEschweiler() {
           />
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: i18n.language === "en" ? "Consumption" : "Verbrauch", desc: i18n.language === "en" ? "Die letzte annual statement liefert die verlässlichste Vergleichsgrundlage." : "Die letzte Jahresabrechnung liefert die verlässlichste Vergleichsgrundlage." },
-              { title: "Jahreskosten", desc: i18n.language === "en" ? "energy price und basic price zusammenrechnen, statt nur einen Einzelwert zu vergleichen." : "Arbeitspreis und Grundpreis zusammenrechnen, statt nur einen Einzelwert zu vergleichen." },
+              { title: i18n.language === "en" ? "Consumption" : "Verbrauch", desc: i18n.language === "en" ? "The last annual statement provides the most reliable basis for comparison." : "Die letzte Jahresabrechnung liefert die verlässlichste Vergleichsgrundlage." },
+              { title: "Jahreskosten", desc: i18n.language === "en" ? "Add energy price and basic price together instead of comparing a single value." : "Arbeitspreis und Grundpreis zusammenrechnen, statt nur einen Einzelwert zu vergleichen." },
               { title: i18n.language === 'en' ? 'Price guarantee' : 'Preisgarantie', desc: i18n.language === "en" ? "Check how long it is valid and which components may be excluded." : "Prüfen, wie lange sie gilt und welche Bestandteile ausgenommen sein können." },
-              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: i18n.language === "en" ? "Den frühestmöglichen switching date des bisherigen Vertrags beachten." : "Den frühestmöglichen Wechseltermin des bisherigen Vertrags beachten." },
+              { title: i18n.language === 'en' ? 'Cancellation period' : 'Kündigungsfrist', desc: i18n.language === "en" ? "Note the earliest possible switching date of the previous contract." : "Den frühestmöglichen Wechseltermin des bisherigen Vertrags beachten." },
               { title: i18n.language === 'en' ? 'Bonus conditions' : 'Bonusbedingungen', desc: i18n.language === "en" ? "Understand requirements and payout timing." : "Voraussetzungen und Auszahlungszeitpunkt nachvollziehen." },
-              { title: "Vorauszahlung", desc: i18n.language === "en" ? "Angebote mit advance payment oder hohen Abschlägen besonders sorgfältig prüfen." : "Angebote mit Vorkasse oder hohen Abschlägen besonders sorgfältig prüfen." }
+              { title: "Vorauszahlung", desc: i18n.language === "en" ? "Examine offers with advance payment or high installments especially carefully." : "Angebote mit Vorkasse oder hohen Abschlägen besonders sorgfältig prüfen." }
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-5 bg-slate-50 dark:bg-[#0a1628] rounded-2xl border border-slate-100 dark:border-slate-800">
                 <div className="flex-shrink-0 mt-1 text-[#0047AB] dark:text-[#f0a83f]">
@@ -214,7 +214,7 @@ export default function GasanbieterEschweiler() {
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">Gasberatung für Eschweiler – persönlich erreichbar in Aachen</h2>
           <p className="text-blue-100 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            {i18n.language === "en" ? "Wer mehrere tariff lists vergleicht, sieht viele Zahlen, aber nicht automatisch den passenden Vertrag. Energie Alemi ordnet die Optionen für customers aus Eschweiler ein – by phone oder personally am Alexianergraben 9 in 52064 Aachen." : "Wer mehrere Tariflisten vergleicht, sieht viele Zahlen, aber nicht automatisch den passenden Vertrag. Energie Alemi ordnet die Optionen für Kundinnen und Kunden aus Eschweiler ein – telefonisch oder persönlich am Alexianergraben 9 in 52064 Aachen."}
+            {i18n.language === "en" ? "Anyone comparing several tariff lists sees many numbers, but not automatically the right contract. Energie Alemi classifies the options for customers from Eschweiler — by phone or in person at Alexianergraben 9 in 52064 Aachen." : "Wer mehrere Tariflisten vergleicht, sieht viele Zahlen, aber nicht automatisch den passenden Vertrag. Energie Alemi ordnet die Optionen für Kundinnen und Kunden aus Eschweiler ein – telefonisch oder persönlich am Alexianergraben 9 in 52064 Aachen."}
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
             <div className="flex flex-col items-center">
