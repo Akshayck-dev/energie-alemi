@@ -4,3 +4,10 @@ https://www.energie-alemi.com/* https://www.energie-alemi.de/:splat 301
 https://energie-alemi.de/* https://www.energie-alemi.de/:splat 301
 /tarifberatung-aachen /contact 301
 /tarifberatung-aachen/ /contact 301
+# Alias URLs rendering duplicate content -> canonical targets
+/strom /electricity 301
+/strom/ /electricity 301
+/stromrechner /ratgeber/stromkosten-berechnen 301
+/stromrechner/ /ratgeber/stromkosten-berechnen 301
+/stromkosten-berechnen /ratgeber/stromkosten-berechnen 301
+/stromkosten-berechnen/ /ratgeber/stromkosten-berechnen 301

@@ -180,7 +180,7 @@ export default function ReviewsSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-[#0047AB] dark:text-[#60a5fa] hover:underline transition-colors"
           >
-            <span>{isEn ? 'Read all 16 five-star customer reviews directly on Google' : 'Alle 16 Fünf-Sterne-Bewertungen direkt auf unserem Google-Unternehmensprofil lesen'}</span>
+            <span>{isEn ? `Read all ${GOOGLE_REVIEW_COUNT} five-star customer reviews directly on Google` : `Alle ${GOOGLE_REVIEW_COUNT} Fünf-Sterne-Bewertungen direkt auf unserem Google-Unternehmensprofil lesen`}</span>
             <ExternalLink size={15} />
           </a>
         </div>

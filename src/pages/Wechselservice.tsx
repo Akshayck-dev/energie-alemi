@@ -80,7 +80,7 @@ export default function Wechselservice() {
     },
     {
       question: "Wie lange dauert ein Anbieterwechsel?",
-      answer: "In der Regel dauert der gesamte bürokratische Prozess von der Unterschrift bis zum tatsächlichen Lieferbeginn durch den neuen Anbieter etwa 3 bis 6 Wochen. Dies ist stark abhängig von den individuellen Kündigungsfristen Ihres Altvertrags und der Bearbeitungsgeschwindigkeit des Netzbetreibers. Bei der Neuanmeldung in einer neuen Wohnung (im Rahmen eines Umzugs) kann die Belieferung sogar rückwirkend für bis zu 6 Wochen angemeldet werden, sodass Sie direkt vom günstigen Tarif profitieren."
+      answer: "In der Regel dauert der gesamte bürokratische Prozess von der Unterschrift bis zum tatsächlichen Lieferbeginn durch den neuen Anbieter etwa 3 bis 6 Wochen. Dies ist stark abhängig von den individuellen Kündigungsfristen Ihres Altvertrags und der Bearbeitungsgeschwindigkeit des Netzbetreibers. Die rein technische Umstellung erfolgt seit Juni 2025 innerhalb von 24 Stunden. Bei einem Umzug melden Sie Ihren Einzug bitte unbedingt vorab an – eine rückwirkende Anmeldung ist seit Juni 2025 gesetzlich nicht mehr möglich, sonst fallen Sie automatisch in die meist teurere Grundversorgung."
     }
   ];
 

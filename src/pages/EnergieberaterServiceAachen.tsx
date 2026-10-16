@@ -80,7 +80,7 @@ export default function EnergieberaterServiceAachen() {
     },
     {
       question: "Wie schnell sehe ich eine Ersparnis?",
-      answer: "Die Ersparnis macht sich direkt ab dem neuen Lieferbeginn bemerkbar, der in der Regel 3 bis 6 Wochen nach Vertragsabschluss liegt – abhängig von der Kündigungsfrist Ihres Altvertrags. Bei einem kurzfristigen Einzug in eine neue Wohnung kann die Belieferung sogar rückwirkend für bis zu 6 Wochen angemeldet werden."
+      answer: "Die Ersparnis macht sich direkt ab dem neuen Lieferbeginn bemerkbar, der in der Regel 3 bis 6 Wochen nach Vertragsabschluss liegt – abhängig von der Kündigungsfrist Ihres Altvertrags. Die rein technische Umstellung beim Netzbetreiber erfolgt seit Juni 2025 innerhalb von 24 Stunden; entscheidend für den tatsächlichen Starttermin bleiben jedoch Ihre vertraglichen Kündigungsfristen. Wichtig bei einem Umzug: Melden Sie Ihren Einzug unbedingt vorab an – eine rückwirkende Anmeldung ist seit Juni 2025 gesetzlich nicht mehr möglich."
     }
   ];
 

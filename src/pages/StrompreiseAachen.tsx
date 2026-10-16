@@ -424,7 +424,7 @@ export default function StrompreiseAachen() {
                     Der Verbleib im Grundversorgungstarif ist in Aachen die häufigste Ursache für überhöhte Stromrechnungen. Da für die Grundversorgung eine gesetzliche Frist von nur zwei Wochen gilt, können Sie praktisch sofort wechseln. Die Ersparnis ist sofort ab dem ersten Liefermonat spürbar – ganz ohne Komfortverzicht und ohne technischen Aufwand.
                   </p>
                   <span className="text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                    Sofortige Ersparnis bei 3.500 kWh: ca. 284 € jährlich
+                    Rechenbeispiel bei 3.500 kWh: ca. 284 € Ersparnis pro Jahr
                   </span>
                 </div>
               </div>

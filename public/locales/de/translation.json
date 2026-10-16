@@ -84,7 +84,7 @@
     "step1_title": "Kontakt & Beratung",
     "step1_desc": "Wir besprechen Ihre aktuelle Situation und analysieren Ihren Bedarf kostenlos.",
     "step2_title": "Analyse & Vergleich",
-    "step2_desc": "Wir vergleichen hunderte Tarife und finden das beste Angebot für Sie.",
+    "step2_desc": "Wir vergleichen aktuelle Tarife und finden das passende Angebot für Sie.",
     "step3_title": "Vertragsoptimierung",
     "step3_desc": "Wir übernehmen den kompletten Wechselprozess reibungslos für Sie.",
     "step4_title": "Langfristiger Support",
@@ -110,7 +110,7 @@
     "card1_desc": "Wir sind von Montag bis Samstag, 10 bis 19 Uhr für Sie da. Sie finden unser Geschäft im Zentrum von Aachen am Alexianergraben 9, 52064 Aachen.",
     "card1_link": "Route planen",
     "card2_title": "Direkte Beratung – vor Ort, telefonisch oder online",
-    "card2_desc": "Wir analysieren Ihren aktuellen Vertrag und vergleichen ihn mit hunderten Tarifen verschiedener Anbieter.",
+    "card2_desc": "Wir analysieren Ihren aktuellen Vertrag und vergleichen ihn mit aktuellen Tarifen verschiedener Anbieter.",
     "card2_link": "Beratung buchen",
     "button": "Unverbindliche Beratung"
   },
@@ -258,7 +258,7 @@
     "q2": "Kommt es zu einer Unterbrechung der Stromversorgung?",
     "a2": "Ihre Stromversorgung ist gesetzlich garantiert und bleibt während des gesamten Wechselprozesses zu 100 % gesichert. Es gibt absolut keine Gefahr eines Stromausfalls. Selbst bei unerwarteten Verzögerungen springt automatisch der lokale Grundversorger ein, sodass Ihre Leitungen niemals stromlos sind.",
     "q3": "Wie lange dauert ein Anbieterwechsel?",
-    "a3": "Ein regulärer Anbieterwechsel dauert in der Regel zwischen zwei und vier Wochen, abhängig von der Kündigungsfrist Ihres bestehenden Vertrages. Bei einem Neueinzug oder Sonderkündigungsrecht (z. B. wegen Preiserhöhung) kann der Wechsel oft schon innerhalb weniger Tage realisiert werden. Den genauen Umstellungstermin teilt Ihnen der neue Anbieter rechtzeitig im Vorfeld mit.",
+    "a3": "Die technische Umstellung erfolgt seit Juni 2025 innerhalb von 24 Stunden. Bis zum tatsächlichen Lieferbeginn dauert es in der Regel 3 bis 6 Wochen, abhängig von der Kündigungsfrist Ihres bestehenden Vertrags. Bei einem Neueinzug oder Sonderkündigungsrecht (z. B. wegen Preiserhöhung) kann der Wechsel oft beschleunigt erfolgen – melden Sie einen Umzug jedoch unbedingt vorab an, da eine rückwirkende Anmeldung seit Juni 2025 nicht mehr möglich ist. Den genauen Umstellungstermin teilt Ihnen der neue Anbieter rechtzeitig mit.",
     "btn": "Unverbindliche Beratung",
     "cross_p1": "Als Ihr Partner vor Ort helfen wir nicht nur beim Strom, sondern auch mit unserem ",
     "cross_l1": "passenden Gasvergleich",
@@ -303,7 +303,7 @@
     "q2": "Kommt es zu einer Unterbrechung der Gasversorgung?",
     "a2": "Ihre Gasversorgung ist durch den Gesetzgeber streng geschützt und bleibt jederzeit lückenlos bestehen. Eine Unterbrechung der Heiz- oder Produktionsleistung ist beim Anbieterwechsel ausgeschlossen. Sollte es zu Verzögerungen kommen, stellt der örtliche Ersatzversorger nahtlos die durchgehende Belieferung sicher.",
     "q3": "Wie lange dauert ein Anbieterwechsel?",
-    "a3": "Die Dauer des Wechsels hängt maßgeblich von der Kündigungsfrist Ihres aktuellen Gasvertrags ab und nimmt meist zwei bis vier Wochen in Anspruch. Bei Umzügen oder Sonderkündigungsrechten aufgrund von Preisanpassungen kann der Anbieterwechsel oft beschleunigt erfolgen. Der genaue Stichtag der Umstellung wird Ihnen vom neuen Gasanbieter verbindlich und transparent mitgeteilt.",
+    "a3": "Die technische Umstellung erfolgt seit Juni 2025 innerhalb von 24 Stunden. Bis zum tatsächlichen Lieferbeginn dauert es in der Regel 3 bis 6 Wochen – maßgeblich ist die Kündigungsfrist Ihres aktuellen Gasvertrags. Bei Sonderkündigungsrechten aufgrund von Preisanpassungen kann der Wechsel oft beschleunigt erfolgen. Der genaue Stichtag der Umstellung wird Ihnen vom neuen Gasanbieter rechtzeitig mitgeteilt.",
     "btn": "Unverbindliche Beratung",
     "cross_p1": "Kombinieren Sie Ihren Wechsel optimal mit unserem ",
     "cross_l1": "Stromtarif-Vergleich",
@@ -395,7 +395,7 @@
     "feat2_title": "Schnell & einfach",
     "feat2_desc": "In wenigen Minuten zum neuen Tarif.",
     "feat3_title": "Besser sparen",
-    "feat3_desc": "Vergleichen und jedes Jahr hunderte Euro sparen."
+    "feat3_desc": "Vergleichen und Jahr für Jahr sparen."
   },
   "net_hero": {
     "badge": "INTERNET",
@@ -411,7 +411,7 @@
     "feat1_title": "Sicher & vertrauenswürdig",
     "feat1_desc": "Ihre Daten sind bei uns in besten Händen.",
     "feat2_title": "Besser sparen",
-    "feat2_desc": "Vergleichen und jedes Jahr hunderte Euro sparen.",
+    "feat2_desc": "Vergleichen und Jahr für Jahr sparen.",
     "feat3_title": "Persönlicher Service",
     "feat3_desc": "Wir sind für Sie da – kompetent & freundlich."
   },

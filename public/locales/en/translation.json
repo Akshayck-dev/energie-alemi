@@ -84,7 +84,7 @@
     "step1_title": "Contact & Consultation",
     "step1_desc": "We discuss your current situation and analyze your needs free of charge.",
     "step2_title": "Analysis & Comparison",
-    "step2_desc": "We compare hundreds of tariffs and find the best offer for you.",
+    "step2_desc": "We compare current tariffs and find the right offer for you.",
     "step3_title": "Contract Optimization",
     "step3_desc": "We take care of the entire switching process smoothly for you.",
     "step4_title": "Long-term Support",
@@ -110,7 +110,7 @@
     "card1_desc": "We are available for you from Monday to Saturday, 10 am to 7 pm. You can find our shop in the center of Aachen at Alexianergraben 9, 52064 Aachen.",
     "card1_link": "Get directions",
     "card2_title": "Direct consultation – on-site, by phone or online",
-    "card2_desc": "We analyze your current contract and compare it with hundreds of tariffs from different providers.",
+    "card2_desc": "We analyze your current contract and compare it with current tariffs from different providers.",
     "card2_link": "Book a consultation",
     "button": "Non-binding consultation"
   },
@@ -258,7 +258,7 @@
     "q2": "Will there be an interruption in the electricity supply?",
     "a2": "Your electricity supply is legally guaranteed and remains 100% secure throughout the entire switching process. There is absolutely no risk of a power outage. Even in the event of unexpected delays, the local default supplier automatically steps in, ensuring your lines are never without power.",
     "q3": "How long does it take to switch providers?",
-    "a3": "A regular provider switch usually takes between two and four weeks, depending on the cancellation period of your existing contract. In cases of moving into a new home or special termination rights (e.g., due to price increases), the switch can often be completed within a few days. The exact switch date will be communicated to you by your new provider well in advance.",
+    "a3": "The technical switch has been completed within 24 hours since June 2025. It usually takes 3 to 6 weeks until the actual start of supply, depending on the cancellation period of your existing contract. For new tenancies or special termination rights (e.g., due to price increases), the switch can often be expedited – but please report a move in advance, as retroactive registration has no longer been possible since June 2025. Your new provider will inform you of the exact switch date in good time.",
     "btn": "Non-binding consultation",
     "cross_p1": "As your local partner, we help not only with electricity, but also with our ",
     "cross_l1": "matching gas comparison",
@@ -301,7 +301,7 @@
     "q2": "Will there be an interruption in the gas supply?",
     "a2": "Your gas supply is strictly protected by law and remains uninterrupted at all times. Any interruption in heating or production capacity is completely ruled out during a provider switch. Should any delays occur, the local default supplier will seamlessly ensure continuous supply.",
     "q3": "How long does it take to switch providers?",
-    "a3": "The duration of the switch largely depends on the cancellation period of your current gas contract and usually takes two to four weeks. For relocations or special termination rights due to price adjustments, the provider switch can often be expedited. The exact date of the transition will be communicated to you bindingly and transparently by the new gas provider.",
+    "a3": "The technical switch has been completed within 24 hours since June 2025. It usually takes 3 to 6 weeks until the actual start of supply – the decisive factor is the cancellation period of your current gas contract. For special termination rights due to price adjustments, the switch can often be expedited. Your new gas provider will inform you of the exact switch date in good time.",
     "btn": "Non-binding consultation",
     "cross_p1": "Combine your provider switch optimally with our ",
     "cross_l1": "electricity tariff comparison",
@@ -389,7 +389,7 @@
     "feat2_title": "Fast & Easy",
     "feat2_desc": "To a new tariff in just a few minutes.",
     "feat3_title": "Save Better",
-    "feat3_desc": "Compare and save hundreds of euros every year."
+    "feat3_desc": "Compare and save year after year."
   },
   "net_hero": {
     "badge": "INTERNET",
@@ -405,7 +405,7 @@
     "feat1_title": "Secure & Trustworthy",
     "feat1_desc": "Your data is in the best hands with us.",
     "feat2_title": "Save Better",
-    "feat2_desc": "Compare and save hundreds of euros every year.",
+    "feat2_desc": "Compare and save year after year.",
     "feat3_title": "Personal Service",
     "feat3_desc": "We are here for you – competent & friendly."
   },

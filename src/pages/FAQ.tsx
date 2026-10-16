@@ -70,7 +70,7 @@ export default function FAQ() {
         },
         {
           question: t('faq_page.q2', 'Wie lange dauert der Anbieterwechsel?'),
-          answer: t('faq_page.a2', 'Wir übernehmen den kompletten Prozess für Sie. In der Regel dauert der Wechsel 2–4 Wochen, und Sie müssen sich um nichts kümmern.')
+          answer: t('faq_page.a2', 'Wir übernehmen den kompletten Prozess für Sie. Die technische Umstellung erfolgt seit Juni 2025 innerhalb von 24 Stunden; bis zum tatsächlichen Lieferbeginn dauert es in der Regel 3–6 Wochen, abhängig von der Kündigungsfrist Ihres aktuellen Vertrags. Sie müssen sich um nichts kümmern.')
         },
         {
           question: t('faq_page.q3', 'Beraten Sie auch Unternehmen?'),
