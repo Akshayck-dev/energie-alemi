@@ -22,7 +22,8 @@
     "about_us": "Über uns",
     "contact": "Kontakt",
     "ratgeber": "Ratgeber",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "and": "und"
   },
   "home_hero": {
     "subtitle": "INTELLIGENTE VERTRÄGE.",
@@ -225,7 +226,14 @@
     "form_service_business": "Gewerbe",
     "form_service_family_house": "Einfamilienhaus",
     "form_service_apartment_buildings": "Mehrfamilienhaus",
-    "form_error": "Fehler beim Senden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt."
+    "form_error": "Fehler beim Senden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.",
+    "val_first_name": "Vorname ist erforderlich",
+    "val_last_name": "Nachname ist erforderlich",
+    "val_email": "Ungültige E-Mail-Adresse",
+    "val_topic": "Bitte wählen Sie ein Thema",
+    "val_service_type": "Bitte wählen Sie eine Serviceart",
+    "val_message_min": "Nachricht muss mindestens 10 Zeichen lang sein",
+    "val_privacy": "Sie müssen der Datenschutzerklärung zustimmen"
   },
   "elec": {
     "hero_t1": "Smarte Energieentscheidungen.",

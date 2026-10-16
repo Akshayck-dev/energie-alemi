@@ -8,26 +8,29 @@ import { trackEvent } from '../lib/analytics';
 import { Input } from './ui/Input';
 import { Textarea } from './ui/Textarea';
 
-const contactSchema = z.object({
-  firstName: z.string().min(2, 'Vorname ist erforderlich'),
-  lastName: z.string().min(2, 'Nachname ist erforderlich'),
-  email: z.string().email('Ungültige E-Mail-Adresse'),
+type TFn = (key: string, def: string) => string;
+
+const createContactSchema = (t: TFn) => z.object({
+  firstName: z.string().min(2, t('contact.val_first_name', 'Vorname ist erforderlich')),
+  lastName: z.string().min(2, t('contact.val_last_name', 'Nachname ist erforderlich')),
+  email: z.string().email(t('contact.val_email', 'Ungültige E-Mail-Adresse')),
   street: z.string().optional(),
   zipCode: z.string().optional(),
   city: z.string().optional(),
-  topic: z.string().min(1, 'Bitte wählen Sie ein Thema'),
-  serviceType: z.string().min(1, 'Bitte wählen Sie eine Serviceart'),
-  message: z.string().min(10, 'Nachricht muss mindestens 10 Zeichen lang sein'),
+  topic: z.string().min(1, t('contact.val_topic', 'Bitte wählen Sie ein Thema')),
+  serviceType: z.string().min(1, t('contact.val_service_type', 'Bitte wählen Sie eine Serviceart')),
+  message: z.string().min(10, t('contact.val_message_min', 'Nachricht muss mindestens 10 Zeichen lang sein')),
   website: z.string().optional(), // Honeypot
   agreeToPrivacy: z.boolean().refine(val => val === true, {
-    message: 'Sie müssen der Datenschutzerklärung zustimmen'
+    message: t('contact.val_privacy', 'Sie müssen der Datenschutzerklärung zustimmen')
   })
 });
 
-type ContactFormValues = z.infer<typeof contactSchema>;
+type ContactFormValues = z.infer<ReturnType<typeof createContactSchema>>;
 
 export default function ContactForm() {
   const { t, i18n } = useTranslation();
+  const contactSchema = createContactSchema(t as TFn);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [hasStartedForm, setHasStartedForm] = useState(false);

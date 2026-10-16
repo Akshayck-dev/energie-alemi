@@ -6,6 +6,7 @@ import { cn } from '../lib/utils';
 
 export default function HomeMeeting() {
   const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
 
   return (
     <section id="meeting" className="py-16 md:py-24 bg-slate-50 dark:bg-[#0a1628] border-t border-slate-200 dark:border-white/10">
@@ -30,7 +31,7 @@ export default function HomeMeeting() {
             <div className="relative h-64 w-full">
               <img 
                 src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1000&auto=format&fit=crop" 
-                alt="Büro Alexianergraben 9 Aachen" 
+                alt={isEn ? "Office Alexianergraben 9 Aachen" : "Büro Alexianergraben 9 Aachen"} 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -59,7 +60,7 @@ export default function HomeMeeting() {
             <div className="relative h-64 w-full">
               <img 
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop" 
-                alt="Persönliche Beratung" 
+                alt={isEn ? "Personal consultation" : "Persönliche Beratung"} 
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

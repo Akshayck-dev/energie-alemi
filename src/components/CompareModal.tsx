@@ -14,6 +14,7 @@ interface CompareModalProps {
 
 export default function CompareModal({ isOpen, onClose, defaultService }: CompareModalProps) {
   const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
   const headingText = t('compare_modal.title', 'Reach out to us');
   const [name, setName] = useState('');
   const [service, setService] = useState(defaultService || 'Strom');
@@ -75,9 +76,15 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
     e.preventDefault();
     if (!name || !phone || !plz) return;
 
+    const serviceLabels: Record<string, string> = {
+      Strom: t('compare_modal.service_elec', 'Strom'),
+      Gas: t('compare_modal.service_gas', 'Gas'),
+      Internet: t('compare_modal.service_internet', 'Internet'),
+      electricity: t('compare_modal.service_elec', 'Strom'),
+    };
     const messageText = t('compare_modal.whatsapp_template', `Hallo Energie Alemi,\n\nIch interessiere mich für einen Tarifvergleich. Hier sind meine Angaben:\n\n👤 Name: {{name}}\n🔌 Bereich: {{service}}\n🏢 Service-Typ: {{serviceType}}\n📍 PLZ: {{plz}}\n🏠 Adresse: {{address}}\n📞 Telefon: {{phone}}\n📝 Details/Verbrauch: {{details}}\n\nBitte kontaktieren Sie mich bezüglich passender Angebote.`, {
       name,
-      service,
+      service: serviceLabels[service] || service,
       serviceType: t(`compare_modal.service_type_${serviceType}`, serviceType),
       plz,
       address: address || t('compare_modal.no_address', 'Keine Angabe'),
@@ -146,7 +153,7 @@ export default function CompareModal({ isOpen, onClose, defaultService }: Compar
                   "absolute top-4 sm:top-5 w-11 h-11 flex items-center justify-center text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors group",
                   i18n.dir() === 'rtl' ? "left-4 sm:left-5" : "right-4 sm:right-5"
                 )}
-                aria-label="Schließen"
+                aria-label={isEn ? "Close" : "Schließen"}
               >
                 <div className="w-8 h-8 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center group-hover:bg-slate-100 dark:group-hover:bg-white/10 transition-colors">
                   <X size={16} />

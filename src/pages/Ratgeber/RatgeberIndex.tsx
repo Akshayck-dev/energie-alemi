@@ -7,6 +7,7 @@ import { cn } from '../../lib/utils';
 
 export default function RatgeberIndex() {
   const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#0a1628] py-24 md:py-32">
@@ -61,10 +62,10 @@ export default function RatgeberIndex() {
                 Q&A
               </div>
               <h2 className="text-xl font-heading font-bold text-slate-900 dark:text-white mb-3 group-hover:text-[#0047AB] dark:group-hover:text-[#f0a83f] transition-colors">
-                Energie-Fragen & Antworten
+                {isEn ? "Energy Questions & Answers" : "Energie-Fragen & Antworten"}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-8 flex-grow">
-                Klare, eigenständige Antworten rund um Strom, Gas und Internet, die Nutzer sofort verstehen.
+                {isEn ? "Clear, self-contained answers about electricity, gas, and internet that users understand instantly." : "Klare, eigenständige Antworten rund um Strom, Gas und Internet, die Nutzer sofort verstehen."}
               </p>
               <div className="flex items-center gap-2 text-[#0047AB] dark:text-[#f0a83f] font-semibold text-sm mt-auto">
                 {t('ratgeber.read_article')} 

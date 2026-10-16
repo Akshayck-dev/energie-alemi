@@ -22,7 +22,8 @@
     "about_us": "About Us",
     "contact": "Contact",
     "ratgeber": "Guides",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "and": "and"
   },
   "home_hero": {
     "subtitle": "SMART CONTRACTS.",
@@ -122,7 +123,9 @@
     "follow_us": "Follow us",
     "data_protection": "Data protection",
     "rights_reserved": "Energie Alemi. All rights reserved.",
-    "cookie_settings": "Cookie Settings"
+    "cookie_settings": "Cookie Settings",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
   },
   "about": {
     "hero_subtitle": "ABOUT US",
@@ -165,7 +168,8 @@
     "exp_f4_desc": "We're here for you – before, during, and after your decision.",
     "cta_title": "Questions or need support?",
     "cta_desc": "We're happy to help you with customized solutions for your electricity, gas, and internet contracts.",
-    "cta_button": "Non-binding consultation"
+    "cta_button": "Non-binding consultation",
+    "founder_image_alt": "Shoaib Alemi, Founder of Energie Alemi"
   },
   "contact": {
     "header_sub": "We are here for you",
@@ -225,7 +229,14 @@
     "form_service_business": "Business",
     "form_service_family_house": "Family House",
     "form_service_apartment_buildings": "Apartment Buildings",
-    "form_error": "Failed to send message. Please try again later or contact us directly."
+    "form_error": "Failed to send message. Please try again later or contact us directly.",
+    "val_first_name": "First name is required",
+    "val_last_name": "Last name is required",
+    "val_email": "Invalid email address",
+    "val_topic": "Please select a topic",
+    "val_service_type": "Please select a service type",
+    "val_message_min": "Message must be at least 10 characters long",
+    "val_privacy": "You must agree to the privacy policy"
   },
   "elec": {
     "hero_t1": "Smart energy decisions.",
@@ -267,7 +278,8 @@
     "cross_p3": ". Find more tips in our ",
     "cross_l3": "guide",
     "cross_p4": ", for example on ",
-    "cross_l4": "basic supply"
+    "cross_l4": "basic supply",
+    "cross_p5": " or read our guide on "
   },
   "gas": {
     "hero_t1": "Smart energy decisions.",
@@ -310,7 +322,9 @@
     "cross_p3": ". For any questions, ",
     "cross_l3": "contact us",
     "cross_p4": " directly or read our guide on ",
-    "cross_l4": "basic supply"
+    "cross_l4": "basic supply",
+    "cross_p5": " or read our useful ",
+    "cross_p6": " as well as our guide on "
   },
   "internet": {
     "hero_t1": "Compare internet plans",
@@ -432,7 +446,10 @@
     "phone_placeholder": "For any follow-up questions",
     "details_label": "Consumption / Details (optional)",
     "details_placeholder": "e.g. 3500 kWh/year or 250 Mbit/s",
-    "submit_btn": "Send inquiry via WhatsApp"
+    "submit_btn": "Send inquiry via WhatsApp",
+    "no_address": "Not provided",
+    "no_details": "Not provided",
+    "whatsapp_template": "Hello Energie Alemi,\n\nI am interested in a tariff comparison. Here are my details:\n\n👤 Name: {{name}}\n🔌 Area: {{service}}\n🏢 Service type: {{serviceType}}\n📍 Postcode: {{plz}}\n🏠 Address: {{address}}\n📞 Phone: {{phone}}\n📝 Details/consumption: {{details}}\n\nPlease contact me regarding suitable offers."
   },
   "fab": {
     "email_tooltip": "SEND EMAIL",

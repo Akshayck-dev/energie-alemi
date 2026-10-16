@@ -88,7 +88,7 @@ export default function ReviewsSection() {
                 <span className="text-slate-500 dark:text-slate-400 text-sm font-medium">
                   {isEn ? 'out of 5 stars' : 'von 5 Sternen'}
                 </span>
-                <div className="flex items-center gap-0.5 ml-1" aria-label="5 von 5 Sternen">
+                <div className="flex items-center gap-0.5 ml-1" aria-label={isEn ? "5 out of 5 stars" : "5 von 5 Sternen"}>
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={17} className="fill-amber-400 text-amber-400" />
                   ))}

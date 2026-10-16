@@ -44,7 +44,8 @@ const SLIDE_DURATION = 8; // 8 seconds per slide before switching
 const FADE_DURATION = 1500; // 1.5s smooth crossfade
 
 export default function HomeHero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
   const [activeIndex, setActiveIndex] = useState(0);
   const [loadedIndices, setLoadedIndices] = useState<number[]>([0]);
   const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
@@ -253,7 +254,7 @@ export default function HomeHero() {
           {/* Trust line under headline */}
           <div className="flex items-start sm:items-center gap-2 text-xs sm:text-sm md:text-base text-amber-400 font-medium mb-4 md:mb-5 tracking-wide">
             <MapPin size={16} className="text-amber-400 shrink-0 mt-0.5 sm:mt-0" />
-            <span>Persönliche Beratung vor Ort in Aachen — Alexianergraben 9 · Mo–Sa 10:00–19:00</span>
+            <span>{isEn ? "In-person consultation in Aachen \u2014 Alexianergraben 9 \u00b7 Mon\u2013Sat 10:00am\u20137:00pm" : "Persönliche Beratung vor Ort in Aachen \u2014 Alexianergraben 9 \u00b7 Mo\u2013Sa 10:00\u201319:00"}</span>
           </div>
 
           <p className="text-base text-white/75 mb-6 md:mb-8 max-w-md leading-relaxed font-light">
@@ -305,19 +306,19 @@ export default function HomeHero() {
               className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
             >
               <span className="text-amber-400 font-bold">★</span>
-              <span className="font-semibold text-white">5,0 auf Google</span>
-              <span className="text-white/75">({GOOGLE_REVIEW_COUNT} Bewertungen)</span>
+              <span className="font-semibold text-white">{isEn ? "5.0 on Google" : "5,0 auf Google"}</span>
+              <span className="text-white/75">({GOOGLE_REVIEW_COUNT} {isEn ? "reviews" : "Bewertungen"})</span>
             </a>
             <span className="text-white/40 hidden sm:inline">·</span>
             <div className="flex items-center gap-2 text-xs sm:text-sm">
               <span className="inline-flex items-center gap-1">
                 <span className="text-emerald-400 font-bold">✓</span>
-                <span>Kostenlos &amp; unverbindlich</span>
+                <span>{isEn ? "Free & non-binding" : "Kostenlos & unverbindlich"}</span>
               </span>
               <span className="text-white/40">·</span>
               <span className="inline-flex items-center gap-1">
                 <span className="text-emerald-400 font-bold">✓</span>
-                <span>Unabhängige Beratung</span>
+                <span>{isEn ? "Independent advice" : "Unabhängige Beratung"}</span>
               </span>
             </div>
           </div>

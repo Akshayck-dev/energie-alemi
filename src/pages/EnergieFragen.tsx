@@ -6,8 +6,9 @@ import { useTranslation } from 'react-i18next';
 
 export default function EnergieFragen() {
   const { i18n } = useTranslation();
+  const isEn = i18n.language === 'en';
 
-  const questions = [
+  const questionsDe = [
     {
       question: "Was ist Energie Alemi?",
       answer: "Energie Alemi ist eine Tarifberatung in Aachen für Strom, Gas und Internet.",
@@ -82,6 +83,82 @@ export default function EnergieFragen() {
     }
   ];
 
+  const questionsEn = [
+    {
+      question: "What is Energie Alemi?",
+      answer: "Energie Alemi is a tariff consultancy in Aachen for electricity, gas, and internet.",
+      detail: "The company reviews existing contracts, compares tariffs from different providers, and guides customers through the switch. The consultation is aimed at private households, businesses, and industrial clients, combining tariff comparison with a personal local contact.",
+      cta: { text: "To the homepage", link: "/" }
+    },
+    {
+      question: "What services does Energie Alemi offer in Aachen?",
+      answer: "Energie Alemi advises on electricity, gas, and internet contracts.",
+      detail: "The process includes assessing your needs, reviewing existing contracts, comparing suitable offers, assisting with the contract switch, and continued support after the switch. The goal is a transparent decision based on price, service, and contract terms.",
+      cta: { text: "Our services", link: "/" }
+    },
+    {
+      question: "Who is Energie Alemi's tariff consultation suitable for?",
+      answer: "Energie Alemi's tariff consultation is designed for private households, businesses, and industry.",
+      detail: "For households, annual consumption, price, and flexibility are usually the focus. For businesses, multiple consumption points, higher volumes, contract terms, and planning security can also matter. The comparison is therefore based on actual needs, not a flat-rate standard tariff.",
+      cta: { text: "Learn about us", link: "/about" }
+    },
+    {
+      question: "Where does Energie Alemi advise in person?",
+      answer: "Energie Alemi is located at Alexianergraben 9, 52064 Aachen.",
+      detail: "In-person consultation is available Monday to Saturday from 10:00 AM to 7:00 PM. The company can be reached by phone at 0176 659 493 90. For a specific tariff comparison, please have your last bill and current contract details ready.",
+      cta: { text: "Contact us", link: "/contact" }
+    },
+    {
+      question: "Is the tariff consultation at Energie Alemi free?",
+      answer: "Energie Alemi states on its website that the tariff consultation is free.",
+      detail: "During the consultation, your current situation and needs are assessed, contracts reviewed, and suitable offers compared. Before signing anything, customers should fully check the specific tariff costs, terms, price guarantees, and bonus conditions.",
+      cta: { text: "Frequently asked questions (FAQ)", link: "/faq" }
+    },
+    {
+      question: "What documents do I need for an electricity or gas comparison?",
+      answer: "For a reliable electricity or gas comparison, your last annual statement, annual consumption in kilowatt-hours, the postcode of the consumption point, current base and unit prices, and the contract term and cancellation period are helpful.",
+      detail: "On the switching day, the meter reading should also be documented and submitted to the parties involved.",
+      cta: { text: "Compare electricity tariffs", link: "/electricity" }
+    },
+    {
+      question: "Which electricity provider is best in Aachen?",
+      answer: "There is no single best electricity provider for Aachen.",
+      detail: "Which tariff fits depends on your postcode, annual consumption, current contract, and desired terms. A meaningful comparison looks not only at the first-year price but also at the base price, unit price, contract term, cancellation period, price guarantee, bonus rules, and experiences with the provider.",
+      cta: { text: "Electricity providers Aachen", link: "/stromanbieter-aachen" }
+    },
+    {
+      question: "What should I look for in an electricity tariff?",
+      answer: "With an electricity tariff, the base and unit prices matter as much as the term, cancellation period, and the exact scope of any price guarantee.",
+      detail: "Bonuses can lower the price in the first year but shouldn't distract from the long-term costs. Consumer advice centers also recommend checking provider experiences and comparing tariffs based on your own postcode and annual consumption.",
+      cta: { text: "Electricity guide", link: "/ratgeber/stromvergleich" }
+    },
+    {
+      question: "Will my supply be interrupted when I switch electricity or gas providers?",
+      answer: "A regular switch of electricity or gas supplier normally does not interrupt your energy supply.",
+      detail: "Lines, meters, and grid operators stay the same; only the supply contract changes. What matters is correct contract data, observing the term and cancellation period, and a documented meter reading on the switching date.",
+      cta: { text: "Electricity & gas FAQ", link: "/faq" }
+    },
+    {
+      question: "Which gas provider is best in Aachen?",
+      answer: "With gas too, there is no provider that is automatically the best for every household or business.",
+      detail: "What counts is the delivery address, annual consumption, previous costs, and contract terms. You should compare the total annual price, base and unit prices, term, cancellation period, price guarantee, and bonus conditions. A low introductory price alone is not enough for a sound decision.",
+      cta: { text: "Gas providers Aachen", link: "/gasanbieter-aachen" }
+    },
+    {
+      question: "Which internet tariff suits my household or business?",
+      answer: "The right internet tariff depends first on the technical availability at your specific address.",
+      detail: "Then the number of users and devices, home office, video conferencing, streaming, cloud applications, and required upload matter. You should also compare the total price over the contract term, setup and router costs, minimum term, cancellation period, and promised data rate.",
+      cta: { text: "Internet providers Aachen", link: "/internetanbieter-aachen" }
+    },
+    {
+      question: "What's important when switching internet providers?",
+      answer: "When switching internet providers, cancellation, activation date, and any desired number porting should be coordinated.",
+      detail: "Name, address, and connection details must match the previous contract. Before ordering, check availability, minimum term, full costs, and the contractually promised speed. According to its own service description, Energie Alemi also assists with the switching process.",
+      cta: { text: "Get in touch", link: "/contact" }
+    }
+  ];
+  const questions = isEn ? questionsEn : questionsDe;
+
   const faqsForSeo = questions.map(q => ({
     question: q.question,
     answer: q.answer
@@ -103,10 +180,10 @@ export default function EnergieFragen() {
             <span className="uppercase tracking-wider text-sm font-heading">GEO Q&A</span>
           </div>
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-            Energie-Fragen & Antworten
+            {isEn ? 'Energy Questions & Answers' : 'Energie-Fragen & Antworten'}
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300">
-            Klare, eigenständige Antworten, die Nutzer sofort verstehen und die Suchmaschinen sowie KI-Systeme eindeutig der Marke Energie Alemi zuordnen können. 12 direkt zitierbare Antworten für Energie Alemi in Aachen rund um Strom, Gas und Internet.
+            {isEn ? 'Clear, self-contained answers that users understand immediately and that search engines and AI systems can clearly attribute to the Energie Alemi brand. 12 directly quotable answers for Energie Alemi in Aachen on electricity, gas, and internet.' : 'Klare, eigenständige Antworten, die Nutzer sofort verstehen und die Suchmaschinen sowie KI-Systeme eindeutig der Marke Energie Alemi zuordnen können. 12 direkt zitierbare Antworten für Energie Alemi in Aachen rund um Strom, Gas und Internet.'}
           </p>
         </div>
 
