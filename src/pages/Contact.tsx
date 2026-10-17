@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Clock, ShieldCheck, LineChart, Handshake, PhoneCall, Zap, ArrowRight, Headset, Flame } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, ShieldCheck, LineChart, Handshake, PhoneCall, Zap, ArrowRight, Headset, Flame, Navigation } from 'lucide-react';
 
 import { useTranslation } from 'react-i18next';
 import ContactForm from '../components/ContactForm';
@@ -185,6 +185,16 @@ export default function Contact() {
                           className="text-sm font-bold text-[#0047AB] dark:text-[#f0a83f] hover:underline mt-1 inline-block"
                         >
                           Google Maps
+                        </a>
+                        <span className="text-sm text-slate-300 dark:text-white/20 mx-2">|</span>
+                        <a data-track="google-maps"
+                          href="https://www.google.com/maps/dir/?api=1&destination=Energie+Alemi+Alexianergraben+9+52064+Aachen"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-bold text-[#0047AB] dark:text-[#f0a83f] hover:underline mt-1 inline-flex items-center gap-1"
+                        >
+                          <Navigation size={13} strokeWidth={2} />
+                          {t('contact.directions')}
                         </a>
                       </p>
                     </div>
